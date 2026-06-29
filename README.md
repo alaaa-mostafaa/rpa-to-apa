@@ -35,8 +35,6 @@ developer's actual fix, and an LLM-judged defensibility check against the failur
   - `figures/` — figure generation. Run all scripts from the repository root (see below).
 - `data/` — curated datasets (`dataset_remote_*.jsonl.gz`), the scored evaluation set
   (`eval_big100.jsonl`), agent traces and all result JSON files.
-- `archive/` — `ground_truth_scraper.py`, the developer-fix ground-truth collector used by
-  the evaluation harness.
 - `images/`, `thesis_figures/` — generated figures and architecture diagrams.
 
 ## Running
