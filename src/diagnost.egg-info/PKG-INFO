@@ -1,0 +1,53 @@
+Metadata-Version: 2.4
+Name: diagnost
+Version: 0.1.0
+Summary: A Bayesian failure analysis agent for CI/CD and Kubernetes.
+Author: Alaa Abdelnase
+License: MIT
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: langgraph>=0.0.10
+Requires-Dist: openai>=1.0.0
+Requires-Dist: fastapi>=0.100.0
+Requires-Dist: uvicorn>=0.23.0
+Requires-Dist: chromadb>=0.4.10
+Requires-Dist: kubernetes>=28.1.0
+Requires-Dist: python-dotenv>=1.0.0
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+
+# Diagnost 🕵️‍♂️
+
+**Diagnost** is a pip-installable Python package that uses a Bayesian belief tracker and an LLM-driven agent loop to automatically diagnose failures from any CI/CD or infrastructure system. It currently features official launch integrations for **GitHub Actions** and **Kubernetes**.
+
+## Quickstart
+
+```bash
+pip install diagnost
+```
+
+```python
+import os
+from faf import FailureAnalysisAgent, GitHubAdapter
+
+# 1. Initialize the adapter
+adapter = GitHubAdapter(token=os.environ.get("GITHUB_TOKEN"))
+
+# 2. Fetch the failure
+event = adapter.fetch_event(event_id="12345678", repo="my-org/my-repo")
+
+# 3. Analyze
+agent = FailureAnalysisAgent()
+result = agent.analyze(event)
+
+print(f"Predicted Root Cause: {result['category']} ({result['confidence']:.1%} confidence)")
+print(f"Reasoning:\\n{result['reasoning']}")
+```
+
+## How it works
+
+Diagnost does not blindly pass your logs into an LLM. It uses a **Bayesian Planner** that parses structured CI/CD metadata and updates a mathematically robust probability distribution over 14 distinct failure categories (like `CODE_REGRESSION`, `DEPENDENCY_CONFLICT`, `OOM_KILL`).
+
+Only when uncertainty is high does it actively query the LLM to inspect raw logs or source code diffs!

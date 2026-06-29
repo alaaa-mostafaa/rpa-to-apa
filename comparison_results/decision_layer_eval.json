@@ -1,0 +1,59 @@
+{
+  "n_cases": 47,
+  "action_distribution": {
+    "BLOCK_MERGE": 41,
+    "INVESTIGATE": 4,
+    "IGNORE": 1,
+    "RETRY": 1
+  },
+  "tier_distribution": {
+    "T2": 47
+  },
+  "canary_distribution": {
+    "PAUSE": 29,
+    "ROLLBACK": 17,
+    "PROMOTE": 1
+  },
+  "flag_distribution": {
+    "DISABLE_FLAG": 38,
+    "KEEP_ENABLED": 9
+  },
+  "category_action_matrix": {
+    "CASCADE_FAILURE": {
+      "INVESTIGATE": 4
+    },
+    "CODE_REGRESSION": {
+      "BLOCK_MERGE": 17
+    },
+    "CONFIG_ERROR": {
+      "BLOCK_MERGE": 10
+    },
+    "DEPENDENCY_CONFLICT": {
+      "BLOCK_MERGE": 11
+    },
+    "ENV_FLAKINESS": {
+      "RETRY": 1
+    },
+    "INFRA_INCOMPATIBILITY": {
+      "BLOCK_MERGE": 3
+    },
+    "TOOLING_ARTIFACT": {
+      "IGNORE": 1
+    }
+  },
+  "rpa_vs_apa": {
+    "apa_action_distribution": {},
+    "rpa_action_distribution": {
+      "BLOCK_MERGE": 41,
+      "INVESTIGATE": 4,
+      "IGNORE": 1,
+      "RETRY": 1
+    },
+    "apa_tier_distribution": {},
+    "rpa_tier_distribution": {
+      "T2": 47
+    },
+    "action_agreement_rate": null,
+    "n_compared": 0
+  }
+}

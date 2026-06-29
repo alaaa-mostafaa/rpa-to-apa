@@ -1,0 +1,393 @@
+{
+  "_id": "fastplotlib/fastplotlib_.github/workflows/pypi-publish.yml_12_1",
+  "repository_name": "fastplotlib/fastplotlib",
+  "workflow_path": ".github/workflows/pypi-publish.yml",
+  "run_number": 12,
+  "run_attempt": 1,
+  "time_to_import": 49361.814329,
+  "metadata": {
+    "id": 6701075451,
+    "name": "Upload Python Package",
+    "node_id": "WFR_kwLOHO_b7c8AAAABj2pL-w",
+    "head_branch": "v0.1.0.a14",
+    "head_sha": "932454fee8580e0266d88be4aca51c7b6a771603",
+    "path": ".github/workflows/pypi-publish.yml",
+    "display_title": "Upload Python Package",
+    "run_number": 12,
+    "event": "release",
+    "status": "completed",
+    "conclusion": "failure",
+    "workflow_id": 35492650,
+    "check_suite_id": 17768138201,
+    "check_suite_node_id": "CS_kwDOHO_b7c8AAAAEIxBF2Q",
+    "url": "https://api.github.com/repos/fastplotlib/fastplotlib/actions/runs/6701075451",
+    "html_url": "https://github.com/fastplotlib/fastplotlib/actions/runs/6701075451",
+    "pull_requests": [],
+    "created_at": "2023-10-31T01:59:51Z",
+    "updated_at": "2023-10-31T02:00:57Z",
+    "actor": {
+      "login": "kushalkolar",
+      "id": 9403332,
+      "node_id": "MDQ6VXNlcjk0MDMzMzI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9403332?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/kushalkolar",
+      "html_url": "https://github.com/kushalkolar",
+      "followers_url": "https://api.github.com/users/kushalkolar/followers",
+      "following_url": "https://api.github.com/users/kushalkolar/following{/other_user}",
+      "gists_url": "https://api.github.com/users/kushalkolar/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/kushalkolar/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/kushalkolar/subscriptions",
+      "organizations_url": "https://api.github.com/users/kushalkolar/orgs",
+      "repos_url": "https://api.github.com/users/kushalkolar/repos",
+      "events_url": "https://api.github.com/users/kushalkolar/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/kushalkolar/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "run_attempt": 1,
+    "referenced_workflows": [],
+    "run_started_at": "2023-10-31T01:59:51Z",
+    "triggering_actor": {
+      "login": "kushalkolar",
+      "id": 9403332,
+      "node_id": "MDQ6VXNlcjk0MDMzMzI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9403332?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/kushalkolar",
+      "html_url": "https://github.com/kushalkolar",
+      "followers_url": "https://api.github.com/users/kushalkolar/followers",
+      "following_url": "https://api.github.com/users/kushalkolar/following{/other_user}",
+      "gists_url": "https://api.github.com/users/kushalkolar/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/kushalkolar/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/kushalkolar/subscriptions",
+      "organizations_url": "https://api.github.com/users/kushalkolar/orgs",
+      "repos_url": "https://api.github.com/users/kushalkolar/repos",
+      "events_url": "https://api.github.com/users/kushalkolar/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/kushalkolar/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "jobs_url": "https://api.github.com/repos/fastplotlib/fastplotlib/actions/runs/6701075451/jobs",
+    "logs_url": "https://api.github.com/repos/fastplotlib/fastplotlib/actions/runs/6701075451/logs",
+    "check_suite_url": "https://api.github.com/repos/fastplotlib/fastplotlib/check-suites/17768138201",
+    "artifacts_url": "https://api.github.com/repos/fastplotlib/fastplotlib/actions/runs/6701075451/artifacts",
+    "cancel_url": "https://api.github.com/repos/fastplotlib/fastplotlib/actions/runs/6701075451/cancel",
+    "rerun_url": "https://api.github.com/repos/fastplotlib/fastplotlib/actions/runs/6701075451/rerun",
+    "previous_attempt_url": null,
+    "workflow_url": "https://api.github.com/repos/fastplotlib/fastplotlib/actions/workflows/35492650",
+    "head_commit": {
+      "id": "932454fee8580e0266d88be4aca51c7b6a771603",
+      "tree_id": "b92d04d3e51c4898b5f2509e2d06f80735c7eae5",
+      "message": "Plot frame (#313)\n\n* WIP on plot frame\r\n\r\n* create Output context classes, basic layout of Frame, not tested yet\r\n\r\n* plot frame system working for jupyter\r\n\r\n* make it work with imagewidget\r\n\r\n* update demo nbs\r\n\r\n* fix finding if imagegraphic is present\r\n\r\n* fix finding images again\r\n\r\n* update desk image screenshots\r\n\r\n* update screenshot\r\n\r\n* qt works with toolbar\r\n\r\n* qt context works with image widget\r\n\r\n* comments\r\n\r\n* bugfix with flipping\r\n\r\n* remove junk files\r\n\r\n* fix flip, image widget can reset vmin vmax based on currently displayed frame\r\n\r\n* hlut autoscales plot area when set_data() called\r\n\r\n* return buffer\r\n\r\n* reset hlut button\r\n\r\n* add reset hlut button to QToolbar\r\n\r\n* add wiget property to imagewidget, fix gridplot kwargs handling\r\n\r\n* qt toolbar layouting\r\n\r\n* add standalone qt image widget example",
+      "timestamp": "2023-10-31T01:52:04Z",
+      "author": {
+        "name": "Kushal Kolar",
+        "email": "kushalkolar@gmail.com"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com"
+      }
+    },
+    "repository": {
+      "id": 485481453,
+      "node_id": "R_kgDOHO_b7Q",
+      "name": "fastplotlib",
+      "full_name": "fastplotlib/fastplotlib",
+      "private": false,
+      "owner": {
+        "login": "fastplotlib",
+        "id": 139711643,
+        "node_id": "O_kgDOCFPUmw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/139711643?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/fastplotlib",
+        "html_url": "https://github.com/fastplotlib",
+        "followers_url": "https://api.github.com/users/fastplotlib/followers",
+        "following_url": "https://api.github.com/users/fastplotlib/following{/other_user}",
+        "gists_url": "https://api.github.com/users/fastplotlib/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/fastplotlib/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/fastplotlib/subscriptions",
+        "organizations_url": "https://api.github.com/users/fastplotlib/orgs",
+        "repos_url": "https://api.github.com/users/fastplotlib/repos",
+        "events_url": "https://api.github.com/users/fastplotlib/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/fastplotlib/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/fastplotlib/fastplotlib",
+      "description": "A fast plotting library",
+      "fork": false,
+      "url": "https://api.github.com/repos/fastplotlib/fastplotlib",
+      "forks_url": "https://api.github.com/repos/fastplotlib/fastplotlib/forks",
+      "keys_url": "https://api.github.com/repos/fastplotlib/fastplotlib/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/fastplotlib/fastplotlib/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/fastplotlib/fastplotlib/teams",
+      "hooks_url": "https://api.github.com/repos/fastplotlib/fastplotlib/hooks",
+      "issue_events_url": "https://api.github.com/repos/fastplotlib/fastplotlib/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/fastplotlib/fastplotlib/events",
+      "assignees_url": "https://api.github.com/repos/fastplotlib/fastplotlib/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/fastplotlib/fastplotlib/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/fastplotlib/fastplotlib/tags",
+      "blobs_url": "https://api.github.com/repos/fastplotlib/fastplotlib/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/fastplotlib/fastplotlib/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/fastplotlib/fastplotlib/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/fastplotlib/fastplotlib/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/fastplotlib/fastplotlib/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/fastplotlib/fastplotlib/languages",
+      "stargazers_url": "https://api.github.com/repos/fastplotlib/fastplotlib/stargazers",
+      "contributors_url": "https://api.github.com/repos/fastplotlib/fastplotlib/contributors",
+      "subscribers_url": "https://api.github.com/repos/fastplotlib/fastplotlib/subscribers",
+      "subscription_url": "https://api.github.com/repos/fastplotlib/fastplotlib/subscription",
+      "commits_url": "https://api.github.com/repos/fastplotlib/fastplotlib/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/fastplotlib/fastplotlib/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/fastplotlib/fastplotlib/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/fastplotlib/fastplotlib/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/fastplotlib/fastplotlib/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/fastplotlib/fastplotlib/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/fastplotlib/fastplotlib/merges",
+      "archive_url": "https://api.github.com/repos/fastplotlib/fastplotlib/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/fastplotlib/fastplotlib/downloads",
+      "issues_url": "https://api.github.com/repos/fastplotlib/fastplotlib/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/fastplotlib/fastplotlib/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/fastplotlib/fastplotlib/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/fastplotlib/fastplotlib/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/fastplotlib/fastplotlib/labels{/name}",
+      "releases_url": "https://api.github.com/repos/fastplotlib/fastplotlib/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/fastplotlib/fastplotlib/deployments"
+    },
+    "head_repository": {
+      "id": 485481453,
+      "node_id": "R_kgDOHO_b7Q",
+      "name": "fastplotlib",
+      "full_name": "fastplotlib/fastplotlib",
+      "private": false,
+      "owner": {
+        "login": "fastplotlib",
+        "id": 139711643,
+        "node_id": "O_kgDOCFPUmw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/139711643?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/fastplotlib",
+        "html_url": "https://github.com/fastplotlib",
+        "followers_url": "https://api.github.com/users/fastplotlib/followers",
+        "following_url": "https://api.github.com/users/fastplotlib/following{/other_user}",
+        "gists_url": "https://api.github.com/users/fastplotlib/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/fastplotlib/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/fastplotlib/subscriptions",
+        "organizations_url": "https://api.github.com/users/fastplotlib/orgs",
+        "repos_url": "https://api.github.com/users/fastplotlib/repos",
+        "events_url": "https://api.github.com/users/fastplotlib/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/fastplotlib/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/fastplotlib/fastplotlib",
+      "description": "A fast plotting library",
+      "fork": false,
+      "url": "https://api.github.com/repos/fastplotlib/fastplotlib",
+      "forks_url": "https://api.github.com/repos/fastplotlib/fastplotlib/forks",
+      "keys_url": "https://api.github.com/repos/fastplotlib/fastplotlib/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/fastplotlib/fastplotlib/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/fastplotlib/fastplotlib/teams",
+      "hooks_url": "https://api.github.com/repos/fastplotlib/fastplotlib/hooks",
+      "issue_events_url": "https://api.github.com/repos/fastplotlib/fastplotlib/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/fastplotlib/fastplotlib/events",
+      "assignees_url": "https://api.github.com/repos/fastplotlib/fastplotlib/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/fastplotlib/fastplotlib/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/fastplotlib/fastplotlib/tags",
+      "blobs_url": "https://api.github.com/repos/fastplotlib/fastplotlib/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/fastplotlib/fastplotlib/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/fastplotlib/fastplotlib/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/fastplotlib/fastplotlib/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/fastplotlib/fastplotlib/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/fastplotlib/fastplotlib/languages",
+      "stargazers_url": "https://api.github.com/repos/fastplotlib/fastplotlib/stargazers",
+      "contributors_url": "https://api.github.com/repos/fastplotlib/fastplotlib/contributors",
+      "subscribers_url": "https://api.github.com/repos/fastplotlib/fastplotlib/subscribers",
+      "subscription_url": "https://api.github.com/repos/fastplotlib/fastplotlib/subscription",
+      "commits_url": "https://api.github.com/repos/fastplotlib/fastplotlib/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/fastplotlib/fastplotlib/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/fastplotlib/fastplotlib/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/fastplotlib/fastplotlib/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/fastplotlib/fastplotlib/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/fastplotlib/fastplotlib/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/fastplotlib/fastplotlib/merges",
+      "archive_url": "https://api.github.com/repos/fastplotlib/fastplotlib/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/fastplotlib/fastplotlib/downloads",
+      "issues_url": "https://api.github.com/repos/fastplotlib/fastplotlib/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/fastplotlib/fastplotlib/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/fastplotlib/fastplotlib/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/fastplotlib/fastplotlib/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/fastplotlib/fastplotlib/labels{/name}",
+      "releases_url": "https://api.github.com/repos/fastplotlib/fastplotlib/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/fastplotlib/fastplotlib/deployments"
+    }
+  },
+  "logs_archive": {
+    "path": "/data/logs/fastplotlib/fastplotlib/Upload_Python_Package_ac22/12-1.tar.gz"
+  },
+  "log_insights": [
+    {
+      "file": "0_deploy.txt",
+      "total_lines": 1398,
+      "log_size": 130774,
+      "token_permissions": {
+        "Contents": "read",
+        "Metadata": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231025.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "fastplotlib/fastplotlib",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-31 02:00:21.697000",
+          "duration_sec": 2.569184
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "setup-python",
+          "version": "v3",
+          "sha": "3542bca2639a428e1796aaa6a2ffef0c0f575566",
+          "with": {
+            "python-version": "3.10",
+            "token": "***"
+          },
+          "env": {},
+          "start_date": "2023-10-31 02:00:24.266000",
+          "duration_sec": 0.22438
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/opt/hostedtoolcache/Python/3.10.13/x64",
+            "LD_LIBRARY_PATH": "/opt/hostedtoolcache/Python/3.10.13/x64/lib"
+          },
+          "code": "python -m pip install --upgrade pip\npip install build",
+          "commands": [
+            {
+              "annotations": [
+                "SC-PYTHON-MODULE"
+              ],
+              "command": "python",
+              "categories": [
+                "DEVELOPMENT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-PYTHON-MODULE-M"
+                  ],
+                  "content": "-m"
+                },
+                {
+                  "annotations": [
+                    "SC-PYTHON-MODULE-M"
+                  ],
+                  "content": "pip"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-PIP-INSTALL"
+              ],
+              "command": "pip",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "build"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-31 02:00:24.490000",
+          "duration_sec": 7.661442
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/opt/hostedtoolcache/Python/3.10.13/x64",
+            "LD_LIBRARY_PATH": "/opt/hostedtoolcache/Python/3.10.13/x64/lib"
+          },
+          "code": "python -m build",
+          "commands": [
+            {
+              "annotations": [
+                "SC-PYTHON-MODULE"
+              ],
+              "command": "python",
+              "categories": [
+                "DEVELOPMENT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-PYTHON-MODULE-M"
+                  ],
+                  "content": "-m"
+                }
+              ]
+            },
+            {
+              "command": "build"
+            }
+          ],
+          "start_date": "2023-10-31 02:00:32.152000",
+          "duration_sec": 16.599154
+        },
+        {
+          "type": "action",
+          "repository": "pypa",
+          "action": "gh-action-pypi-publish",
+          "version": "27b31702a0e7fc50959f5ad993c78deac1bdfc29",
+          "sha": "27b31702a0e7fc50959f5ad993c78deac1bdfc29",
+          "with": {
+            "user": "__token__",
+            "password": "***",
+            "packages_dir": "dist",
+            "verify_metadata": "true",
+            "skip_existing": "false",
+            "verbose": "false"
+          },
+          "env": {
+            "pythonLocation": "/opt/hostedtoolcache/Python/3.10.13/x64",
+            "LD_LIBRARY_PATH": "/opt/hostedtoolcache/Python/3.10.13/x64/lib"
+          },
+          "start_date": "2023-10-31 02:00:48.751000",
+          "duration_sec": 3.828165
+        }
+      ]
+    }
+  ],
+  "total_logs_size": 133540
+}

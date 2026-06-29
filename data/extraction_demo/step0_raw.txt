@@ -1,0 +1,9 @@
+STEP 0 - RAW LOG (note 28-char ISO timestamps + ANSI color codes)
+======================================================================
+2023-10-29T00:21:05.1886715Z   = note: `-D unused-imports` implied by `-D warnings`
+2023-10-29T00:21:05.1887512Z   = help: to override `-D warnings` add `#[allow(unused_imports)]`
+2023-10-29T00:21:05.1888004Z 
+2023-10-29T00:21:05.4435397Z error: could not compile `parser` (lib) due to previous error
+2023-10-29T00:21:05.4436275Z warning: build failed, waiting for other jobs to finish...
+2023-10-29T00:21:05.5846960Z Error: failed to build fuzz script: ASAN_OPTIONS="detect_odr_violation=0" RUSTFLAGS="-Cpasses=sancov-module -Cllvm-args=-sanitizer-coverage-level=4 -Cllvm-args=-sanitizer-coverage-inline-8bit-counters -Cllvm-args=-sanitizer-coverage-pc-table -Cllvm-args=-sanitizer-coverage-trace-compares --cfg fuzzing -Clink-dead-code -Zsanitizer=address -Cllvm-args=-sanitizer-coverage-stack-depth -Cdebug-assertions -C codegen-units=1 -D warnings -W unreachable-pub -W bare-trait-objects" "cargo" "build" "--manifest-path" "/home/runner/work/rust-analyzer/rust-analyzer/crates/syntax/fuzz/Cargo.toml" "--target" "x86_64-unknown-linux-gnu" "--release" "--bins"
+2023-10-29T00:21:05.5866350Z ##[error]Process completed with exit code 1.

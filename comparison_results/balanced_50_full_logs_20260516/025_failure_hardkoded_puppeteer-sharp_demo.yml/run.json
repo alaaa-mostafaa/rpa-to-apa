@@ -1,0 +1,470 @@
+{
+  "_id": "hardkoded/puppeteer-sharp_.github/workflows/demo.yml_787_1",
+  "repository_name": "hardkoded/puppeteer-sharp",
+  "workflow_path": ".github/workflows/demo.yml",
+  "run_number": 787,
+  "run_attempt": 1,
+  "time_to_import": 355062.346654,
+  "metadata": {
+    "id": 6776051888,
+    "name": "Demo Project",
+    "node_id": "WFR_kwLOBkhC-88AAAABk-JYsA",
+    "head_branch": "introduce-realm",
+    "head_sha": "3e7f3c25745b96cda50337f17864a22d5edfd297",
+    "path": ".github/workflows/demo.yml",
+    "display_title": "[BREAKING] Introduce Realm entity",
+    "run_number": 787,
+    "event": "pull_request",
+    "status": "completed",
+    "conclusion": "failure",
+    "workflow_id": 18983872,
+    "check_suite_id": 17954439944,
+    "check_suite_node_id": "CS_kwDOBkhC-88AAAAELisDCA",
+    "url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/actions/runs/6776051888",
+    "html_url": "https://github.com/hardkoded/puppeteer-sharp/actions/runs/6776051888",
+    "pull_requests": [
+      {
+        "url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/pulls/2356",
+        "id": 1587485358,
+        "number": 2356,
+        "head": {
+          "ref": "introduce-realm",
+          "sha": "f296e40e3cd18f28bc1f3d003c36070c75675111",
+          "repo": {
+            "id": 105399035,
+            "url": "https://api.github.com/repos/hardkoded/puppeteer-sharp",
+            "name": "puppeteer-sharp"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "3d663ebd37b3dd78356013e2eb234f94159207ed",
+          "repo": {
+            "id": 105399035,
+            "url": "https://api.github.com/repos/hardkoded/puppeteer-sharp",
+            "name": "puppeteer-sharp"
+          }
+        }
+      }
+    ],
+    "created_at": "2023-11-06T20:16:06Z",
+    "updated_at": "2023-11-06T20:16:56Z",
+    "actor": {
+      "login": "kblok",
+      "id": 2198466,
+      "node_id": "MDQ6VXNlcjIxOTg0NjY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2198466?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/kblok",
+      "html_url": "https://github.com/kblok",
+      "followers_url": "https://api.github.com/users/kblok/followers",
+      "following_url": "https://api.github.com/users/kblok/following{/other_user}",
+      "gists_url": "https://api.github.com/users/kblok/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/kblok/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/kblok/subscriptions",
+      "organizations_url": "https://api.github.com/users/kblok/orgs",
+      "repos_url": "https://api.github.com/users/kblok/repos",
+      "events_url": "https://api.github.com/users/kblok/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/kblok/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "run_attempt": 1,
+    "referenced_workflows": [],
+    "run_started_at": "2023-11-06T20:16:06Z",
+    "triggering_actor": {
+      "login": "kblok",
+      "id": 2198466,
+      "node_id": "MDQ6VXNlcjIxOTg0NjY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2198466?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/kblok",
+      "html_url": "https://github.com/kblok",
+      "followers_url": "https://api.github.com/users/kblok/followers",
+      "following_url": "https://api.github.com/users/kblok/following{/other_user}",
+      "gists_url": "https://api.github.com/users/kblok/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/kblok/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/kblok/subscriptions",
+      "organizations_url": "https://api.github.com/users/kblok/orgs",
+      "repos_url": "https://api.github.com/users/kblok/repos",
+      "events_url": "https://api.github.com/users/kblok/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/kblok/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "jobs_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/actions/runs/6776051888/jobs",
+    "logs_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/actions/runs/6776051888/logs",
+    "check_suite_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/check-suites/17954439944",
+    "artifacts_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/actions/runs/6776051888/artifacts",
+    "cancel_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/actions/runs/6776051888/cancel",
+    "rerun_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/actions/runs/6776051888/rerun",
+    "previous_attempt_url": null,
+    "workflow_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/actions/workflows/18983872",
+    "head_commit": {
+      "id": "3e7f3c25745b96cda50337f17864a22d5edfd297",
+      "tree_id": "d643dd230771dae393ee582d4eb85bf8e1bc9e5a",
+      "message": "Update hover implementation",
+      "timestamp": "2023-11-06T20:15:56Z",
+      "author": {
+        "name": "Darío Kondratiuk",
+        "email": "dariokondratiuk@gmail.com"
+      },
+      "committer": {
+        "name": "Darío Kondratiuk",
+        "email": "dariokondratiuk@gmail.com"
+      }
+    },
+    "repository": {
+      "id": 105399035,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMDUzOTkwMzU=",
+      "name": "puppeteer-sharp",
+      "full_name": "hardkoded/puppeteer-sharp",
+      "private": false,
+      "owner": {
+        "login": "hardkoded",
+        "id": 61471605,
+        "node_id": "MDEyOk9yZ2FuaXphdGlvbjYxNDcxNjA1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/61471605?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hardkoded",
+        "html_url": "https://github.com/hardkoded",
+        "followers_url": "https://api.github.com/users/hardkoded/followers",
+        "following_url": "https://api.github.com/users/hardkoded/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hardkoded/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hardkoded/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hardkoded/subscriptions",
+        "organizations_url": "https://api.github.com/users/hardkoded/orgs",
+        "repos_url": "https://api.github.com/users/hardkoded/repos",
+        "events_url": "https://api.github.com/users/hardkoded/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hardkoded/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/hardkoded/puppeteer-sharp",
+      "description": "Headless Chrome .NET API",
+      "fork": false,
+      "url": "https://api.github.com/repos/hardkoded/puppeteer-sharp",
+      "forks_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/forks",
+      "keys_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/teams",
+      "hooks_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/hooks",
+      "issue_events_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/events",
+      "assignees_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/tags",
+      "blobs_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/languages",
+      "stargazers_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/stargazers",
+      "contributors_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/contributors",
+      "subscribers_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/subscribers",
+      "subscription_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/subscription",
+      "commits_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/merges",
+      "archive_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/downloads",
+      "issues_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/labels{/name}",
+      "releases_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/deployments"
+    },
+    "head_repository": {
+      "id": 105399035,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMDUzOTkwMzU=",
+      "name": "puppeteer-sharp",
+      "full_name": "hardkoded/puppeteer-sharp",
+      "private": false,
+      "owner": {
+        "login": "hardkoded",
+        "id": 61471605,
+        "node_id": "MDEyOk9yZ2FuaXphdGlvbjYxNDcxNjA1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/61471605?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hardkoded",
+        "html_url": "https://github.com/hardkoded",
+        "followers_url": "https://api.github.com/users/hardkoded/followers",
+        "following_url": "https://api.github.com/users/hardkoded/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hardkoded/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hardkoded/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hardkoded/subscriptions",
+        "organizations_url": "https://api.github.com/users/hardkoded/orgs",
+        "repos_url": "https://api.github.com/users/hardkoded/repos",
+        "events_url": "https://api.github.com/users/hardkoded/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hardkoded/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/hardkoded/puppeteer-sharp",
+      "description": "Headless Chrome .NET API",
+      "fork": false,
+      "url": "https://api.github.com/repos/hardkoded/puppeteer-sharp",
+      "forks_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/forks",
+      "keys_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/teams",
+      "hooks_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/hooks",
+      "issue_events_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/events",
+      "assignees_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/tags",
+      "blobs_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/languages",
+      "stargazers_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/stargazers",
+      "contributors_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/contributors",
+      "subscribers_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/subscribers",
+      "subscription_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/subscription",
+      "commits_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/merges",
+      "archive_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/downloads",
+      "issues_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/labels{/name}",
+      "releases_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/hardkoded/puppeteer-sharp/deployments"
+    }
+  },
+  "logs_archive": {
+    "path": "/data/logs/hardkoded/puppeteer-sharp/Demo_Project_d674/787-1.tar.gz"
+  },
+  "log_insights": [
+    {
+      "file": "0_Demo Project (windows-2022).txt",
+      "total_lines": 549,
+      "log_size": 40378,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "windows-2022",
+      "image_version": "20231029.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v2",
+          "sha": "ee0669bd1cc54295c223e0bb666b733df41de1c5",
+          "with": {
+            "repository": "hardkoded/puppeteer-sharp",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "fetch-depth": "1",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {
+            "DOTNET_VERSION": "7.0.x"
+          },
+          "start_date": "2023-11-06 20:16:18.700000",
+          "duration_sec": 8.142207
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "setup-dotnet",
+          "version": "v1",
+          "sha": "608ee757cfcce72c2e91e99aca128e0cae67de87",
+          "with": {
+            "dotnet-version": "7.0.x"
+          },
+          "env": {
+            "DOTNET_VERSION": "7.0.x"
+          },
+          "start_date": "2023-11-06 20:16:26.842000",
+          "duration_sec": 27.160852
+        }
+      ]
+    },
+    {
+      "file": "1_Demo Project (macos-latest).txt",
+      "total_lines": 599,
+      "log_size": 45005,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "macos-12",
+      "image_version": "20231029.1",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v2",
+          "sha": "ee0669bd1cc54295c223e0bb666b733df41de1c5",
+          "with": {
+            "repository": "hardkoded/puppeteer-sharp",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "fetch-depth": "1",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {
+            "DOTNET_VERSION": "7.0.x"
+          },
+          "start_date": "2023-11-06 20:18:51.211000",
+          "duration_sec": 1.968902
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "setup-dotnet",
+          "version": "v1",
+          "sha": "608ee757cfcce72c2e91e99aca128e0cae67de87",
+          "with": {
+            "dotnet-version": "7.0.x"
+          },
+          "env": {
+            "DOTNET_VERSION": "7.0.x"
+          },
+          "start_date": "2023-11-06 20:18:53.180000",
+          "duration_sec": 1.0202
+        },
+        {
+          "type": "action",
+          "repository": "NuGet",
+          "action": "setup-nuget",
+          "version": "v1.0.5",
+          "sha": "04b0c2b8d1b97922f67eca497d7cf0bf17b8ffe1",
+          "with": {
+            "nuget-version": "latest"
+          },
+          "env": {
+            "DOTNET_VERSION": "7.0.x",
+            "DOTNET_ROOT": "/Users/runner/.dotnet"
+          },
+          "start_date": "2023-11-06 20:18:54.200000",
+          "duration_sec": 0.510277
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DOTNET_VERSION": "7.0.x",
+            "DOTNET_ROOT": "/Users/runner/.dotnet",
+            "NUGET": "/Users/runner/hostedtoolcache/nuget.exe/6.7.0/x64/nuget.exe"
+          },
+          "code": "dotnet restore PuppeteerSharpPdfDemo-Local.csproj",
+          "commands": [
+            {
+              "annotations": [
+                "SC-DOTNET-restore"
+              ],
+              "command": "dotnet",
+              "categories": [
+                "BUILD_SYSTEM"
+              ],
+              "args": [
+                {
+                  "content": "restore"
+                },
+                {
+                  "annotations": [
+                    "SC-DOTNET-OPTION"
+                  ],
+                  "content": "PuppeteerSharpPdfDemo-Local.csproj"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-06 20:18:54.711000",
+          "duration_sec": 4.425763
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DOTNET_VERSION": "7.0.x",
+            "DOTNET_ROOT": "/Users/runner/.dotnet",
+            "NUGET": "/Users/runner/hostedtoolcache/nuget.exe/6.7.0/x64/nuget.exe"
+          },
+          "code": "dotnet run --project PuppeteerSharpPdfDemo-Local.csproj auto-exit",
+          "commands": [
+            {
+              "annotations": [
+                "SC-DOTNET-run"
+              ],
+              "command": "dotnet",
+              "categories": [
+                "BUILD_SYSTEM"
+              ],
+              "args": [
+                {
+                  "content": "run"
+                },
+                {
+                  "annotations": [
+                    "SC-DOTNET-run-PROJECT"
+                  ],
+                  "content": "--project PuppeteerSharpPdfDemo-Local.csproj"
+                },
+                {
+                  "annotations": [
+                    "SC-DOTNET-OPTION"
+                  ],
+                  "content": "auto-exit"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-06 20:18:59.136000",
+          "duration_sec": 19.836065
+        }
+      ]
+    }
+  ],
+  "total_logs_size": 86961
+}

@@ -1,0 +1,623 @@
+{
+  "_id": "ivre/ivre_.github/workflows/maxmind.yml_1074_1",
+  "repository_name": "ivre/ivre",
+  "workflow_path": ".github/workflows/maxmind.yml",
+  "run_number": 1074,
+  "run_attempt": 1,
+  "metadata": {
+    "id": 6422684012,
+    "name": "Maxmind tests",
+    "node_id": "WFR_kwLOAW2hVc8AAAABftJhbA",
+    "head_branch": "enh-scan2db-tags",
+    "head_sha": "ba6667a2096584b0e651945ea710158d7a9e05cb",
+    "path": ".github/workflows/maxmind.yml",
+    "display_title": "CLI/scan2db: add --tags option",
+    "run_number": 1074,
+    "event": "pull_request",
+    "status": "completed",
+    "conclusion": "failure",
+    "workflow_id": 11303782,
+    "check_suite_id": 16923449079,
+    "check_suite_node_id": "CS_kwDOAW2hVc8AAAAD8LdW9w",
+    "url": "https://api.github.com/repos/ivre/ivre/actions/runs/6422684012",
+    "html_url": "https://github.com/ivre/ivre/actions/runs/6422684012",
+    "pull_requests": [],
+    "created_at": "2023-10-05T17:58:08Z",
+    "updated_at": "2023-10-05T18:04:17Z",
+    "actor": {
+      "login": "p-l-",
+      "id": 5064814,
+      "node_id": "MDQ6VXNlcjUwNjQ4MTQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5064814?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/p-l-",
+      "html_url": "https://github.com/p-l-",
+      "followers_url": "https://api.github.com/users/p-l-/followers",
+      "following_url": "https://api.github.com/users/p-l-/following{/other_user}",
+      "gists_url": "https://api.github.com/users/p-l-/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/p-l-/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/p-l-/subscriptions",
+      "organizations_url": "https://api.github.com/users/p-l-/orgs",
+      "repos_url": "https://api.github.com/users/p-l-/repos",
+      "events_url": "https://api.github.com/users/p-l-/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/p-l-/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "run_attempt": 1,
+    "referenced_workflows": [],
+    "run_started_at": "2023-10-05T17:58:08Z",
+    "triggering_actor": {
+      "login": "p-l-",
+      "id": 5064814,
+      "node_id": "MDQ6VXNlcjUwNjQ4MTQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5064814?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/p-l-",
+      "html_url": "https://github.com/p-l-",
+      "followers_url": "https://api.github.com/users/p-l-/followers",
+      "following_url": "https://api.github.com/users/p-l-/following{/other_user}",
+      "gists_url": "https://api.github.com/users/p-l-/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/p-l-/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/p-l-/subscriptions",
+      "organizations_url": "https://api.github.com/users/p-l-/orgs",
+      "repos_url": "https://api.github.com/users/p-l-/repos",
+      "events_url": "https://api.github.com/users/p-l-/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/p-l-/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "jobs_url": "https://api.github.com/repos/ivre/ivre/actions/runs/6422684012/jobs",
+    "logs_url": "https://api.github.com/repos/ivre/ivre/actions/runs/6422684012/logs",
+    "check_suite_url": "https://api.github.com/repos/ivre/ivre/check-suites/16923449079",
+    "artifacts_url": "https://api.github.com/repos/ivre/ivre/actions/runs/6422684012/artifacts",
+    "cancel_url": "https://api.github.com/repos/ivre/ivre/actions/runs/6422684012/cancel",
+    "rerun_url": "https://api.github.com/repos/ivre/ivre/actions/runs/6422684012/rerun",
+    "previous_attempt_url": null,
+    "workflow_url": "https://api.github.com/repos/ivre/ivre/actions/workflows/11303782",
+    "head_commit": {
+      "id": "ba6667a2096584b0e651945ea710158d7a9e05cb",
+      "tree_id": "b1227be36200c171ffe6c83c18cc7d1ef8fa2b60",
+      "message": "CLI/scan2db: add --tags option",
+      "timestamp": "2023-10-05T17:57:56Z",
+      "author": {
+        "name": "Pierre Lalet",
+        "email": "pierre@droids-corp.org"
+      },
+      "committer": {
+        "name": "Pierre Lalet",
+        "email": "pierre@droids-corp.org"
+      }
+    },
+    "repository": {
+      "id": 23961941,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMzk2MTk0MQ==",
+      "name": "ivre",
+      "full_name": "ivre/ivre",
+      "private": false,
+      "owner": {
+        "login": "ivre",
+        "id": 55538951,
+        "node_id": "MDEyOk9yZ2FuaXphdGlvbjU1NTM4OTUx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/55538951?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ivre",
+        "html_url": "https://github.com/ivre",
+        "followers_url": "https://api.github.com/users/ivre/followers",
+        "following_url": "https://api.github.com/users/ivre/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ivre/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ivre/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ivre/subscriptions",
+        "organizations_url": "https://api.github.com/users/ivre/orgs",
+        "repos_url": "https://api.github.com/users/ivre/repos",
+        "events_url": "https://api.github.com/users/ivre/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ivre/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/ivre/ivre",
+      "description": "Network recon framework. Build your own, self-hosted and fully-controlled alternatives to Shodan / ZoomEye / Censys and GreyNoise, run your Passive DNS service, collect and analyse network intelligence from your sensors, and much more! Uses Nmap, Masscan, Zeek, p0f, etc.",
+      "fork": false,
+      "url": "https://api.github.com/repos/ivre/ivre",
+      "forks_url": "https://api.github.com/repos/ivre/ivre/forks",
+      "keys_url": "https://api.github.com/repos/ivre/ivre/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/ivre/ivre/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/ivre/ivre/teams",
+      "hooks_url": "https://api.github.com/repos/ivre/ivre/hooks",
+      "issue_events_url": "https://api.github.com/repos/ivre/ivre/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/ivre/ivre/events",
+      "assignees_url": "https://api.github.com/repos/ivre/ivre/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/ivre/ivre/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/ivre/ivre/tags",
+      "blobs_url": "https://api.github.com/repos/ivre/ivre/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/ivre/ivre/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/ivre/ivre/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/ivre/ivre/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/ivre/ivre/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/ivre/ivre/languages",
+      "stargazers_url": "https://api.github.com/repos/ivre/ivre/stargazers",
+      "contributors_url": "https://api.github.com/repos/ivre/ivre/contributors",
+      "subscribers_url": "https://api.github.com/repos/ivre/ivre/subscribers",
+      "subscription_url": "https://api.github.com/repos/ivre/ivre/subscription",
+      "commits_url": "https://api.github.com/repos/ivre/ivre/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/ivre/ivre/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/ivre/ivre/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/ivre/ivre/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/ivre/ivre/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/ivre/ivre/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/ivre/ivre/merges",
+      "archive_url": "https://api.github.com/repos/ivre/ivre/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/ivre/ivre/downloads",
+      "issues_url": "https://api.github.com/repos/ivre/ivre/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/ivre/ivre/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/ivre/ivre/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/ivre/ivre/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/ivre/ivre/labels{/name}",
+      "releases_url": "https://api.github.com/repos/ivre/ivre/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/ivre/ivre/deployments"
+    },
+    "head_repository": {
+      "id": 28450891,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyODQ1MDg5MQ==",
+      "name": "ivre",
+      "full_name": "p-l-/ivre",
+      "private": false,
+      "owner": {
+        "login": "p-l-",
+        "id": 5064814,
+        "node_id": "MDQ6VXNlcjUwNjQ4MTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5064814?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/p-l-",
+        "html_url": "https://github.com/p-l-",
+        "followers_url": "https://api.github.com/users/p-l-/followers",
+        "following_url": "https://api.github.com/users/p-l-/following{/other_user}",
+        "gists_url": "https://api.github.com/users/p-l-/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/p-l-/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/p-l-/subscriptions",
+        "organizations_url": "https://api.github.com/users/p-l-/orgs",
+        "repos_url": "https://api.github.com/users/p-l-/repos",
+        "events_url": "https://api.github.com/users/p-l-/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/p-l-/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/p-l-/ivre",
+      "description": "Network recon framework.",
+      "fork": true,
+      "url": "https://api.github.com/repos/p-l-/ivre",
+      "forks_url": "https://api.github.com/repos/p-l-/ivre/forks",
+      "keys_url": "https://api.github.com/repos/p-l-/ivre/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/p-l-/ivre/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/p-l-/ivre/teams",
+      "hooks_url": "https://api.github.com/repos/p-l-/ivre/hooks",
+      "issue_events_url": "https://api.github.com/repos/p-l-/ivre/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/p-l-/ivre/events",
+      "assignees_url": "https://api.github.com/repos/p-l-/ivre/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/p-l-/ivre/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/p-l-/ivre/tags",
+      "blobs_url": "https://api.github.com/repos/p-l-/ivre/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/p-l-/ivre/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/p-l-/ivre/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/p-l-/ivre/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/p-l-/ivre/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/p-l-/ivre/languages",
+      "stargazers_url": "https://api.github.com/repos/p-l-/ivre/stargazers",
+      "contributors_url": "https://api.github.com/repos/p-l-/ivre/contributors",
+      "subscribers_url": "https://api.github.com/repos/p-l-/ivre/subscribers",
+      "subscription_url": "https://api.github.com/repos/p-l-/ivre/subscription",
+      "commits_url": "https://api.github.com/repos/p-l-/ivre/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/p-l-/ivre/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/p-l-/ivre/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/p-l-/ivre/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/p-l-/ivre/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/p-l-/ivre/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/p-l-/ivre/merges",
+      "archive_url": "https://api.github.com/repos/p-l-/ivre/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/p-l-/ivre/downloads",
+      "issues_url": "https://api.github.com/repos/p-l-/ivre/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/p-l-/ivre/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/p-l-/ivre/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/p-l-/ivre/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/p-l-/ivre/labels{/name}",
+      "releases_url": "https://api.github.com/repos/p-l-/ivre/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/p-l-/ivre/deployments"
+    }
+  },
+  "logs_archive": {
+    "path": "/data/logs/ivre/ivre/Maxmind_tests_8715/1074-1.tar.gz"
+  },
+  "log_insights": [
+    {
+      "file": "1_build (3.7).txt",
+      "total_lines": 1211,
+      "log_size": 104211,
+      "token_permissions": {
+        "Actions": "read",
+        "Checks": "read",
+        "Contents": "read",
+        "Deployments": "read",
+        "Discussions": "read",
+        "Issues": "read",
+        "Metadata": "read",
+        "Packages": "read",
+        "Pages": "read",
+        "PullRequests": "read",
+        "RepositoryProjects": "read",
+        "SecurityEvents": "read",
+        "Statuses": "read"
+      },
+      "image": "ubuntu-20.04",
+      "image_version": "20231002.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v2",
+          "sha": "ee0669bd1cc54295c223e0bb666b733df41de1c5",
+          "with": {
+            "fetch-depth": "0",
+            "repository": "ivre/ivre",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-05 17:58:43.175000",
+          "duration_sec": 9.751455
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "setup-python",
+          "version": "v2",
+          "sha": "e9aba2c848f5ebd159c070c61ea2c4e2b122355e",
+          "with": {
+            "python-version": "3.7",
+            "token": "***"
+          },
+          "env": {},
+          "start_date": "2023-10-05 17:58:52.926000",
+          "duration_sec": 0.222033
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/opt/hostedtoolcache/Python/3.7.17/x64",
+            "LD_LIBRARY_PATH": "/opt/hostedtoolcache/Python/3.7.17/x64/lib"
+          },
+          "code": "pip install -r requirements-maxmind.txt",
+          "commands": [
+            {
+              "annotations": [
+                "SC-PIP-INSTALL"
+              ],
+              "command": "pip",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-REQUIREMENTS"
+                  ],
+                  "content": "-r requirements-maxmind.txt"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-05 17:58:53.148000",
+          "duration_sec": 7.480606
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/opt/hostedtoolcache/Python/3.7.17/x64",
+            "LD_LIBRARY_PATH": "/opt/hostedtoolcache/Python/3.7.17/x64/lib"
+          },
+          "code": "",
+          "start_date": "2023-10-05 17:59:00.629000",
+          "duration_sec": 0.027942
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/opt/hostedtoolcache/Python/3.7.17/x64",
+            "LD_LIBRARY_PATH": "/opt/hostedtoolcache/Python/3.7.17/x64/lib"
+          },
+          "code": "/home/runner/work/ivre/ivre/./.github/actions/install/install.sh",
+          "commands": [
+            {
+              "command": "/home/runner/work/ivre/ivre/./.github/actions/install/install.sh"
+            }
+          ],
+          "start_date": "2023-10-05 17:59:00.657000",
+          "duration_sec": 62.73763
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/opt/hostedtoolcache/Python/3.7.17/x64",
+            "LD_LIBRARY_PATH": "/home/runner/work/ivre/ivre/usr/local/zeek/lib:/home/runner/work/ivre/ivre/usr/local/nfdump/lib",
+            "CI": "true",
+            "DB": "maxmind"
+          },
+          "code": "cd tests && python tests.py",
+          "commands": [
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "tests"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-PYTHON"
+              ],
+              "command": "python",
+              "categories": [
+                "DEVELOPMENT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-PYTHON-ARG"
+                  ],
+                  "content": "tests.py"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-05 18:00:03.394000",
+          "duration_sec": 248.537172
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/opt/hostedtoolcache/Python/3.7.17/x64",
+            "LD_LIBRARY_PATH": "/home/runner/work/ivre/ivre/usr/local/zeek/lib:/home/runner/work/ivre/ivre/usr/local/nfdump/lib"
+          },
+          "code": "cat /tmp/webserver.log",
+          "commands": [
+            {
+              "annotations": [
+                "SC-CAT"
+              ],
+              "command": "cat",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CAT-PATH"
+                  ],
+                  "content": "/tmp/webserver.log"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-05 18:04:11.931000",
+          "duration_sec": 0.431425
+        }
+      ]
+    },
+    {
+      "file": "2_build (3.11).txt",
+      "total_lines": 1199,
+      "log_size": 103735,
+      "token_permissions": {
+        "Actions": "read",
+        "Checks": "read",
+        "Contents": "read",
+        "Deployments": "read",
+        "Discussions": "read",
+        "Issues": "read",
+        "Metadata": "read",
+        "Packages": "read",
+        "Pages": "read",
+        "PullRequests": "read",
+        "RepositoryProjects": "read",
+        "SecurityEvents": "read",
+        "Statuses": "read"
+      },
+      "image": "ubuntu-20.04",
+      "image_version": "20231002.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v2",
+          "sha": "ee0669bd1cc54295c223e0bb666b733df41de1c5",
+          "with": {
+            "fetch-depth": "0",
+            "repository": "ivre/ivre",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-05 17:58:40.050000",
+          "duration_sec": 3.310317
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "setup-python",
+          "version": "v2",
+          "sha": "e9aba2c848f5ebd159c070c61ea2c4e2b122355e",
+          "with": {
+            "python-version": "3.11",
+            "token": "***"
+          },
+          "env": {},
+          "start_date": "2023-10-05 17:58:43.360000",
+          "duration_sec": 0.178652
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/opt/hostedtoolcache/Python/3.11.5/x64",
+            "LD_LIBRARY_PATH": "/opt/hostedtoolcache/Python/3.11.5/x64/lib"
+          },
+          "code": "pip install -r requirements-maxmind.txt",
+          "commands": [
+            {
+              "annotations": [
+                "SC-PIP-INSTALL"
+              ],
+              "command": "pip",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-REQUIREMENTS"
+                  ],
+                  "content": "-r requirements-maxmind.txt"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-05 17:58:43.539000",
+          "duration_sec": 3.551206
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/opt/hostedtoolcache/Python/3.11.5/x64",
+            "LD_LIBRARY_PATH": "/opt/hostedtoolcache/Python/3.11.5/x64/lib"
+          },
+          "code": "",
+          "start_date": "2023-10-05 17:58:47.090000",
+          "duration_sec": 0.022611
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/opt/hostedtoolcache/Python/3.11.5/x64",
+            "LD_LIBRARY_PATH": "/opt/hostedtoolcache/Python/3.11.5/x64/lib"
+          },
+          "code": "/home/runner/work/ivre/ivre/./.github/actions/install/install.sh",
+          "commands": [
+            {
+              "command": "/home/runner/work/ivre/ivre/./.github/actions/install/install.sh"
+            }
+          ],
+          "start_date": "2023-10-05 17:58:47.112000",
+          "duration_sec": 44.203238
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/opt/hostedtoolcache/Python/3.11.5/x64",
+            "LD_LIBRARY_PATH": "/home/runner/work/ivre/ivre/usr/local/zeek/lib:/home/runner/work/ivre/ivre/usr/local/nfdump/lib",
+            "CI": "true",
+            "DB": "maxmind"
+          },
+          "code": "cd tests && python tests.py",
+          "commands": [
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "tests"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-PYTHON"
+              ],
+              "command": "python",
+              "categories": [
+                "DEVELOPMENT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-PYTHON-ARG"
+                  ],
+                  "content": "tests.py"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-05 17:59:31.316000",
+          "duration_sec": 159.444678
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/opt/hostedtoolcache/Python/3.11.5/x64",
+            "LD_LIBRARY_PATH": "/home/runner/work/ivre/ivre/usr/local/zeek/lib:/home/runner/work/ivre/ivre/usr/local/nfdump/lib"
+          },
+          "code": "cat /tmp/webserver.log",
+          "commands": [
+            {
+              "annotations": [
+                "SC-CAT"
+              ],
+              "command": "cat",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CAT-PATH"
+                  ],
+                  "content": "/tmp/webserver.log"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-05 18:02:10.760000",
+          "duration_sec": 0.265179
+        }
+      ]
+    }
+  ],
+  "total_logs_size": 209771
+}

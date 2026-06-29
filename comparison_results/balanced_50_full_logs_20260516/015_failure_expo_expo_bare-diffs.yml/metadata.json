@@ -1,0 +1,28 @@
+{
+  "index": 15,
+  "label": "failure",
+  "run_id": "expo/expo_.github/workflows/bare-diffs.yml_22_1",
+  "repo": "expo/expo",
+  "workflow_path": ".github/workflows/bare-diffs.yml",
+  "run_number": "22",
+  "attempt": "1",
+  "scan_line": 317438,
+  "case_dir": "/home/guc_alaa/comparison_results/balanced_50_full_logs_20260516/015_failure_expo_expo_bare-diffs.yml",
+  "full_log_path": "/home/guc_alaa/comparison_results/balanced_50_full_logs_20260516/015_failure_expo_expo_bare-diffs.yml/full_log.txt",
+  "tarball": "logs/expo/expo/Check_Tempalte_Bare_Minimum_Diffs_0f10/22-1.tar.gz",
+  "n_job_logs": 11,
+  "job_log_files": [
+    "bare-diffs/14_Post 👀 Checkout.txt",
+    "-2147483648_bare-diffs.txt",
+    "bare-diffs/4_♻️ Restore caches.txt",
+    "bare-diffs/1_Set up job.txt",
+    "bare-diffs/5_➕ Add `bin` to GITHUB_PATH.txt",
+    "bare-diffs/2_👀 Checkout.txt",
+    "bare-diffs/12_Post ♻️ Restore caches.txt",
+    "bare-diffs/3_⬢ Setup Node.txt",
+    "0_bare-diffs.txt",
+    "bare-diffs/35_Complete job.txt",
+    "bare-diffs/6_🧐 Check diffs.txt"
+  ],
+  "full_log_chars": 111492
+}

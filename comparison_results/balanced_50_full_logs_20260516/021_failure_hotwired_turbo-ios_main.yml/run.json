@@ -1,0 +1,370 @@
+{
+  "_id": "hotwired/turbo-ios_.github/workflows/main.yml_160_1",
+  "repository_name": "hotwired/turbo-ios",
+  "workflow_path": ".github/workflows/main.yml",
+  "run_number": 160,
+  "run_attempt": 1,
+  "time_to_import": 77244.591452,
+  "metadata": {
+    "id": 6835591971,
+    "name": "CI",
+    "node_id": "WFR_kwLOEunbOM8AAAABl27bIw",
+    "head_branch": "turbo-navigator",
+    "head_sha": "f383c49120518ae0f926119135cbfb731b0137cb",
+    "path": ".github/workflows/main.yml",
+    "display_title": "Upstream Turbo Navigator",
+    "run_number": 160,
+    "event": "push",
+    "status": "completed",
+    "conclusion": "failure",
+    "workflow_id": 3936786,
+    "check_suite_id": 18108578688,
+    "check_suite_node_id": "CS_kwDOEunbOM8AAAAEN1r7gA",
+    "url": "https://api.github.com/repos/hotwired/turbo-ios/actions/runs/6835591971",
+    "html_url": "https://github.com/hotwired/turbo-ios/actions/runs/6835591971",
+    "pull_requests": [
+      {
+        "url": "https://api.github.com/repos/hotwired/turbo-ios/pulls/158",
+        "id": 1597474144,
+        "number": 158,
+        "head": {
+          "ref": "turbo-navigator",
+          "sha": "f383c49120518ae0f926119135cbfb731b0137cb",
+          "repo": {
+            "id": 317315896,
+            "url": "https://api.github.com/repos/hotwired/turbo-ios",
+            "name": "turbo-ios"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "c476bac66f260adbfe930ed9a151e7637973ff99",
+          "repo": {
+            "id": 317315896,
+            "url": "https://api.github.com/repos/hotwired/turbo-ios",
+            "name": "turbo-ios"
+          }
+        }
+      }
+    ],
+    "created_at": "2023-11-11T17:19:57Z",
+    "updated_at": "2023-11-11T17:28:14Z",
+    "actor": {
+      "login": "joemasilotti",
+      "id": 2092156,
+      "node_id": "MDQ6VXNlcjIwOTIxNTY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2092156?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/joemasilotti",
+      "html_url": "https://github.com/joemasilotti",
+      "followers_url": "https://api.github.com/users/joemasilotti/followers",
+      "following_url": "https://api.github.com/users/joemasilotti/following{/other_user}",
+      "gists_url": "https://api.github.com/users/joemasilotti/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/joemasilotti/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/joemasilotti/subscriptions",
+      "organizations_url": "https://api.github.com/users/joemasilotti/orgs",
+      "repos_url": "https://api.github.com/users/joemasilotti/repos",
+      "events_url": "https://api.github.com/users/joemasilotti/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/joemasilotti/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "run_attempt": 1,
+    "referenced_workflows": [],
+    "run_started_at": "2023-11-11T17:19:57Z",
+    "triggering_actor": {
+      "login": "joemasilotti",
+      "id": 2092156,
+      "node_id": "MDQ6VXNlcjIwOTIxNTY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2092156?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/joemasilotti",
+      "html_url": "https://github.com/joemasilotti",
+      "followers_url": "https://api.github.com/users/joemasilotti/followers",
+      "following_url": "https://api.github.com/users/joemasilotti/following{/other_user}",
+      "gists_url": "https://api.github.com/users/joemasilotti/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/joemasilotti/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/joemasilotti/subscriptions",
+      "organizations_url": "https://api.github.com/users/joemasilotti/orgs",
+      "repos_url": "https://api.github.com/users/joemasilotti/repos",
+      "events_url": "https://api.github.com/users/joemasilotti/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/joemasilotti/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "jobs_url": "https://api.github.com/repos/hotwired/turbo-ios/actions/runs/6835591971/jobs",
+    "logs_url": "https://api.github.com/repos/hotwired/turbo-ios/actions/runs/6835591971/logs",
+    "check_suite_url": "https://api.github.com/repos/hotwired/turbo-ios/check-suites/18108578688",
+    "artifacts_url": "https://api.github.com/repos/hotwired/turbo-ios/actions/runs/6835591971/artifacts",
+    "cancel_url": "https://api.github.com/repos/hotwired/turbo-ios/actions/runs/6835591971/cancel",
+    "rerun_url": "https://api.github.com/repos/hotwired/turbo-ios/actions/runs/6835591971/rerun",
+    "previous_attempt_url": null,
+    "workflow_url": "https://api.github.com/repos/hotwired/turbo-ios/actions/workflows/3936786",
+    "head_commit": {
+      "id": "f383c49120518ae0f926119135cbfb731b0137cb",
+      "tree_id": "71ce5a8a2806aa31eb9a24ad9d193d3212337d44",
+      "message": "Upstream Turbo Navigator",
+      "timestamp": "2023-11-11T17:19:24Z",
+      "author": {
+        "name": "Joe Masilotti",
+        "email": "joe@masilotti.com"
+      },
+      "committer": {
+        "name": "Joe Masilotti",
+        "email": "joe@masilotti.com"
+      }
+    },
+    "repository": {
+      "id": 317315896,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzMTczMTU4OTY=",
+      "name": "turbo-ios",
+      "full_name": "hotwired/turbo-ios",
+      "private": false,
+      "owner": {
+        "login": "hotwired",
+        "id": 75388917,
+        "node_id": "MDEyOk9yZ2FuaXphdGlvbjc1Mzg4OTE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/75388917?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hotwired",
+        "html_url": "https://github.com/hotwired",
+        "followers_url": "https://api.github.com/users/hotwired/followers",
+        "following_url": "https://api.github.com/users/hotwired/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hotwired/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hotwired/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hotwired/subscriptions",
+        "organizations_url": "https://api.github.com/users/hotwired/orgs",
+        "repos_url": "https://api.github.com/users/hotwired/repos",
+        "events_url": "https://api.github.com/users/hotwired/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hotwired/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/hotwired/turbo-ios",
+      "description": "iOS framework for making Turbo native apps",
+      "fork": false,
+      "url": "https://api.github.com/repos/hotwired/turbo-ios",
+      "forks_url": "https://api.github.com/repos/hotwired/turbo-ios/forks",
+      "keys_url": "https://api.github.com/repos/hotwired/turbo-ios/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/hotwired/turbo-ios/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/hotwired/turbo-ios/teams",
+      "hooks_url": "https://api.github.com/repos/hotwired/turbo-ios/hooks",
+      "issue_events_url": "https://api.github.com/repos/hotwired/turbo-ios/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/hotwired/turbo-ios/events",
+      "assignees_url": "https://api.github.com/repos/hotwired/turbo-ios/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/hotwired/turbo-ios/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/hotwired/turbo-ios/tags",
+      "blobs_url": "https://api.github.com/repos/hotwired/turbo-ios/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/hotwired/turbo-ios/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/hotwired/turbo-ios/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/hotwired/turbo-ios/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/hotwired/turbo-ios/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/hotwired/turbo-ios/languages",
+      "stargazers_url": "https://api.github.com/repos/hotwired/turbo-ios/stargazers",
+      "contributors_url": "https://api.github.com/repos/hotwired/turbo-ios/contributors",
+      "subscribers_url": "https://api.github.com/repos/hotwired/turbo-ios/subscribers",
+      "subscription_url": "https://api.github.com/repos/hotwired/turbo-ios/subscription",
+      "commits_url": "https://api.github.com/repos/hotwired/turbo-ios/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/hotwired/turbo-ios/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/hotwired/turbo-ios/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/hotwired/turbo-ios/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/hotwired/turbo-ios/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/hotwired/turbo-ios/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/hotwired/turbo-ios/merges",
+      "archive_url": "https://api.github.com/repos/hotwired/turbo-ios/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/hotwired/turbo-ios/downloads",
+      "issues_url": "https://api.github.com/repos/hotwired/turbo-ios/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/hotwired/turbo-ios/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/hotwired/turbo-ios/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/hotwired/turbo-ios/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/hotwired/turbo-ios/labels{/name}",
+      "releases_url": "https://api.github.com/repos/hotwired/turbo-ios/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/hotwired/turbo-ios/deployments"
+    },
+    "head_repository": {
+      "id": 317315896,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzMTczMTU4OTY=",
+      "name": "turbo-ios",
+      "full_name": "hotwired/turbo-ios",
+      "private": false,
+      "owner": {
+        "login": "hotwired",
+        "id": 75388917,
+        "node_id": "MDEyOk9yZ2FuaXphdGlvbjc1Mzg4OTE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/75388917?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hotwired",
+        "html_url": "https://github.com/hotwired",
+        "followers_url": "https://api.github.com/users/hotwired/followers",
+        "following_url": "https://api.github.com/users/hotwired/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hotwired/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hotwired/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hotwired/subscriptions",
+        "organizations_url": "https://api.github.com/users/hotwired/orgs",
+        "repos_url": "https://api.github.com/users/hotwired/repos",
+        "events_url": "https://api.github.com/users/hotwired/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hotwired/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/hotwired/turbo-ios",
+      "description": "iOS framework for making Turbo native apps",
+      "fork": false,
+      "url": "https://api.github.com/repos/hotwired/turbo-ios",
+      "forks_url": "https://api.github.com/repos/hotwired/turbo-ios/forks",
+      "keys_url": "https://api.github.com/repos/hotwired/turbo-ios/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/hotwired/turbo-ios/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/hotwired/turbo-ios/teams",
+      "hooks_url": "https://api.github.com/repos/hotwired/turbo-ios/hooks",
+      "issue_events_url": "https://api.github.com/repos/hotwired/turbo-ios/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/hotwired/turbo-ios/events",
+      "assignees_url": "https://api.github.com/repos/hotwired/turbo-ios/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/hotwired/turbo-ios/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/hotwired/turbo-ios/tags",
+      "blobs_url": "https://api.github.com/repos/hotwired/turbo-ios/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/hotwired/turbo-ios/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/hotwired/turbo-ios/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/hotwired/turbo-ios/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/hotwired/turbo-ios/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/hotwired/turbo-ios/languages",
+      "stargazers_url": "https://api.github.com/repos/hotwired/turbo-ios/stargazers",
+      "contributors_url": "https://api.github.com/repos/hotwired/turbo-ios/contributors",
+      "subscribers_url": "https://api.github.com/repos/hotwired/turbo-ios/subscribers",
+      "subscription_url": "https://api.github.com/repos/hotwired/turbo-ios/subscription",
+      "commits_url": "https://api.github.com/repos/hotwired/turbo-ios/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/hotwired/turbo-ios/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/hotwired/turbo-ios/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/hotwired/turbo-ios/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/hotwired/turbo-ios/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/hotwired/turbo-ios/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/hotwired/turbo-ios/merges",
+      "archive_url": "https://api.github.com/repos/hotwired/turbo-ios/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/hotwired/turbo-ios/downloads",
+      "issues_url": "https://api.github.com/repos/hotwired/turbo-ios/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/hotwired/turbo-ios/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/hotwired/turbo-ios/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/hotwired/turbo-ios/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/hotwired/turbo-ios/labels{/name}",
+      "releases_url": "https://api.github.com/repos/hotwired/turbo-ios/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/hotwired/turbo-ios/deployments"
+    }
+  },
+  "logs_archive": {
+    "path": "/data/logs/hotwired/turbo-ios/CI_fe8e/160-1.tar.gz"
+  },
+  "log_insights": [
+    {
+      "file": "0_test.txt",
+      "total_lines": 268,
+      "log_size": 22735,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "macos-13",
+      "image_version": "20231025.2",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v4",
+          "sha": "b4ffde65f46336ab88eb53be808477a3936bae11",
+          "with": {
+            "repository": "hotwired/turbo-ios",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "show-progress": "true",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-11-11 17:20:07.319000",
+          "duration_sec": 1.478498
+        },
+        {
+          "type": "action",
+          "repository": "maxim-lobanov",
+          "action": "setup-xcode",
+          "version": "v1",
+          "sha": "60606e260d2fc5762a71e64e74b2174e8ea3c8bd",
+          "with": {
+            "xcode-version": "latest-stable"
+          },
+          "env": {},
+          "start_date": "2023-11-11 17:20:08.797000",
+          "duration_sec": 0.174923
+        },
+        {
+          "type": "shell",
+          "env": {
+            "MD_APPLE_SDK_ROOT": "/Applications/Xcode_15.0.1.app"
+          },
+          "code": "xcodebuild test -scheme Turbo -destination \"name=iPhone 15 Pro\" | xcpretty && exit ${PIPESTATUS[0]}",
+          "commands": [
+            {
+              "command": "xcodebuild",
+              "args": [
+                {
+                  "content": "test"
+                },
+                {
+                  "content": "-scheme"
+                },
+                {
+                  "content": "Turbo"
+                },
+                {
+                  "content": "-destination"
+                },
+                {
+                  "content": "\"name=iPhone 15 Pro\""
+                }
+              ]
+            },
+            {
+              "command": "xcpretty"
+            },
+            {
+              "annotations": [
+                "SC-EXIT"
+              ],
+              "command": "exit",
+              "categories": [
+                "CONTROL_FLOW"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-EXIT-CODE"
+                  ],
+                  "content": "${PIPESTATUS}"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-11 17:20:08.972000",
+          "duration_sec": 481.074937
+        }
+      ]
+    }
+  ],
+  "total_logs_size": 23355
+}

@@ -1,0 +1,563 @@
+{
+  "_id": "lancedb/lance_.github/workflows/duckdb.yml_980_1",
+  "repository_name": "lancedb/lance",
+  "workflow_path": ".github/workflows/duckdb.yml",
+  "run_number": 980,
+  "run_attempt": 1,
+  "time_to_import": 7224.845898,
+  "metadata": {
+    "id": 6832163132,
+    "name": "DuckDB Extension",
+    "node_id": "WFR_kwLOHn_KdM8AAAABlzqJPA",
+    "head_branch": "main",
+    "head_sha": "84e4ce55f869a833c42239bfd6ba6176aa5840d3",
+    "path": ".github/workflows/duckdb.yml",
+    "display_title": "feat: make Dataset::nearest() accepts arbitrary query type (#1582)",
+    "run_number": 980,
+    "event": "push",
+    "status": "completed",
+    "conclusion": "failure",
+    "workflow_id": 38110176,
+    "check_suite_id": 18101713822,
+    "check_suite_node_id": "CS_kwDOHn_KdM8AAAAENvI7ng",
+    "url": "https://api.github.com/repos/lancedb/lance/actions/runs/6832163132",
+    "html_url": "https://github.com/lancedb/lance/actions/runs/6832163132",
+    "pull_requests": [],
+    "created_at": "2023-11-11T04:42:00Z",
+    "updated_at": "2023-11-11T05:12:51Z",
+    "actor": {
+      "login": "eddyxu",
+      "id": 17097,
+      "node_id": "MDQ6VXNlcjE3MDk3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/17097?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/eddyxu",
+      "html_url": "https://github.com/eddyxu",
+      "followers_url": "https://api.github.com/users/eddyxu/followers",
+      "following_url": "https://api.github.com/users/eddyxu/following{/other_user}",
+      "gists_url": "https://api.github.com/users/eddyxu/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/eddyxu/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/eddyxu/subscriptions",
+      "organizations_url": "https://api.github.com/users/eddyxu/orgs",
+      "repos_url": "https://api.github.com/users/eddyxu/repos",
+      "events_url": "https://api.github.com/users/eddyxu/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/eddyxu/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "run_attempt": 1,
+    "referenced_workflows": [],
+    "run_started_at": "2023-11-11T04:42:00Z",
+    "triggering_actor": {
+      "login": "eddyxu",
+      "id": 17097,
+      "node_id": "MDQ6VXNlcjE3MDk3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/17097?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/eddyxu",
+      "html_url": "https://github.com/eddyxu",
+      "followers_url": "https://api.github.com/users/eddyxu/followers",
+      "following_url": "https://api.github.com/users/eddyxu/following{/other_user}",
+      "gists_url": "https://api.github.com/users/eddyxu/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/eddyxu/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/eddyxu/subscriptions",
+      "organizations_url": "https://api.github.com/users/eddyxu/orgs",
+      "repos_url": "https://api.github.com/users/eddyxu/repos",
+      "events_url": "https://api.github.com/users/eddyxu/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/eddyxu/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "jobs_url": "https://api.github.com/repos/lancedb/lance/actions/runs/6832163132/jobs",
+    "logs_url": "https://api.github.com/repos/lancedb/lance/actions/runs/6832163132/logs",
+    "check_suite_url": "https://api.github.com/repos/lancedb/lance/check-suites/18101713822",
+    "artifacts_url": "https://api.github.com/repos/lancedb/lance/actions/runs/6832163132/artifacts",
+    "cancel_url": "https://api.github.com/repos/lancedb/lance/actions/runs/6832163132/cancel",
+    "rerun_url": "https://api.github.com/repos/lancedb/lance/actions/runs/6832163132/rerun",
+    "previous_attempt_url": null,
+    "workflow_url": "https://api.github.com/repos/lancedb/lance/actions/workflows/38110176",
+    "head_commit": {
+      "id": "84e4ce55f869a833c42239bfd6ba6176aa5840d3",
+      "tree_id": "e915aa053df18061e056df019727b1dadb5abb1a",
+      "message": "feat: make Dataset::nearest() accepts arbitrary query type (#1582)\n\n* Also makes all distant function returns `f32`, because it is the\r\nfastest type to do sorting later.",
+      "timestamp": "2023-11-11T04:41:57Z",
+      "author": {
+        "name": "Lei Xu",
+        "email": "lei@lancedb.com"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com"
+      }
+    },
+    "repository": {
+      "id": 511691380,
+      "node_id": "R_kgDOHn_KdA",
+      "name": "lance",
+      "full_name": "lancedb/lance",
+      "private": false,
+      "owner": {
+        "login": "lancedb",
+        "id": 108903835,
+        "node_id": "O_kgDOBn29mw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/108903835?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/lancedb",
+        "html_url": "https://github.com/lancedb",
+        "followers_url": "https://api.github.com/users/lancedb/followers",
+        "following_url": "https://api.github.com/users/lancedb/following{/other_user}",
+        "gists_url": "https://api.github.com/users/lancedb/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/lancedb/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/lancedb/subscriptions",
+        "organizations_url": "https://api.github.com/users/lancedb/orgs",
+        "repos_url": "https://api.github.com/users/lancedb/repos",
+        "events_url": "https://api.github.com/users/lancedb/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/lancedb/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/lancedb/lance",
+      "description": "Modern columnar data format for ML and LLMs implemented in Rust. Convert from parquet in 2 lines of code for 100x faster random access, vector index, and data versioning. Compatible with Pandas, DuckDB, Polars, Pyarrow, with more integrations coming..",
+      "fork": false,
+      "url": "https://api.github.com/repos/lancedb/lance",
+      "forks_url": "https://api.github.com/repos/lancedb/lance/forks",
+      "keys_url": "https://api.github.com/repos/lancedb/lance/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/lancedb/lance/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/lancedb/lance/teams",
+      "hooks_url": "https://api.github.com/repos/lancedb/lance/hooks",
+      "issue_events_url": "https://api.github.com/repos/lancedb/lance/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/lancedb/lance/events",
+      "assignees_url": "https://api.github.com/repos/lancedb/lance/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/lancedb/lance/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/lancedb/lance/tags",
+      "blobs_url": "https://api.github.com/repos/lancedb/lance/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/lancedb/lance/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/lancedb/lance/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/lancedb/lance/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/lancedb/lance/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/lancedb/lance/languages",
+      "stargazers_url": "https://api.github.com/repos/lancedb/lance/stargazers",
+      "contributors_url": "https://api.github.com/repos/lancedb/lance/contributors",
+      "subscribers_url": "https://api.github.com/repos/lancedb/lance/subscribers",
+      "subscription_url": "https://api.github.com/repos/lancedb/lance/subscription",
+      "commits_url": "https://api.github.com/repos/lancedb/lance/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/lancedb/lance/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/lancedb/lance/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/lancedb/lance/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/lancedb/lance/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/lancedb/lance/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/lancedb/lance/merges",
+      "archive_url": "https://api.github.com/repos/lancedb/lance/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/lancedb/lance/downloads",
+      "issues_url": "https://api.github.com/repos/lancedb/lance/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/lancedb/lance/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/lancedb/lance/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/lancedb/lance/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/lancedb/lance/labels{/name}",
+      "releases_url": "https://api.github.com/repos/lancedb/lance/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/lancedb/lance/deployments"
+    },
+    "head_repository": {
+      "id": 511691380,
+      "node_id": "R_kgDOHn_KdA",
+      "name": "lance",
+      "full_name": "lancedb/lance",
+      "private": false,
+      "owner": {
+        "login": "lancedb",
+        "id": 108903835,
+        "node_id": "O_kgDOBn29mw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/108903835?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/lancedb",
+        "html_url": "https://github.com/lancedb",
+        "followers_url": "https://api.github.com/users/lancedb/followers",
+        "following_url": "https://api.github.com/users/lancedb/following{/other_user}",
+        "gists_url": "https://api.github.com/users/lancedb/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/lancedb/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/lancedb/subscriptions",
+        "organizations_url": "https://api.github.com/users/lancedb/orgs",
+        "repos_url": "https://api.github.com/users/lancedb/repos",
+        "events_url": "https://api.github.com/users/lancedb/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/lancedb/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/lancedb/lance",
+      "description": "Modern columnar data format for ML and LLMs implemented in Rust. Convert from parquet in 2 lines of code for 100x faster random access, vector index, and data versioning. Compatible with Pandas, DuckDB, Polars, Pyarrow, with more integrations coming..",
+      "fork": false,
+      "url": "https://api.github.com/repos/lancedb/lance",
+      "forks_url": "https://api.github.com/repos/lancedb/lance/forks",
+      "keys_url": "https://api.github.com/repos/lancedb/lance/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/lancedb/lance/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/lancedb/lance/teams",
+      "hooks_url": "https://api.github.com/repos/lancedb/lance/hooks",
+      "issue_events_url": "https://api.github.com/repos/lancedb/lance/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/lancedb/lance/events",
+      "assignees_url": "https://api.github.com/repos/lancedb/lance/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/lancedb/lance/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/lancedb/lance/tags",
+      "blobs_url": "https://api.github.com/repos/lancedb/lance/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/lancedb/lance/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/lancedb/lance/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/lancedb/lance/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/lancedb/lance/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/lancedb/lance/languages",
+      "stargazers_url": "https://api.github.com/repos/lancedb/lance/stargazers",
+      "contributors_url": "https://api.github.com/repos/lancedb/lance/contributors",
+      "subscribers_url": "https://api.github.com/repos/lancedb/lance/subscribers",
+      "subscription_url": "https://api.github.com/repos/lancedb/lance/subscription",
+      "commits_url": "https://api.github.com/repos/lancedb/lance/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/lancedb/lance/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/lancedb/lance/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/lancedb/lance/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/lancedb/lance/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/lancedb/lance/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/lancedb/lance/merges",
+      "archive_url": "https://api.github.com/repos/lancedb/lance/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/lancedb/lance/downloads",
+      "issues_url": "https://api.github.com/repos/lancedb/lance/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/lancedb/lance/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/lancedb/lance/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/lancedb/lance/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/lancedb/lance/labels{/name}",
+      "releases_url": "https://api.github.com/repos/lancedb/lance/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/lancedb/lance/deployments"
+    }
+  },
+  "logs_archive": {
+    "path": "/data/logs/lancedb/lance/DuckDB_Extension_8493/980-1.tar.gz"
+  },
+  "log_insights": [
+    {
+      "file": "0_Linux.txt",
+      "total_lines": 2423,
+      "log_size": 220312,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231030.2.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "lancedb/lance",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-11-11 04:42:11.030000",
+          "duration_sec": 1.131359
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "sudo apt update\nsudo apt install -y protobuf-compiler libssl-dev",
+          "commands": [
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-APT-UPDATE"
+              ],
+              "command": "apt",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "UPDATE_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "update"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-APT-INSTALL"
+              ],
+              "command": "apt",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-APT-F-YES"
+                  ],
+                  "content": "-y"
+                },
+                {
+                  "annotations": [
+                    "SC-APT-PACKAGE"
+                  ],
+                  "content": "protobuf-compiler"
+                },
+                {
+                  "annotations": [
+                    "SC-APT-PACKAGE"
+                  ],
+                  "content": "libssl-dev"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-11 04:42:12.162000",
+          "duration_sec": 14.232291
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "git submodule init\ngit submodule update",
+          "commands": [
+            {
+              "annotations": [
+                "SC-GIT-SUBMODULE-INIT"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL"
+              ],
+              "args": [
+                {
+                  "content": "submodule"
+                },
+                {
+                  "content": "init"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-GIT-SUBMODULE-UPDATE"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL"
+              ],
+              "args": [
+                {
+                  "content": "submodule"
+                },
+                {
+                  "content": "update"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-11 04:42:26.394000",
+          "duration_sec": 42.641996
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "make build",
+          "commands": [
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "build"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-11 04:43:09.036000",
+          "duration_sec": 1779.783152
+        }
+      ]
+    },
+    {
+      "file": "0_MacOS.txt",
+      "total_lines": 1713,
+      "log_size": 135351,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "macos-13",
+      "image_version": "20231025.2",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "lancedb/lance",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-11-11 04:42:12.253000",
+          "duration_sec": 2.866869
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "brew install protobuf",
+          "commands": [
+            {
+              "command": "brew",
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "content": "protobuf"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-11 04:42:15.120000",
+          "duration_sec": 23.730249
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "git submodule init\ngit submodule update",
+          "commands": [
+            {
+              "annotations": [
+                "SC-GIT-SUBMODULE-INIT"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL"
+              ],
+              "args": [
+                {
+                  "content": "submodule"
+                },
+                {
+                  "content": "init"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-GIT-SUBMODULE-UPDATE"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL"
+              ],
+              "args": [
+                {
+                  "content": "submodule"
+                },
+                {
+                  "content": "update"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-11 04:42:38.850000",
+          "duration_sec": 55.287858
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "make build",
+          "commands": [
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "build"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-11 04:43:34.138000",
+          "duration_sec": 1066.105165
+        }
+      ]
+    }
+  ],
+  "total_logs_size": 356580
+}

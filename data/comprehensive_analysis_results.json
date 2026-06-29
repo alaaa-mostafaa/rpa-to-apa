@@ -1,0 +1,488 @@
+{
+  "datasets": {
+    "5000 Cases Dataset (All)": {
+      "size": 5000,
+      "repos_count": 1561,
+      "top_repos": [
+        [
+          "iawia002/annie",
+          122
+        ],
+        [
+          "harisekhon/dockerfiles",
+          53
+        ],
+        [
+          "google/opensk",
+          43
+        ],
+        [
+          "sixeyed/kiamol",
+          39
+        ],
+        [
+          "mocleiri/tensorflow-micropython-examples",
+          29
+        ],
+        [
+          "ivy-dl/ivy",
+          25
+        ],
+        [
+          "huawei-noah/smarts",
+          23
+        ],
+        [
+          "oneuptime/oneuptime",
+          22
+        ],
+        [
+          "prestashop/prestashop",
+          22
+        ],
+        [
+          "wangzhaode/chatglm-mnn",
+          20
+        ]
+      ],
+      "branches": {
+        "master": 1040,
+        "main": 747,
+        "develop": 107,
+        "dev": 74,
+        "feature/126-microlite-on-tflite-micro-esp-examples": 29
+      },
+      "events": {
+        "pull_request": 2040,
+        "push": 1699,
+        "schedule": 711,
+        "workflow_dispatch": 170,
+        "release": 153
+      },
+      "conclusions": {
+        "failure": 5000
+      },
+      "detections": {
+        "job_level_fallback": 4808,
+        "per_step_error": 188,
+        "single_step_inferred": 4
+      },
+      "protected_branches": {
+        "false": 3170,
+        "true": 1830
+      },
+      "tooling_artifacts": {
+        "false": 4988,
+        "true": 12
+      },
+      "avg_failed_jobs": 4.3878,
+      "avg_total_jobs": 4.3888,
+      "avg_failed_jobs_ratio": 0.9999848484848484,
+      "avg_steps_extracted": 1.0,
+      "avg_lines_extracted": 204.6168,
+      "avg_markers_found": 33.2918,
+      "strategies": {
+        "error_marker": 3863,
+        "group_fallback": 1132,
+        "none": 5
+      },
+      "cases_with_files": 2018,
+      "pct_cases_with_files": 40.36,
+      "unique_files_extracted": 2675,
+      "file_types": {
+        "Python Source (.py)": 1964,
+        "JVM/Java Source (.java/.kt/.scala)": 890,
+        "JS/TS Source (.js/.ts/.jsx/.tsx)": 868,
+        "Other / Unclassified": 414,
+        "Go Source (.go)": 279,
+        "CI Workflows (.yml/.yaml)": 248,
+        "JS/TS Manifest (package.json)": 199,
+        "Go Manifest (go.mod)": 198,
+        "Docker Manifest (Dockerfile)": 172,
+        "PHP Source (.php)": 151,
+        "C/C++ Source (.c/.cpp/.cc/.h)": 128,
+        "Python Manifest (pyproject.toml)": 124,
+        "Python Manifest (requirements.txt)": 119,
+        "Rust Source (.rs)": 91,
+        "JS/TS Manifest (package-lock.json)": 77,
+        "Build Manifest (Makefile)": 62,
+        "Ruby Manifest (Gemfile)": 43,
+        "Ruby Source (.rb)": 41,
+        "C# Source (.cs)": 40,
+        "Rust Manifest (Cargo.toml)": 37,
+        "JVM/Java Manifest (pom.xml)": 36,
+        "PHP Manifest (composer.json)": 28,
+        "Rust Manifest (Cargo.lock)": 24,
+        "JVM/Java Manifest (build.gradle)": 23,
+        "JS/TS Manifest (yarn.lock)": 22,
+        "PHP Manifest (composer.lock)": 13,
+        "Go Manifest (go.sum)": 9,
+        "Shell Script (.sh)": 8,
+        "Python Manifest (Pipfile)": 5,
+        "Python Manifest (poetry.lock)": 2
+      },
+      "top_specific_files": [
+        [
+          "package.json",
+          199
+        ],
+        [
+          "go.mod",
+          198
+        ],
+        [
+          "Dockerfile",
+          172
+        ],
+        [
+          "pyproject.toml",
+          124
+        ],
+        [
+          "requirements.txt",
+          119
+        ],
+        [
+          "utils.go",
+          111
+        ],
+        [
+          "setup.py",
+          93
+        ],
+        [
+          "package-lock.json",
+          77
+        ],
+        [
+          "Makefile",
+          62
+        ],
+        [
+          "Gemfile",
+          43
+        ],
+        [
+          "docker-compose.yml",
+          39
+        ],
+        [
+          "Cargo.toml",
+          37
+        ],
+        [
+          "pom.xml",
+          36
+        ],
+        [
+          "index.js",
+          32
+        ],
+        [
+          "composer.json",
+          28
+        ],
+        [
+          "__init__.py",
+          27
+        ],
+        [
+          "Cargo.lock",
+          24
+        ],
+        [
+          "build.gradle",
+          23
+        ],
+        [
+          "yarn.lock",
+          22
+        ],
+        [
+          "DefaultBuildOperationRunner.java",
+          19
+        ]
+      ]
+    },
+    "300 Scorable Samples": {
+      "size": 300,
+      "repos_count": 300,
+      "top_repos": [
+        [
+          "netflix/photon",
+          1
+        ],
+        [
+          "assert-kth/depclean",
+          1
+        ],
+        [
+          "near/rainbow-bridge",
+          1
+        ],
+        [
+          "leancodepl/patrol",
+          1
+        ],
+        [
+          "ibm/zshot",
+          1
+        ],
+        [
+          "unplugin/unplugin-vue-components",
+          1
+        ],
+        [
+          "shelf-nu/shelf.nu",
+          1
+        ],
+        [
+          "bannerlord-coop-team/bannerlordcoop",
+          1
+        ],
+        [
+          "technote-space/workflow-conclusion-action",
+          1
+        ],
+        [
+          "thekevinscott/upscalerjs",
+          1
+        ]
+      ],
+      "branches": {
+        "master": 53,
+        "main": 48,
+        "develop": 7,
+        "dev": 7,
+        "beta": 3
+      },
+      "events": {
+        "push": 115,
+        "pull_request": 114,
+        "schedule": 23,
+        "release": 18,
+        "workflow_dispatch": 16
+      },
+      "conclusions": {
+        "failure": 300
+      },
+      "detections": {
+        "job_level_fallback": 292,
+        "per_step_error": 8
+      },
+      "protected_branches": {
+        "false": 196,
+        "true": 104
+      },
+      "tooling_artifacts": {
+        "false": 299,
+        "true": 1
+      },
+      "avg_failed_jobs": 4.04,
+      "avg_total_jobs": 4.04,
+      "avg_failed_jobs_ratio": 1.0,
+      "avg_steps_extracted": 1.0,
+      "avg_lines_extracted": 223.76666666666668,
+      "avg_markers_found": 1.99,
+      "strategies": {
+        "error_marker": 233,
+        "group_fallback": 67
+      },
+      "cases_with_files": 125,
+      "pct_cases_with_files": 41.66666666666667,
+      "unique_files_extracted": 352,
+      "file_types": {
+        "Python Source (.py)": 174,
+        "JS/TS Source (.js/.ts/.jsx/.tsx)": 52,
+        "Other / Unclassified": 28,
+        "JVM/Java Source (.java/.kt/.scala)": 27,
+        "C/C++ Source (.c/.cpp/.cc/.h)": 21,
+        "Go Source (.go)": 21,
+        "JS/TS Manifest (package.json)": 17,
+        "Docker Manifest (Dockerfile)": 9,
+        "CI Workflows (.yml/.yaml)": 8,
+        "Python Manifest (pyproject.toml)": 8,
+        "PHP Source (.php)": 6,
+        "Go Manifest (go.mod)": 6,
+        "Python Manifest (requirements.txt)": 5,
+        "PHP Manifest (composer.json)": 5,
+        "C# Source (.cs)": 3,
+        "JVM/Java Manifest (build.gradle)": 2,
+        "JVM/Java Manifest (pom.xml)": 2,
+        "Go Manifest (go.sum)": 2,
+        "PHP Manifest (composer.lock)": 2,
+        "JS/TS Manifest (package-lock.json)": 2,
+        "Ruby Manifest (Gemfile)": 2,
+        "Build Manifest (Makefile)": 1,
+        "Rust Manifest (Cargo.toml)": 1,
+        "JS/TS Manifest (yarn.lock)": 1,
+        "Shell Script (.sh)": 1,
+        "Rust Source (.rs)": 1
+      },
+      "top_specific_files": [
+        [
+          "package.json",
+          17
+        ],
+        [
+          "Dockerfile",
+          9
+        ],
+        [
+          "pyproject.toml",
+          8
+        ],
+        [
+          "go.mod",
+          6
+        ],
+        [
+          "requirements.txt",
+          5
+        ],
+        [
+          "composer.json",
+          5
+        ],
+        [
+          "setup.py",
+          5
+        ],
+        [
+          "index.ts",
+          3
+        ],
+        [
+          "test_basic.py",
+          3
+        ],
+        [
+          "build.gradle",
+          2
+        ],
+        [
+          "test_error_handling.py",
+          2
+        ],
+        [
+          "pom.xml",
+          2
+        ],
+        [
+          "go.sum",
+          2
+        ],
+        [
+          "CodacyCoverageReporter.scala",
+          2
+        ],
+        [
+          "composer.lock",
+          2
+        ],
+        [
+          "package-lock.json",
+          2
+        ],
+        [
+          "test_serialization.py",
+          2
+        ],
+        [
+          "Gemfile",
+          2
+        ],
+        [
+          "test_distributions.py",
+          2
+        ],
+        [
+          "test_regions.py",
+          2
+        ]
+      ]
+    }
+  },
+  "performance": {
+    "gt_categories": {
+      "CODE_CHANGE": 112,
+      "CODE_FIX": 100,
+      "PIN_VERSION": 33,
+      "WORKFLOW_FIX": 31,
+      "REVERT": 12,
+      "DEPENDENCY_CHANGE": 7,
+      "PR_STILL_OPEN": 5
+    },
+    "rpa_categories": {
+      "CASCADE_FAILURE": 145,
+      "CODE_REGRESSION": 95,
+      "DEPENDENCY_CONFLICT": 35,
+      "CONFIG_ERROR": 17,
+      "TEST_FLAKINESS": 4,
+      "INFRA_INCOMPATIBILITY": 4
+    },
+    "apa_categories": {
+      "CODE_REGRESSION": 184,
+      "CONFIG_ERROR": 57,
+      "DEPENDENCY_CONFLICT": 42,
+      "ENV_FLAKINESS": 13,
+      "INFRA_INCOMPATIBILITY": 2,
+      "NETWORK_TRANSIENT": 1,
+      "CASCADE_FAILURE": 1
+    },
+    "rpa_verdicts": {
+      "WRONG": 160,
+      "CORRECT": 121,
+      "PARTIAL": 19
+    },
+    "apa_verdicts": {
+      "CORRECT": 215,
+      "WRONG": 56,
+      "PARTIAL": 29
+    },
+    "category_metrics": {
+      "CODE_CHANGE": {
+        "count": 112,
+        "rpa_correct": 39,
+        "apa_correct": 83,
+        "apa_partial": 12
+      },
+      "DEPENDENCY_CHANGE": {
+        "count": 7,
+        "rpa_correct": 6,
+        "apa_correct": 6,
+        "apa_partial": 0
+      },
+      "PIN_VERSION": {
+        "count": 33,
+        "rpa_correct": 17,
+        "apa_correct": 22,
+        "apa_partial": 6
+      },
+      "CODE_FIX": {
+        "count": 100,
+        "rpa_correct": 39,
+        "apa_correct": 75,
+        "apa_partial": 5
+      },
+      "WORKFLOW_FIX": {
+        "count": 31,
+        "rpa_correct": 8,
+        "apa_correct": 18,
+        "apa_partial": 1
+      },
+      "REVERT": {
+        "count": 12,
+        "rpa_correct": 8,
+        "apa_correct": 6,
+        "apa_partial": 5
+      },
+      "PR_STILL_OPEN": {
+        "count": 5,
+        "rpa_correct": 4,
+        "apa_correct": 5,
+        "apa_partial": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,522 @@
+{
+  "_id": "rust-lang/rust-analyzer_.github/workflows/fuzz.yml_42_1",
+  "repository_name": "rust-lang/rust-analyzer",
+  "workflow_path": ".github/workflows/fuzz.yml",
+  "run_number": 42,
+  "run_attempt": 1,
+  "time_to_import": 7881.016155,
+  "metadata": {
+    "id": 6680039484,
+    "name": "Fuzz",
+    "node_id": "WFR_kwLOBttd2s8AAAABjilQPA",
+    "head_branch": "master",
+    "head_sha": "f493207744da98b31295b02e6ed95b26a927056c",
+    "path": ".github/workflows/fuzz.yml",
+    "display_title": "Fuzz",
+    "run_number": 42,
+    "event": "schedule",
+    "status": "completed",
+    "conclusion": "failure",
+    "workflow_id": 47308523,
+    "check_suite_id": 17718218867,
+    "check_suite_node_id": "CS_kwDOBttd2s8AAAAEIBaQcw",
+    "url": "https://api.github.com/repos/rust-lang/rust-analyzer/actions/runs/6680039484",
+    "html_url": "https://github.com/rust-lang/rust-analyzer/actions/runs/6680039484",
+    "pull_requests": [
+      {
+        "url": "https://api.github.com/repos/VitalyAnkh/rust-analyzer/pulls/250",
+        "id": 1290135345,
+        "number": 250,
+        "head": {
+          "ref": "master",
+          "sha": "f493207744da98b31295b02e6ed95b26a927056c",
+          "repo": {
+            "id": 115039706,
+            "url": "https://api.github.com/repos/rust-lang/rust-analyzer",
+            "name": "rust-analyzer"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "6d7511938a8864ccfa0a32d4884d9b92b0a37048",
+          "repo": {
+            "id": 501584487,
+            "url": "https://api.github.com/repos/VitalyAnkh/rust-analyzer",
+            "name": "rust-analyzer"
+          }
+        }
+      },
+      {
+        "url": "https://api.github.com/repos/Mu-L/rust-analyzer/pulls/293",
+        "id": 1275695513,
+        "number": 293,
+        "head": {
+          "ref": "master",
+          "sha": "f493207744da98b31295b02e6ed95b26a927056c",
+          "repo": {
+            "id": 115039706,
+            "url": "https://api.github.com/repos/rust-lang/rust-analyzer",
+            "name": "rust-analyzer"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "f1e51afa450ecf352c1f01fc5a5b6d10792e3779",
+          "repo": {
+            "id": 481796993,
+            "url": "https://api.github.com/repos/Mu-L/rust-analyzer",
+            "name": "rust-analyzer"
+          }
+        }
+      },
+      {
+        "url": "https://api.github.com/repos/p-avital/rust-analyzer/pulls/249",
+        "id": 1248537311,
+        "number": 249,
+        "head": {
+          "ref": "master",
+          "sha": "f493207744da98b31295b02e6ed95b26a927056c",
+          "repo": {
+            "id": 115039706,
+            "url": "https://api.github.com/repos/rust-lang/rust-analyzer",
+            "name": "rust-analyzer"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "a6603fc21d50b3386a488c96225b2d1fd492e533",
+          "repo": {
+            "id": 494465430,
+            "url": "https://api.github.com/repos/p-avital/rust-analyzer",
+            "name": "rust-analyzer"
+          }
+        }
+      },
+      {
+        "url": "https://api.github.com/repos/franklucky001/rust-analyzer/pulls/241",
+        "id": 1248460292,
+        "number": 241,
+        "head": {
+          "ref": "master",
+          "sha": "f493207744da98b31295b02e6ed95b26a927056c",
+          "repo": {
+            "id": 115039706,
+            "url": "https://api.github.com/repos/rust-lang/rust-analyzer",
+            "name": "rust-analyzer"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "a6603fc21d50b3386a488c96225b2d1fd492e533",
+          "repo": {
+            "id": 494937390,
+            "url": "https://api.github.com/repos/franklucky001/rust-analyzer",
+            "name": "rust-analyzer"
+          }
+        }
+      },
+      {
+        "url": "https://api.github.com/repos/iredelmeier/rust-analyzer/pulls/61",
+        "id": 1217229572,
+        "number": 61,
+        "head": {
+          "ref": "master",
+          "sha": "f493207744da98b31295b02e6ed95b26a927056c",
+          "repo": {
+            "id": 115039706,
+            "url": "https://api.github.com/repos/rust-lang/rust-analyzer",
+            "name": "rust-analyzer"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "46084a1e71c7e8733eb51c62699b565f96795fd5",
+          "repo": {
+            "id": 568989011,
+            "url": "https://api.github.com/repos/iredelmeier/rust-analyzer",
+            "name": "rust-analyzer"
+          }
+        }
+      },
+      {
+        "url": "https://api.github.com/repos/stevepentland/rust-analyzer/pulls/1227",
+        "id": 765723192,
+        "number": 1227,
+        "head": {
+          "ref": "master",
+          "sha": "f493207744da98b31295b02e6ed95b26a927056c",
+          "repo": {
+            "id": 115039706,
+            "url": "https://api.github.com/repos/rust-lang/rust-analyzer",
+            "name": "rust-analyzer"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "1f47693e02809c97db61b51247ae4e4d46744c61",
+          "repo": {
+            "id": 235253531,
+            "url": "https://api.github.com/repos/stevepentland/rust-analyzer",
+            "name": "rust-analyzer"
+          }
+        }
+      }
+    ],
+    "created_at": "2023-10-29T00:19:55Z",
+    "updated_at": "2023-10-29T00:21:08Z",
+    "actor": {
+      "login": "bors",
+      "id": 3372342,
+      "node_id": "MDQ6VXNlcjMzNzIzNDI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3372342?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bors",
+      "html_url": "https://github.com/bors",
+      "followers_url": "https://api.github.com/users/bors/followers",
+      "following_url": "https://api.github.com/users/bors/following{/other_user}",
+      "gists_url": "https://api.github.com/users/bors/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bors/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bors/subscriptions",
+      "organizations_url": "https://api.github.com/users/bors/orgs",
+      "repos_url": "https://api.github.com/users/bors/repos",
+      "events_url": "https://api.github.com/users/bors/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bors/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "run_attempt": 1,
+    "referenced_workflows": [],
+    "run_started_at": "2023-10-29T00:19:55Z",
+    "triggering_actor": {
+      "login": "bors",
+      "id": 3372342,
+      "node_id": "MDQ6VXNlcjMzNzIzNDI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3372342?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bors",
+      "html_url": "https://github.com/bors",
+      "followers_url": "https://api.github.com/users/bors/followers",
+      "following_url": "https://api.github.com/users/bors/following{/other_user}",
+      "gists_url": "https://api.github.com/users/bors/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bors/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bors/subscriptions",
+      "organizations_url": "https://api.github.com/users/bors/orgs",
+      "repos_url": "https://api.github.com/users/bors/repos",
+      "events_url": "https://api.github.com/users/bors/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bors/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "jobs_url": "https://api.github.com/repos/rust-lang/rust-analyzer/actions/runs/6680039484/jobs",
+    "logs_url": "https://api.github.com/repos/rust-lang/rust-analyzer/actions/runs/6680039484/logs",
+    "check_suite_url": "https://api.github.com/repos/rust-lang/rust-analyzer/check-suites/17718218867",
+    "artifacts_url": "https://api.github.com/repos/rust-lang/rust-analyzer/actions/runs/6680039484/artifacts",
+    "cancel_url": "https://api.github.com/repos/rust-lang/rust-analyzer/actions/runs/6680039484/cancel",
+    "rerun_url": "https://api.github.com/repos/rust-lang/rust-analyzer/actions/runs/6680039484/rerun",
+    "previous_attempt_url": null,
+    "workflow_url": "https://api.github.com/repos/rust-lang/rust-analyzer/actions/workflows/47308523",
+    "head_commit": {
+      "id": "f493207744da98b31295b02e6ed95b26a927056c",
+      "tree_id": "3eb0929606c5d17785109f88b700e22380bd824a",
+      "message": "Auto merge of #15809 - Young-Flash:extract_variable_in_place, r=HKalbasi\n\nfeat: make extract_variable assist in place\n\n![extract_variable_without_select](https://github.com/rust-lang/rust-analyzer/assets/71162630/96be2de4-42c9-4b24-b3e1-8b3e3a2da1d9)\n\nclose https://github.com/rust-lang/rust-analyzer/issues/15796",
+      "timestamp": "2023-10-28T06:20:35Z",
+      "author": {
+        "name": "bors",
+        "email": "bors@rust-lang.org"
+      },
+      "committer": {
+        "name": "bors",
+        "email": "bors@rust-lang.org"
+      }
+    },
+    "repository": {
+      "id": 115039706,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMTUwMzk3MDY=",
+      "name": "rust-analyzer",
+      "full_name": "rust-lang/rust-analyzer",
+      "private": false,
+      "owner": {
+        "login": "rust-lang",
+        "id": 5430905,
+        "node_id": "MDEyOk9yZ2FuaXphdGlvbjU0MzA5MDU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5430905?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/rust-lang",
+        "html_url": "https://github.com/rust-lang",
+        "followers_url": "https://api.github.com/users/rust-lang/followers",
+        "following_url": "https://api.github.com/users/rust-lang/following{/other_user}",
+        "gists_url": "https://api.github.com/users/rust-lang/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/rust-lang/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/rust-lang/subscriptions",
+        "organizations_url": "https://api.github.com/users/rust-lang/orgs",
+        "repos_url": "https://api.github.com/users/rust-lang/repos",
+        "events_url": "https://api.github.com/users/rust-lang/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/rust-lang/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/rust-lang/rust-analyzer",
+      "description": "A Rust compiler front-end for IDEs",
+      "fork": false,
+      "url": "https://api.github.com/repos/rust-lang/rust-analyzer",
+      "forks_url": "https://api.github.com/repos/rust-lang/rust-analyzer/forks",
+      "keys_url": "https://api.github.com/repos/rust-lang/rust-analyzer/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/rust-lang/rust-analyzer/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/rust-lang/rust-analyzer/teams",
+      "hooks_url": "https://api.github.com/repos/rust-lang/rust-analyzer/hooks",
+      "issue_events_url": "https://api.github.com/repos/rust-lang/rust-analyzer/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/rust-lang/rust-analyzer/events",
+      "assignees_url": "https://api.github.com/repos/rust-lang/rust-analyzer/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/rust-lang/rust-analyzer/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/rust-lang/rust-analyzer/tags",
+      "blobs_url": "https://api.github.com/repos/rust-lang/rust-analyzer/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/rust-lang/rust-analyzer/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/rust-lang/rust-analyzer/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/rust-lang/rust-analyzer/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/rust-lang/rust-analyzer/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/rust-lang/rust-analyzer/languages",
+      "stargazers_url": "https://api.github.com/repos/rust-lang/rust-analyzer/stargazers",
+      "contributors_url": "https://api.github.com/repos/rust-lang/rust-analyzer/contributors",
+      "subscribers_url": "https://api.github.com/repos/rust-lang/rust-analyzer/subscribers",
+      "subscription_url": "https://api.github.com/repos/rust-lang/rust-analyzer/subscription",
+      "commits_url": "https://api.github.com/repos/rust-lang/rust-analyzer/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/rust-lang/rust-analyzer/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/rust-lang/rust-analyzer/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/rust-lang/rust-analyzer/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/rust-lang/rust-analyzer/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/rust-lang/rust-analyzer/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/rust-lang/rust-analyzer/merges",
+      "archive_url": "https://api.github.com/repos/rust-lang/rust-analyzer/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/rust-lang/rust-analyzer/downloads",
+      "issues_url": "https://api.github.com/repos/rust-lang/rust-analyzer/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/rust-lang/rust-analyzer/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/rust-lang/rust-analyzer/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/rust-lang/rust-analyzer/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/rust-lang/rust-analyzer/labels{/name}",
+      "releases_url": "https://api.github.com/repos/rust-lang/rust-analyzer/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/rust-lang/rust-analyzer/deployments"
+    },
+    "head_repository": {
+      "id": 115039706,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMTUwMzk3MDY=",
+      "name": "rust-analyzer",
+      "full_name": "rust-lang/rust-analyzer",
+      "private": false,
+      "owner": {
+        "login": "rust-lang",
+        "id": 5430905,
+        "node_id": "MDEyOk9yZ2FuaXphdGlvbjU0MzA5MDU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5430905?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/rust-lang",
+        "html_url": "https://github.com/rust-lang",
+        "followers_url": "https://api.github.com/users/rust-lang/followers",
+        "following_url": "https://api.github.com/users/rust-lang/following{/other_user}",
+        "gists_url": "https://api.github.com/users/rust-lang/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/rust-lang/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/rust-lang/subscriptions",
+        "organizations_url": "https://api.github.com/users/rust-lang/orgs",
+        "repos_url": "https://api.github.com/users/rust-lang/repos",
+        "events_url": "https://api.github.com/users/rust-lang/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/rust-lang/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/rust-lang/rust-analyzer",
+      "description": "A Rust compiler front-end for IDEs",
+      "fork": false,
+      "url": "https://api.github.com/repos/rust-lang/rust-analyzer",
+      "forks_url": "https://api.github.com/repos/rust-lang/rust-analyzer/forks",
+      "keys_url": "https://api.github.com/repos/rust-lang/rust-analyzer/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/rust-lang/rust-analyzer/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/rust-lang/rust-analyzer/teams",
+      "hooks_url": "https://api.github.com/repos/rust-lang/rust-analyzer/hooks",
+      "issue_events_url": "https://api.github.com/repos/rust-lang/rust-analyzer/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/rust-lang/rust-analyzer/events",
+      "assignees_url": "https://api.github.com/repos/rust-lang/rust-analyzer/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/rust-lang/rust-analyzer/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/rust-lang/rust-analyzer/tags",
+      "blobs_url": "https://api.github.com/repos/rust-lang/rust-analyzer/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/rust-lang/rust-analyzer/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/rust-lang/rust-analyzer/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/rust-lang/rust-analyzer/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/rust-lang/rust-analyzer/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/rust-lang/rust-analyzer/languages",
+      "stargazers_url": "https://api.github.com/repos/rust-lang/rust-analyzer/stargazers",
+      "contributors_url": "https://api.github.com/repos/rust-lang/rust-analyzer/contributors",
+      "subscribers_url": "https://api.github.com/repos/rust-lang/rust-analyzer/subscribers",
+      "subscription_url": "https://api.github.com/repos/rust-lang/rust-analyzer/subscription",
+      "commits_url": "https://api.github.com/repos/rust-lang/rust-analyzer/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/rust-lang/rust-analyzer/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/rust-lang/rust-analyzer/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/rust-lang/rust-analyzer/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/rust-lang/rust-analyzer/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/rust-lang/rust-analyzer/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/rust-lang/rust-analyzer/merges",
+      "archive_url": "https://api.github.com/repos/rust-lang/rust-analyzer/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/rust-lang/rust-analyzer/downloads",
+      "issues_url": "https://api.github.com/repos/rust-lang/rust-analyzer/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/rust-lang/rust-analyzer/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/rust-lang/rust-analyzer/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/rust-lang/rust-analyzer/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/rust-lang/rust-analyzer/labels{/name}",
+      "releases_url": "https://api.github.com/repos/rust-lang/rust-analyzer/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/rust-lang/rust-analyzer/deployments"
+    }
+  },
+  "logs_archive": {
+    "path": "/data/logs/rust-lang/rust-analyzer/Fuzz_654d/42-1.tar.gz"
+  },
+  "log_insights": [
+    {
+      "file": "0_Rust.txt",
+      "total_lines": 754,
+      "log_size": 53513,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231025.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "fetch-depth": "1",
+            "repository": "rust-lang/rust-analyzer",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {
+            "CARGO_INCREMENTAL": "0",
+            "CARGO_NET_RETRY": "10",
+            "CI": "1",
+            "RUST_BACKTRACE": "short",
+            "RUSTFLAGS": "-D warnings -W unreachable-pub -W bare-trait-objects",
+            "RUSTUP_MAX_RETRIES": "10",
+            "CC": "deny_c"
+          },
+          "start_date": "2023-10-29 00:20:03.456000",
+          "duration_sec": 1.687194
+        },
+        {
+          "type": "shell",
+          "env": {
+            "CARGO_INCREMENTAL": "0",
+            "CARGO_NET_RETRY": "10",
+            "CI": "1",
+            "RUST_BACKTRACE": "short",
+            "RUSTFLAGS": "-D warnings -W unreachable-pub -W bare-trait-objects",
+            "RUSTUP_MAX_RETRIES": "10",
+            "CC": "deny_c"
+          },
+          "code": "rustup install --profile minimal nightly",
+          "commands": [
+            {
+              "command": "rustup",
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "content": "--profile"
+                },
+                {
+                  "content": "minimal"
+                },
+                {
+                  "content": "nightly"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-29 00:20:05.144000",
+          "duration_sec": 9.782811
+        },
+        {
+          "type": "shell",
+          "env": {
+            "CARGO_INCREMENTAL": "0",
+            "CARGO_NET_RETRY": "10",
+            "CI": "1",
+            "RUST_BACKTRACE": "short",
+            "RUSTFLAGS": "-D warnings -W unreachable-pub -W bare-trait-objects",
+            "RUSTUP_MAX_RETRIES": "10",
+            "CC": "deny_c"
+          },
+          "code": "cargo install cargo-fuzz\ncd crates/syntax\ncargo +nightly fuzz build",
+          "commands": [
+            {
+              "command": "cargo",
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "content": "cargo-fuzz"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "crates/syntax"
+                }
+              ]
+            },
+            {
+              "command": "cargo",
+              "args": [
+                {
+                  "content": "+nightly"
+                },
+                {
+                  "content": "fuzz"
+                },
+                {
+                  "content": "build"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-29 00:20:14.926000",
+          "duration_sec": 50.892088
+        }
+      ]
+    }
+  ],
+  "total_logs_size": 53959
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "run_id": "nerdwalletoss/shepherd_.github/workflows/release.yml_351_1",
+    "repo": "nerdwalletoss/shepherd",
+    "apa_cat": "CONFIG_ERROR",
+    "recommendation": "Update the Node.js version in the CI configuration files (.github/workflows/ci.yml and release.yml) to use Node v18 or later, as the recent commit dropped support for Node v12/14/16. Ensure that all relevant dependencies are compatible with the new Node version and rerun the pipeline.",
+    "verdict": "PARTIAL",
+    "reason": "The tool correctly identified the need to update the Node.js version, but the actual fix also involved pinning/changing a dependency, which the recommendation did not address."
+  },
+  {
+    "run_id": "ffmpegwasm/ffmpeg.wasm_.github/workflows/main.yml_349_1",
+    "repo": "ffmpegwasm/ffmpeg.wasm",
+    "apa_cat": "CODE_REGRESSION",
+    "recommendation": "Revert the changes made in the commit from pull request #474 that modified `src/browser/getCreateFFmpegCore.js`. This will restore the previous functionality and resolve the regression causing the CI failure. After reverting, run the pipeline again to confirm the fix.",
+    "verdict": "UNHELPFUL",
+    "reason": "The tool recommended reverting changes, which would undo the actual fix implemented by the developer."
+  },
+  {
+    "run_id": "openai/openai-node_.github/workflows/test.yml_86_1",
+    "repo": "openai/openai-node",
+    "apa_cat": "CODE_REGRESSION",
+    "recommendation": "Revert the merge commit #220 to restore the previous stable state of the codebase. After reverting, run the tests locally to identify and fix the specific code regression introduced in the v4 changes before attempting to merge again.",
+    "verdict": "UNHELPFUL",
+    "reason": "The recommendation to revert the merge does not address the specific changes in configuration and workflow files that likely caused the CI failure."
+  },
+  {
+    "run_id": "getstream/stream-chat-react_.github/workflows/ci.yml_5436_1",
+    "repo": "getstream/stream-chat-react",
+    "apa_cat": "ENV_FLAKINESS",
+    "recommendation": "Retry the pipeline run to address the ENV_FLAKINESS issue, as the triggering commit only modified the CHANGELOG.md file and did not introduce any code or configuration changes. If the failure persists after the retry, consider checking the CI environment for any intermittent issues that may need to be addressed.",
+    "verdict": "UNHELPFUL",
+    "reason": "The tool's recommendation focused on retrying for flakiness, while the actual fix involved code changes, indicating a non-flaky issue."
+  },
+  {
+    "run_id": "sobhe/hazm_.github/workflows/lint.yml_89_1",
+    "repo": "sobhe/hazm",
+    "apa_cat": "CODE_REGRESSION",
+    "recommendation": "Revert the changes made in the `hazm/word_tokenizer.py` file in the commit titled \"improve join abbreviations performance\" to restore the previous functionality. After reverting, run the tests to ensure they pass successfully before reintroducing any performance improvements.",
+    "verdict": "UNHELPFUL",
+    "reason": "The tool recommended reverting changes, but the developer fixed the issue by modifying the source code and tests, indicating the recommendation would not have led to the correct fix."
+  }
+]

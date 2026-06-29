@@ -1,0 +1,63 @@
+{
+  "case_label": "onnx/onnx — Do not use LFS64 on non-glibc linux (#5668) (#5669)",
+  "intake": {
+    "run_id": "onnx/onnx_.github/workflows/weekly_mac_ci.yml_6810_1",
+    "repo": "onnx/onnx",
+    "workflow": "weekly_mac_ci.yml",
+    "branch": "main",
+    "event": "schedule",
+    "is_protected_branch": true,
+    "commit_sha": "f556cffc40dc",
+    "commit_title": "Do not use LFS64 on non-glibc linux (#5668) (#5669)",
+    "conclusion": "failure",
+    "failure_detection": "job_level_fallback",
+    "failed_jobs_count": 1,
+    "n_jobs": 1,
+    "all_failures_are_tooling_artifacts": false
+  },
+  "extraction": {
+    "total_steps_extracted": 1,
+    "strategies": [
+      "error_marker"
+    ],
+    "total_lines_extracted": 156,
+    "error_markers_found": 1,
+    "sample_error_lines": [
+      "##[error]Process completed with exit code 1."
+    ]
+  },
+  "classification": {
+    "category": "CODE_REGRESSION",
+    "severity": "CRITICAL",
+    "confidence": 0.95,
+    "action": "BLOCK_DEPLOY",
+    "reasoning": "The failure occurred on the protected 'main' branch in a core weekly_mac_ci.yml workflow, raising severity to CRITICAL. The commit message indicates a code change related to non-glibc Linux compatibility, and the log shows specific model test failures with shape inference errors, indicating a logic or compatibility regression introduced by the commit. The error '[ShapeInferenceError] All inputs to Concat must have same rank' is a clear code-level failure rather than a transient or infrastructure issue.",
+    "evidence": [
+      "branch",
+      "protected",
+      "commit message",
+      "log evidence",
+      "failed steps"
+    ],
+    "unknowns": [
+      "full build logs for root cause",
+      "whether previous runs on main passed or failed",
+      "details on environment differences on macos-12 runner"
+    ]
+  },
+  "ground_truth": {
+    "developer_action": "NO_IMMEDIATE_RESPONSE",
+    "method": "rubric",
+    "reasoning": "Follow-up commits exist but none are within 7 days of the failure. Developer likely retried or ignored the failure without a code change.",
+    "match_verdict": "MATCH",
+    "judge_reasoning": "The AI triage correctly identified the failure as a CODE_REGRESSION with CRITICAL severity due to a shape inference error caused by a code change on the protected main branch. The developer follow-up shows no immediate fix or retry within 7 days, indicating the failure was not transient or infrastructure-related. Later commits do include source code changes, but they are unrelated to the original failure and occurred after a significant delay, supporting the AI's assessment that the failure was a critical code regression that blocked deployment.",
+    "judge_confidence": 0.9,
+    "judge_evidence_used": [
+      "commit message",
+      "protected branch",
+      "log error '[ShapeInferenceError] All inputs to Concat must have same rank'",
+      "no commits within 7 days",
+      "source code changes in follow-up commits unrelated to failure"
+    ]
+  }
+}

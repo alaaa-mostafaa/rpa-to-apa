@@ -1,0 +1,430 @@
+{
+  "_id": "maticzav/swift-graphql_.github/workflows/test.yml_382_1",
+  "repository_name": "maticzav/swift-graphql",
+  "workflow_path": ".github/workflows/test.yml",
+  "run_number": 382,
+  "run_attempt": 1,
+  "time_to_import": 12976.688115,
+  "metadata": {
+    "id": 6705254558,
+    "name": "Test Packages",
+    "node_id": "WFR_kwLOEg4iVM8AAAABj6oQng",
+    "head_branch": "main",
+    "head_sha": "8e8eb8943fcf1059800a6f5d73165668207ffaa8",
+    "path": ".github/workflows/test.yml",
+    "display_title": "Concurrency Stage 1: Introduces initial wrapper-style async/await sup…",
+    "run_number": 382,
+    "event": "push",
+    "status": "completed",
+    "conclusion": "failure",
+    "workflow_id": 5790727,
+    "check_suite_id": 17778398678,
+    "check_suite_node_id": "CS_kwDOEg4iVM8AAAAEI6zV1g",
+    "url": "https://api.github.com/repos/maticzav/swift-graphql/actions/runs/6705254558",
+    "html_url": "https://github.com/maticzav/swift-graphql/actions/runs/6705254558",
+    "pull_requests": [],
+    "created_at": "2023-10-31T10:32:33Z",
+    "updated_at": "2023-10-31T10:37:55Z",
+    "actor": {
+      "login": "shaps80",
+      "id": 251310,
+      "node_id": "MDQ6VXNlcjI1MTMxMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/251310?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/shaps80",
+      "html_url": "https://github.com/shaps80",
+      "followers_url": "https://api.github.com/users/shaps80/followers",
+      "following_url": "https://api.github.com/users/shaps80/following{/other_user}",
+      "gists_url": "https://api.github.com/users/shaps80/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/shaps80/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/shaps80/subscriptions",
+      "organizations_url": "https://api.github.com/users/shaps80/orgs",
+      "repos_url": "https://api.github.com/users/shaps80/repos",
+      "events_url": "https://api.github.com/users/shaps80/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/shaps80/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "run_attempt": 1,
+    "referenced_workflows": [],
+    "run_started_at": "2023-10-31T10:32:33Z",
+    "triggering_actor": {
+      "login": "shaps80",
+      "id": 251310,
+      "node_id": "MDQ6VXNlcjI1MTMxMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/251310?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/shaps80",
+      "html_url": "https://github.com/shaps80",
+      "followers_url": "https://api.github.com/users/shaps80/followers",
+      "following_url": "https://api.github.com/users/shaps80/following{/other_user}",
+      "gists_url": "https://api.github.com/users/shaps80/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/shaps80/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/shaps80/subscriptions",
+      "organizations_url": "https://api.github.com/users/shaps80/orgs",
+      "repos_url": "https://api.github.com/users/shaps80/repos",
+      "events_url": "https://api.github.com/users/shaps80/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/shaps80/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "jobs_url": "https://api.github.com/repos/maticzav/swift-graphql/actions/runs/6705254558/jobs",
+    "logs_url": "https://api.github.com/repos/maticzav/swift-graphql/actions/runs/6705254558/logs",
+    "check_suite_url": "https://api.github.com/repos/maticzav/swift-graphql/check-suites/17778398678",
+    "artifacts_url": "https://api.github.com/repos/maticzav/swift-graphql/actions/runs/6705254558/artifacts",
+    "cancel_url": "https://api.github.com/repos/maticzav/swift-graphql/actions/runs/6705254558/cancel",
+    "rerun_url": "https://api.github.com/repos/maticzav/swift-graphql/actions/runs/6705254558/rerun",
+    "previous_attempt_url": null,
+    "workflow_url": "https://api.github.com/repos/maticzav/swift-graphql/actions/workflows/5790727",
+    "head_commit": {
+      "id": "8e8eb8943fcf1059800a6f5d73165668207ffaa8",
+      "tree_id": "334f79f85d603d34aa87be02392eeef1acc41a76",
+      "message": "Concurrency Stage 1: Introduces initial wrapper-style async/await support (#184)\n\n* Introduces a wrapper-style async/await approach originally implemented by @elfenlaid\r\n\r\n* Adds the original implementation + improved header docs with usage caveats\r\n\r\n* Updates the API.swift based on recent changes that resolve Swift 6 errors (in future)\r\n\r\n* Update Sources/SwiftGraphQLClient/Client/Core.swift",
+      "timestamp": "2023-10-31T10:32:30Z",
+      "author": {
+        "name": "Shaps",
+        "email": "shapsuk@me.com"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com"
+      }
+    },
+    "repository": {
+      "id": 302916180,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzMDI5MTYxODA=",
+      "name": "swift-graphql",
+      "full_name": "maticzav/swift-graphql",
+      "private": false,
+      "owner": {
+        "login": "maticzav",
+        "id": 3924224,
+        "node_id": "MDQ6VXNlcjM5MjQyMjQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3924224?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/maticzav",
+        "html_url": "https://github.com/maticzav",
+        "followers_url": "https://api.github.com/users/maticzav/followers",
+        "following_url": "https://api.github.com/users/maticzav/following{/other_user}",
+        "gists_url": "https://api.github.com/users/maticzav/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/maticzav/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/maticzav/subscriptions",
+        "organizations_url": "https://api.github.com/users/maticzav/orgs",
+        "repos_url": "https://api.github.com/users/maticzav/repos",
+        "events_url": "https://api.github.com/users/maticzav/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/maticzav/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/maticzav/swift-graphql",
+      "description": "A GraphQL client that lets you forget about GraphQL.",
+      "fork": false,
+      "url": "https://api.github.com/repos/maticzav/swift-graphql",
+      "forks_url": "https://api.github.com/repos/maticzav/swift-graphql/forks",
+      "keys_url": "https://api.github.com/repos/maticzav/swift-graphql/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/maticzav/swift-graphql/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/maticzav/swift-graphql/teams",
+      "hooks_url": "https://api.github.com/repos/maticzav/swift-graphql/hooks",
+      "issue_events_url": "https://api.github.com/repos/maticzav/swift-graphql/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/maticzav/swift-graphql/events",
+      "assignees_url": "https://api.github.com/repos/maticzav/swift-graphql/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/maticzav/swift-graphql/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/maticzav/swift-graphql/tags",
+      "blobs_url": "https://api.github.com/repos/maticzav/swift-graphql/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/maticzav/swift-graphql/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/maticzav/swift-graphql/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/maticzav/swift-graphql/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/maticzav/swift-graphql/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/maticzav/swift-graphql/languages",
+      "stargazers_url": "https://api.github.com/repos/maticzav/swift-graphql/stargazers",
+      "contributors_url": "https://api.github.com/repos/maticzav/swift-graphql/contributors",
+      "subscribers_url": "https://api.github.com/repos/maticzav/swift-graphql/subscribers",
+      "subscription_url": "https://api.github.com/repos/maticzav/swift-graphql/subscription",
+      "commits_url": "https://api.github.com/repos/maticzav/swift-graphql/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/maticzav/swift-graphql/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/maticzav/swift-graphql/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/maticzav/swift-graphql/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/maticzav/swift-graphql/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/maticzav/swift-graphql/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/maticzav/swift-graphql/merges",
+      "archive_url": "https://api.github.com/repos/maticzav/swift-graphql/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/maticzav/swift-graphql/downloads",
+      "issues_url": "https://api.github.com/repos/maticzav/swift-graphql/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/maticzav/swift-graphql/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/maticzav/swift-graphql/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/maticzav/swift-graphql/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/maticzav/swift-graphql/labels{/name}",
+      "releases_url": "https://api.github.com/repos/maticzav/swift-graphql/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/maticzav/swift-graphql/deployments"
+    },
+    "head_repository": {
+      "id": 302916180,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzMDI5MTYxODA=",
+      "name": "swift-graphql",
+      "full_name": "maticzav/swift-graphql",
+      "private": false,
+      "owner": {
+        "login": "maticzav",
+        "id": 3924224,
+        "node_id": "MDQ6VXNlcjM5MjQyMjQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3924224?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/maticzav",
+        "html_url": "https://github.com/maticzav",
+        "followers_url": "https://api.github.com/users/maticzav/followers",
+        "following_url": "https://api.github.com/users/maticzav/following{/other_user}",
+        "gists_url": "https://api.github.com/users/maticzav/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/maticzav/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/maticzav/subscriptions",
+        "organizations_url": "https://api.github.com/users/maticzav/orgs",
+        "repos_url": "https://api.github.com/users/maticzav/repos",
+        "events_url": "https://api.github.com/users/maticzav/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/maticzav/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/maticzav/swift-graphql",
+      "description": "A GraphQL client that lets you forget about GraphQL.",
+      "fork": false,
+      "url": "https://api.github.com/repos/maticzav/swift-graphql",
+      "forks_url": "https://api.github.com/repos/maticzav/swift-graphql/forks",
+      "keys_url": "https://api.github.com/repos/maticzav/swift-graphql/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/maticzav/swift-graphql/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/maticzav/swift-graphql/teams",
+      "hooks_url": "https://api.github.com/repos/maticzav/swift-graphql/hooks",
+      "issue_events_url": "https://api.github.com/repos/maticzav/swift-graphql/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/maticzav/swift-graphql/events",
+      "assignees_url": "https://api.github.com/repos/maticzav/swift-graphql/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/maticzav/swift-graphql/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/maticzav/swift-graphql/tags",
+      "blobs_url": "https://api.github.com/repos/maticzav/swift-graphql/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/maticzav/swift-graphql/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/maticzav/swift-graphql/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/maticzav/swift-graphql/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/maticzav/swift-graphql/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/maticzav/swift-graphql/languages",
+      "stargazers_url": "https://api.github.com/repos/maticzav/swift-graphql/stargazers",
+      "contributors_url": "https://api.github.com/repos/maticzav/swift-graphql/contributors",
+      "subscribers_url": "https://api.github.com/repos/maticzav/swift-graphql/subscribers",
+      "subscription_url": "https://api.github.com/repos/maticzav/swift-graphql/subscription",
+      "commits_url": "https://api.github.com/repos/maticzav/swift-graphql/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/maticzav/swift-graphql/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/maticzav/swift-graphql/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/maticzav/swift-graphql/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/maticzav/swift-graphql/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/maticzav/swift-graphql/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/maticzav/swift-graphql/merges",
+      "archive_url": "https://api.github.com/repos/maticzav/swift-graphql/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/maticzav/swift-graphql/downloads",
+      "issues_url": "https://api.github.com/repos/maticzav/swift-graphql/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/maticzav/swift-graphql/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/maticzav/swift-graphql/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/maticzav/swift-graphql/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/maticzav/swift-graphql/labels{/name}",
+      "releases_url": "https://api.github.com/repos/maticzav/swift-graphql/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/maticzav/swift-graphql/deployments"
+    }
+  },
+  "logs_archive": {
+    "path": "/data/logs/maticzav/swift-graphql/Test_Packages_7d2c/382-1.tar.gz"
+  },
+  "log_insights": [
+    {
+      "file": "0_Test Sources.txt",
+      "total_lines": 1398,
+      "log_size": 128314,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "macos-12",
+      "image_version": "20230921.1",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v2",
+          "sha": "ee0669bd1cc54295c223e0bb666b733df41de1c5",
+          "with": {
+            "repository": "maticzav/swift-graphql",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "fetch-depth": "1",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-31 10:32:43.819000",
+          "duration_sec": 2.898315
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "swift package resolve",
+          "commands": [
+            {
+              "annotations": [
+                "SC-SWIFT"
+              ],
+              "command": "swift",
+              "args": [
+                {
+                  "content": "package"
+                },
+                {
+                  "content": "resolve"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-31 10:32:46.717000",
+          "duration_sec": 45.58969
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "swift build",
+          "commands": [
+            {
+              "annotations": [
+                "SC-SWIFT"
+              ],
+              "command": "swift",
+              "args": [
+                {
+                  "content": "build"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-31 10:33:32.307000",
+          "duration_sec": 130.894501
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "setup-node",
+          "version": "v2",
+          "sha": "7c12f8017d5436eb855f1ed4399f037a36fbd9e8",
+          "with": {
+            "node-version-file": ".nvmrc",
+            "cache": "yarn",
+            "always-auth": "false",
+            "check-latest": "false",
+            "token": "***"
+          },
+          "env": {},
+          "start_date": "2023-10-31 10:35:43.201000",
+          "duration_sec": 20.401674
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "yarn install",
+          "commands": [
+            {
+              "annotations": [
+                "SC-YARN-INSTALL"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-31 10:36:03.603000",
+          "duration_sec": 54.178577
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "yarn workspace server start &",
+          "commands": [
+            {
+              "annotations": [
+                "SC-YARN-INSTALL"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "workspace"
+                },
+                {
+                  "content": "server"
+                },
+                {
+                  "content": "start"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-31 10:36:57.781000",
+          "duration_sec": 5.096957
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "sleep 5",
+          "commands": [
+            {
+              "command": "sleep",
+              "args": [
+                {
+                  "content": "5"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-31 10:37:02.878000",
+          "duration_sec": 5.286613
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "swift test",
+          "commands": [
+            {
+              "annotations": [
+                "SC-SWIFT"
+              ],
+              "command": "swift",
+              "args": [
+                {
+                  "content": "test"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-31 10:37:08.165000",
+          "duration_sec": 42.827928
+        }
+      ]
+    }
+  ],
+  "total_logs_size": 128972
+}

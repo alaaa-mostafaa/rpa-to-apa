@@ -1,0 +1,375 @@
+{
+  "_id": "niivue/niivue_.github/workflows/playwright.yml_11_1",
+  "repository_name": "niivue/niivue",
+  "workflow_path": ".github/workflows/playwright.yml",
+  "run_number": 11,
+  "run_attempt": 1,
+  "time_to_import": 309632.244774,
+  "metadata": {
+    "id": 6781520396,
+    "name": "Playwright Tests",
+    "node_id": "WFR_kwLOFO94F88AAAABlDXKDA",
+    "head_branch": "fix-broken-sobel-shader",
+    "head_sha": "c8ccaaec87ff6acb36bf0392d8248af4dca2d83b",
+    "path": ".github/workflows/playwright.yml",
+    "display_title": "Fixed sobel shader issue and added playwright",
+    "run_number": 11,
+    "event": "pull_request",
+    "status": "completed",
+    "conclusion": "failure",
+    "workflow_id": 74906826,
+    "check_suite_id": 17967646712,
+    "check_suite_node_id": "CS_kwDOFO94F88AAAAELvSH-A",
+    "url": "https://api.github.com/repos/niivue/niivue/actions/runs/6781520396",
+    "html_url": "https://github.com/niivue/niivue/actions/runs/6781520396",
+    "pull_requests": [
+      {
+        "url": "https://api.github.com/repos/niivue/niivue/pulls/725",
+        "id": 1586393599,
+        "number": 725,
+        "head": {
+          "ref": "fix-broken-sobel-shader",
+          "sha": "4546c5ffa6f764c381d349ea79ed8fd77c05845b",
+          "repo": {
+            "id": 351238167,
+            "url": "https://api.github.com/repos/niivue/niivue",
+            "name": "niivue"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "b4a6ea1343a24dced309468e364033325358d27a",
+          "repo": {
+            "id": 351238167,
+            "url": "https://api.github.com/repos/niivue/niivue",
+            "name": "niivue"
+          }
+        }
+      }
+    ],
+    "created_at": "2023-11-07T07:56:01Z",
+    "updated_at": "2023-11-07T08:01:06Z",
+    "actor": {
+      "login": "hanayik",
+      "id": 5217720,
+      "node_id": "MDQ6VXNlcjUyMTc3MjA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5217720?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hanayik",
+      "html_url": "https://github.com/hanayik",
+      "followers_url": "https://api.github.com/users/hanayik/followers",
+      "following_url": "https://api.github.com/users/hanayik/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hanayik/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hanayik/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hanayik/subscriptions",
+      "organizations_url": "https://api.github.com/users/hanayik/orgs",
+      "repos_url": "https://api.github.com/users/hanayik/repos",
+      "events_url": "https://api.github.com/users/hanayik/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hanayik/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "run_attempt": 1,
+    "referenced_workflows": [],
+    "run_started_at": "2023-11-07T07:56:01Z",
+    "triggering_actor": {
+      "login": "hanayik",
+      "id": 5217720,
+      "node_id": "MDQ6VXNlcjUyMTc3MjA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5217720?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hanayik",
+      "html_url": "https://github.com/hanayik",
+      "followers_url": "https://api.github.com/users/hanayik/followers",
+      "following_url": "https://api.github.com/users/hanayik/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hanayik/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hanayik/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hanayik/subscriptions",
+      "organizations_url": "https://api.github.com/users/hanayik/orgs",
+      "repos_url": "https://api.github.com/users/hanayik/repos",
+      "events_url": "https://api.github.com/users/hanayik/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hanayik/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "jobs_url": "https://api.github.com/repos/niivue/niivue/actions/runs/6781520396/jobs",
+    "logs_url": "https://api.github.com/repos/niivue/niivue/actions/runs/6781520396/logs",
+    "check_suite_url": "https://api.github.com/repos/niivue/niivue/check-suites/17967646712",
+    "artifacts_url": "https://api.github.com/repos/niivue/niivue/actions/runs/6781520396/artifacts",
+    "cancel_url": "https://api.github.com/repos/niivue/niivue/actions/runs/6781520396/cancel",
+    "rerun_url": "https://api.github.com/repos/niivue/niivue/actions/runs/6781520396/rerun",
+    "previous_attempt_url": null,
+    "workflow_url": "https://api.github.com/repos/niivue/niivue/actions/workflows/74906826",
+    "head_commit": {
+      "id": "c8ccaaec87ff6acb36bf0392d8248af4dca2d83b",
+      "tree_id": "7106c266c4cfbacd97a05c06612f5f010eb31b74",
+      "message": "Merge branch 'fix-broken-sobel-shader' of github.com:niivue/niivue into fix-broken-sobel-shader",
+      "timestamp": "2023-11-07T07:55:54Z",
+      "author": {
+        "name": "Taylor Hanayik",
+        "email": "hanayik@gmail.com"
+      },
+      "committer": {
+        "name": "Taylor Hanayik",
+        "email": "hanayik@gmail.com"
+      }
+    },
+    "repository": {
+      "id": 351238167,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzNTEyMzgxNjc=",
+      "name": "niivue",
+      "full_name": "niivue/niivue",
+      "private": false,
+      "owner": {
+        "login": "niivue",
+        "id": 80818499,
+        "node_id": "MDEyOk9yZ2FuaXphdGlvbjgwODE4NDk5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/80818499?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/niivue",
+        "html_url": "https://github.com/niivue",
+        "followers_url": "https://api.github.com/users/niivue/followers",
+        "following_url": "https://api.github.com/users/niivue/following{/other_user}",
+        "gists_url": "https://api.github.com/users/niivue/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/niivue/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/niivue/subscriptions",
+        "organizations_url": "https://api.github.com/users/niivue/orgs",
+        "repos_url": "https://api.github.com/users/niivue/repos",
+        "events_url": "https://api.github.com/users/niivue/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/niivue/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/niivue/niivue",
+      "description": "a WebGL2 based medical image viewer. Supports over 30 formats of volumes and meshes. ",
+      "fork": false,
+      "url": "https://api.github.com/repos/niivue/niivue",
+      "forks_url": "https://api.github.com/repos/niivue/niivue/forks",
+      "keys_url": "https://api.github.com/repos/niivue/niivue/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/niivue/niivue/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/niivue/niivue/teams",
+      "hooks_url": "https://api.github.com/repos/niivue/niivue/hooks",
+      "issue_events_url": "https://api.github.com/repos/niivue/niivue/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/niivue/niivue/events",
+      "assignees_url": "https://api.github.com/repos/niivue/niivue/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/niivue/niivue/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/niivue/niivue/tags",
+      "blobs_url": "https://api.github.com/repos/niivue/niivue/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/niivue/niivue/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/niivue/niivue/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/niivue/niivue/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/niivue/niivue/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/niivue/niivue/languages",
+      "stargazers_url": "https://api.github.com/repos/niivue/niivue/stargazers",
+      "contributors_url": "https://api.github.com/repos/niivue/niivue/contributors",
+      "subscribers_url": "https://api.github.com/repos/niivue/niivue/subscribers",
+      "subscription_url": "https://api.github.com/repos/niivue/niivue/subscription",
+      "commits_url": "https://api.github.com/repos/niivue/niivue/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/niivue/niivue/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/niivue/niivue/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/niivue/niivue/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/niivue/niivue/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/niivue/niivue/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/niivue/niivue/merges",
+      "archive_url": "https://api.github.com/repos/niivue/niivue/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/niivue/niivue/downloads",
+      "issues_url": "https://api.github.com/repos/niivue/niivue/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/niivue/niivue/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/niivue/niivue/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/niivue/niivue/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/niivue/niivue/labels{/name}",
+      "releases_url": "https://api.github.com/repos/niivue/niivue/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/niivue/niivue/deployments"
+    },
+    "head_repository": {
+      "id": 351238167,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzNTEyMzgxNjc=",
+      "name": "niivue",
+      "full_name": "niivue/niivue",
+      "private": false,
+      "owner": {
+        "login": "niivue",
+        "id": 80818499,
+        "node_id": "MDEyOk9yZ2FuaXphdGlvbjgwODE4NDk5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/80818499?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/niivue",
+        "html_url": "https://github.com/niivue",
+        "followers_url": "https://api.github.com/users/niivue/followers",
+        "following_url": "https://api.github.com/users/niivue/following{/other_user}",
+        "gists_url": "https://api.github.com/users/niivue/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/niivue/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/niivue/subscriptions",
+        "organizations_url": "https://api.github.com/users/niivue/orgs",
+        "repos_url": "https://api.github.com/users/niivue/repos",
+        "events_url": "https://api.github.com/users/niivue/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/niivue/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/niivue/niivue",
+      "description": "a WebGL2 based medical image viewer. Supports over 30 formats of volumes and meshes. ",
+      "fork": false,
+      "url": "https://api.github.com/repos/niivue/niivue",
+      "forks_url": "https://api.github.com/repos/niivue/niivue/forks",
+      "keys_url": "https://api.github.com/repos/niivue/niivue/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/niivue/niivue/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/niivue/niivue/teams",
+      "hooks_url": "https://api.github.com/repos/niivue/niivue/hooks",
+      "issue_events_url": "https://api.github.com/repos/niivue/niivue/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/niivue/niivue/events",
+      "assignees_url": "https://api.github.com/repos/niivue/niivue/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/niivue/niivue/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/niivue/niivue/tags",
+      "blobs_url": "https://api.github.com/repos/niivue/niivue/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/niivue/niivue/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/niivue/niivue/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/niivue/niivue/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/niivue/niivue/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/niivue/niivue/languages",
+      "stargazers_url": "https://api.github.com/repos/niivue/niivue/stargazers",
+      "contributors_url": "https://api.github.com/repos/niivue/niivue/contributors",
+      "subscribers_url": "https://api.github.com/repos/niivue/niivue/subscribers",
+      "subscription_url": "https://api.github.com/repos/niivue/niivue/subscription",
+      "commits_url": "https://api.github.com/repos/niivue/niivue/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/niivue/niivue/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/niivue/niivue/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/niivue/niivue/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/niivue/niivue/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/niivue/niivue/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/niivue/niivue/merges",
+      "archive_url": "https://api.github.com/repos/niivue/niivue/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/niivue/niivue/downloads",
+      "issues_url": "https://api.github.com/repos/niivue/niivue/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/niivue/niivue/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/niivue/niivue/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/niivue/niivue/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/niivue/niivue/labels{/name}",
+      "releases_url": "https://api.github.com/repos/niivue/niivue/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/niivue/niivue/deployments"
+    }
+  },
+  "logs_archive": {
+    "path": "/data/logs/niivue/niivue/Playwright_Tests_6d0f/11-1.tar.gz"
+  },
+  "log_insights": [
+    {
+      "file": "0_Playwright Tests.txt",
+      "total_lines": 986,
+      "log_size": 73962,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231030.2.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "niivue/niivue",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-11-07 07:59:10.024000",
+          "duration_sec": 7.751784
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "setup-node",
+          "version": "v3",
+          "sha": "1a4442cacd436585916779262731d5b162bc6ec7",
+          "with": {
+            "node-version": "18",
+            "always-auth": "false",
+            "check-latest": "false",
+            "token": "***"
+          },
+          "env": {},
+          "start_date": "2023-11-07 07:59:17.776000",
+          "duration_sec": 0.918423
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "npm ci",
+          "commands": [
+            {
+              "annotations": [
+                "SC-NPM-CI"
+              ],
+              "command": "npm",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "ci"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-07 07:59:18.695000",
+          "duration_sec": 18.675622
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "npm run test-playwright",
+          "commands": [
+            {
+              "annotations": [
+                "SC-NPM-RUN"
+              ],
+              "command": "npm",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "RUN_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "run"
+                },
+                {
+                  "annotations": [
+                    "SC-NPM-ARG"
+                  ],
+                  "content": "test-playwright"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-07 07:59:37.370000",
+          "duration_sec": 83.702498
+        }
+      ]
+    }
+  ],
+  "total_logs_size": 78024
+}

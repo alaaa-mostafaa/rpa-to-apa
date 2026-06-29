@@ -1,0 +1,469 @@
+{
+  "_id": "pt-plugins/pt-plugin-plus_.github/workflows/build_action.yml_561_1",
+  "repository_name": "pt-plugins/pt-plugin-plus",
+  "workflow_path": ".github/workflows/build_action.yml",
+  "run_number": 561,
+  "run_attempt": 1,
+  "metadata": {
+    "id": 6401486936,
+    "name": "Build Action Release",
+    "node_id": "WFR_kwLOCaeej88AAAABfY7wWA",
+    "head_branch": "dev-kufei",
+    "head_sha": "98163f1ee45868033c6abb1dc56c470a975214c9",
+    "path": ".github/workflows/build_action.yml",
+    "display_title": "fix: Level Requirements of KuFei",
+    "run_number": 561,
+    "event": "pull_request",
+    "status": "completed",
+    "conclusion": "success",
+    "workflow_id": 43107130,
+    "check_suite_id": 16852418687,
+    "check_suite_node_id": "CS_kwDOCaeej88AAAAD7HuAfw",
+    "url": "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus/actions/runs/6401486936",
+    "html_url": "https://github.com/pt-plugins/PT-Plugin-Plus/actions/runs/6401486936",
+    "pull_requests": [],
+    "created_at": "2023-10-04T04:18:01Z",
+    "updated_at": "2023-10-04T04:20:30Z",
+    "actor": {
+      "login": "ityum",
+      "id": 50840944,
+      "node_id": "MDQ6VXNlcjUwODQwOTQ0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/50840944?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ityum",
+      "html_url": "https://github.com/ityum",
+      "followers_url": "https://api.github.com/users/ityum/followers",
+      "following_url": "https://api.github.com/users/ityum/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ityum/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ityum/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ityum/subscriptions",
+      "organizations_url": "https://api.github.com/users/ityum/orgs",
+      "repos_url": "https://api.github.com/users/ityum/repos",
+      "events_url": "https://api.github.com/users/ityum/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ityum/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "run_attempt": 1,
+    "referenced_workflows": [],
+    "run_started_at": "2023-10-04T04:18:01Z",
+    "triggering_actor": {
+      "login": "ityum",
+      "id": 50840944,
+      "node_id": "MDQ6VXNlcjUwODQwOTQ0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/50840944?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ityum",
+      "html_url": "https://github.com/ityum",
+      "followers_url": "https://api.github.com/users/ityum/followers",
+      "following_url": "https://api.github.com/users/ityum/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ityum/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ityum/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ityum/subscriptions",
+      "organizations_url": "https://api.github.com/users/ityum/orgs",
+      "repos_url": "https://api.github.com/users/ityum/repos",
+      "events_url": "https://api.github.com/users/ityum/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ityum/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "jobs_url": "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus/actions/runs/6401486936/jobs",
+    "logs_url": "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus/actions/runs/6401486936/logs",
+    "check_suite_url": "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus/check-suites/16852418687",
+    "artifacts_url": "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus/actions/runs/6401486936/artifacts",
+    "cancel_url": "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus/actions/runs/6401486936/cancel",
+    "rerun_url": "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus/actions/runs/6401486936/rerun",
+    "previous_attempt_url": null,
+    "workflow_url": "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus/actions/workflows/43107130",
+    "head_commit": {
+      "id": "98163f1ee45868033c6abb1dc56c470a975214c9",
+      "tree_id": "e8367eaa205df025fa327f62aff6c5d76df9bc98",
+      "message": "fix: Level Requirements of KuFei",
+      "timestamp": "2023-10-04T04:16:43Z",
+      "author": {
+        "name": "yum",
+        "email": "ityum@foxmail.com"
+      },
+      "committer": {
+        "name": "yum",
+        "email": "ityum@foxmail.com"
+      }
+    },
+    "repository": {
+      "id": 161980047,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNjE5ODAwNDc=",
+      "name": "PT-Plugin-Plus",
+      "full_name": "pt-plugins/PT-Plugin-Plus",
+      "private": false,
+      "owner": {
+        "login": "pt-plugins",
+        "id": 96382350,
+        "node_id": "O_kgDOBb6tjg",
+        "avatar_url": "https://avatars.githubusercontent.com/u/96382350?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/pt-plugins",
+        "html_url": "https://github.com/pt-plugins",
+        "followers_url": "https://api.github.com/users/pt-plugins/followers",
+        "following_url": "https://api.github.com/users/pt-plugins/following{/other_user}",
+        "gists_url": "https://api.github.com/users/pt-plugins/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/pt-plugins/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/pt-plugins/subscriptions",
+        "organizations_url": "https://api.github.com/users/pt-plugins/orgs",
+        "repos_url": "https://api.github.com/users/pt-plugins/repos",
+        "events_url": "https://api.github.com/users/pt-plugins/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/pt-plugins/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/pt-plugins/PT-Plugin-Plus",
+      "description": "PT 助手 Plus，为 Microsoft Edge、Google Chrome、Firefox 浏览器插件（Web Extensions），主要用于辅助下载 PT 站的种子。",
+      "fork": false,
+      "url": "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus",
+      "forks_url": "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus/forks",
+      "keys_url": "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus/teams",
+      "hooks_url": "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus/hooks",
+      "issue_events_url": "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus/events",
+      "assignees_url": "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus/tags",
+      "blobs_url": "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus/languages",
+      "stargazers_url": "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus/stargazers",
+      "contributors_url": "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus/contributors",
+      "subscribers_url": "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus/subscribers",
+      "subscription_url": "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus/subscription",
+      "commits_url": "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus/merges",
+      "archive_url": "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus/downloads",
+      "issues_url": "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus/labels{/name}",
+      "releases_url": "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/pt-plugins/PT-Plugin-Plus/deployments"
+    },
+    "head_repository": {
+      "id": 641219405,
+      "node_id": "R_kgDOJjg7TQ",
+      "name": "PT-Plugin-Plus",
+      "full_name": "ityum/PT-Plugin-Plus",
+      "private": false,
+      "owner": {
+        "login": "ityum",
+        "id": 50840944,
+        "node_id": "MDQ6VXNlcjUwODQwOTQ0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50840944?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ityum",
+        "html_url": "https://github.com/ityum",
+        "followers_url": "https://api.github.com/users/ityum/followers",
+        "following_url": "https://api.github.com/users/ityum/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ityum/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ityum/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ityum/subscriptions",
+        "organizations_url": "https://api.github.com/users/ityum/orgs",
+        "repos_url": "https://api.github.com/users/ityum/repos",
+        "events_url": "https://api.github.com/users/ityum/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ityum/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/ityum/PT-Plugin-Plus",
+      "description": "PT 助手 Plus，为 Microsoft Edge、Google Chrome、Firefox 浏览器插件（Web Extensions），主要用于辅助下载 PT 站的种子。",
+      "fork": true,
+      "url": "https://api.github.com/repos/ityum/PT-Plugin-Plus",
+      "forks_url": "https://api.github.com/repos/ityum/PT-Plugin-Plus/forks",
+      "keys_url": "https://api.github.com/repos/ityum/PT-Plugin-Plus/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/ityum/PT-Plugin-Plus/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/ityum/PT-Plugin-Plus/teams",
+      "hooks_url": "https://api.github.com/repos/ityum/PT-Plugin-Plus/hooks",
+      "issue_events_url": "https://api.github.com/repos/ityum/PT-Plugin-Plus/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/ityum/PT-Plugin-Plus/events",
+      "assignees_url": "https://api.github.com/repos/ityum/PT-Plugin-Plus/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/ityum/PT-Plugin-Plus/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/ityum/PT-Plugin-Plus/tags",
+      "blobs_url": "https://api.github.com/repos/ityum/PT-Plugin-Plus/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/ityum/PT-Plugin-Plus/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/ityum/PT-Plugin-Plus/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/ityum/PT-Plugin-Plus/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/ityum/PT-Plugin-Plus/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/ityum/PT-Plugin-Plus/languages",
+      "stargazers_url": "https://api.github.com/repos/ityum/PT-Plugin-Plus/stargazers",
+      "contributors_url": "https://api.github.com/repos/ityum/PT-Plugin-Plus/contributors",
+      "subscribers_url": "https://api.github.com/repos/ityum/PT-Plugin-Plus/subscribers",
+      "subscription_url": "https://api.github.com/repos/ityum/PT-Plugin-Plus/subscription",
+      "commits_url": "https://api.github.com/repos/ityum/PT-Plugin-Plus/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/ityum/PT-Plugin-Plus/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/ityum/PT-Plugin-Plus/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/ityum/PT-Plugin-Plus/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/ityum/PT-Plugin-Plus/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/ityum/PT-Plugin-Plus/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/ityum/PT-Plugin-Plus/merges",
+      "archive_url": "https://api.github.com/repos/ityum/PT-Plugin-Plus/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/ityum/PT-Plugin-Plus/downloads",
+      "issues_url": "https://api.github.com/repos/ityum/PT-Plugin-Plus/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/ityum/PT-Plugin-Plus/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/ityum/PT-Plugin-Plus/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/ityum/PT-Plugin-Plus/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/ityum/PT-Plugin-Plus/labels{/name}",
+      "releases_url": "https://api.github.com/repos/ityum/PT-Plugin-Plus/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/ityum/PT-Plugin-Plus/deployments"
+    }
+  },
+  "logs_archive": {
+    "path": "/data/logs/pt-plugins/PT-Plugin-Plus/Build_Action_Release_b8d8/561-1.tar.gz"
+  },
+  "log_insights": [
+    {
+      "file": "1_Build Zip.txt",
+      "total_lines": 94,
+      "log_size": 6647,
+      "token_permissions": {
+        "Actions": "read",
+        "Checks": "read",
+        "Contents": "read",
+        "Deployments": "read",
+        "Discussions": "read",
+        "Issues": "read",
+        "Metadata": "read",
+        "Packages": "read",
+        "Pages": "read",
+        "PullRequests": "read",
+        "RepositoryProjects": "read",
+        "SecurityEvents": "read",
+        "Statuses": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20230924.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "download-artifact",
+          "version": "v3",
+          "sha": "9bc31d5ccc31df68ecc42ccf4149144866c47d8a",
+          "with": {
+            "name": "build-dist-folder",
+            "path": "dist"
+          },
+          "env": {},
+          "start_date": "2023-10-04 04:20:17.588000",
+          "duration_sec": 7.112565
+        },
+        {
+          "type": "action",
+          "repository": "cardinalby",
+          "action": "webext-buildtools-pack-extension-dir-action",
+          "version": "v1",
+          "sha": "28fdcac9860fb08555580587cab0d33afe4a341d",
+          "with": {
+            "extensionDir": "dist",
+            "zipFilePath": "artifact/extension.zip",
+            "zipGlobPattern": "**",
+            "zipIgnore": "*.pem|.git|*.crx"
+          },
+          "env": {},
+          "start_date": "2023-10-04 04:20:24.701000",
+          "duration_sec": 1.039758
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "upload-artifact",
+          "version": "v3",
+          "sha": "a8a3f3ad30e3422c9c7b888a15615d19a852ae32",
+          "with": {
+            "name": "dev-build-1.6.1.2410-zip",
+            "path": "artifact/*",
+            "if-no-files-found": "warn"
+          },
+          "env": {},
+          "start_date": "2023-10-04 04:20:25.741000",
+          "duration_sec": 1.053391
+        }
+      ]
+    },
+    {
+      "file": "1_Build dist.txt",
+      "total_lines": 2496,
+      "log_size": 318937,
+      "token_permissions": {
+        "Actions": "read",
+        "Checks": "read",
+        "Contents": "read",
+        "Deployments": "read",
+        "Discussions": "read",
+        "Issues": "read",
+        "Metadata": "read",
+        "Packages": "read",
+        "Pages": "read",
+        "PullRequests": "read",
+        "RepositoryProjects": "read",
+        "SecurityEvents": "read",
+        "Statuses": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231001.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "master",
+          "sha": "8ade135a41bc03ea155e62e844d188df1ea18608",
+          "with": {
+            "fetch-depth": "0",
+            "repository": "pt-plugins/PT-Plugin-Plus",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-tags": "false",
+            "show-progress": "true",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-04 04:18:10.594000",
+          "duration_sec": 1.572241
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "setup-node",
+          "version": "v3",
+          "sha": "5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d",
+          "with": {
+            "node-version": "16",
+            "always-auth": "false",
+            "check-latest": "false",
+            "token": "***"
+          },
+          "env": {},
+          "start_date": "2023-10-04 04:18:12.166000",
+          "duration_sec": 1.053187
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "echo \"dir=$(yarn cache dir)\" >> $GITHUB_OUTPUT",
+          "commands": [
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"dir=$(yarn cache dir)\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-YARN-CACHE-DIR"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT"
+              ],
+              "args": [
+                {
+                  "content": "cache"
+                },
+                {
+                  "content": "dir"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-04 04:18:13.219000",
+          "duration_sec": 0.39902
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "cache",
+          "version": "v3",
+          "sha": "704facf57e6136b1bc63b828d79edcd491f0ee84",
+          "with": {
+            "path": "/home/runner/.cache/yarn/v6",
+            "key": "Linux-yarn-7e57ecbd20b2691500baab9a4c0e561e4c1c9e7864a6bf0045ab5853e36f0b4d",
+            "restore-keys": "Linux-yarn-",
+            "enableCrossOsArchive": "false",
+            "fail-on-cache-miss": "false",
+            "lookup-only": "false"
+          },
+          "env": {},
+          "start_date": "2023-10-04 04:18:13.618000",
+          "duration_sec": 7.527238
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "yarn build",
+          "commands": [
+            {
+              "annotations": [
+                "SC-YARN-RUN-SCRIPT"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "RUN_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-YARN-RUN-SCRIPT-SCRIPT"
+                  ],
+                  "content": "build"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-04 04:18:21.146000",
+          "duration_sec": 87.717332
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "upload-artifact",
+          "version": "v3",
+          "sha": "a8a3f3ad30e3422c9c7b888a15615d19a852ae32",
+          "with": {
+            "name": "build-dist-folder",
+            "path": "dist",
+            "if-no-files-found": "warn"
+          },
+          "env": {},
+          "start_date": "2023-10-04 04:19:48.863000",
+          "duration_sec": 17.852522
+        }
+      ]
+    }
+  ],
+  "total_logs_size": 331720
+}

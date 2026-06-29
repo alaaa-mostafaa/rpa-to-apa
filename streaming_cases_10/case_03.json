@@ -1,0 +1,63 @@
+{
+  "case_label": "github/codeql-action — Revert \"Disable flaky Swift autobuild checks\"",
+  "intake": {
+    "run_id": "github/codeql-action_.github/workflows/__swift-autobuild.yml_761_1",
+    "repo": "github/codeql-action",
+    "workflow": "__swift-autobuild.yml",
+    "branch": "henrymercer/reenable-swift-autobuild-checks",
+    "event": "pull_request",
+    "is_protected_branch": false,
+    "commit_sha": "e42f5e576890",
+    "commit_title": "Revert \"Disable flaky Swift autobuild checks\"",
+    "conclusion": "failure",
+    "failure_detection": "single_step_inferred",
+    "failed_jobs_count": 3,
+    "n_jobs": 3,
+    "all_failures_are_tooling_artifacts": false
+  },
+  "extraction": {
+    "total_steps_extracted": 3,
+    "strategies": [
+      "error_marker",
+      "error_marker",
+      "error_marker"
+    ],
+    "total_lines_extracted": 468,
+    "error_markers_found": 3,
+    "sample_error_lines": [
+      "##[error]Can't find 'action.yml', 'action.yaml' or 'Dockerfile' under '/Users/runner/work/codeql-action/codeql-action/.g"
+    ]
+  },
+  "classification": {
+    "category": "CONFIG_ERROR",
+    "severity": "LOW",
+    "confidence": 0.95,
+    "action": "ESCALATE_HUMAN",
+    "reasoning": "The logs from all three failed jobs consistently show the error 'Can't find action.yml, action.yaml or Dockerfile' under the specified path, indicating a misconfiguration in the workflow or missing checkout step. The commit message indicates a revert of a previous change related to flaky Swift autobuild checks, which suggests the failure is not due to code regression but likely a configuration issue. The branch is not protected, so severity is low, but the error is clear and requires human intervention to fix the workflow or checkout step.",
+    "evidence": [
+      "LOG EVIDENCE",
+      "commit message",
+      "branch protected status",
+      "failed steps error messages"
+    ],
+    "unknowns": [
+      "workflow YAML contents",
+      "whether actions/checkout step is present",
+      "full job definitions"
+    ]
+  },
+  "ground_truth": {
+    "developer_action": "PR_MERGED",
+    "method": "pr_state",
+    "reasoning": "PR #1621 ('Re-enable Swift autobuild checks') was merged on 2024-06-17T11:30:44Z.",
+    "match_verdict": "MATCH",
+    "judge_reasoning": "The AI triage correctly identified the failure as a configuration error due to missing action.yml or Dockerfile, consistent with the log errors. The low severity and escalation to human intervention were reasonable given the branch was unprotected and the failure was not a code regression. The developer merged the PR re-enabling the checks, indicating the issue was addressed by a human, validating the AI's recommendation to escalate rather than auto-ignore or retry.",
+    "judge_confidence": 0.9,
+    "judge_evidence_used": [
+      "log error about missing action.yml",
+      "commit message about reverting flaky checks",
+      "branch unprotected status",
+      "PR merged as follow-up"
+    ]
+  }
+}

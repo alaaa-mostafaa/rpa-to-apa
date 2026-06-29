@@ -1,0 +1,15 @@
+{
+  "run_id": "astro/deadnix_.github/workflows/flakestry-publish.yaml_2_1",
+  "repository_name": "astro/deadnix",
+  "workflow_path": ".github/workflows/flakestry-publish.yaml",
+  "run_number": 2,
+  "attempt": 1,
+  "event": "push",
+  "conclusion": "failure",
+  "branch": "main",
+  "commit_sha": "49741c9b2a0b96b21452db8176966e910eb25b0c",
+  "commit_message": "Cargo.lock: update",
+  "logs_archive": {
+    "path": "/data/logs/astro/deadnix/Publish_a_flake_to_flakestry_6d75/2-1.tar.gz"
+  }
+}

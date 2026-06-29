@@ -1,0 +1,467 @@
+{
+  "_id": "lfreist/hwinfo_.github/workflows/build-linux-clang.yml_220_1",
+  "repository_name": "lfreist/hwinfo",
+  "workflow_path": ".github/workflows/build-linux-clang.yml",
+  "run_number": 220,
+  "run_attempt": 1,
+  "time_to_import": 14437.633125,
+  "metadata": {
+    "id": 6706236984,
+    "name": "Linux (clang)",
+    "node_id": "WFR_kwLOH3gyE88AAAABj7kOOA",
+    "head_branch": "main",
+    "head_sha": "ed985a13c460b52d48018d2b7b1963c8dd1f8194",
+    "path": ".github/workflows/build-linux-clang.yml",
+    "display_title": "code style",
+    "run_number": 220,
+    "event": "push",
+    "status": "completed",
+    "conclusion": "failure",
+    "workflow_id": 33058598,
+    "check_suite_id": 17781123482,
+    "check_suite_node_id": "CS_kwDOH3gyE88AAAAEI9Zpmg",
+    "url": "https://api.github.com/repos/lfreist/hwinfo/actions/runs/6706236984",
+    "html_url": "https://github.com/lfreist/hwinfo/actions/runs/6706236984",
+    "pull_requests": [
+      {
+        "url": "https://api.github.com/repos/shonker/hwinfo/pulls/12",
+        "id": 1307476500,
+        "number": 12,
+        "head": {
+          "ref": "main",
+          "sha": "58562fad163e2bc9ffe531ab1685ce45dc1b003c",
+          "repo": {
+            "id": 527970835,
+            "url": "https://api.github.com/repos/lfreist/hwinfo",
+            "name": "hwinfo"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "01f954e0df13a9ab0da96572506198731b86dffa",
+          "repo": {
+            "id": 535736344,
+            "url": "https://api.github.com/repos/shonker/hwinfo",
+            "name": "hwinfo"
+          }
+        }
+      }
+    ],
+    "created_at": "2023-10-31T12:08:08Z",
+    "updated_at": "2023-10-31T12:09:35Z",
+    "actor": {
+      "login": "lfreist",
+      "id": 38557294,
+      "node_id": "MDQ6VXNlcjM4NTU3Mjk0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/38557294?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/lfreist",
+      "html_url": "https://github.com/lfreist",
+      "followers_url": "https://api.github.com/users/lfreist/followers",
+      "following_url": "https://api.github.com/users/lfreist/following{/other_user}",
+      "gists_url": "https://api.github.com/users/lfreist/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/lfreist/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/lfreist/subscriptions",
+      "organizations_url": "https://api.github.com/users/lfreist/orgs",
+      "repos_url": "https://api.github.com/users/lfreist/repos",
+      "events_url": "https://api.github.com/users/lfreist/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/lfreist/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "run_attempt": 1,
+    "referenced_workflows": [],
+    "run_started_at": "2023-10-31T12:08:08Z",
+    "triggering_actor": {
+      "login": "lfreist",
+      "id": 38557294,
+      "node_id": "MDQ6VXNlcjM4NTU3Mjk0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/38557294?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/lfreist",
+      "html_url": "https://github.com/lfreist",
+      "followers_url": "https://api.github.com/users/lfreist/followers",
+      "following_url": "https://api.github.com/users/lfreist/following{/other_user}",
+      "gists_url": "https://api.github.com/users/lfreist/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/lfreist/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/lfreist/subscriptions",
+      "organizations_url": "https://api.github.com/users/lfreist/orgs",
+      "repos_url": "https://api.github.com/users/lfreist/repos",
+      "events_url": "https://api.github.com/users/lfreist/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/lfreist/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "jobs_url": "https://api.github.com/repos/lfreist/hwinfo/actions/runs/6706236984/jobs",
+    "logs_url": "https://api.github.com/repos/lfreist/hwinfo/actions/runs/6706236984/logs",
+    "check_suite_url": "https://api.github.com/repos/lfreist/hwinfo/check-suites/17781123482",
+    "artifacts_url": "https://api.github.com/repos/lfreist/hwinfo/actions/runs/6706236984/artifacts",
+    "cancel_url": "https://api.github.com/repos/lfreist/hwinfo/actions/runs/6706236984/cancel",
+    "rerun_url": "https://api.github.com/repos/lfreist/hwinfo/actions/runs/6706236984/rerun",
+    "previous_attempt_url": null,
+    "workflow_url": "https://api.github.com/repos/lfreist/hwinfo/actions/workflows/33058598",
+    "head_commit": {
+      "id": "ed985a13c460b52d48018d2b7b1963c8dd1f8194",
+      "tree_id": "bf91537fd71d57edd67eb0f65d81e4b4f5dfa887",
+      "message": "code style",
+      "timestamp": "2023-10-31T12:01:57Z",
+      "author": {
+        "name": "Leon Freist",
+        "email": "freist.leon@gmail.com"
+      },
+      "committer": {
+        "name": "Leon Freist",
+        "email": "freist.leon@gmail.com"
+      }
+    },
+    "repository": {
+      "id": 527970835,
+      "node_id": "R_kgDOH3gyEw",
+      "name": "hwinfo",
+      "full_name": "lfreist/hwinfo",
+      "private": false,
+      "owner": {
+        "login": "lfreist",
+        "id": 38557294,
+        "node_id": "MDQ6VXNlcjM4NTU3Mjk0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/38557294?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/lfreist",
+        "html_url": "https://github.com/lfreist",
+        "followers_url": "https://api.github.com/users/lfreist/followers",
+        "following_url": "https://api.github.com/users/lfreist/following{/other_user}",
+        "gists_url": "https://api.github.com/users/lfreist/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/lfreist/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/lfreist/subscriptions",
+        "organizations_url": "https://api.github.com/users/lfreist/orgs",
+        "repos_url": "https://api.github.com/users/lfreist/repos",
+        "events_url": "https://api.github.com/users/lfreist/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/lfreist/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/lfreist/hwinfo",
+      "description": "cross platform C++ library for hardware information (CPU, RAM, GPU, ...)",
+      "fork": false,
+      "url": "https://api.github.com/repos/lfreist/hwinfo",
+      "forks_url": "https://api.github.com/repos/lfreist/hwinfo/forks",
+      "keys_url": "https://api.github.com/repos/lfreist/hwinfo/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/lfreist/hwinfo/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/lfreist/hwinfo/teams",
+      "hooks_url": "https://api.github.com/repos/lfreist/hwinfo/hooks",
+      "issue_events_url": "https://api.github.com/repos/lfreist/hwinfo/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/lfreist/hwinfo/events",
+      "assignees_url": "https://api.github.com/repos/lfreist/hwinfo/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/lfreist/hwinfo/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/lfreist/hwinfo/tags",
+      "blobs_url": "https://api.github.com/repos/lfreist/hwinfo/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/lfreist/hwinfo/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/lfreist/hwinfo/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/lfreist/hwinfo/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/lfreist/hwinfo/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/lfreist/hwinfo/languages",
+      "stargazers_url": "https://api.github.com/repos/lfreist/hwinfo/stargazers",
+      "contributors_url": "https://api.github.com/repos/lfreist/hwinfo/contributors",
+      "subscribers_url": "https://api.github.com/repos/lfreist/hwinfo/subscribers",
+      "subscription_url": "https://api.github.com/repos/lfreist/hwinfo/subscription",
+      "commits_url": "https://api.github.com/repos/lfreist/hwinfo/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/lfreist/hwinfo/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/lfreist/hwinfo/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/lfreist/hwinfo/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/lfreist/hwinfo/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/lfreist/hwinfo/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/lfreist/hwinfo/merges",
+      "archive_url": "https://api.github.com/repos/lfreist/hwinfo/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/lfreist/hwinfo/downloads",
+      "issues_url": "https://api.github.com/repos/lfreist/hwinfo/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/lfreist/hwinfo/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/lfreist/hwinfo/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/lfreist/hwinfo/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/lfreist/hwinfo/labels{/name}",
+      "releases_url": "https://api.github.com/repos/lfreist/hwinfo/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/lfreist/hwinfo/deployments"
+    },
+    "head_repository": {
+      "id": 527970835,
+      "node_id": "R_kgDOH3gyEw",
+      "name": "hwinfo",
+      "full_name": "lfreist/hwinfo",
+      "private": false,
+      "owner": {
+        "login": "lfreist",
+        "id": 38557294,
+        "node_id": "MDQ6VXNlcjM4NTU3Mjk0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/38557294?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/lfreist",
+        "html_url": "https://github.com/lfreist",
+        "followers_url": "https://api.github.com/users/lfreist/followers",
+        "following_url": "https://api.github.com/users/lfreist/following{/other_user}",
+        "gists_url": "https://api.github.com/users/lfreist/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/lfreist/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/lfreist/subscriptions",
+        "organizations_url": "https://api.github.com/users/lfreist/orgs",
+        "repos_url": "https://api.github.com/users/lfreist/repos",
+        "events_url": "https://api.github.com/users/lfreist/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/lfreist/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/lfreist/hwinfo",
+      "description": "cross platform C++ library for hardware information (CPU, RAM, GPU, ...)",
+      "fork": false,
+      "url": "https://api.github.com/repos/lfreist/hwinfo",
+      "forks_url": "https://api.github.com/repos/lfreist/hwinfo/forks",
+      "keys_url": "https://api.github.com/repos/lfreist/hwinfo/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/lfreist/hwinfo/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/lfreist/hwinfo/teams",
+      "hooks_url": "https://api.github.com/repos/lfreist/hwinfo/hooks",
+      "issue_events_url": "https://api.github.com/repos/lfreist/hwinfo/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/lfreist/hwinfo/events",
+      "assignees_url": "https://api.github.com/repos/lfreist/hwinfo/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/lfreist/hwinfo/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/lfreist/hwinfo/tags",
+      "blobs_url": "https://api.github.com/repos/lfreist/hwinfo/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/lfreist/hwinfo/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/lfreist/hwinfo/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/lfreist/hwinfo/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/lfreist/hwinfo/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/lfreist/hwinfo/languages",
+      "stargazers_url": "https://api.github.com/repos/lfreist/hwinfo/stargazers",
+      "contributors_url": "https://api.github.com/repos/lfreist/hwinfo/contributors",
+      "subscribers_url": "https://api.github.com/repos/lfreist/hwinfo/subscribers",
+      "subscription_url": "https://api.github.com/repos/lfreist/hwinfo/subscription",
+      "commits_url": "https://api.github.com/repos/lfreist/hwinfo/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/lfreist/hwinfo/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/lfreist/hwinfo/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/lfreist/hwinfo/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/lfreist/hwinfo/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/lfreist/hwinfo/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/lfreist/hwinfo/merges",
+      "archive_url": "https://api.github.com/repos/lfreist/hwinfo/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/lfreist/hwinfo/downloads",
+      "issues_url": "https://api.github.com/repos/lfreist/hwinfo/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/lfreist/hwinfo/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/lfreist/hwinfo/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/lfreist/hwinfo/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/lfreist/hwinfo/labels{/name}",
+      "releases_url": "https://api.github.com/repos/lfreist/hwinfo/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/lfreist/hwinfo/deployments"
+    }
+  },
+  "logs_archive": {
+    "path": "/data/logs/lfreist/hwinfo/Linux_clang__f55c/220-1.tar.gz"
+  },
+  "total_logs_size": 69281,
+  "log_insights": [
+    {
+      "file": "0_build.txt",
+      "total_lines": 814,
+      "log_size": 68833,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231025.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v2",
+          "sha": "ee0669bd1cc54295c223e0bb666b733df41de1c5",
+          "with": {
+            "repository": "lfreist/hwinfo",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "fetch-depth": "1",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-31 12:08:18.222000",
+          "duration_sec": 2.843479
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "git submodule update --init --recursive",
+          "commands": [
+            {
+              "annotations": [
+                "SC-GIT-SUBMODULE-UPDATE"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL"
+              ],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "submodule"
+                },
+                {
+                  "annotations": [],
+                  "content": "update"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-F-INIT"
+                  ],
+                  "content": "--init"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-F-RECURSIVE"
+                  ],
+                  "content": "--recursive"
+                }
+              ]
+            }
+          ],
+          "errors": null,
+          "start_date": "2023-10-31 12:08:21.065000",
+          "duration_sec": 11.185376
+        },
+        {
+          "type": "action",
+          "repository": "egor-tensin",
+          "action": "setup-clang",
+          "version": "v1",
+          "sha": "ef434b41eb33a70396fb336b1bae39c76d740c3d",
+          "with": {
+            "version": "latest",
+            "platform": "x64",
+            "cygwin": "0",
+            "cc": "1",
+            "hardlinks": "0"
+          },
+          "env": {},
+          "start_date": "2023-10-31 12:08:32.251000",
+          "duration_sec": 0.036771
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "New-Variable os -Value 'Linux' -Option Constant\n\nNew-Variable linux_host -Value ($os -eq 'Linux') -Option Constant\nNew-Variable cygwin_host -Value ('0' -eq '1') -Option Constant\nNew-Variable windows_host -Value ($os -eq 'Windows' -and !$cygwin_host) -Option Constant\n\nNew-Variable version -Value ('latest') -Option Constant\nNew-Variable latest -Value ($version -eq 'latest') -Option Constant\nNew-Variable x64 -Value ('x64' -eq 'x64') -Option Constant\n\nfunction Locate-Choco {\n    $path = Get-Command 'choco' -ErrorAction SilentlyContinue\n    if ($path) {\n        $path.Path\n    } else {\n        Join-Path ${env:ProgramData} 'chocolatey' 'bin' 'choco'\n    }\n}\n\nfunction Install-Package {\n    param(\n        [Parameter(Mandatory=$true, ValueFromRemainingArguments=$true)]\n        [string[]] $Packages\n    )\n\n    if ($script:linux_host) {\n        sudo apt-get update\n        sudo DEBIAN_FRONTEND=noninteractive apt-get install -yq --no-install-recommends $Packages\n    } elseif ($script:cygwin_host) {\n        $choco = Locate-Choco\n        & $choco install $Packages -y --no-progress --source=cygwin\n    } elseif ($script:windows_host) {\n        $choco = Locate-Choco\n        & $choco upgrade $Packages -y --no-progress --allow-downgrade\n    } else {\n        throw \"Sorry, installing packages is unsupported on $script:os\"\n    }\n}\n\nfunction Format-UpstreamVersion {\n    param(\n        [Parameter(Mandatory=$true)]\n        [string] $Version\n    )\n\n    switch -Exact ($Version) {\n        # Since version 7, they dropped the .0 suffix. The earliest\n        # version supported is 3.9 on Bionic; versions 4, 5 and 6 are\n        # mapped to LLVM-friendly 4.0, 5.0 and 6.0.\n        '4' { '4.0' }\n        '5' { '5.0' }\n        '6' { '6.0' }\n        default { $Version }\n    }\n}\n\nfunction Format-AptLine {\n    param(\n        [Parameter(Mandatory=$true)]\n        [string] $Version\n    )\n\n    if (!(Get-Command lsb_release -ErrorAction SilentlyContinue)) {\n        throw \"Couldn't find lsb_release; LLVM only provides repositories for Debian/Ubuntu\"\n    }\n    $codename = lsb_release -sc\n\n    \"deb http://apt.llvm.org/$codename/ llvm-toolchain-$codename-$Version main\"\n}\n\nfunction Add-UpstreamRepo {\n    param(\n        [Parameter(Mandatory=$true)]\n        [string] $Version\n    )\n\n    wget -qO - https://apt.llvm.org/llvm-snapshot.gpg.key | sudo apt-key add -\n    $apt_line = Format-AptLine $Version\n    sudo add-apt-repository --yes --update $apt_line\n}\n\n$clang = 'clang'\n$clangxx = 'clang++'\n\nif ($linux_host) {\n    $pkg_clang = 'clang'\n    $pkg_llvm = 'llvm'\n    $pkg_gxx = 'g++'\n\n    if (!$latest) {\n        $pkg_version = Format-UpstreamVersion $version\n        Add-UpstreamRepo $pkg_version\n\n        $pkg_clang = \"$pkg_clang-$pkg_version\"\n        $pkg_llvm = \"$pkg_llvm-$pkg_version\"\n\n        $clang = \"$clang-$pkg_version\"\n        $clangxx = \"$clangxx-$pkg_version\"\n    }\n    if (!$x64) {\n        $pkg_gxx = 'g++-multilib'\n    }\n    $packages = $pkg_clang,$pkg_llvm,$pkg_gxx\n\n    Install-Package $packages\n} elseif ($cygwin_host) {\n    if (!$x64) {\n        echo @'\n::warning ::\n32-bit-targeting Clang is unavailable on 64-bit Cygwin.\nPlease use 32-bit Cygwin instead.\nIf you _are_ using 32-bit Cygwin, please ignore this message.\n'@\n    }\n\n    # IDK why, but without libiconv-devel, even a \"Hello, world!\"\n    # C++ app cannot be compiled as of December 2020. Also, libstdc++\n    # is required; it's simpler to install gcc-g++ for all the\n    # dependencies.\n    Install-Package clang gcc-g++ libiconv-devel llvm\n} elseif ($windows_host) {\n    Install-Package llvm\n\n    $bin_dir = Join-Path $env:ProgramFiles LLVM bin\n    echo $bin_dir >> $env:GITHUB_PATH\n} else {\n    throw \"Sorry, installing Clang is unsupported on $os\"\n}\n\necho \"clang=$clang\"     >> $env:GITHUB_OUTPUT\necho \"clangxx=$clangxx\" >> $env:GITHUB_OUTPUT",
+          "errors": [
+            {
+              "node": null,
+              "originalError": {
+                "message": "src.sh:3:32: a command can only contain words and redirects; encountered ("
+              }
+            }
+          ],
+          "start_date": "2023-10-31 12:08:32.288000",
+          "duration_sec": 30.19133
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "New-Variable os -Value 'Linux' -Option Constant\n\nNew-Variable linux_host -Value ($os -eq 'Linux') -Option Constant\nNew-Variable cygwin_host -Value ('0' -eq '1') -Option Constant\nNew-Variable windows_host -Value ($os -eq 'Windows' -and !$cygwin_host) -Option Constant\n\nNew-Variable cc -Value ('1' -eq '1') -Option Constant\n\nNew-Variable clang -Value 'clang' -Option Constant\nNew-Variable clangxx -Value 'clang++' -Option Constant\n\nfunction Link-Exe {\n    param(\n        [Parameter(Mandatory=$true)]\n        [string] $Exe,\n        [Parameter(Mandatory=$true)]\n        [string] $LinkName\n    )\n\n    $exe_path = (Get-Command $Exe).Path\n    $link_dir = if ($script:windows_host) { Split-Path $exe_path } else { '/usr/local/bin' }\n    $link_name = if ($script:windows_host) { \"$LinkName.exe\" } else { $LinkName }\n    $link_path = if ($script:cygwin_host) { \"$link_dir/$link_name\" } else { Join-Path $link_dir $link_name }\n    echo \"Creating link $link_path -> $exe_path\"\n    if ($script:linux_host) {\n        sudo ln -f -s $exe_path $link_path\n    } elseif ($script:cygwin_host) {\n        ln.exe -f -s $exe_path $link_path\n    } elseif ($script:windows_host) {\n        New-Item -ItemType HardLink -Path $link_path -Value $exe_path -Force | Out-Null\n    }\n}\n\nif ($cc) {\n    Link-Exe $clang cc\n    if ($clang -ne 'clang') {\n        Link-Exe $clang 'clang'\n    }\n    Link-Exe $clangxx c++\n    if ($clangxx -ne 'clang++') {\n        Link-Exe $clangxx 'clang++'\n    }\n}",
+          "errors": [
+            {
+              "node": null,
+              "originalError": {
+                "message": "src.sh:3:32: a command can only contain words and redirects; encountered ("
+              }
+            }
+          ],
+          "start_date": "2023-10-31 12:09:02.479000",
+          "duration_sec": 0.676234
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "New-Variable cygwin_host -Value ('0' -eq '1') -Option Constant\nNew-Variable hardlinks -Value ('0' -eq '1') -Option Constant\n\nif ($cygwin_host -and $hardlinks) {\n    # clang/clang++ are Cygwin symlinks, pointing to clang-X.exe. It's\n    # convenient to make proper executables instead so that they can be\n    # called from Windows' command prompt.\n    echo @'\nwhile IFS= read -d '' -r link_path; do\n    dest_path=\"$( readlink --canonicalize-existing -- \"$link_path\" )\"\n    dest_ext=\".${dest_path##*.}\"\n    [ \"$dest_ext\" == \".$dest_path\" ] && dest_ext=\n    link_ext=\".${link_path##*.}\"\n    [ \"$link_ext\" == \".$link_path\" ] && link_ext=\n    echo \"Removing symlink $link_path\" && rm -f -- \"$link_path\"\n    [ \"$link_ext\" != \"$dest_ext\" ] && echo \"${PATHEXT//\\;/\n}\" | grep -q --ignore-case --line-regexp -F -- \"$dest_ext\" && link_path=\"$link_path$dest_ext\"\n    echo \"Creating hardlink $link_path -> $dest_path\" && ln -- \"$dest_path\" \"$link_path\"\ndone < <( find /usr/local/bin /usr/bin \\\n               -type l '-(' \\\n               -path '/usr/bin/clang*' -o \\\n               -path '/usr/bin/llvm*' -o \\\n               -path /usr/local/bin/cc -o \\\n               -path /usr/local/bin/c++ \\\n               '-)' -print0 )\n'@ | & bash.exe --login -o errexit -o nounset -o pipefail -o igncr\n}",
+          "errors": [
+            {
+              "node": null,
+              "originalError": {
+                "message": "src.sh:1:33: a command can only contain words and redirects; encountered ("
+              }
+            }
+          ],
+          "start_date": "2023-10-31 12:09:03.155000",
+          "duration_sec": 0.544156
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "cmake -B /home/runner/work/hwinfo/hwinfo/build -DCMAKE_BUILD_TYPE=Release",
+          "commands": [
+            {
+              "annotations": [
+                "SC-CMAKE"
+              ],
+              "command": "cmake",
+              "categories": [
+                "BUILD_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CMAKE-B"
+                  ],
+                  "content": "-B /home/runner/work/hwinfo/hwinfo/build"
+                },
+                {
+                  "annotations": [
+                    "SC-CMAKE-PATHTOSOURCEORBUILD"
+                  ],
+                  "content": "-DCMAKE_BUILD_TYPE=Release"
+                }
+              ]
+            }
+          ],
+          "errors": null,
+          "start_date": "2023-10-31 12:09:03.699000",
+          "duration_sec": 6.422067
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "cmake --build /home/runner/work/hwinfo/hwinfo/build",
+          "commands": [
+            {
+              "annotations": [
+                "SC-CMAKE-BULD"
+              ],
+              "command": "cmake",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CMAKE-BUILD"
+                  ],
+                  "content": "--build /home/runner/work/hwinfo/hwinfo/build"
+                }
+              ]
+            }
+          ],
+          "errors": null,
+          "start_date": "2023-10-31 12:09:10.121000",
+          "duration_sec": 21.162721
+        }
+      ]
+    }
+  ]
+}

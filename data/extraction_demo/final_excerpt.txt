@@ -1,0 +1,312 @@
+  Downloaded tempfile v3.8.1
+  Downloaded rustc_version v0.4.0
+  Downloaded heck v0.4.1
+  Downloaded errno v0.3.5
+  Downloaded current_platform v0.2.0
+  Downloaded strsim v0.10.0
+  Downloaded fastrand v2.0.1
+  Downloaded colorchoice v1.0.0
+  Downloaded anstream v0.6.4
+   Compiling proc-macro2 v1.0.69
+   Compiling unicode-ident v1.0.12
+   Compiling utf8parse v0.2.1
+   Compiling anstyle-parse v0.2.2
+   Compiling anstyle v1.0.4
+   Compiling colorchoice v1.0.0
+   Compiling rustix v0.38.21
+   Compiling serde v1.0.190
+   Compiling quote v1.0.33
+   Compiling anstyle-query v1.0.0
+   Compiling semver v1.0.20
+   Compiling anstream v0.6.4
+   Compiling syn v2.0.38
+   Compiling strsim v0.10.0
+   Compiling linux-raw-sys v0.4.10
+   Compiling heck v0.4.1
+   Compiling anyhow v1.0.75
+   Compiling bitflags v2.4.1
+   Compiling current_platform v0.2.0
+   Compiling clap_lex v0.6.0
+   Compiling clap_builder v4.4.7
+   Compiling clap_derive v4.4.7
+   Compiling cfg-if v1.0.0
+   Compiling fastrand v2.0.1
+   Compiling tempfile v3.8.1
+   Compiling rustc_version v0.4.0
+   Compiling toml v0.5.11
+   Compiling clap v4.4.7
+   Compiling cargo-fuzz v0.11.2
+    Finished release [optimized] target(s) in 29.93s
+  Installing /home/runner/.cargo/bin/cargo-fuzz
+   Installed package `cargo-fuzz v0.11.2` (executable `cargo-fuzz`)
+    Updating crates.io index
+ Downloading crates ...
+  Downloaded countme v3.0.1
+  Downloaded ra-ap-rustc_parse_format v0.14.0
+  Downloaded hashbrown v0.12.3
+  Downloaded smol_str v0.2.0
+  Downloaded drop_bomb v0.1.5
+  Downloaded jod-thread v0.1.2
+  Downloaded ra-ap-rustc_abi v0.14.0
+  Downloaded arbitrary v1.3.1
+  Downloaded dashmap v5.5.3
+  Downloaded cc v1.0.83
+  Downloaded tracing-core v0.1.32
+  Downloaded rowan v0.15.13
+  Downloaded tracing v0.1.40
+  Downloaded unicode-properties v0.1.0
+  Downloaded smallvec v1.11.1
+  Downloaded ra-ap-rustc_index v0.14.0
+  Downloaded log v0.4.20
+  Downloaded libfuzzer-sys v0.4.7
+  Downloaded jobserver v0.1.27
+  Downloaded itertools v0.10.5
+  Downloaded indexmap v2.0.2
+  Downloaded hashbrown v0.14.2
+  Downloaded crossbeam-channel v0.5.8
+  Downloaded unicode-xid v0.2.4
+  Downloaded triomphe v0.1.9
+  Downloaded rustc-hash v1.1.0
+  Downloaded perf-event v0.4.7
+  Downloaded text-size v1.1.1
+  Downloaded bitflags v1.3.2
+  Downloaded perf-event-open-sys v1.0.1
+  Downloaded tracing-attributes v0.1.27
+  Downloaded ra-ap-rustc_lexer v0.14.0
+  Downloaded scopeguard v1.2.0
+  Downloaded pin-project-lite v0.2.13
+  Downloaded memoffset v0.9.0
+  Downloaded either v1.9.0
+  Downloaded la-arena v0.3.1
+  Downloaded cov-mark v2.0.0-pre.1
+  Downloaded always-assert v0.1.3
+  Downloaded parking_lot_core v0.9.9
+  Downloaded once_cell v1.18.0
+  Downloaded lock_api v0.4.11
+  Downloaded equivalent v1.0.1
+  Downloaded crossbeam-utils v0.8.16
+  Downloaded autocfg v1.1.0
+  Downloaded arrayvec v0.7.4
+   Compiling libc v0.2.149
+   Compiling autocfg v1.1.0
+   Compiling once_cell v1.18.0
+   Compiling smallvec v1.11.1
+   Compiling proc-macro2 v1.0.69
+   Compiling unicode-ident v1.0.12
+   Compiling cfg-if v1.0.0
+   Compiling quote v1.0.33
+   Compiling lock_api v0.4.11
+   Compiling parking_lot_core v0.9.9
+   Compiling syn v2.0.38
+   Compiling scopeguard v1.2.0
+   Compiling hashbrown v0.14.2
+   Compiling arrayvec v0.7.4
+   Compiling ra-ap-rustc_index v0.14.0
+   Compiling tracing-core v0.1.32
+   Compiling tracing-attributes v0.1.27
+   Compiling unicode-xid v0.2.4
+   Compiling unicode-properties v0.1.0
+   Compiling pin-project-lite v0.2.13
+   Compiling crossbeam-utils v0.8.16
+   Compiling tracing v0.1.40
+   Compiling ra-ap-rustc_lexer v0.14.0
+   Compiling dashmap v5.5.3
+   Compiling jobserver v0.1.27
+   Compiling memoffset v0.9.0
+   Compiling bitflags v1.3.2
+   Compiling rustc-hash v1.1.0
+   Compiling ra-ap-rustc_abi v0.14.0
+   Compiling countme v3.0.1
+   Compiling cc v1.0.83
+   Compiling ra-ap-rustc_parse_format v0.14.0
+   Compiling perf-event-open-sys v1.0.1
+   Compiling either v1.9.0
+   Compiling text-size v1.1.1
+   Compiling log v0.4.20
+   Compiling always-assert v0.1.3
+   Compiling itertools v0.10.5
+   Compiling perf-event v0.4.7
+   Compiling crossbeam-channel v0.5.8
+   Compiling rustc-dependencies v0.0.0 (/home/runner/work/rust-analyzer/rust-analyzer/crates/rustc-dependencies)
+   Compiling libfuzzer-sys v0.4.7
+   Compiling limit v0.0.0 (/home/runner/work/rust-analyzer/rust-analyzer/crates/limit)
+   Compiling hashbrown v0.12.3
+   Compiling jod-thread v0.1.2
+   Compiling la-arena v0.3.1
+   Compiling equivalent v1.0.1
+   Compiling drop_bomb v0.1.5
+   Compiling parser v0.0.0 (/home/runner/work/rust-analyzer/rust-analyzer/crates/parser)
+error: unused import: `T`
+ --> /home/runner/work/rust-analyzer/rust-analyzer/crates/parser/src/syntax_kind.rs:7:39
+  |
+7 | pub use self::generated::{SyntaxKind, T};
+  |                                       ^
+  |
+  = note: `-D unused-imports` implied by `-D warnings`
+  = help: to override `-D warnings` add `#[allow(unused_imports)]`
+2023-10-29T00:21:05.1888004Z 
+error: could not compile `parser` (lib) due to previous error
+warning: build failed, waiting for other jobs to finish...
+Error: failed to build fuzz script: ASAN_OPTIONS="detect_odr_violation=0" RUSTFLAGS="-Cpasses=sancov-module -Cllvm-args=-sanitizer-coverage-level=4 -Cllvm-args=-sanitizer-coverage-inline-8bit-counters -Cllvm-args=-sanitizer-coverage-pc-table -Cllvm-args=-sanitizer-coverage-trace-compares --cfg fuzzing -Clink-dead-code -Zsanitizer=address -Cllvm-args=-sanitizer-coverage-stack-depth -Cdebug-assertions -C codegen-units=1 -D warnings -W unreachable-pub -W bare-trait-objects" "cargo" "build" "--manifest-path" "/home/runner/work/rust-analyzer/rust-analyzer/crates/syntax/fuzz/Cargo.toml" "--target" "x86_64-unknown-linux-gnu" "--release" "--bins"
+##[error]Process completed with exit code 1.
+
+=======================================================================
+JOB LOG 8: 0_Rust.txt
+=======================================================================
+Requested labels: ubuntu-latest
+  Downloaded tempfile v3.8.1
+  Downloaded rustc_version v0.4.0
+  Downloaded heck v0.4.1
+  Downloaded errno v0.3.5
+  Downloaded current_platform v0.2.0
+  Downloaded strsim v0.10.0
+  Downloaded fastrand v2.0.1
+  Downloaded colorchoice v1.0.0
+  Downloaded anstream v0.6.4
+   Compiling proc-macro2 v1.0.69
+   Compiling unicode-ident v1.0.12
+   Compiling utf8parse v0.2.1
+   Compiling anstyle-parse v0.2.2
+   Compiling anstyle v1.0.4
+   Compiling colorchoice v1.0.0
+   Compiling rustix v0.38.21
+   Compiling serde v1.0.190
+   Compiling quote v1.0.33
+   Compiling anstyle-query v1.0.0
+   Compiling semver v1.0.20
+   Compiling anstream v0.6.4
+   Compiling syn v2.0.38
+   Compiling strsim v0.10.0
+   Compiling linux-raw-sys v0.4.10
+   Compiling heck v0.4.1
+   Compiling anyhow v1.0.75
+   Compiling bitflags v2.4.1
+   Compiling current_platform v0.2.0
+   Compiling clap_lex v0.6.0
+   Compiling clap_builder v4.4.7
+   Compiling clap_derive v4.4.7
+   Compiling cfg-if v1.0.0
+   Compiling fastrand v2.0.1
+   Compiling tempfile v3.8.1
+   Compiling rustc_version v0.4.0
+   Compiling toml v0.5.11
+   Compiling clap v4.4.7
+   Compiling cargo-fuzz v0.11.2
+    Finished release [optimized] target(s) in 29.93s
+  Installing /home/runner/.cargo/bin/cargo-fuzz
+   Installed package `cargo-fuzz v0.11.2` (executable `cargo-fuzz`)
+    Updating crates.io index
+ Downloading crates ...
+  Downloaded countme v3.0.1
+  Downloaded ra-ap-rustc_parse_format v0.14.0
+  Downloaded hashbrown v0.12.3
+  Downloaded smol_str v0.2.0
+  Downloaded drop_bomb v0.1.5
+  Downloaded jod-thread v0.1.2
+  Downloaded ra-ap-rustc_abi v0.14.0
+  Downloaded arbitrary v1.3.1
+  Downloaded dashmap v5.5.3
+  Downloaded cc v1.0.83
+  Downloaded tracing-core v0.1.32
+  Downloaded rowan v0.15.13
+  Downloaded tracing v0.1.40
+  Downloaded unicode-properties v0.1.0
+  Downloaded smallvec v1.11.1
+  Downloaded ra-ap-rustc_index v0.14.0
+  Downloaded log v0.4.20
+  Downloaded libfuzzer-sys v0.4.7
+  Downloaded jobserver v0.1.27
+  Downloaded itertools v0.10.5
+  Downloaded indexmap v2.0.2
+  Downloaded hashbrown v0.14.2
+  Downloaded crossbeam-channel v0.5.8
+  Downloaded unicode-xid v0.2.4
+  Downloaded triomphe v0.1.9
+  Downloaded rustc-hash v1.1.0
+  Downloaded perf-event v0.4.7
+  Downloaded text-size v1.1.1
+  Downloaded bitflags v1.3.2
+  Downloaded perf-event-open-sys v1.0.1
+  Downloaded tracing-attributes v0.1.27
+  Downloaded ra-ap-rustc_lexer v0.14.0
+  Downloaded scopeguard v1.2.0
+  Downloaded pin-project-lite v0.2.13
+  Downloaded memoffset v0.9.0
+  Downloaded either v1.9.0
+  Downloaded la-arena v0.3.1
+  Downloaded cov-mark v2.0.0-pre.1
+  Downloaded always-assert v0.1.3
+  Downloaded parking_lot_core v0.9.9
+  Downloaded once_cell v1.18.0
+  Downloaded lock_api v0.4.11
+  Downloaded equivalent v1.0.1
+  Downloaded crossbeam-utils v0.8.16
+  Downloaded autocfg v1.1.0
+  Downloaded arrayvec v0.7.4
+   Compiling libc v0.2.149
+   Compiling autocfg v1.1.0
+   Compiling once_cell v1.18.0
+   Compiling smallvec v1.11.1
+   Compiling proc-macro2 v1.0.69
+   Compiling unicode-ident v1.0.12
+   Compiling cfg-if v1.0.0
+   Compiling quote v1.0.33
+   Compiling lock_api v0.4.11
+   Compiling parking_lot_core v0.9.9
+   Compiling syn v2.0.38
+   Compiling scopeguard v1.2.0
+   Compiling hashbrown v0.14.2
+   Compiling arrayvec v0.7.4
+   Compiling ra-ap-rustc_index v0.14.0
+   Compiling tracing-core v0.1.32
+   Compiling tracing-attributes v0.1.27
+   Compiling unicode-xid v0.2.4
+   Compiling unicode-properties v0.1.0
+   Compiling pin-project-lite v0.2.13
+   Compiling crossbeam-utils v0.8.16
+   Compiling tracing v0.1.40
+   Compiling ra-ap-rustc_lexer v0.14.0
+   Compiling dashmap v5.5.3
+   Compiling jobserver v0.1.27
+   Compiling memoffset v0.9.0
+   Compiling bitflags v1.3.2
+   Compiling rustc-hash v1.1.0
+   Compiling ra-ap-rustc_abi v0.14.0
+   Compiling countme v3.0.1
+   Compiling cc v1.0.83
+   Compiling ra-ap-rustc_parse_format v0.14.0
+   Compiling perf-event-open-sys v1.0.1
+   Compiling either v1.9.0
+   Compiling text-size v1.1.1
+   Compiling log v0.4.20
+   Compiling always-assert v0.1.3
+   Compiling itertools v0.10.5
+   Compiling perf-event v0.4.7
+   Compiling crossbeam-channel v0.5.8
+   Compiling rustc-dependencies v0.0.0 (/home/runner/work/rust-analyzer/rust-analyzer/crates/rustc-dependencies)
+   Compiling libfuzzer-sys v0.4.7
+   Compiling limit v0.0.0 (/home/runner/work/rust-analyzer/rust-analyzer/crates/limit)
+   Compiling hashbrown v0.12.3
+   Compiling jod-thread v0.1.2
+   Compiling la-arena v0.3.1
+   Compiling equivalent v1.0.1
+   Compiling drop_bomb v0.1.5
+   Compiling parser v0.0.0 (/home/runner/work/rust-analyzer/rust-analyzer/crates/parser)
+error: unused import: `T`
+ --> /home/runner/work/rust-analyzer/rust-analyzer/crates/parser/src/syntax_kind.rs:7:39
+  |
+7 | pub use self::generated::{SyntaxKind, T};
+  |                                       ^
+  |
+  = note: `-D unused-imports` implied by `-D warnings`
+  = help: to override `-D warnings` add `#[allow(unused_imports)]`
+2023-10-29T00:21:05.1888008Z 
+error: could not compile `parser` (lib) due to previous error
+warning: build failed, waiting for other jobs to finish...
+Error: failed to build fuzz script: ASAN_OPTIONS="detect_odr_violation=0" RUSTFLAGS="-Cpasses=sancov-module -Cllvm-args=-sanitizer-coverage-level=4 -Cllvm-args=-sanitizer-coverage-inline-8bit-counters -Cllvm-args=-sanitizer-coverage-pc-table -Cllvm-args=-sanitizer-coverage-trace-compares --cfg fuzzing -Clink-dead-code -Zsanitizer=address -Cllvm-args=-sanitizer-coverage-stack-depth -Cdebug-assertions -C codegen-units=1 -D warnings -W unreachable-pub -W bare-trait-objects" "cargo" "build" "--manifest-path" "/home/runner/work/rust-analyzer/rust-analyzer/crates/syntax/fuzz/Cargo.toml" "--target" "x86_64-unknown-linux-gnu" "--release" "--bins"
+##[error]Process completed with exit code 1.
+Post job cleanup.
+[command]/usr/bin/git version
+git version 2.42.0
+Temporarily overriding HOME='/home/runner/work/_temp/f1b47a62-cd13-4b91-8df6-4825e374210a' before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory

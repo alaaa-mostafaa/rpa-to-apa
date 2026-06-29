@@ -1,0 +1,81 @@
+{
+  "n_cases": 5000,
+  "n_scored": 2854,
+  "n_skipped": 2146,
+  "n_errors_reading": 0,
+  "n_timeouts": 0,
+  "llm": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "call_gate_risk": 0.35,
+    "min_signals": 2,
+    "pred_threshold": 0.65,
+    "max_tokens": 120,
+    "cache": "comparison_results/log_marker_analysis_10k_20260516/llm_cache_10k.jsonl",
+    "n_calls": 2854,
+    "n_no_call": 2146
+  },
+  "actual": {
+    "failure": 5000,
+    "success": 0
+  },
+  "marker_breakdown": {
+    "failure": {
+      "with_marker": 4648,
+      "without_marker": 352,
+      "llm_called_with_marker": 2634,
+      "llm_called_before_marker": 2634,
+      "pred_failure_with_marker": 803,
+      "pred_failure_before_marker": 803,
+      "llm_called_without_marker": 220,
+      "pred_failure_without_marker": 94
+    },
+    "success": {
+      "with_marker": 0,
+      "without_marker": 0,
+      "llm_called_with_marker": 0,
+      "llm_called_before_marker": 0,
+      "pred_failure_with_marker": 0,
+      "pred_failure_before_marker": 0,
+      "llm_called_without_marker": 0,
+      "pred_failure_without_marker": 0
+    }
+  },
+  "confusion_matrix": {
+    "tp": 897,
+    "fp": 0,
+    "tn": 0,
+    "fn": 1957
+  },
+  "metrics": {
+    "accuracy_all": 0.1794,
+    "accuracy_scored": 0.3143,
+    "precision": 1.0,
+    "recall": 0.3143,
+    "f1": 0.4783
+  },
+  "before_first_error_marker": {
+    "eligible_cases": 2634,
+    "called_before": 2634,
+    "pct": 100.0,
+    "lead_lines": {
+      "avg": 10147.2,
+      "median": 953.5,
+      "p10": 12.0,
+      "p90": 20015.5,
+      "min": 1,
+      "max": 923640
+    }
+  },
+  "errors_before_llm_call": {
+    "avg_error_markers": 0.0,
+    "median_error_markers": 0.0,
+    "avg_giveaway_lines": 0.0,
+    "median_giveaway_lines": 0.0
+  },
+  "progress": {
+    "start_line": 1,
+    "last_results_line_processed": 5000,
+    "next_start_line": 5001
+  }
+}

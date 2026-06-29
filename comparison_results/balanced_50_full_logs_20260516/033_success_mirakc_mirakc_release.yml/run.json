@@ -1,0 +1,2470 @@
+{
+  "_id": "mirakc/mirakc_.github/workflows/release.yml_136_1",
+  "repository_name": "mirakc/mirakc",
+  "workflow_path": ".github/workflows/release.yml",
+  "run_number": 136,
+  "run_attempt": 1,
+  "time_to_import": 13545.634384,
+  "metadata": {
+    "id": 6671405882,
+    "name": "release",
+    "node_id": "WFR_kwLOC6cet88AAAABjaWTOg",
+    "head_branch": "2.5.2",
+    "head_sha": "83682c3233f096236024ba0182873179d2161f9d",
+    "path": ".github/workflows/release.yml",
+    "display_title": "release: bump version to 2.5.2",
+    "run_number": 136,
+    "event": "push",
+    "status": "completed",
+    "conclusion": "success",
+    "workflow_id": 1852741,
+    "check_suite_id": 17700230371,
+    "check_suite_node_id": "CS_kwDOC6cet88AAAAEHwQU4w",
+    "url": "https://api.github.com/repos/mirakc/mirakc/actions/runs/6671405882",
+    "html_url": "https://github.com/mirakc/mirakc/actions/runs/6671405882",
+    "pull_requests": [],
+    "created_at": "2023-10-27T19:24:26Z",
+    "updated_at": "2023-10-27T19:58:39Z",
+    "actor": {
+      "login": "mirakc-ci[bot]",
+      "id": 135333191,
+      "node_id": "BOT_kgDOCBEFRw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/70103669?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mirakc-ci%5Bbot%5D",
+      "html_url": "https://github.com/apps/mirakc-ci",
+      "followers_url": "https://api.github.com/users/mirakc-ci%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/mirakc-ci%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mirakc-ci%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mirakc-ci%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mirakc-ci%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/mirakc-ci%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/mirakc-ci%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/mirakc-ci%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mirakc-ci%5Bbot%5D/received_events",
+      "type": "Bot",
+      "site_admin": false
+    },
+    "run_attempt": 1,
+    "referenced_workflows": [
+      {
+        "path": "mirakc/mirakc/.github/workflows/docker.yml@83682c3233f096236024ba0182873179d2161f9d",
+        "sha": "83682c3233f096236024ba0182873179d2161f9d",
+        "ref": "refs/tags/2.5.2"
+      }
+    ],
+    "run_started_at": "2023-10-27T19:24:26Z",
+    "triggering_actor": {
+      "login": "mirakc-ci[bot]",
+      "id": 135333191,
+      "node_id": "BOT_kgDOCBEFRw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/70103669?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mirakc-ci%5Bbot%5D",
+      "html_url": "https://github.com/apps/mirakc-ci",
+      "followers_url": "https://api.github.com/users/mirakc-ci%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/mirakc-ci%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mirakc-ci%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mirakc-ci%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mirakc-ci%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/mirakc-ci%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/mirakc-ci%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/mirakc-ci%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mirakc-ci%5Bbot%5D/received_events",
+      "type": "Bot",
+      "site_admin": false
+    },
+    "jobs_url": "https://api.github.com/repos/mirakc/mirakc/actions/runs/6671405882/jobs",
+    "logs_url": "https://api.github.com/repos/mirakc/mirakc/actions/runs/6671405882/logs",
+    "check_suite_url": "https://api.github.com/repos/mirakc/mirakc/check-suites/17700230371",
+    "artifacts_url": "https://api.github.com/repos/mirakc/mirakc/actions/runs/6671405882/artifacts",
+    "cancel_url": "https://api.github.com/repos/mirakc/mirakc/actions/runs/6671405882/cancel",
+    "rerun_url": "https://api.github.com/repos/mirakc/mirakc/actions/runs/6671405882/rerun",
+    "previous_attempt_url": null,
+    "workflow_url": "https://api.github.com/repos/mirakc/mirakc/actions/workflows/1852741",
+    "head_commit": {
+      "id": "83682c3233f096236024ba0182873179d2161f9d",
+      "tree_id": "d3e95499c0220c03709f7f60dc9e74b58f139a62",
+      "message": "release: bump version to 2.5.2",
+      "timestamp": "2023-10-27T19:24:23Z",
+      "author": {
+        "name": "mirakc-ci[bot]",
+        "email": "135333191+mirakc-ci[bot]@users.noreply.github.com"
+      },
+      "committer": {
+        "name": "mirakc-ci[bot]",
+        "email": "135333191+mirakc-ci[bot]@users.noreply.github.com"
+      }
+    },
+    "repository": {
+      "id": 195501751,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxOTU1MDE3NTE=",
+      "name": "mirakc",
+      "full_name": "mirakc/mirakc",
+      "private": false,
+      "owner": {
+        "login": "mirakc",
+        "id": 70103669,
+        "node_id": "MDEyOk9yZ2FuaXphdGlvbjcwMTAzNjY5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/70103669?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mirakc",
+        "html_url": "https://github.com/mirakc",
+        "followers_url": "https://api.github.com/users/mirakc/followers",
+        "following_url": "https://api.github.com/users/mirakc/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mirakc/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mirakc/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mirakc/subscriptions",
+        "organizations_url": "https://api.github.com/users/mirakc/orgs",
+        "repos_url": "https://api.github.com/users/mirakc/repos",
+        "events_url": "https://api.github.com/users/mirakc/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mirakc/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/mirakc/mirakc",
+      "description": "A Mirakurun-compatible PVR backend written in Rust",
+      "fork": false,
+      "url": "https://api.github.com/repos/mirakc/mirakc",
+      "forks_url": "https://api.github.com/repos/mirakc/mirakc/forks",
+      "keys_url": "https://api.github.com/repos/mirakc/mirakc/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/mirakc/mirakc/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/mirakc/mirakc/teams",
+      "hooks_url": "https://api.github.com/repos/mirakc/mirakc/hooks",
+      "issue_events_url": "https://api.github.com/repos/mirakc/mirakc/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/mirakc/mirakc/events",
+      "assignees_url": "https://api.github.com/repos/mirakc/mirakc/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/mirakc/mirakc/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/mirakc/mirakc/tags",
+      "blobs_url": "https://api.github.com/repos/mirakc/mirakc/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/mirakc/mirakc/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/mirakc/mirakc/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/mirakc/mirakc/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/mirakc/mirakc/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/mirakc/mirakc/languages",
+      "stargazers_url": "https://api.github.com/repos/mirakc/mirakc/stargazers",
+      "contributors_url": "https://api.github.com/repos/mirakc/mirakc/contributors",
+      "subscribers_url": "https://api.github.com/repos/mirakc/mirakc/subscribers",
+      "subscription_url": "https://api.github.com/repos/mirakc/mirakc/subscription",
+      "commits_url": "https://api.github.com/repos/mirakc/mirakc/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/mirakc/mirakc/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/mirakc/mirakc/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/mirakc/mirakc/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/mirakc/mirakc/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/mirakc/mirakc/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/mirakc/mirakc/merges",
+      "archive_url": "https://api.github.com/repos/mirakc/mirakc/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/mirakc/mirakc/downloads",
+      "issues_url": "https://api.github.com/repos/mirakc/mirakc/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/mirakc/mirakc/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/mirakc/mirakc/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/mirakc/mirakc/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/mirakc/mirakc/labels{/name}",
+      "releases_url": "https://api.github.com/repos/mirakc/mirakc/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/mirakc/mirakc/deployments"
+    },
+    "head_repository": {
+      "id": 195501751,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxOTU1MDE3NTE=",
+      "name": "mirakc",
+      "full_name": "mirakc/mirakc",
+      "private": false,
+      "owner": {
+        "login": "mirakc",
+        "id": 70103669,
+        "node_id": "MDEyOk9yZ2FuaXphdGlvbjcwMTAzNjY5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/70103669?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mirakc",
+        "html_url": "https://github.com/mirakc",
+        "followers_url": "https://api.github.com/users/mirakc/followers",
+        "following_url": "https://api.github.com/users/mirakc/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mirakc/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mirakc/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mirakc/subscriptions",
+        "organizations_url": "https://api.github.com/users/mirakc/orgs",
+        "repos_url": "https://api.github.com/users/mirakc/repos",
+        "events_url": "https://api.github.com/users/mirakc/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mirakc/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/mirakc/mirakc",
+      "description": "A Mirakurun-compatible PVR backend written in Rust",
+      "fork": false,
+      "url": "https://api.github.com/repos/mirakc/mirakc",
+      "forks_url": "https://api.github.com/repos/mirakc/mirakc/forks",
+      "keys_url": "https://api.github.com/repos/mirakc/mirakc/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/mirakc/mirakc/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/mirakc/mirakc/teams",
+      "hooks_url": "https://api.github.com/repos/mirakc/mirakc/hooks",
+      "issue_events_url": "https://api.github.com/repos/mirakc/mirakc/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/mirakc/mirakc/events",
+      "assignees_url": "https://api.github.com/repos/mirakc/mirakc/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/mirakc/mirakc/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/mirakc/mirakc/tags",
+      "blobs_url": "https://api.github.com/repos/mirakc/mirakc/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/mirakc/mirakc/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/mirakc/mirakc/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/mirakc/mirakc/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/mirakc/mirakc/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/mirakc/mirakc/languages",
+      "stargazers_url": "https://api.github.com/repos/mirakc/mirakc/stargazers",
+      "contributors_url": "https://api.github.com/repos/mirakc/mirakc/contributors",
+      "subscribers_url": "https://api.github.com/repos/mirakc/mirakc/subscribers",
+      "subscription_url": "https://api.github.com/repos/mirakc/mirakc/subscription",
+      "commits_url": "https://api.github.com/repos/mirakc/mirakc/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/mirakc/mirakc/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/mirakc/mirakc/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/mirakc/mirakc/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/mirakc/mirakc/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/mirakc/mirakc/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/mirakc/mirakc/merges",
+      "archive_url": "https://api.github.com/repos/mirakc/mirakc/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/mirakc/mirakc/downloads",
+      "issues_url": "https://api.github.com/repos/mirakc/mirakc/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/mirakc/mirakc/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/mirakc/mirakc/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/mirakc/mirakc/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/mirakc/mirakc/labels{/name}",
+      "releases_url": "https://api.github.com/repos/mirakc/mirakc/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/mirakc/mirakc/deployments"
+    }
+  },
+  "logs_archive": {
+    "path": "/data/logs/mirakc/mirakc/release_a4d4/136-1.tar.gz"
+  },
+  "log_insights": [
+    {
+      "file": "0_docker  docker (alpine).txt",
+      "total_lines": 8628,
+      "log_size": 2689839,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231025.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v4",
+          "sha": "b4ffde65f46336ab88eb53be808477a3936bae11",
+          "with": {
+            "ref": "2.5.2",
+            "repository": "mirakc/mirakc",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "show-progress": "true",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {
+            "MAIN_DISTRO": "debian",
+            "DEBIAN_CODENAME": "bookworm"
+          },
+          "start_date": "2023-10-27 19:24:37.377000",
+          "duration_sec": 0.81949
+        },
+        {
+          "type": "shell",
+          "env": {
+            "MAIN_DISTRO": "debian",
+            "DEBIAN_CODENAME": "bookworm"
+          },
+          "code": "IMAGE=\"{0}\"  # placeholder\nVERSION=\"2.5.2\"\nMAIN_TAG=\"$IMAGE:$VERSION-alpine\"\nTAGS=\"$MAIN_TAG\"\nif [ \"$MAIN_DISTRO\" = \"alpine\" ]\nthen\n  TAGS=\"$TAGS,$IMAGE:$VERSION\"\nfi\nif [ \"tag\" = tag ]\nthen\n  # Always update latest image tags when a new git tag is created.\n  TAGS=\"$TAGS,$IMAGE:alpine\"\n  if [ \"$MAIN_DISTRO\" = \"alpine\" ]; then\n    TAGS=\"$TAGS,$IMAGE:latest\"\n  fi\nfi\nif [ \"$VERSION\" = main ]\nthen\n  TOOLS_TAG=alpine\nelse\n  MAJOR=$(echo \"$VERSION\" | cut -d '.' -f 1)\n  MINOR=$(echo \"$VERSION\" | cut -d '.' -f 2)\n  TOOLS_TAG=\"alpine-${MAJOR}.${MINOR}\"\nfi\necho \"Version: $VERSION\"\necho \"Main tag: $MAIN_TAG\"\necho \"Tags: $TAGS\"\necho \"Tools tag: $TOOLS_TAG\"\necho \"version=$VERSION\" >>$GITHUB_OUTPUT\necho \"main-tag=$MAIN_TAG\" >>$GITHUB_OUTPUT\necho \"tags=$TAGS\" >>$GITHUB_OUTPUT\necho \"tools-tag=$TOOLS_TAG\" >>$GITHUB_OUTPUT",
+          "commands": [
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"Version: $VERSION\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"Main tag: $MAIN_TAG\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"Tags: $TAGS\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"Tools tag: $TOOLS_TAG\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"version=$VERSION\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"main-tag=$MAIN_TAG\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"tags=$TAGS\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"tools-tag=$TOOLS_TAG\""
+                }
+              ]
+            },
+            {
+              "command": "[",
+              "args": [
+                {
+                  "content": "\"$MAIN_DISTRO\""
+                },
+                {
+                  "content": "="
+                },
+                {
+                  "content": "\"alpine\""
+                },
+                {
+                  "content": "]"
+                }
+              ]
+            },
+            {
+              "command": "[",
+              "args": [
+                {
+                  "content": "\"tag\""
+                },
+                {
+                  "content": "="
+                },
+                {
+                  "content": "tag"
+                },
+                {
+                  "content": "]"
+                }
+              ]
+            },
+            {
+              "command": "[",
+              "args": [
+                {
+                  "content": "\"$MAIN_DISTRO\""
+                },
+                {
+                  "content": "="
+                },
+                {
+                  "content": "\"alpine\""
+                },
+                {
+                  "content": "]"
+                }
+              ]
+            },
+            {
+              "command": "[",
+              "args": [
+                {
+                  "content": "\"$VERSION\""
+                },
+                {
+                  "content": "="
+                },
+                {
+                  "content": "main"
+                },
+                {
+                  "content": "]"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"$VERSION\""
+                }
+              ]
+            },
+            {
+              "command": "cut",
+              "args": [
+                {
+                  "content": "-d"
+                },
+                {
+                  "content": "'.'"
+                },
+                {
+                  "content": "-f"
+                },
+                {
+                  "content": "1"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"$VERSION\""
+                }
+              ]
+            },
+            {
+              "command": "cut",
+              "args": [
+                {
+                  "content": "-d"
+                },
+                {
+                  "content": "'.'"
+                },
+                {
+                  "content": "-f"
+                },
+                {
+                  "content": "2"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-27 19:24:38.197000",
+          "duration_sec": 0.040782
+        },
+        {
+          "type": "action",
+          "repository": "docker",
+          "action": "setup-qemu-action",
+          "version": "v3",
+          "sha": "68827325e0b33c7199eb31dd4e31fbe9023e06e3",
+          "with": {
+            "image": "tonistiigi/binfmt:latest",
+            "platforms": "all"
+          },
+          "env": {
+            "MAIN_DISTRO": "debian",
+            "DEBIAN_CODENAME": "bookworm"
+          },
+          "start_date": "2023-10-27 19:24:38.238000",
+          "duration_sec": 2.726353
+        },
+        {
+          "type": "action",
+          "repository": "docker",
+          "action": "setup-buildx-action",
+          "version": "v3",
+          "sha": "f95db51fddba0c2d1ec667646a06c2ce06100226",
+          "with": {
+            "buildkitd-flags": "--debug",
+            "config-inline": "[worker.oci]",
+            "driver": "docker-container",
+            "install": "false",
+            "use": "true",
+            "cleanup": "true"
+          },
+          "env": {
+            "MAIN_DISTRO": "debian",
+            "DEBIAN_CODENAME": "bookworm"
+          },
+          "start_date": "2023-10-27 19:24:40.964000",
+          "duration_sec": 2.094906
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "cache",
+          "version": "v3",
+          "sha": "704facf57e6136b1bc63b828d79edcd491f0ee84",
+          "with": {
+            "path": "/tmp/.docker-cache",
+            "key": "Linux-docker-cache-alpine-7cf2373637cc60bb7e7a7b4417b2c1fd4770c229a169e2fffaf4e9cd57a15483",
+            "restore-keys": "Linux-docker-cache-alpine-",
+            "enableCrossOsArchive": "false",
+            "fail-on-cache-miss": "false",
+            "lookup-only": "false"
+          },
+          "env": {
+            "MAIN_DISTRO": "debian",
+            "DEBIAN_CODENAME": "bookworm"
+          },
+          "start_date": "2023-10-27 19:24:43.059000",
+          "duration_sec": 1.274463
+        },
+        {
+          "type": "action",
+          "repository": "docker",
+          "action": "login-action",
+          "version": "v3",
+          "sha": "343f7c4344506bcbf9b4de18042ae17996df046d",
+          "with": {
+            "registry": "docker.io",
+            "username": "***",
+            "password": "***",
+            "ecr": "auto",
+            "logout": "true"
+          },
+          "env": {
+            "MAIN_DISTRO": "debian",
+            "DEBIAN_CODENAME": "bookworm"
+          },
+          "start_date": "2023-10-27 19:24:44.333000",
+          "duration_sec": 0.311207
+        },
+        {
+          "type": "action",
+          "repository": "docker",
+          "action": "login-action",
+          "version": "v3",
+          "sha": "343f7c4344506bcbf9b4de18042ae17996df046d",
+          "with": {
+            "registry": "ghcr.io",
+            "username": "mirakc-ci[bot]",
+            "password": "***",
+            "ecr": "auto",
+            "logout": "true"
+          },
+          "env": {
+            "MAIN_DISTRO": "debian",
+            "DEBIAN_CODENAME": "bookworm"
+          },
+          "start_date": "2023-10-27 19:24:44.645000",
+          "duration_sec": 0.364669
+        },
+        {
+          "type": "action",
+          "repository": "docker",
+          "action": "build-push-action",
+          "version": "v5",
+          "sha": "0565240e2d4ab88bba5387d719585280857ece09",
+          "with": {
+            "context": ".",
+            "file": "docker/Dockerfile.alpine",
+            "build-args": "DEBIAN_CODENAME=bookworm",
+            "target": "mirakc",
+            "platforms": "linux/386, linux/amd64, linux/arm/v6, linux/arm/v7, linux/arm64/v8,",
+            "tags": "docker.io/mirakc/mirakc:2.5.2-alpine,docker.io/mirakc/mirakc:alpine,",
+            "cache-from": "type=local,src=/tmp/.docker-cache",
+            "cache-to": "type=local,dest=/tmp/.docker-cache-new",
+            "push": "true",
+            "load": "false",
+            "no-cache": "false",
+            "pull": "false",
+            "github-token": "***"
+          },
+          "env": {
+            "MAIN_DISTRO": "debian",
+            "DEBIAN_CODENAME": "bookworm"
+          },
+          "start_date": "2023-10-27 19:24:45.009000",
+          "duration_sec": 1641.480509
+        },
+        {
+          "type": "action",
+          "repository": "docker",
+          "action": "build-push-action",
+          "version": "v5",
+          "sha": "0565240e2d4ab88bba5387d719585280857ece09",
+          "with": {
+            "context": ".",
+            "file": "docker/Dockerfile.alpine",
+            "build-args": "DEBIAN_CODENAME=bookworm",
+            "target": "mirakc-timeshift-fs",
+            "platforms": "linux/386, linux/amd64, linux/arm/v6, linux/arm/v7, linux/arm64/v8,",
+            "tags": "docker.io/mirakc/timeshift-fs:2.5.2-alpine,docker.io/mirakc/timeshift-fs:alpine,",
+            "cache-from": "type=local,src=/tmp/.docker-cache-new",
+            "cache-to": "type=local,dest=/tmp/.docker-cache-new",
+            "push": "true",
+            "load": "false",
+            "no-cache": "false",
+            "pull": "false",
+            "github-token": "***"
+          },
+          "env": {
+            "MAIN_DISTRO": "debian",
+            "DEBIAN_CODENAME": "bookworm"
+          },
+          "start_date": "2023-10-27 19:52:06.490000",
+          "duration_sec": 24.624805
+        },
+        {
+          "type": "shell",
+          "env": {
+            "MAIN_DISTRO": "debian",
+            "DEBIAN_CODENAME": "bookworm"
+          },
+          "code": "# Enable experimental CLI features in Docker daemon.\necho '{\"experimental\":true}' | sudo tee /etc/docker/daemon.json\nsudo service docker restart\n\nIMG=\"mirakc/mirakc:2.5.2-alpine\"\nfor PLATFORM in $(echo linux/386, linux/amd64, linux/arm/v6, linux/arm/v7, linux/arm64/v8, | tr ',' ' ')\ndo\n  for REG in docker.io\n  do\n    echo \"Testing $REG/$IMG for $PLATFORM...\"\n    docker run --rm --platform=$PLATFORM $REG/$IMG --version\n    docker run --rm --platform=$PLATFORM --entrypoint=recdvb $REG/$IMG --version\n    docker run --rm --platform=$PLATFORM --entrypoint=recpt1 $REG/$IMG --version\n    docker run --rm --platform=$PLATFORM --entrypoint=mirakc-arib $REG/$IMG --version\n    docker run --rm --platform=$PLATFORM --entrypoint=mirakc $REG/$IMG --version\n    docker run --rm --platform=$PLATFORM --entrypoint=dvbv5-zap $REG/$IMG --version\n  done\ndone",
+          "commands": [
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "'{\"experimental\":true}'"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-TEE"
+              ],
+              "command": "tee",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-TEE-PATH"
+                  ],
+                  "content": "/etc/docker/daemon.json"
+                }
+              ]
+            },
+            {
+              "command": "service",
+              "args": [
+                {
+                  "content": "docker"
+                },
+                {
+                  "content": "restart"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "linux/386,"
+                },
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "linux/amd64,"
+                },
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "linux/arm/v6,"
+                },
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "linux/arm/v7,"
+                },
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "linux/arm64/v8,"
+                }
+              ]
+            },
+            {
+              "command": "tr",
+              "args": [
+                {
+                  "content": "','"
+                },
+                {
+                  "content": "' '"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"Testing $REG/$IMG for $PLATFORM...\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-DOCKER-RUN"
+              ],
+              "command": "docker",
+              "categories": [
+                "VIRTUALIZATION"
+              ],
+              "args": [
+                {
+                  "content": "run"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-F-RM"
+                  ],
+                  "content": "--rm"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-PLATFORM"
+                  ],
+                  "content": "--platform=$PLATFORM"
+                },
+                {
+                  "content": "$REG/$IMG"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-VERSION"
+                  ],
+                  "content": "--version"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-DOCKER-RUN"
+              ],
+              "command": "docker",
+              "categories": [
+                "VIRTUALIZATION"
+              ],
+              "args": [
+                {
+                  "content": "run"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-F-RM"
+                  ],
+                  "content": "--rm"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-PLATFORM"
+                  ],
+                  "content": "--platform=$PLATFORM"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-ENTRYPOINT"
+                  ],
+                  "content": "--entrypoint=recdvb"
+                },
+                {
+                  "content": "$REG/$IMG"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-VERSION"
+                  ],
+                  "content": "--version"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-DOCKER-RUN"
+              ],
+              "command": "docker",
+              "categories": [
+                "VIRTUALIZATION"
+              ],
+              "args": [
+                {
+                  "content": "run"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-F-RM"
+                  ],
+                  "content": "--rm"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-PLATFORM"
+                  ],
+                  "content": "--platform=$PLATFORM"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-ENTRYPOINT"
+                  ],
+                  "content": "--entrypoint=recpt1"
+                },
+                {
+                  "content": "$REG/$IMG"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-VERSION"
+                  ],
+                  "content": "--version"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-DOCKER-RUN"
+              ],
+              "command": "docker",
+              "categories": [
+                "VIRTUALIZATION"
+              ],
+              "args": [
+                {
+                  "content": "run"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-F-RM"
+                  ],
+                  "content": "--rm"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-PLATFORM"
+                  ],
+                  "content": "--platform=$PLATFORM"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-ENTRYPOINT"
+                  ],
+                  "content": "--entrypoint=mirakc-arib"
+                },
+                {
+                  "content": "$REG/$IMG"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-VERSION"
+                  ],
+                  "content": "--version"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-DOCKER-RUN"
+              ],
+              "command": "docker",
+              "categories": [
+                "VIRTUALIZATION"
+              ],
+              "args": [
+                {
+                  "content": "run"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-F-RM"
+                  ],
+                  "content": "--rm"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-PLATFORM"
+                  ],
+                  "content": "--platform=$PLATFORM"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-ENTRYPOINT"
+                  ],
+                  "content": "--entrypoint=mirakc"
+                },
+                {
+                  "content": "$REG/$IMG"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-VERSION"
+                  ],
+                  "content": "--version"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-DOCKER-RUN"
+              ],
+              "command": "docker",
+              "categories": [
+                "VIRTUALIZATION"
+              ],
+              "args": [
+                {
+                  "content": "run"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-F-RM"
+                  ],
+                  "content": "--rm"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-PLATFORM"
+                  ],
+                  "content": "--platform=$PLATFORM"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-ENTRYPOINT"
+                  ],
+                  "content": "--entrypoint=dvbv5-zap"
+                },
+                {
+                  "content": "$REG/$IMG"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-VERSION"
+                  ],
+                  "content": "--version"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-27 19:52:31.115000",
+          "duration_sec": 15.131603
+        },
+        {
+          "type": "shell",
+          "env": {
+            "MAIN_DISTRO": "debian",
+            "DEBIAN_CODENAME": "bookworm"
+          },
+          "code": "# Enable experimental CLI features in Docker daemon.\necho '{\"experimental\":true}' | sudo tee /etc/docker/daemon.json\nsudo service docker restart\n\nIMG=\"mirakc/timeshift-fs:2.5.2-alpine\"\nfor PLATFORM in $(echo linux/386, linux/amd64, linux/arm/v6, linux/arm/v7, linux/arm64/v8, | tr ',' ' ')\ndo\n  for REG in docker.io\n  do\n    echo \"Testing $REG/$IMG for $PLATFORM...\"\n    docker run --rm --platform=$PLATFORM --entrypoint=mirakc-timeshift-fs $REG/$IMG --version\n  done\ndone",
+          "commands": [
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "'{\"experimental\":true}'"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-TEE"
+              ],
+              "command": "tee",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-TEE-PATH"
+                  ],
+                  "content": "/etc/docker/daemon.json"
+                }
+              ]
+            },
+            {
+              "command": "service",
+              "args": [
+                {
+                  "content": "docker"
+                },
+                {
+                  "content": "restart"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "linux/386,"
+                },
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "linux/amd64,"
+                },
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "linux/arm/v6,"
+                },
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "linux/arm/v7,"
+                },
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "linux/arm64/v8,"
+                }
+              ]
+            },
+            {
+              "command": "tr",
+              "args": [
+                {
+                  "content": "','"
+                },
+                {
+                  "content": "' '"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"Testing $REG/$IMG for $PLATFORM...\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-DOCKER-RUN"
+              ],
+              "command": "docker",
+              "categories": [
+                "VIRTUALIZATION"
+              ],
+              "args": [
+                {
+                  "content": "run"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-F-RM"
+                  ],
+                  "content": "--rm"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-PLATFORM"
+                  ],
+                  "content": "--platform=$PLATFORM"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-ENTRYPOINT"
+                  ],
+                  "content": "--entrypoint=mirakc-timeshift-fs"
+                },
+                {
+                  "content": "$REG/$IMG"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-VERSION"
+                  ],
+                  "content": "--version"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-27 19:52:46.246000",
+          "duration_sec": 4.505678
+        },
+        {
+          "type": "shell",
+          "env": {
+            "MAIN_DISTRO": "debian",
+            "DEBIAN_CODENAME": "bookworm"
+          },
+          "code": "rm -rf /tmp/.docker-cache\nmv /tmp/.docker-cache-new /tmp/.docker-cache",
+          "commands": [
+            {
+              "annotations": [
+                "SC-RM"
+              ],
+              "command": "rm",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-RM-F-RECURSIVE",
+                    "SC-RM-F-FORCE"
+                  ],
+                  "content": "-rf"
+                },
+                {
+                  "annotations": [
+                    "SC-RM-PATH",
+                    "BASH-PATH"
+                  ],
+                  "content": "/tmp/.docker-cache"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MV"
+              ],
+              "command": "mv",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MV-PATH"
+                  ],
+                  "content": "/tmp/.docker-cache-new"
+                },
+                {
+                  "annotations": [
+                    "SC-MV-PATH",
+                    "SC-MV-DESTINATION"
+                  ],
+                  "content": "/tmp/.docker-cache"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-27 19:52:50.752000",
+          "duration_sec": 8.763043
+        }
+      ]
+    },
+    {
+      "file": "1_docker  docker (debian).txt",
+      "total_lines": 8581,
+      "log_size": 2626505,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231025.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v4",
+          "sha": "b4ffde65f46336ab88eb53be808477a3936bae11",
+          "with": {
+            "ref": "2.5.2",
+            "repository": "mirakc/mirakc",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "show-progress": "true",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {
+            "MAIN_DISTRO": "debian",
+            "DEBIAN_CODENAME": "bookworm"
+          },
+          "start_date": "2023-10-27 19:24:39.818000",
+          "duration_sec": 1.393073
+        },
+        {
+          "type": "shell",
+          "env": {
+            "MAIN_DISTRO": "debian",
+            "DEBIAN_CODENAME": "bookworm"
+          },
+          "code": "IMAGE=\"{0}\"  # placeholder\nVERSION=\"2.5.2\"\nMAIN_TAG=\"$IMAGE:$VERSION-debian\"\nTAGS=\"$MAIN_TAG\"\nif [ \"$MAIN_DISTRO\" = \"debian\" ]\nthen\n  TAGS=\"$TAGS,$IMAGE:$VERSION\"\nfi\nif [ \"tag\" = tag ]\nthen\n  # Always update latest image tags when a new git tag is created.\n  TAGS=\"$TAGS,$IMAGE:debian\"\n  if [ \"$MAIN_DISTRO\" = \"debian\" ]; then\n    TAGS=\"$TAGS,$IMAGE:latest\"\n  fi\nfi\nif [ \"$VERSION\" = main ]\nthen\n  TOOLS_TAG=debian\nelse\n  MAJOR=$(echo \"$VERSION\" | cut -d '.' -f 1)\n  MINOR=$(echo \"$VERSION\" | cut -d '.' -f 2)\n  TOOLS_TAG=\"debian-${MAJOR}.${MINOR}\"\nfi\necho \"Version: $VERSION\"\necho \"Main tag: $MAIN_TAG\"\necho \"Tags: $TAGS\"\necho \"Tools tag: $TOOLS_TAG\"\necho \"version=$VERSION\" >>$GITHUB_OUTPUT\necho \"main-tag=$MAIN_TAG\" >>$GITHUB_OUTPUT\necho \"tags=$TAGS\" >>$GITHUB_OUTPUT\necho \"tools-tag=$TOOLS_TAG\" >>$GITHUB_OUTPUT",
+          "commands": [
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"Version: $VERSION\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"Main tag: $MAIN_TAG\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"Tags: $TAGS\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"Tools tag: $TOOLS_TAG\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"version=$VERSION\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"main-tag=$MAIN_TAG\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"tags=$TAGS\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"tools-tag=$TOOLS_TAG\""
+                }
+              ]
+            },
+            {
+              "command": "[",
+              "args": [
+                {
+                  "content": "\"$MAIN_DISTRO\""
+                },
+                {
+                  "content": "="
+                },
+                {
+                  "content": "\"debian\""
+                },
+                {
+                  "content": "]"
+                }
+              ]
+            },
+            {
+              "command": "[",
+              "args": [
+                {
+                  "content": "\"tag\""
+                },
+                {
+                  "content": "="
+                },
+                {
+                  "content": "tag"
+                },
+                {
+                  "content": "]"
+                }
+              ]
+            },
+            {
+              "command": "[",
+              "args": [
+                {
+                  "content": "\"$MAIN_DISTRO\""
+                },
+                {
+                  "content": "="
+                },
+                {
+                  "content": "\"debian\""
+                },
+                {
+                  "content": "]"
+                }
+              ]
+            },
+            {
+              "command": "[",
+              "args": [
+                {
+                  "content": "\"$VERSION\""
+                },
+                {
+                  "content": "="
+                },
+                {
+                  "content": "main"
+                },
+                {
+                  "content": "]"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"$VERSION\""
+                }
+              ]
+            },
+            {
+              "command": "cut",
+              "args": [
+                {
+                  "content": "-d"
+                },
+                {
+                  "content": "'.'"
+                },
+                {
+                  "content": "-f"
+                },
+                {
+                  "content": "1"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"$VERSION\""
+                }
+              ]
+            },
+            {
+              "command": "cut",
+              "args": [
+                {
+                  "content": "-d"
+                },
+                {
+                  "content": "'.'"
+                },
+                {
+                  "content": "-f"
+                },
+                {
+                  "content": "2"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-27 19:24:41.211000",
+          "duration_sec": 0.041228
+        },
+        {
+          "type": "action",
+          "repository": "docker",
+          "action": "setup-qemu-action",
+          "version": "v3",
+          "sha": "68827325e0b33c7199eb31dd4e31fbe9023e06e3",
+          "with": {
+            "image": "tonistiigi/binfmt:latest",
+            "platforms": "all"
+          },
+          "env": {
+            "MAIN_DISTRO": "debian",
+            "DEBIAN_CODENAME": "bookworm"
+          },
+          "start_date": "2023-10-27 19:24:41.252000",
+          "duration_sec": 7.747845
+        },
+        {
+          "type": "action",
+          "repository": "docker",
+          "action": "setup-buildx-action",
+          "version": "v3",
+          "sha": "f95db51fddba0c2d1ec667646a06c2ce06100226",
+          "with": {
+            "buildkitd-flags": "--debug",
+            "config-inline": "[worker.oci]",
+            "driver": "docker-container",
+            "install": "false",
+            "use": "true",
+            "cleanup": "true"
+          },
+          "env": {
+            "MAIN_DISTRO": "debian",
+            "DEBIAN_CODENAME": "bookworm"
+          },
+          "start_date": "2023-10-27 19:24:49",
+          "duration_sec": 3.283715
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "cache",
+          "version": "v3",
+          "sha": "704facf57e6136b1bc63b828d79edcd491f0ee84",
+          "with": {
+            "path": "/tmp/.docker-cache",
+            "key": "Linux-docker-cache-debian-7cf2373637cc60bb7e7a7b4417b2c1fd4770c229a169e2fffaf4e9cd57a15483",
+            "restore-keys": "Linux-docker-cache-debian-",
+            "enableCrossOsArchive": "false",
+            "fail-on-cache-miss": "false",
+            "lookup-only": "false"
+          },
+          "env": {
+            "MAIN_DISTRO": "debian",
+            "DEBIAN_CODENAME": "bookworm"
+          },
+          "start_date": "2023-10-27 19:24:52.284000",
+          "duration_sec": 2.898918
+        },
+        {
+          "type": "action",
+          "repository": "docker",
+          "action": "login-action",
+          "version": "v3",
+          "sha": "343f7c4344506bcbf9b4de18042ae17996df046d",
+          "with": {
+            "registry": "docker.io",
+            "username": "***",
+            "password": "***",
+            "ecr": "auto",
+            "logout": "true"
+          },
+          "env": {
+            "MAIN_DISTRO": "debian",
+            "DEBIAN_CODENAME": "bookworm"
+          },
+          "start_date": "2023-10-27 19:24:55.183000",
+          "duration_sec": 0.808294
+        },
+        {
+          "type": "action",
+          "repository": "docker",
+          "action": "login-action",
+          "version": "v3",
+          "sha": "343f7c4344506bcbf9b4de18042ae17996df046d",
+          "with": {
+            "registry": "ghcr.io",
+            "username": "mirakc-ci[bot]",
+            "password": "***",
+            "ecr": "auto",
+            "logout": "true"
+          },
+          "env": {
+            "MAIN_DISTRO": "debian",
+            "DEBIAN_CODENAME": "bookworm"
+          },
+          "start_date": "2023-10-27 19:24:55.991000",
+          "duration_sec": 0.682981
+        },
+        {
+          "type": "action",
+          "repository": "docker",
+          "action": "build-push-action",
+          "version": "v5",
+          "sha": "0565240e2d4ab88bba5387d719585280857ece09",
+          "with": {
+            "context": ".",
+            "file": "docker/Dockerfile.debian",
+            "build-args": "DEBIAN_CODENAME=bookworm",
+            "target": "mirakc",
+            "platforms": "linux/386, linux/amd64, linux/arm/v7, linux/arm64/v8,",
+            "tags": "docker.io/mirakc/mirakc:2.5.2-debian,docker.io/mirakc/mirakc:2.5.2,docker.io/mirakc/mirakc:debian,docker.io/mirakc/mirakc:latest,",
+            "cache-from": "type=local,src=/tmp/.docker-cache",
+            "cache-to": "type=local,dest=/tmp/.docker-cache-new",
+            "push": "true",
+            "load": "false",
+            "no-cache": "false",
+            "pull": "false",
+            "github-token": "***"
+          },
+          "env": {
+            "MAIN_DISTRO": "debian",
+            "DEBIAN_CODENAME": "bookworm"
+          },
+          "start_date": "2023-10-27 19:24:56.674000",
+          "duration_sec": 1886.794108
+        },
+        {
+          "type": "action",
+          "repository": "docker",
+          "action": "build-push-action",
+          "version": "v5",
+          "sha": "0565240e2d4ab88bba5387d719585280857ece09",
+          "with": {
+            "context": ".",
+            "file": "docker/Dockerfile.debian",
+            "build-args": "DEBIAN_CODENAME=bookworm",
+            "target": "mirakc-timeshift-fs",
+            "platforms": "linux/386, linux/amd64, linux/arm/v7, linux/arm64/v8,",
+            "tags": "docker.io/mirakc/timeshift-fs:2.5.2-debian,docker.io/mirakc/timeshift-fs:2.5.2,docker.io/mirakc/timeshift-fs:debian,docker.io/mirakc/timeshift-fs:latest,",
+            "cache-from": "type=local,src=/tmp/.docker-cache-new",
+            "cache-to": "type=local,dest=/tmp/.docker-cache-new",
+            "push": "true",
+            "load": "false",
+            "no-cache": "false",
+            "pull": "false",
+            "github-token": "***"
+          },
+          "env": {
+            "MAIN_DISTRO": "debian",
+            "DEBIAN_CODENAME": "bookworm"
+          },
+          "start_date": "2023-10-27 19:56:23.468000",
+          "duration_sec": 92.379742
+        },
+        {
+          "type": "shell",
+          "env": {
+            "MAIN_DISTRO": "debian",
+            "DEBIAN_CODENAME": "bookworm"
+          },
+          "code": "# Enable experimental CLI features in Docker daemon.\necho '{\"experimental\":true}' | sudo tee /etc/docker/daemon.json\nsudo service docker restart\n\nIMG=\"mirakc/mirakc:2.5.2-debian\"\nfor PLATFORM in $(echo linux/386, linux/amd64, linux/arm/v7, linux/arm64/v8, | tr ',' ' ')\ndo\n  for REG in docker.io\n  do\n    echo \"Testing $REG/$IMG for $PLATFORM...\"\n    docker run --rm --platform=$PLATFORM $REG/$IMG --version\n    docker run --rm --platform=$PLATFORM --entrypoint=recdvb $REG/$IMG --version\n    docker run --rm --platform=$PLATFORM --entrypoint=recpt1 $REG/$IMG --version\n    docker run --rm --platform=$PLATFORM --entrypoint=mirakc-arib $REG/$IMG --version\n    docker run --rm --platform=$PLATFORM --entrypoint=mirakc $REG/$IMG --version\n    docker run --rm --platform=$PLATFORM --entrypoint=dvbv5-zap $REG/$IMG --version\n  done\ndone",
+          "commands": [
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "'{\"experimental\":true}'"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-TEE"
+              ],
+              "command": "tee",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-TEE-PATH"
+                  ],
+                  "content": "/etc/docker/daemon.json"
+                }
+              ]
+            },
+            {
+              "command": "service",
+              "args": [
+                {
+                  "content": "docker"
+                },
+                {
+                  "content": "restart"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "linux/386,"
+                },
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "linux/amd64,"
+                },
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "linux/arm/v7,"
+                },
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "linux/arm64/v8,"
+                }
+              ]
+            },
+            {
+              "command": "tr",
+              "args": [
+                {
+                  "content": "','"
+                },
+                {
+                  "content": "' '"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"Testing $REG/$IMG for $PLATFORM...\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-DOCKER-RUN"
+              ],
+              "command": "docker",
+              "categories": [
+                "VIRTUALIZATION"
+              ],
+              "args": [
+                {
+                  "content": "run"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-F-RM"
+                  ],
+                  "content": "--rm"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-PLATFORM"
+                  ],
+                  "content": "--platform=$PLATFORM"
+                },
+                {
+                  "content": "$REG/$IMG"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-VERSION"
+                  ],
+                  "content": "--version"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-DOCKER-RUN"
+              ],
+              "command": "docker",
+              "categories": [
+                "VIRTUALIZATION"
+              ],
+              "args": [
+                {
+                  "content": "run"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-F-RM"
+                  ],
+                  "content": "--rm"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-PLATFORM"
+                  ],
+                  "content": "--platform=$PLATFORM"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-ENTRYPOINT"
+                  ],
+                  "content": "--entrypoint=recdvb"
+                },
+                {
+                  "content": "$REG/$IMG"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-VERSION"
+                  ],
+                  "content": "--version"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-DOCKER-RUN"
+              ],
+              "command": "docker",
+              "categories": [
+                "VIRTUALIZATION"
+              ],
+              "args": [
+                {
+                  "content": "run"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-F-RM"
+                  ],
+                  "content": "--rm"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-PLATFORM"
+                  ],
+                  "content": "--platform=$PLATFORM"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-ENTRYPOINT"
+                  ],
+                  "content": "--entrypoint=recpt1"
+                },
+                {
+                  "content": "$REG/$IMG"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-VERSION"
+                  ],
+                  "content": "--version"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-DOCKER-RUN"
+              ],
+              "command": "docker",
+              "categories": [
+                "VIRTUALIZATION"
+              ],
+              "args": [
+                {
+                  "content": "run"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-F-RM"
+                  ],
+                  "content": "--rm"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-PLATFORM"
+                  ],
+                  "content": "--platform=$PLATFORM"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-ENTRYPOINT"
+                  ],
+                  "content": "--entrypoint=mirakc-arib"
+                },
+                {
+                  "content": "$REG/$IMG"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-VERSION"
+                  ],
+                  "content": "--version"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-DOCKER-RUN"
+              ],
+              "command": "docker",
+              "categories": [
+                "VIRTUALIZATION"
+              ],
+              "args": [
+                {
+                  "content": "run"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-F-RM"
+                  ],
+                  "content": "--rm"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-PLATFORM"
+                  ],
+                  "content": "--platform=$PLATFORM"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-ENTRYPOINT"
+                  ],
+                  "content": "--entrypoint=mirakc"
+                },
+                {
+                  "content": "$REG/$IMG"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-VERSION"
+                  ],
+                  "content": "--version"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-DOCKER-RUN"
+              ],
+              "command": "docker",
+              "categories": [
+                "VIRTUALIZATION"
+              ],
+              "args": [
+                {
+                  "content": "run"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-F-RM"
+                  ],
+                  "content": "--rm"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-PLATFORM"
+                  ],
+                  "content": "--platform=$PLATFORM"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-ENTRYPOINT"
+                  ],
+                  "content": "--entrypoint=dvbv5-zap"
+                },
+                {
+                  "content": "$REG/$IMG"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-VERSION"
+                  ],
+                  "content": "--version"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-27 19:57:55.848000",
+          "duration_sec": 20.33382
+        },
+        {
+          "type": "shell",
+          "env": {
+            "MAIN_DISTRO": "debian",
+            "DEBIAN_CODENAME": "bookworm"
+          },
+          "code": "# Enable experimental CLI features in Docker daemon.\necho '{\"experimental\":true}' | sudo tee /etc/docker/daemon.json\nsudo service docker restart\n\nIMG=\"mirakc/timeshift-fs:2.5.2-debian\"\nfor PLATFORM in $(echo linux/386, linux/amd64, linux/arm/v7, linux/arm64/v8, | tr ',' ' ')\ndo\n  for REG in docker.io\n  do\n    echo \"Testing $REG/$IMG for $PLATFORM...\"\n    docker run --rm --platform=$PLATFORM --entrypoint=mirakc-timeshift-fs $REG/$IMG --version\n  done\ndone",
+          "commands": [
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "'{\"experimental\":true}'"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-TEE"
+              ],
+              "command": "tee",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-TEE-PATH"
+                  ],
+                  "content": "/etc/docker/daemon.json"
+                }
+              ]
+            },
+            {
+              "command": "service",
+              "args": [
+                {
+                  "content": "docker"
+                },
+                {
+                  "content": "restart"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "linux/386,"
+                },
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "linux/amd64,"
+                },
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "linux/arm/v7,"
+                },
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "linux/arm64/v8,"
+                }
+              ]
+            },
+            {
+              "command": "tr",
+              "args": [
+                {
+                  "content": "','"
+                },
+                {
+                  "content": "' '"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"Testing $REG/$IMG for $PLATFORM...\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-DOCKER-RUN"
+              ],
+              "command": "docker",
+              "categories": [
+                "VIRTUALIZATION"
+              ],
+              "args": [
+                {
+                  "content": "run"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-F-RM"
+                  ],
+                  "content": "--rm"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-PLATFORM"
+                  ],
+                  "content": "--platform=$PLATFORM"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-ENTRYPOINT"
+                  ],
+                  "content": "--entrypoint=mirakc-timeshift-fs"
+                },
+                {
+                  "content": "$REG/$IMG"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-VERSION"
+                  ],
+                  "content": "--version"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-27 19:58:16.182000",
+          "duration_sec": 5.440835
+        },
+        {
+          "type": "shell",
+          "env": {
+            "MAIN_DISTRO": "debian",
+            "DEBIAN_CODENAME": "bookworm"
+          },
+          "code": "rm -rf /tmp/.docker-cache\nmv /tmp/.docker-cache-new /tmp/.docker-cache",
+          "commands": [
+            {
+              "annotations": [
+                "SC-RM"
+              ],
+              "command": "rm",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-RM-F-RECURSIVE",
+                    "SC-RM-F-FORCE"
+                  ],
+                  "content": "-rf"
+                },
+                {
+                  "annotations": [
+                    "SC-RM-PATH",
+                    "BASH-PATH"
+                  ],
+                  "content": "/tmp/.docker-cache"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MV"
+              ],
+              "command": "mv",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MV-PATH"
+                  ],
+                  "content": "/tmp/.docker-cache-new"
+                },
+                {
+                  "annotations": [
+                    "SC-MV-PATH",
+                    "SC-MV-DESTINATION"
+                  ],
+                  "content": "/tmp/.docker-cache"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-27 19:58:21.623000",
+          "duration_sec": 13.128382
+        }
+      ]
+    }
+  ],
+  "total_logs_size": 5318019
+}

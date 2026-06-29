@@ -1,0 +1,379 @@
+{
+  "_id": "polarismesh/polaris_.github/workflows/weekly-report.yml_67_1",
+  "repository_name": "polarismesh/polaris",
+  "workflow_path": ".github/workflows/weekly-report.yml",
+  "run_number": 67,
+  "run_attempt": 1,
+  "time_to_import": 71057.812769,
+  "metadata": {
+    "id": 6691138656,
+    "name": "weekly-report",
+    "node_id": "WFR_kwLOFnYq0c8AAAABjtKsYA",
+    "head_branch": "main",
+    "head_sha": "0aebad7db5079060e96d13699310a14684fc3ea3",
+    "path": ".github/workflows/weekly-report.yml",
+    "display_title": "weekly-report",
+    "run_number": 67,
+    "event": "schedule",
+    "status": "completed",
+    "conclusion": "failure",
+    "workflow_id": 30772938,
+    "check_suite_id": 17741328342,
+    "check_suite_node_id": "CS_kwDOFnYq0c8AAAAEIXcv1g",
+    "url": "https://api.github.com/repos/polarismesh/polaris/actions/runs/6691138656",
+    "html_url": "https://github.com/polarismesh/polaris/actions/runs/6691138656",
+    "pull_requests": [
+      {
+        "url": "https://api.github.com/repos/langyo/polaris/pulls/1",
+        "id": 1576079212,
+        "number": 1,
+        "head": {
+          "ref": "main",
+          "sha": "0aebad7db5079060e96d13699310a14684fc3ea3",
+          "repo": {
+            "id": 376842961,
+            "url": "https://api.github.com/repos/polarismesh/polaris",
+            "name": "polaris"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "67308bdf95f02aaba65ab9b54ea1164835999a37",
+          "repo": {
+            "id": 636603064,
+            "url": "https://api.github.com/repos/langyo/polaris",
+            "name": "polaris"
+          }
+        }
+      },
+      {
+        "url": "https://api.github.com/repos/freedomloveme/polaris/pulls/1",
+        "id": 1194861390,
+        "number": 1,
+        "head": {
+          "ref": "main",
+          "sha": "0aebad7db5079060e96d13699310a14684fc3ea3",
+          "repo": {
+            "id": 376842961,
+            "url": "https://api.github.com/repos/polarismesh/polaris",
+            "name": "polaris"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "75a3b16c9bb9c7d9f0db4ab9b16664c7676d5ccf",
+          "repo": {
+            "id": 508513893,
+            "url": "https://api.github.com/repos/freedomloveme/polaris",
+            "name": "polaris"
+          }
+        }
+      },
+      {
+        "url": "https://api.github.com/repos/dgfug/polaris/pulls/8",
+        "id": 746319657,
+        "number": 8,
+        "head": {
+          "ref": "main",
+          "sha": "0aebad7db5079060e96d13699310a14684fc3ea3",
+          "repo": {
+            "id": 376842961,
+            "url": "https://api.github.com/repos/polarismesh/polaris",
+            "name": "polaris"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "3c04b67885c26a67bf96ea06fb9be22f35c6b2cf",
+          "repo": {
+            "id": 405145930,
+            "url": "https://api.github.com/repos/dgfug/polaris",
+            "name": "polaris"
+          }
+        }
+      }
+    ],
+    "created_at": "2023-10-30T10:00:32Z",
+    "updated_at": "2023-10-30T10:00:48Z",
+    "actor": {
+      "login": "chuntaojun",
+      "id": 23445172,
+      "node_id": "MDQ6VXNlcjIzNDQ1MTcy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/23445172?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/chuntaojun",
+      "html_url": "https://github.com/chuntaojun",
+      "followers_url": "https://api.github.com/users/chuntaojun/followers",
+      "following_url": "https://api.github.com/users/chuntaojun/following{/other_user}",
+      "gists_url": "https://api.github.com/users/chuntaojun/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/chuntaojun/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/chuntaojun/subscriptions",
+      "organizations_url": "https://api.github.com/users/chuntaojun/orgs",
+      "repos_url": "https://api.github.com/users/chuntaojun/repos",
+      "events_url": "https://api.github.com/users/chuntaojun/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/chuntaojun/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "run_attempt": 1,
+    "referenced_workflows": [],
+    "run_started_at": "2023-10-30T10:00:32Z",
+    "triggering_actor": {
+      "login": "chuntaojun",
+      "id": 23445172,
+      "node_id": "MDQ6VXNlcjIzNDQ1MTcy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/23445172?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/chuntaojun",
+      "html_url": "https://github.com/chuntaojun",
+      "followers_url": "https://api.github.com/users/chuntaojun/followers",
+      "following_url": "https://api.github.com/users/chuntaojun/following{/other_user}",
+      "gists_url": "https://api.github.com/users/chuntaojun/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/chuntaojun/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/chuntaojun/subscriptions",
+      "organizations_url": "https://api.github.com/users/chuntaojun/orgs",
+      "repos_url": "https://api.github.com/users/chuntaojun/repos",
+      "events_url": "https://api.github.com/users/chuntaojun/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/chuntaojun/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "jobs_url": "https://api.github.com/repos/polarismesh/polaris/actions/runs/6691138656/jobs",
+    "logs_url": "https://api.github.com/repos/polarismesh/polaris/actions/runs/6691138656/logs",
+    "check_suite_url": "https://api.github.com/repos/polarismesh/polaris/check-suites/17741328342",
+    "artifacts_url": "https://api.github.com/repos/polarismesh/polaris/actions/runs/6691138656/artifacts",
+    "cancel_url": "https://api.github.com/repos/polarismesh/polaris/actions/runs/6691138656/cancel",
+    "rerun_url": "https://api.github.com/repos/polarismesh/polaris/actions/runs/6691138656/rerun",
+    "previous_attempt_url": null,
+    "workflow_url": "https://api.github.com/repos/polarismesh/polaris/actions/workflows/30772938",
+    "head_commit": {
+      "id": "0aebad7db5079060e96d13699310a14684fc3ea3",
+      "tree_id": "1d6daba59fd67c1955d33b48fe9da0f7d49ee127",
+      "message": "fix release_history search bug (#1281)",
+      "timestamp": "2023-10-28T04:25:54Z",
+      "author": {
+        "name": "nxsre",
+        "email": "32614138+nxsre@users.noreply.github.com"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com"
+      }
+    },
+    "repository": {
+      "id": 376842961,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzNzY4NDI5NjE=",
+      "name": "polaris",
+      "full_name": "polarismesh/polaris",
+      "private": false,
+      "owner": {
+        "login": "polarismesh",
+        "id": 85474408,
+        "node_id": "MDEyOk9yZ2FuaXphdGlvbjg1NDc0NDA4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/85474408?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/polarismesh",
+        "html_url": "https://github.com/polarismesh",
+        "followers_url": "https://api.github.com/users/polarismesh/followers",
+        "following_url": "https://api.github.com/users/polarismesh/following{/other_user}",
+        "gists_url": "https://api.github.com/users/polarismesh/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/polarismesh/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/polarismesh/subscriptions",
+        "organizations_url": "https://api.github.com/users/polarismesh/orgs",
+        "repos_url": "https://api.github.com/users/polarismesh/repos",
+        "events_url": "https://api.github.com/users/polarismesh/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/polarismesh/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/polarismesh/polaris",
+      "description": "Service Discovery and Governance Platform for Microservice and Distributed Architecture",
+      "fork": false,
+      "url": "https://api.github.com/repos/polarismesh/polaris",
+      "forks_url": "https://api.github.com/repos/polarismesh/polaris/forks",
+      "keys_url": "https://api.github.com/repos/polarismesh/polaris/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/polarismesh/polaris/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/polarismesh/polaris/teams",
+      "hooks_url": "https://api.github.com/repos/polarismesh/polaris/hooks",
+      "issue_events_url": "https://api.github.com/repos/polarismesh/polaris/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/polarismesh/polaris/events",
+      "assignees_url": "https://api.github.com/repos/polarismesh/polaris/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/polarismesh/polaris/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/polarismesh/polaris/tags",
+      "blobs_url": "https://api.github.com/repos/polarismesh/polaris/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/polarismesh/polaris/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/polarismesh/polaris/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/polarismesh/polaris/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/polarismesh/polaris/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/polarismesh/polaris/languages",
+      "stargazers_url": "https://api.github.com/repos/polarismesh/polaris/stargazers",
+      "contributors_url": "https://api.github.com/repos/polarismesh/polaris/contributors",
+      "subscribers_url": "https://api.github.com/repos/polarismesh/polaris/subscribers",
+      "subscription_url": "https://api.github.com/repos/polarismesh/polaris/subscription",
+      "commits_url": "https://api.github.com/repos/polarismesh/polaris/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/polarismesh/polaris/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/polarismesh/polaris/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/polarismesh/polaris/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/polarismesh/polaris/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/polarismesh/polaris/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/polarismesh/polaris/merges",
+      "archive_url": "https://api.github.com/repos/polarismesh/polaris/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/polarismesh/polaris/downloads",
+      "issues_url": "https://api.github.com/repos/polarismesh/polaris/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/polarismesh/polaris/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/polarismesh/polaris/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/polarismesh/polaris/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/polarismesh/polaris/labels{/name}",
+      "releases_url": "https://api.github.com/repos/polarismesh/polaris/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/polarismesh/polaris/deployments"
+    },
+    "head_repository": {
+      "id": 376842961,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzNzY4NDI5NjE=",
+      "name": "polaris",
+      "full_name": "polarismesh/polaris",
+      "private": false,
+      "owner": {
+        "login": "polarismesh",
+        "id": 85474408,
+        "node_id": "MDEyOk9yZ2FuaXphdGlvbjg1NDc0NDA4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/85474408?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/polarismesh",
+        "html_url": "https://github.com/polarismesh",
+        "followers_url": "https://api.github.com/users/polarismesh/followers",
+        "following_url": "https://api.github.com/users/polarismesh/following{/other_user}",
+        "gists_url": "https://api.github.com/users/polarismesh/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/polarismesh/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/polarismesh/subscriptions",
+        "organizations_url": "https://api.github.com/users/polarismesh/orgs",
+        "repos_url": "https://api.github.com/users/polarismesh/repos",
+        "events_url": "https://api.github.com/users/polarismesh/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/polarismesh/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/polarismesh/polaris",
+      "description": "Service Discovery and Governance Platform for Microservice and Distributed Architecture",
+      "fork": false,
+      "url": "https://api.github.com/repos/polarismesh/polaris",
+      "forks_url": "https://api.github.com/repos/polarismesh/polaris/forks",
+      "keys_url": "https://api.github.com/repos/polarismesh/polaris/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/polarismesh/polaris/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/polarismesh/polaris/teams",
+      "hooks_url": "https://api.github.com/repos/polarismesh/polaris/hooks",
+      "issue_events_url": "https://api.github.com/repos/polarismesh/polaris/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/polarismesh/polaris/events",
+      "assignees_url": "https://api.github.com/repos/polarismesh/polaris/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/polarismesh/polaris/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/polarismesh/polaris/tags",
+      "blobs_url": "https://api.github.com/repos/polarismesh/polaris/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/polarismesh/polaris/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/polarismesh/polaris/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/polarismesh/polaris/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/polarismesh/polaris/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/polarismesh/polaris/languages",
+      "stargazers_url": "https://api.github.com/repos/polarismesh/polaris/stargazers",
+      "contributors_url": "https://api.github.com/repos/polarismesh/polaris/contributors",
+      "subscribers_url": "https://api.github.com/repos/polarismesh/polaris/subscribers",
+      "subscription_url": "https://api.github.com/repos/polarismesh/polaris/subscription",
+      "commits_url": "https://api.github.com/repos/polarismesh/polaris/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/polarismesh/polaris/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/polarismesh/polaris/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/polarismesh/polaris/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/polarismesh/polaris/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/polarismesh/polaris/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/polarismesh/polaris/merges",
+      "archive_url": "https://api.github.com/repos/polarismesh/polaris/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/polarismesh/polaris/downloads",
+      "issues_url": "https://api.github.com/repos/polarismesh/polaris/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/polarismesh/polaris/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/polarismesh/polaris/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/polarismesh/polaris/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/polarismesh/polaris/labels{/name}",
+      "releases_url": "https://api.github.com/repos/polarismesh/polaris/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/polarismesh/polaris/deployments"
+    }
+  },
+  "logs_archive": {
+    "path": "/data/logs/polarismesh/polaris/weekly_report_94cc/67-1.tar.gz"
+  },
+  "log_insights": [
+    {
+      "file": "0_create_issue.txt",
+      "total_lines": 59,
+      "log_size": 3652,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231025.1.0",
+      "steps": [
+        {
+          "type": "shell",
+          "env": {},
+          "code": "echo \"::set-output name=today::$(date \"+%Y-%m-%d\")\"",
+          "commands": [
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"::set-output name=today::$(date \"+%Y-%m-%d\")\""
+                }
+              ]
+            },
+            {
+              "command": "date",
+              "args": [
+                {
+                  "content": "\"+%Y-%m-%d\""
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 10:00:43.502000",
+          "duration_sec": 0.090532
+        },
+        {
+          "type": "action",
+          "repository": "actions-ecosystem",
+          "action": "action-create-issue",
+          "version": "v1.0.0",
+          "sha": "b02a3c1d9d929a5839315bd255e40389f0dab627",
+          "with": {
+            "github_token": "***",
+            "title": "[Polaris Weekly Report] 2023-10-30",
+            "body": "## Polaris Weekly Report",
+            "labels": "weekly-report",
+            "repo": "polarismesh/polaris"
+          },
+          "env": {},
+          "start_date": "2023-10-30 10:00:43.593000",
+          "duration_sec": 0.400595
+        }
+      ]
+    }
+  ],
+  "total_logs_size": 4114
+}

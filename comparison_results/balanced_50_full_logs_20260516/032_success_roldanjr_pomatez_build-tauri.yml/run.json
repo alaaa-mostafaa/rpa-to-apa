@@ -1,0 +1,3741 @@
+{
+  "_id": "roldanjr/pomatez_.github/workflows/build-tauri.yml_8_1",
+  "repository_name": "roldanjr/pomatez",
+  "workflow_path": ".github/workflows/build-tauri.yml",
+  "run_number": 8,
+  "run_attempt": 1,
+  "metadata": {
+    "id": 6369507783,
+    "name": "Test Build Tauri",
+    "node_id": "WFR_kwLODEsyyM8AAAABe6b5xw",
+    "head_branch": "sekwah/tauri-tests",
+    "head_sha": "ffe075f764d2432d2a849daba16637fb8e6c4abe",
+    "path": ".github/workflows/build-tauri.yml",
+    "display_title": "feat(tauri): improve installer",
+    "run_number": 8,
+    "event": "push",
+    "status": "completed",
+    "conclusion": "success",
+    "workflow_id": 44181775,
+    "check_suite_id": 16752168092,
+    "check_suite_node_id": "CS_kwDODEsyyM8AAAAD5oHMnA",
+    "url": "https://api.github.com/repos/zidoro/pomatez/actions/runs/6369507783",
+    "html_url": "https://github.com/zidoro/pomatez/actions/runs/6369507783",
+    "pull_requests": [],
+    "created_at": "2023-10-01T09:12:30Z",
+    "updated_at": "2023-10-01T09:30:31Z",
+    "actor": {
+      "login": "sekwah41",
+      "id": 3209834,
+      "node_id": "MDQ6VXNlcjMyMDk4MzQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3209834?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sekwah41",
+      "html_url": "https://github.com/sekwah41",
+      "followers_url": "https://api.github.com/users/sekwah41/followers",
+      "following_url": "https://api.github.com/users/sekwah41/following{/other_user}",
+      "gists_url": "https://api.github.com/users/sekwah41/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/sekwah41/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/sekwah41/subscriptions",
+      "organizations_url": "https://api.github.com/users/sekwah41/orgs",
+      "repos_url": "https://api.github.com/users/sekwah41/repos",
+      "events_url": "https://api.github.com/users/sekwah41/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/sekwah41/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "run_attempt": 1,
+    "referenced_workflows": [],
+    "run_started_at": "2023-10-01T09:12:30Z",
+    "triggering_actor": {
+      "login": "sekwah41",
+      "id": 3209834,
+      "node_id": "MDQ6VXNlcjMyMDk4MzQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3209834?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sekwah41",
+      "html_url": "https://github.com/sekwah41",
+      "followers_url": "https://api.github.com/users/sekwah41/followers",
+      "following_url": "https://api.github.com/users/sekwah41/following{/other_user}",
+      "gists_url": "https://api.github.com/users/sekwah41/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/sekwah41/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/sekwah41/subscriptions",
+      "organizations_url": "https://api.github.com/users/sekwah41/orgs",
+      "repos_url": "https://api.github.com/users/sekwah41/repos",
+      "events_url": "https://api.github.com/users/sekwah41/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/sekwah41/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "jobs_url": "https://api.github.com/repos/zidoro/pomatez/actions/runs/6369507783/jobs",
+    "logs_url": "https://api.github.com/repos/zidoro/pomatez/actions/runs/6369507783/logs",
+    "check_suite_url": "https://api.github.com/repos/zidoro/pomatez/check-suites/16752168092",
+    "artifacts_url": "https://api.github.com/repos/zidoro/pomatez/actions/runs/6369507783/artifacts",
+    "cancel_url": "https://api.github.com/repos/zidoro/pomatez/actions/runs/6369507783/cancel",
+    "rerun_url": "https://api.github.com/repos/zidoro/pomatez/actions/runs/6369507783/rerun",
+    "previous_attempt_url": null,
+    "workflow_url": "https://api.github.com/repos/zidoro/pomatez/actions/workflows/44181775",
+    "head_commit": {
+      "id": "ffe075f764d2432d2a849daba16637fb8e6c4abe",
+      "tree_id": "75c8e8ea59f491bdcf545a689a2706ae02d25113",
+      "message": "feat(tauri): improve installer",
+      "timestamp": "2023-10-01T09:12:18Z",
+      "author": {
+        "name": "Sekwah",
+        "email": "contact@sekwah.com"
+      },
+      "committer": {
+        "name": "Sekwah",
+        "email": "contact@sekwah.com"
+      }
+    },
+    "repository": {
+      "id": 206254792,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMDYyNTQ3OTI=",
+      "name": "pomatez",
+      "full_name": "zidoro/pomatez",
+      "private": false,
+      "owner": {
+        "login": "zidoro",
+        "id": 132321007,
+        "node_id": "O_kgDOB-MO7w",
+        "avatar_url": "https://avatars.githubusercontent.com/u/132321007?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/zidoro",
+        "html_url": "https://github.com/zidoro",
+        "followers_url": "https://api.github.com/users/zidoro/followers",
+        "following_url": "https://api.github.com/users/zidoro/following{/other_user}",
+        "gists_url": "https://api.github.com/users/zidoro/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/zidoro/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/zidoro/subscriptions",
+        "organizations_url": "https://api.github.com/users/zidoro/orgs",
+        "repos_url": "https://api.github.com/users/zidoro/repos",
+        "events_url": "https://api.github.com/users/zidoro/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/zidoro/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/zidoro/pomatez",
+      "description": "Stay Focused. Take a Break.",
+      "fork": false,
+      "url": "https://api.github.com/repos/zidoro/pomatez",
+      "forks_url": "https://api.github.com/repos/zidoro/pomatez/forks",
+      "keys_url": "https://api.github.com/repos/zidoro/pomatez/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/zidoro/pomatez/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/zidoro/pomatez/teams",
+      "hooks_url": "https://api.github.com/repos/zidoro/pomatez/hooks",
+      "issue_events_url": "https://api.github.com/repos/zidoro/pomatez/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/zidoro/pomatez/events",
+      "assignees_url": "https://api.github.com/repos/zidoro/pomatez/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/zidoro/pomatez/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/zidoro/pomatez/tags",
+      "blobs_url": "https://api.github.com/repos/zidoro/pomatez/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/zidoro/pomatez/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/zidoro/pomatez/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/zidoro/pomatez/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/zidoro/pomatez/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/zidoro/pomatez/languages",
+      "stargazers_url": "https://api.github.com/repos/zidoro/pomatez/stargazers",
+      "contributors_url": "https://api.github.com/repos/zidoro/pomatez/contributors",
+      "subscribers_url": "https://api.github.com/repos/zidoro/pomatez/subscribers",
+      "subscription_url": "https://api.github.com/repos/zidoro/pomatez/subscription",
+      "commits_url": "https://api.github.com/repos/zidoro/pomatez/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/zidoro/pomatez/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/zidoro/pomatez/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/zidoro/pomatez/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/zidoro/pomatez/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/zidoro/pomatez/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/zidoro/pomatez/merges",
+      "archive_url": "https://api.github.com/repos/zidoro/pomatez/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/zidoro/pomatez/downloads",
+      "issues_url": "https://api.github.com/repos/zidoro/pomatez/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/zidoro/pomatez/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/zidoro/pomatez/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/zidoro/pomatez/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/zidoro/pomatez/labels{/name}",
+      "releases_url": "https://api.github.com/repos/zidoro/pomatez/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/zidoro/pomatez/deployments"
+    },
+    "head_repository": {
+      "id": 206254792,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMDYyNTQ3OTI=",
+      "name": "pomatez",
+      "full_name": "zidoro/pomatez",
+      "private": false,
+      "owner": {
+        "login": "zidoro",
+        "id": 132321007,
+        "node_id": "O_kgDOB-MO7w",
+        "avatar_url": "https://avatars.githubusercontent.com/u/132321007?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/zidoro",
+        "html_url": "https://github.com/zidoro",
+        "followers_url": "https://api.github.com/users/zidoro/followers",
+        "following_url": "https://api.github.com/users/zidoro/following{/other_user}",
+        "gists_url": "https://api.github.com/users/zidoro/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/zidoro/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/zidoro/subscriptions",
+        "organizations_url": "https://api.github.com/users/zidoro/orgs",
+        "repos_url": "https://api.github.com/users/zidoro/repos",
+        "events_url": "https://api.github.com/users/zidoro/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/zidoro/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/zidoro/pomatez",
+      "description": "Stay Focused. Take a Break.",
+      "fork": false,
+      "url": "https://api.github.com/repos/zidoro/pomatez",
+      "forks_url": "https://api.github.com/repos/zidoro/pomatez/forks",
+      "keys_url": "https://api.github.com/repos/zidoro/pomatez/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/zidoro/pomatez/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/zidoro/pomatez/teams",
+      "hooks_url": "https://api.github.com/repos/zidoro/pomatez/hooks",
+      "issue_events_url": "https://api.github.com/repos/zidoro/pomatez/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/zidoro/pomatez/events",
+      "assignees_url": "https://api.github.com/repos/zidoro/pomatez/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/zidoro/pomatez/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/zidoro/pomatez/tags",
+      "blobs_url": "https://api.github.com/repos/zidoro/pomatez/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/zidoro/pomatez/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/zidoro/pomatez/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/zidoro/pomatez/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/zidoro/pomatez/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/zidoro/pomatez/languages",
+      "stargazers_url": "https://api.github.com/repos/zidoro/pomatez/stargazers",
+      "contributors_url": "https://api.github.com/repos/zidoro/pomatez/contributors",
+      "subscribers_url": "https://api.github.com/repos/zidoro/pomatez/subscribers",
+      "subscription_url": "https://api.github.com/repos/zidoro/pomatez/subscription",
+      "commits_url": "https://api.github.com/repos/zidoro/pomatez/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/zidoro/pomatez/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/zidoro/pomatez/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/zidoro/pomatez/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/zidoro/pomatez/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/zidoro/pomatez/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/zidoro/pomatez/merges",
+      "archive_url": "https://api.github.com/repos/zidoro/pomatez/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/zidoro/pomatez/downloads",
+      "issues_url": "https://api.github.com/repos/zidoro/pomatez/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/zidoro/pomatez/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/zidoro/pomatez/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/zidoro/pomatez/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/zidoro/pomatez/labels{/name}",
+      "releases_url": "https://api.github.com/repos/zidoro/pomatez/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/zidoro/pomatez/deployments"
+    }
+  },
+  "logs_archive": {
+    "path": "/data/logs/zidoro/pomatez/Test_Build_Tauri_b2bb/8-1.tar.gz"
+  },
+  "total_logs_size": 428476,
+  "log_insights": [
+    {
+      "file": "3_Test Build (windows-latest, win).txt",
+      "total_lines": 1349,
+      "log_size": 115793,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "windows-2022",
+      "image_version": "20230924.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v2",
+          "sha": "ee0669bd1cc54295c223e0bb666b733df41de1c5",
+          "with": {
+            "repository": "zidoro/pomatez",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "fetch-depth": "1",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-01 09:12:43.473000",
+          "duration_sec": 9.319776
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "setup-node",
+          "version": "v2",
+          "sha": "7c12f8017d5436eb855f1ed4399f037a36fbd9e8",
+          "with": {
+            "node-version": "16.x",
+            "cache": "yarn",
+            "always-auth": "false",
+            "check-latest": "false",
+            "token": "***"
+          },
+          "env": {},
+          "start_date": "2023-10-01 09:12:52.793000",
+          "duration_sec": 224.821833
+        },
+        {
+          "type": "action",
+          "repository": "dtolnay",
+          "action": "rust-toolchain",
+          "version": "stable",
+          "sha": "d76c2a93c593483c9892fd8d2538734f73ed8588",
+          "with": {
+            "toolchain": "stable"
+          },
+          "env": {},
+          "start_date": "2023-10-01 09:16:37.615000",
+          "duration_sec": 0.0444
+        },
+        {
+          "type": "shell",
+          "env": {
+            "toolchain": "stable"
+          },
+          "code": ": parse toolchain version\nif [[ $toolchain =~ ^stable' '[0-9]+' '(year|month|week|day)s?' 'ago$ ]]; then\n  if [[ Windows == macOS ]]; then\n    echo \"toolchain=1.$((($(date -v-$(sed 's/stable \\([0-9]*\\) \\(.\\).*/\\1\\2/' <<< $toolchain) +%s)/60/60/24-16569)/7/6))\" >> $GITHUB_OUTPUT\n  else\n    echo \"toolchain=1.$((($(date --date \"${toolchain#stable }\" +%s)/60/60/24-16569)/7/6))\" >> $GITHUB_OUTPUT\n  fi\nelif [[ $toolchain =~ ^stable' 'minus' '[0-9]+' 'releases?$ ]]; then\n  echo \"toolchain=1.$((($(date +%s)/60/60/24-16569)/7/6-${toolchain//[^0-9]/}))\" >> $GITHUB_OUTPUT\nelse\n  echo \"toolchain=$toolchain\" >> $GITHUB_OUTPUT\nfi",
+          "errors": [
+            {
+              "node": null,
+              "originalError": {
+                "message": "src.sh:8:1: \"elif\" can only be used in an if"
+              }
+            }
+          ],
+          "start_date": "2023-10-01 09:16:37.659000",
+          "duration_sec": 0.799844
+        },
+        {
+          "type": "shell",
+          "env": {
+            "targets": "",
+            "components": ""
+          },
+          "code": ": construct rustup command line\necho \"targets=$(for t in ${targets//,/ }; do echo -n ' --target' $t; done)\" >> $GITHUB_OUTPUT\necho \"components=$(for c in ${components//,/ }; do echo -n ' --component' $c; done)\" >> $GITHUB_OUTPUT\necho \"downgrade=\" >> $GITHUB_OUTPUT",
+          "commands": [
+            {
+              "annotations": [
+                "SC-TRUE"
+              ],
+              "command": ":",
+              "categories": [
+                "UTILS"
+              ],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "construct"
+                },
+                {
+                  "annotations": [],
+                  "content": "rustup"
+                },
+                {
+                  "annotations": [],
+                  "content": "command"
+                },
+                {
+                  "annotations": [],
+                  "content": "line"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"targets=$(for t in ${targets//,/ }; do echo -n ' --target' $t; done)\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"components=$(for c in ${components//,/ }; do echo -n ' --component' $c; done)\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"downgrade=\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-F-N"
+                  ],
+                  "content": "-n"
+                },
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "' --target'"
+                },
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "$t"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-F-N"
+                  ],
+                  "content": "-n"
+                },
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "' --component'"
+                },
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "$c"
+                }
+              ]
+            }
+          ],
+          "errors": null,
+          "start_date": "2023-10-01 09:16:38.459000",
+          "duration_sec": 0.341329
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "rustup toolchain install stable --profile minimal --no-self-update",
+          "commands": [
+            {
+              "annotations": [],
+              "command": "rustup",
+              "categories": [],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "toolchain"
+                },
+                {
+                  "annotations": [],
+                  "content": "install"
+                },
+                {
+                  "annotations": [],
+                  "content": "stable"
+                },
+                {
+                  "annotations": [],
+                  "content": "--profile"
+                },
+                {
+                  "annotations": [],
+                  "content": "minimal"
+                },
+                {
+                  "annotations": [],
+                  "content": "--no-self-update"
+                }
+              ]
+            }
+          ],
+          "errors": null,
+          "start_date": "2023-10-01 09:16:38.801000",
+          "duration_sec": 49.471772
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "rustup default stable",
+          "commands": [
+            {
+              "annotations": [],
+              "command": "rustup",
+              "categories": [],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "default"
+                },
+                {
+                  "annotations": [],
+                  "content": "stable"
+                }
+              ]
+            }
+          ],
+          "errors": null,
+          "start_date": "2023-10-01 09:17:28.272000",
+          "duration_sec": 10.47589
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": ": create cachekey\nDATE=$(rustc +stable --version --verbose | sed -ne 's/^commit-date: \\(20[0-9][0-9]\\)-\\([01][0-9]\\)-\\([0-3][0-9]\\)$/\\1\\2\\3/p')\nHASH=$(rustc +stable --version --verbose | sed -ne 's/^commit-hash: //p')\necho \"cachekey=$(echo $DATE$HASH | head -c12)\" >> $GITHUB_OUTPUT",
+          "commands": [
+            {
+              "annotations": [
+                "SC-TRUE"
+              ],
+              "command": ":",
+              "categories": [
+                "UTILS"
+              ],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "create"
+                },
+                {
+                  "annotations": [],
+                  "content": "cachekey"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"cachekey=$(echo $DATE$HASH | head -c12)\""
+                }
+              ]
+            },
+            {
+              "annotations": [],
+              "command": "rustc",
+              "categories": [],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "+stable"
+                },
+                {
+                  "annotations": [],
+                  "content": "--version"
+                },
+                {
+                  "annotations": [],
+                  "content": "--verbose"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SED",
+                "SC-SED-F-SILENT"
+              ],
+              "command": "sed",
+              "categories": [
+                "REGEX"
+              ],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "-ne"
+                },
+                {
+                  "annotations": [],
+                  "content": "'s/^commit-date: \\(20[0-9][0-9]\\)-\\([01][0-9]\\)-\\([0-3][0-9]\\)$/\\1\\2\\3/p'"
+                }
+              ]
+            },
+            {
+              "annotations": [],
+              "command": "rustc",
+              "categories": [],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "+stable"
+                },
+                {
+                  "annotations": [],
+                  "content": "--version"
+                },
+                {
+                  "annotations": [],
+                  "content": "--verbose"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SED",
+                "SC-SED-F-SILENT"
+              ],
+              "command": "sed",
+              "categories": [
+                "REGEX"
+              ],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "-ne"
+                },
+                {
+                  "annotations": [],
+                  "content": "'s/^commit-hash: //p'"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "$DATE$HASH"
+                }
+              ]
+            },
+            {
+              "annotations": [],
+              "command": "head",
+              "categories": [],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "-c12"
+                }
+              ]
+            }
+          ],
+          "errors": null,
+          "start_date": "2023-10-01 09:17:38.748000",
+          "duration_sec": 43.399833
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": ": disable incremental compilation\nif [ -z \"${CARGO_INCREMENTAL+set}\" ]; then\n  echo CARGO_INCREMENTAL=0 >> $GITHUB_ENV\nfi",
+          "commands": [
+            {
+              "annotations": [
+                "SC-TRUE"
+              ],
+              "command": ":",
+              "categories": [
+                "UTILS"
+              ],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "disable"
+                },
+                {
+                  "annotations": [],
+                  "content": "incremental"
+                },
+                {
+                  "annotations": [],
+                  "content": "compilation"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "CARGO_INCREMENTAL=0"
+                }
+              ]
+            }
+          ],
+          "errors": null,
+          "start_date": "2023-10-01 09:18:22.148000",
+          "duration_sec": 0.056243
+        },
+        {
+          "type": "shell",
+          "env": {
+            "CARGO_INCREMENTAL": "0"
+          },
+          "code": ": enable colors in Cargo output\nif [ -z \"${CARGO_TERM_COLOR+set}\" ]; then\n  echo CARGO_TERM_COLOR=always >> $GITHUB_ENV\nfi",
+          "commands": [
+            {
+              "annotations": [
+                "SC-TRUE"
+              ],
+              "command": ":",
+              "categories": [
+                "UTILS"
+              ],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "enable"
+                },
+                {
+                  "annotations": [],
+                  "content": "colors"
+                },
+                {
+                  "annotations": [],
+                  "content": "in"
+                },
+                {
+                  "annotations": [],
+                  "content": "Cargo"
+                },
+                {
+                  "annotations": [],
+                  "content": "output"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "CARGO_TERM_COLOR=always"
+                }
+              ]
+            }
+          ],
+          "errors": null,
+          "start_date": "2023-10-01 09:18:22.204000",
+          "duration_sec": 0.054827
+        },
+        {
+          "type": "shell",
+          "env": {
+            "CARGO_INCREMENTAL": "0",
+            "CARGO_TERM_COLOR": "always"
+          },
+          "code": ": enable Cargo sparse registry\n# implemented in 1.66, stabilized in 1.68, made default in 1.70\nif [ -z \"${CARGO_REGISTRIES_CRATES_IO_PROTOCOL+set}\" -o -f \"D:\\a\\_temp\"/.implicit_cargo_registries_crates_io_protocol ]; then\n  if rustc +stable --version --verbose | grep -q '^release: 1\\.6[89]\\.'; then\n    touch \"D:\\a\\_temp\"/.implicit_cargo_registries_crates_io_protocol || true\n    echo CARGO_REGISTRIES_CRATES_IO_PROTOCOL=sparse >> $GITHUB_ENV\n  elif rustc +stable --version --verbose | grep -q '^release: 1\\.6[67]\\.'; then\n    touch \"D:\\a\\_temp\"/.implicit_cargo_registries_crates_io_protocol || true\n    echo CARGO_REGISTRIES_CRATES_IO_PROTOCOL=git >> $GITHUB_ENV\n  fi\nfi",
+          "commands": [
+            {
+              "annotations": [
+                "SC-TRUE"
+              ],
+              "command": ":",
+              "categories": [
+                "UTILS"
+              ],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "enable"
+                },
+                {
+                  "annotations": [],
+                  "content": "Cargo"
+                },
+                {
+                  "annotations": [],
+                  "content": "sparse"
+                },
+                {
+                  "annotations": [],
+                  "content": "registry"
+                }
+              ]
+            },
+            {
+              "annotations": [],
+              "command": "rustc",
+              "categories": [],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "+stable"
+                },
+                {
+                  "annotations": [],
+                  "content": "--version"
+                },
+                {
+                  "annotations": [],
+                  "content": "--verbose"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-GREP"
+              ],
+              "command": "grep",
+              "categories": [
+                "SEARCH",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-GREP-F-SILENT"
+                  ],
+                  "content": "-q"
+                },
+                {
+                  "annotations": [
+                    "SC-GREP-PATTERN"
+                  ],
+                  "content": "'^release: 1\\.6[89]\\.'"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "CARGO_REGISTRIES_CRATES_IO_PROTOCOL=sparse"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-TOUCH"
+              ],
+              "command": "touch",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-TOUCH-PATH"
+                  ],
+                  "content": "\"D:\\a\\_temp\"/.implicit_cargo_registries_crates_io_protocol"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-TRUE"
+              ],
+              "command": "true",
+              "categories": [
+                "UTILS"
+              ],
+              "args": []
+            },
+            {
+              "annotations": [],
+              "command": "rustc",
+              "categories": [],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "+stable"
+                },
+                {
+                  "annotations": [],
+                  "content": "--version"
+                },
+                {
+                  "annotations": [],
+                  "content": "--verbose"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-GREP"
+              ],
+              "command": "grep",
+              "categories": [
+                "SEARCH",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-GREP-F-SILENT"
+                  ],
+                  "content": "-q"
+                },
+                {
+                  "annotations": [
+                    "SC-GREP-PATTERN"
+                  ],
+                  "content": "'^release: 1\\.6[67]\\.'"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "CARGO_REGISTRIES_CRATES_IO_PROTOCOL=git"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-TOUCH"
+              ],
+              "command": "touch",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-TOUCH-PATH"
+                  ],
+                  "content": "\"D:\\a\\_temp\"/.implicit_cargo_registries_crates_io_protocol"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-TRUE"
+              ],
+              "command": "true",
+              "categories": [
+                "UTILS"
+              ],
+              "args": []
+            }
+          ],
+          "errors": null,
+          "start_date": "2023-10-01 09:18:22.259000",
+          "duration_sec": 0.248372
+        },
+        {
+          "type": "shell",
+          "env": {
+            "CARGO_INCREMENTAL": "0",
+            "CARGO_TERM_COLOR": "always"
+          },
+          "code": ": work around spurious network errors in curl 8.0\n# https://rust-lang.zulipchat.com/#narrow/stream/246057-t-cargo/topic/timeout.20investigation\nif rustc +stable --version --verbose | grep -q '^release: 1\\.7[01]\\.'; then\n  echo CARGO_HTTP_MULTIPLEXING=false >> $GITHUB_ENV\nfi",
+          "commands": [
+            {
+              "annotations": [
+                "SC-TRUE"
+              ],
+              "command": ":",
+              "categories": [
+                "UTILS"
+              ],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "work"
+                },
+                {
+                  "annotations": [],
+                  "content": "around"
+                },
+                {
+                  "annotations": [],
+                  "content": "spurious"
+                },
+                {
+                  "annotations": [],
+                  "content": "network"
+                },
+                {
+                  "annotations": [],
+                  "content": "errors"
+                },
+                {
+                  "annotations": [],
+                  "content": "in"
+                },
+                {
+                  "annotations": [],
+                  "content": "curl"
+                },
+                {
+                  "annotations": [],
+                  "content": "8.0"
+                }
+              ]
+            },
+            {
+              "annotations": [],
+              "command": "rustc",
+              "categories": [],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "+stable"
+                },
+                {
+                  "annotations": [],
+                  "content": "--version"
+                },
+                {
+                  "annotations": [],
+                  "content": "--verbose"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-GREP"
+              ],
+              "command": "grep",
+              "categories": [
+                "SEARCH",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-GREP-F-SILENT"
+                  ],
+                  "content": "-q"
+                },
+                {
+                  "annotations": [
+                    "SC-GREP-PATTERN"
+                  ],
+                  "content": "'^release: 1\\.7[01]\\.'"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "CARGO_HTTP_MULTIPLEXING=false"
+                }
+              ]
+            }
+          ],
+          "errors": null,
+          "start_date": "2023-10-01 09:18:22.508000",
+          "duration_sec": 0.120463
+        },
+        {
+          "type": "shell",
+          "env": {
+            "CARGO_INCREMENTAL": "0",
+            "CARGO_TERM_COLOR": "always"
+          },
+          "code": "rustc +stable --version --verbose",
+          "commands": [
+            {
+              "annotations": [],
+              "command": "rustc",
+              "categories": [],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "+stable"
+                },
+                {
+                  "annotations": [],
+                  "content": "--version"
+                },
+                {
+                  "annotations": [],
+                  "content": "--verbose"
+                }
+              ]
+            }
+          ],
+          "errors": null,
+          "start_date": "2023-10-01 09:18:22.628000",
+          "duration_sec": 0.123763
+        },
+        {
+          "type": "shell",
+          "env": {
+            "CARGO_INCREMENTAL": "0",
+            "CARGO_TERM_COLOR": "always"
+          },
+          "code": "yarn install --immutable --network-timeout 120000",
+          "commands": [
+            {
+              "annotations": [
+                "SC-YARN-INSTALL"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-YARN-INSTALL-IMMUTABLE"
+                  ],
+                  "content": "--immutable"
+                },
+                {
+                  "annotations": [
+                    "SC-YARN-INSTALL-NETWORK-TIMEOUT"
+                  ],
+                  "content": "--network-timeout 120000"
+                }
+              ]
+            }
+          ],
+          "errors": null,
+          "start_date": "2023-10-01 09:18:22.752000",
+          "duration_sec": 52.499506
+        },
+        {
+          "type": "shell",
+          "env": {
+            "CARGO_INCREMENTAL": "0",
+            "CARGO_TERM_COLOR": "always"
+          },
+          "code": "yarn build:tauri",
+          "commands": [
+            {
+              "annotations": [
+                "SC-YARN-RUN-SCRIPT"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "RUN_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-YARN-RUN-SCRIPT-SCRIPT"
+                  ],
+                  "content": "build:tauri"
+                }
+              ]
+            }
+          ],
+          "errors": null,
+          "start_date": "2023-10-01 09:19:15.251000",
+          "duration_sec": 667.350901
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "upload-artifact",
+          "version": "v2",
+          "sha": "82c141cc518b40d92cc801eee768e7aafc9c2fa2",
+          "with": {
+            "name": "built-app-win",
+            "path": "app/tauri/target/release/bundle/deb/*.deb",
+            "if-no-files-found": "warn"
+          },
+          "env": {
+            "CARGO_INCREMENTAL": "0",
+            "CARGO_TERM_COLOR": "always"
+          },
+          "start_date": "2023-10-01 09:30:22.602000",
+          "duration_sec": 5.983266
+        }
+      ]
+    },
+    {
+      "file": "1_Test Build (ubuntu-20.04, linux).txt",
+      "total_lines": 2175,
+      "log_size": 195395,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "ubuntu-20.04",
+      "image_version": "20230924.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v2",
+          "sha": "ee0669bd1cc54295c223e0bb666b733df41de1c5",
+          "with": {
+            "repository": "zidoro/pomatez",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "fetch-depth": "1",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-01 09:12:39.843000",
+          "duration_sec": 1.294938
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "setup-node",
+          "version": "v2",
+          "sha": "7c12f8017d5436eb855f1ed4399f037a36fbd9e8",
+          "with": {
+            "node-version": "16.x",
+            "cache": "yarn",
+            "always-auth": "false",
+            "check-latest": "false",
+            "token": "***"
+          },
+          "env": {},
+          "start_date": "2023-10-01 09:12:41.138000",
+          "duration_sec": 15.523165
+        },
+        {
+          "type": "action",
+          "repository": "dtolnay",
+          "action": "rust-toolchain",
+          "version": "stable",
+          "sha": "d76c2a93c593483c9892fd8d2538734f73ed8588",
+          "with": {
+            "toolchain": "stable"
+          },
+          "env": {},
+          "start_date": "2023-10-01 09:12:56.661000",
+          "duration_sec": 0.032219
+        },
+        {
+          "type": "shell",
+          "env": {
+            "toolchain": "stable"
+          },
+          "code": ": parse toolchain version\nif [[ $toolchain =~ ^stable' '[0-9]+' '(year|month|week|day)s?' 'ago$ ]]; then\n  if [[ Linux == macOS ]]; then\n    echo \"toolchain=1.$((($(date -v-$(sed 's/stable \\([0-9]*\\) \\(.\\).*/\\1\\2/' <<< $toolchain) +%s)/60/60/24-16569)/7/6))\" >> $GITHUB_OUTPUT\n  else\n    echo \"toolchain=1.$((($(date --date \"${toolchain#stable }\" +%s)/60/60/24-16569)/7/6))\" >> $GITHUB_OUTPUT\n  fi\nelif [[ $toolchain =~ ^stable' 'minus' '[0-9]+' 'releases?$ ]]; then\n  echo \"toolchain=1.$((($(date +%s)/60/60/24-16569)/7/6-${toolchain//[^0-9]/}))\" >> $GITHUB_OUTPUT\nelse\n  echo \"toolchain=$toolchain\" >> $GITHUB_OUTPUT\nfi",
+          "errors": [
+            {
+              "node": null,
+              "originalError": {
+                "message": "src.sh:8:1: \"elif\" can only be used in an if"
+              }
+            }
+          ],
+          "start_date": "2023-10-01 09:12:56.693000",
+          "duration_sec": 0.031463
+        },
+        {
+          "type": "shell",
+          "env": {
+            "targets": "",
+            "components": ""
+          },
+          "code": ": construct rustup command line\necho \"targets=$(for t in ${targets//,/ }; do echo -n ' --target' $t; done)\" >> $GITHUB_OUTPUT\necho \"components=$(for c in ${components//,/ }; do echo -n ' --component' $c; done)\" >> $GITHUB_OUTPUT\necho \"downgrade=\" >> $GITHUB_OUTPUT",
+          "commands": [
+            {
+              "annotations": [
+                "SC-TRUE"
+              ],
+              "command": ":",
+              "categories": [
+                "UTILS"
+              ],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "construct"
+                },
+                {
+                  "annotations": [],
+                  "content": "rustup"
+                },
+                {
+                  "annotations": [],
+                  "content": "command"
+                },
+                {
+                  "annotations": [],
+                  "content": "line"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"targets=$(for t in ${targets//,/ }; do echo -n ' --target' $t; done)\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"components=$(for c in ${components//,/ }; do echo -n ' --component' $c; done)\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"downgrade=\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-F-N"
+                  ],
+                  "content": "-n"
+                },
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "' --target'"
+                },
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "$t"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-F-N"
+                  ],
+                  "content": "-n"
+                },
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "' --component'"
+                },
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "$c"
+                }
+              ]
+            }
+          ],
+          "errors": null,
+          "start_date": "2023-10-01 09:12:56.725000",
+          "duration_sec": 0.019779
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": ": install rustup if needed\nif ! command -v rustup &>/dev/null; then\n  curl --proto '=https' --tlsv1.2 --retry 10 --retry-connrefused --location --silent --show-error --fail \"https://sh.rustup.rs\" | sh -s -- --default-toolchain none -y\n  echo \"${CARGO_HOME:-$HOME/.cargo}/bin\" >> $GITHUB_PATH\nfi",
+          "commands": [
+            {
+              "annotations": [
+                "SC-TRUE"
+              ],
+              "command": ":",
+              "categories": [
+                "UTILS"
+              ],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "install"
+                },
+                {
+                  "annotations": [],
+                  "content": "rustup"
+                },
+                {
+                  "annotations": [],
+                  "content": "if"
+                },
+                {
+                  "annotations": [],
+                  "content": "needed"
+                }
+              ]
+            },
+            {
+              "annotations": [],
+              "command": "command",
+              "categories": [],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "-v"
+                },
+                {
+                  "annotations": [],
+                  "content": "rustup"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"${CARGO_HOME:-$HOME/.cargo}/bin\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CURL"
+              ],
+              "command": "curl",
+              "categories": [
+                "DOWNLOAD"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CURL-PROTO"
+                  ],
+                  "content": "--proto '=https'"
+                },
+                {
+                  "annotations": [
+                    "SC-CURL-TLSV1"
+                  ],
+                  "content": "--tlsv1.2"
+                },
+                {
+                  "annotations": [
+                    "SC-CURL-RETRY"
+                  ],
+                  "content": "--retry 10"
+                },
+                {
+                  "annotations": [
+                    "SC-CURL-RETRY-CONNREFUSED"
+                  ],
+                  "content": "--retry-connrefused"
+                },
+                {
+                  "annotations": [
+                    "SC-CURL-F-LOCATION"
+                  ],
+                  "content": "--location"
+                },
+                {
+                  "annotations": [
+                    "SC-CURL-F-SILENT"
+                  ],
+                  "content": "--silent"
+                },
+                {
+                  "annotations": [
+                    "SC-CURL-F-SHOW-ERROR"
+                  ],
+                  "content": "--show-error"
+                },
+                {
+                  "annotations": [
+                    "SC-CURL-F-FAIL"
+                  ],
+                  "content": "--fail"
+                },
+                {
+                  "annotations": [
+                    "SC-CURL-URL"
+                  ],
+                  "content": "\"https://sh.rustup.rs\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SH"
+              ],
+              "command": "sh",
+              "categories": [
+                "SHELL"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-SH-F-S"
+                  ],
+                  "content": "-s"
+                },
+                {
+                  "annotations": [],
+                  "content": "--"
+                },
+                {
+                  "annotations": [
+                    "SC-SH-DEFAULT-TOOLCHAIN"
+                  ],
+                  "content": "--default-toolchain"
+                }
+              ]
+            },
+            {
+              "annotations": [],
+              "command": "none",
+              "categories": [],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "-y"
+                }
+              ]
+            }
+          ],
+          "errors": null,
+          "start_date": "2023-10-01 09:12:56.745000",
+          "duration_sec": 0.016482
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "rustup toolchain install stable --profile minimal --no-self-update",
+          "commands": [
+            {
+              "annotations": [],
+              "command": "rustup",
+              "categories": [],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "toolchain"
+                },
+                {
+                  "annotations": [],
+                  "content": "install"
+                },
+                {
+                  "annotations": [],
+                  "content": "stable"
+                },
+                {
+                  "annotations": [],
+                  "content": "--profile"
+                },
+                {
+                  "annotations": [],
+                  "content": "minimal"
+                },
+                {
+                  "annotations": [],
+                  "content": "--no-self-update"
+                }
+              ]
+            }
+          ],
+          "errors": null,
+          "start_date": "2023-10-01 09:12:56.761000",
+          "duration_sec": 0.49108
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "rustup default stable",
+          "commands": [
+            {
+              "annotations": [],
+              "command": "rustup",
+              "categories": [],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "default"
+                },
+                {
+                  "annotations": [],
+                  "content": "stable"
+                }
+              ]
+            }
+          ],
+          "errors": null,
+          "start_date": "2023-10-01 09:12:57.252000",
+          "duration_sec": 0.041736
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": ": create cachekey\nDATE=$(rustc +stable --version --verbose | sed -ne 's/^commit-date: \\(20[0-9][0-9]\\)-\\([01][0-9]\\)-\\([0-3][0-9]\\)$/\\1\\2\\3/p')\nHASH=$(rustc +stable --version --verbose | sed -ne 's/^commit-hash: //p')\necho \"cachekey=$(echo $DATE$HASH | head -c12)\" >> $GITHUB_OUTPUT",
+          "commands": [
+            {
+              "annotations": [
+                "SC-TRUE"
+              ],
+              "command": ":",
+              "categories": [
+                "UTILS"
+              ],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "create"
+                },
+                {
+                  "annotations": [],
+                  "content": "cachekey"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"cachekey=$(echo $DATE$HASH | head -c12)\""
+                }
+              ]
+            },
+            {
+              "annotations": [],
+              "command": "rustc",
+              "categories": [],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "+stable"
+                },
+                {
+                  "annotations": [],
+                  "content": "--version"
+                },
+                {
+                  "annotations": [],
+                  "content": "--verbose"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SED",
+                "SC-SED-F-SILENT"
+              ],
+              "command": "sed",
+              "categories": [
+                "REGEX"
+              ],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "-ne"
+                },
+                {
+                  "annotations": [],
+                  "content": "'s/^commit-date: \\(20[0-9][0-9]\\)-\\([01][0-9]\\)-\\([0-3][0-9]\\)$/\\1\\2\\3/p'"
+                }
+              ]
+            },
+            {
+              "annotations": [],
+              "command": "rustc",
+              "categories": [],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "+stable"
+                },
+                {
+                  "annotations": [],
+                  "content": "--version"
+                },
+                {
+                  "annotations": [],
+                  "content": "--verbose"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SED",
+                "SC-SED-F-SILENT"
+              ],
+              "command": "sed",
+              "categories": [
+                "REGEX"
+              ],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "-ne"
+                },
+                {
+                  "annotations": [],
+                  "content": "'s/^commit-hash: //p'"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "$DATE$HASH"
+                }
+              ]
+            },
+            {
+              "annotations": [],
+              "command": "head",
+              "categories": [],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "-c12"
+                }
+              ]
+            }
+          ],
+          "errors": null,
+          "start_date": "2023-10-01 09:12:57.294000",
+          "duration_sec": 0.088182
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": ": disable incremental compilation\nif [ -z \"${CARGO_INCREMENTAL+set}\" ]; then\n  echo CARGO_INCREMENTAL=0 >> $GITHUB_ENV\nfi",
+          "commands": [
+            {
+              "annotations": [
+                "SC-TRUE"
+              ],
+              "command": ":",
+              "categories": [
+                "UTILS"
+              ],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "disable"
+                },
+                {
+                  "annotations": [],
+                  "content": "incremental"
+                },
+                {
+                  "annotations": [],
+                  "content": "compilation"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "CARGO_INCREMENTAL=0"
+                }
+              ]
+            }
+          ],
+          "errors": null,
+          "start_date": "2023-10-01 09:12:57.382000",
+          "duration_sec": 0.015676
+        },
+        {
+          "type": "shell",
+          "env": {
+            "CARGO_INCREMENTAL": "0"
+          },
+          "code": ": enable colors in Cargo output\nif [ -z \"${CARGO_TERM_COLOR+set}\" ]; then\n  echo CARGO_TERM_COLOR=always >> $GITHUB_ENV\nfi",
+          "commands": [
+            {
+              "annotations": [
+                "SC-TRUE"
+              ],
+              "command": ":",
+              "categories": [
+                "UTILS"
+              ],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "enable"
+                },
+                {
+                  "annotations": [],
+                  "content": "colors"
+                },
+                {
+                  "annotations": [],
+                  "content": "in"
+                },
+                {
+                  "annotations": [],
+                  "content": "Cargo"
+                },
+                {
+                  "annotations": [],
+                  "content": "output"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "CARGO_TERM_COLOR=always"
+                }
+              ]
+            }
+          ],
+          "errors": null,
+          "start_date": "2023-10-01 09:12:57.398000",
+          "duration_sec": 0.015273
+        },
+        {
+          "type": "shell",
+          "env": {
+            "CARGO_INCREMENTAL": "0",
+            "CARGO_TERM_COLOR": "always"
+          },
+          "code": ": enable Cargo sparse registry\n# implemented in 1.66, stabilized in 1.68, made default in 1.70\nif [ -z \"${CARGO_REGISTRIES_CRATES_IO_PROTOCOL+set}\" -o -f \"/home/runner/work/_temp\"/.implicit_cargo_registries_crates_io_protocol ]; then\n  if rustc +stable --version --verbose | grep -q '^release: 1\\.6[89]\\.'; then\n    touch \"/home/runner/work/_temp\"/.implicit_cargo_registries_crates_io_protocol || true\n    echo CARGO_REGISTRIES_CRATES_IO_PROTOCOL=sparse >> $GITHUB_ENV\n  elif rustc +stable --version --verbose | grep -q '^release: 1\\.6[67]\\.'; then\n    touch \"/home/runner/work/_temp\"/.implicit_cargo_registries_crates_io_protocol || true\n    echo CARGO_REGISTRIES_CRATES_IO_PROTOCOL=git >> $GITHUB_ENV\n  fi\nfi",
+          "commands": [
+            {
+              "annotations": [
+                "SC-TRUE"
+              ],
+              "command": ":",
+              "categories": [
+                "UTILS"
+              ],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "enable"
+                },
+                {
+                  "annotations": [],
+                  "content": "Cargo"
+                },
+                {
+                  "annotations": [],
+                  "content": "sparse"
+                },
+                {
+                  "annotations": [],
+                  "content": "registry"
+                }
+              ]
+            },
+            {
+              "annotations": [],
+              "command": "rustc",
+              "categories": [],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "+stable"
+                },
+                {
+                  "annotations": [],
+                  "content": "--version"
+                },
+                {
+                  "annotations": [],
+                  "content": "--verbose"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-GREP"
+              ],
+              "command": "grep",
+              "categories": [
+                "SEARCH",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-GREP-F-SILENT"
+                  ],
+                  "content": "-q"
+                },
+                {
+                  "annotations": [
+                    "SC-GREP-PATTERN"
+                  ],
+                  "content": "'^release: 1\\.6[89]\\.'"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "CARGO_REGISTRIES_CRATES_IO_PROTOCOL=sparse"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-TOUCH"
+              ],
+              "command": "touch",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-TOUCH-PATH"
+                  ],
+                  "content": "\"/home/runner/work/_temp\"/.implicit_cargo_registries_crates_io_protocol"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-TRUE"
+              ],
+              "command": "true",
+              "categories": [
+                "UTILS"
+              ],
+              "args": []
+            },
+            {
+              "annotations": [],
+              "command": "rustc",
+              "categories": [],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "+stable"
+                },
+                {
+                  "annotations": [],
+                  "content": "--version"
+                },
+                {
+                  "annotations": [],
+                  "content": "--verbose"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-GREP"
+              ],
+              "command": "grep",
+              "categories": [
+                "SEARCH",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-GREP-F-SILENT"
+                  ],
+                  "content": "-q"
+                },
+                {
+                  "annotations": [
+                    "SC-GREP-PATTERN"
+                  ],
+                  "content": "'^release: 1\\.6[67]\\.'"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "CARGO_REGISTRIES_CRATES_IO_PROTOCOL=git"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-TOUCH"
+              ],
+              "command": "touch",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-TOUCH-PATH"
+                  ],
+                  "content": "\"/home/runner/work/_temp\"/.implicit_cargo_registries_crates_io_protocol"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-TRUE"
+              ],
+              "command": "true",
+              "categories": [
+                "UTILS"
+              ],
+              "args": []
+            }
+          ],
+          "errors": null,
+          "start_date": "2023-10-01 09:12:57.413000",
+          "duration_sec": 0.05336
+        },
+        {
+          "type": "shell",
+          "env": {
+            "CARGO_INCREMENTAL": "0",
+            "CARGO_TERM_COLOR": "always"
+          },
+          "code": ": work around spurious network errors in curl 8.0\n# https://rust-lang.zulipchat.com/#narrow/stream/246057-t-cargo/topic/timeout.20investigation\nif rustc +stable --version --verbose | grep -q '^release: 1\\.7[01]\\.'; then\n  echo CARGO_HTTP_MULTIPLEXING=false >> $GITHUB_ENV\nfi",
+          "commands": [
+            {
+              "annotations": [
+                "SC-TRUE"
+              ],
+              "command": ":",
+              "categories": [
+                "UTILS"
+              ],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "work"
+                },
+                {
+                  "annotations": [],
+                  "content": "around"
+                },
+                {
+                  "annotations": [],
+                  "content": "spurious"
+                },
+                {
+                  "annotations": [],
+                  "content": "network"
+                },
+                {
+                  "annotations": [],
+                  "content": "errors"
+                },
+                {
+                  "annotations": [],
+                  "content": "in"
+                },
+                {
+                  "annotations": [],
+                  "content": "curl"
+                },
+                {
+                  "annotations": [],
+                  "content": "8.0"
+                }
+              ]
+            },
+            {
+              "annotations": [],
+              "command": "rustc",
+              "categories": [],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "+stable"
+                },
+                {
+                  "annotations": [],
+                  "content": "--version"
+                },
+                {
+                  "annotations": [],
+                  "content": "--verbose"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-GREP"
+              ],
+              "command": "grep",
+              "categories": [
+                "SEARCH",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-GREP-F-SILENT"
+                  ],
+                  "content": "-q"
+                },
+                {
+                  "annotations": [
+                    "SC-GREP-PATTERN"
+                  ],
+                  "content": "'^release: 1\\.7[01]\\.'"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "CARGO_HTTP_MULTIPLEXING=false"
+                }
+              ]
+            }
+          ],
+          "errors": null,
+          "start_date": "2023-10-01 09:12:57.466000",
+          "duration_sec": 0.035422
+        },
+        {
+          "type": "shell",
+          "env": {
+            "CARGO_INCREMENTAL": "0",
+            "CARGO_TERM_COLOR": "always"
+          },
+          "code": "rustc +stable --version --verbose",
+          "commands": [
+            {
+              "annotations": [],
+              "command": "rustc",
+              "categories": [],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "+stable"
+                },
+                {
+                  "annotations": [],
+                  "content": "--version"
+                },
+                {
+                  "annotations": [],
+                  "content": "--verbose"
+                }
+              ]
+            }
+          ],
+          "errors": null,
+          "start_date": "2023-10-01 09:12:57.502000",
+          "duration_sec": 0.04654
+        },
+        {
+          "type": "shell",
+          "env": {
+            "CARGO_INCREMENTAL": "0",
+            "CARGO_TERM_COLOR": "always"
+          },
+          "code": "sudo apt-get update\nsudo apt-get install -y libgtk-3-dev libwebkit2gtk-4.0-dev libappindicator3-dev librsvg2-dev patchelf",
+          "commands": [
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ],
+              "args": []
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ],
+              "args": []
+            },
+            {
+              "annotations": [
+                "SC-APT-UPDATE"
+              ],
+              "command": "apt-get",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "UPDATE_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "update"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-APT-INSTALL"
+              ],
+              "command": "apt-get",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-APT-F-YES"
+                  ],
+                  "content": "-y"
+                },
+                {
+                  "annotations": [
+                    "SC-APT-PACKAGE"
+                  ],
+                  "content": "libgtk-3-dev"
+                },
+                {
+                  "annotations": [
+                    "SC-APT-PACKAGE"
+                  ],
+                  "content": "libwebkit2gtk-4.0-dev"
+                },
+                {
+                  "annotations": [
+                    "SC-APT-PACKAGE"
+                  ],
+                  "content": "libappindicator3-dev"
+                },
+                {
+                  "annotations": [
+                    "SC-APT-PACKAGE"
+                  ],
+                  "content": "librsvg2-dev"
+                },
+                {
+                  "annotations": [
+                    "SC-APT-PACKAGE"
+                  ],
+                  "content": "patchelf"
+                }
+              ]
+            }
+          ],
+          "errors": null,
+          "start_date": "2023-10-01 09:12:57.548000",
+          "duration_sec": 36.826623
+        },
+        {
+          "type": "shell",
+          "env": {
+            "CARGO_INCREMENTAL": "0",
+            "CARGO_TERM_COLOR": "always"
+          },
+          "code": "yarn install --immutable --network-timeout 120000",
+          "commands": [
+            {
+              "annotations": [
+                "SC-YARN-INSTALL"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-YARN-INSTALL-IMMUTABLE"
+                  ],
+                  "content": "--immutable"
+                },
+                {
+                  "annotations": [
+                    "SC-YARN-INSTALL-NETWORK-TIMEOUT"
+                  ],
+                  "content": "--network-timeout 120000"
+                }
+              ]
+            }
+          ],
+          "errors": null,
+          "start_date": "2023-10-01 09:13:34.375000",
+          "duration_sec": 30.448579
+        },
+        {
+          "type": "shell",
+          "env": {
+            "CARGO_INCREMENTAL": "0",
+            "CARGO_TERM_COLOR": "always"
+          },
+          "code": "yarn build:tauri",
+          "commands": [
+            {
+              "annotations": [
+                "SC-YARN-RUN-SCRIPT"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "RUN_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-YARN-RUN-SCRIPT-SCRIPT"
+                  ],
+                  "content": "build:tauri"
+                }
+              ]
+            }
+          ],
+          "errors": null,
+          "start_date": "2023-10-01 09:14:04.824000",
+          "duration_sec": 597.462618
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "upload-artifact",
+          "version": "v2",
+          "sha": "82c141cc518b40d92cc801eee768e7aafc9c2fa2",
+          "with": {
+            "name": "built-app-linux",
+            "path": "app/tauri/target/release/bundle/deb/*.deb",
+            "if-no-files-found": "warn"
+          },
+          "env": {
+            "CARGO_INCREMENTAL": "0",
+            "CARGO_TERM_COLOR": "always"
+          },
+          "start_date": "2023-10-01 09:24:02.286000",
+          "duration_sec": 11.305381
+        }
+      ]
+    },
+    {
+      "file": "2_Test Build (macos-latest, mac).txt",
+      "total_lines": 1347,
+      "log_size": 114982,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "macos-12",
+      "image_version": "20230921.1",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v2",
+          "sha": "ee0669bd1cc54295c223e0bb666b733df41de1c5",
+          "with": {
+            "repository": "zidoro/pomatez",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "fetch-depth": "1",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-01 09:12:43.823000",
+          "duration_sec": 2.109177
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "setup-node",
+          "version": "v2",
+          "sha": "7c12f8017d5436eb855f1ed4399f037a36fbd9e8",
+          "with": {
+            "node-version": "16.x",
+            "cache": "yarn",
+            "always-auth": "false",
+            "check-latest": "false",
+            "token": "***"
+          },
+          "env": {},
+          "start_date": "2023-10-01 09:12:45.933000",
+          "duration_sec": 45.041566
+        },
+        {
+          "type": "action",
+          "repository": "dtolnay",
+          "action": "rust-toolchain",
+          "version": "stable",
+          "sha": "d76c2a93c593483c9892fd8d2538734f73ed8588",
+          "with": {
+            "toolchain": "stable"
+          },
+          "env": {},
+          "start_date": "2023-10-01 09:13:30.974000",
+          "duration_sec": 0.030429
+        },
+        {
+          "type": "shell",
+          "env": {
+            "toolchain": "stable"
+          },
+          "code": ": parse toolchain version\nif [[ $toolchain =~ ^stable' '[0-9]+' '(year|month|week|day)s?' 'ago$ ]]; then\n  if [[ macOS == macOS ]]; then\n    echo \"toolchain=1.$((($(date -v-$(sed 's/stable \\([0-9]*\\) \\(.\\).*/\\1\\2/' <<< $toolchain) +%s)/60/60/24-16569)/7/6))\" >> $GITHUB_OUTPUT\n  else\n    echo \"toolchain=1.$((($(date --date \"${toolchain#stable }\" +%s)/60/60/24-16569)/7/6))\" >> $GITHUB_OUTPUT\n  fi\nelif [[ $toolchain =~ ^stable' 'minus' '[0-9]+' 'releases?$ ]]; then\n  echo \"toolchain=1.$((($(date +%s)/60/60/24-16569)/7/6-${toolchain//[^0-9]/}))\" >> $GITHUB_OUTPUT\nelse\n  echo \"toolchain=$toolchain\" >> $GITHUB_OUTPUT\nfi",
+          "errors": [
+            {
+              "node": null,
+              "originalError": {
+                "message": "src.sh:8:1: \"elif\" can only be used in an if"
+              }
+            }
+          ],
+          "start_date": "2023-10-01 09:13:31.005000",
+          "duration_sec": 0.054013
+        },
+        {
+          "type": "shell",
+          "env": {
+            "targets": "",
+            "components": ""
+          },
+          "code": ": construct rustup command line\necho \"targets=$(for t in ${targets//,/ }; do echo -n ' --target' $t; done)\" >> $GITHUB_OUTPUT\necho \"components=$(for c in ${components//,/ }; do echo -n ' --component' $c; done)\" >> $GITHUB_OUTPUT\necho \"downgrade=\" >> $GITHUB_OUTPUT",
+          "commands": [
+            {
+              "annotations": [
+                "SC-TRUE"
+              ],
+              "command": ":",
+              "categories": [
+                "UTILS"
+              ],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "construct"
+                },
+                {
+                  "annotations": [],
+                  "content": "rustup"
+                },
+                {
+                  "annotations": [],
+                  "content": "command"
+                },
+                {
+                  "annotations": [],
+                  "content": "line"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"targets=$(for t in ${targets//,/ }; do echo -n ' --target' $t; done)\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"components=$(for c in ${components//,/ }; do echo -n ' --component' $c; done)\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"downgrade=\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-F-N"
+                  ],
+                  "content": "-n"
+                },
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "' --target'"
+                },
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "$t"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-F-N"
+                  ],
+                  "content": "-n"
+                },
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "' --component'"
+                },
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "$c"
+                }
+              ]
+            }
+          ],
+          "errors": null,
+          "start_date": "2023-10-01 09:13:31.059000",
+          "duration_sec": 0.038153
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": ": install rustup if needed\nif ! command -v rustup &>/dev/null; then\n  curl --proto '=https' --tlsv1.2 --retry 10 --retry-connrefused --location --silent --show-error --fail \"https://sh.rustup.rs\" | sh -s -- --default-toolchain none -y\n  echo \"${CARGO_HOME:-$HOME/.cargo}/bin\" >> $GITHUB_PATH\nfi",
+          "commands": [
+            {
+              "annotations": [
+                "SC-TRUE"
+              ],
+              "command": ":",
+              "categories": [
+                "UTILS"
+              ],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "install"
+                },
+                {
+                  "annotations": [],
+                  "content": "rustup"
+                },
+                {
+                  "annotations": [],
+                  "content": "if"
+                },
+                {
+                  "annotations": [],
+                  "content": "needed"
+                }
+              ]
+            },
+            {
+              "annotations": [],
+              "command": "command",
+              "categories": [],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "-v"
+                },
+                {
+                  "annotations": [],
+                  "content": "rustup"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"${CARGO_HOME:-$HOME/.cargo}/bin\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CURL"
+              ],
+              "command": "curl",
+              "categories": [
+                "DOWNLOAD"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CURL-PROTO"
+                  ],
+                  "content": "--proto '=https'"
+                },
+                {
+                  "annotations": [
+                    "SC-CURL-TLSV1"
+                  ],
+                  "content": "--tlsv1.2"
+                },
+                {
+                  "annotations": [
+                    "SC-CURL-RETRY"
+                  ],
+                  "content": "--retry 10"
+                },
+                {
+                  "annotations": [
+                    "SC-CURL-RETRY-CONNREFUSED"
+                  ],
+                  "content": "--retry-connrefused"
+                },
+                {
+                  "annotations": [
+                    "SC-CURL-F-LOCATION"
+                  ],
+                  "content": "--location"
+                },
+                {
+                  "annotations": [
+                    "SC-CURL-F-SILENT"
+                  ],
+                  "content": "--silent"
+                },
+                {
+                  "annotations": [
+                    "SC-CURL-F-SHOW-ERROR"
+                  ],
+                  "content": "--show-error"
+                },
+                {
+                  "annotations": [
+                    "SC-CURL-F-FAIL"
+                  ],
+                  "content": "--fail"
+                },
+                {
+                  "annotations": [
+                    "SC-CURL-URL"
+                  ],
+                  "content": "\"https://sh.rustup.rs\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SH"
+              ],
+              "command": "sh",
+              "categories": [
+                "SHELL"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-SH-F-S"
+                  ],
+                  "content": "-s"
+                },
+                {
+                  "annotations": [],
+                  "content": "--"
+                },
+                {
+                  "annotations": [
+                    "SC-SH-DEFAULT-TOOLCHAIN"
+                  ],
+                  "content": "--default-toolchain"
+                }
+              ]
+            },
+            {
+              "annotations": [],
+              "command": "none",
+              "categories": [],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "-y"
+                }
+              ]
+            }
+          ],
+          "errors": null,
+          "start_date": "2023-10-01 09:13:31.097000",
+          "duration_sec": 0.036225
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "rustup toolchain install stable --profile minimal --no-self-update",
+          "commands": [
+            {
+              "annotations": [],
+              "command": "rustup",
+              "categories": [],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "toolchain"
+                },
+                {
+                  "annotations": [],
+                  "content": "install"
+                },
+                {
+                  "annotations": [],
+                  "content": "stable"
+                },
+                {
+                  "annotations": [],
+                  "content": "--profile"
+                },
+                {
+                  "annotations": [],
+                  "content": "minimal"
+                },
+                {
+                  "annotations": [],
+                  "content": "--no-self-update"
+                }
+              ]
+            }
+          ],
+          "errors": null,
+          "start_date": "2023-10-01 09:13:31.133000",
+          "duration_sec": 0.544638
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "rustup default stable",
+          "commands": [
+            {
+              "annotations": [],
+              "command": "rustup",
+              "categories": [],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "default"
+                },
+                {
+                  "annotations": [],
+                  "content": "stable"
+                }
+              ]
+            }
+          ],
+          "errors": null,
+          "start_date": "2023-10-01 09:13:31.678000",
+          "duration_sec": 0.06888
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": ": create cachekey\nDATE=$(rustc +stable --version --verbose | sed -ne 's/^commit-date: \\(20[0-9][0-9]\\)-\\([01][0-9]\\)-\\([0-3][0-9]\\)$/\\1\\2\\3/p')\nHASH=$(rustc +stable --version --verbose | sed -ne 's/^commit-hash: //p')\necho \"cachekey=$(echo $DATE$HASH | head -c12)\" >> $GITHUB_OUTPUT",
+          "commands": [
+            {
+              "annotations": [
+                "SC-TRUE"
+              ],
+              "command": ":",
+              "categories": [
+                "UTILS"
+              ],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "create"
+                },
+                {
+                  "annotations": [],
+                  "content": "cachekey"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"cachekey=$(echo $DATE$HASH | head -c12)\""
+                }
+              ]
+            },
+            {
+              "annotations": [],
+              "command": "rustc",
+              "categories": [],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "+stable"
+                },
+                {
+                  "annotations": [],
+                  "content": "--version"
+                },
+                {
+                  "annotations": [],
+                  "content": "--verbose"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SED",
+                "SC-SED-F-SILENT"
+              ],
+              "command": "sed",
+              "categories": [
+                "REGEX"
+              ],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "-ne"
+                },
+                {
+                  "annotations": [],
+                  "content": "'s/^commit-date: \\(20[0-9][0-9]\\)-\\([01][0-9]\\)-\\([0-3][0-9]\\)$/\\1\\2\\3/p'"
+                }
+              ]
+            },
+            {
+              "annotations": [],
+              "command": "rustc",
+              "categories": [],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "+stable"
+                },
+                {
+                  "annotations": [],
+                  "content": "--version"
+                },
+                {
+                  "annotations": [],
+                  "content": "--verbose"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SED",
+                "SC-SED-F-SILENT"
+              ],
+              "command": "sed",
+              "categories": [
+                "REGEX"
+              ],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "-ne"
+                },
+                {
+                  "annotations": [],
+                  "content": "'s/^commit-hash: //p'"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "$DATE$HASH"
+                }
+              ]
+            },
+            {
+              "annotations": [],
+              "command": "head",
+              "categories": [],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "-c12"
+                }
+              ]
+            }
+          ],
+          "errors": null,
+          "start_date": "2023-10-01 09:13:31.746000",
+          "duration_sec": 0.098725
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": ": disable incremental compilation\nif [ -z \"${CARGO_INCREMENTAL+set}\" ]; then\n  echo CARGO_INCREMENTAL=0 >> $GITHUB_ENV\nfi",
+          "commands": [
+            {
+              "annotations": [
+                "SC-TRUE"
+              ],
+              "command": ":",
+              "categories": [
+                "UTILS"
+              ],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "disable"
+                },
+                {
+                  "annotations": [],
+                  "content": "incremental"
+                },
+                {
+                  "annotations": [],
+                  "content": "compilation"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "CARGO_INCREMENTAL=0"
+                }
+              ]
+            }
+          ],
+          "errors": null,
+          "start_date": "2023-10-01 09:13:31.845000",
+          "duration_sec": 0.042452
+        },
+        {
+          "type": "shell",
+          "env": {
+            "CARGO_INCREMENTAL": "0"
+          },
+          "code": ": enable colors in Cargo output\nif [ -z \"${CARGO_TERM_COLOR+set}\" ]; then\n  echo CARGO_TERM_COLOR=always >> $GITHUB_ENV\nfi",
+          "commands": [
+            {
+              "annotations": [
+                "SC-TRUE"
+              ],
+              "command": ":",
+              "categories": [
+                "UTILS"
+              ],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "enable"
+                },
+                {
+                  "annotations": [],
+                  "content": "colors"
+                },
+                {
+                  "annotations": [],
+                  "content": "in"
+                },
+                {
+                  "annotations": [],
+                  "content": "Cargo"
+                },
+                {
+                  "annotations": [],
+                  "content": "output"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "CARGO_TERM_COLOR=always"
+                }
+              ]
+            }
+          ],
+          "errors": null,
+          "start_date": "2023-10-01 09:13:31.888000",
+          "duration_sec": 0.041256
+        },
+        {
+          "type": "shell",
+          "env": {
+            "CARGO_INCREMENTAL": "0",
+            "CARGO_TERM_COLOR": "always"
+          },
+          "code": ": enable Cargo sparse registry\n# implemented in 1.66, stabilized in 1.68, made default in 1.70\nif [ -z \"${CARGO_REGISTRIES_CRATES_IO_PROTOCOL+set}\" -o -f \"/Users/runner/work/_temp\"/.implicit_cargo_registries_crates_io_protocol ]; then\n  if rustc +stable --version --verbose | grep -q '^release: 1\\.6[89]\\.'; then\n    touch \"/Users/runner/work/_temp\"/.implicit_cargo_registries_crates_io_protocol || true\n    echo CARGO_REGISTRIES_CRATES_IO_PROTOCOL=sparse >> $GITHUB_ENV\n  elif rustc +stable --version --verbose | grep -q '^release: 1\\.6[67]\\.'; then\n    touch \"/Users/runner/work/_temp\"/.implicit_cargo_registries_crates_io_protocol || true\n    echo CARGO_REGISTRIES_CRATES_IO_PROTOCOL=git >> $GITHUB_ENV\n  fi\nfi",
+          "commands": [
+            {
+              "annotations": [
+                "SC-TRUE"
+              ],
+              "command": ":",
+              "categories": [
+                "UTILS"
+              ],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "enable"
+                },
+                {
+                  "annotations": [],
+                  "content": "Cargo"
+                },
+                {
+                  "annotations": [],
+                  "content": "sparse"
+                },
+                {
+                  "annotations": [],
+                  "content": "registry"
+                }
+              ]
+            },
+            {
+              "annotations": [],
+              "command": "rustc",
+              "categories": [],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "+stable"
+                },
+                {
+                  "annotations": [],
+                  "content": "--version"
+                },
+                {
+                  "annotations": [],
+                  "content": "--verbose"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-GREP"
+              ],
+              "command": "grep",
+              "categories": [
+                "SEARCH",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-GREP-F-SILENT"
+                  ],
+                  "content": "-q"
+                },
+                {
+                  "annotations": [
+                    "SC-GREP-PATTERN"
+                  ],
+                  "content": "'^release: 1\\.6[89]\\.'"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "CARGO_REGISTRIES_CRATES_IO_PROTOCOL=sparse"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-TOUCH"
+              ],
+              "command": "touch",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-TOUCH-PATH"
+                  ],
+                  "content": "\"/Users/runner/work/_temp\"/.implicit_cargo_registries_crates_io_protocol"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-TRUE"
+              ],
+              "command": "true",
+              "categories": [
+                "UTILS"
+              ],
+              "args": []
+            },
+            {
+              "annotations": [],
+              "command": "rustc",
+              "categories": [],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "+stable"
+                },
+                {
+                  "annotations": [],
+                  "content": "--version"
+                },
+                {
+                  "annotations": [],
+                  "content": "--verbose"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-GREP"
+              ],
+              "command": "grep",
+              "categories": [
+                "SEARCH",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-GREP-F-SILENT"
+                  ],
+                  "content": "-q"
+                },
+                {
+                  "annotations": [
+                    "SC-GREP-PATTERN"
+                  ],
+                  "content": "'^release: 1\\.6[67]\\.'"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "CARGO_REGISTRIES_CRATES_IO_PROTOCOL=git"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-TOUCH"
+              ],
+              "command": "touch",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-TOUCH-PATH"
+                  ],
+                  "content": "\"/Users/runner/work/_temp\"/.implicit_cargo_registries_crates_io_protocol"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-TRUE"
+              ],
+              "command": "true",
+              "categories": [
+                "UTILS"
+              ],
+              "args": []
+            }
+          ],
+          "errors": null,
+          "start_date": "2023-10-01 09:13:31.929000",
+          "duration_sec": 0.094751
+        },
+        {
+          "type": "shell",
+          "env": {
+            "CARGO_INCREMENTAL": "0",
+            "CARGO_TERM_COLOR": "always"
+          },
+          "code": ": work around spurious network errors in curl 8.0\n# https://rust-lang.zulipchat.com/#narrow/stream/246057-t-cargo/topic/timeout.20investigation\nif rustc +stable --version --verbose | grep -q '^release: 1\\.7[01]\\.'; then\n  echo CARGO_HTTP_MULTIPLEXING=false >> $GITHUB_ENV\nfi",
+          "commands": [
+            {
+              "annotations": [
+                "SC-TRUE"
+              ],
+              "command": ":",
+              "categories": [
+                "UTILS"
+              ],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "work"
+                },
+                {
+                  "annotations": [],
+                  "content": "around"
+                },
+                {
+                  "annotations": [],
+                  "content": "spurious"
+                },
+                {
+                  "annotations": [],
+                  "content": "network"
+                },
+                {
+                  "annotations": [],
+                  "content": "errors"
+                },
+                {
+                  "annotations": [],
+                  "content": "in"
+                },
+                {
+                  "annotations": [],
+                  "content": "curl"
+                },
+                {
+                  "annotations": [],
+                  "content": "8.0"
+                }
+              ]
+            },
+            {
+              "annotations": [],
+              "command": "rustc",
+              "categories": [],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "+stable"
+                },
+                {
+                  "annotations": [],
+                  "content": "--version"
+                },
+                {
+                  "annotations": [],
+                  "content": "--verbose"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-GREP"
+              ],
+              "command": "grep",
+              "categories": [
+                "SEARCH",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-GREP-F-SILENT"
+                  ],
+                  "content": "-q"
+                },
+                {
+                  "annotations": [
+                    "SC-GREP-PATTERN"
+                  ],
+                  "content": "'^release: 1\\.7[01]\\.'"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "CARGO_HTTP_MULTIPLEXING=false"
+                }
+              ]
+            }
+          ],
+          "errors": null,
+          "start_date": "2023-10-01 09:13:32.024000",
+          "duration_sec": 0.065532
+        },
+        {
+          "type": "shell",
+          "env": {
+            "CARGO_INCREMENTAL": "0",
+            "CARGO_TERM_COLOR": "always"
+          },
+          "code": "rustc +stable --version --verbose",
+          "commands": [
+            {
+              "annotations": [],
+              "command": "rustc",
+              "categories": [],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "+stable"
+                },
+                {
+                  "annotations": [],
+                  "content": "--version"
+                },
+                {
+                  "annotations": [],
+                  "content": "--verbose"
+                }
+              ]
+            }
+          ],
+          "errors": null,
+          "start_date": "2023-10-01 09:13:32.089000",
+          "duration_sec": 0.079775
+        },
+        {
+          "type": "shell",
+          "env": {
+            "CARGO_INCREMENTAL": "0",
+            "CARGO_TERM_COLOR": "always"
+          },
+          "code": "yarn install --immutable --network-timeout 120000",
+          "commands": [
+            {
+              "annotations": [
+                "SC-YARN-INSTALL"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [],
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-YARN-INSTALL-IMMUTABLE"
+                  ],
+                  "content": "--immutable"
+                },
+                {
+                  "annotations": [
+                    "SC-YARN-INSTALL-NETWORK-TIMEOUT"
+                  ],
+                  "content": "--network-timeout 120000"
+                }
+              ]
+            }
+          ],
+          "errors": null,
+          "start_date": "2023-10-01 09:13:32.169000",
+          "duration_sec": 47.783873
+        },
+        {
+          "type": "shell",
+          "env": {
+            "CARGO_INCREMENTAL": "0",
+            "CARGO_TERM_COLOR": "always"
+          },
+          "code": "yarn build:tauri",
+          "commands": [
+            {
+              "annotations": [
+                "SC-YARN-RUN-SCRIPT"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "RUN_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-YARN-RUN-SCRIPT-SCRIPT"
+                  ],
+                  "content": "build:tauri"
+                }
+              ]
+            }
+          ],
+          "errors": null,
+          "start_date": "2023-10-01 09:14:19.953000",
+          "duration_sec": 413.784041
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "upload-artifact",
+          "version": "v2",
+          "sha": "82c141cc518b40d92cc801eee768e7aafc9c2fa2",
+          "with": {
+            "name": "built-app-mac",
+            "path": "app/tauri/target/release/bundle/deb/*.deb",
+            "if-no-files-found": "warn"
+          },
+          "env": {
+            "CARGO_INCREMENTAL": "0",
+            "CARGO_TERM_COLOR": "always"
+          },
+          "start_date": "2023-10-01 09:21:13.737000",
+          "duration_sec": 3.841617
+        }
+      ]
+    }
+  ]
+}

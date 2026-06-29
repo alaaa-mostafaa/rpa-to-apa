@@ -1,0 +1,4 @@
+STEP 2 - ANCHOR: found 2 ##[error] markers at lines [784, 1529]
+======================================================================
+  line 784: ##[error]Process completed with exit code 1.
+  line 1529: ##[error]Process completed with exit code 1.

@@ -1,0 +1,26 @@
+{
+  "index": 19,
+  "label": "failure",
+  "run_id": "aptos-labs/aptos-core_.github/workflows/check-protos.yaml_1635_1",
+  "repo": "aptos-labs/aptos-core",
+  "workflow_path": ".github/workflows/check-protos.yaml",
+  "run_number": "1635",
+  "attempt": "1",
+  "scan_line": 577578,
+  "case_dir": "/home/guc_alaa/comparison_results/balanced_50_full_logs_20260516/019_failure_aptos-labs_aptos-core_check-protos.yaml",
+  "full_log_path": "/home/guc_alaa/comparison_results/balanced_50_full_logs_20260516/019_failure_aptos-labs_aptos-core_check-protos.yaml/full_log.txt",
+  "tarball": "logs/aptos-labs/aptos-core/Check_Protos_977b/1635-1.tar.gz",
+  "n_job_logs": 9,
+  "job_log_files": [
+    "check/1_Set up job.txt",
+    "check/19_Post Run pre-commitaction@v3.0.0.txt",
+    "check/26_Complete job.txt",
+    "check/4_Run pre-commitaction@v3.0.0.txt",
+    "-2147483648_check.txt",
+    "check/20_Post Run actionscheckout@v3.txt",
+    "0_check.txt",
+    "check/2_Run actionscheckout@v3.txt",
+    "check/3_Install buf.txt"
+  ],
+  "full_log_chars": 121129
+}

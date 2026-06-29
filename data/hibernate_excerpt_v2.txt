@@ -1,0 +1,161 @@
+=== Log excerpt: 1_Build and test on Java 11.txt ===
+Failing step: ./ci/docker-cleanup.sh
+Extraction strategy: error_marker
+
+--- error context ---
+[INFO] Hibernate Search ITs - ORM - Envers ................ SKIPPED
+[INFO] Hibernate Search ITs - ORM - Real backend .......... SKIPPED
+[INFO] Hibernate Search ITs - ORM - Coordination - Outbox Polling SKIPPED
+[INFO] Hibernate Search ITs - ORM - Batch JSR-352 ......... SKIPPED
+[INFO] Hibernate Search ITs - Performance - Parent POM .... SKIPPED
+[INFO] Hibernate Search ITs - Performance - Backend base .. SKIPPED
+[INFO] Hibernate Search ITs - Performance - Backend - Lucene SKIPPED
+[INFO] Hibernate Search ITs - Performance - Backend - Elasticsearch SKIPPED
+[INFO] Hibernate Search ITs - Showcase - Library .......... SKIPPED
+[INFO] Hibernate Search ITs - Migration Helper - Engine ... SKIPPED
+[INFO] Hibernate Search ITs - Migration Helper - ORM ...... SKIPPED
+[INFO] Hibernate Search ITs - Java - Modules - ORM/Elasticsearch SKIPPED
+[INFO] Hibernate Search ITs - Java - Modules - ORM/Lucene . SKIPPED
+[INFO] Hibernate Search ITs - Java - Modules - ORM/Elasticsearch outbox polling SKIPPED
+[INFO] Hibernate Search ITs - Java - Modules - POJO/Elasticsearch SKIPPED
+[INFO] Hibernate Search ITs - Java - Modules - POJO/Lucene  SKIPPED
+[INFO] Hibernate Search Documentation ..................... SKIPPED
+[INFO] Hibernate Search Parent POM for Public Artifacts - Jakarta EE SKIPPED
+[INFO] Hibernate Search Parent POM for Internal Artifacts - Jakarta EE SKIPPED
+[INFO] Hibernate Search Utils - Internal - Test - ORM - Jakarta EE SKIPPED
+[INFO] Hibernate Search ORM Integration - Jakarta EE ...... SKIPPED
+[INFO] Hibernate Search ORM Integration - Coordination - Outbox Polling - Jakarta EE SKIPPED
+[INFO] Hibernate Search Batch JSR-352 Core - Jakarta EE ... SKIPPED
+[INFO] Hibernate Search Batch JSR-352 JBeret - Jakarta EE . SKIPPED
+[INFO] Hibernate Search 5 Migration Helper - ORM - Jakarta EE SKIPPED
+[INFO] Hibernate Search Utils - Internal - ITs - Jakarta EE - Aggregator POM SKIPPED
+[INFO] Hibernate Search Utils - Internal - ITs - ORM Mapper - Jakarta EE SKIPPED
+[INFO] Hibernate Search Utils - Internal - ITs - JBatch Runtime - Jakarta EE SKIPPED
+[INFO] Hibernate Search Utils - Internal - ITs - JBeret SE - Jakarta EE SKIPPED
+[INFO] Hibernate Search Parent POM for Integration Test Artifacts - Jakarta EE SKIPPED
+[INFO] Hibernate Search ITs - Jakarta EE - Aggregator POM . SKIPPED
+[INFO] Hibernate Search ITs - ORM - Jakarta EE ............ SKIPPED
+[INFO] Hibernate Search ITs - ORM - CDI - Jakarta EE ...... SKIPPED
+[INFO] Hibernate Search ITs - ORM - Envers - Jakarta EE ... SKIPPED
+[INFO] Hibernate Search ITs - ORM - Real backend - Jakarta EE SKIPPED
+[INFO] Hibernate Search ITs - ORM - Coordination - Outbox Polling - Jakarta EE SKIPPED
+[INFO] Hibernate Search ITs - ORM - Batch JSR-352 - Jakarta EE SKIPPED
+[INFO] Hibernate Search ITs - Migration Helper - ORM - Jakarta EE SKIPPED
+[INFO] Hibernate Search ITs - Java - Modules - ORM/Elasticsearch - Jakarta EE SKIPPED
+[INFO] Hibernate Search ITs - Java - Modules - ORM/Lucene - Jakarta EE SKIPPED
+[INFO] Hibernate Search ITs - Java - Modules - ORM/Elasticsearch outbox polling - Jakarta EE SKIPPED
+[INFO] Hibernate Search Documentation - Tests only - Jakarta EE SKIPPED
+[INFO] Hibernate Search Aggregator POM for Jakarta EE Artifacts SKIPPED
+[INFO] Hibernate Search Parent POM for Public Artifacts - ORM6 SKIPPED
+[INFO] Hibernate Search Parent POM for Internal Artifacts - ORM6 SKIPPED
+[INFO] Hibernate Search Utils - Internal - Test - ORM - ORM6 SKIPPED
+[INFO] Hibernate Search ORM Integration - ORM6 ............ SKIPPED
+[INFO] Hibernate Search ORM Integration - Coordination - Outbox Polling - ORM6 SKIPPED
+[INFO] Hibernate Search Batch JSR-352 Core - ORM6 ......... SKIPPED
+[INFO] Hibernate Search Batch JSR-352 JBeret - ORM6 ....... SKIPPED
+[INFO] Hibernate Search 5 Migration Helper - ORM - ORM6 ... SKIPPED
+[INFO] Hibernate Search Utils - Internal - ITs - ORM6 - Aggregator POM SKIPPED
+[INFO] Hibernate Search Utils - Internal - ITs - ORM Mapper - ORM6 SKIPPED
+[INFO] Hibernate Search Utils - Internal - ITs - JBatch Runtime - ORM6 SKIPPED
+[INFO] Hibernate Search Utils - Internal - ITs - JBeret SE - ORM6 SKIPPED
+[INFO] Hibernate Search Parent POM for Integration Test Artifacts - ORM6 SKIPPED
+[INFO] Hibernate Search ITs - ORM6 - Aggregator POM ....... SKIPPED
+[INFO] Hibernate Search ITs - ORM - ORM6 .................. SKIPPED
+[INFO] Hibernate Search ITs - ORM - CDI - ORM6 ............ SKIPPED
+[INFO] Hibernate Search ITs - ORM - Envers - ORM6 ......... SKIPPED
+[INFO] Hibernate Search ITs - ORM - Real backend - ORM6 ... SKIPPED
+[INFO] Hibernate Search ITs - ORM - Coordination - Outbox Polling - ORM6 SKIPPED
+[INFO] Hibernate Search ITs - ORM - Batch JSR-352 - ORM6 .. SKIPPED
+[INFO] Hibernate Search ITs - Migration Helper - ORM - ORM6 SKIPPED
+[INFO] Hibernate Search ITs - Java - Modules - ORM/Elasticsearch - ORM6 SKIPPED
+[INFO] Hibernate Search ITs - Java - Modules - ORM/Lucene - ORM6 SKIPPED
+[INFO] Hibernate Search ITs - Java - Modules - ORM/Elasticsearch outbox polling - ORM6 SKIPPED
+[INFO] Hibernate Search Documentation - Tests only - ORM6 . SKIPPED
+[INFO] Hibernate Search Aggregator POM for ORM6 Artifacts . SKIPPED
+[INFO] Hibernate Search Distribution ...................... SKIPPED
+[INFO] Hibernate Search Reports ........................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  21.548 s
+[INFO] Finished at: 2023-09-19T11:28:39Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-enforcer-plugin:3.3.0:enforce (enforce-common-rules) on project hibernate-search-parent: 
+[ERROR] Rule 0: org.apache.maven.enforcer.rules.version.RequireJavaVersion failed with message:
+[ERROR] Detected JDK version 11.0.20 (JAVA_HOME=/opt/hostedtoolcache/jdk/11.0.20/x64) is not in the allowed range [17,).
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-enforcer-plugin:3.3.0:enforce (enforce-common-rules) on project hibernate-search-parent: 
+Rule 0: org.apache.maven.enforcer.rules.version.RequireJavaVersion failed with message:
+Detected JDK version 11.0.20 (JAVA_HOME=/opt/hostedtoolcache/jdk/11.0.20/x64) is not in the allowed range [17,).
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:215)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:81)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:56)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:128)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:305)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:192)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:105)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:957)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:289)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:193)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:566)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:282)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:225)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:406)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:347)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:566)
+    at org.apache.maven.wrapper.BootstrapMainStarter.start (BootstrapMainStarter.java:52)
+    at org.apache.maven.wrapper.WrapperExecutor.execute (WrapperExecutor.java:161)
+    at org.apache.maven.wrapper.MavenWrapperMain.main (MavenWrapperMain.java:73)
+Caused by: org.apache.maven.plugin.MojoExecutionException: 
+Rule 0: org.apache.maven.enforcer.rules.version.RequireJavaVersion failed with message:
+Detected JDK version 11.0.20 (JAVA_HOME=/opt/hostedtoolcache/jdk/11.0.20/x64) is not in the allowed range [17,).
+    at org.apache.maven.plugins.enforcer.EnforceMojo.execute (EnforceMojo.java:271)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:137)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:210)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:81)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:56)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:128)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:305)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:192)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:105)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:957)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:289)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:193)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:566)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:282)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:225)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:406)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:347)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:566)
+    at org.apache.maven.wrapper.BootstrapMainStarter.start (BootstrapMainStarter.java:52)
+    at org.apache.maven.wrapper.WrapperExecutor.execute (WrapperExecutor.java:161)
+    at org.apache.maven.wrapper.MavenWrapperMain.main (MavenWrapperMain.java:73)
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+##[error]Process completed with exit code 1.
+##[group]Run actions/upload-artifact@v2
+with:
+  name: test-reports-java11
+  path: ./**/*-reports/
+  if-no-files-found: warn

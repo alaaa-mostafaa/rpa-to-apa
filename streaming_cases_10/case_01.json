@@ -1,0 +1,53 @@
+{
+  "case_label": "azure-rtos/threadx — Update release version to 6.3.0 and date to 10-31-2023",
+  "intake": {
+    "run_id": "azure-rtos/threadx_.github/workflows/ports_arch_check.yml_54_1",
+    "repo": "azure-rtos/threadx",
+    "workflow": "ports_arch_check.yml",
+    "branch": "tizho/6.3.0",
+    "event": "pull_request",
+    "is_protected_branch": false,
+    "commit_sha": "947f8723668b",
+    "commit_title": "Update release version to 6.3.0 and date to 10-31-2023",
+    "conclusion": "failure",
+    "failure_detection": "per_step_error",
+    "failed_jobs_count": 2,
+    "n_jobs": 2,
+    "all_failures_are_tooling_artifacts": false
+  },
+  "extraction": {
+    "total_steps_extracted": 2,
+    "strategies": [
+      "error_marker",
+      "error_marker"
+    ],
+    "total_lines_extracted": 312,
+    "error_markers_found": 2,
+    "sample_error_lines": [
+      "##[error]Process completed with exit code 1."
+    ]
+  },
+  "classification": {
+    "category": "CODE_REGRESSION",
+    "severity": "LOW",
+    "confidence": 0.95,
+    "action": "BLOCK_DEPLOY",
+    "reasoning": "The failure is caused by a shell script error on the Windows runner indicating an invalid arithmetic operator, which is a syntax or logic error introduced by the commit. The commit message indicates a version and date update, which likely included changes to scripts or files affecting the build. The error on the Ubuntu runner shows a parser exception with a 'Converting circular structure to JSON' message, which is likely a tooling artifact but secondary to the clear shell script error. The branch is not protected, so severity is low but the failure is a real regression that should block deployment.",
+    "evidence": [
+      "error_text from job 0_cortex-a.txt",
+      "error_text from job 0_cortex-m.txt",
+      "commit message",
+      "branch protection status"
+    ],
+    "unknowns": [
+      "full workflow YAML",
+      "detailed script contents causing the arithmetic error"
+    ]
+  },
+  "ground_truth": {
+    "developer_action": "UNKNOWN",
+    "method": "none",
+    "reasoning": "Branch deleted, no PR found by SHA or branch name, no successful re-run detected.",
+    "match_verdict": "NO_DATA"
+  }
+}

@@ -1,0 +1,94 @@
+<mxfile host="Electron">
+  <diagram id="dataset-funnel" name="Dataset Curation Funnel">
+    <mxGraphModel dx="1396" dy="679" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;align=left;fontSize=18;fontColor=#333333;" value="&lt;b&gt;From 91,163 raw failures to 5,000 clean, scorable cases&lt;/b&gt;" vertex="1">
+          <mxGeometry height="26" width="720" x="40" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" parent="1" style="text;html=1;align=left;fontSize=12;fontColor=#666666;" value="Six deterministic filters, applied in one pass. Every surviving case has logs, a real failure, a unique repo, and a known developer fix." vertex="1">
+          <mxGeometry height="20" width="780" x="40" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="s0" parent="1" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=0;size=0.04;direction=south;rounded=1;fillColor=#AAC9FC;strokeColor=#6C8EBF;fontSize=12;" value="&lt;b&gt;SOURCE CORPUS&lt;/b&gt;&lt;br&gt;91,163 failed GitHub Actions runs" vertex="1">
+          <mxGeometry height="60" width="440" x="100" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="s1" parent="1" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=0;size=0.04;direction=south;rounded=1;fillColor=#D4E1F5;strokeColor=#6C8EBF;fontSize=12;" value="&lt;b&gt;FILTERS 1–3 · context&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;failed conclusion · logs present · main/master/develop/release · 2+ steps + shell&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="404" x="118" y="178" as="geometry" />
+        </mxCell>
+        <mxCell id="s2" parent="1" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=0;size=0.04;direction=south;rounded=1;fillColor=#E4F0F5;strokeColor=#9673A6;fontSize=12;" value="&lt;b&gt;FILTER 4 · real failure&lt;/b&gt;&lt;br&gt;not a GHALogs data-mining artifact" vertex="1">
+          <mxGeometry height="60" width="360" x="140" y="256" as="geometry" />
+        </mxCell>
+        <mxCell id="s3" parent="1" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=0;size=0.04;direction=south;rounded=1;fillColor=#D4F5EA;strokeColor=#D6B656;fontSize=12;" value="&lt;b&gt;FILTER 5 · diversity&lt;/b&gt;&lt;br&gt;at most ONE case per repository" vertex="1">
+          <mxGeometry height="60" width="316" x="162" y="334" as="geometry" />
+        </mxCell>
+        <mxCell id="s4" parent="1" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=0;size=0.04;direction=south;rounded=1;fillColor=#D2F5DF;strokeColor=#D6B656;fontSize=12;" value="&lt;b&gt;FILTER 6 · ground truth&lt;/b&gt;&lt;br&gt;a verifiable developer fix exists (1 API call)" vertex="1">
+          <mxGeometry height="60" width="272" x="184" y="412" as="geometry" />
+        </mxCell>
+        <mxCell id="out" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C7F5C6;strokeColor=#9673A6;fontSize=13;fontStyle=1;" value="&lt;b&gt;5,000 CURATED CASES&lt;/b&gt;&lt;br&gt;5,000 distinct repositories" vertex="1">
+          <mxGeometry height="64" width="220" x="210" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" edge="1" parent="1" source="s0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;strokeColor=#9aa7bd;" target="s1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="s1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;strokeColor=#9aa7bd;" target="s2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="s2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;strokeColor=#9aa7bd;" target="s3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="s3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;strokeColor=#9aa7bd;" target="s4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="s4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;strokeColor=#9aa7bd;" target="out">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rejhdr" parent="1" style="text;html=1;align=center;fontSize=12;fontColor=#B85450;" value="&lt;b&gt;REJECTED AND WHY&lt;/b&gt;" vertex="1">
+          <mxGeometry height="20" width="300" x="640" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="r4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=8;fillColor=#FFEBEC;strokeColor=#B85450;fontSize=11;fontColor=#8A4A4A;" value="&lt;b&gt;✗ tooling artifact&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;circular-JSON / BashWord parser crashes&lt;/font&gt;" vertex="1">
+          <mxGeometry height="44" width="300" x="640" y="256" as="geometry" />
+        </mxCell>
+        <mxCell id="r5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=8;fillColor=#FFEBEC;strokeColor=#B85450;fontSize=11;fontColor=#8A4A4A;" value="&lt;b&gt;✗ repository already used&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;wix/react-native-notifications (2nd case)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="44" width="300" x="640" y="334" as="geometry" />
+        </mxCell>
+        <mxCell id="r6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=8;fillColor=#FFEBEC;strokeColor=#B85450;fontSize=11;fontColor=#8A4A4A;" value="&lt;b&gt;✗ no verifiable fix&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;devfile/api — no timely response&lt;br&gt;area1/stpyv8 — ambiguous follow-up&lt;/font&gt;" vertex="1">
+          <mxGeometry height="56" width="300" x="640" y="412" as="geometry" />
+        </mxCell>
+        <mxCell id="re4" edge="1" parent="1" source="s2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;dashed=1;endArrow=block;strokeColor=#B85450;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="r4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="re5" edge="1" parent="1" source="s3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;dashed=1;endArrow=block;strokeColor=#B85450;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="r5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="re6" edge="1" parent="1" source="s4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;dashed=1;endArrow=block;strokeColor=#B85450;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="r6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="legbox" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#DCE3EE;" value="" vertex="1">
+          <mxGeometry height="70" width="900" x="40" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="legtitle" parent="1" style="text;html=1;align=left;fontSize=12;fontColor=#333333;" value="&lt;b&gt;Accepted as ground truth (the fix the developer actually shipped):&lt;/b&gt;" vertex="1">
+          <mxGeometry height="20" width="600" x="55" y="612" as="geometry" />
+        </mxCell>
+        <mxCell id="a1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;" value="CODE_FIX" vertex="1">
+          <mxGeometry height="22" width="130" x="55" y="638" as="geometry" />
+        </mxCell>
+        <mxCell id="a2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;" value="WORKFLOW_FIX" vertex="1">
+          <mxGeometry height="22" width="135" x="195" y="638" as="geometry" />
+        </mxCell>
+        <mxCell id="a3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;" value="PIN_VERSION" vertex="1">
+          <mxGeometry height="22" width="120" x="340" y="638" as="geometry" />
+        </mxCell>
+        <mxCell id="a4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;" value="REVERT" vertex="1">
+          <mxGeometry height="22" width="100" x="470" y="638" as="geometry" />
+        </mxCell>
+        <mxCell id="a5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;" value="DEPENDENCY_CHANGE" vertex="1">
+          <mxGeometry height="22" width="170" x="580" y="638" as="geometry" />
+        </mxCell>
+        <mxCell id="a6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;" value="PR_MERGED" vertex="1">
+          <mxGeometry height="22" width="120" x="760" y="638" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

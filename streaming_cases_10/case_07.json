@@ -1,0 +1,57 @@
+{
+  "case_label": "adoptoposs/mjml_nif — Merge pull request #112 from adoptoposs/dependabot/github_ac",
+  "intake": {
+    "run_id": "adoptoposs/mjml_nif_.github/workflows/release.yml_130_1",
+    "repo": "adoptoposs/mjml_nif",
+    "workflow": "release.yml",
+    "branch": "main",
+    "event": "push",
+    "is_protected_branch": true,
+    "commit_sha": "2310c5734021",
+    "commit_title": "Merge pull request #112 from adoptoposs/dependabot/github_actions/philss/rustler-precompiled-action-1.1.1",
+    "conclusion": "failure",
+    "failure_detection": "per_step_error",
+    "failed_jobs_count": 20,
+    "n_jobs": 20,
+    "all_failures_are_tooling_artifacts": false
+  },
+  "extraction": {
+    "total_steps_extracted": 3,
+    "strategies": [
+      "group_fallback",
+      "error_marker",
+      "group_fallback"
+    ],
+    "total_lines_extracted": 238,
+    "error_markers_found": 3,
+    "sample_error_lines": [
+      "##[error]The desired feature \"nif_version_2_16\" is not equal to the highest NIF version that is active: \"\"",
+      "##[error]Missing setup of NIF features that is required since Rustler v0.30.0. Please read the precompilation guide: htt"
+    ]
+  },
+  "classification": {
+    "category": "CONFIG_ERROR",
+    "severity": "CRITICAL",
+    "confidence": 0.95,
+    "action": "BLOCK_DEPLOY",
+    "reasoning": "The logs show a consistent shell syntax error in src.sh at line 8: 'elif' can only be used in an if, indicating a script syntax misconfiguration. Additionally, the commit message indicates a bump of the rustler-precompiled-action version, which likely introduced new configuration requirements as confirmed by the error about missing NIF feature setup. The failure affects all 20 jobs on the protected main branch, making this a critical issue that blocks deployment until fixed.",
+    "evidence": [
+      "failed steps error_text",
+      "commit message",
+      "branch protected",
+      "log step [2] error messages about missing NIF features",
+      "log step [1] and others shell syntax error"
+    ],
+    "unknowns": [
+      "exact src.sh content",
+      "workflow YAML changes",
+      "whether the rustler-precompiled-action update requires config changes documented in the precompilation guide"
+    ]
+  },
+  "ground_truth": {
+    "developer_action": "WORKFLOW_FIX",
+    "method": "llm",
+    "reasoning": "The developer updated the GitHub Actions workflow configuration by bumping the version of philss/rustler-precompiled-action from 1.1.1 to 1.1.3 in commits fdc988d6d94a and 2a37366c1bb5, which directly relates to the original failure involving this action. Additionally, commit 244a19708063 modified the workflow and related config files to drop a problematic precompiled target, addressing cross-compilation issues that likely contributed to the CI failures.",
+    "match_verdict": "MISMATCH"
+  }
+}

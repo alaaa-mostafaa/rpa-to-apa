@@ -1,0 +1,122 @@
+{
+  "N": 300,
+  "results": {
+    "strict": {
+      "per": {
+        "CODE": [
+          155.0,
+          118.0,
+          156
+        ],
+        "CONFIG": [
+          5.0,
+          57.0,
+          92
+        ],
+        "DEPENDENCY": [
+          3.0,
+          26.0,
+          52
+        ]
+      },
+      "macro_r": 0.36854329245633594,
+      "macro_a": 0.6253251579338536,
+      "exdep_r": 0.5239687848383501,
+      "exdep_a": 0.6879877369007803
+    },
+    "partial": {
+      "per": {
+        "CODE": [
+          155.0,
+          122.0,
+          156
+        ],
+        "CONFIG": [
+          5.0,
+          59.5,
+          92
+        ],
+        "DEPENDENCY": [
+          3.0,
+          26.0,
+          52
+        ]
+      },
+      "macro_r": 0.36854329245633594,
+      "macro_a": 0.6429301374953549,
+      "exdep_r": 0.5239687848383501,
+      "exdep_a": 0.7143952062430323
+    },
+    "multilabel": {
+      "per": {
+        "CODE": [
+          155.0,
+          126.0,
+          156
+        ],
+        "CONFIG": [
+          5.0,
+          62.0,
+          92
+        ],
+        "DEPENDENCY": [
+          3.0,
+          26.0,
+          52
+        ]
+      },
+      "macro_r": 0.36854329245633594,
+      "macro_a": 0.6605351170568562,
+      "exdep_r": 0.5239687848383501,
+      "exdep_a": 0.7408026755852843
+    }
+  },
+  "rpa_dist": {
+    "CODE_REGRESSION": 287,
+    "DEPENDENCY_CONFLICT": 4,
+    "TEST_FLAKINESS": 1,
+    "CONFIG_ERROR": 8
+  },
+  "apa_dist": {
+    "CONFIG_ERROR": 92,
+    "CODE_REGRESSION": 134,
+    "ENV_FLAKINESS": 4,
+    "DEPENDENCY_CONFLICT": 49,
+    "INFRA_INCOMPATIBILITY": 5,
+    "QUALITY_VIOLATION": 14,
+    "null": 1,
+    "TEST_FLAKINESS": 1
+  },
+  "div": {
+    "apa_right": 76,
+    "rpa_right": 38,
+    "both": 30,
+    "n": 144
+  },
+  "evB": {
+    "macro_r": 0.2713260135135135,
+    "macro_a": 0.32920750856490294,
+    "dropped": 155,
+    "scorable": 145
+  },
+  "conf": {
+    "CODE": {
+      "CONFIG": 26,
+      "CODE": 118,
+      "TRANSIENT": 3,
+      "DEPENDENCY": 9
+    },
+    "CONFIG": {
+      "CONFIG": 57,
+      "DEPENDENCY": 14,
+      "CODE": 20,
+      "OTHER": 1
+    },
+    "DEPENDENCY": {
+      "CODE": 11,
+      "DEPENDENCY": 26,
+      "CONFIG": 14,
+      "TRANSIENT": 1
+    }
+  }
+}

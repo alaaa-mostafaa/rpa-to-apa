@@ -1,0 +1,5447 @@
+{
+  "_id": "cesnet/libnetconf2_.github/workflows/ci.yml_232_1",
+  "repository_name": "cesnet/libnetconf2",
+  "workflow_path": ".github/workflows/ci.yml",
+  "run_number": 232,
+  "run_attempt": 1,
+  "metadata": {
+    "id": 5785274907,
+    "name": "libnetconf2 CI",
+    "node_id": "WFR_kwLOAnv2X88AAAABWNRKGw",
+    "head_branch": "client-ch-sess-fix",
+    "head_sha": "750032415600888354e0f8e5ce5ab3fe94ce1887",
+    "path": ".github/workflows/ci.yml",
+    "display_title": "session client UPDATE accept new Call Home session",
+    "run_number": 232,
+    "event": "pull_request",
+    "status": "completed",
+    "conclusion": "success",
+    "workflow_id": 9451741,
+    "check_suite_id": 14882915305,
+    "check_suite_node_id": "CS_kwDOAnv2X88AAAADdxdD6Q",
+    "url": "https://api.github.com/repos/CESNET/libnetconf2/actions/runs/5785274907",
+    "html_url": "https://github.com/CESNET/libnetconf2/actions/runs/5785274907",
+    "pull_requests": [],
+    "created_at": "2023-08-07T12:45:45Z",
+    "updated_at": "2023-08-07T12:49:29Z",
+    "actor": {
+      "login": "Roytak",
+      "id": 80328888,
+      "node_id": "MDQ6VXNlcjgwMzI4ODg4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/80328888?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Roytak",
+      "html_url": "https://github.com/Roytak",
+      "followers_url": "https://api.github.com/users/Roytak/followers",
+      "following_url": "https://api.github.com/users/Roytak/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Roytak/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Roytak/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Roytak/subscriptions",
+      "organizations_url": "https://api.github.com/users/Roytak/orgs",
+      "repos_url": "https://api.github.com/users/Roytak/repos",
+      "events_url": "https://api.github.com/users/Roytak/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Roytak/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "run_attempt": 1,
+    "referenced_workflows": [],
+    "run_started_at": "2023-08-07T12:45:45Z",
+    "triggering_actor": {
+      "login": "Roytak",
+      "id": 80328888,
+      "node_id": "MDQ6VXNlcjgwMzI4ODg4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/80328888?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Roytak",
+      "html_url": "https://github.com/Roytak",
+      "followers_url": "https://api.github.com/users/Roytak/followers",
+      "following_url": "https://api.github.com/users/Roytak/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Roytak/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Roytak/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Roytak/subscriptions",
+      "organizations_url": "https://api.github.com/users/Roytak/orgs",
+      "repos_url": "https://api.github.com/users/Roytak/repos",
+      "events_url": "https://api.github.com/users/Roytak/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Roytak/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "jobs_url": "https://api.github.com/repos/CESNET/libnetconf2/actions/runs/5785274907/jobs",
+    "logs_url": "https://api.github.com/repos/CESNET/libnetconf2/actions/runs/5785274907/logs",
+    "check_suite_url": "https://api.github.com/repos/CESNET/libnetconf2/check-suites/14882915305",
+    "artifacts_url": "https://api.github.com/repos/CESNET/libnetconf2/actions/runs/5785274907/artifacts",
+    "cancel_url": "https://api.github.com/repos/CESNET/libnetconf2/actions/runs/5785274907/cancel",
+    "rerun_url": "https://api.github.com/repos/CESNET/libnetconf2/actions/runs/5785274907/rerun",
+    "previous_attempt_url": null,
+    "workflow_url": "https://api.github.com/repos/CESNET/libnetconf2/actions/workflows/9451741",
+    "head_commit": {
+      "id": "750032415600888354e0f8e5ce5ab3fe94ce1887",
+      "tree_id": "751b092b1b4a92755b37bb0baf2d7dcec1a63da3",
+      "message": "session client BUGFIX accept new Call Home session\n\nPreviously, a client tried to only accept a new session once when\ncalling nc_accept_callhome, however, there may be more than just one\nbind.\nNow it is attempted at least for the number of the configured client\nbinds, so that a session might be created on a different bind, where the\nconnection doesn't fail.",
+      "timestamp": "2023-08-07T12:38:56Z",
+      "author": {
+        "name": "roman",
+        "email": "xjanot04@fit.vutbr.cz"
+      },
+      "committer": {
+        "name": "roman",
+        "email": "xjanot04@fit.vutbr.cz"
+      }
+    },
+    "repository": {
+      "id": 41678431,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0MTY3ODQzMQ==",
+      "name": "libnetconf2",
+      "full_name": "CESNET/libnetconf2",
+      "private": false,
+      "owner": {
+        "login": "CESNET",
+        "id": 1116469,
+        "node_id": "MDEyOk9yZ2FuaXphdGlvbjExMTY0Njk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1116469?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/CESNET",
+        "html_url": "https://github.com/CESNET",
+        "followers_url": "https://api.github.com/users/CESNET/followers",
+        "following_url": "https://api.github.com/users/CESNET/following{/other_user}",
+        "gists_url": "https://api.github.com/users/CESNET/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/CESNET/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/CESNET/subscriptions",
+        "organizations_url": "https://api.github.com/users/CESNET/orgs",
+        "repos_url": "https://api.github.com/users/CESNET/repos",
+        "events_url": "https://api.github.com/users/CESNET/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/CESNET/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/CESNET/libnetconf2",
+      "description": "C NETCONF library",
+      "fork": false,
+      "url": "https://api.github.com/repos/CESNET/libnetconf2",
+      "forks_url": "https://api.github.com/repos/CESNET/libnetconf2/forks",
+      "keys_url": "https://api.github.com/repos/CESNET/libnetconf2/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/CESNET/libnetconf2/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/CESNET/libnetconf2/teams",
+      "hooks_url": "https://api.github.com/repos/CESNET/libnetconf2/hooks",
+      "issue_events_url": "https://api.github.com/repos/CESNET/libnetconf2/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/CESNET/libnetconf2/events",
+      "assignees_url": "https://api.github.com/repos/CESNET/libnetconf2/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/CESNET/libnetconf2/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/CESNET/libnetconf2/tags",
+      "blobs_url": "https://api.github.com/repos/CESNET/libnetconf2/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/CESNET/libnetconf2/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/CESNET/libnetconf2/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/CESNET/libnetconf2/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/CESNET/libnetconf2/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/CESNET/libnetconf2/languages",
+      "stargazers_url": "https://api.github.com/repos/CESNET/libnetconf2/stargazers",
+      "contributors_url": "https://api.github.com/repos/CESNET/libnetconf2/contributors",
+      "subscribers_url": "https://api.github.com/repos/CESNET/libnetconf2/subscribers",
+      "subscription_url": "https://api.github.com/repos/CESNET/libnetconf2/subscription",
+      "commits_url": "https://api.github.com/repos/CESNET/libnetconf2/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/CESNET/libnetconf2/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/CESNET/libnetconf2/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/CESNET/libnetconf2/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/CESNET/libnetconf2/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/CESNET/libnetconf2/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/CESNET/libnetconf2/merges",
+      "archive_url": "https://api.github.com/repos/CESNET/libnetconf2/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/CESNET/libnetconf2/downloads",
+      "issues_url": "https://api.github.com/repos/CESNET/libnetconf2/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/CESNET/libnetconf2/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/CESNET/libnetconf2/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/CESNET/libnetconf2/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/CESNET/libnetconf2/labels{/name}",
+      "releases_url": "https://api.github.com/repos/CESNET/libnetconf2/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/CESNET/libnetconf2/deployments"
+    },
+    "head_repository": {
+      "id": 499458152,
+      "node_id": "R_kgDOHcUgaA",
+      "name": "libnetconf2",
+      "full_name": "Roytak/libnetconf2",
+      "private": false,
+      "owner": {
+        "login": "Roytak",
+        "id": 80328888,
+        "node_id": "MDQ6VXNlcjgwMzI4ODg4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/80328888?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Roytak",
+        "html_url": "https://github.com/Roytak",
+        "followers_url": "https://api.github.com/users/Roytak/followers",
+        "following_url": "https://api.github.com/users/Roytak/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Roytak/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Roytak/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Roytak/subscriptions",
+        "organizations_url": "https://api.github.com/users/Roytak/orgs",
+        "repos_url": "https://api.github.com/users/Roytak/repos",
+        "events_url": "https://api.github.com/users/Roytak/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Roytak/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/Roytak/libnetconf2",
+      "description": "C NETCONF library",
+      "fork": true,
+      "url": "https://api.github.com/repos/Roytak/libnetconf2",
+      "forks_url": "https://api.github.com/repos/Roytak/libnetconf2/forks",
+      "keys_url": "https://api.github.com/repos/Roytak/libnetconf2/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/Roytak/libnetconf2/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/Roytak/libnetconf2/teams",
+      "hooks_url": "https://api.github.com/repos/Roytak/libnetconf2/hooks",
+      "issue_events_url": "https://api.github.com/repos/Roytak/libnetconf2/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/Roytak/libnetconf2/events",
+      "assignees_url": "https://api.github.com/repos/Roytak/libnetconf2/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/Roytak/libnetconf2/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/Roytak/libnetconf2/tags",
+      "blobs_url": "https://api.github.com/repos/Roytak/libnetconf2/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/Roytak/libnetconf2/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/Roytak/libnetconf2/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/Roytak/libnetconf2/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/Roytak/libnetconf2/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/Roytak/libnetconf2/languages",
+      "stargazers_url": "https://api.github.com/repos/Roytak/libnetconf2/stargazers",
+      "contributors_url": "https://api.github.com/repos/Roytak/libnetconf2/contributors",
+      "subscribers_url": "https://api.github.com/repos/Roytak/libnetconf2/subscribers",
+      "subscription_url": "https://api.github.com/repos/Roytak/libnetconf2/subscription",
+      "commits_url": "https://api.github.com/repos/Roytak/libnetconf2/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/Roytak/libnetconf2/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/Roytak/libnetconf2/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/Roytak/libnetconf2/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/Roytak/libnetconf2/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/Roytak/libnetconf2/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/Roytak/libnetconf2/merges",
+      "archive_url": "https://api.github.com/repos/Roytak/libnetconf2/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/Roytak/libnetconf2/downloads",
+      "issues_url": "https://api.github.com/repos/Roytak/libnetconf2/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/Roytak/libnetconf2/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/Roytak/libnetconf2/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/Roytak/libnetconf2/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/Roytak/libnetconf2/labels{/name}",
+      "releases_url": "https://api.github.com/repos/Roytak/libnetconf2/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/Roytak/libnetconf2/deployments"
+    }
+  },
+  "logs_archive": {
+    "path": "/data/logs/CESNET/libnetconf2/libnetconf2_CI_b9b4/232-1.tar.gz"
+  },
+  "log_insights": [
+    {
+      "file": "5_SSH Only.txt",
+      "total_lines": 3232,
+      "log_size": 294210,
+      "token_permissions": {
+        "Actions": "read",
+        "Checks": "read",
+        "Contents": "read",
+        "Deployments": "read",
+        "Discussions": "read",
+        "Issues": "read",
+        "Metadata": "read",
+        "Packages": "read",
+        "Pages": "read",
+        "PullRequests": "read",
+        "RepositoryProjects": "read",
+        "SecurityEvents": "read",
+        "Statuses": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20230728.3.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "c85c95e3d7251135ab7dc9ce3241c5835cc595a9",
+          "with": {
+            "repository": "CESNET/libnetconf2",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "start_date": "2023-08-07 12:46:04.661000",
+          "duration_sec": 0.816759
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "sudo apt-get update\nsudo apt-get install $DEFAULT_PACKAGES valgrind\nif false\n  then sudo snap refresh; sudo snap install \nfi",
+          "commands": [
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-APT-UPDATE"
+              ],
+              "command": "apt-get",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "UPDATE_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "update"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-APT-INSTALL"
+              ],
+              "command": "apt-get",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-APT-PACKAGE"
+                  ],
+                  "content": "$DEFAULT_PACKAGES"
+                },
+                {
+                  "annotations": [
+                    "SC-APT-PACKAGE"
+                  ],
+                  "content": "valgrind"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-FALSE"
+              ],
+              "command": "false",
+              "categories": [
+                "UTILS"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "command": "snap",
+              "args": [
+                {
+                  "content": "refresh"
+                }
+              ]
+            },
+            {
+              "command": "snap",
+              "args": [
+                {
+                  "content": "install"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:46:05.478000",
+          "duration_sec": 107.415622
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "git clone -b devel https://github.com/CESNET/libyang.git\ncd libyang\nmkdir build\ncd build\nCC=gcc cmake -DCMAKE_BUILD_TYPE=Release -DENABLE_TESTS=OFF ..\nmake -j2\nsudo make install",
+          "commands": [
+            {
+              "annotations": [
+                "SC-GIT-CLONE"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL",
+                "VERSION_CONTROL_CLONE"
+              ],
+              "args": [
+                {
+                  "content": "clone"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-CLONE-BRANCH"
+                  ],
+                  "content": "-b devel"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-CLONE-URL"
+                  ],
+                  "content": "https://github.com/CESNET/libyang.git"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "libyang"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MKDIR"
+              ],
+              "command": "mkdir",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MKDIR-PATH",
+                    "BASH-PATH"
+                  ],
+                  "content": "build"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "build"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CMAKE"
+              ],
+              "command": "cmake",
+              "categories": [
+                "BUILD_SYSTEM"
+              ],
+              "args": [
+                {
+                  "content": "-DCMAKE_BUILD_TYPE=Release"
+                },
+                {
+                  "content": "-DENABLE_TESTS=OFF"
+                },
+                {
+                  "annotations": [
+                    "SC-CMAKE-PATHTOSOURCEORBUILD"
+                  ],
+                  "content": ".."
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-JOBS"
+                  ],
+                  "content": "-j2"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "install"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:47:52.894000",
+          "duration_sec": 23.666432
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "git clone https://github.com/DNSSEC-Tools/DNSSEC-Tools.git dnssec-tools\ncd dnssec-tools/dnssec-tools/validator\n./configure\nmake -j2\nsudo make install",
+          "commands": [
+            {
+              "annotations": [
+                "SC-GIT-CLONE"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL",
+                "VERSION_CONTROL_CLONE"
+              ],
+              "args": [
+                {
+                  "content": "clone"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-CLONE-URL"
+                  ],
+                  "content": "https://github.com/DNSSEC-Tools/DNSSEC-Tools.git"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-CLONE-DIRECTORY"
+                  ],
+                  "content": "dnssec-tools"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "dnssec-tools/dnssec-tools/validator"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CONFIGURE"
+              ],
+              "command": "./configure",
+              "categories": [
+                "BUILD_SYSTEM"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-JOBS"
+                  ],
+                  "content": "-j2"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "install"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:48:16.560000",
+          "duration_sec": 40.747642
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "mkdir build\ncd build\nCC=gcc cmake -DCMAKE_BUILD_TYPE=Debug -DENABLE_TLS=OFF -DENABLE_SSH=ON ..",
+          "commands": [
+            {
+              "annotations": [
+                "SC-MKDIR"
+              ],
+              "command": "mkdir",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MKDIR-PATH",
+                    "BASH-PATH"
+                  ],
+                  "content": "build"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "build"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CMAKE"
+              ],
+              "command": "cmake",
+              "categories": [
+                "BUILD_SYSTEM"
+              ],
+              "args": [
+                {
+                  "content": "-DCMAKE_BUILD_TYPE=Debug"
+                },
+                {
+                  "content": "-DENABLE_TLS=OFF"
+                },
+                {
+                  "content": "-DENABLE_SSH=ON"
+                },
+                {
+                  "annotations": [
+                    "SC-CMAKE-PATHTOSOURCEORBUILD"
+                  ],
+                  "content": ".."
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:48:57.308000",
+          "duration_sec": 1.550886
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "export LC_ALL=C.UTF-8\nexport PATH=/snap/bin:/home/runner/work/libnetconf2/libnetconf2/coverity-tools/bin:$PATH\n make ",
+          "commands": [
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:48:58.859000",
+          "duration_sec": 5.035699
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "export LSAN_OPTIONS=suppressions=/home/runner/work/libnetconf2/libnetconf2/tests/library_lsan.supp\nctest --output-on-failure",
+          "commands": [
+            {
+              "annotations": [
+                "SC-CTEST"
+              ],
+              "command": "ctest",
+              "categories": [
+                "TEST_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CTEST-OUTPUT-ON-FAILURE"
+                  ],
+                  "content": "--output-on-failure"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:49:03.894000",
+          "duration_sec": 22.455873
+        }
+      ]
+    },
+    {
+      "file": "1_Release, gcc.txt",
+      "total_lines": 3158,
+      "log_size": 287354,
+      "token_permissions": {
+        "Actions": "read",
+        "Checks": "read",
+        "Contents": "read",
+        "Deployments": "read",
+        "Discussions": "read",
+        "Issues": "read",
+        "Metadata": "read",
+        "Packages": "read",
+        "Pages": "read",
+        "PullRequests": "read",
+        "RepositoryProjects": "read",
+        "SecurityEvents": "read",
+        "Statuses": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20230728.3.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "c85c95e3d7251135ab7dc9ce3241c5835cc595a9",
+          "with": {
+            "repository": "CESNET/libnetconf2",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "start_date": "2023-08-07 12:46:06.842000",
+          "duration_sec": 1.154804
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "sudo apt-get update\nsudo apt-get install $DEFAULT_PACKAGES \nif false\n  then sudo snap refresh; sudo snap install \nfi",
+          "commands": [
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-APT-UPDATE"
+              ],
+              "command": "apt-get",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "UPDATE_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "update"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-APT-INSTALL"
+              ],
+              "command": "apt-get",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-APT-PACKAGE"
+                  ],
+                  "content": "$DEFAULT_PACKAGES"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-FALSE"
+              ],
+              "command": "false",
+              "categories": [
+                "UTILS"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "command": "snap",
+              "args": [
+                {
+                  "content": "refresh"
+                }
+              ]
+            },
+            {
+              "command": "snap",
+              "args": [
+                {
+                  "content": "install"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:46:07.997000",
+          "duration_sec": 15.80388
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "git clone -b devel https://github.com/CESNET/libyang.git\ncd libyang\nmkdir build\ncd build\nCC=gcc cmake -DCMAKE_BUILD_TYPE=Release -DENABLE_TESTS=OFF ..\nmake -j2\nsudo make install",
+          "commands": [
+            {
+              "annotations": [
+                "SC-GIT-CLONE"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL",
+                "VERSION_CONTROL_CLONE"
+              ],
+              "args": [
+                {
+                  "content": "clone"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-CLONE-BRANCH"
+                  ],
+                  "content": "-b devel"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-CLONE-URL"
+                  ],
+                  "content": "https://github.com/CESNET/libyang.git"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "libyang"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MKDIR"
+              ],
+              "command": "mkdir",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MKDIR-PATH",
+                    "BASH-PATH"
+                  ],
+                  "content": "build"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "build"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CMAKE"
+              ],
+              "command": "cmake",
+              "categories": [
+                "BUILD_SYSTEM"
+              ],
+              "args": [
+                {
+                  "content": "-DCMAKE_BUILD_TYPE=Release"
+                },
+                {
+                  "content": "-DENABLE_TESTS=OFF"
+                },
+                {
+                  "annotations": [
+                    "SC-CMAKE-PATHTOSOURCEORBUILD"
+                  ],
+                  "content": ".."
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-JOBS"
+                  ],
+                  "content": "-j2"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "install"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:46:23.801000",
+          "duration_sec": 28.18205
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "git clone https://github.com/DNSSEC-Tools/DNSSEC-Tools.git dnssec-tools\ncd dnssec-tools/dnssec-tools/validator\n./configure\nmake -j2\nsudo make install",
+          "commands": [
+            {
+              "annotations": [
+                "SC-GIT-CLONE"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL",
+                "VERSION_CONTROL_CLONE"
+              ],
+              "args": [
+                {
+                  "content": "clone"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-CLONE-URL"
+                  ],
+                  "content": "https://github.com/DNSSEC-Tools/DNSSEC-Tools.git"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-CLONE-DIRECTORY"
+                  ],
+                  "content": "dnssec-tools"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "dnssec-tools/dnssec-tools/validator"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CONFIGURE"
+              ],
+              "command": "./configure",
+              "categories": [
+                "BUILD_SYSTEM"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-JOBS"
+                  ],
+                  "content": "-j2"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "install"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:46:51.983000",
+          "duration_sec": 49.302101
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "mkdir build\ncd build\nCC=gcc cmake -DCMAKE_BUILD_TYPE=Release -DENABLE_TESTS=ON -DENABLE_DNSSEC=ON ..",
+          "commands": [
+            {
+              "annotations": [
+                "SC-MKDIR"
+              ],
+              "command": "mkdir",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MKDIR-PATH",
+                    "BASH-PATH"
+                  ],
+                  "content": "build"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "build"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CMAKE"
+              ],
+              "command": "cmake",
+              "categories": [
+                "BUILD_SYSTEM"
+              ],
+              "args": [
+                {
+                  "content": "-DCMAKE_BUILD_TYPE=Release"
+                },
+                {
+                  "content": "-DENABLE_TESTS=ON"
+                },
+                {
+                  "content": "-DENABLE_DNSSEC=ON"
+                },
+                {
+                  "annotations": [
+                    "SC-CMAKE-PATHTOSOURCEORBUILD"
+                  ],
+                  "content": ".."
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:47:41.285000",
+          "duration_sec": 1.99376
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "export LC_ALL=C.UTF-8\nexport PATH=/snap/bin:/home/runner/work/libnetconf2/libnetconf2/coverity-tools/bin:$PATH\n make ",
+          "commands": [
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:47:43.279000",
+          "duration_sec": 17.927478
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "export LSAN_OPTIONS=suppressions=/home/runner/work/libnetconf2/libnetconf2/tests/library_lsan.supp\nctest --output-on-failure",
+          "commands": [
+            {
+              "annotations": [
+                "SC-CTEST"
+              ],
+              "command": "ctest",
+              "categories": [
+                "TEST_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CTEST-OUTPUT-ON-FAILURE"
+                  ],
+                  "content": "--output-on-failure"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:48:01.206000",
+          "duration_sec": 1.572752
+        }
+      ]
+    },
+    {
+      "file": "9_ABI Check.txt",
+      "total_lines": 3351,
+      "log_size": 299296,
+      "token_permissions": {
+        "Actions": "read",
+        "Checks": "read",
+        "Contents": "read",
+        "Deployments": "read",
+        "Discussions": "read",
+        "Issues": "read",
+        "Metadata": "read",
+        "Packages": "read",
+        "Pages": "read",
+        "PullRequests": "read",
+        "RepositoryProjects": "read",
+        "SecurityEvents": "read",
+        "Statuses": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20230728.3.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "c85c95e3d7251135ab7dc9ce3241c5835cc595a9",
+          "with": {
+            "repository": "CESNET/libnetconf2",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "start_date": "2023-08-07 12:46:04.784000",
+          "duration_sec": 1.250678
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "sudo apt-get update\nsudo apt-get install $DEFAULT_PACKAGES abi-dumper abi-compliance-checker snap\nif true\n  then sudo snap refresh; sudo snap install core universal-ctags\nfi",
+          "commands": [
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-APT-UPDATE"
+              ],
+              "command": "apt-get",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "UPDATE_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "update"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-APT-INSTALL"
+              ],
+              "command": "apt-get",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-APT-PACKAGE"
+                  ],
+                  "content": "$DEFAULT_PACKAGES"
+                },
+                {
+                  "annotations": [
+                    "SC-APT-PACKAGE"
+                  ],
+                  "content": "abi-dumper"
+                },
+                {
+                  "annotations": [
+                    "SC-APT-PACKAGE"
+                  ],
+                  "content": "abi-compliance-checker"
+                },
+                {
+                  "annotations": [
+                    "SC-APT-PACKAGE"
+                  ],
+                  "content": "snap"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-TRUE"
+              ],
+              "command": "true",
+              "categories": [
+                "UTILS"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "command": "snap",
+              "args": [
+                {
+                  "content": "refresh"
+                }
+              ]
+            },
+            {
+              "command": "snap",
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "content": "core"
+                },
+                {
+                  "content": "universal-ctags"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:46:06.034000",
+          "duration_sec": 31.607575
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "git clone -b devel https://github.com/CESNET/libyang.git\ncd libyang\nmkdir build\ncd build\nCC=gcc cmake -DCMAKE_BUILD_TYPE=Debug -DENABLE_TESTS=OFF ..\nmake -j2\nsudo make install",
+          "commands": [
+            {
+              "annotations": [
+                "SC-GIT-CLONE"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL",
+                "VERSION_CONTROL_CLONE"
+              ],
+              "args": [
+                {
+                  "content": "clone"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-CLONE-BRANCH"
+                  ],
+                  "content": "-b devel"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-CLONE-URL"
+                  ],
+                  "content": "https://github.com/CESNET/libyang.git"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "libyang"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MKDIR"
+              ],
+              "command": "mkdir",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MKDIR-PATH",
+                    "BASH-PATH"
+                  ],
+                  "content": "build"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "build"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CMAKE"
+              ],
+              "command": "cmake",
+              "categories": [
+                "BUILD_SYSTEM"
+              ],
+              "args": [
+                {
+                  "content": "-DCMAKE_BUILD_TYPE=Debug"
+                },
+                {
+                  "content": "-DENABLE_TESTS=OFF"
+                },
+                {
+                  "annotations": [
+                    "SC-CMAKE-PATHTOSOURCEORBUILD"
+                  ],
+                  "content": ".."
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-JOBS"
+                  ],
+                  "content": "-j2"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "install"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:46:37.642000",
+          "duration_sec": 15.168369
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "git clone https://github.com/DNSSEC-Tools/DNSSEC-Tools.git dnssec-tools\ncd dnssec-tools/dnssec-tools/validator\n./configure\nmake -j2\nsudo make install",
+          "commands": [
+            {
+              "annotations": [
+                "SC-GIT-CLONE"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL",
+                "VERSION_CONTROL_CLONE"
+              ],
+              "args": [
+                {
+                  "content": "clone"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-CLONE-URL"
+                  ],
+                  "content": "https://github.com/DNSSEC-Tools/DNSSEC-Tools.git"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-CLONE-DIRECTORY"
+                  ],
+                  "content": "dnssec-tools"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "dnssec-tools/dnssec-tools/validator"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CONFIGURE"
+              ],
+              "command": "./configure",
+              "categories": [
+                "BUILD_SYSTEM"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-JOBS"
+                  ],
+                  "content": "-j2"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "install"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:46:52.810000",
+          "duration_sec": 39.397744
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "mkdir build\ncd build\nCC=gcc cmake -DCMAKE_BUILD_TYPE=ABICheck  ..",
+          "commands": [
+            {
+              "annotations": [
+                "SC-MKDIR"
+              ],
+              "command": "mkdir",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MKDIR-PATH",
+                    "BASH-PATH"
+                  ],
+                  "content": "build"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "build"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CMAKE"
+              ],
+              "command": "cmake",
+              "categories": [
+                "BUILD_SYSTEM"
+              ],
+              "args": [
+                {
+                  "content": "-DCMAKE_BUILD_TYPE=ABICheck"
+                },
+                {
+                  "annotations": [
+                    "SC-CMAKE-PATHTOSOURCEORBUILD"
+                  ],
+                  "content": ".."
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:47:32.208000",
+          "duration_sec": 1.486889
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "export LC_ALL=C.UTF-8\nexport PATH=/snap/bin:/home/runner/work/libnetconf2/libnetconf2/coverity-tools/bin:$PATH\n make abi-check",
+          "commands": [
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "abi-check"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:47:33.695000",
+          "duration_sec": 18.230363
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "export LSAN_OPTIONS=suppressions=/home/runner/work/libnetconf2/libnetconf2/tests/library_lsan.supp\nctest --output-on-failure",
+          "commands": [
+            {
+              "annotations": [
+                "SC-CTEST"
+              ],
+              "command": "ctest",
+              "categories": [
+                "TEST_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CTEST-OUTPUT-ON-FAILURE"
+                  ],
+                  "content": "--output-on-failure"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:47:51.925000",
+          "duration_sec": 0.980216
+        }
+      ]
+    },
+    {
+      "file": "6_TLS Only.txt",
+      "total_lines": 3218,
+      "log_size": 292984,
+      "token_permissions": {
+        "Actions": "read",
+        "Checks": "read",
+        "Contents": "read",
+        "Deployments": "read",
+        "Discussions": "read",
+        "Issues": "read",
+        "Metadata": "read",
+        "Packages": "read",
+        "Pages": "read",
+        "PullRequests": "read",
+        "RepositoryProjects": "read",
+        "SecurityEvents": "read",
+        "Statuses": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20230728.3.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "c85c95e3d7251135ab7dc9ce3241c5835cc595a9",
+          "with": {
+            "repository": "CESNET/libnetconf2",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "start_date": "2023-08-07 12:46:04.498000",
+          "duration_sec": 1.111062
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "sudo apt-get update\nsudo apt-get install $DEFAULT_PACKAGES valgrind\nif false\n  then sudo snap refresh; sudo snap install \nfi",
+          "commands": [
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-APT-UPDATE"
+              ],
+              "command": "apt-get",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "UPDATE_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "update"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-APT-INSTALL"
+              ],
+              "command": "apt-get",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-APT-PACKAGE"
+                  ],
+                  "content": "$DEFAULT_PACKAGES"
+                },
+                {
+                  "annotations": [
+                    "SC-APT-PACKAGE"
+                  ],
+                  "content": "valgrind"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-FALSE"
+              ],
+              "command": "false",
+              "categories": [
+                "UTILS"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "command": "snap",
+              "args": [
+                {
+                  "content": "refresh"
+                }
+              ]
+            },
+            {
+              "command": "snap",
+              "args": [
+                {
+                  "content": "install"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:46:05.609000",
+          "duration_sec": 15.916169
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "git clone -b devel https://github.com/CESNET/libyang.git\ncd libyang\nmkdir build\ncd build\nCC=gcc cmake -DCMAKE_BUILD_TYPE=Release -DENABLE_TESTS=OFF ..\nmake -j2\nsudo make install",
+          "commands": [
+            {
+              "annotations": [
+                "SC-GIT-CLONE"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL",
+                "VERSION_CONTROL_CLONE"
+              ],
+              "args": [
+                {
+                  "content": "clone"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-CLONE-BRANCH"
+                  ],
+                  "content": "-b devel"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-CLONE-URL"
+                  ],
+                  "content": "https://github.com/CESNET/libyang.git"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "libyang"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MKDIR"
+              ],
+              "command": "mkdir",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MKDIR-PATH",
+                    "BASH-PATH"
+                  ],
+                  "content": "build"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "build"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CMAKE"
+              ],
+              "command": "cmake",
+              "categories": [
+                "BUILD_SYSTEM"
+              ],
+              "args": [
+                {
+                  "content": "-DCMAKE_BUILD_TYPE=Release"
+                },
+                {
+                  "content": "-DENABLE_TESTS=OFF"
+                },
+                {
+                  "annotations": [
+                    "SC-CMAKE-PATHTOSOURCEORBUILD"
+                  ],
+                  "content": ".."
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-JOBS"
+                  ],
+                  "content": "-j2"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "install"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:46:21.525000",
+          "duration_sec": 23.119897
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "git clone https://github.com/DNSSEC-Tools/DNSSEC-Tools.git dnssec-tools\ncd dnssec-tools/dnssec-tools/validator\n./configure\nmake -j2\nsudo make install",
+          "commands": [
+            {
+              "annotations": [
+                "SC-GIT-CLONE"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL",
+                "VERSION_CONTROL_CLONE"
+              ],
+              "args": [
+                {
+                  "content": "clone"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-CLONE-URL"
+                  ],
+                  "content": "https://github.com/DNSSEC-Tools/DNSSEC-Tools.git"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-CLONE-DIRECTORY"
+                  ],
+                  "content": "dnssec-tools"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "dnssec-tools/dnssec-tools/validator"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CONFIGURE"
+              ],
+              "command": "./configure",
+              "categories": [
+                "BUILD_SYSTEM"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-JOBS"
+                  ],
+                  "content": "-j2"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "install"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:46:44.645000",
+          "duration_sec": 40.185067
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "mkdir build\ncd build\nCC=gcc cmake -DCMAKE_BUILD_TYPE=Debug -DENABLE_TLS=ON -DENABLE_SSH=OFF ..",
+          "commands": [
+            {
+              "annotations": [
+                "SC-MKDIR"
+              ],
+              "command": "mkdir",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MKDIR-PATH",
+                    "BASH-PATH"
+                  ],
+                  "content": "build"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "build"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CMAKE"
+              ],
+              "command": "cmake",
+              "categories": [
+                "BUILD_SYSTEM"
+              ],
+              "args": [
+                {
+                  "content": "-DCMAKE_BUILD_TYPE=Debug"
+                },
+                {
+                  "content": "-DENABLE_TLS=ON"
+                },
+                {
+                  "content": "-DENABLE_SSH=OFF"
+                },
+                {
+                  "annotations": [
+                    "SC-CMAKE-PATHTOSOURCEORBUILD"
+                  ],
+                  "content": ".."
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:47:24.830000",
+          "duration_sec": 1.551193
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "export LC_ALL=C.UTF-8\nexport PATH=/snap/bin:/home/runner/work/libnetconf2/libnetconf2/coverity-tools/bin:$PATH\n make ",
+          "commands": [
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:47:26.381000",
+          "duration_sec": 6.06473
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "export LSAN_OPTIONS=suppressions=/home/runner/work/libnetconf2/libnetconf2/tests/library_lsan.supp\nctest --output-on-failure",
+          "commands": [
+            {
+              "annotations": [
+                "SC-CTEST"
+              ],
+              "command": "ctest",
+              "categories": [
+                "TEST_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CTEST-OUTPUT-ON-FAILURE"
+                  ],
+                  "content": "--output-on-failure"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:47:32.446000",
+          "duration_sec": 20.071491
+        }
+      ]
+    },
+    {
+      "file": "7_No SSH nor TLS.txt",
+      "total_lines": 3198,
+      "log_size": 291176,
+      "token_permissions": {
+        "Actions": "read",
+        "Checks": "read",
+        "Contents": "read",
+        "Deployments": "read",
+        "Discussions": "read",
+        "Issues": "read",
+        "Metadata": "read",
+        "Packages": "read",
+        "Pages": "read",
+        "PullRequests": "read",
+        "RepositoryProjects": "read",
+        "SecurityEvents": "read",
+        "Statuses": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20230728.3.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "c85c95e3d7251135ab7dc9ce3241c5835cc595a9",
+          "with": {
+            "repository": "CESNET/libnetconf2",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "start_date": "2023-08-07 12:46:04.915000",
+          "duration_sec": 1.138872
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "sudo apt-get update\nsudo apt-get install $DEFAULT_PACKAGES valgrind\nif false\n  then sudo snap refresh; sudo snap install \nfi",
+          "commands": [
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-APT-UPDATE"
+              ],
+              "command": "apt-get",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "UPDATE_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "update"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-APT-INSTALL"
+              ],
+              "command": "apt-get",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-APT-PACKAGE"
+                  ],
+                  "content": "$DEFAULT_PACKAGES"
+                },
+                {
+                  "annotations": [
+                    "SC-APT-PACKAGE"
+                  ],
+                  "content": "valgrind"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-FALSE"
+              ],
+              "command": "false",
+              "categories": [
+                "UTILS"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "command": "snap",
+              "args": [
+                {
+                  "content": "refresh"
+                }
+              ]
+            },
+            {
+              "command": "snap",
+              "args": [
+                {
+                  "content": "install"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:46:06.054000",
+          "duration_sec": 17.7018
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "git clone -b devel https://github.com/CESNET/libyang.git\ncd libyang\nmkdir build\ncd build\nCC=gcc cmake -DCMAKE_BUILD_TYPE=Release -DENABLE_TESTS=OFF ..\nmake -j2\nsudo make install",
+          "commands": [
+            {
+              "annotations": [
+                "SC-GIT-CLONE"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL",
+                "VERSION_CONTROL_CLONE"
+              ],
+              "args": [
+                {
+                  "content": "clone"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-CLONE-BRANCH"
+                  ],
+                  "content": "-b devel"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-CLONE-URL"
+                  ],
+                  "content": "https://github.com/CESNET/libyang.git"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "libyang"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MKDIR"
+              ],
+              "command": "mkdir",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MKDIR-PATH",
+                    "BASH-PATH"
+                  ],
+                  "content": "build"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "build"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CMAKE"
+              ],
+              "command": "cmake",
+              "categories": [
+                "BUILD_SYSTEM"
+              ],
+              "args": [
+                {
+                  "content": "-DCMAKE_BUILD_TYPE=Release"
+                },
+                {
+                  "content": "-DENABLE_TESTS=OFF"
+                },
+                {
+                  "annotations": [
+                    "SC-CMAKE-PATHTOSOURCEORBUILD"
+                  ],
+                  "content": ".."
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-JOBS"
+                  ],
+                  "content": "-j2"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "install"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:46:23.756000",
+          "duration_sec": 23.635543
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "git clone https://github.com/DNSSEC-Tools/DNSSEC-Tools.git dnssec-tools\ncd dnssec-tools/dnssec-tools/validator\n./configure\nmake -j2\nsudo make install",
+          "commands": [
+            {
+              "annotations": [
+                "SC-GIT-CLONE"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL",
+                "VERSION_CONTROL_CLONE"
+              ],
+              "args": [
+                {
+                  "content": "clone"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-CLONE-URL"
+                  ],
+                  "content": "https://github.com/DNSSEC-Tools/DNSSEC-Tools.git"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-CLONE-DIRECTORY"
+                  ],
+                  "content": "dnssec-tools"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "dnssec-tools/dnssec-tools/validator"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CONFIGURE"
+              ],
+              "command": "./configure",
+              "categories": [
+                "BUILD_SYSTEM"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-JOBS"
+                  ],
+                  "content": "-j2"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "install"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:46:47.392000",
+          "duration_sec": 39.699789
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "mkdir build\ncd build\nCC=gcc cmake -DCMAKE_BUILD_TYPE=Debug -DENABLE_TLS=OFF -DENABLE_SSH=OFF ..",
+          "commands": [
+            {
+              "annotations": [
+                "SC-MKDIR"
+              ],
+              "command": "mkdir",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MKDIR-PATH",
+                    "BASH-PATH"
+                  ],
+                  "content": "build"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "build"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CMAKE"
+              ],
+              "command": "cmake",
+              "categories": [
+                "BUILD_SYSTEM"
+              ],
+              "args": [
+                {
+                  "content": "-DCMAKE_BUILD_TYPE=Debug"
+                },
+                {
+                  "content": "-DENABLE_TLS=OFF"
+                },
+                {
+                  "content": "-DENABLE_SSH=OFF"
+                },
+                {
+                  "annotations": [
+                    "SC-CMAKE-PATHTOSOURCEORBUILD"
+                  ],
+                  "content": ".."
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:47:27.091000",
+          "duration_sec": 1.49045
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "export LC_ALL=C.UTF-8\nexport PATH=/snap/bin:/home/runner/work/libnetconf2/libnetconf2/coverity-tools/bin:$PATH\n make ",
+          "commands": [
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:47:28.582000",
+          "duration_sec": 3.031088
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "export LSAN_OPTIONS=suppressions=/home/runner/work/libnetconf2/libnetconf2/tests/library_lsan.supp\nctest --output-on-failure",
+          "commands": [
+            {
+              "annotations": [
+                "SC-CTEST"
+              ],
+              "command": "ctest",
+              "categories": [
+                "TEST_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CTEST-OUTPUT-ON-FAILURE"
+                  ],
+                  "content": "--output-on-failure"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:47:31.613000",
+          "duration_sec": 10.288564
+        }
+      ]
+    },
+    {
+      "file": "2_Release, clang.txt",
+      "total_lines": 3157,
+      "log_size": 287021,
+      "token_permissions": {
+        "Actions": "read",
+        "Checks": "read",
+        "Contents": "read",
+        "Deployments": "read",
+        "Discussions": "read",
+        "Issues": "read",
+        "Metadata": "read",
+        "Packages": "read",
+        "Pages": "read",
+        "PullRequests": "read",
+        "RepositoryProjects": "read",
+        "SecurityEvents": "read",
+        "Statuses": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20230728.3.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "c85c95e3d7251135ab7dc9ce3241c5835cc595a9",
+          "with": {
+            "repository": "CESNET/libnetconf2",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "start_date": "2023-08-07 12:46:06.433000",
+          "duration_sec": 1.301636
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "sudo apt-get update\nsudo apt-get install $DEFAULT_PACKAGES \nif false\n  then sudo snap refresh; sudo snap install \nfi",
+          "commands": [
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-APT-UPDATE"
+              ],
+              "command": "apt-get",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "UPDATE_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "update"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-APT-INSTALL"
+              ],
+              "command": "apt-get",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-APT-PACKAGE"
+                  ],
+                  "content": "$DEFAULT_PACKAGES"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-FALSE"
+              ],
+              "command": "false",
+              "categories": [
+                "UTILS"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "command": "snap",
+              "args": [
+                {
+                  "content": "refresh"
+                }
+              ]
+            },
+            {
+              "command": "snap",
+              "args": [
+                {
+                  "content": "install"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:46:07.735000",
+          "duration_sec": 19.169233
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "git clone -b devel https://github.com/CESNET/libyang.git\ncd libyang\nmkdir build\ncd build\nCC=clang cmake -DCMAKE_BUILD_TYPE=Release -DENABLE_TESTS=OFF ..\nmake -j2\nsudo make install",
+          "commands": [
+            {
+              "annotations": [
+                "SC-GIT-CLONE"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL",
+                "VERSION_CONTROL_CLONE"
+              ],
+              "args": [
+                {
+                  "content": "clone"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-CLONE-BRANCH"
+                  ],
+                  "content": "-b devel"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-CLONE-URL"
+                  ],
+                  "content": "https://github.com/CESNET/libyang.git"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "libyang"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MKDIR"
+              ],
+              "command": "mkdir",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MKDIR-PATH",
+                    "BASH-PATH"
+                  ],
+                  "content": "build"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "build"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CMAKE"
+              ],
+              "command": "cmake",
+              "categories": [
+                "BUILD_SYSTEM"
+              ],
+              "args": [
+                {
+                  "content": "-DCMAKE_BUILD_TYPE=Release"
+                },
+                {
+                  "content": "-DENABLE_TESTS=OFF"
+                },
+                {
+                  "annotations": [
+                    "SC-CMAKE-PATHTOSOURCEORBUILD"
+                  ],
+                  "content": ".."
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-JOBS"
+                  ],
+                  "content": "-j2"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "install"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:46:26.904000",
+          "duration_sec": 28.384549
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "git clone https://github.com/DNSSEC-Tools/DNSSEC-Tools.git dnssec-tools\ncd dnssec-tools/dnssec-tools/validator\n./configure\nmake -j2\nsudo make install",
+          "commands": [
+            {
+              "annotations": [
+                "SC-GIT-CLONE"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL",
+                "VERSION_CONTROL_CLONE"
+              ],
+              "args": [
+                {
+                  "content": "clone"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-CLONE-URL"
+                  ],
+                  "content": "https://github.com/DNSSEC-Tools/DNSSEC-Tools.git"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-CLONE-DIRECTORY"
+                  ],
+                  "content": "dnssec-tools"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "dnssec-tools/dnssec-tools/validator"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CONFIGURE"
+              ],
+              "command": "./configure",
+              "categories": [
+                "BUILD_SYSTEM"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-JOBS"
+                  ],
+                  "content": "-j2"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "install"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:46:55.289000",
+          "duration_sec": 49.24432
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "mkdir build\ncd build\nCC=clang cmake -DCMAKE_BUILD_TYPE=Release -DENABLE_TESTS=ON -DENABLE_DNSSEC=ON ..",
+          "commands": [
+            {
+              "annotations": [
+                "SC-MKDIR"
+              ],
+              "command": "mkdir",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MKDIR-PATH",
+                    "BASH-PATH"
+                  ],
+                  "content": "build"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "build"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CMAKE"
+              ],
+              "command": "cmake",
+              "categories": [
+                "BUILD_SYSTEM"
+              ],
+              "args": [
+                {
+                  "content": "-DCMAKE_BUILD_TYPE=Release"
+                },
+                {
+                  "content": "-DENABLE_TESTS=ON"
+                },
+                {
+                  "content": "-DENABLE_DNSSEC=ON"
+                },
+                {
+                  "annotations": [
+                    "SC-CMAKE-PATHTOSOURCEORBUILD"
+                  ],
+                  "content": ".."
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:47:44.533000",
+          "duration_sec": 3.161168
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "export LC_ALL=C.UTF-8\nexport PATH=/snap/bin:/home/runner/work/libnetconf2/libnetconf2/coverity-tools/bin:$PATH\n make ",
+          "commands": [
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:47:47.694000",
+          "duration_sec": 17.988828
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "export LSAN_OPTIONS=suppressions=/home/runner/work/libnetconf2/libnetconf2/tests/library_lsan.supp\nctest --output-on-failure",
+          "commands": [
+            {
+              "annotations": [
+                "SC-CTEST"
+              ],
+              "command": "ctest",
+              "categories": [
+                "TEST_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CTEST-OUTPUT-ON-FAILURE"
+                  ],
+                  "content": "--output-on-failure"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:48:05.683000",
+          "duration_sec": 2.23042
+        }
+      ]
+    },
+    {
+      "file": "1_Get git branch (1).txt",
+      "total_lines": 53,
+      "log_size": 3086,
+      "token_permissions": {
+        "Actions": "read",
+        "Checks": "read",
+        "Contents": "read",
+        "Deployments": "read",
+        "Discussions": "read",
+        "Issues": "read",
+        "Metadata": "read",
+        "Packages": "read",
+        "Pages": "read",
+        "PullRequests": "read",
+        "RepositoryProjects": "read",
+        "SecurityEvents": "read",
+        "Statuses": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20230728.3.0",
+      "steps": [
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "if false\n  then export GIT_BRANCH=`echo refs/pull/432/merge | cut -d'/' -f 3`\nelse\n  export GIT_BRANCH=devel\nfi\necho \"branch-name=$GIT_BRANCH\" >> $GITHUB_OUTPUT",
+          "commands": [
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"branch-name=$GIT_BRANCH\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-FALSE"
+              ],
+              "command": "false",
+              "categories": [
+                "UTILS"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "refs/pull/432/merge"
+                }
+              ]
+            },
+            {
+              "command": "cut",
+              "args": [
+                {
+                  "content": "-d'/'"
+                },
+                {
+                  "content": "-f"
+                },
+                {
+                  "content": "3"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:45:55.424000",
+          "duration_sec": 0.201064
+        }
+      ]
+    },
+    {
+      "file": "3_Debug, gcc.txt",
+      "total_lines": 3495,
+      "log_size": 316275,
+      "token_permissions": {
+        "Actions": "read",
+        "Checks": "read",
+        "Contents": "read",
+        "Deployments": "read",
+        "Discussions": "read",
+        "Issues": "read",
+        "Metadata": "read",
+        "Packages": "read",
+        "Pages": "read",
+        "PullRequests": "read",
+        "RepositoryProjects": "read",
+        "SecurityEvents": "read",
+        "Statuses": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20230728.3.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "c85c95e3d7251135ab7dc9ce3241c5835cc595a9",
+          "with": {
+            "repository": "CESNET/libnetconf2",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "start_date": "2023-08-07 12:46:04.705000",
+          "duration_sec": 0.781752
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "sudo apt-get update\nsudo apt-get install $DEFAULT_PACKAGES valgrind\nif false\n  then sudo snap refresh; sudo snap install \nfi",
+          "commands": [
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-APT-UPDATE"
+              ],
+              "command": "apt-get",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "UPDATE_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "update"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-APT-INSTALL"
+              ],
+              "command": "apt-get",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-APT-PACKAGE"
+                  ],
+                  "content": "$DEFAULT_PACKAGES"
+                },
+                {
+                  "annotations": [
+                    "SC-APT-PACKAGE"
+                  ],
+                  "content": "valgrind"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-FALSE"
+              ],
+              "command": "false",
+              "categories": [
+                "UTILS"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "command": "snap",
+              "args": [
+                {
+                  "content": "refresh"
+                }
+              ]
+            },
+            {
+              "command": "snap",
+              "args": [
+                {
+                  "content": "install"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:46:05.486000",
+          "duration_sec": 16.515828
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "git clone --branch uncrustify-0.77.1 https://github.com/uncrustify/uncrustify\ncd uncrustify\nmkdir build\ncd build\nCC=gcc cmake ..\nmake\nsudo make install",
+          "commands": [
+            {
+              "annotations": [
+                "SC-GIT-CLONE"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL",
+                "VERSION_CONTROL_CLONE"
+              ],
+              "args": [
+                {
+                  "content": "clone"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-CLONE-BRANCH"
+                  ],
+                  "content": "--branch uncrustify-0.77.1"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-CLONE-URL"
+                  ],
+                  "content": "https://github.com/uncrustify/uncrustify"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "uncrustify"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MKDIR"
+              ],
+              "command": "mkdir",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MKDIR-PATH",
+                    "BASH-PATH"
+                  ],
+                  "content": "build"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "build"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CMAKE"
+              ],
+              "command": "cmake",
+              "categories": [
+                "BUILD_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CMAKE-PATHTOSOURCEORBUILD"
+                  ],
+                  "content": ".."
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "install"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:46:22.002000",
+          "duration_sec": 48.97294
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "git clone -b devel https://github.com/CESNET/libyang.git\ncd libyang\nmkdir build\ncd build\nCC=gcc cmake -DCMAKE_BUILD_TYPE=Release -DENABLE_TESTS=OFF ..\nmake -j2\nsudo make install",
+          "commands": [
+            {
+              "annotations": [
+                "SC-GIT-CLONE"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL",
+                "VERSION_CONTROL_CLONE"
+              ],
+              "args": [
+                {
+                  "content": "clone"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-CLONE-BRANCH"
+                  ],
+                  "content": "-b devel"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-CLONE-URL"
+                  ],
+                  "content": "https://github.com/CESNET/libyang.git"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "libyang"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MKDIR"
+              ],
+              "command": "mkdir",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MKDIR-PATH",
+                    "BASH-PATH"
+                  ],
+                  "content": "build"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "build"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CMAKE"
+              ],
+              "command": "cmake",
+              "categories": [
+                "BUILD_SYSTEM"
+              ],
+              "args": [
+                {
+                  "content": "-DCMAKE_BUILD_TYPE=Release"
+                },
+                {
+                  "content": "-DENABLE_TESTS=OFF"
+                },
+                {
+                  "annotations": [
+                    "SC-CMAKE-PATHTOSOURCEORBUILD"
+                  ],
+                  "content": ".."
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-JOBS"
+                  ],
+                  "content": "-j2"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "install"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:47:10.975000",
+          "duration_sec": 23.14869
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "git clone https://github.com/DNSSEC-Tools/DNSSEC-Tools.git dnssec-tools\ncd dnssec-tools/dnssec-tools/validator\n./configure\nmake -j2\nsudo make install",
+          "commands": [
+            {
+              "annotations": [
+                "SC-GIT-CLONE"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL",
+                "VERSION_CONTROL_CLONE"
+              ],
+              "args": [
+                {
+                  "content": "clone"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-CLONE-URL"
+                  ],
+                  "content": "https://github.com/DNSSEC-Tools/DNSSEC-Tools.git"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-CLONE-DIRECTORY"
+                  ],
+                  "content": "dnssec-tools"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "dnssec-tools/dnssec-tools/validator"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CONFIGURE"
+              ],
+              "command": "./configure",
+              "categories": [
+                "BUILD_SYSTEM"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-JOBS"
+                  ],
+                  "content": "-j2"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "install"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:47:34.124000",
+          "duration_sec": 40.510789
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "mkdir build\ncd build\nCC=gcc cmake -DCMAKE_BUILD_TYPE=Debug -DENABLE_DNSSEC=ON ..",
+          "commands": [
+            {
+              "annotations": [
+                "SC-MKDIR"
+              ],
+              "command": "mkdir",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MKDIR-PATH",
+                    "BASH-PATH"
+                  ],
+                  "content": "build"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "build"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CMAKE"
+              ],
+              "command": "cmake",
+              "categories": [
+                "BUILD_SYSTEM"
+              ],
+              "args": [
+                {
+                  "content": "-DCMAKE_BUILD_TYPE=Debug"
+                },
+                {
+                  "content": "-DENABLE_DNSSEC=ON"
+                },
+                {
+                  "annotations": [
+                    "SC-CMAKE-PATHTOSOURCEORBUILD"
+                  ],
+                  "content": ".."
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:48:14.635000",
+          "duration_sec": 1.631309
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "export LC_ALL=C.UTF-8\nexport PATH=/snap/bin:/home/runner/work/libnetconf2/libnetconf2/coverity-tools/bin:$PATH\n make ",
+          "commands": [
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:48:16.266000",
+          "duration_sec": 8.71637
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "export LSAN_OPTIONS=suppressions=/home/runner/work/libnetconf2/libnetconf2/tests/library_lsan.supp\nctest --output-on-failure",
+          "commands": [
+            {
+              "annotations": [
+                "SC-CTEST"
+              ],
+              "command": "ctest",
+              "categories": [
+                "TEST_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CTEST-OUTPUT-ON-FAILURE"
+                  ],
+                  "content": "--output-on-failure"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:48:24.982000",
+          "duration_sec": 37.452416
+        }
+      ]
+    },
+    {
+      "file": "8_ASAN and UBSAN.txt",
+      "total_lines": 3157,
+      "log_size": 287106,
+      "token_permissions": {
+        "Actions": "read",
+        "Checks": "read",
+        "Contents": "read",
+        "Deployments": "read",
+        "Discussions": "read",
+        "Issues": "read",
+        "Metadata": "read",
+        "Packages": "read",
+        "Pages": "read",
+        "PullRequests": "read",
+        "RepositoryProjects": "read",
+        "SecurityEvents": "read",
+        "Statuses": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20230728.3.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "c85c95e3d7251135ab7dc9ce3241c5835cc595a9",
+          "with": {
+            "repository": "CESNET/libnetconf2",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "start_date": "2023-08-07 12:46:04.881000",
+          "duration_sec": 0.942219
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "sudo apt-get update\nsudo apt-get install $DEFAULT_PACKAGES \nif false\n  then sudo snap refresh; sudo snap install \nfi",
+          "commands": [
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-APT-UPDATE"
+              ],
+              "command": "apt-get",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "UPDATE_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "update"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-APT-INSTALL"
+              ],
+              "command": "apt-get",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-APT-PACKAGE"
+                  ],
+                  "content": "$DEFAULT_PACKAGES"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-FALSE"
+              ],
+              "command": "false",
+              "categories": [
+                "UTILS"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "command": "snap",
+              "args": [
+                {
+                  "content": "refresh"
+                }
+              ]
+            },
+            {
+              "command": "snap",
+              "args": [
+                {
+                  "content": "install"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:46:05.823000",
+          "duration_sec": 13.185622
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "git clone -b devel https://github.com/CESNET/libyang.git\ncd libyang\nmkdir build\ncd build\nCC=clang cmake -DCMAKE_BUILD_TYPE=Release -DENABLE_TESTS=OFF ..\nmake -j2\nsudo make install",
+          "commands": [
+            {
+              "annotations": [
+                "SC-GIT-CLONE"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL",
+                "VERSION_CONTROL_CLONE"
+              ],
+              "args": [
+                {
+                  "content": "clone"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-CLONE-BRANCH"
+                  ],
+                  "content": "-b devel"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-CLONE-URL"
+                  ],
+                  "content": "https://github.com/CESNET/libyang.git"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "libyang"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MKDIR"
+              ],
+              "command": "mkdir",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MKDIR-PATH",
+                    "BASH-PATH"
+                  ],
+                  "content": "build"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "build"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CMAKE"
+              ],
+              "command": "cmake",
+              "categories": [
+                "BUILD_SYSTEM"
+              ],
+              "args": [
+                {
+                  "content": "-DCMAKE_BUILD_TYPE=Release"
+                },
+                {
+                  "content": "-DENABLE_TESTS=OFF"
+                },
+                {
+                  "annotations": [
+                    "SC-CMAKE-PATHTOSOURCEORBUILD"
+                  ],
+                  "content": ".."
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-JOBS"
+                  ],
+                  "content": "-j2"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "install"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:46:19.009000",
+          "duration_sec": 21.602627
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "git clone https://github.com/DNSSEC-Tools/DNSSEC-Tools.git dnssec-tools\ncd dnssec-tools/dnssec-tools/validator\n./configure\nmake -j2\nsudo make install",
+          "commands": [
+            {
+              "annotations": [
+                "SC-GIT-CLONE"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL",
+                "VERSION_CONTROL_CLONE"
+              ],
+              "args": [
+                {
+                  "content": "clone"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-CLONE-URL"
+                  ],
+                  "content": "https://github.com/DNSSEC-Tools/DNSSEC-Tools.git"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-CLONE-DIRECTORY"
+                  ],
+                  "content": "dnssec-tools"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "dnssec-tools/dnssec-tools/validator"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CONFIGURE"
+              ],
+              "command": "./configure",
+              "categories": [
+                "BUILD_SYSTEM"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-JOBS"
+                  ],
+                  "content": "-j2"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "install"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:46:40.611000",
+          "duration_sec": 39.243592
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "mkdir build\ncd build\nCC=clang cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_FLAGS=-fsanitize=address,undefined -DENABLE_VALGRIND_TESTS=OFF ..",
+          "commands": [
+            {
+              "annotations": [
+                "SC-MKDIR"
+              ],
+              "command": "mkdir",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MKDIR-PATH",
+                    "BASH-PATH"
+                  ],
+                  "content": "build"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "build"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CMAKE"
+              ],
+              "command": "cmake",
+              "categories": [
+                "BUILD_SYSTEM"
+              ],
+              "args": [
+                {
+                  "content": "-DCMAKE_BUILD_TYPE=Debug"
+                },
+                {
+                  "content": "-DCMAKE_C_FLAGS=-fsanitize=address,undefined"
+                },
+                {
+                  "content": "-DENABLE_VALGRIND_TESTS=OFF"
+                },
+                {
+                  "annotations": [
+                    "SC-CMAKE-PATHTOSOURCEORBUILD"
+                  ],
+                  "content": ".."
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:47:19.855000",
+          "duration_sec": 5.320677
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "export LC_ALL=C.UTF-8\nexport PATH=/snap/bin:/home/runner/work/libnetconf2/libnetconf2/coverity-tools/bin:$PATH\n make ",
+          "commands": [
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:47:25.175000",
+          "duration_sec": 13.491082
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "export LSAN_OPTIONS=suppressions=/home/runner/work/libnetconf2/libnetconf2/tests/library_lsan.supp\nctest --output-on-failure",
+          "commands": [
+            {
+              "annotations": [
+                "SC-CTEST"
+              ],
+              "command": "ctest",
+              "categories": [
+                "TEST_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CTEST-OUTPUT-ON-FAILURE"
+                  ],
+                  "content": "--output-on-failure"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:47:38.667000",
+          "duration_sec": 1.273254
+        }
+      ]
+    },
+    {
+      "file": "4_Debug, clang.txt",
+      "total_lines": 3162,
+      "log_size": 287345,
+      "token_permissions": {
+        "Actions": "read",
+        "Checks": "read",
+        "Contents": "read",
+        "Deployments": "read",
+        "Discussions": "read",
+        "Issues": "read",
+        "Metadata": "read",
+        "Packages": "read",
+        "Pages": "read",
+        "PullRequests": "read",
+        "RepositoryProjects": "read",
+        "SecurityEvents": "read",
+        "Statuses": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20230728.3.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "c85c95e3d7251135ab7dc9ce3241c5835cc595a9",
+          "with": {
+            "repository": "CESNET/libnetconf2",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "start_date": "2023-08-07 12:46:06.430000",
+          "duration_sec": 1.199965
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "sudo apt-get update\nsudo apt-get install $DEFAULT_PACKAGES \nif false\n  then sudo snap refresh; sudo snap install \nfi",
+          "commands": [
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-APT-UPDATE"
+              ],
+              "command": "apt-get",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "UPDATE_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "update"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-APT-INSTALL"
+              ],
+              "command": "apt-get",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-APT-PACKAGE"
+                  ],
+                  "content": "$DEFAULT_PACKAGES"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-FALSE"
+              ],
+              "command": "false",
+              "categories": [
+                "UTILS"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "command": "snap",
+              "args": [
+                {
+                  "content": "refresh"
+                }
+              ]
+            },
+            {
+              "command": "snap",
+              "args": [
+                {
+                  "content": "install"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:46:07.630000",
+          "duration_sec": 18.998136
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "git clone -b devel https://github.com/CESNET/libyang.git\ncd libyang\nmkdir build\ncd build\nCC=clang cmake -DCMAKE_BUILD_TYPE=Release -DENABLE_TESTS=OFF ..\nmake -j2\nsudo make install",
+          "commands": [
+            {
+              "annotations": [
+                "SC-GIT-CLONE"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL",
+                "VERSION_CONTROL_CLONE"
+              ],
+              "args": [
+                {
+                  "content": "clone"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-CLONE-BRANCH"
+                  ],
+                  "content": "-b devel"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-CLONE-URL"
+                  ],
+                  "content": "https://github.com/CESNET/libyang.git"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "libyang"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MKDIR"
+              ],
+              "command": "mkdir",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MKDIR-PATH",
+                    "BASH-PATH"
+                  ],
+                  "content": "build"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "build"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CMAKE"
+              ],
+              "command": "cmake",
+              "categories": [
+                "BUILD_SYSTEM"
+              ],
+              "args": [
+                {
+                  "content": "-DCMAKE_BUILD_TYPE=Release"
+                },
+                {
+                  "content": "-DENABLE_TESTS=OFF"
+                },
+                {
+                  "annotations": [
+                    "SC-CMAKE-PATHTOSOURCEORBUILD"
+                  ],
+                  "content": ".."
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-JOBS"
+                  ],
+                  "content": "-j2"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "install"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:46:26.628000",
+          "duration_sec": 33.347847
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "git clone https://github.com/DNSSEC-Tools/DNSSEC-Tools.git dnssec-tools\ncd dnssec-tools/dnssec-tools/validator\n./configure\nmake -j2\nsudo make install",
+          "commands": [
+            {
+              "annotations": [
+                "SC-GIT-CLONE"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL",
+                "VERSION_CONTROL_CLONE"
+              ],
+              "args": [
+                {
+                  "content": "clone"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-CLONE-URL"
+                  ],
+                  "content": "https://github.com/DNSSEC-Tools/DNSSEC-Tools.git"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-CLONE-DIRECTORY"
+                  ],
+                  "content": "dnssec-tools"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "dnssec-tools/dnssec-tools/validator"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CONFIGURE"
+              ],
+              "command": "./configure",
+              "categories": [
+                "BUILD_SYSTEM"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-JOBS"
+                  ],
+                  "content": "-j2"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "install"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:46:59.976000",
+          "duration_sec": 49.110294
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "mkdir build\ncd build\nCC=clang cmake -DCMAKE_BUILD_TYPE=Debug -DENABLE_DNSSEC=ON ..",
+          "commands": [
+            {
+              "annotations": [
+                "SC-MKDIR"
+              ],
+              "command": "mkdir",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MKDIR-PATH",
+                    "BASH-PATH"
+                  ],
+                  "content": "build"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "build"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CMAKE"
+              ],
+              "command": "cmake",
+              "categories": [
+                "BUILD_SYSTEM"
+              ],
+              "args": [
+                {
+                  "content": "-DCMAKE_BUILD_TYPE=Debug"
+                },
+                {
+                  "content": "-DENABLE_DNSSEC=ON"
+                },
+                {
+                  "annotations": [
+                    "SC-CMAKE-PATHTOSOURCEORBUILD"
+                  ],
+                  "content": ".."
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:47:49.086000",
+          "duration_sec": 3.04927
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "export LC_ALL=C.UTF-8\nexport PATH=/snap/bin:/home/runner/work/libnetconf2/libnetconf2/coverity-tools/bin:$PATH\n make ",
+          "commands": [
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:47:52.135000",
+          "duration_sec": 12.414613
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DEFAULT_PACKAGES": "libcmocka-dev zlib1g-dev libssh-dev libssl-dev libpam0g-dev"
+          },
+          "code": "export LSAN_OPTIONS=suppressions=/home/runner/work/libnetconf2/libnetconf2/tests/library_lsan.supp\nctest --output-on-failure",
+          "commands": [
+            {
+              "annotations": [
+                "SC-CTEST"
+              ],
+              "command": "ctest",
+              "categories": [
+                "TEST_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CTEST-OUTPUT-ON-FAILURE"
+                  ],
+                  "content": "--output-on-failure"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-08-07 12:48:04.550000",
+          "duration_sec": 1.988967
+        }
+      ]
+    }
+  ],
+  "total_logs_size": 2669350
+}

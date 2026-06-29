@@ -1,0 +1,5271 @@
+{
+  "_id": "plasma-umass/scalene_.github/workflows/build-and-upload.yml_75_1",
+  "repository_name": "plasma-umass/scalene",
+  "workflow_path": ".github/workflows/build-and-upload.yml",
+  "run_number": 75,
+  "run_attempt": 1,
+  "metadata": {
+    "id": 6165039942,
+    "name": "build & upload",
+    "node_id": "WFR_kwLODaGv788AAAABb3cLRg",
+    "head_branch": "v1.5.30",
+    "head_sha": "fe5963778038fec76a993cfe6eeee504282d05d5",
+    "path": ".github/workflows/build-and-upload.yml",
+    "display_title": "Adds line navigation from Scalene -> VS Code",
+    "run_number": 75,
+    "event": "release",
+    "status": "completed",
+    "conclusion": "success",
+    "workflow_id": 25070202,
+    "check_suite_id": 16097855550,
+    "check_suite_node_id": "CS_kwDODaGv788AAAADv4HIPg",
+    "url": "https://api.github.com/repos/plasma-umass/scalene/actions/runs/6165039942",
+    "html_url": "https://github.com/plasma-umass/scalene/actions/runs/6165039942",
+    "pull_requests": [],
+    "created_at": "2023-09-12T21:26:50Z",
+    "updated_at": "2023-09-12T21:29:10Z",
+    "actor": {
+      "login": "emeryberger",
+      "id": 1612723,
+      "node_id": "MDQ6VXNlcjE2MTI3MjM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1612723?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/emeryberger",
+      "html_url": "https://github.com/emeryberger",
+      "followers_url": "https://api.github.com/users/emeryberger/followers",
+      "following_url": "https://api.github.com/users/emeryberger/following{/other_user}",
+      "gists_url": "https://api.github.com/users/emeryberger/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/emeryberger/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/emeryberger/subscriptions",
+      "organizations_url": "https://api.github.com/users/emeryberger/orgs",
+      "repos_url": "https://api.github.com/users/emeryberger/repos",
+      "events_url": "https://api.github.com/users/emeryberger/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/emeryberger/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "run_attempt": 1,
+    "referenced_workflows": [],
+    "run_started_at": "2023-09-12T21:26:50Z",
+    "triggering_actor": {
+      "login": "emeryberger",
+      "id": 1612723,
+      "node_id": "MDQ6VXNlcjE2MTI3MjM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1612723?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/emeryberger",
+      "html_url": "https://github.com/emeryberger",
+      "followers_url": "https://api.github.com/users/emeryberger/followers",
+      "following_url": "https://api.github.com/users/emeryberger/following{/other_user}",
+      "gists_url": "https://api.github.com/users/emeryberger/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/emeryberger/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/emeryberger/subscriptions",
+      "organizations_url": "https://api.github.com/users/emeryberger/orgs",
+      "repos_url": "https://api.github.com/users/emeryberger/repos",
+      "events_url": "https://api.github.com/users/emeryberger/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/emeryberger/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "jobs_url": "https://api.github.com/repos/plasma-umass/scalene/actions/runs/6165039942/jobs",
+    "logs_url": "https://api.github.com/repos/plasma-umass/scalene/actions/runs/6165039942/logs",
+    "check_suite_url": "https://api.github.com/repos/plasma-umass/scalene/check-suites/16097855550",
+    "artifacts_url": "https://api.github.com/repos/plasma-umass/scalene/actions/runs/6165039942/artifacts",
+    "cancel_url": "https://api.github.com/repos/plasma-umass/scalene/actions/runs/6165039942/cancel",
+    "rerun_url": "https://api.github.com/repos/plasma-umass/scalene/actions/runs/6165039942/rerun",
+    "previous_attempt_url": null,
+    "workflow_url": "https://api.github.com/repos/plasma-umass/scalene/actions/workflows/25070202",
+    "head_commit": {
+      "id": "fe5963778038fec76a993cfe6eeee504282d05d5",
+      "tree_id": "c53d83b7edc9a3fbb0b82c078556b78d69ce3dec",
+      "message": "Bumped.",
+      "timestamp": "2023-09-12T21:22:54Z",
+      "author": {
+        "name": "Emery Berger",
+        "email": "emery.berger@gmail.com"
+      },
+      "committer": {
+        "name": "Emery Berger",
+        "email": "emery.berger@gmail.com"
+      }
+    },
+    "repository": {
+      "id": 228700143,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMjg3MDAxNDM=",
+      "name": "scalene",
+      "full_name": "plasma-umass/scalene",
+      "private": false,
+      "owner": {
+        "login": "plasma-umass",
+        "id": 1880823,
+        "node_id": "MDEyOk9yZ2FuaXphdGlvbjE4ODA4MjM=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1880823?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/plasma-umass",
+        "html_url": "https://github.com/plasma-umass",
+        "followers_url": "https://api.github.com/users/plasma-umass/followers",
+        "following_url": "https://api.github.com/users/plasma-umass/following{/other_user}",
+        "gists_url": "https://api.github.com/users/plasma-umass/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/plasma-umass/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/plasma-umass/subscriptions",
+        "organizations_url": "https://api.github.com/users/plasma-umass/orgs",
+        "repos_url": "https://api.github.com/users/plasma-umass/repos",
+        "events_url": "https://api.github.com/users/plasma-umass/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/plasma-umass/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/plasma-umass/scalene",
+      "description": "Scalene: a high-performance, high-precision CPU, GPU, and memory profiler for Python with AI-powered optimization proposals",
+      "fork": false,
+      "url": "https://api.github.com/repos/plasma-umass/scalene",
+      "forks_url": "https://api.github.com/repos/plasma-umass/scalene/forks",
+      "keys_url": "https://api.github.com/repos/plasma-umass/scalene/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/plasma-umass/scalene/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/plasma-umass/scalene/teams",
+      "hooks_url": "https://api.github.com/repos/plasma-umass/scalene/hooks",
+      "issue_events_url": "https://api.github.com/repos/plasma-umass/scalene/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/plasma-umass/scalene/events",
+      "assignees_url": "https://api.github.com/repos/plasma-umass/scalene/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/plasma-umass/scalene/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/plasma-umass/scalene/tags",
+      "blobs_url": "https://api.github.com/repos/plasma-umass/scalene/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/plasma-umass/scalene/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/plasma-umass/scalene/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/plasma-umass/scalene/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/plasma-umass/scalene/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/plasma-umass/scalene/languages",
+      "stargazers_url": "https://api.github.com/repos/plasma-umass/scalene/stargazers",
+      "contributors_url": "https://api.github.com/repos/plasma-umass/scalene/contributors",
+      "subscribers_url": "https://api.github.com/repos/plasma-umass/scalene/subscribers",
+      "subscription_url": "https://api.github.com/repos/plasma-umass/scalene/subscription",
+      "commits_url": "https://api.github.com/repos/plasma-umass/scalene/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/plasma-umass/scalene/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/plasma-umass/scalene/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/plasma-umass/scalene/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/plasma-umass/scalene/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/plasma-umass/scalene/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/plasma-umass/scalene/merges",
+      "archive_url": "https://api.github.com/repos/plasma-umass/scalene/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/plasma-umass/scalene/downloads",
+      "issues_url": "https://api.github.com/repos/plasma-umass/scalene/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/plasma-umass/scalene/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/plasma-umass/scalene/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/plasma-umass/scalene/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/plasma-umass/scalene/labels{/name}",
+      "releases_url": "https://api.github.com/repos/plasma-umass/scalene/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/plasma-umass/scalene/deployments"
+    },
+    "head_repository": {
+      "id": 228700143,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMjg3MDAxNDM=",
+      "name": "scalene",
+      "full_name": "plasma-umass/scalene",
+      "private": false,
+      "owner": {
+        "login": "plasma-umass",
+        "id": 1880823,
+        "node_id": "MDEyOk9yZ2FuaXphdGlvbjE4ODA4MjM=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1880823?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/plasma-umass",
+        "html_url": "https://github.com/plasma-umass",
+        "followers_url": "https://api.github.com/users/plasma-umass/followers",
+        "following_url": "https://api.github.com/users/plasma-umass/following{/other_user}",
+        "gists_url": "https://api.github.com/users/plasma-umass/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/plasma-umass/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/plasma-umass/subscriptions",
+        "organizations_url": "https://api.github.com/users/plasma-umass/orgs",
+        "repos_url": "https://api.github.com/users/plasma-umass/repos",
+        "events_url": "https://api.github.com/users/plasma-umass/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/plasma-umass/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/plasma-umass/scalene",
+      "description": "Scalene: a high-performance, high-precision CPU, GPU, and memory profiler for Python with AI-powered optimization proposals",
+      "fork": false,
+      "url": "https://api.github.com/repos/plasma-umass/scalene",
+      "forks_url": "https://api.github.com/repos/plasma-umass/scalene/forks",
+      "keys_url": "https://api.github.com/repos/plasma-umass/scalene/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/plasma-umass/scalene/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/plasma-umass/scalene/teams",
+      "hooks_url": "https://api.github.com/repos/plasma-umass/scalene/hooks",
+      "issue_events_url": "https://api.github.com/repos/plasma-umass/scalene/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/plasma-umass/scalene/events",
+      "assignees_url": "https://api.github.com/repos/plasma-umass/scalene/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/plasma-umass/scalene/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/plasma-umass/scalene/tags",
+      "blobs_url": "https://api.github.com/repos/plasma-umass/scalene/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/plasma-umass/scalene/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/plasma-umass/scalene/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/plasma-umass/scalene/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/plasma-umass/scalene/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/plasma-umass/scalene/languages",
+      "stargazers_url": "https://api.github.com/repos/plasma-umass/scalene/stargazers",
+      "contributors_url": "https://api.github.com/repos/plasma-umass/scalene/contributors",
+      "subscribers_url": "https://api.github.com/repos/plasma-umass/scalene/subscribers",
+      "subscription_url": "https://api.github.com/repos/plasma-umass/scalene/subscription",
+      "commits_url": "https://api.github.com/repos/plasma-umass/scalene/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/plasma-umass/scalene/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/plasma-umass/scalene/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/plasma-umass/scalene/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/plasma-umass/scalene/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/plasma-umass/scalene/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/plasma-umass/scalene/merges",
+      "archive_url": "https://api.github.com/repos/plasma-umass/scalene/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/plasma-umass/scalene/downloads",
+      "issues_url": "https://api.github.com/repos/plasma-umass/scalene/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/plasma-umass/scalene/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/plasma-umass/scalene/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/plasma-umass/scalene/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/plasma-umass/scalene/labels{/name}",
+      "releases_url": "https://api.github.com/repos/plasma-umass/scalene/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/plasma-umass/scalene/deployments"
+    }
+  },
+  "logs_archive": {
+    "path": "/data/logs/plasma-umass/scalene/build_upload_7c20/75-1.tar.gz"
+  },
+  "log_insights": [
+    {
+      "file": "7_build-and-upload (3.9, macos-latest).txt",
+      "total_lines": 1019,
+      "log_size": 96382,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "macos-12",
+      "image_version": "20230901.1",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "download-artifact",
+          "version": "v3",
+          "sha": "9bc31d5ccc31df68ecc42ccf4149144866c47d8a",
+          "with": {
+            "name": "devN"
+          },
+          "env": {},
+          "start_date": "2023-09-12 21:27:38.030000",
+          "duration_sec": 2.501166
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "plasma-umass/scalene",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-09-12 21:27:40.531000",
+          "duration_sec": 2.261391
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "setup-python",
+          "version": "v4",
+          "sha": "61a6322f88396a6271a6ee3565807d608ecaddd1",
+          "with": {
+            "python-version": "3.9",
+            "check-latest": "false",
+            "token": "***",
+            "update-environment": "true",
+            "allow-prereleases": "false"
+          },
+          "env": {},
+          "start_date": "2023-09-12 21:27:42.793000",
+          "duration_sec": 0.594782
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/Users/runner/hostedtoolcache/Python/3.9.18/x64",
+            "PKG_CONFIG_PATH": "/Users/runner/hostedtoolcache/Python/3.9.18/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.9.18/x64",
+            "Python2_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.9.18/x64",
+            "Python3_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.9.18/x64"
+          },
+          "code": "pip3 install --upgrade setuptools wheel twine build virtualenv",
+          "commands": [
+            {
+              "annotations": [
+                "SC-PIP-INSTALL"
+              ],
+              "command": "pip3",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-F-UPGRADE"
+                  ],
+                  "content": "--upgrade"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "setuptools"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "wheel"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "twine"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "build"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "virtualenv"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:27:43.388000",
+          "duration_sec": 14.428001
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/Users/runner/hostedtoolcache/Python/3.9.18/x64",
+            "PKG_CONFIG_PATH": "/Users/runner/hostedtoolcache/Python/3.9.18/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.9.18/x64",
+            "Python2_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.9.18/x64",
+            "Python3_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.9.18/x64"
+          },
+          "code": "sudo rm -Rf /Library/Developer/CommandLineTools/SDKs/*",
+          "commands": [
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-RM"
+              ],
+              "command": "rm",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-RM-F-RECURSIVE",
+                    "SC-RM-F-FORCE"
+                  ],
+                  "content": "-Rf"
+                },
+                {
+                  "annotations": [
+                    "SC-RM-PATH",
+                    "BASH-PATH"
+                  ],
+                  "content": "/Library/Developer/CommandLineTools/SDKs/*"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:27:57.816000",
+          "duration_sec": 18.064537
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/Users/runner/hostedtoolcache/Python/3.9.18/x64",
+            "PKG_CONFIG_PATH": "/Users/runner/hostedtoolcache/Python/3.9.18/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.9.18/x64",
+            "Python2_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.9.18/x64",
+            "Python3_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.9.18/x64"
+          },
+          "code": "make bdist",
+          "commands": [
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "bdist"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:28:15.880000",
+          "duration_sec": 45.300232
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/Users/runner/hostedtoolcache/Python/3.9.18/x64",
+            "PKG_CONFIG_PATH": "/Users/runner/hostedtoolcache/Python/3.9.18/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.9.18/x64",
+            "Python2_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.9.18/x64",
+            "Python3_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.9.18/x64"
+          },
+          "code": "for P in x86_64 arm64 arm64e; do\n  for F in build/lib.*/scalene/*.so ; do\n    file $F | grep -q \"\\\\b$P\\\\b\"\n    if [ $? != 0 ]; then\n      echo \"$P missing\"\n      exit 1\n    fi\n  done\ndone",
+          "commands": [
+            {
+              "command": "file",
+              "args": [
+                {
+                  "content": "$F"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-GREP"
+              ],
+              "command": "grep",
+              "categories": [
+                "SEARCH",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-GREP-F-SILENT"
+                  ],
+                  "content": "-q"
+                },
+                {
+                  "annotations": [
+                    "SC-GREP-PATTERN"
+                  ],
+                  "content": "\"\\\\b$P\\\\b\""
+                }
+              ]
+            },
+            {
+              "command": "[",
+              "args": [
+                {
+                  "content": "$?"
+                },
+                {
+                  "content": "!="
+                },
+                {
+                  "content": "0"
+                },
+                {
+                  "content": "]"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"$P missing\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-EXIT"
+              ],
+              "command": "exit",
+              "categories": [
+                "CONTROL_FLOW"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-EXIT-CODE"
+                  ],
+                  "content": "1"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:29:01.180000",
+          "duration_sec": 0.201044
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/Users/runner/hostedtoolcache/Python/3.9.18/x64",
+            "PKG_CONFIG_PATH": "/Users/runner/hostedtoolcache/Python/3.9.18/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.9.18/x64",
+            "Python2_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.9.18/x64",
+            "Python3_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.9.18/x64",
+            "TWINE_USERNAME": "***",
+            "TWINE_PASSWORD": "***"
+          },
+          "code": "twine upload --verbose dist/*",
+          "commands": [
+            {
+              "command": "twine",
+              "args": [
+                {
+                  "content": "upload"
+                },
+                {
+                  "content": "--verbose"
+                },
+                {
+                  "content": "dist/*"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:29:01.381000",
+          "duration_sec": 3.96917
+        }
+      ]
+    },
+    {
+      "file": "4_build-and-upload (3.8, windows-latest).txt",
+      "total_lines": 918,
+      "log_size": 82479,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "windows-2022",
+      "image_version": "20230903.2.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "download-artifact",
+          "version": "v3",
+          "sha": "9bc31d5ccc31df68ecc42ccf4149144866c47d8a",
+          "with": {
+            "name": "devN"
+          },
+          "env": {},
+          "start_date": "2023-09-12 21:27:18.773000",
+          "duration_sec": 1.219126
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "plasma-umass/scalene",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-09-12 21:27:19.993000",
+          "duration_sec": 5.802931
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "setup-python",
+          "version": "v4",
+          "sha": "61a6322f88396a6271a6ee3565807d608ecaddd1",
+          "with": {
+            "python-version": "3.8",
+            "check-latest": "false",
+            "token": "***",
+            "update-environment": "true",
+            "allow-prereleases": "false"
+          },
+          "env": {},
+          "start_date": "2023-09-12 21:27:25.796000",
+          "duration_sec": 0.400483
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "C:\\hostedtoolcache\\windows\\Python\\3.8.10\\x64",
+            "PKG_CONFIG_PATH": "C:\\hostedtoolcache\\windows\\Python\\3.8.10\\x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "C:\\hostedtoolcache\\windows\\Python\\3.8.10\\x64",
+            "Python2_ROOT_DIR": "C:\\hostedtoolcache\\windows\\Python\\3.8.10\\x64",
+            "Python3_ROOT_DIR": "C:\\hostedtoolcache\\windows\\Python\\3.8.10\\x64"
+          },
+          "code": "pip3 install --upgrade setuptools wheel twine build virtualenv",
+          "commands": [
+            {
+              "annotations": [
+                "SC-PIP-INSTALL"
+              ],
+              "command": "pip3",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-F-UPGRADE"
+                  ],
+                  "content": "--upgrade"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "setuptools"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "wheel"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "twine"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "build"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "virtualenv"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:27:26.196000",
+          "duration_sec": 33.45459
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "C:\\hostedtoolcache\\windows\\Python\\3.8.10\\x64",
+            "PKG_CONFIG_PATH": "C:\\hostedtoolcache\\windows\\Python\\3.8.10\\x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "C:\\hostedtoolcache\\windows\\Python\\3.8.10\\x64",
+            "Python2_ROOT_DIR": "C:\\hostedtoolcache\\windows\\Python\\3.8.10\\x64",
+            "Python3_ROOT_DIR": "C:\\hostedtoolcache\\windows\\Python\\3.8.10\\x64"
+          },
+          "code": "make bdist",
+          "commands": [
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "bdist"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:27:59.651000",
+          "duration_sec": 21.099833
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "C:\\hostedtoolcache\\windows\\Python\\3.8.10\\x64",
+            "PKG_CONFIG_PATH": "C:\\hostedtoolcache\\windows\\Python\\3.8.10\\x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "C:\\hostedtoolcache\\windows\\Python\\3.8.10\\x64",
+            "Python2_ROOT_DIR": "C:\\hostedtoolcache\\windows\\Python\\3.8.10\\x64",
+            "Python3_ROOT_DIR": "C:\\hostedtoolcache\\windows\\Python\\3.8.10\\x64",
+            "TWINE_USERNAME": "***",
+            "TWINE_PASSWORD": "***"
+          },
+          "code": "twine upload --verbose dist/*",
+          "commands": [
+            {
+              "command": "twine",
+              "args": [
+                {
+                  "content": "upload"
+                },
+                {
+                  "content": "--verbose"
+                },
+                {
+                  "content": "dist/*"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:28:20.750000",
+          "duration_sec": 5.909545
+        }
+      ]
+    },
+    {
+      "file": "14_build-and-upload (3.11, manylinux_2_28).txt",
+      "total_lines": 1167,
+      "log_size": 105676,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20230903.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "download-artifact",
+          "version": "v3",
+          "sha": "9bc31d5ccc31df68ecc42ccf4149144866c47d8a",
+          "with": {
+            "name": "devN"
+          },
+          "env": {},
+          "start_date": "2023-09-12 21:28:02.385000",
+          "duration_sec": 1.268441
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "plasma-umass/scalene",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-09-12 21:28:03.653000",
+          "duration_sec": 1.481998
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "git config --global --add safe.directory \"$GITHUB_WORKSPACE\"\n# setuptool's bdist uses 'git archive' to find files, and fails silently if it can't,\n# leading to missing files in the archive.  Run it separately to force a failure in that case.\n(cd scalene; git archive --prefix scalene/ HEAD | tar -t > /dev/null)",
+          "commands": [
+            {
+              "annotations": [
+                "SC-GIT"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL"
+              ],
+              "args": [
+                {
+                  "content": "config"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-GLOBAL"
+                  ],
+                  "content": "--global"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-ADD"
+                  ],
+                  "content": "--add safe.directory"
+                },
+                {
+                  "content": "\"$GITHUB_WORKSPACE\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "scalene"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-GIT"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL"
+              ],
+              "args": [
+                {
+                  "content": "archive"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-PREFIX"
+                  ],
+                  "content": "--prefix scalene/"
+                },
+                {
+                  "content": "HEAD"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-TAR"
+              ],
+              "command": "tar",
+              "categories": [
+                "ARCHIVE",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-TAR-T"
+                  ],
+                  "content": "-t"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:28:05.135000",
+          "duration_sec": 0.130208
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "PYV=`echo \"3.11\" | tr -d \".\"`; ls -d -1 /opt/python/cp$PYV*/bin | head -n 1 >> $GITHUB_PATH\ncat $GITHUB_PATH",
+          "commands": [
+            {
+              "annotations": [
+                "SC-CAT"
+              ],
+              "command": "cat",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CAT-PATH"
+                  ],
+                  "content": "$GITHUB_PATH"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"3.11\""
+                }
+              ]
+            },
+            {
+              "command": "tr",
+              "args": [
+                {
+                  "content": "-d"
+                },
+                {
+                  "content": "\".\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-LS"
+              ],
+              "command": "ls",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-LS-F-D"
+                  ],
+                  "content": "-d"
+                },
+                {
+                  "annotations": [
+                    "SC-LS-F-1"
+                  ],
+                  "content": "-1"
+                },
+                {
+                  "annotations": [
+                    "SC-LS-PATH"
+                  ],
+                  "content": "/opt/python/cp$PYV*/bin"
+                }
+              ]
+            },
+            {
+              "command": "head",
+              "args": [
+                {
+                  "content": "-n"
+                },
+                {
+                  "content": "1"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:28:05.266000",
+          "duration_sec": 0.111749
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "pip3 install --upgrade setuptools wheel twine build virtualenv",
+          "commands": [
+            {
+              "annotations": [
+                "SC-PIP-INSTALL"
+              ],
+              "command": "pip3",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-F-UPGRADE"
+                  ],
+                  "content": "--upgrade"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "setuptools"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "wheel"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "twine"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "build"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "virtualenv"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:28:05.377000",
+          "duration_sec": 11.214689
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "make bdist",
+          "commands": [
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "bdist"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:28:16.592000",
+          "duration_sec": 22.000845
+        },
+        {
+          "type": "shell",
+          "env": {
+            "TWINE_USERNAME": "***",
+            "TWINE_PASSWORD": "***"
+          },
+          "code": "twine upload --verbose dist/*",
+          "commands": [
+            {
+              "command": "twine",
+              "args": [
+                {
+                  "content": "upload"
+                },
+                {
+                  "content": "--verbose"
+                },
+                {
+                  "content": "dist/*"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:28:38.593000",
+          "duration_sec": 4.188066
+        }
+      ]
+    },
+    {
+      "file": "1_create .devN build date coordinated across all matrix jobs.txt",
+      "total_lines": 67,
+      "log_size": 4579,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20230903.1.0",
+      "steps": [
+        {
+          "type": "shell",
+          "env": {},
+          "code": "TZ='America/New_York' date '+%Y%m%d%H%M' > devN.txt",
+          "commands": [
+            {
+              "command": "date",
+              "args": [
+                {
+                  "content": "'+%Y%m%d%H%M'"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:26:59.617000",
+          "duration_sec": 0.078107
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "upload-artifact",
+          "version": "v3",
+          "sha": "a8a3f3ad30e3422c9c7b888a15615d19a852ae32",
+          "with": {
+            "name": "devN",
+            "path": "devN.txt",
+            "if-no-files-found": "warn"
+          },
+          "env": {},
+          "start_date": "2023-09-12 21:26:59.695000",
+          "duration_sec": 0.861388
+        }
+      ]
+    },
+    {
+      "file": "10_build-and-upload (3.10, manylinux_2_28).txt",
+      "total_lines": 1174,
+      "log_size": 106810,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20230903.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "download-artifact",
+          "version": "v3",
+          "sha": "9bc31d5ccc31df68ecc42ccf4149144866c47d8a",
+          "with": {
+            "name": "devN"
+          },
+          "env": {},
+          "start_date": "2023-09-12 21:27:57.302000",
+          "duration_sec": 1.331956
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "plasma-umass/scalene",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-09-12 21:27:58.634000",
+          "duration_sec": 1.39976
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "git config --global --add safe.directory \"$GITHUB_WORKSPACE\"\n# setuptool's bdist uses 'git archive' to find files, and fails silently if it can't,\n# leading to missing files in the archive.  Run it separately to force a failure in that case.\n(cd scalene; git archive --prefix scalene/ HEAD | tar -t > /dev/null)",
+          "commands": [
+            {
+              "annotations": [
+                "SC-GIT"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL"
+              ],
+              "args": [
+                {
+                  "content": "config"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-GLOBAL"
+                  ],
+                  "content": "--global"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-ADD"
+                  ],
+                  "content": "--add safe.directory"
+                },
+                {
+                  "content": "\"$GITHUB_WORKSPACE\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "scalene"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-GIT"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL"
+              ],
+              "args": [
+                {
+                  "content": "archive"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-PREFIX"
+                  ],
+                  "content": "--prefix scalene/"
+                },
+                {
+                  "content": "HEAD"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-TAR"
+              ],
+              "command": "tar",
+              "categories": [
+                "ARCHIVE",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-TAR-T"
+                  ],
+                  "content": "-t"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:28:00.034000",
+          "duration_sec": 0.130603
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "PYV=`echo \"3.10\" | tr -d \".\"`; ls -d -1 /opt/python/cp$PYV*/bin | head -n 1 >> $GITHUB_PATH\ncat $GITHUB_PATH",
+          "commands": [
+            {
+              "annotations": [
+                "SC-CAT"
+              ],
+              "command": "cat",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CAT-PATH"
+                  ],
+                  "content": "$GITHUB_PATH"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"3.10\""
+                }
+              ]
+            },
+            {
+              "command": "tr",
+              "args": [
+                {
+                  "content": "-d"
+                },
+                {
+                  "content": "\".\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-LS"
+              ],
+              "command": "ls",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-LS-F-D"
+                  ],
+                  "content": "-d"
+                },
+                {
+                  "annotations": [
+                    "SC-LS-F-1"
+                  ],
+                  "content": "-1"
+                },
+                {
+                  "annotations": [
+                    "SC-LS-PATH"
+                  ],
+                  "content": "/opt/python/cp$PYV*/bin"
+                }
+              ]
+            },
+            {
+              "command": "head",
+              "args": [
+                {
+                  "content": "-n"
+                },
+                {
+                  "content": "1"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:28:00.165000",
+          "duration_sec": 0.112934
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "pip3 install --upgrade setuptools wheel twine build virtualenv",
+          "commands": [
+            {
+              "annotations": [
+                "SC-PIP-INSTALL"
+              ],
+              "command": "pip3",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-F-UPGRADE"
+                  ],
+                  "content": "--upgrade"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "setuptools"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "wheel"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "twine"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "build"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "virtualenv"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:28:00.278000",
+          "duration_sec": 10.677386
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "make bdist",
+          "commands": [
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "bdist"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:28:10.955000",
+          "duration_sec": 21.273039
+        },
+        {
+          "type": "shell",
+          "env": {
+            "TWINE_USERNAME": "***",
+            "TWINE_PASSWORD": "***"
+          },
+          "code": "twine upload --verbose dist/*",
+          "commands": [
+            {
+              "command": "twine",
+              "args": [
+                {
+                  "content": "upload"
+                },
+                {
+                  "content": "--verbose"
+                },
+                {
+                  "content": "dist/*"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:28:32.228000",
+          "duration_sec": 4.290971
+        }
+      ]
+    },
+    {
+      "file": "15_build-and-upload (3.11, macos-latest).txt",
+      "total_lines": 1560,
+      "log_size": 156849,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "macos-12",
+      "image_version": "20230901.1",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "download-artifact",
+          "version": "v3",
+          "sha": "9bc31d5ccc31df68ecc42ccf4149144866c47d8a",
+          "with": {
+            "name": "devN"
+          },
+          "env": {},
+          "start_date": "2023-09-12 21:27:20.183000",
+          "duration_sec": 2.259493
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "plasma-umass/scalene",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-09-12 21:27:22.442000",
+          "duration_sec": 1.945989
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "setup-python",
+          "version": "v4",
+          "sha": "61a6322f88396a6271a6ee3565807d608ecaddd1",
+          "with": {
+            "python-version": "3.11",
+            "check-latest": "false",
+            "token": "***",
+            "update-environment": "true",
+            "allow-prereleases": "false"
+          },
+          "env": {},
+          "start_date": "2023-09-12 21:27:24.388000",
+          "duration_sec": 0.341868
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/Users/runner/hostedtoolcache/Python/3.11.5/x64",
+            "PKG_CONFIG_PATH": "/Users/runner/hostedtoolcache/Python/3.11.5/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.11.5/x64",
+            "Python2_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.11.5/x64",
+            "Python3_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.11.5/x64"
+          },
+          "code": "pip3 install --upgrade setuptools wheel twine build virtualenv",
+          "commands": [
+            {
+              "annotations": [
+                "SC-PIP-INSTALL"
+              ],
+              "command": "pip3",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-F-UPGRADE"
+                  ],
+                  "content": "--upgrade"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "setuptools"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "wheel"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "twine"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "build"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "virtualenv"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:27:24.730000",
+          "duration_sec": 16.446402
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/Users/runner/hostedtoolcache/Python/3.11.5/x64",
+            "PKG_CONFIG_PATH": "/Users/runner/hostedtoolcache/Python/3.11.5/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.11.5/x64",
+            "Python2_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.11.5/x64",
+            "Python3_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.11.5/x64"
+          },
+          "code": "sudo rm -Rf /Library/Developer/CommandLineTools/SDKs/*",
+          "commands": [
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-RM"
+              ],
+              "command": "rm",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-RM-F-RECURSIVE",
+                    "SC-RM-F-FORCE"
+                  ],
+                  "content": "-Rf"
+                },
+                {
+                  "annotations": [
+                    "SC-RM-PATH",
+                    "BASH-PATH"
+                  ],
+                  "content": "/Library/Developer/CommandLineTools/SDKs/*"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:27:41.176000",
+          "duration_sec": 16.432179
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/Users/runner/hostedtoolcache/Python/3.11.5/x64",
+            "PKG_CONFIG_PATH": "/Users/runner/hostedtoolcache/Python/3.11.5/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.11.5/x64",
+            "Python2_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.11.5/x64",
+            "Python3_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.11.5/x64"
+          },
+          "code": "make sdist",
+          "commands": [
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "sdist"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:27:57.608000",
+          "duration_sec": 16.890795
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/Users/runner/hostedtoolcache/Python/3.11.5/x64",
+            "PKG_CONFIG_PATH": "/Users/runner/hostedtoolcache/Python/3.11.5/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.11.5/x64",
+            "Python2_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.11.5/x64",
+            "Python3_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.11.5/x64"
+          },
+          "code": "make bdist",
+          "commands": [
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "bdist"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:28:14.499000",
+          "duration_sec": 41.369701
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/Users/runner/hostedtoolcache/Python/3.11.5/x64",
+            "PKG_CONFIG_PATH": "/Users/runner/hostedtoolcache/Python/3.11.5/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.11.5/x64",
+            "Python2_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.11.5/x64",
+            "Python3_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.11.5/x64"
+          },
+          "code": "for P in x86_64 arm64 arm64e; do\n  for F in build/lib.*/scalene/*.so ; do\n    file $F | grep -q \"\\\\b$P\\\\b\"\n    if [ $? != 0 ]; then\n      echo \"$P missing\"\n      exit 1\n    fi\n  done\ndone",
+          "commands": [
+            {
+              "command": "file",
+              "args": [
+                {
+                  "content": "$F"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-GREP"
+              ],
+              "command": "grep",
+              "categories": [
+                "SEARCH",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-GREP-F-SILENT"
+                  ],
+                  "content": "-q"
+                },
+                {
+                  "annotations": [
+                    "SC-GREP-PATTERN"
+                  ],
+                  "content": "\"\\\\b$P\\\\b\""
+                }
+              ]
+            },
+            {
+              "command": "[",
+              "args": [
+                {
+                  "content": "$?"
+                },
+                {
+                  "content": "!="
+                },
+                {
+                  "content": "0"
+                },
+                {
+                  "content": "]"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"$P missing\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-EXIT"
+              ],
+              "command": "exit",
+              "categories": [
+                "CONTROL_FLOW"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-EXIT-CODE"
+                  ],
+                  "content": "1"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:28:55.869000",
+          "duration_sec": 0.153116
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/Users/runner/hostedtoolcache/Python/3.11.5/x64",
+            "PKG_CONFIG_PATH": "/Users/runner/hostedtoolcache/Python/3.11.5/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.11.5/x64",
+            "Python2_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.11.5/x64",
+            "Python3_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.11.5/x64",
+            "TWINE_USERNAME": "***",
+            "TWINE_PASSWORD": "***"
+          },
+          "code": "twine upload --verbose dist/*",
+          "commands": [
+            {
+              "command": "twine",
+              "args": [
+                {
+                  "content": "upload"
+                },
+                {
+                  "content": "--verbose"
+                },
+                {
+                  "content": "dist/*"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:28:56.022000",
+          "duration_sec": 5.683546
+        }
+      ]
+    },
+    {
+      "file": "11_build-and-upload (3.10, macos-latest).txt",
+      "total_lines": 1014,
+      "log_size": 94893,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "macos-12",
+      "image_version": "20230901.1",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "download-artifact",
+          "version": "v3",
+          "sha": "9bc31d5ccc31df68ecc42ccf4149144866c47d8a",
+          "with": {
+            "name": "devN"
+          },
+          "env": {},
+          "start_date": "2023-09-12 21:27:16.548000",
+          "duration_sec": 1.51893
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "plasma-umass/scalene",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-09-12 21:27:18.067000",
+          "duration_sec": 1.49074
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "setup-python",
+          "version": "v4",
+          "sha": "61a6322f88396a6271a6ee3565807d608ecaddd1",
+          "with": {
+            "python-version": "3.10",
+            "check-latest": "false",
+            "token": "***",
+            "update-environment": "true",
+            "allow-prereleases": "false"
+          },
+          "env": {},
+          "start_date": "2023-09-12 21:27:19.558000",
+          "duration_sec": 0.247125
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/Users/runner/hostedtoolcache/Python/3.10.13/x64",
+            "PKG_CONFIG_PATH": "/Users/runner/hostedtoolcache/Python/3.10.13/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.10.13/x64",
+            "Python2_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.10.13/x64",
+            "Python3_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.10.13/x64"
+          },
+          "code": "pip3 install --upgrade setuptools wheel twine build virtualenv",
+          "commands": [
+            {
+              "annotations": [
+                "SC-PIP-INSTALL"
+              ],
+              "command": "pip3",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-F-UPGRADE"
+                  ],
+                  "content": "--upgrade"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "setuptools"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "wheel"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "twine"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "build"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "virtualenv"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:27:19.805000",
+          "duration_sec": 10.6328
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/Users/runner/hostedtoolcache/Python/3.10.13/x64",
+            "PKG_CONFIG_PATH": "/Users/runner/hostedtoolcache/Python/3.10.13/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.10.13/x64",
+            "Python2_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.10.13/x64",
+            "Python3_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.10.13/x64"
+          },
+          "code": "sudo rm -Rf /Library/Developer/CommandLineTools/SDKs/*",
+          "commands": [
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-RM"
+              ],
+              "command": "rm",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-RM-F-RECURSIVE",
+                    "SC-RM-F-FORCE"
+                  ],
+                  "content": "-Rf"
+                },
+                {
+                  "annotations": [
+                    "SC-RM-PATH",
+                    "BASH-PATH"
+                  ],
+                  "content": "/Library/Developer/CommandLineTools/SDKs/*"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:27:30.438000",
+          "duration_sec": 16.932023
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/Users/runner/hostedtoolcache/Python/3.10.13/x64",
+            "PKG_CONFIG_PATH": "/Users/runner/hostedtoolcache/Python/3.10.13/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.10.13/x64",
+            "Python2_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.10.13/x64",
+            "Python3_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.10.13/x64"
+          },
+          "code": "make bdist",
+          "commands": [
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "bdist"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:27:47.370000",
+          "duration_sec": 42.161039
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/Users/runner/hostedtoolcache/Python/3.10.13/x64",
+            "PKG_CONFIG_PATH": "/Users/runner/hostedtoolcache/Python/3.10.13/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.10.13/x64",
+            "Python2_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.10.13/x64",
+            "Python3_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.10.13/x64"
+          },
+          "code": "for P in x86_64 arm64 arm64e; do\n  for F in build/lib.*/scalene/*.so ; do\n    file $F | grep -q \"\\\\b$P\\\\b\"\n    if [ $? != 0 ]; then\n      echo \"$P missing\"\n      exit 1\n    fi\n  done\ndone",
+          "commands": [
+            {
+              "command": "file",
+              "args": [
+                {
+                  "content": "$F"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-GREP"
+              ],
+              "command": "grep",
+              "categories": [
+                "SEARCH",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-GREP-F-SILENT"
+                  ],
+                  "content": "-q"
+                },
+                {
+                  "annotations": [
+                    "SC-GREP-PATTERN"
+                  ],
+                  "content": "\"\\\\b$P\\\\b\""
+                }
+              ]
+            },
+            {
+              "command": "[",
+              "args": [
+                {
+                  "content": "$?"
+                },
+                {
+                  "content": "!="
+                },
+                {
+                  "content": "0"
+                },
+                {
+                  "content": "]"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"$P missing\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-EXIT"
+              ],
+              "command": "exit",
+              "categories": [
+                "CONTROL_FLOW"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-EXIT-CODE"
+                  ],
+                  "content": "1"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:28:29.531000",
+          "duration_sec": 0.144831
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/Users/runner/hostedtoolcache/Python/3.10.13/x64",
+            "PKG_CONFIG_PATH": "/Users/runner/hostedtoolcache/Python/3.10.13/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.10.13/x64",
+            "Python2_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.10.13/x64",
+            "Python3_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.10.13/x64",
+            "TWINE_USERNAME": "***",
+            "TWINE_PASSWORD": "***"
+          },
+          "code": "twine upload --verbose dist/*",
+          "commands": [
+            {
+              "command": "twine",
+              "args": [
+                {
+                  "content": "upload"
+                },
+                {
+                  "content": "--verbose"
+                },
+                {
+                  "content": "dist/*"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:28:29.676000",
+          "duration_sec": 3.293372
+        }
+      ]
+    },
+    {
+      "file": "6_build-and-upload (3.9, manylinux_2_28).txt",
+      "total_lines": 1163,
+      "log_size": 105147,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20230903.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "download-artifact",
+          "version": "v3",
+          "sha": "9bc31d5ccc31df68ecc42ccf4149144866c47d8a",
+          "with": {
+            "name": "devN"
+          },
+          "env": {},
+          "start_date": "2023-09-12 21:27:49.961000",
+          "duration_sec": 0.579753
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "plasma-umass/scalene",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-09-12 21:27:50.541000",
+          "duration_sec": 0.829079
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "git config --global --add safe.directory \"$GITHUB_WORKSPACE\"\n# setuptool's bdist uses 'git archive' to find files, and fails silently if it can't,\n# leading to missing files in the archive.  Run it separately to force a failure in that case.\n(cd scalene; git archive --prefix scalene/ HEAD | tar -t > /dev/null)",
+          "commands": [
+            {
+              "annotations": [
+                "SC-GIT"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL"
+              ],
+              "args": [
+                {
+                  "content": "config"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-GLOBAL"
+                  ],
+                  "content": "--global"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-ADD"
+                  ],
+                  "content": "--add safe.directory"
+                },
+                {
+                  "content": "\"$GITHUB_WORKSPACE\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "scalene"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-GIT"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL"
+              ],
+              "args": [
+                {
+                  "content": "archive"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-PREFIX"
+                  ],
+                  "content": "--prefix scalene/"
+                },
+                {
+                  "content": "HEAD"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-TAR"
+              ],
+              "command": "tar",
+              "categories": [
+                "ARCHIVE",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-TAR-T"
+                  ],
+                  "content": "-t"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:27:51.370000",
+          "duration_sec": 0.110005
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "PYV=`echo \"3.9\" | tr -d \".\"`; ls -d -1 /opt/python/cp$PYV*/bin | head -n 1 >> $GITHUB_PATH\ncat $GITHUB_PATH",
+          "commands": [
+            {
+              "annotations": [
+                "SC-CAT"
+              ],
+              "command": "cat",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CAT-PATH"
+                  ],
+                  "content": "$GITHUB_PATH"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"3.9\""
+                }
+              ]
+            },
+            {
+              "command": "tr",
+              "args": [
+                {
+                  "content": "-d"
+                },
+                {
+                  "content": "\".\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-LS"
+              ],
+              "command": "ls",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-LS-F-D"
+                  ],
+                  "content": "-d"
+                },
+                {
+                  "annotations": [
+                    "SC-LS-F-1"
+                  ],
+                  "content": "-1"
+                },
+                {
+                  "annotations": [
+                    "SC-LS-PATH"
+                  ],
+                  "content": "/opt/python/cp$PYV*/bin"
+                }
+              ]
+            },
+            {
+              "command": "head",
+              "args": [
+                {
+                  "content": "-n"
+                },
+                {
+                  "content": "1"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:27:51.480000",
+          "duration_sec": 0.097487
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "pip3 install --upgrade setuptools wheel twine build virtualenv",
+          "commands": [
+            {
+              "annotations": [
+                "SC-PIP-INSTALL"
+              ],
+              "command": "pip3",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-F-UPGRADE"
+                  ],
+                  "content": "--upgrade"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "setuptools"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "wheel"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "twine"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "build"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "virtualenv"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:27:51.577000",
+          "duration_sec": 8.834481
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "make bdist",
+          "commands": [
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "bdist"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:28:00.412000",
+          "duration_sec": 15.587302
+        },
+        {
+          "type": "shell",
+          "env": {
+            "TWINE_USERNAME": "***",
+            "TWINE_PASSWORD": "***"
+          },
+          "code": "twine upload --verbose dist/*",
+          "commands": [
+            {
+              "command": "twine",
+              "args": [
+                {
+                  "content": "upload"
+                },
+                {
+                  "content": "--verbose"
+                },
+                {
+                  "content": "dist/*"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:28:15.999000",
+          "duration_sec": 3.620906
+        }
+      ]
+    },
+    {
+      "file": "1_build-and-upload (3.8, manylinux2014).txt",
+      "total_lines": 1193,
+      "log_size": 109838,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20230903.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "download-artifact",
+          "version": "v3",
+          "sha": "9bc31d5ccc31df68ecc42ccf4149144866c47d8a",
+          "with": {
+            "name": "devN"
+          },
+          "env": {},
+          "start_date": "2023-09-12 21:27:51.299000",
+          "duration_sec": 0.529291
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "plasma-umass/scalene",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-09-12 21:27:51.829000",
+          "duration_sec": 1.167523
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "git config --global --add safe.directory \"$GITHUB_WORKSPACE\"\n# setuptool's bdist uses 'git archive' to find files, and fails silently if it can't,\n# leading to missing files in the archive.  Run it separately to force a failure in that case.\n(cd scalene; git archive --prefix scalene/ HEAD | tar -t > /dev/null)",
+          "commands": [
+            {
+              "annotations": [
+                "SC-GIT"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL"
+              ],
+              "args": [
+                {
+                  "content": "config"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-GLOBAL"
+                  ],
+                  "content": "--global"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-ADD"
+                  ],
+                  "content": "--add safe.directory"
+                },
+                {
+                  "content": "\"$GITHUB_WORKSPACE\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "scalene"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-GIT"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL"
+              ],
+              "args": [
+                {
+                  "content": "archive"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-PREFIX"
+                  ],
+                  "content": "--prefix scalene/"
+                },
+                {
+                  "content": "HEAD"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-TAR"
+              ],
+              "command": "tar",
+              "categories": [
+                "ARCHIVE",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-TAR-T"
+                  ],
+                  "content": "-t"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:27:52.996000",
+          "duration_sec": 0.1139
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "PYV=`echo \"3.8\" | tr -d \".\"`; ls -d -1 /opt/python/cp$PYV*/bin | head -n 1 >> $GITHUB_PATH\ncat $GITHUB_PATH",
+          "commands": [
+            {
+              "annotations": [
+                "SC-CAT"
+              ],
+              "command": "cat",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CAT-PATH"
+                  ],
+                  "content": "$GITHUB_PATH"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"3.8\""
+                }
+              ]
+            },
+            {
+              "command": "tr",
+              "args": [
+                {
+                  "content": "-d"
+                },
+                {
+                  "content": "\".\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-LS"
+              ],
+              "command": "ls",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-LS-F-D"
+                  ],
+                  "content": "-d"
+                },
+                {
+                  "annotations": [
+                    "SC-LS-F-1"
+                  ],
+                  "content": "-1"
+                },
+                {
+                  "annotations": [
+                    "SC-LS-PATH"
+                  ],
+                  "content": "/opt/python/cp$PYV*/bin"
+                }
+              ]
+            },
+            {
+              "command": "head",
+              "args": [
+                {
+                  "content": "-n"
+                },
+                {
+                  "content": "1"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:27:53.110000",
+          "duration_sec": 0.096144
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "pip3 install --upgrade setuptools wheel twine build virtualenv",
+          "commands": [
+            {
+              "annotations": [
+                "SC-PIP-INSTALL"
+              ],
+              "command": "pip3",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-F-UPGRADE"
+                  ],
+                  "content": "--upgrade"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "setuptools"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "wheel"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "twine"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "build"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "virtualenv"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:27:53.206000",
+          "duration_sec": 8.699542
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "make bdist",
+          "commands": [
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "bdist"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:28:01.906000",
+          "duration_sec": 16.85532
+        },
+        {
+          "type": "shell",
+          "env": {
+            "TWINE_USERNAME": "***",
+            "TWINE_PASSWORD": "***"
+          },
+          "code": "twine upload --verbose dist/*",
+          "commands": [
+            {
+              "command": "twine",
+              "args": [
+                {
+                  "content": "upload"
+                },
+                {
+                  "content": "--verbose"
+                },
+                {
+                  "content": "dist/*"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:28:18.761000",
+          "duration_sec": 6.405474
+        }
+      ]
+    },
+    {
+      "file": "12_build-and-upload (3.10, windows-latest).txt",
+      "total_lines": 915,
+      "log_size": 82022,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "windows-2022",
+      "image_version": "20230903.2.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "download-artifact",
+          "version": "v3",
+          "sha": "9bc31d5ccc31df68ecc42ccf4149144866c47d8a",
+          "with": {
+            "name": "devN"
+          },
+          "env": {},
+          "start_date": "2023-09-12 21:27:19.201000",
+          "duration_sec": 1.833479
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "plasma-umass/scalene",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-09-12 21:27:21.035000",
+          "duration_sec": 10.697215
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "setup-python",
+          "version": "v4",
+          "sha": "61a6322f88396a6271a6ee3565807d608ecaddd1",
+          "with": {
+            "python-version": "3.10",
+            "check-latest": "false",
+            "token": "***",
+            "update-environment": "true",
+            "allow-prereleases": "false"
+          },
+          "env": {},
+          "start_date": "2023-09-12 21:27:31.732000",
+          "duration_sec": 0.346987
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "C:\\hostedtoolcache\\windows\\Python\\3.10.11\\x64",
+            "PKG_CONFIG_PATH": "C:\\hostedtoolcache\\windows\\Python\\3.10.11\\x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "C:\\hostedtoolcache\\windows\\Python\\3.10.11\\x64",
+            "Python2_ROOT_DIR": "C:\\hostedtoolcache\\windows\\Python\\3.10.11\\x64",
+            "Python3_ROOT_DIR": "C:\\hostedtoolcache\\windows\\Python\\3.10.11\\x64"
+          },
+          "code": "pip3 install --upgrade setuptools wheel twine build virtualenv",
+          "commands": [
+            {
+              "annotations": [
+                "SC-PIP-INSTALL"
+              ],
+              "command": "pip3",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-F-UPGRADE"
+                  ],
+                  "content": "--upgrade"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "setuptools"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "wheel"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "twine"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "build"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "virtualenv"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:27:32.079000",
+          "duration_sec": 28.155971
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "C:\\hostedtoolcache\\windows\\Python\\3.10.11\\x64",
+            "PKG_CONFIG_PATH": "C:\\hostedtoolcache\\windows\\Python\\3.10.11\\x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "C:\\hostedtoolcache\\windows\\Python\\3.10.11\\x64",
+            "Python2_ROOT_DIR": "C:\\hostedtoolcache\\windows\\Python\\3.10.11\\x64",
+            "Python3_ROOT_DIR": "C:\\hostedtoolcache\\windows\\Python\\3.10.11\\x64"
+          },
+          "code": "make bdist",
+          "commands": [
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "bdist"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:28:00.235000",
+          "duration_sec": 16.927616
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "C:\\hostedtoolcache\\windows\\Python\\3.10.11\\x64",
+            "PKG_CONFIG_PATH": "C:\\hostedtoolcache\\windows\\Python\\3.10.11\\x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "C:\\hostedtoolcache\\windows\\Python\\3.10.11\\x64",
+            "Python2_ROOT_DIR": "C:\\hostedtoolcache\\windows\\Python\\3.10.11\\x64",
+            "Python3_ROOT_DIR": "C:\\hostedtoolcache\\windows\\Python\\3.10.11\\x64",
+            "TWINE_USERNAME": "***",
+            "TWINE_PASSWORD": "***"
+          },
+          "code": "twine upload --verbose dist/*",
+          "commands": [
+            {
+              "command": "twine",
+              "args": [
+                {
+                  "content": "upload"
+                },
+                {
+                  "content": "--verbose"
+                },
+                {
+                  "content": "dist/*"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:28:17.162000",
+          "duration_sec": 6.141992
+        }
+      ]
+    },
+    {
+      "file": "8_build-and-upload (3.9, windows-latest).txt",
+      "total_lines": 893,
+      "log_size": 79811,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "windows-2022",
+      "image_version": "20230903.2.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "download-artifact",
+          "version": "v3",
+          "sha": "9bc31d5ccc31df68ecc42ccf4149144866c47d8a",
+          "with": {
+            "name": "devN"
+          },
+          "env": {},
+          "start_date": "2023-09-12 21:27:19.768000",
+          "duration_sec": 1.28963
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "plasma-umass/scalene",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-09-12 21:27:21.058000",
+          "duration_sec": 10.67505
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "setup-python",
+          "version": "v4",
+          "sha": "61a6322f88396a6271a6ee3565807d608ecaddd1",
+          "with": {
+            "python-version": "3.9",
+            "check-latest": "false",
+            "token": "***",
+            "update-environment": "true",
+            "allow-prereleases": "false"
+          },
+          "env": {},
+          "start_date": "2023-09-12 21:27:31.733000",
+          "duration_sec": 0.363711
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "C:\\hostedtoolcache\\windows\\Python\\3.9.13\\x64",
+            "PKG_CONFIG_PATH": "C:\\hostedtoolcache\\windows\\Python\\3.9.13\\x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "C:\\hostedtoolcache\\windows\\Python\\3.9.13\\x64",
+            "Python2_ROOT_DIR": "C:\\hostedtoolcache\\windows\\Python\\3.9.13\\x64",
+            "Python3_ROOT_DIR": "C:\\hostedtoolcache\\windows\\Python\\3.9.13\\x64"
+          },
+          "code": "pip3 install --upgrade setuptools wheel twine build virtualenv",
+          "commands": [
+            {
+              "annotations": [
+                "SC-PIP-INSTALL"
+              ],
+              "command": "pip3",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-F-UPGRADE"
+                  ],
+                  "content": "--upgrade"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "setuptools"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "wheel"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "twine"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "build"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "virtualenv"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:27:32.097000",
+          "duration_sec": 34.576699
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "C:\\hostedtoolcache\\windows\\Python\\3.9.13\\x64",
+            "PKG_CONFIG_PATH": "C:\\hostedtoolcache\\windows\\Python\\3.9.13\\x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "C:\\hostedtoolcache\\windows\\Python\\3.9.13\\x64",
+            "Python2_ROOT_DIR": "C:\\hostedtoolcache\\windows\\Python\\3.9.13\\x64",
+            "Python3_ROOT_DIR": "C:\\hostedtoolcache\\windows\\Python\\3.9.13\\x64"
+          },
+          "code": "make bdist",
+          "commands": [
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "bdist"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:28:06.673000",
+          "duration_sec": 20.885184
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "C:\\hostedtoolcache\\windows\\Python\\3.9.13\\x64",
+            "PKG_CONFIG_PATH": "C:\\hostedtoolcache\\windows\\Python\\3.9.13\\x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "C:\\hostedtoolcache\\windows\\Python\\3.9.13\\x64",
+            "Python2_ROOT_DIR": "C:\\hostedtoolcache\\windows\\Python\\3.9.13\\x64",
+            "Python3_ROOT_DIR": "C:\\hostedtoolcache\\windows\\Python\\3.9.13\\x64",
+            "TWINE_USERNAME": "***",
+            "TWINE_PASSWORD": "***"
+          },
+          "code": "twine upload --verbose dist/*",
+          "commands": [
+            {
+              "command": "twine",
+              "args": [
+                {
+                  "content": "upload"
+                },
+                {
+                  "content": "--verbose"
+                },
+                {
+                  "content": "dist/*"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:28:27.558000",
+          "duration_sec": 4.16696
+        }
+      ]
+    },
+    {
+      "file": "3_build-and-upload (3.8, macos-latest).txt",
+      "total_lines": 1052,
+      "log_size": 98852,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "macos-12",
+      "image_version": "20230901.1",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "download-artifact",
+          "version": "v3",
+          "sha": "9bc31d5ccc31df68ecc42ccf4149144866c47d8a",
+          "with": {
+            "name": "devN"
+          },
+          "env": {},
+          "start_date": "2023-09-12 21:27:22.323000",
+          "duration_sec": 2.415638
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "plasma-umass/scalene",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-09-12 21:27:24.739000",
+          "duration_sec": 2.227344
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "setup-python",
+          "version": "v4",
+          "sha": "61a6322f88396a6271a6ee3565807d608ecaddd1",
+          "with": {
+            "python-version": "3.8",
+            "check-latest": "false",
+            "token": "***",
+            "update-environment": "true",
+            "allow-prereleases": "false"
+          },
+          "env": {},
+          "start_date": "2023-09-12 21:27:26.966000",
+          "duration_sec": 0.438545
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/Users/runner/hostedtoolcache/Python/3.8.18/x64",
+            "PKG_CONFIG_PATH": "/Users/runner/hostedtoolcache/Python/3.8.18/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.8.18/x64",
+            "Python2_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.8.18/x64",
+            "Python3_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.8.18/x64"
+          },
+          "code": "pip3 install --upgrade setuptools wheel twine build virtualenv",
+          "commands": [
+            {
+              "annotations": [
+                "SC-PIP-INSTALL"
+              ],
+              "command": "pip3",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-F-UPGRADE"
+                  ],
+                  "content": "--upgrade"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "setuptools"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "wheel"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "twine"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "build"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "virtualenv"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:27:27.404000",
+          "duration_sec": 16.271674
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/Users/runner/hostedtoolcache/Python/3.8.18/x64",
+            "PKG_CONFIG_PATH": "/Users/runner/hostedtoolcache/Python/3.8.18/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.8.18/x64",
+            "Python2_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.8.18/x64",
+            "Python3_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.8.18/x64"
+          },
+          "code": "sudo rm -Rf /Library/Developer/CommandLineTools/SDKs/*",
+          "commands": [
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-RM"
+              ],
+              "command": "rm",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-RM-F-RECURSIVE",
+                    "SC-RM-F-FORCE"
+                  ],
+                  "content": "-Rf"
+                },
+                {
+                  "annotations": [
+                    "SC-RM-PATH",
+                    "BASH-PATH"
+                  ],
+                  "content": "/Library/Developer/CommandLineTools/SDKs/*"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:27:43.676000",
+          "duration_sec": 18.145465
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/Users/runner/hostedtoolcache/Python/3.8.18/x64",
+            "PKG_CONFIG_PATH": "/Users/runner/hostedtoolcache/Python/3.8.18/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.8.18/x64",
+            "Python2_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.8.18/x64",
+            "Python3_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.8.18/x64"
+          },
+          "code": "make bdist",
+          "commands": [
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "bdist"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:28:01.822000",
+          "duration_sec": 47.311938
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/Users/runner/hostedtoolcache/Python/3.8.18/x64",
+            "PKG_CONFIG_PATH": "/Users/runner/hostedtoolcache/Python/3.8.18/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.8.18/x64",
+            "Python2_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.8.18/x64",
+            "Python3_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.8.18/x64"
+          },
+          "code": "for P in x86_64 arm64 arm64e; do\n  for F in build/lib.*/scalene/*.so ; do\n    file $F | grep -q \"\\\\b$P\\\\b\"\n    if [ $? != 0 ]; then\n      echo \"$P missing\"\n      exit 1\n    fi\n  done\ndone",
+          "commands": [
+            {
+              "command": "file",
+              "args": [
+                {
+                  "content": "$F"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-GREP"
+              ],
+              "command": "grep",
+              "categories": [
+                "SEARCH",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-GREP-F-SILENT"
+                  ],
+                  "content": "-q"
+                },
+                {
+                  "annotations": [
+                    "SC-GREP-PATTERN"
+                  ],
+                  "content": "\"\\\\b$P\\\\b\""
+                }
+              ]
+            },
+            {
+              "command": "[",
+              "args": [
+                {
+                  "content": "$?"
+                },
+                {
+                  "content": "!="
+                },
+                {
+                  "content": "0"
+                },
+                {
+                  "content": "]"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"$P missing\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-EXIT"
+              ],
+              "command": "exit",
+              "categories": [
+                "CONTROL_FLOW"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-EXIT-CODE"
+                  ],
+                  "content": "1"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:28:49.134000",
+          "duration_sec": 0.147425
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/Users/runner/hostedtoolcache/Python/3.8.18/x64",
+            "PKG_CONFIG_PATH": "/Users/runner/hostedtoolcache/Python/3.8.18/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.8.18/x64",
+            "Python2_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.8.18/x64",
+            "Python3_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.8.18/x64",
+            "TWINE_USERNAME": "***",
+            "TWINE_PASSWORD": "***"
+          },
+          "code": "twine upload --verbose dist/*",
+          "commands": [
+            {
+              "command": "twine",
+              "args": [
+                {
+                  "content": "upload"
+                },
+                {
+                  "content": "--verbose"
+                },
+                {
+                  "content": "dist/*"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:28:49.281000",
+          "duration_sec": 4.111996
+        }
+      ]
+    },
+    {
+      "file": "13_build-and-upload (3.11, manylinux2014).txt",
+      "total_lines": 1190,
+      "log_size": 109393,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20230903.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "download-artifact",
+          "version": "v3",
+          "sha": "9bc31d5ccc31df68ecc42ccf4149144866c47d8a",
+          "with": {
+            "name": "devN"
+          },
+          "env": {},
+          "start_date": "2023-09-12 21:27:51.173000",
+          "duration_sec": 0.804507
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "plasma-umass/scalene",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-09-12 21:27:51.977000",
+          "duration_sec": 1.280535
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "git config --global --add safe.directory \"$GITHUB_WORKSPACE\"\n# setuptool's bdist uses 'git archive' to find files, and fails silently if it can't,\n# leading to missing files in the archive.  Run it separately to force a failure in that case.\n(cd scalene; git archive --prefix scalene/ HEAD | tar -t > /dev/null)",
+          "commands": [
+            {
+              "annotations": [
+                "SC-GIT"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL"
+              ],
+              "args": [
+                {
+                  "content": "config"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-GLOBAL"
+                  ],
+                  "content": "--global"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-ADD"
+                  ],
+                  "content": "--add safe.directory"
+                },
+                {
+                  "content": "\"$GITHUB_WORKSPACE\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "scalene"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-GIT"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL"
+              ],
+              "args": [
+                {
+                  "content": "archive"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-PREFIX"
+                  ],
+                  "content": "--prefix scalene/"
+                },
+                {
+                  "content": "HEAD"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-TAR"
+              ],
+              "command": "tar",
+              "categories": [
+                "ARCHIVE",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-TAR-T"
+                  ],
+                  "content": "-t"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:27:53.258000",
+          "duration_sec": 0.115473
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "PYV=`echo \"3.11\" | tr -d \".\"`; ls -d -1 /opt/python/cp$PYV*/bin | head -n 1 >> $GITHUB_PATH\ncat $GITHUB_PATH",
+          "commands": [
+            {
+              "annotations": [
+                "SC-CAT"
+              ],
+              "command": "cat",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CAT-PATH"
+                  ],
+                  "content": "$GITHUB_PATH"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"3.11\""
+                }
+              ]
+            },
+            {
+              "command": "tr",
+              "args": [
+                {
+                  "content": "-d"
+                },
+                {
+                  "content": "\".\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-LS"
+              ],
+              "command": "ls",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-LS-F-D"
+                  ],
+                  "content": "-d"
+                },
+                {
+                  "annotations": [
+                    "SC-LS-F-1"
+                  ],
+                  "content": "-1"
+                },
+                {
+                  "annotations": [
+                    "SC-LS-PATH"
+                  ],
+                  "content": "/opt/python/cp$PYV*/bin"
+                }
+              ]
+            },
+            {
+              "command": "head",
+              "args": [
+                {
+                  "content": "-n"
+                },
+                {
+                  "content": "1"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:27:53.373000",
+          "duration_sec": 0.092077
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "pip3 install --upgrade setuptools wheel twine build virtualenv",
+          "commands": [
+            {
+              "annotations": [
+                "SC-PIP-INSTALL"
+              ],
+              "command": "pip3",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-F-UPGRADE"
+                  ],
+                  "content": "--upgrade"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "setuptools"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "wheel"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "twine"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "build"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "virtualenv"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:27:53.466000",
+          "duration_sec": 9.985905
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "make bdist",
+          "commands": [
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "bdist"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:28:03.451000",
+          "duration_sec": 18.899842
+        },
+        {
+          "type": "shell",
+          "env": {
+            "TWINE_USERNAME": "***",
+            "TWINE_PASSWORD": "***"
+          },
+          "code": "twine upload --verbose dist/*",
+          "commands": [
+            {
+              "command": "twine",
+              "args": [
+                {
+                  "content": "upload"
+                },
+                {
+                  "content": "--verbose"
+                },
+                {
+                  "content": "dist/*"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:28:22.351000",
+          "duration_sec": 6.39345
+        }
+      ]
+    },
+    {
+      "file": "2_build-and-upload (3.8, manylinux_2_28).txt",
+      "total_lines": 1187,
+      "log_size": 108972,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20230903.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "download-artifact",
+          "version": "v3",
+          "sha": "9bc31d5ccc31df68ecc42ccf4149144866c47d8a",
+          "with": {
+            "name": "devN"
+          },
+          "env": {},
+          "start_date": "2023-09-12 21:27:50.593000",
+          "duration_sec": 0.539584
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "plasma-umass/scalene",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-09-12 21:27:51.133000",
+          "duration_sec": 0.997816
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "git config --global --add safe.directory \"$GITHUB_WORKSPACE\"\n# setuptool's bdist uses 'git archive' to find files, and fails silently if it can't,\n# leading to missing files in the archive.  Run it separately to force a failure in that case.\n(cd scalene; git archive --prefix scalene/ HEAD | tar -t > /dev/null)",
+          "commands": [
+            {
+              "annotations": [
+                "SC-GIT"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL"
+              ],
+              "args": [
+                {
+                  "content": "config"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-GLOBAL"
+                  ],
+                  "content": "--global"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-ADD"
+                  ],
+                  "content": "--add safe.directory"
+                },
+                {
+                  "content": "\"$GITHUB_WORKSPACE\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "scalene"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-GIT"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL"
+              ],
+              "args": [
+                {
+                  "content": "archive"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-PREFIX"
+                  ],
+                  "content": "--prefix scalene/"
+                },
+                {
+                  "content": "HEAD"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-TAR"
+              ],
+              "command": "tar",
+              "categories": [
+                "ARCHIVE",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-TAR-T"
+                  ],
+                  "content": "-t"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:27:52.130000",
+          "duration_sec": 0.112912
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "PYV=`echo \"3.8\" | tr -d \".\"`; ls -d -1 /opt/python/cp$PYV*/bin | head -n 1 >> $GITHUB_PATH\ncat $GITHUB_PATH",
+          "commands": [
+            {
+              "annotations": [
+                "SC-CAT"
+              ],
+              "command": "cat",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CAT-PATH"
+                  ],
+                  "content": "$GITHUB_PATH"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"3.8\""
+                }
+              ]
+            },
+            {
+              "command": "tr",
+              "args": [
+                {
+                  "content": "-d"
+                },
+                {
+                  "content": "\".\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-LS"
+              ],
+              "command": "ls",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-LS-F-D"
+                  ],
+                  "content": "-d"
+                },
+                {
+                  "annotations": [
+                    "SC-LS-F-1"
+                  ],
+                  "content": "-1"
+                },
+                {
+                  "annotations": [
+                    "SC-LS-PATH"
+                  ],
+                  "content": "/opt/python/cp$PYV*/bin"
+                }
+              ]
+            },
+            {
+              "command": "head",
+              "args": [
+                {
+                  "content": "-n"
+                },
+                {
+                  "content": "1"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:27:52.243000",
+          "duration_sec": 0.098821
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "pip3 install --upgrade setuptools wheel twine build virtualenv",
+          "commands": [
+            {
+              "annotations": [
+                "SC-PIP-INSTALL"
+              ],
+              "command": "pip3",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-F-UPGRADE"
+                  ],
+                  "content": "--upgrade"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "setuptools"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "wheel"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "twine"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "build"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "virtualenv"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:27:52.342000",
+          "duration_sec": 9.288956
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "make bdist",
+          "commands": [
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "bdist"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:28:01.631000",
+          "duration_sec": 16.282483
+        },
+        {
+          "type": "shell",
+          "env": {
+            "TWINE_USERNAME": "***",
+            "TWINE_PASSWORD": "***"
+          },
+          "code": "twine upload --verbose dist/*",
+          "commands": [
+            {
+              "command": "twine",
+              "args": [
+                {
+                  "content": "upload"
+                },
+                {
+                  "content": "--verbose"
+                },
+                {
+                  "content": "dist/*"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:28:17.914000",
+          "duration_sec": 5.891713
+        }
+      ]
+    },
+    {
+      "file": "5_build-and-upload (3.9, manylinux2014).txt",
+      "total_lines": 1163,
+      "log_size": 105051,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20230903.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "download-artifact",
+          "version": "v3",
+          "sha": "9bc31d5ccc31df68ecc42ccf4149144866c47d8a",
+          "with": {
+            "name": "devN"
+          },
+          "env": {},
+          "start_date": "2023-09-12 21:27:50.753000",
+          "duration_sec": 0.548636
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "plasma-umass/scalene",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-09-12 21:27:51.301000",
+          "duration_sec": 0.976027
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "git config --global --add safe.directory \"$GITHUB_WORKSPACE\"\n# setuptool's bdist uses 'git archive' to find files, and fails silently if it can't,\n# leading to missing files in the archive.  Run it separately to force a failure in that case.\n(cd scalene; git archive --prefix scalene/ HEAD | tar -t > /dev/null)",
+          "commands": [
+            {
+              "annotations": [
+                "SC-GIT"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL"
+              ],
+              "args": [
+                {
+                  "content": "config"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-GLOBAL"
+                  ],
+                  "content": "--global"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-ADD"
+                  ],
+                  "content": "--add safe.directory"
+                },
+                {
+                  "content": "\"$GITHUB_WORKSPACE\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "scalene"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-GIT"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL"
+              ],
+              "args": [
+                {
+                  "content": "archive"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-PREFIX"
+                  ],
+                  "content": "--prefix scalene/"
+                },
+                {
+                  "content": "HEAD"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-TAR"
+              ],
+              "command": "tar",
+              "categories": [
+                "ARCHIVE",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-TAR-T"
+                  ],
+                  "content": "-t"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:27:52.277000",
+          "duration_sec": 0.114811
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "PYV=`echo \"3.9\" | tr -d \".\"`; ls -d -1 /opt/python/cp$PYV*/bin | head -n 1 >> $GITHUB_PATH\ncat $GITHUB_PATH",
+          "commands": [
+            {
+              "annotations": [
+                "SC-CAT"
+              ],
+              "command": "cat",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CAT-PATH"
+                  ],
+                  "content": "$GITHUB_PATH"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"3.9\""
+                }
+              ]
+            },
+            {
+              "command": "tr",
+              "args": [
+                {
+                  "content": "-d"
+                },
+                {
+                  "content": "\".\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-LS"
+              ],
+              "command": "ls",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-LS-F-D"
+                  ],
+                  "content": "-d"
+                },
+                {
+                  "annotations": [
+                    "SC-LS-F-1"
+                  ],
+                  "content": "-1"
+                },
+                {
+                  "annotations": [
+                    "SC-LS-PATH"
+                  ],
+                  "content": "/opt/python/cp$PYV*/bin"
+                }
+              ]
+            },
+            {
+              "command": "head",
+              "args": [
+                {
+                  "content": "-n"
+                },
+                {
+                  "content": "1"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:27:52.392000",
+          "duration_sec": 0.082951
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "pip3 install --upgrade setuptools wheel twine build virtualenv",
+          "commands": [
+            {
+              "annotations": [
+                "SC-PIP-INSTALL"
+              ],
+              "command": "pip3",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-F-UPGRADE"
+                  ],
+                  "content": "--upgrade"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "setuptools"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "wheel"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "twine"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "build"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "virtualenv"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:27:52.475000",
+          "duration_sec": 8.610419
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "make bdist",
+          "commands": [
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "bdist"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:28:01.085000",
+          "duration_sec": 16.398711
+        },
+        {
+          "type": "shell",
+          "env": {
+            "TWINE_USERNAME": "***",
+            "TWINE_PASSWORD": "***"
+          },
+          "code": "twine upload --verbose dist/*",
+          "commands": [
+            {
+              "command": "twine",
+              "args": [
+                {
+                  "content": "upload"
+                },
+                {
+                  "content": "--verbose"
+                },
+                {
+                  "content": "dist/*"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:28:17.484000",
+          "duration_sec": 3.665903
+        }
+      ]
+    },
+    {
+      "file": "9_build-and-upload (3.10, manylinux2014).txt",
+      "total_lines": 1181,
+      "log_size": 107989,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20230903.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "download-artifact",
+          "version": "v3",
+          "sha": "9bc31d5ccc31df68ecc42ccf4149144866c47d8a",
+          "with": {
+            "name": "devN"
+          },
+          "env": {},
+          "start_date": "2023-09-12 21:27:51.639000",
+          "duration_sec": 0.882498
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "plasma-umass/scalene",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-09-12 21:27:52.522000",
+          "duration_sec": 1.392431
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "git config --global --add safe.directory \"$GITHUB_WORKSPACE\"\n# setuptool's bdist uses 'git archive' to find files, and fails silently if it can't,\n# leading to missing files in the archive.  Run it separately to force a failure in that case.\n(cd scalene; git archive --prefix scalene/ HEAD | tar -t > /dev/null)",
+          "commands": [
+            {
+              "annotations": [
+                "SC-GIT"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL"
+              ],
+              "args": [
+                {
+                  "content": "config"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-GLOBAL"
+                  ],
+                  "content": "--global"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-ADD"
+                  ],
+                  "content": "--add safe.directory"
+                },
+                {
+                  "content": "\"$GITHUB_WORKSPACE\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "scalene"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-GIT"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL"
+              ],
+              "args": [
+                {
+                  "content": "archive"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-PREFIX"
+                  ],
+                  "content": "--prefix scalene/"
+                },
+                {
+                  "content": "HEAD"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-TAR"
+              ],
+              "command": "tar",
+              "categories": [
+                "ARCHIVE",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-TAR-T"
+                  ],
+                  "content": "-t"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:27:53.914000",
+          "duration_sec": 0.103315
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "PYV=`echo \"3.10\" | tr -d \".\"`; ls -d -1 /opt/python/cp$PYV*/bin | head -n 1 >> $GITHUB_PATH\ncat $GITHUB_PATH",
+          "commands": [
+            {
+              "annotations": [
+                "SC-CAT"
+              ],
+              "command": "cat",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CAT-PATH"
+                  ],
+                  "content": "$GITHUB_PATH"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"3.10\""
+                }
+              ]
+            },
+            {
+              "command": "tr",
+              "args": [
+                {
+                  "content": "-d"
+                },
+                {
+                  "content": "\".\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-LS"
+              ],
+              "command": "ls",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-LS-F-D"
+                  ],
+                  "content": "-d"
+                },
+                {
+                  "annotations": [
+                    "SC-LS-F-1"
+                  ],
+                  "content": "-1"
+                },
+                {
+                  "annotations": [
+                    "SC-LS-PATH"
+                  ],
+                  "content": "/opt/python/cp$PYV*/bin"
+                }
+              ]
+            },
+            {
+              "command": "head",
+              "args": [
+                {
+                  "content": "-n"
+                },
+                {
+                  "content": "1"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:27:54.017000",
+          "duration_sec": 0.078264
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "pip3 install --upgrade setuptools wheel twine build virtualenv",
+          "commands": [
+            {
+              "annotations": [
+                "SC-PIP-INSTALL"
+              ],
+              "command": "pip3",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-F-UPGRADE"
+                  ],
+                  "content": "--upgrade"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "setuptools"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "wheel"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "twine"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "build"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "virtualenv"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:27:54.096000",
+          "duration_sec": 9.431828
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "make bdist",
+          "commands": [
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "bdist"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:28:03.527000",
+          "duration_sec": 18.952712
+        },
+        {
+          "type": "shell",
+          "env": {
+            "TWINE_USERNAME": "***",
+            "TWINE_PASSWORD": "***"
+          },
+          "code": "twine upload --verbose dist/*",
+          "commands": [
+            {
+              "command": "twine",
+              "args": [
+                {
+                  "content": "upload"
+                },
+                {
+                  "content": "--verbose"
+                },
+                {
+                  "content": "dist/*"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-12 21:28:22.480000",
+          "duration_sec": 4.945563
+        }
+      ]
+    }
+  ],
+  "total_logs_size": 1614795
+}

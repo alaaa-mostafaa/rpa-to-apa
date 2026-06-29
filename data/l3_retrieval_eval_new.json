@@ -1,0 +1,2702 @@
+[
+  {
+    "run_id": "nerdwalletoss/shepherd_.github/workflows/release.yml_351_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "PARTIAL",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "RESCUE"
+  },
+  {
+    "run_id": "ffmpegwasm/ffmpeg.wasm_.github/workflows/main.yml_349_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "openai/openai-node_.github/workflows/test.yml_86_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "getstream/stream-chat-react_.github/workflows/ci.yml_5436_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "WRONG",
+    "prior_top": "CONFIG_ERROR",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "sobhe/hazm_.github/workflows/lint.yml_89_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "ironlanguages/ironpython3_.github/workflows/main.yml_2492_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "p5-wrapper/react_.github/workflows/CD.yml_64_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "lmfdb/lmfdb_.github/workflows/python-package.yml_2229_2",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "microsoft/graspologic_.github/workflows/publish.yml_66_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 0,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "quantumlib/openfermion_.github/workflows/nightly.yml_681_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 4,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "dioxuslabs/blitz_.github/workflows/macos.yml_31_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CONFIG_ERROR",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "freenet/locutus_.github/workflows/ci.yml_1669_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "console-rs/dialoguer_.github/workflows/ci.yml_303_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "hugsy/gef-extras_.github/workflows/run-tests.yml_68_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "segmentio/stats_.github/workflows/go.yml_55_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 3,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "dbup/dbup_.github/workflows/test-code.yml_52_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "DEPENDENCY_CONFLICT",
+    "prior_rank_gt": 2,
+    "n_nbrs": 1,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "1password/onepassword-operator_.github/workflows/release-pr.yml_79_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "WRONG",
+    "prior_top": "CONFIG_ERROR",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "clastix/capsule_.github/workflows/e2e.yml_1058_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "alirezanet/husky.net_.github/workflows/publish.yml_51_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "pewu/topola-viewer_.github/workflows/node.js.yml_128_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "brentp/cyvcf2_.github/workflows/build.yml_181_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "ivanvotti/ember-svg-jar_.github/workflows/ci-ember-svg-jar.yml_106_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "messense/cargo-xwin_.github/workflows/CI.yml_316_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CONFIG_ERROR",
+    "prior_rank_gt": 3,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "serenity-bdd/serenity-cucumber-starter_.github/workflows/gradle-jdk11.yml_28_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "metamask/json-rpc-engine_.github/workflows/publish-main-docs.yml_16_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "WRONG",
+    "prior_top": "CONFIG_ERROR",
+    "prior_rank_gt": 3,
+    "n_nbrs": 4,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "hipages/php-fpm_exporter_.github/workflows/release.yml_33_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 3,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "matanolabs/matano_.github/workflows/pr-build.yml_112_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 4,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "ipfs-shipyard/ipfs-webui_.github/workflows/node-versions.yml_65_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "shopify/js-buy-sdk_dynamic/dependabot/dependabot-updates_1_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "RESCUE"
+  },
+  {
+    "run_id": "eldavoo/whatsapp-crypt14-crypt15-decrypter_.github/workflows/lint-test.yml_42_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "WRONG",
+    "prior_top": "CONFIG_ERROR",
+    "prior_rank_gt": 3,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "d2-projects/d2-admin_.github/workflows/release.yml_99_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CONFIG_ERROR",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "vanus-labs/vanus_.github/workflows/docker-build.yml_212_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "easypost/easypost-node_.github/workflows/ci.yml_819_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 0,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "slackadays/clipboard_.github/workflows/test-installer.yml_776_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "wix/react-native-notifications_.github/workflows/documentation.yml_274_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "marekkon5/onetagger_.github/workflows/build.yml_559_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "wicg/webmonetization_.github/workflows/contributors.yml_4_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "ivanceras/svgbob_.github/workflows/rust.yml_167_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "xxyzz/worddumb_.github/workflows/tests.yml_706_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "brechtm/rinohtype_.github/workflows/tests.yml_740_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "aws-samples/serverless-dotnet-demo_.github/workflows/metrics-lambda-pipeline.yaml_6_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 0,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "python-validators/validators_.github/workflows/package.yaml_5_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "trufflesuite/ganache_.github/workflows/release.yml_149_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CONFIG_ERROR",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "yuhattor/copilot-patterns_.github/workflows/publish-page.yaml_11_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "WRONG",
+    "prior_top": "CONFIG_ERROR",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "RESCUE"
+  },
+  {
+    "run_id": "xboxdev/nxdk_.github/workflows/build_docker_image.yml_143_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "kasperskylab/kaspresso_.github/workflows/snapshot_check.yml_6_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "shopify/liquid-c_.github/workflows/liquid.yml_765_2",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "craftyboss/supermarioodysseyonline_.github/workflows/dev-release.yml_12_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "brooooooklyn/image_.github/workflows/CI.yml_256_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "PARTIAL",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "RESCUE"
+  },
+  {
+    "run_id": "arcthesia/arccreate_.github/workflows/testflight.yml_60_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "openxcom/openxcom_.github/workflows/nightly.yml_11_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "keras-team/keras-tuner_.github/workflows/nightly.yml_1041_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "trufflesuite/ganache-cli_.github/workflows/release.yml_149_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CONFIG_ERROR",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "julian-alarcon/prospect-mail_.github/workflows/snap.yml_17_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "concrete5/concrete5_.github/workflows/update.yml_1604_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "ouranosinc/xclim_.github/workflows/publish-mastodon.yml_3_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 3,
+    "outcome": "RESCUE"
+  },
+  {
+    "run_id": "home-assistant/ios_.github/workflows/distribute.yml_463_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "peltoche/lsd_.github/workflows/CICD.yml_1195_4",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 3,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "descendant-ai/functime_.github/workflows/test.yml_178_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "quantumlib/cirq_.github/workflows/ci-weekly.yml_26_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "whyoleg/cryptography-kotlin_.github/workflows/build-dev.yml_160_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "getlogbook/logbook_.github/workflows/pypi-publish.yml_15_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CONFIG_ERROR",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "ironlanguages/dlr_.github/workflows/main.yml_174_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "chezou/tabula-py_.github/workflows/pythonpublish.yml_20_3",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "louisbrunner/checks-action_.github/workflows/examples.yml_382_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "miczflor/rpi-jukebox-rfid_.github/workflows/docker_buster.yml_182_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "dotnet/silk.net_.github/workflows/bindings-regeneration.yml_186_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 0,
+    "outcome": "RESCUE"
+  },
+  {
+    "run_id": "auth0/lock_.github/workflows/publish.yml_2_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "PARTIAL",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "capacitor-community/electron_dynamic/pages/pages-build-deployment_42_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "metamask/keyringcontroller_.github/workflows/publish-main-docs.yml_26_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 2,
+    "outcome": "RESCUE"
+  },
+  {
+    "run_id": "mirkosertic/bytecoder_.github/workflows/build.yml_461_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 3,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "palkan/action_policy_.github/workflows/docs-lint.yml_153_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "automl/smac3_.github/workflows/pre-commit-update.yml_26_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "cbeust/testng_.github/workflows/test.yml_669_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "WRONG",
+    "prior_top": "CONFIG_ERROR",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "RESCUE"
+  },
+  {
+    "run_id": "lepture/flask-wtf_.github/workflows/tests.yaml_268_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CONFIG_ERROR",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "keshavdv/unifi-cam-proxy_.github/workflows/image.yml_75_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "tensorflow/io_.github/workflows/benchmarks.yml_346_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CONFIG_ERROR",
+    "prior_rank_gt": 1,
+    "n_nbrs": 2,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "r-lib/gert_.github/workflows/R-CMD-check.yaml_347_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "warrenbuckley/compact-log-format-viewer_.github/workflows/intellicode.yml_537_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 3,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "saulius/croaring-rs_.github/workflows/rust.yml_226_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "WRONG",
+    "prior_top": "CONFIG_ERROR",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "RESCUE"
+  },
+  {
+    "run_id": "facundoolano/google-play-scraper_.github/workflows/main.yml_2_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "benjamine/jsondiffpatch_.github/workflows/release.yml_2_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "PARTIAL",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "RESCUE"
+  },
+  {
+    "run_id": "Dicklesworthstone/llama_embeddings_fastapi_service_.github/workflows/docker-image.yml_73_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 0,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "nanojsx/nano_.github/workflows/deno.yml_508_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "sajya/server_.github/workflows/php-cs-fixer.yml_162_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CONFIG_ERROR",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "repronim/neurodocker_.github/workflows/bootstrap.yml_70_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "jonhoo/flurry_.github/workflows/safety.yml_11_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "WRONG",
+    "prior_top": "CONFIG_ERROR",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "RESCUE"
+  },
+  {
+    "run_id": "seaql/sea-schema_.github/workflows/rust.yml_583_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "k2-fsa/fast_rnnt_.github/workflows/run_tests_cpu.yml_12_2",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "circl/ail-framework_.github/workflows/ail_framework_test.yml_232_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "oneflow-inc/oneflow_.github/workflows/release.yml_2054_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 0,
+    "outcome": "RESCUE"
+  },
+  {
+    "run_id": "spatie/laravel-livewire-wizard_.github/workflows/run-tests.yml_174_2",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "sp-nitech/sptk_.github/workflows/check-build.yml_144_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "testinggospels/camouflage_.github/workflows/main.yml_145_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "RESCUE"
+  },
+  {
+    "run_id": "webdevcody/code-racer_.github/workflows/deploy-wss.yml_143_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "RESCUE"
+  },
+  {
+    "run_id": "privacy-scaling-explorations/halo2_.github/workflows/ci_main.yml_29_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "RESCUE"
+  },
+  {
+    "run_id": "pocka/storybook-addon-designs_.github/workflows/release.yml_13_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 3,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "truefieng/usedapp_.github/workflows/CI-gnosis.yml_134_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "seaql/sea-streamer_.github/workflows/rust.yml_178_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "rubickcenter/rubick_.github/workflows/main.yml_220_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "wolph/python-progressbar_.github/workflows/main.yml_75_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "mds1/evm-diff_.github/workflows/ci.yml_128_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "atsamd-rs/atsamd_.github/workflows/release-crates.yml_21_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 3,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "bezhanSalleh/filament-google-analytics_.github/workflows/phpstan.yml_19_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "RESCUE"
+  },
+  {
+    "run_id": "tonarino/innernet_.github/workflows/docker-tests.yml_411_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "openmessaging/openmessaging-storage-dledger_.github/workflows/maven.yml_174_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 3,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "kvesteri/validators_.github/workflows/package.yaml_5_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "azure-samples/azure-search-openai-demo-csharp_.github/workflows/azure-dev.yml_24_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "idealvin/cocoyaxi_.github/workflows/win.yml_398_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "RESCUE"
+  },
+  {
+    "run_id": "kennethenevoldsen/asent_.github/workflows/tests.yml_156_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "RESCUE"
+  },
+  {
+    "run_id": "kaleidawave/ezno_.github/workflows/github-release.yml_2_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "factoryboy/factory_boy_.github/workflows/linkcheck.yml_140_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "RESCUE"
+  },
+  {
+    "run_id": "spring-projects-experimental/spring-boot-migrator_.github/workflows/release-integration.yml_4_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "datamol-io/molfeat_.github/workflows/release.yml_23_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "batchdrake/sigdigger_.github/workflows/ci.yml_347_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "touchlab/kermit_.github/workflows/websitedeploy.yml_22_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "leandrocfe/filament-apex-charts_.github/workflows/phpstan.yml_66_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CONFIG_ERROR",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "azure-samples/contoso-real-estate_dynamic/codespaces/create_codespaces_prebuilds_39_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "aws-samples/cdk-eks-blueprints-patterns_.github/workflows/e2e.yaml_1_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 0,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "google/atheris_.github/workflows/builds.yaml_72_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "brianpugh/belay_.github/workflows/tests.yaml_577_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 0,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "lissy93/dotfiles_.github/workflows/build.yml_151_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "WRONG",
+    "prior_top": "CONFIG_ERROR",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "RESCUE"
+  },
+  {
+    "run_id": "saadpasta/developerfolio_.github/workflows/deploy.yml_197_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "ovyerus/prismaliser_.github/workflows/push.yaml_290_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "PARTIAL",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "RESCUE"
+  },
+  {
+    "run_id": "simdjson/simdjson-java_.github/workflows/publish.yml_5_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "plasma-umass/slipcover_.github/workflows/build-and-upload.yml_37_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "frgfm/holocron_.github/workflows/doc-status.yml_123_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "parcel-bundler/parcel-css_.github/workflows/release.yml_109_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "PARTIAL",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "rstudio/shinyuieditor_.github/workflows/update-visual-snapshots.yml_96_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "cytopiateam/cytopia_.github/workflows/sonarcloud.yml_530_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "remarshal-project/remarshal_.github/workflows/lint.yml_95_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "enlightn/enlightn_.github/workflows/manual.yaml_5_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "keras-team/autokeras_.github/workflows/nightly.yml_890_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 0,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "qiskit/qiskit-machine-learning_.github/workflows/main.yml_4282_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 1,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "ploomber/ploomber_.github/workflows/ci-unit-macos.yml_1227_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 0,
+    "outcome": "RESCUE"
+  },
+  {
+    "run_id": "microsoft/typespec_.github/workflows/merge-release-in-main.yml_36_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 3,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "edx/edx-app-android_.github/workflows/androidTestSuite.yml_733_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "micro-gl/micro-gl_.github/workflows/compile.yml_34_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "asomers/mockall_.github/workflows/email.yml_202_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CONFIG_ERROR",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "dotnet-campus/dotnetcampus.ipc_.github/workflows/dotnet-core.yml_590_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "cowrie/cowrie_.github/workflows/pur.yml_235_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "tessel/node-usb_.github/workflows/prebuild.yml_580_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 4,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "mitsuhiko/dialoguer_.github/workflows/ci.yml_303_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "xujiajun/nutsdb_.github/workflows/reviewdog.yml_560_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "nf-core/tools_.github/workflows/sync.yml_35_5",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "rlworkgroup/metaworld_.github/workflows/build.yml_44_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "PARTIAL",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "RESCUE"
+  },
+  {
+    "run_id": "airspeed-velocity/asv_.github/workflows/triggered.yml_6_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CONFIG_ERROR",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "megamek/mekhq_.github/workflows/code-coverage.yml_1230_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 4,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "mongey/terraform-provider-kafka_.github/workflows/test.yml_739_3",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 0,
+    "outcome": "RESCUE"
+  },
+  {
+    "run_id": "sls-mentor/sls-mentor_.github/workflows/push-master.yml_1_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "numandev1/react-native-keys_.github/workflows/build-ios.yml_32_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "serverless-stack/sst_.github/workflows/test.yml_1309_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "farama-foundation/metaworld_.github/workflows/pre-commit.yml_62_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "opendds/opendds_.github/workflows/sphinx_strict.yml_5689_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "servo/html5ever_.github/workflows/main.yml_163_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "PARTIAL",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "RESCUE"
+  },
+  {
+    "run_id": "viaversion/viafabric_.github/workflows/build.yml_428_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "photoview/photoview_.github/workflows/tests.yml_854_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 3,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "nebari-dev/nebari_.github/workflows/test_integration.yaml_26_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "harness-software/wp-graphql-gravity-forms_.github/workflows/integration-testing.yml_415_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "axewp/wp-graphql-gravity-forms_.github/workflows/integration-testing.yml_415_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "theporgs/impacket_.github/workflows/build_and_test.yml_59_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "kaaveh/composenews_.github/workflows/build.yml_110_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "emurgo/yoroi-frontend_.github/workflows/nightly.yml_56_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "isl-org/open3d_.github/workflows/ubuntu-wheel.yml_2788_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 0,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "netlify/netlify-cms_.github/workflows/fossa.yml_1345_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CONFIG_ERROR",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "archeb/opentrace_.github/workflows/build-linux.yml_42_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 0,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "filecoin-saturn/l1-node_.github/workflows/integration-tests.yml_412_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "RESCUE"
+  },
+  {
+    "run_id": "launchflow/buildflow_.github/workflows/gcp_release_tests.yaml_3_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 1,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "ninxsoft/lowprofile_.github/workflows/linting.yml_47_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "dethcrypto/typechain_.github/workflows/ci.yml_1043_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 1,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "encord-team/encord-active_.github/workflows/build.yml_3_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "zekrotja/shinpuru_.github/workflows/upgrade.yml_20_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "RESCUE"
+  },
+  {
+    "run_id": "seldonio/mlserver_.github/workflows/release.yml_105_5",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "louisbrunner/dnd-multi-backend_.github/workflows/build.yml_480_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "socketry/async-http_.github/workflows/test-async-head.yaml_133_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "instagram/libcst_.github/workflows/pypi_upload.yml_182_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 0,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "dmitrytsepelev/store_model_.github/workflows/rspec.yml_1249_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "mauriciomutte/track-correios_.github/workflows/release.yml_45_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "shopify/vscode-ruby-lsp_dynamic/dependabot/dependabot-updates_2_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 3,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "cloudevents/sdk-python_.github/workflows/pypi-release.yml_55_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "PARTIAL",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "RESCUE"
+  },
+  {
+    "run_id": "kovshenin/sail_.github/workflows/end2end-tests.yml_139_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "streamthoughts/kafka-connect-file-pulse_.github/workflows/release.yml_2_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "react-native-kit/react-native-track-player_.github/workflows/platform-validation.yml_1072_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "accruent/robotframework-zoomba_.github/workflows/run-tests.yml_735_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 3,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "thekevinscott/upscalerjs_.github/workflows/browserlist.yml_4_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "eldavoo/wa-crypt-tools_.github/workflows/lint-test.yml_42_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "WRONG",
+    "prior_top": "CONFIG_ERROR",
+    "prior_rank_gt": 3,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "bretfisher/docker-ci-automation_.github/workflows/99-parallelize-jobs.yaml_68_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CONFIG_ERROR",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "foxundermoon/vs-shell-format_.github/workflows/CD.yml_102_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 3,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "cosmic-ide/cosmic-ide_.github/workflows/android.yml_2822_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 3,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "jsmonk/hegel_.github/workflows/ci.yml_111_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 3,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "prismaneui/prismane_.github/workflows/storybook.yml_1_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "RESCUE"
+  },
+  {
+    "run_id": "octokit/webhooks.js_.github/workflows/update.yml_240_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "feelfreelinux/cspot_.github/workflows/esp-idf.yml_414_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 4,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "ethereum-ts/typechain_.github/workflows/ci.yml_1043_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 1,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "googlemaps/google-maps-services-java_.github/workflows/release.yml_182_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "github/codespaces-react_dynamic/dependabot/dependabot-updates_8_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 3,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "mouradmourafiq/datatile_.github/workflows/traceml.yml_93_8",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "iridiumidentity/iridium_.github/workflows/build-iridium-pull-request.yml_141_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "chieapp/chie_.github/workflows/build.yml_59_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "polyaxon/datatile_.github/workflows/traceml.yml_93_8",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "palkan/active_event_store_.github/workflows/minitest.yml_19_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "slack-ruby/slack-ruby-client_.github/workflows/integration_test.yml_195_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "ajndkr/fastapi-async-langchain_.github/workflows/ci.yaml_61_2",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "ar90n/serverless-s3-local_.github/workflows/bump.yml_17_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "antvis/g_.github/workflows/test.yml_158_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 0,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "geodacenter/geoda_.github/workflows/osx_build.yml_63_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "cysharp/ulid_.github/workflows/build-release.yml_21_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "dapperlib/dapperaot_.github/workflows/dotnet.yml_172_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "RESCUE"
+  },
+  {
+    "run_id": "pluginkollektiv/antispam-bee_.github/workflows/wordpress-plugin-asset-update.yml_92_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "tree-sitter/tree-sitter-c_.github/workflows/publish.yml_1_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "RESCUE"
+  },
+  {
+    "run_id": "korken89/smlang-rs_.github/workflows/build.yml_140_2",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "untitaker/hyperlink_.github/workflows/test.yml_479_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "nanshaner/repoll_.github/workflows/docker_ci.yml_1085_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "RESCUE"
+  },
+  {
+    "run_id": "wfrest/wfrest_.github/workflows/CI.yml_371_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "cognitive-engineering-lab/aquascope_.github/workflows/release.yml_36_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 3,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "unum-cloud/ustore_.github/workflows/release.yml_8_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "WRONG",
+    "prior_top": "CONFIG_ERROR",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "seldonio/alibi_.github/workflows/test_all_notebooks.yml_133_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "sibyx/phpgpx_.github/workflows/coverage.yml_1_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "giggio/node-chromedriver_.github/workflows/tag.yml_12_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "PARTIAL",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "RESCUE"
+  },
+  {
+    "run_id": "floating/frame_.github/workflows/build.yml_181_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "dacotaco/priiloader_.github/workflows/Priiloader-CI.yml_580_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "mathieu2301/tradingview-api_.github/workflows/node.js.yml_660_2",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "RESCUE"
+  },
+  {
+    "run_id": "zigrazor/cxxgraph_.github/workflows/windows-cmake.yml_64_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 3,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "chimehq/swifttreesitter_.github/workflows/wasm.yml_127_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "pinecone-io/pinecone-ts-client_.github/workflows/release-prod.yml_2_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "RESCUE"
+  },
+  {
+    "run_id": "tillsteinbach/vwsfriend_.github/workflows/compose.yml_70_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "dopplerhq/cli_.github/workflows/salus.yaml_2382_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "eleutherai/gpt-neox_.github/workflows/cpu_ci.yml_865_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "cottonmc/libgui_.github/workflows/build.yml_308_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 2,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "armmbed/mbed-os_.github/workflows/docker_management.branch.yml_120_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "WRONG",
+    "prior_top": "CONFIG_ERROR",
+    "prior_rank_gt": 2,
+    "n_nbrs": 2,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "rhysd/github-action-benchmark_.github/workflows/rust.yml_290_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "spencekonde/megatinycore_.github/workflows/check-code-formatting.yml_537_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 0,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "bluefireteam/audioplayers_.github/workflows/test.yml_70_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "steam-headless/docker-steam-headless_.github/workflows/build_ci.yml_284_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "trufflesuite/ganache-core_.github/workflows/release.yml_149_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CONFIG_ERROR",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "rasbt/mlxtend_.github/workflows/python-package-conda.yml_336_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CONFIG_ERROR",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "jina-ai/langchain-serve_.github/workflows/jcloud-integration.yml_28_3",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "facebookresearch/SONAR_.github/workflows/lint_and_test.yml_31_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "RESCUE"
+  },
+  {
+    "run_id": "iuiaoin/wechat-gptbot_.github/workflows/ruff.yml_109_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "tzapio/tzap_.github/workflows/push-test.yml_36_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "h311d1n3r/cerberus_.github/workflows/main.yml_67_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "thelastpickle/cassandra-reaper_.github/workflows/license-check.yaml_65_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 3,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "kolossal-io/laravel-multiplex_.github/workflows/run-tests.yml_88_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "RESCUE"
+  },
+  {
+    "run_id": "linuxdeepin/unilang_.github/workflows/backup-to-gitlab.yml_45_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "mistertea/eternalterminal_.github/workflows/novcpkg_build_release.yml_3_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "stackblitz/core_.github/workflows/close-innactive-issues-without-repro.yaml_4_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "ccsimple/vue-plugin-hiprint_.github/workflows/deploy-demo-beta.yml_91_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "RESCUE"
+  },
+  {
+    "run_id": "alii/searchy_.github/workflows/cloudflare.yml_109_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "melonruntime/melon_.github/workflows/dotnet.yml_165_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "kosua20/midivisualizer_.github/workflows/CI.yml_145_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "scenee/floatingpanel_.github/workflows/ci.yml_273_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "idealvin/co_.github/workflows/win.yml_398_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "RESCUE"
+  },
+  {
+    "run_id": "azure/bridge-to-kubernetes_.github/workflows/live-test.yml_175_1",
+    "gt_cat": "CODE_REGRESSION",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 1,
+    "n_nbrs": 2,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "zasdfgbnm/torchsnooper_.github/workflows/tests.yml_1384_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "fredriknoren/ungit_.github/workflows/ci.yml_965_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 3,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "ariperkkio/eslint-remote-tester_.github/workflows/lint-eslint-plugin-testing-library.yml_145_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "PARTIAL",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "areso/1255-burgomaster_.github/workflows/cypress_validateHTML.yml_156_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 3,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "stakater/forecastle_.github/workflows/push.yaml_204_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 3,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "burntsushi/walkdir_.github/workflows/ci.yml_1416_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "hirosystems/stacks-wallet_.github/workflows/gh-pages.yml_65_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 3,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "atomlinter/linter-eslint_.github/workflows/bump_deps.yml_126_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "hirosystems/desktop-wallet_.github/workflows/gh-pages.yml_65_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 3,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "ryu1845/twspace-dl_.github/workflows/lint.yml_64_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CONFIG_ERROR",
+    "prior_rank_gt": 3,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "quick/nimble_.github/workflows/ci-xcode.yml_376_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 3,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "gerrymanoim/exchange_calendars_.github/workflows/release.yml_28_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CONFIG_ERROR",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "severecloud/vksdk_.github/workflows/master-test.yml_75_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "PARTIAL",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 3,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "misteo/meoassistance-arknights_.github/workflows/res-update-game.yml_10134_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "jamesrweb/react-p5-wrapper_.github/workflows/CD.yml_64_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "hironsan/asari_.github/workflows/package-installation.yml_343_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 3,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "microsoft/gpt-review_.github/workflows/on-push-create-draft-release.yml_71_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "WRONG",
+    "prior_top": "CONFIG_ERROR",
+    "prior_rank_gt": 3,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "nickliffen/ghas-enablement_.github/workflows/checks.yml_254_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 3,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "burntsushi/fst_.github/workflows/ci.yml_1421_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "technote-space/workflow-conclusion-action_.github/workflows/update-dependencies.yml_360_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "rcore-os/zcore_.github/workflows/test.yml_987_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "canada-ca/open_first_whitepaper_.github/workflows/markdownlint.yml_284_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "WRONG",
+    "prior_top": "CONFIG_ERROR",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "RESCUE"
+  },
+  {
+    "run_id": "vertamedia/chproxy_.github/workflows/go-test.yaml_533_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 3,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "jaebradley/example-rollup-react-component-npm-package_.github/workflows/workflows.yaml_1271_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 3,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "qiskit/qiskit-ibmq-provider_.github/workflows/cron-slow.yml_905_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "auth0/jwtdecode.android_.github/workflows/snyk.yml_3_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CONFIG_ERROR",
+    "prior_rank_gt": 1,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "financial-times/polyfill-service_.github/workflows/deploy-to-staging-and-test.yml_577_1",
+    "gt_cat": "CONFIG_ERROR",
+    "apa_verdict": "PARTIAL",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "asynchttpclient/async-http-client_.github/workflows/builds.yml_264_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 3,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "rszamszur/fastapi-mvc_.github/workflows/nix.yml_368_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 3,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "zhongantech/zarm_.github/workflows/preview-deploy.yml_222_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "homebrew/ruby-macho_.github/workflows/tests.yml_864_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 3,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "jessesquires/foil_.github/workflows/pod-lint.yml_208_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "johnnymorganz/stylua_.github/workflows/test-cases.yml_570_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 3,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "onflow/flow-ft_.github/workflows/release.yml_27_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "antmjs/vantui_.github/workflows/check.yml_352_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 3,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "tauri-apps/webkit2gtk-rs_.github/workflows/build.yml_64_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 3,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "tulios/mappersmith_.github/workflows/node.js.yml_494_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 3,
+    "n_nbrs": 2,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "huggingface/safetensors_.github/workflows/python.yml_640_2",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 3,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "vircadia/vircadia_.github/workflows/master_build.yml_540_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 4,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "holoarchivists/twspace-dl_.github/workflows/lint.yml_64_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 3,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "serverless-stack/serverless-stack_.github/workflows/release.yml_2292_2",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 3,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "fabricmc/fabric-language-kotlin_.github/workflows/release.yml_42_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 3,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "github/browser-support_dynamic/dependabot/dependabot-updates_8_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 3,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "amtrack/sfdx-browserforce-plugin_.github/workflows/preview.yml_3_2",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 3,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "htmlhint/htmlhint_.github/workflows/production.yml_282_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 3,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "vitorsalgado/create-nodejs-ts_.github/workflows/codeql-analysis.yml_489_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "WRONG",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  },
+  {
+    "run_id": "jettify/pytorch-optimizer_.github/workflows/python-package.yml_598_1",
+    "gt_cat": "DEPENDENCY_CONFLICT",
+    "apa_verdict": "CORRECT",
+    "prior_top": "CODE_REGRESSION",
+    "prior_rank_gt": 2,
+    "n_nbrs": 5,
+    "outcome": "SAME"
+  }
+]

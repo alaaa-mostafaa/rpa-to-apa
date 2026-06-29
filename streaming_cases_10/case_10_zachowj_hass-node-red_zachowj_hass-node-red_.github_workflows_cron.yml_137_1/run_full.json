@@ -1,0 +1,579 @@
+{
+  "_id": "zachowj/hass-node-red_.github/workflows/cron.yml_137_1",
+  "repository_name": "zachowj/hass-node-red",
+  "workflow_path": ".github/workflows/cron.yml",
+  "run_number": 137,
+  "run_attempt": 1,
+  "time_to_import": 58165.369315,
+  "metadata": {
+    "id": 6700205840,
+    "name": "Cron actions",
+    "node_id": "WFR_kwLODBlZb88AAAABj10HEA",
+    "head_branch": "main",
+    "head_sha": "8daefb460e8b27a1ddc69352a017bb77fd7586e6",
+    "path": ".github/workflows/cron.yml",
+    "display_title": "Cron actions",
+    "run_number": 137,
+    "event": "schedule",
+    "status": "completed",
+    "conclusion": "failure",
+    "workflow_id": 2007542,
+    "check_suite_id": 17766294167,
+    "check_suite_node_id": "CS_kwDODBlZb88AAAAEIvQilw",
+    "url": "https://api.github.com/repos/zachowj/hass-node-red/actions/runs/6700205840",
+    "html_url": "https://github.com/zachowj/hass-node-red/actions/runs/6700205840",
+    "pull_requests": [
+      {
+        "url": "https://api.github.com/repos/rubicon/hass-node-red/pulls/22",
+        "id": 911389828,
+        "number": 22,
+        "head": {
+          "ref": "main",
+          "sha": "8daefb460e8b27a1ddc69352a017bb77fd7586e6",
+          "repo": {
+            "id": 202987887,
+            "url": "https://api.github.com/repos/zachowj/hass-node-red",
+            "name": "hass-node-red"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "4addd2f52e5f1bdf1ee373d25b5722c86d4e61e4",
+          "repo": {
+            "id": 409325112,
+            "url": "https://api.github.com/repos/rubicon/hass-node-red",
+            "name": "hass-node-red"
+          }
+        }
+      }
+    ],
+    "created_at": "2023-10-31T00:10:18Z",
+    "updated_at": "2023-10-31T00:12:59Z",
+    "actor": {
+      "login": "zachowj",
+      "id": 37859597,
+      "node_id": "MDQ6VXNlcjM3ODU5NTk3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/37859597?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zachowj",
+      "html_url": "https://github.com/zachowj",
+      "followers_url": "https://api.github.com/users/zachowj/followers",
+      "following_url": "https://api.github.com/users/zachowj/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zachowj/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zachowj/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zachowj/subscriptions",
+      "organizations_url": "https://api.github.com/users/zachowj/orgs",
+      "repos_url": "https://api.github.com/users/zachowj/repos",
+      "events_url": "https://api.github.com/users/zachowj/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zachowj/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "run_attempt": 1,
+    "referenced_workflows": [],
+    "run_started_at": "2023-10-31T00:10:18Z",
+    "triggering_actor": {
+      "login": "zachowj",
+      "id": 37859597,
+      "node_id": "MDQ6VXNlcjM3ODU5NTk3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/37859597?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zachowj",
+      "html_url": "https://github.com/zachowj",
+      "followers_url": "https://api.github.com/users/zachowj/followers",
+      "following_url": "https://api.github.com/users/zachowj/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zachowj/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zachowj/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zachowj/subscriptions",
+      "organizations_url": "https://api.github.com/users/zachowj/orgs",
+      "repos_url": "https://api.github.com/users/zachowj/repos",
+      "events_url": "https://api.github.com/users/zachowj/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zachowj/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "jobs_url": "https://api.github.com/repos/zachowj/hass-node-red/actions/runs/6700205840/jobs",
+    "logs_url": "https://api.github.com/repos/zachowj/hass-node-red/actions/runs/6700205840/logs",
+    "check_suite_url": "https://api.github.com/repos/zachowj/hass-node-red/check-suites/17766294167",
+    "artifacts_url": "https://api.github.com/repos/zachowj/hass-node-red/actions/runs/6700205840/artifacts",
+    "cancel_url": "https://api.github.com/repos/zachowj/hass-node-red/actions/runs/6700205840/cancel",
+    "rerun_url": "https://api.github.com/repos/zachowj/hass-node-red/actions/runs/6700205840/rerun",
+    "previous_attempt_url": null,
+    "workflow_url": "https://api.github.com/repos/zachowj/hass-node-red/actions/workflows/2007542",
+    "head_commit": {
+      "id": "8daefb460e8b27a1ddc69352a017bb77fd7586e6",
+      "tree_id": "e296dd6a915bc217c63dd50cdf751c5c0e7d9d07",
+      "message": "build(deps): update pip requirement from <23.3,>=21.0 to >=21.0,<23.4 (#221)\n\nUpdates the requirements on [pip](https://github.com/pypa/pip) to permit the latest version.\r\n- [Changelog](https://github.com/pypa/pip/blob/main/NEWS.rst)\r\n- [Commits](https://github.com/pypa/pip/compare/21.0...23.3)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: pip\r\n  dependency-type: direct:production\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+      "timestamp": "2023-10-17T04:36:01Z",
+      "author": {
+        "name": "dependabot[bot]",
+        "email": "49699333+dependabot[bot]@users.noreply.github.com"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com"
+      }
+    },
+    "repository": {
+      "id": 202987887,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMDI5ODc4ODc=",
+      "name": "hass-node-red",
+      "full_name": "zachowj/hass-node-red",
+      "private": false,
+      "owner": {
+        "login": "zachowj",
+        "id": 37859597,
+        "node_id": "MDQ6VXNlcjM3ODU5NTk3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/37859597?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/zachowj",
+        "html_url": "https://github.com/zachowj",
+        "followers_url": "https://api.github.com/users/zachowj/followers",
+        "following_url": "https://api.github.com/users/zachowj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/zachowj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/zachowj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/zachowj/subscriptions",
+        "organizations_url": "https://api.github.com/users/zachowj/orgs",
+        "repos_url": "https://api.github.com/users/zachowj/repos",
+        "events_url": "https://api.github.com/users/zachowj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/zachowj/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/zachowj/hass-node-red",
+      "description": "Companion Component for node-red-contrib-home-assistant-websocket to help integrate Node-RED with Home Assistant Core",
+      "fork": false,
+      "url": "https://api.github.com/repos/zachowj/hass-node-red",
+      "forks_url": "https://api.github.com/repos/zachowj/hass-node-red/forks",
+      "keys_url": "https://api.github.com/repos/zachowj/hass-node-red/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/zachowj/hass-node-red/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/zachowj/hass-node-red/teams",
+      "hooks_url": "https://api.github.com/repos/zachowj/hass-node-red/hooks",
+      "issue_events_url": "https://api.github.com/repos/zachowj/hass-node-red/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/zachowj/hass-node-red/events",
+      "assignees_url": "https://api.github.com/repos/zachowj/hass-node-red/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/zachowj/hass-node-red/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/zachowj/hass-node-red/tags",
+      "blobs_url": "https://api.github.com/repos/zachowj/hass-node-red/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/zachowj/hass-node-red/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/zachowj/hass-node-red/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/zachowj/hass-node-red/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/zachowj/hass-node-red/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/zachowj/hass-node-red/languages",
+      "stargazers_url": "https://api.github.com/repos/zachowj/hass-node-red/stargazers",
+      "contributors_url": "https://api.github.com/repos/zachowj/hass-node-red/contributors",
+      "subscribers_url": "https://api.github.com/repos/zachowj/hass-node-red/subscribers",
+      "subscription_url": "https://api.github.com/repos/zachowj/hass-node-red/subscription",
+      "commits_url": "https://api.github.com/repos/zachowj/hass-node-red/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/zachowj/hass-node-red/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/zachowj/hass-node-red/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/zachowj/hass-node-red/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/zachowj/hass-node-red/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/zachowj/hass-node-red/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/zachowj/hass-node-red/merges",
+      "archive_url": "https://api.github.com/repos/zachowj/hass-node-red/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/zachowj/hass-node-red/downloads",
+      "issues_url": "https://api.github.com/repos/zachowj/hass-node-red/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/zachowj/hass-node-red/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/zachowj/hass-node-red/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/zachowj/hass-node-red/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/zachowj/hass-node-red/labels{/name}",
+      "releases_url": "https://api.github.com/repos/zachowj/hass-node-red/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/zachowj/hass-node-red/deployments"
+    },
+    "head_repository": {
+      "id": 202987887,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMDI5ODc4ODc=",
+      "name": "hass-node-red",
+      "full_name": "zachowj/hass-node-red",
+      "private": false,
+      "owner": {
+        "login": "zachowj",
+        "id": 37859597,
+        "node_id": "MDQ6VXNlcjM3ODU5NTk3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/37859597?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/zachowj",
+        "html_url": "https://github.com/zachowj",
+        "followers_url": "https://api.github.com/users/zachowj/followers",
+        "following_url": "https://api.github.com/users/zachowj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/zachowj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/zachowj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/zachowj/subscriptions",
+        "organizations_url": "https://api.github.com/users/zachowj/orgs",
+        "repos_url": "https://api.github.com/users/zachowj/repos",
+        "events_url": "https://api.github.com/users/zachowj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/zachowj/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/zachowj/hass-node-red",
+      "description": "Companion Component for node-red-contrib-home-assistant-websocket to help integrate Node-RED with Home Assistant Core",
+      "fork": false,
+      "url": "https://api.github.com/repos/zachowj/hass-node-red",
+      "forks_url": "https://api.github.com/repos/zachowj/hass-node-red/forks",
+      "keys_url": "https://api.github.com/repos/zachowj/hass-node-red/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/zachowj/hass-node-red/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/zachowj/hass-node-red/teams",
+      "hooks_url": "https://api.github.com/repos/zachowj/hass-node-red/hooks",
+      "issue_events_url": "https://api.github.com/repos/zachowj/hass-node-red/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/zachowj/hass-node-red/events",
+      "assignees_url": "https://api.github.com/repos/zachowj/hass-node-red/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/zachowj/hass-node-red/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/zachowj/hass-node-red/tags",
+      "blobs_url": "https://api.github.com/repos/zachowj/hass-node-red/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/zachowj/hass-node-red/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/zachowj/hass-node-red/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/zachowj/hass-node-red/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/zachowj/hass-node-red/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/zachowj/hass-node-red/languages",
+      "stargazers_url": "https://api.github.com/repos/zachowj/hass-node-red/stargazers",
+      "contributors_url": "https://api.github.com/repos/zachowj/hass-node-red/contributors",
+      "subscribers_url": "https://api.github.com/repos/zachowj/hass-node-red/subscribers",
+      "subscription_url": "https://api.github.com/repos/zachowj/hass-node-red/subscription",
+      "commits_url": "https://api.github.com/repos/zachowj/hass-node-red/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/zachowj/hass-node-red/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/zachowj/hass-node-red/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/zachowj/hass-node-red/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/zachowj/hass-node-red/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/zachowj/hass-node-red/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/zachowj/hass-node-red/merges",
+      "archive_url": "https://api.github.com/repos/zachowj/hass-node-red/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/zachowj/hass-node-red/downloads",
+      "issues_url": "https://api.github.com/repos/zachowj/hass-node-red/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/zachowj/hass-node-red/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/zachowj/hass-node-red/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/zachowj/hass-node-red/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/zachowj/hass-node-red/labels{/name}",
+      "releases_url": "https://api.github.com/repos/zachowj/hass-node-red/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/zachowj/hass-node-red/deployments"
+    }
+  },
+  "logs_archive": {
+    "path": "/data/logs/zachowj/hass-node-red/Cron_actions_a9c7/137-1.tar.gz"
+  },
+  "log_insights": [
+    {
+      "file": "0_Validate.txt",
+      "total_lines": 815,
+      "log_size": 84830,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231025.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v4",
+          "sha": "b4ffde65f46336ab88eb53be808477a3936bae11",
+          "with": {
+            "repository": "zachowj/hass-node-red",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "show-progress": "true",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-31 00:10:43.334000",
+          "duration_sec": 0.771232
+        },
+        {
+          "type": "action",
+          "repository": "hacs",
+          "action": "action",
+          "version": "main",
+          "sha": "70694a570839431b5c69ff0eba599a213dc7a43b",
+          "with": {
+            "category": "integration",
+            "ignore": "brands",
+            "comment": "true",
+            "github_token": "***"
+          },
+          "env": {},
+          "start_date": "2023-10-31 00:10:44.105000",
+          "duration_sec": 6.478369
+        },
+        {
+          "type": "action",
+          "repository": "home-assistant",
+          "action": "actions",
+          "version": "master",
+          "sha": "21f0ebe385ef5a8f646aff568191eb0c5577e879",
+          "folder": "hassfest",
+          "with": {},
+          "env": {},
+          "start_date": "2023-10-31 00:10:50.583000",
+          "duration_sec": 0.031236
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "echo \"::add-matcher::/home/runner/work/_actions/home-assistant/actions/master/hassfest/problem-matcher.json\"",
+          "commands": [
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"::add-matcher::/home/runner/work/_actions/home-assistant/actions/master/hassfest/problem-matcher.json\""
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-31 00:10:50.615000",
+          "duration_sec": 0.022517
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "docker build /home/runner/work/_actions/home-assistant/actions/master/hassfest -f /home/runner/work/_actions/home-assistant/actions/master/hassfest/Dockerfile -t hassfest",
+          "commands": [
+            {
+              "annotations": [
+                "SC-DOCKER-BUILD"
+              ],
+              "command": "docker",
+              "categories": [
+                "VIRTUALIZATION"
+              ],
+              "args": [
+                {
+                  "content": "build"
+                },
+                {
+                  "content": "/home/runner/work/_actions/home-assistant/actions/master/hassfest"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-BUILD-FILE"
+                  ],
+                  "content": "-f /home/runner/work/_actions/home-assistant/actions/master/hassfest/Dockerfile"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-BUILD-TAG"
+                  ],
+                  "content": "-t hassfest"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-31 00:10:50.637000",
+          "duration_sec": 66.280214
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "docker run --rm -v /home/runner/work/hass-node-red/hass-node-red://github/workspace hassfest",
+          "commands": [
+            {
+              "annotations": [
+                "SC-DOCKER-RUN"
+              ],
+              "command": "docker",
+              "categories": [
+                "VIRTUALIZATION"
+              ],
+              "args": [
+                {
+                  "content": "run"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-F-RM"
+                  ],
+                  "content": "--rm"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-VOLUME"
+                  ],
+                  "content": "-v /home/runner/work/hass-node-red/hass-node-red://github/workspace"
+                },
+                {
+                  "content": "hassfest"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-31 00:11:56.917000",
+          "duration_sec": 1.07674
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "setup-python",
+          "version": "v4",
+          "sha": "65d7f2d534ac1bc67fcd62888c5f4f3d2cb2b236",
+          "with": {
+            "python-version": "3.11",
+            "check-latest": "false",
+            "token": "***",
+            "update-environment": "true",
+            "allow-prereleases": "false"
+          },
+          "env": {},
+          "start_date": "2023-10-31 00:11:57.994000",
+          "duration_sec": 0.277848
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/opt/hostedtoolcache/Python/3.11.6/x64",
+            "PKG_CONFIG_PATH": "/opt/hostedtoolcache/Python/3.11.6/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/opt/hostedtoolcache/Python/3.11.6/x64",
+            "Python2_ROOT_DIR": "/opt/hostedtoolcache/Python/3.11.6/x64",
+            "Python3_ROOT_DIR": "/opt/hostedtoolcache/Python/3.11.6/x64",
+            "LD_LIBRARY_PATH": "/opt/hostedtoolcache/Python/3.11.6/x64/lib"
+          },
+          "code": "python3 -m pip install -r requirements_test.txt",
+          "commands": [
+            {
+              "annotations": [
+                "SC-PYTHON-MODULE"
+              ],
+              "command": "python3",
+              "categories": [
+                "DEVELOPMENT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-PYTHON-MODULE-M"
+                  ],
+                  "content": "-m"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-PIP-INSTALL"
+              ],
+              "command": "pip",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-REQUIREMENTS"
+                  ],
+                  "content": "-r requirements_test.txt"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-31 00:11:58.272000",
+          "duration_sec": 53.628168
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/opt/hostedtoolcache/Python/3.11.6/x64",
+            "PKG_CONFIG_PATH": "/opt/hostedtoolcache/Python/3.11.6/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/opt/hostedtoolcache/Python/3.11.6/x64",
+            "Python2_ROOT_DIR": "/opt/hostedtoolcache/Python/3.11.6/x64",
+            "Python3_ROOT_DIR": "/opt/hostedtoolcache/Python/3.11.6/x64",
+            "LD_LIBRARY_PATH": "/opt/hostedtoolcache/Python/3.11.6/x64/lib"
+          },
+          "code": "pytest \\\n  -qq \\\n  --timeout=9 \\\n  --durations=10 \\\n  -n auto \\\n  --cov custom_components.nodered \\\n  -o console_output_style=count \\\n  -p no:sugar \\\n  tests",
+          "commands": [
+            {
+              "annotations": [
+                "SC-PYTEST"
+              ],
+              "command": "pytest",
+              "categories": [
+                "TEST_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "-qq"
+                },
+                {
+                  "annotations": [
+                    "SC-PYTEST-TIMEOUT"
+                  ],
+                  "content": "--timeout=9"
+                },
+                {
+                  "annotations": [
+                    "SC-PYTEST-DURATIONS"
+                  ],
+                  "content": "--durations=10"
+                },
+                {
+                  "annotations": [
+                    "SC-PYTEST-N"
+                  ],
+                  "content": "-n auto"
+                },
+                {
+                  "annotations": [
+                    "SC-PYTEST-COV"
+                  ],
+                  "content": "--cov custom_components.nodered"
+                },
+                {
+                  "annotations": [
+                    "SC-PYTEST-O"
+                  ],
+                  "content": "-o console_output_style=count"
+                },
+                {
+                  "annotations": [
+                    "SC-PYTEST-P"
+                  ],
+                  "content": "-p no:sugar"
+                },
+                {
+                  "annotations": [
+                    "SC-PYTEST-ARG"
+                  ],
+                  "content": "tests"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-31 00:12:51.900000",
+          "duration_sec": 4.165363
+        }
+      ]
+    }
+  ],
+  "total_logs_size": 88928
+}

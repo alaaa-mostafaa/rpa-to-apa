@@ -1,0 +1,4 @@
+STEP 5 - CAP at 3000 lines (trim oldest first)
+======================================================================
+extracted lines: 312  | over budget? False
+final excerpt: 108952 raw chars -> ~11732 chars

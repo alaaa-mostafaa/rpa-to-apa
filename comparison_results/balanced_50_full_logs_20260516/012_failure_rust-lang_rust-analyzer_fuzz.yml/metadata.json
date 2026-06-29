@@ -1,0 +1,25 @@
+{
+  "index": 12,
+  "label": "failure",
+  "run_id": "rust-lang/rust-analyzer_.github/workflows/fuzz.yml_42_1",
+  "repo": "rust-lang/rust-analyzer",
+  "workflow_path": ".github/workflows/fuzz.yml",
+  "run_number": "42",
+  "attempt": "1",
+  "scan_line": 325124,
+  "case_dir": "/home/guc_alaa/comparison_results/balanced_50_full_logs_20260516/012_failure_rust-lang_rust-analyzer_fuzz.yml",
+  "full_log_path": "/home/guc_alaa/comparison_results/balanced_50_full_logs_20260516/012_failure_rust-lang_rust-analyzer_fuzz.yml/full_log.txt",
+  "tarball": "logs/rust-lang/rust-analyzer/Fuzz_654d/42-1.tar.gz",
+  "n_job_logs": 8,
+  "job_log_files": [
+    "Rust/1_Set up job.txt",
+    "Rust/9_Complete job.txt",
+    "Rust/2_Checkout repository.txt",
+    "-2147483648_Rust.txt",
+    "Rust/8_Post Checkout repository.txt",
+    "Rust/3_Install Rust toolchain.txt",
+    "Rust/4_Build fuzzers.txt",
+    "0_Rust.txt"
+  ],
+  "full_log_chars": 108952
+}

@@ -1,0 +1,33 @@
+{
+  "index": 25,
+  "label": "failure",
+  "run_id": "hardkoded/puppeteer-sharp_.github/workflows/demo.yml_787_1",
+  "repo": "hardkoded/puppeteer-sharp",
+  "workflow_path": ".github/workflows/demo.yml",
+  "run_number": "787",
+  "attempt": "1",
+  "scan_line": 439216,
+  "case_dir": "/home/guc_alaa/comparison_results/balanced_50_full_logs_20260516/025_failure_hardkoded_puppeteer-sharp_demo.yml",
+  "full_log_path": "/home/guc_alaa/comparison_results/balanced_50_full_logs_20260516/025_failure_hardkoded_puppeteer-sharp_demo.yml/full_log.txt",
+  "tarball": "logs/hardkoded/puppeteer-sharp/Demo_Project_d674/787-1.tar.gz",
+  "n_job_logs": 16,
+  "job_log_files": [
+    "Demo Project (macos-latest)/3_Run actionssetup-dotnet@v1.txt",
+    "Demo Project (macos-latest)/2_Run actionscheckout@v2.txt",
+    "Demo Project (windows-2022)/2_Run actionscheckout@v2.txt",
+    "Demo Project (windows-2022)/3_Run actionssetup-dotnet@v1.txt",
+    "Demo Project (macos-latest)/1_Set up job.txt",
+    "0_Demo Project (windows-2022).txt",
+    "Demo Project (windows-2022)/1_Set up job.txt",
+    "Demo Project (macos-latest)/5_Install dependencies.txt",
+    "Demo Project (macos-latest)/6_Run Project.txt",
+    "Demo Project (windows-2022)/12_Post Run actionscheckout@v2.txt",
+    "1_Demo Project (macos-latest).txt",
+    "Demo Project (macos-latest)/4_Setup NuGet.txt",
+    "Demo Project (windows-2022)/13_Complete job.txt",
+    "-2147483648_Demo Project.txt",
+    "Demo Project (macos-latest)/12_Post Run actionscheckout@v2.txt",
+    "Demo Project (macos-latest)/13_Complete job.txt"
+  ],
+  "full_log_chars": 175689
+}

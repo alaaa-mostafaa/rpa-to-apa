@@ -1,0 +1,373 @@
+{
+  "_id": "ipfs/kubo_.github/workflows/build.yml_2236_1",
+  "repository_name": "ipfs/kubo",
+  "workflow_path": ".github/workflows/build.yml",
+  "run_number": 2236,
+  "run_attempt": 1,
+  "time_to_import": 5725.252369,
+  "metadata": {
+    "id": 6849252456,
+    "name": "Interop",
+    "node_id": "WFR_kwLOAUP-J88AAAABmD9MaA",
+    "head_branch": "dependabot/go_modules/go.opentelemetry.io/contrib/propagators/autoprop-0.46.0",
+    "head_sha": "6c9dc2b2aaf39ce68c4f55631db767640b507008",
+    "path": ".github/workflows/build.yml",
+    "display_title": "chore(deps): bump go.opentelemetry.io/contrib/propagators/autoprop from 0.42.0 to 0.46.0",
+    "run_number": 2236,
+    "event": "pull_request",
+    "status": "completed",
+    "conclusion": "failure",
+    "workflow_id": 37899320,
+    "check_suite_id": 18137585379,
+    "check_suite_node_id": "CS_kwDOAUP-J88AAAAEORWW4w",
+    "url": "https://api.github.com/repos/ipfs/kubo/actions/runs/6849252456",
+    "html_url": "https://github.com/ipfs/kubo/actions/runs/6849252456",
+    "pull_requests": [
+      {
+        "url": "https://api.github.com/repos/ipfs/kubo/pulls/10214",
+        "id": 1598674270,
+        "number": 10214,
+        "head": {
+          "ref": "dependabot/go_modules/go.opentelemetry.io/contrib/propagators/autoprop-0.46.0",
+          "sha": "6c9dc2b2aaf39ce68c4f55631db767640b507008",
+          "repo": {
+            "id": 21233191,
+            "url": "https://api.github.com/repos/ipfs/kubo",
+            "name": "kubo"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "670ce7043e3b0af52a25a69569464cd3c256d3ee",
+          "repo": {
+            "id": 21233191,
+            "url": "https://api.github.com/repos/ipfs/kubo",
+            "name": "kubo"
+          }
+        }
+      }
+    ],
+    "created_at": "2023-11-13T11:19:55Z",
+    "updated_at": "2023-11-13T11:20:22Z",
+    "actor": {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+      "html_url": "https://github.com/apps/dependabot",
+      "followers_url": "https://api.github.com/users/dependabot%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/dependabot%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dependabot%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dependabot%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dependabot%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/dependabot%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/dependabot%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/dependabot%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dependabot%5Bbot%5D/received_events",
+      "type": "Bot",
+      "site_admin": false
+    },
+    "run_attempt": 1,
+    "referenced_workflows": [],
+    "run_started_at": "2023-11-13T11:19:55Z",
+    "triggering_actor": {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+      "html_url": "https://github.com/apps/dependabot",
+      "followers_url": "https://api.github.com/users/dependabot%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/dependabot%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dependabot%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dependabot%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dependabot%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/dependabot%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/dependabot%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/dependabot%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dependabot%5Bbot%5D/received_events",
+      "type": "Bot",
+      "site_admin": false
+    },
+    "jobs_url": "https://api.github.com/repos/ipfs/kubo/actions/runs/6849252456/jobs",
+    "logs_url": "https://api.github.com/repos/ipfs/kubo/actions/runs/6849252456/logs",
+    "check_suite_url": "https://api.github.com/repos/ipfs/kubo/check-suites/18137585379",
+    "artifacts_url": "https://api.github.com/repos/ipfs/kubo/actions/runs/6849252456/artifacts",
+    "cancel_url": "https://api.github.com/repos/ipfs/kubo/actions/runs/6849252456/cancel",
+    "rerun_url": "https://api.github.com/repos/ipfs/kubo/actions/runs/6849252456/rerun",
+    "previous_attempt_url": null,
+    "workflow_url": "https://api.github.com/repos/ipfs/kubo/actions/workflows/37899320",
+    "head_commit": {
+      "id": "6c9dc2b2aaf39ce68c4f55631db767640b507008",
+      "tree_id": "d95685f136b45b1a665c1639c0e85e823f55b2dd",
+      "message": "chore(deps): bump go.opentelemetry.io/contrib/propagators/autoprop\n\nBumps [go.opentelemetry.io/contrib/propagators/autoprop](https://github.com/open-telemetry/opentelemetry-go-contrib) from 0.42.0 to 0.46.0.\n- [Release notes](https://github.com/open-telemetry/opentelemetry-go-contrib/releases)\n- [Changelog](https://github.com/open-telemetry/opentelemetry-go-contrib/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/open-telemetry/opentelemetry-go-contrib/compare/zpages/v0.42.0...zpages/v0.46.0)\n\n---\nupdated-dependencies:\n- dependency-name: go.opentelemetry.io/contrib/propagators/autoprop\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+      "timestamp": "2023-11-13T11:19:50Z",
+      "author": {
+        "name": "dependabot[bot]",
+        "email": "49699333+dependabot[bot]@users.noreply.github.com"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com"
+      }
+    },
+    "repository": {
+      "id": 21233191,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMTIzMzE5MQ==",
+      "name": "kubo",
+      "full_name": "ipfs/kubo",
+      "private": false,
+      "owner": {
+        "login": "ipfs",
+        "id": 10536621,
+        "node_id": "MDEyOk9yZ2FuaXphdGlvbjEwNTM2NjIx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/10536621?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ipfs",
+        "html_url": "https://github.com/ipfs",
+        "followers_url": "https://api.github.com/users/ipfs/followers",
+        "following_url": "https://api.github.com/users/ipfs/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ipfs/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ipfs/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ipfs/subscriptions",
+        "organizations_url": "https://api.github.com/users/ipfs/orgs",
+        "repos_url": "https://api.github.com/users/ipfs/repos",
+        "events_url": "https://api.github.com/users/ipfs/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ipfs/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/ipfs/kubo",
+      "description": "An IPFS implementation in Go",
+      "fork": false,
+      "url": "https://api.github.com/repos/ipfs/kubo",
+      "forks_url": "https://api.github.com/repos/ipfs/kubo/forks",
+      "keys_url": "https://api.github.com/repos/ipfs/kubo/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/ipfs/kubo/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/ipfs/kubo/teams",
+      "hooks_url": "https://api.github.com/repos/ipfs/kubo/hooks",
+      "issue_events_url": "https://api.github.com/repos/ipfs/kubo/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/ipfs/kubo/events",
+      "assignees_url": "https://api.github.com/repos/ipfs/kubo/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/ipfs/kubo/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/ipfs/kubo/tags",
+      "blobs_url": "https://api.github.com/repos/ipfs/kubo/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/ipfs/kubo/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/ipfs/kubo/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/ipfs/kubo/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/ipfs/kubo/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/ipfs/kubo/languages",
+      "stargazers_url": "https://api.github.com/repos/ipfs/kubo/stargazers",
+      "contributors_url": "https://api.github.com/repos/ipfs/kubo/contributors",
+      "subscribers_url": "https://api.github.com/repos/ipfs/kubo/subscribers",
+      "subscription_url": "https://api.github.com/repos/ipfs/kubo/subscription",
+      "commits_url": "https://api.github.com/repos/ipfs/kubo/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/ipfs/kubo/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/ipfs/kubo/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/ipfs/kubo/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/ipfs/kubo/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/ipfs/kubo/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/ipfs/kubo/merges",
+      "archive_url": "https://api.github.com/repos/ipfs/kubo/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/ipfs/kubo/downloads",
+      "issues_url": "https://api.github.com/repos/ipfs/kubo/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/ipfs/kubo/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/ipfs/kubo/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/ipfs/kubo/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/ipfs/kubo/labels{/name}",
+      "releases_url": "https://api.github.com/repos/ipfs/kubo/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/ipfs/kubo/deployments"
+    },
+    "head_repository": {
+      "id": 21233191,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMTIzMzE5MQ==",
+      "name": "kubo",
+      "full_name": "ipfs/kubo",
+      "private": false,
+      "owner": {
+        "login": "ipfs",
+        "id": 10536621,
+        "node_id": "MDEyOk9yZ2FuaXphdGlvbjEwNTM2NjIx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/10536621?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ipfs",
+        "html_url": "https://github.com/ipfs",
+        "followers_url": "https://api.github.com/users/ipfs/followers",
+        "following_url": "https://api.github.com/users/ipfs/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ipfs/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ipfs/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ipfs/subscriptions",
+        "organizations_url": "https://api.github.com/users/ipfs/orgs",
+        "repos_url": "https://api.github.com/users/ipfs/repos",
+        "events_url": "https://api.github.com/users/ipfs/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ipfs/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/ipfs/kubo",
+      "description": "An IPFS implementation in Go",
+      "fork": false,
+      "url": "https://api.github.com/repos/ipfs/kubo",
+      "forks_url": "https://api.github.com/repos/ipfs/kubo/forks",
+      "keys_url": "https://api.github.com/repos/ipfs/kubo/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/ipfs/kubo/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/ipfs/kubo/teams",
+      "hooks_url": "https://api.github.com/repos/ipfs/kubo/hooks",
+      "issue_events_url": "https://api.github.com/repos/ipfs/kubo/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/ipfs/kubo/events",
+      "assignees_url": "https://api.github.com/repos/ipfs/kubo/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/ipfs/kubo/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/ipfs/kubo/tags",
+      "blobs_url": "https://api.github.com/repos/ipfs/kubo/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/ipfs/kubo/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/ipfs/kubo/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/ipfs/kubo/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/ipfs/kubo/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/ipfs/kubo/languages",
+      "stargazers_url": "https://api.github.com/repos/ipfs/kubo/stargazers",
+      "contributors_url": "https://api.github.com/repos/ipfs/kubo/contributors",
+      "subscribers_url": "https://api.github.com/repos/ipfs/kubo/subscribers",
+      "subscription_url": "https://api.github.com/repos/ipfs/kubo/subscription",
+      "commits_url": "https://api.github.com/repos/ipfs/kubo/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/ipfs/kubo/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/ipfs/kubo/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/ipfs/kubo/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/ipfs/kubo/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/ipfs/kubo/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/ipfs/kubo/merges",
+      "archive_url": "https://api.github.com/repos/ipfs/kubo/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/ipfs/kubo/downloads",
+      "issues_url": "https://api.github.com/repos/ipfs/kubo/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/ipfs/kubo/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/ipfs/kubo/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/ipfs/kubo/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/ipfs/kubo/labels{/name}",
+      "releases_url": "https://api.github.com/repos/ipfs/kubo/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/ipfs/kubo/deployments"
+    }
+  },
+  "logs_archive": {
+    "path": "/data/logs/ipfs/kubo/Interop_77bb/2236-1.tar.gz"
+  },
+  "log_insights": [
+    {
+      "file": "0_interop-prep.txt",
+      "total_lines": 468,
+      "log_size": 36122,
+      "token_permissions": {
+        "Actions": "read",
+        "Checks": "read",
+        "Contents": "read",
+        "Deployments": "read",
+        "Discussions": "read",
+        "Issues": "read",
+        "Metadata": "read",
+        "Packages": "read",
+        "Pages": "read",
+        "PullRequests": "read",
+        "RepositoryProjects": "read",
+        "SecurityEvents": "read",
+        "Statuses": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231030.2.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "setup-go",
+          "version": "v4",
+          "sha": "93397bea11091df50f3d7e59dc26a7711a8bcfbe",
+          "with": {
+            "go-version": "1.21.x",
+            "check-latest": "false",
+            "token": "***",
+            "cache": "true"
+          },
+          "env": {
+            "GO_VERSION": "1.21.x",
+            "TEST_DOCKER": "0",
+            "TEST_FUSE": "0",
+            "TEST_VERBOSE": "1",
+            "TRAVIS": "1",
+            "GIT_PAGER": "cat",
+            "IPFS_CHECK_RCMGR_DEFAULTS": "1"
+          },
+          "start_date": "2023-11-13 11:20:06.236000",
+          "duration_sec": 0.389733
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v4",
+          "sha": "b4ffde65f46336ab88eb53be808477a3936bae11",
+          "with": {
+            "repository": "ipfs/kubo",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "show-progress": "true",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {
+            "GO_VERSION": "1.21.x",
+            "TEST_DOCKER": "0",
+            "TEST_FUSE": "0",
+            "TEST_VERBOSE": "1",
+            "TRAVIS": "1",
+            "GIT_PAGER": "cat",
+            "IPFS_CHECK_RCMGR_DEFAULTS": "1"
+          },
+          "start_date": "2023-11-13 11:20:06.626000",
+          "duration_sec": 0.926525
+        },
+        {
+          "type": "shell",
+          "env": {
+            "GO_VERSION": "1.21.x",
+            "TEST_DOCKER": "0",
+            "TEST_FUSE": "0",
+            "TEST_VERBOSE": "1",
+            "TRAVIS": "1",
+            "GIT_PAGER": "cat",
+            "IPFS_CHECK_RCMGR_DEFAULTS": "1"
+          },
+          "code": "make build",
+          "commands": [
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "build"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-13 11:20:07.553000",
+          "duration_sec": 9.925601
+        }
+      ]
+    }
+  ],
+  "total_logs_size": 37210
+}

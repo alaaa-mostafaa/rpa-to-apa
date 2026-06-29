@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="1300" viewBox="0 0 1180 1300" font-family="'Cascadia Code','Consolas','SF Mono',Menlo,monospace">
+  <defs>
+    <filter id="card" x="-5%" y="-3%" width="110%" height="106%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#9aa7bd" flood-opacity="0.30"/>
+    </filter>
+  </defs>
+  <rect x="20" y="20" width="1140" height="1260" rx="22" fill="#FFFFFF" stroke="#E3E8F0" stroke-width="1.5" filter="url(#card)"/>
+  <style>
+    .p{fill:#3A3A3A}.k{fill:#2E5FB7;font-weight:600}.s{fill:#2E8B57}
+    .n{fill:#C0392B}.l{fill:#7D3C98}text{font-size:19px}
+  </style>
+
+  <text x="56" y="60"><tspan class="p">{</tspan></text>
+
+  <text x="92" y="92"><tspan class="k">"source"</tspan><tspan class="p">: </tspan><tspan class="s">"github"</tspan><tspan class="p">,</tspan></text>
+  <text x="92" y="124"><tspan class="k">"run_id"</tspan><tspan class="p">: </tspan><tspan class="s">"quarkusio/quarkus_.github/workflows/ci-istio.yml_260_1"</tspan><tspan class="p">,</tspan></text>
+  <text x="92" y="156"><tspan class="k">"repo"</tspan><tspan class="p">: </tspan><tspan class="s">"quarkusio/quarkus"</tspan><tspan class="p">,</tspan></text>
+  <text x="92" y="188"><tspan class="k">"event"</tspan><tspan class="p">: </tspan><tspan class="s">"schedule"</tspan><tspan class="p">,</tspan></text>
+  <text x="92" y="220"><tspan class="k">"conclusion"</tspan><tspan class="p">: </tspan><tspan class="s">"failure"</tspan><tspan class="p">,</tspan></text>
+  <text x="92" y="252"><tspan class="k">"started_at"</tspan><tspan class="p">: </tspan><tspan class="s">"2023-11-09T02:10:10Z"</tspan><tspan class="p">,</tspan></text>
+  <text x="92" y="284"><tspan class="k">"n_jobs"</tspan><tspan class="p">: </tspan><tspan class="n">1</tspan><tspan class="p">,</tspan></text>
+  <text x="92" y="316"><tspan class="k">"failed_jobs_count"</tspan><tspan class="p">: </tspan><tspan class="n">1</tspan><tspan class="p">,</tspan></text>
+  <text x="92" y="348"><tspan class="k">"duration_sec"</tspan><tspan class="p">: </tspan><tspan class="n">119.0</tspan><tspan class="p">,</tspan></text>
+  <text x="92" y="380"><tspan class="k">"workflow"</tspan><tspan class="p">: </tspan><tspan class="s">"ci-istio.yml"</tspan><tspan class="p">,</tspan></text>
+  <text x="92" y="412"><tspan class="k">"run_number"</tspan><tspan class="p">: </tspan><tspan class="n">260</tspan><tspan class="p">,</tspan></text>
+  <text x="92" y="444"><tspan class="k">"attempt"</tspan><tspan class="p">: </tspan><tspan class="n">1</tspan><tspan class="p">,</tspan></text>
+  <text x="92" y="476"><tspan class="k">"branch"</tspan><tspan class="p">: </tspan><tspan class="s">"main"</tspan><tspan class="p">,</tspan></text>
+  <text x="92" y="508"><tspan class="k">"is_protected_branch"</tspan><tspan class="p">: </tspan><tspan class="l">true</tspan><tspan class="p">,</tspan></text>
+  <text x="92" y="540"><tspan class="k">"actor"</tspan><tspan class="p">: </tspan><tspan class="s">"cescoffier"</tspan><tspan class="p">,</tspan></text>
+  <text x="92" y="572"><tspan class="k">"commit_sha"</tspan><tspan class="p">: </tspan><tspan class="s">"86461149ae4b"</tspan><tspan class="p">,</tspan></text>
+  <text x="92" y="604"><tspan class="k">"commit_title"</tspan><tspan class="p">: </tspan><tspan class="s">"Merge pull request #36942 from zakkak/2023-11-08-fix-36129"</tspan><tspan class="p">,</tspan></text>
+  <text x="92" y="636"><tspan class="k">"commit_message"</tspan><tspan class="p">: </tspan><tspan class="s">"Option TraceServiceLoaderFeature removed in GraalVM 23.1"</tspan><tspan class="p">,</tspan></text>
+  <text x="92" y="668"><tspan class="k">"commit_author"</tspan><tspan class="p">: </tspan><tspan class="s">"Foivos"</tspan><tspan class="p">,</tspan></text>
+
+  <text x="92" y="700"><tspan class="k">"failed_steps"</tspan><tspan class="p">: [{</tspan></text>
+  <text x="140" y="732"><tspan class="k">"job_file"</tspan><tspan class="p">: </tspan><tspan class="s">"0_Build and save artifacts.txt"</tspan><tspan class="p">,</tspan></text>
+  <text x="140" y="764"><tspan class="k">"runner_image"</tspan><tspan class="p">: </tspan><tspan class="s">"ubuntu-22.04"</tspan><tspan class="p">,</tspan></text>
+  <text x="140" y="796"><tspan class="k">"step_index"</tspan><tspan class="p">: </tspan><tspan class="n">2</tspan><tspan class="p">,</tspan></text>
+  <text x="140" y="828"><tspan class="k">"step_type"</tspan><tspan class="p">: </tspan><tspan class="s">"shell"</tspan><tspan class="p">,</tspan></text>
+  <text x="140" y="860"><tspan class="k">"step_label"</tspan><tspan class="p">: </tspan><tspan class="s">"./mvnw clean install -pl :quarkus-jsonp-deployment"</tspan><tspan class="p">,</tspan></text>
+  <text x="140" y="892"><tspan class="k">"step_duration_sec"</tspan><tspan class="p">: </tspan><tspan class="n">101.48</tspan><tspan class="p">,</tspan></text>
+  <text x="140" y="924"><tspan class="k">"error_text"</tspan><tspan class="p">: </tspan><tspan class="l">null</tspan><tspan class="p">,</tspan></text>
+  <text x="140" y="956"><tspan class="k">"detection_mode"</tspan><tspan class="p">: </tspan><tspan class="s">"job_level_fallback"</tspan><tspan class="p">,</tspan></text>
+  <text x="140" y="988"><tspan class="k">"tooling_artifact_suspected"</tspan><tspan class="p">: </tspan><tspan class="l">false</tspan></text>
+  <text x="92" y="1020"><tspan class="p">}],</tspan></text>
+
+  <text x="92" y="1052"><tspan class="k">"failure_detection"</tspan><tspan class="p">: </tspan><tspan class="s">"job_level_fallback"</tspan><tspan class="p">,</tspan></text>
+  <text x="92" y="1084"><tspan class="k">"all_failures_are_tooling_artifacts"</tspan><tspan class="p">: </tspan><tspan class="l">false</tspan><tspan class="p">,</tspan></text>
+  <text x="92" y="1116"><tspan class="k">"has_log_insights"</tspan><tspan class="p">: </tspan><tspan class="l">true</tspan><tspan class="p">,</tspan></text>
+  <text x="92" y="1148"><tspan class="k">"available_signals"</tspan><tspan class="p">: [</tspan><tspan class="s">"error_text"</tspan><tspan class="p">, </tspan><tspan class="s">"many_jobs_failed"</tspan><tspan class="p">, </tspan><tspan class="s">"branch_type"</tspan><tspan class="p">,</tspan></text>
+  <text x="140" y="1180"><tspan class="s">"commit_message"</tspan><tspan class="p">, </tspan><tspan class="s">"previous_runs"</tspan><tspan class="p">, </tspan><tspan class="s">"parent_commit_run"</tspan><tspan class="p">, </tspan><tspan class="s">"detection_mode"</tspan><tspan class="p">],</tspan></text>
+  <text x="92" y="1212"><tspan class="k">"metadata"</tspan><tspan class="p">: {}</tspan></text>
+
+  <text x="56" y="1244"><tspan class="p">}</tspan></text>
+</svg>

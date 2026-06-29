@@ -1,0 +1,52 @@
+{
+  "case_label": "compnerd/swift-win32 — Update build.yml",
+  "intake": {
+    "run_id": "compnerd/swift-win32_.github/workflows/build.yml_399_1",
+    "repo": "compnerd/swift-win32",
+    "workflow": "build.yml",
+    "branch": "compnerd/5.9.1",
+    "event": "pull_request",
+    "is_protected_branch": false,
+    "commit_sha": "98f7b37caedf",
+    "commit_title": "Update build.yml",
+    "conclusion": "failure",
+    "failure_detection": "per_step_error",
+    "failed_jobs_count": 1,
+    "n_jobs": 1,
+    "all_failures_are_tooling_artifacts": true
+  },
+  "extraction": {
+    "total_steps_extracted": 1,
+    "strategies": [
+      "error_marker"
+    ],
+    "total_lines_extracted": 156,
+    "error_markers_found": 1,
+    "sample_error_lines": [
+      "##[error]Process completed with exit code 1."
+    ]
+  },
+  "classification": {
+    "category": "DEPENDENCY_CONFLICT",
+    "severity": "LOW",
+    "confidence": 0.95,
+    "action": "HOTFIX_REQUIRED",
+    "reasoning": "The log shows a dependency resolution failure for 'swift-log' with no matching versions found for the required range 1.4.3..<2.0.0. The commit message indicates an update to the build.yml, likely adding a new build train, which may have introduced or exposed this dependency conflict. The branch is not protected, so severity is low. The error is not transient and requires a fix in dependency version constraints before retrying.",
+    "evidence": [
+      "error_text",
+      "log evidence",
+      "commit message",
+      "branch protected status"
+    ],
+    "unknowns": [
+      "Exact dependency version constraints in build.yml",
+      "Whether previous builds on this branch succeeded with these dependencies"
+    ]
+  },
+  "ground_truth": {
+    "developer_action": "PR_MERGED",
+    "method": "pr_state",
+    "reasoning": "PR #770 ('Update build.yml') was merged on 2023-11-30T04:44:52Z.",
+    "match_verdict": "PARTIAL"
+  }
+}

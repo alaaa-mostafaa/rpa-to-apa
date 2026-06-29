@@ -1,0 +1,1595 @@
+[
+ {
+  "run_id": "nerdwalletoss/shepherd_.github/workflows/release.yml_351_1",
+  "repo": "nerdwalletoss/shepherd",
+  "pred": "CONFIG_ERROR",
+  "defensible": true,
+  "best": "CONFIG_ERROR",
+  "reason": "The error message indicates a misconfiguration related to repository URL or Git credentials, which aligns with CONFIG_ERROR.",
+  "evidence_label": "CONFIG_ERROR"
+ },
+ {
+  "run_id": "ffmpegwasm/ffmpeg.wasm_.github/workflows/main.yml_349_1",
+  "repo": "ffmpegwasm/ffmpeg.wasm",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "CODE_REGRESSION",
+  "reason": "The error log indicates a failure in the test related to FFmpeg, which suggests a recent code change may have introduced a regression causing the test to fail.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "openai/openai-node_.github/workflows/test.yml_86_1",
+  "repo": "openai/openai-node",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "DEPENDENCY_CONFLICT",
+  "reason": "The error message suggests a problem with npm package-lock.json, indicating a dependency or version issue rather than a code regression.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "getstream/stream-chat-react_.github/workflows/ci.yml_5436_1",
+  "repo": "getstream/stream-chat-react",
+  "pred": "ENV_FLAKINESS",
+  "defensible": false,
+  "best": "TEST_FLAKINESS",
+  "reason": "The log shows multiple test failures without clear evidence of environmental issues, suggesting test flakiness is more likely.",
+  "evidence_label": "TEST_FLAKINESS"
+ },
+ {
+  "run_id": "openimageio/oiio_.github/workflows/analysis.yml_909_1",
+  "repo": "openimageio/oiio",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "DEPENDENCY_CONFLICT",
+  "reason": "The failure is due to missing packages (ffmpeg and ffmpeg-devel), indicating a dependency issue rather than a code regression.",
+  "evidence_label": "QUALITY_VIOLATION"
+ },
+ {
+  "run_id": "sobhe/hazm_.github/workflows/lint.yml_89_1",
+  "repo": "sobhe/hazm",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "QUALITY_VIOLATION",
+  "reason": "The failure was due to a linting error detected by ruff, which indicates a quality violation rather than a code regression.",
+  "evidence_label": "QUALITY_VIOLATION"
+ },
+ {
+  "run_id": "microsoft/graspologic_.github/workflows/publish.yml_66_1",
+  "repo": "microsoft/graspologic",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "CODE_REGRESSION",
+  "reason": "The error is due to a mismatch in the expected number of arguments for the Ellipse function, likely caused by a recent code change.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "quantumlib/openfermion_.github/workflows/nightly.yml_681_1",
+  "repo": "quantumlib/openfermion",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "CODE_REGRESSION",
+  "reason": "The log shows an AssertionError in a test, which is consistent with a code change breaking the test.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "dioxuslabs/blitz_.github/workflows/macos.yml_31_1",
+  "repo": "dioxuslabs/blitz",
+  "pred": "CONFIG_ERROR",
+  "defensible": false,
+  "best": "DEPENDENCY_CONFLICT",
+  "reason": "The error indicates a version conflict between two different versions of the 'keyboard_types' crate, which is a dependency issue.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "freenet/locutus_.github/workflows/ci.yml_1669_1",
+  "repo": "freenet/locutus",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "CODE_REGRESSION",
+  "reason": "The error indicates a missing exported member in a module, suggesting a recent code change or update caused the issue.",
+  "evidence_label": "QUALITY_VIOLATION"
+ },
+ {
+  "run_id": "console-rs/dialoguer_.github/workflows/ci.yml_303_1",
+  "repo": "console-rs/dialoguer",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "TOOLING_ARTIFACT",
+  "reason": "The log shows all tests passing, suggesting the failure is likely due to a CI tool issue rather than a code regression.",
+  "evidence_label": "CONFIG_ERROR"
+ },
+ {
+  "run_id": "hugsy/gef-extras_.github/workflows/run-tests.yml_68_1",
+  "repo": "hugsy/gef-extras",
+  "pred": "DEPENDENCY_CONFLICT",
+  "defensible": false,
+  "best": "CONFIG_ERROR",
+  "reason": "The failure is due to a missing file or directory, which suggests a configuration issue rather than a dependency conflict.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "dbup/dbup_.github/workflows/test-code.yml_52_1",
+  "repo": "dbup/dbup",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "INFRA_INCOMPATIBILITY",
+  "reason": "The log indicates an issue with copying a file related to a specific runtime, suggesting an infrastructure or compatibility problem rather than a code regression.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "1password/onepassword-operator_.github/workflows/release-pr.yml_79_1",
+  "repo": "1password/onepassword-operator",
+  "pred": "CONFIG_ERROR",
+  "defensible": true,
+  "best": "CONFIG_ERROR",
+  "reason": "The error 'No commits between main and release/v1.7.1' suggests a configuration issue in the release process or branch setup.",
+  "evidence_label": "CONFIG_ERROR"
+ },
+ {
+  "run_id": "clastix/capsule_.github/workflows/e2e.yml_1058_1",
+  "repo": "clastix/capsule",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "CODE_REGRESSION",
+  "reason": "The failure is due to a test expecting a successful operation but receiving an error, which suggests a recent code change may have introduced a regression.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "brentp/cyvcf2_.github/workflows/build.yml_181_1",
+  "repo": "brentp/cyvcf2",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "CASCADE_FAILURE",
+  "reason": "The log indicates the operation was canceled, suggesting an upstream issue rather than a code regression.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "ivanvotti/ember-svg-jar_.github/workflows/ci-ember-svg-jar.yml_106_1",
+  "repo": "ivanvotti/ember-svg-jar",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "ENV_FLAKINESS",
+  "reason": "The failure is due to a cache reservation issue, which is more indicative of a transient environment problem rather than a code regression.",
+  "evidence_label": "QUALITY_VIOLATION"
+ },
+ {
+  "run_id": "messense/cargo-xwin_.github/workflows/CI.yml_316_1",
+  "repo": "messense/cargo-xwin",
+  "pred": "DEPENDENCY_CONFLICT",
+  "defensible": true,
+  "best": "CODE_REGRESSION",
+  "reason": "The error indicates a mismatch in function arguments due to a code change, which is characteristic of a code regression.",
+  "evidence_label": "CONFIG_ERROR"
+ },
+ {
+  "run_id": "metamask/json-rpc-engine_.github/workflows/publish-main-docs.yml_16_1",
+  "repo": "metamask/json-rpc-engine",
+  "pred": "CONFIG_ERROR",
+  "defensible": true,
+  "best": "CONFIG_ERROR",
+  "reason": "The failure is due to a missing deploy key or token, which is a configuration issue.",
+  "evidence_label": "QUALITY_VIOLATION"
+ },
+ {
+  "run_id": "hipages/php-fpm_exporter_.github/workflows/release.yml_33_1",
+  "repo": "hipages/php-fpm_exporter",
+  "pred": "CONFIG_ERROR",
+  "defensible": true,
+  "best": "CONFIG_ERROR",
+  "reason": "The error indicates a misconfiguration in authentication credentials for Docker, aligning with CONFIG_ERROR.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "matanolabs/matano_.github/workflows/pr-build.yml_112_1",
+  "repo": "matanolabs/matano",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "CONFIG_ERROR",
+  "reason": "The log indicates a configuration issue with the cache being read-only, which is more indicative of a CONFIG_ERROR than a CODE_REGRESSION.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "ipfs-shipyard/ipfs-webui_.github/workflows/node-versions.yml_65_1",
+  "repo": "ipfs-shipyard/ipfs-webui",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "CONFIG_ERROR",
+  "reason": "The failure is due to a git push rejection because the remote contains changes not present locally, indicating a configuration issue rather than a code regression.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "saketkc/pysradb_.github/workflows/pull_request.yml_76_2",
+  "repo": "saketkc/pysradb",
+  "pred": "CONFIG_ERROR",
+  "defensible": false,
+  "best": "QUALITY_VIOLATION",
+  "reason": "The log shows the use of flake8 and black, which are tools for checking code quality, suggesting a quality violation rather than a configuration error.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "shopify/js-buy-sdk_dynamic/dependabot/dependabot-updates_1_1",
+  "repo": "shopify/js-buy-sdk",
+  "pred": "DEPENDENCY_CONFLICT",
+  "defensible": false,
+  "best": "CONFIG_ERROR",
+  "reason": "The log indicates an issue with initializing the metrics client due to environment configuration, not a dependency conflict.",
+  "evidence_label": "CONFIG_ERROR"
+ },
+ {
+  "run_id": "oschwengers/bakta_.github/workflows/ci.yml_353_1",
+  "repo": "oschwengers/bakta",
+  "pred": "CONFIG_ERROR",
+  "defensible": true,
+  "best": "CONFIG_ERROR",
+  "reason": "The error suggests a configuration issue with the AMRFinderPlus database needing an update, which aligns with CONFIG_ERROR.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "eldavoo/whatsapp-crypt14-crypt15-decrypter_.github/workflows/lint-test.yml_42_1",
+  "repo": "eldavoo/whatsapp-crypt14-crypt15-decrypter",
+  "pred": "CONFIG_ERROR",
+  "defensible": true,
+  "best": "QUALITY_VIOLATION",
+  "reason": "The log shows a flake8 command being run, which is related to code quality checks, making QUALITY_VIOLATION the most likely category.",
+  "evidence_label": "QUALITY_VIOLATION"
+ },
+ {
+  "run_id": "vanus-labs/vanus_.github/workflows/docker-build.yml_212_1",
+  "repo": "vanus-labs/vanus",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "ENV_FLAKINESS",
+  "reason": "The failure was due to a TLS handshake timeout, indicating a transient network issue rather than a code change.",
+  "evidence_label": "ENV_FLAKINESS"
+ },
+ {
+  "run_id": "easypost/easypost-node_.github/workflows/ci.yml_819_1",
+  "repo": "easypost/easypost-node",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "CODE_REGRESSION",
+  "reason": "The error indicates a syntax issue in the code documentation, which is consistent with a code change breaking the build process.",
+  "evidence_label": "QUALITY_VIOLATION"
+ },
+ {
+  "run_id": "wix/react-native-notifications_.github/workflows/documentation.yml_274_1",
+  "repo": "wix/react-native-notifications",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "DEPENDENCY_CONFLICT",
+  "reason": "The error indicates an issue with module imports, likely due to a dependency version mismatch or conflict.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "wicg/webmonetization_.github/workflows/contributors.yml_4_1",
+  "repo": "wicg/webmonetization",
+  "pred": "CONFIG_ERROR",
+  "defensible": true,
+  "best": "CONFIG_ERROR",
+  "reason": "The error is due to a mismatch between the module type specified in the package.json and the script's usage of 'require', which is a configuration issue.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "chronoxor/cppcommon_.github/workflows/build-windows-msys2.yml_85_1",
+  "repo": "chronoxor/cppcommon",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "CODE_REGRESSION",
+  "reason": "The errors indicate undeclared variables, which is consistent with a code change introducing a regression.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "molssi-bse/basis_set_exchange_.github/workflows/tests.yml_451_1",
+  "repo": "molssi-bse/basis_set_exchange",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "CODE_REGRESSION",
+  "reason": "The KeyError suggests a missing key in the code logic, likely due to a recent code change.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "python-validators/validators_.github/workflows/package.yaml_5_1",
+  "repo": "python-validators/validators",
+  "pred": "CONFIG_ERROR",
+  "defensible": false,
+  "best": "QUALITY_VIOLATION",
+  "reason": "The errors indicate issues with documentation formatting, which aligns with a quality violation rather than a configuration error.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "trufflesuite/ganache_.github/workflows/release.yml_149_1",
+  "repo": "trufflesuite/ganache",
+  "pred": "CONFIG_ERROR",
+  "defensible": false,
+  "best": "TOOLING_ARTIFACT",
+  "reason": "The log shows all tests passing, suggesting a CI tool issue rather than a configuration error.",
+  "evidence_label": "QUALITY_VIOLATION"
+ },
+ {
+  "run_id": "brooooooklyn/image_.github/workflows/CI.yml_256_1",
+  "repo": "brooooooklyn/image",
+  "pred": "DEPENDENCY_CONFLICT",
+  "defensible": false,
+  "best": "CODE_REGRESSION",
+  "reason": "The error indicates a compilation failure due to code issues, not a dependency conflict.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "keras-team/keras-tuner_.github/workflows/nightly.yml_1041_1",
+  "repo": "keras-team/keras-tuner",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "TOOLING_ARTIFACT",
+  "reason": "The log shows all tests passing without any indication of a failure, suggesting a possible issue with the CI tool itself rather than a code regression.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "trufflesuite/ganache-cli_.github/workflows/release.yml_149_1",
+  "repo": "trufflesuite/ganache-cli",
+  "pred": "CONFIG_ERROR",
+  "defensible": false,
+  "best": "TOOLING_ARTIFACT",
+  "reason": "The log shows all tests passing, suggesting the failure might be due to an issue with the CI tool itself rather than a configuration error.",
+  "evidence_label": "QUALITY_VIOLATION"
+ },
+ {
+  "run_id": "shopify/semian_.github/workflows/test.yml_954_1",
+  "repo": "shopify/semian",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "TOOLING_ARTIFACT",
+  "reason": "The logs show no test failures or errors, indicating the issue is likely with the CI tool itself rather than a code regression.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "concrete5/concrete5_.github/workflows/update.yml_1604_1",
+  "repo": "concrete5/concrete5",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "CONFIG_ERROR",
+  "reason": "The log shows a command-line usage error, suggesting a configuration or command issue rather than a code regression.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "microsoft/powerbi-visuals-gantt_.github/workflows/build.yml_25_1",
+  "repo": "microsoft/powerbi-visuals-gantt",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "DEPENDENCY_CONFLICT",
+  "reason": "The log shows missing dependencies and an unsupported engine version, indicating a dependency or version issue rather than a code change regression.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "misp/misp-galaxy_.github/workflows/pytest.yml_583_2",
+  "repo": "misp/misp-galaxy",
+  "pred": "CONFIG_ERROR",
+  "defensible": false,
+  "best": "QUALITY_VIOLATION",
+  "reason": "The error message indicates a failure due to uncommitted changes and a script not being run, which suggests a quality gate issue rather than a configuration error.",
+  "evidence_label": "CONFIG_ERROR"
+ },
+ {
+  "run_id": "home-assistant/ios_.github/workflows/distribute.yml_463_1",
+  "repo": "home-assistant/ios",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "DEPENDENCY_CONFLICT",
+  "reason": "The log shows issues related to downloading and installing dependencies, which suggests a dependency conflict rather than a code regression.",
+  "evidence_label": "CONFIG_ERROR"
+ },
+ {
+  "run_id": "nanomsg/nng_.github/workflows/coverage.yml_809_1",
+  "repo": "nanomsg/nng",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "TEST_FLAKINESS",
+  "reason": "The failure is due to a test expecting a specific error code but receiving a success code, which could indicate a flaky test rather than a code regression.",
+  "evidence_label": "CONFIG_ERROR"
+ },
+ {
+  "run_id": "quantumlib/cirq_.github/workflows/ci-weekly.yml_26_1",
+  "repo": "quantumlib/cirq",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "CASCADE_FAILURE",
+  "reason": "The log indicates the operation was canceled, suggesting a cascade failure rather than a code regression.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "getlogbook/logbook_.github/workflows/pypi-publish.yml_15_1",
+  "repo": "getlogbook/logbook",
+  "pred": "CONFIG_ERROR",
+  "defensible": true,
+  "best": "CONFIG_ERROR",
+  "reason": "The error indicates a configuration issue with attempting to upload a file that already exists on PyPI, which aligns with a CONFIG_ERROR.",
+  "evidence_label": "CONFIG_ERROR"
+ },
+ {
+  "run_id": "ironlanguages/dlr_.github/workflows/main.yml_174_1",
+  "repo": "ironlanguages/dlr",
+  "pred": "CONFIG_ERROR",
+  "defensible": false,
+  "best": "TOOLING_ARTIFACT",
+  "reason": "The log shows all tests passed, suggesting the failure might be due to an issue with the CI tool itself rather than a configuration error.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "fluentdatetime/fluentdatetime_.github/workflows/on-push-do-docs.yml_65_1",
+  "repo": "fluentdatetime/fluentdatetime",
+  "pred": "CONFIG_ERROR",
+  "defensible": true,
+  "best": "CONFIG_ERROR",
+  "reason": "The error indicates a missing configuration file or incorrect document convention setting, which aligns with a configuration error.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "miczflor/rpi-jukebox-rfid_.github/workflows/docker_buster.yml_182_1",
+  "repo": "miczflor/rpi-jukebox-rfid",
+  "pred": "DEPENDENCY_CONFLICT",
+  "defensible": false,
+  "best": "INFRA_INCOMPATIBILITY",
+  "reason": "The log indicates issues with system services and runlevel determination, suggesting an infrastructure compatibility problem rather than a dependency conflict.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "capacitor-community/electron_dynamic/pages/pages-build-deployment_42_1",
+  "repo": "capacitor-community/electron",
+  "pred": "CONFIG_ERROR",
+  "defensible": true,
+  "best": "CONFIG_ERROR",
+  "reason": "The error indicates a missing directory, which suggests a misconfiguration in the workflow or file paths.",
+  "evidence_label": "CONFIG_ERROR"
+ },
+ {
+  "run_id": "metamask/keyringcontroller_.github/workflows/publish-main-docs.yml_26_1",
+  "repo": "metamask/keyringcontroller",
+  "pred": "CONFIG_ERROR",
+  "defensible": true,
+  "best": "CONFIG_ERROR",
+  "reason": "The failure is due to a missing deploy key or token, which is a configuration issue.",
+  "evidence_label": "QUALITY_VIOLATION"
+ },
+ {
+  "run_id": "palkan/action_policy_.github/workflows/docs-lint.yml_153_1",
+  "repo": "palkan/action_policy",
+  "pred": "QUALITY_VIOLATION",
+  "defensible": true,
+  "best": "QUALITY_VIOLATION",
+  "reason": "The failure is due to a spelling error detected by a linter tool, which fits the QUALITY_VIOLATION category.",
+  "evidence_label": "QUALITY_VIOLATION"
+ },
+ {
+  "run_id": "automl/smac3_.github/workflows/pre-commit-update.yml_26_1",
+  "repo": "automl/smac3",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "QUALITY_VIOLATION",
+  "reason": "The failure is due to missing docstrings and a mypy type error, which are quality violations.",
+  "evidence_label": "QUALITY_VIOLATION"
+ },
+ {
+  "run_id": "lepture/flask-wtf_.github/workflows/tests.yaml_268_1",
+  "repo": "lepture/flask-wtf",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "CODE_REGRESSION",
+  "reason": "The errors are due to a deprecated property, suggesting a code change introduced the issue.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "keshavdv/unifi-cam-proxy_.github/workflows/image.yml_75_1",
+  "repo": "keshavdv/unifi-cam-proxy",
+  "pred": "CONFIG_ERROR",
+  "defensible": true,
+  "best": "DEPENDENCY_CONFLICT",
+  "reason": "The failure to build 'pydantic-core' suggests a dependency issue, but a reasonable engineer could see the use of '--no-build-isolation' as a configuration choice contributing to the error.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "asjas/prisma-redis-middleware_.github/workflows/main.yml_1471_1",
+  "repo": "asjas/prisma-redis-middleware",
+  "pred": "DEPENDENCY_CONFLICT",
+  "defensible": true,
+  "best": "DEPENDENCY_CONFLICT",
+  "reason": "The error indicates a missing file in the node_modules directory, which is often caused by dependency resolution issues.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "tensorflow/io_.github/workflows/benchmarks.yml_346_1",
+  "repo": "tensorflow/io",
+  "pred": "CONFIG_ERROR",
+  "defensible": false,
+  "best": "DEPENDENCY_CONFLICT",
+  "reason": "The error is due to a version conflict between installed packages, which is a dependency issue, not a configuration error.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "warrenbuckley/compact-log-format-viewer_.github/workflows/intellicode.yml_537_1",
+  "repo": "warrenbuckley/compact-log-format-viewer",
+  "pred": "DEPENDENCY_CONFLICT",
+  "defensible": false,
+  "best": "TOOLING_ARTIFACT",
+  "reason": "The failure is due to the IntelliCode CLI tool not being able to collect data, which suggests an issue with the tool itself rather than a dependency conflict.",
+  "evidence_label": "TOOLING_ARTIFACT"
+ },
+ {
+  "run_id": "saulius/croaring-rs_.github/workflows/rust.yml_226_1",
+  "repo": "saulius/croaring-rs",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "INFRA_INCOMPATIBILITY",
+  "reason": "The errors indicate an issue with vector type conversions in the system's LLVM/Clang headers, suggesting an incompatibility with the toolchain or environment rather than a direct code regression.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "facundoolano/google-play-scraper_.github/workflows/main.yml_2_1",
+  "repo": "facundoolano/google-play-scraper",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "CODE_REGRESSION",
+  "reason": "The failure is due to an assertion error in a test, which suggests a code change may have caused the test to fail.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "auth0/express-openid-connect_.github/workflows/publish.yml_3_1",
+  "repo": "auth0/express-openid-connect",
+  "pred": "CONFIG_ERROR",
+  "defensible": true,
+  "best": "CONFIG_ERROR",
+  "reason": "The error indicates a misconfiguration in the package.json repository URL, which aligns with a CONFIG_ERROR.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "Dicklesworthstone/llama_embeddings_fastapi_service_.github/workflows/docker-image.yml_73_1",
+  "repo": "Dicklesworthstone/llama_embeddings_fastapi_service",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "CODE_REGRESSION",
+  "reason": "The failure occurs during the compilation of a specific source file, which suggests a recent code change may have introduced an issue.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "sajya/server_.github/workflows/php-cs-fixer.yml_162_1",
+  "repo": "sajya/server",
+  "pred": "CONFIG_ERROR",
+  "defensible": true,
+  "best": "CONFIG_ERROR",
+  "reason": "The failure is due to a configuration issue with the git push operation, which requires resolving the non-fast-forward error by updating the local branch.",
+  "evidence_label": "CONFIG_ERROR"
+ },
+ {
+  "run_id": "jonhoo/flurry_.github/workflows/safety.yml_11_1",
+  "repo": "jonhoo/flurry",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "TOOLING_ARTIFACT",
+  "reason": "The log shows all tests passing, indicating no code regression, suggesting a CI tool issue instead.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "seaql/sea-schema_.github/workflows/rust.yml_583_1",
+  "repo": "seaql/sea-schema",
+  "pred": "QUALITY_VIOLATION",
+  "defensible": false,
+  "best": "CONFIG_ERROR",
+  "reason": "The error 'role \"postgres\" does not exist' suggests a configuration issue with the database setup, not a quality violation.",
+  "evidence_label": "CONFIG_ERROR"
+ },
+ {
+  "run_id": "k2-fsa/fast_rnnt_.github/workflows/run_tests_cpu.yml_12_2",
+  "repo": "k2-fsa/fast_rnnt",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "TOOLING_ARTIFACT",
+  "reason": "The log shows all tests passed, indicating no code regression, and the failure seems related to the CI tool's post-job cleanup process.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "sp-nitech/sptk_.github/workflows/check-build.yml_144_1",
+  "repo": "sp-nitech/sptk",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "TOOLING_ARTIFACT",
+  "reason": "The log shows all tests passing, suggesting the failure may be due to a CI tool issue rather than a code regression.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "rrousselgit/functional_widget_.github/workflows/build.yml_1027_1",
+  "repo": "rrousselgit/functional_widget",
+  "pred": "CONFIG_ERROR",
+  "defensible": true,
+  "best": "CONFIG_ERROR",
+  "reason": "The failure is due to a missing 'format' command in the CI configuration, indicating a misconfiguration in the workflow setup.",
+  "evidence_label": "TOOLING_ARTIFACT"
+ },
+ {
+  "run_id": "truefieng/usedapp_.github/workflows/CI-gnosis.yml_134_1",
+  "repo": "truefieng/usedapp",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "DEPENDENCY_CONFLICT",
+  "reason": "The error occurs during the installation of node modules, indicating a potential issue with compatibility between the code and the dependencies or their versions.",
+  "evidence_label": "ENV_FLAKINESS"
+ },
+ {
+  "run_id": "seaql/sea-streamer_.github/workflows/rust.yml_178_1",
+  "repo": "seaql/sea-streamer",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "TOOLING_ARTIFACT",
+  "reason": "The logs show all tests passing or being ignored, with no evidence of a code regression causing the failure.",
+  "evidence_label": "TEST_FLAKINESS"
+ },
+ {
+  "run_id": "rubickcenter/rubick_.github/workflows/main.yml_220_1",
+  "repo": "rubickcenter/rubick",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "QUALITY_VIOLATION",
+  "reason": "The log shows warnings related to code formatting issues, which are indicative of a quality violation rather than a code regression.",
+  "evidence_label": "QUALITY_VIOLATION"
+ },
+ {
+  "run_id": "wolph/python-progressbar_.github/workflows/main.yml_75_1",
+  "repo": "wolph/python-progressbar",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "CODE_REGRESSION",
+  "reason": "The errors indicate type mismatches and method signature issues, which are consistent with code changes introducing regressions.",
+  "evidence_label": "CONFIG_ERROR"
+ },
+ {
+  "run_id": "liteldev/liteloaderbds_.github/workflows/build.yml_3560_1",
+  "repo": "liteldev/liteloaderbds",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "CODE_REGRESSION",
+  "reason": "The errors indicate issues with code syntax and missing members, which are typical of code changes introducing regressions.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "atsamd-rs/atsamd_.github/workflows/release-crates.yml_21_1",
+  "repo": "atsamd-rs/atsamd",
+  "pred": "DEPENDENCY_CONFLICT",
+  "defensible": false,
+  "best": "CONFIG_ERROR",
+  "reason": "The failure is due to a missing directory 'hal', indicating a configuration or path issue rather than a dependency conflict.",
+  "evidence_label": "CONFIG_ERROR"
+ },
+ {
+  "run_id": "openmessaging/openmessaging-storage-dledger_.github/workflows/maven.yml_174_1",
+  "repo": "openmessaging/openmessaging-storage-dledger",
+  "pred": "DEPENDENCY_CONFLICT",
+  "defensible": false,
+  "best": "INFRA_INCOMPATIBILITY",
+  "reason": "The error indicates a leadership issue in a distributed system, which is more likely related to infrastructure or configuration rather than a dependency conflict.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "idealvin/cocoyaxi_.github/workflows/win.yml_398_1",
+  "repo": "idealvin/cocoyaxi",
+  "pred": "CONFIG_ERROR",
+  "defensible": true,
+  "best": "CONFIG_ERROR",
+  "reason": "The error suggests a configuration issue with the build process, as indicated by the command line warning and the fatal error related to unmatched tokens in the code.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "kennethenevoldsen/asent_.github/workflows/tests.yml_156_1",
+  "repo": "kennethenevoldsen/asent",
+  "pred": "CONFIG_ERROR",
+  "defensible": false,
+  "best": "CODE_REGRESSION",
+  "reason": "The error is due to a code issue where a string is used instead of an object with an 'N' attribute, indicating a code regression rather than a configuration error.",
+  "evidence_label": "CONFIG_ERROR"
+ },
+ {
+  "run_id": "batchdrake/sigdigger_.github/workflows/ci.yml_347_1",
+  "repo": "batchdrake/sigdigger",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "ENV_FLAKINESS",
+  "reason": "The error is due to an ArchiveConnectionError, indicating a network or transient infrastructure issue rather than a code change.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "touchlab/kermit_.github/workflows/websitedeploy.yml_22_1",
+  "repo": "touchlab/kermit",
+  "pred": "CONFIG_ERROR",
+  "defensible": true,
+  "best": "INFRA_INCOMPATIBILITY",
+  "reason": "The failure is due to an incompatible Java version on the runner, which is an infrastructure issue.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "leandrocfe/filament-apex-charts_.github/workflows/phpstan.yml_66_1",
+  "repo": "leandrocfe/filament-apex-charts",
+  "pred": "QUALITY_VIOLATION",
+  "defensible": true,
+  "best": "QUALITY_VIOLATION",
+  "reason": "The failure is due to the usage of a deprecated trait, which is a code quality issue.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "bblimke/webmock_.github/workflows/CI.yml_158_1",
+  "repo": "bblimke/webmock",
+  "pred": "INFRA_INCOMPATIBILITY",
+  "defensible": false,
+  "best": "ENV_FLAKINESS",
+  "reason": "The error indicates a connection issue to localhost, suggesting a transient network or environment problem rather than an infrastructure incompatibility.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "hubblo-org/scaphandre_.github/workflows/python_build.yml_20_1",
+  "repo": "hubblo-org/scaphandre",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "CODE_REGRESSION",
+  "reason": "The error log indicates a code change that introduced a duplicate function definition, which is a typical code regression issue.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "aws-samples/cdk-eks-blueprints-patterns_.github/workflows/e2e.yaml_1_1",
+  "repo": "aws-samples/cdk-eks-blueprints-patterns",
+  "pred": "CONFIG_ERROR",
+  "defensible": true,
+  "best": "CONFIG_ERROR",
+  "reason": "The error indicates a missing required input 'aws-region', which is a configuration issue.",
+  "evidence_label": "CONFIG_ERROR"
+ },
+ {
+  "run_id": "brianpugh/belay_.github/workflows/tests.yaml_577_1",
+  "repo": "brianpugh/belay",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "CONFIG_ERROR",
+  "reason": "The log indicates a path validation error related to caching, which suggests a configuration issue rather than a code regression.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "lissy93/dotfiles_.github/workflows/build.yml_151_1",
+  "repo": "lissy93/dotfiles",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "CONFIG_ERROR",
+  "reason": "The failure is due to a missing 'install' script, indicating a configuration issue rather than a code regression.",
+  "evidence_label": "CONFIG_ERROR"
+ },
+ {
+  "run_id": "nojhan/liquidprompt_.github/workflows/tests.yml_744_1",
+  "repo": "nojhan/liquidprompt",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "INFRA_INCOMPATIBILITY",
+  "reason": "The failure is due to the absence of the 'zsh' shell, indicating an infrastructure incompatibility rather than a code regression.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "saadpasta/developerfolio_.github/workflows/deploy.yml_197_1",
+  "repo": "saadpasta/developerfolio",
+  "pred": "CONFIG_ERROR",
+  "defensible": false,
+  "best": "INFRA_INCOMPATIBILITY",
+  "reason": "The failure is due to an unsupported Node.js version for the npm package, indicating an incompatibility with the toolchain rather than a configuration error.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "ovyerus/prismaliser_.github/workflows/push.yaml_290_1",
+  "repo": "ovyerus/prismaliser",
+  "pred": "DEPENDENCY_CONFLICT",
+  "defensible": true,
+  "best": "DEPENDENCY_CONFLICT",
+  "reason": "The error 'prettier.resolveConfig is not a function' suggests a version mismatch or incompatibility between dependencies, which aligns with a DEPENDENCY_CONFLICT.",
+  "evidence_label": "QUALITY_VIOLATION"
+ },
+ {
+  "run_id": "arakoodev/edgechains_.github/workflows/BuildAndRun.yml_86_1",
+  "repo": "arakoodev/edgechains",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "CONFIG_ERROR",
+  "reason": "The error message indicates a missing jdbcUrl configuration, which suggests a configuration issue rather than a code regression.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "frgfm/holocron_.github/workflows/doc-status.yml_123_1",
+  "repo": "frgfm/holocron",
+  "pred": "DEPENDENCY_CONFLICT",
+  "defensible": false,
+  "best": "CONFIG_ERROR",
+  "reason": "The failure is due to a configuration issue with GitHub Pages, not a dependency conflict.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "parcel-bundler/parcel-css_.github/workflows/release.yml_109_1",
+  "repo": "parcel-bundler/parcel-css",
+  "pred": "DEPENDENCY_CONFLICT",
+  "defensible": true,
+  "best": "DEPENDENCY_CONFLICT",
+  "reason": "The log shows warnings about unmet peer dependencies, which aligns with a dependency conflict issue.",
+  "evidence_label": "CONFIG_ERROR"
+ },
+ {
+  "run_id": "dynamorio/drmemory_.github/workflows/ci-package.yml_167_1",
+  "repo": "dynamorio/drmemory",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "INFRA_INCOMPATIBILITY",
+  "reason": "The failure is due to missing AVX-512 support and size checks failing, indicating an issue with the environment's compatibility rather than a code change.",
+  "evidence_label": "TOOLING_ARTIFACT"
+ },
+ {
+  "run_id": "cytopiateam/cytopia_.github/workflows/sonarcloud.yml_530_1",
+  "repo": "cytopiateam/cytopia",
+  "pred": "CONFIG_ERROR",
+  "defensible": false,
+  "best": "INFRA_INCOMPATIBILITY",
+  "reason": "The log shows a build setup process without any clear configuration errors, suggesting an infrastructure or toolchain issue instead.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "enlightn/enlightn_.github/workflows/manual.yaml_5_1",
+  "repo": "enlightn/enlightn",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "CODE_REGRESSION",
+  "reason": "The failures are due to assertions in tests that previously passed, indicating a likely code change causing the regression.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "keras-team/autokeras_.github/workflows/nightly.yml_890_1",
+  "repo": "keras-team/autokeras",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "CODE_REGRESSION",
+  "reason": "The error indicates a possible issue with the code logic or input handling in the tokenizer, which aligns with a code regression.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "qiskit/qiskit-machine-learning_.github/workflows/main.yml_4282_1",
+  "repo": "qiskit/qiskit-machine-learning",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "TOOLING_ARTIFACT",
+  "reason": "The log shows warnings related to resource management and path validation, but no test failures, suggesting an issue with the CI tool rather than a code regression.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "ploomber/ploomber_.github/workflows/ci-unit-macos.yml_1227_1",
+  "repo": "ploomber/ploomber",
+  "pred": "CONFIG_ERROR",
+  "defensible": false,
+  "best": "DEPENDENCY_CONFLICT",
+  "reason": "The error log indicates a dependency conflict with pycodestyle, which is a classic example of a DEPENDENCY_CONFLICT, not a CONFIG_ERROR.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "dnschanger/dnschanger-desktop_.github/workflows/build.yml_6_1",
+  "repo": "dnschanger/dnschanger-desktop",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "QUALITY_VIOLATION",
+  "reason": "The log shows warnings for unexpected syntax in CSS, which suggests a quality violation due to linting or style checks, but a code regression could also be a reasonable interpretation if recent changes introduced this syntax.",
+  "evidence_label": "QUALITY_VIOLATION"
+ },
+ {
+  "run_id": "edx/edx-app-android_.github/workflows/androidTestSuite.yml_733_1",
+  "repo": "edx/edx-app-android",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "CONFIG_ERROR",
+  "reason": "The error indicates a failure to determine the version name due to a Git command issue, suggesting a configuration problem rather than a code regression.",
+  "evidence_label": "CONFIG_ERROR"
+ },
+ {
+  "run_id": "micro-gl/micro-gl_.github/workflows/compile.yml_34_1",
+  "repo": "micro-gl/micro-gl",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "CODE_REGRESSION",
+  "reason": "The log shows a syntax error in the code, which is indicative of a code change causing the build to fail.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "dotnet-campus/dotnetcampus.ipc_.github/workflows/dotnet-core.yml_590_1",
+  "repo": "dotnet-campus/dotnetcampus.ipc",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "QUALITY_VIOLATION",
+  "reason": "The log shows warnings about missing XML comments, which are likely causing a quality gate failure rather than a code regression.",
+  "evidence_label": "QUALITY_VIOLATION"
+ },
+ {
+  "run_id": "cowrie/cowrie_.github/workflows/pur.yml_235_1",
+  "repo": "cowrie/cowrie",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "DEPENDENCY_CONFLICT",
+  "reason": "The error log clearly indicates a dependency conflict due to incompatible versions of Sphinx and related packages.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "xujiajun/nutsdb_.github/workflows/reviewdog.yml_560_1",
+  "repo": "xujiajun/nutsdb",
+  "pred": "QUALITY_VIOLATION",
+  "defensible": true,
+  "best": "QUALITY_VIOLATION",
+  "reason": "The errors reported by gofumpt indicate style or formatting issues, which align with a quality violation.",
+  "evidence_label": "CONFIG_ERROR"
+ },
+ {
+  "run_id": "maxnut/gdmegaoverlay_.github/workflows/cmake.yml_47_1",
+  "repo": "maxnut/gdmegaoverlay",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "DEPENDENCY_CONFLICT",
+  "reason": "The unresolved external symbol errors suggest a missing or incompatible dependency, likely related to the curl library.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "nf-core/tools_.github/workflows/sync.yml_35_5",
+  "repo": "nf-core/tools",
+  "pred": "CONFIG_ERROR",
+  "defensible": true,
+  "best": "CONFIG_ERROR",
+  "reason": "The error is due to attempting to push to a read-only archived repository, which is a configuration oversight.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "appliedzkp/maci_.github/workflows/domainobjs-build.yml_295_1",
+  "repo": "appliedzkp/maci",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "TOOLING_ARTIFACT",
+  "reason": "The failure is due to a cache reservation issue, which is related to the CI tool's handling of caching, not a code regression.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "rlworkgroup/metaworld_.github/workflows/build.yml_44_1",
+  "repo": "rlworkgroup/metaworld",
+  "pred": "CONFIG_ERROR",
+  "defensible": false,
+  "best": "DEPENDENCY_CONFLICT",
+  "reason": "The error is due to a version conflict between installed packages, which is a dependency issue rather than a configuration error.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "aunetx/deezer-linux_dynamic/pages/pages-build-deployment_50_1",
+  "repo": "aunetx/deezer-linux",
+  "pred": "CONFIG_ERROR",
+  "defensible": true,
+  "best": "CONFIG_ERROR",
+  "reason": "The error indicates a missing directory which suggests a misconfiguration in the workflow or paths.",
+  "evidence_label": "CONFIG_ERROR"
+ },
+ {
+  "run_id": "mongey/terraform-provider-kafka_.github/workflows/test.yml_739_3",
+  "repo": "mongey/terraform-provider-kafka",
+  "pred": "DEPENDENCY_CONFLICT",
+  "defensible": true,
+  "best": "DEPENDENCY_CONFLICT",
+  "reason": "The errors indicate issues with accessing files in a dependency's directory, suggesting a problem with the dependency management or versioning.",
+  "evidence_label": "TOOLING_ARTIFACT"
+ },
+ {
+  "run_id": "sls-mentor/sls-mentor_.github/workflows/push-master.yml_1_1",
+  "repo": "sls-mentor/sls-mentor",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "DEPENDENCY_CONFLICT",
+  "reason": "The log indicates a missing module 'aws-crt', suggesting a dependency issue rather than a code regression.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "numandev1/react-native-keys_.github/workflows/build-ios.yml_32_1",
+  "repo": "numandev1/react-native-keys",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "DEPENDENCY_CONFLICT",
+  "reason": "The error log indicates an issue with Bundler setup, suggesting a dependency or version conflict rather than a code regression.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "serverless-stack/sst_.github/workflows/test.yml_1309_1",
+  "repo": "serverless-stack/sst",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "CODE_REGRESSION",
+  "reason": "The error message 'Cannot read properties of undefined' suggests a code change likely introduced a bug causing the tests to fail.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "nebari-dev/nebari_.github/workflows/test_integration.yaml_26_1",
+  "repo": "nebari-dev/nebari",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "CONFIG_ERROR",
+  "reason": "The error indicates a configuration issue with the Terraform import, as it cannot find the specified remote object.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "harness-software/wp-graphql-gravity-forms_.github/workflows/integration-testing.yml_415_1",
+  "repo": "harness-software/wp-graphql-gravity-forms",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "CONFIG_ERROR",
+  "reason": "The log indicates a configuration issue with WordPress setup, not a code regression.",
+  "evidence_label": "CONFIG_ERROR"
+ },
+ {
+  "run_id": "axewp/wp-graphql-gravity-forms_.github/workflows/integration-testing.yml_415_1",
+  "repo": "axewp/wp-graphql-gravity-forms",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "CONFIG_ERROR",
+  "reason": "The log indicates a configuration issue with WordPress setup, not a code change regression.",
+  "evidence_label": "CONFIG_ERROR"
+ },
+ {
+  "run_id": "theporgs/impacket_.github/workflows/build_and_test.yml_59_1",
+  "repo": "theporgs/impacket",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "CODE_REGRESSION",
+  "reason": "The failure is due to a syntax error in the code, which is indicative of a code regression.",
+  "evidence_label": "QUALITY_VIOLATION"
+ },
+ {
+  "run_id": "kaaveh/composenews_.github/workflows/build.yml_110_1",
+  "repo": "kaaveh/composenews",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "QUALITY_VIOLATION",
+  "reason": "The log indicates warnings related to unused variables and deprecated methods, which are more indicative of a quality violation rather than a code regression.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "emurgo/yoroi-frontend_.github/workflows/nightly.yml_56_1",
+  "repo": "emurgo/yoroi-frontend",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "CONFIG_ERROR",
+  "reason": "The failure is due to a version conflict in the release process, indicating a configuration issue rather than a code regression.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "netlify/netlify-cms_.github/workflows/fossa.yml_1345_1",
+  "repo": "netlify/netlify-cms",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "INFRA_INCOMPATIBILITY",
+  "reason": "The failure is due to an outdated FOSSA CLI version, suggesting an incompatibility with the current infrastructure setup.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "ninxsoft/lowprofile_.github/workflows/linting.yml_47_1",
+  "repo": "ninxsoft/lowprofile",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "QUALITY_VIOLATION",
+  "reason": "The failure is due to linting errors, which are quality violations, not code regressions.",
+  "evidence_label": "QUALITY_VIOLATION"
+ },
+ {
+  "run_id": "dethcrypto/typechain_.github/workflows/ci.yml_1043_1",
+  "repo": "dethcrypto/typechain",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "CODE_REGRESSION",
+  "reason": "The failure is due to missing files that should have been present, suggesting a recent code change may have removed or failed to include necessary files.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "seldonio/mlserver_.github/workflows/release.yml_105_5",
+  "repo": "seldonio/mlserver",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "DEPENDENCY_CONFLICT",
+  "reason": "The log indicates a dependency version issue with 'mlserver-alibi-detect' and a conda environment solving problem, which aligns with DEPENDENCY_CONFLICT rather than CODE_REGRESSION.",
+  "evidence_label": "INFRA_INCOMPATIBILITY"
+ },
+ {
+  "run_id": "louisbrunner/dnd-multi-backend_.github/workflows/build.yml_480_1",
+  "repo": "louisbrunner/dnd-multi-backend",
+  "pred": "DEPENDENCY_CONFLICT",
+  "defensible": false,
+  "best": "ENV_FLAKINESS",
+  "reason": "The failure is due to a cache reservation issue, which is more indicative of a transient infrastructure or environment problem rather than a dependency conflict.",
+  "evidence_label": "CONFIG_ERROR"
+ },
+ {
+  "run_id": "socketry/async-http_.github/workflows/test-async-head.yaml_133_1",
+  "repo": "socketry/async-http",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "TEST_FLAKINESS",
+  "reason": "The log shows a simulated failure in a test, which suggests test flakiness, but a reasonable engineer could also see it as a code regression due to the unhandled exception.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "instagram/libcst_.github/workflows/pypi_upload.yml_182_1",
+  "repo": "instagram/libcst",
+  "pred": "CONFIG_ERROR",
+  "defensible": true,
+  "best": "ENV_FLAKINESS",
+  "reason": "The failure is due to a cache reservation conflict, which is often a transient issue related to the environment or concurrent job execution.",
+  "evidence_label": "CONFIG_ERROR"
+ },
+ {
+  "run_id": "dmitrytsepelev/store_model_.github/workflows/rspec.yml_1249_1",
+  "repo": "dmitrytsepelev/store_model",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "CODE_REGRESSION",
+  "reason": "The log shows specific test failures related to expected behavior, which suggests a recent code change may have introduced a regression.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "shopify/vscode-ruby-lsp_dynamic/dependabot/dependabot-updates_2_1",
+  "repo": "shopify/vscode-ruby-lsp",
+  "pred": "DEPENDENCY_CONFLICT",
+  "defensible": true,
+  "best": "DEPENDENCY_CONFLICT",
+  "reason": "The log indicates a failure related to updating dependencies, specifically mentioning an 'unknown_error' with a dependency, which aligns with a DEPENDENCY_CONFLICT.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "cloudevents/sdk-python_.github/workflows/pypi-release.yml_55_1",
+  "repo": "cloudevents/sdk-python",
+  "pred": "CONFIG_ERROR",
+  "defensible": true,
+  "best": "CONFIG_ERROR",
+  "reason": "The error indicates a configuration issue with the upload process, as the file already exists on PyPI, suggesting a need to adjust the versioning or upload settings.",
+  "evidence_label": "CONFIG_ERROR"
+ },
+ {
+  "run_id": "kovshenin/sail_.github/workflows/end2end-tests.yml_139_1",
+  "repo": "kovshenin/sail",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "CODE_REGRESSION",
+  "reason": "The failure logs indicate assertion errors in test cases, which are consistent with a code change causing tests to fail, supporting the CODE_REGRESSION category.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "Lissy93/wapalyzer_.github/workflows/node.js.yml_1_1",
+  "repo": "Lissy93/wapalyzer",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "DEPENDENCY_CONFLICT",
+  "reason": "The log indicates missing dependencies in the lock file, which suggests a dependency/version/lockfile issue rather than a code change regression.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "iurysza/module-graph_.github/workflows/pre-merge.yaml_80_1",
+  "repo": "iurysza/module-graph",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "CODE_REGRESSION",
+  "reason": "The log shows syntax errors in the code, which suggests a recent code change introduced these errors.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "eldavoo/wa-crypt-tools_.github/workflows/lint-test.yml_42_1",
+  "repo": "eldavoo/wa-crypt-tools",
+  "pred": "CONFIG_ERROR",
+  "defensible": true,
+  "best": "QUALITY_VIOLATION",
+  "reason": "The log shows a flake8 command being run, which is related to code quality checks, making QUALITY_VIOLATION the most likely category.",
+  "evidence_label": "QUALITY_VIOLATION"
+ },
+ {
+  "run_id": "foxundermoon/vs-shell-format_.github/workflows/CD.yml_102_1",
+  "repo": "foxundermoon/vs-shell-format",
+  "pred": "CONFIG_ERROR",
+  "defensible": true,
+  "best": "CONFIG_ERROR",
+  "reason": "The error indicates a configuration issue with the release process, as the tag already exists, which aligns with CONFIG_ERROR.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "prismaneui/prismane_.github/workflows/storybook.yml_1_1",
+  "repo": "prismaneui/prismane",
+  "pred": "CONFIG_ERROR",
+  "defensible": true,
+  "best": "CONFIG_ERROR",
+  "reason": "The failure is due to an incorrect configuration of the Git checkout depth, which is a configuration issue.",
+  "evidence_label": "CONFIG_ERROR"
+ },
+ {
+  "run_id": "octokit/webhooks.js_.github/workflows/update.yml_240_1",
+  "repo": "octokit/webhooks.js",
+  "pred": "DEPENDENCY_CONFLICT",
+  "defensible": false,
+  "best": "CODE_REGRESSION",
+  "reason": "The error indicates a type mismatch in the code, suggesting a recent code change introduced a bug.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "ethereum-ts/typechain_.github/workflows/ci.yml_1043_1",
+  "repo": "ethereum-ts/typechain",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "DEPENDENCY_CONFLICT",
+  "reason": "The failure is due to missing files during the package installation, indicating a potential issue with dependencies or package versions.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "github/codespaces-react_dynamic/dependabot/dependabot-updates_8_1",
+  "repo": "github/codespaces-react",
+  "pred": "DEPENDENCY_CONFLICT",
+  "defensible": true,
+  "best": "DEPENDENCY_CONFLICT",
+  "reason": "The log indicates that Dependabot encountered an error related to a security update, which suggests a dependency or version issue.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "mouradmourafiq/datatile_.github/workflows/traceml.yml_93_8",
+  "repo": "mouradmourafiq/datatile",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "CODE_REGRESSION",
+  "reason": "The error indicates a missing column in the code logic, which suggests a recent code change may have introduced this issue.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "iridiumidentity/iridium_.github/workflows/build-iridium-pull-request.yml_141_1",
+  "repo": "iridiumidentity/iridium",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "CODE_REGRESSION",
+  "reason": "The log indicates a test failure due to an unauthorized access exception, which is likely caused by a recent code change.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "polyaxon/datatile_.github/workflows/traceml.yml_93_8",
+  "repo": "polyaxon/datatile",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "CODE_REGRESSION",
+  "reason": "The error indicates a missing column in the code logic, which suggests a recent code change may have introduced this issue.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "slack-ruby/slack-ruby-client_.github/workflows/integration_test.yml_195_1",
+  "repo": "slack-ruby/slack-ruby-client",
+  "pred": "CONFIG_ERROR",
+  "defensible": false,
+  "best": "ENV_FLAKINESS",
+  "reason": "The error 'queue empty' suggests a potential issue with the environment or timing, rather than a configuration error.",
+  "evidence_label": "ENV_FLAKINESS"
+ },
+ {
+  "run_id": "ajndkr/fastapi-async-langchain_.github/workflows/ci.yaml_61_2",
+  "repo": "ajndkr/fastapi-async-langchain",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "CODE_REGRESSION",
+  "reason": "The error indicates a TypeError due to unsupported request model creation, likely caused by a recent code change.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "geodacenter/geoda_.github/workflows/osx_build.yml_63_1",
+  "repo": "geodacenter/geoda",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "CODE_REGRESSION",
+  "reason": "The errors indicate a type mismatch likely due to recent code changes, which aligns with a code regression.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "dapperlib/dapperaot_.github/workflows/dotnet.yml_172_1",
+  "repo": "dapperlib/dapperaot",
+  "pred": "CONFIG_ERROR",
+  "defensible": true,
+  "best": "CONFIG_ERROR",
+  "reason": "The error message suggests a configuration issue related to package source or API key settings.",
+  "evidence_label": "CONFIG_ERROR"
+ },
+ {
+  "run_id": "pluginkollektiv/antispam-bee_.github/workflows/wordpress-plugin-asset-update.yml_92_1",
+  "repo": "pluginkollektiv/antispam-bee",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "ENV_FLAKINESS",
+  "reason": "The failure is due to authentication issues with gitlab.com, indicating a transient network or registry problem rather than a code change.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "korken89/smlang-rs_.github/workflows/build.yml_140_2",
+  "repo": "korken89/smlang-rs",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "CODE_REGRESSION",
+  "reason": "The log shows code changes related to formatting and imports, which could lead to a build failure if they introduced errors, supporting the CODE_REGRESSION category.",
+  "evidence_label": "QUALITY_VIOLATION"
+ },
+ {
+  "run_id": "nanshaner/repoll_.github/workflows/docker_ci.yml_1085_1",
+  "repo": "nanshaner/repoll",
+  "pred": "CONFIG_ERROR",
+  "defensible": true,
+  "best": "INFRA_INCOMPATIBILITY",
+  "reason": "The failure is due to the specified Python version not being found, which suggests an issue with the runner's environment or toolchain compatibility.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "wfrest/wfrest_.github/workflows/CI.yml_371_1",
+  "repo": "wfrest/wfrest",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "CODE_REGRESSION",
+  "reason": "The missing header file suggests a recent code change likely removed or misplaced the file, causing the build to fail.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "seldonio/alibi_.github/workflows/test_all_notebooks.yml_133_1",
+  "repo": "seldonio/alibi",
+  "pred": "QUALITY_VIOLATION",
+  "defensible": false,
+  "best": "CODE_REGRESSION",
+  "reason": "The error is due to an AttributeError in the code execution, indicating a code issue rather than a quality violation.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "sibyx/phpgpx_.github/workflows/coverage.yml_1_1",
+  "repo": "sibyx/phpgpx",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "CODE_REGRESSION",
+  "reason": "The error log indicates a failure in loading or executing test files, which is consistent with a code change breaking the test suite.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "giggio/node-chromedriver_.github/workflows/tag.yml_12_1",
+  "repo": "giggio/node-chromedriver",
+  "pred": "CONFIG_ERROR",
+  "defensible": true,
+  "best": "CONFIG_ERROR",
+  "reason": "The error indicates a misconfiguration in accessing a GitHub API reference, which aligns with a configuration issue.",
+  "evidence_label": "CONFIG_ERROR"
+ },
+ {
+  "run_id": "floating/frame_.github/workflows/build.yml_181_1",
+  "repo": "floating/frame",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "TOOLING_ARTIFACT",
+  "reason": "The log shows all tests passing, suggesting the failure may be due to an issue with the CI tool itself rather than a code regression.",
+  "evidence_label": "CONFIG_ERROR"
+ },
+ {
+  "run_id": "dacotaco/priiloader_.github/workflows/Priiloader-CI.yml_580_1",
+  "repo": "dacotaco/priiloader",
+  "pred": "QUALITY_VIOLATION",
+  "defensible": true,
+  "best": "CONFIG_ERROR",
+  "reason": "The log indicates a configuration issue with missing include directories, which affects the quality check but is primarily a configuration error.",
+  "evidence_label": "QUALITY_VIOLATION"
+ },
+ {
+  "run_id": "project-lemonlime/project_lemonlime_.github/workflows/watcher_macos.yml_13_1",
+  "repo": "project-lemonlime/project_lemonlime",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "CODE_REGRESSION",
+  "reason": "The error is due to a circular import caused by a code change, which aligns with a code regression.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "mathieu2301/tradingview-api_.github/workflows/node.js.yml_660_2",
+  "repo": "mathieu2301/tradingview-api",
+  "pred": "CONFIG_ERROR",
+  "defensible": false,
+  "best": "CODE_REGRESSION",
+  "reason": "The errors indicate issues with code logic and handling of invalid values and session errors, suggesting a code change broke the functionality.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "zigrazor/cxxgraph_.github/workflows/windows-cmake.yml_64_1",
+  "repo": "zigrazor/cxxgraph",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "CODE_REGRESSION",
+  "reason": "The failure of a specific test suggests a recent code change may have introduced a regression.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "marcominerva/chatgptnet_.github/workflows/publish.yml_35_1",
+  "repo": "marcominerva/chatgptnet",
+  "pred": "CONFIG_ERROR",
+  "defensible": true,
+  "best": "CONFIG_ERROR",
+  "reason": "The error message suggests a configuration issue related to package pushing, which aligns with CONFIG_ERROR.",
+  "evidence_label": "CONFIG_ERROR"
+ },
+ {
+  "run_id": "chimehq/swifttreesitter_.github/workflows/wasm.yml_127_1",
+  "repo": "chimehq/swifttreesitter",
+  "pred": "CONFIG_ERROR",
+  "defensible": true,
+  "best": "INFRA_INCOMPATIBILITY",
+  "reason": "The error indicates a linking issue with an undefined symbol 'dup' in a WASM build, suggesting an incompatibility with the toolchain or environment.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "rapidai/yolo2coco_.github/workflows/gen_whl_to_pypi.yml_1_1",
+  "repo": "rapidai/yolo2coco",
+  "pred": "CONFIG_ERROR",
+  "defensible": true,
+  "best": "CONFIG_ERROR",
+  "reason": "The error indicates a missing file which could be due to a misconfiguration in the CI setup or file paths.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "gwion/gwion_.github/workflows/linux.yml_2226_1",
+  "repo": "gwion/gwion",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "CODE_REGRESSION",
+  "reason": "The log indicates a segmentation fault likely caused by a recent code change, which aligns with a CODE_REGRESSION classification.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "clarkio/vscode-twitch-highlighter_.github/workflows/deploy.yml_10_1",
+  "repo": "clarkio/vscode-twitch-highlighter",
+  "pred": "CONFIG_ERROR",
+  "defensible": true,
+  "best": "CONFIG_ERROR",
+  "reason": "The error indicates a configuration issue with the publishing process, as the extension is already published.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "dopplerhq/cli_.github/workflows/salus.yaml_2382_1",
+  "repo": "dopplerhq/cli",
+  "pred": "CONFIG_ERROR",
+  "defensible": false,
+  "best": "QUALITY_VIOLATION",
+  "reason": "The failure is due to a security issue found by Gosec, indicating a quality violation rather than a configuration error.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "eleutherai/gpt-neox_.github/workflows/cpu_ci.yml_865_1",
+  "repo": "eleutherai/gpt-neox",
+  "pred": "QUALITY_VIOLATION",
+  "defensible": false,
+  "best": "CODE_REGRESSION",
+  "reason": "The failure is due to an AssertionError in a test, indicating a code change likely broke the test.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "armmbed/mbed-os_.github/workflows/docker_management.branch.yml_120_1",
+  "repo": "armmbed/mbed-os",
+  "pred": "DEPENDENCY_CONFLICT",
+  "defensible": true,
+  "best": "DEPENDENCY_CONFLICT",
+  "reason": "The error indicates a TypeError due to an unexpected keyword argument in a deprecated function, likely caused by a version mismatch or conflict in the OpenSSL dependency.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "spencekonde/megatinycore_.github/workflows/check-code-formatting.yml_537_1",
+  "repo": "spencekonde/megatinycore",
+  "pred": "QUALITY_VIOLATION",
+  "defensible": true,
+  "best": "QUALITY_VIOLATION",
+  "reason": "The log indicates a failure due to non-compliant code formatting, which aligns with a quality violation.",
+  "evidence_label": "QUALITY_VIOLATION"
+ },
+ {
+  "run_id": "brianwatling/libfiber_.github/workflows/tsan.yml_13_1",
+  "repo": "brianwatling/libfiber",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "CODE_REGRESSION",
+  "reason": "The consistent failure of multiple tests, including a segmentation fault, suggests a recent code change may have introduced a bug.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "steam-headless/docker-steam-headless_.github/workflows/build_ci.yml_284_1",
+  "repo": "steam-headless/docker-steam-headless",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "INFRA_INCOMPATIBILITY",
+  "reason": "The failure is due to an apt-get install command not completing successfully, which suggests an issue with the environment or infrastructure rather than a code regression.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "trufflesuite/ganache-core_.github/workflows/release.yml_149_1",
+  "repo": "trufflesuite/ganache-core",
+  "pred": "CONFIG_ERROR",
+  "defensible": false,
+  "best": "TOOLING_ARTIFACT",
+  "reason": "The log shows no errors or failures, suggesting the issue might be with the CI tool itself rather than a configuration error.",
+  "evidence_label": "QUALITY_VIOLATION"
+ },
+ {
+  "run_id": "rasbt/mlxtend_.github/workflows/python-package-conda.yml_336_1",
+  "repo": "rasbt/mlxtend",
+  "pred": "CODE_REGRESSION",
+  "defensible": false,
+  "best": "CONFIG_ERROR",
+  "reason": "The error is due to an invalid configuration in pyproject.toml, indicating a configuration error rather than a code regression.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "facebookresearch/SONAR_.github/workflows/lint_and_test.yml_31_1",
+  "repo": "facebookresearch/SONAR",
+  "pred": "DEPENDENCY_CONFLICT",
+  "defensible": true,
+  "best": "DEPENDENCY_CONFLICT",
+  "reason": "The error indicates a missing module 'tqdm', suggesting a dependency issue.",
+  "evidence_label": "QUALITY_VIOLATION"
+ },
+ {
+  "run_id": "mistertea/eternalterminal_.github/workflows/novcpkg_build_release.yml_3_1",
+  "repo": "mistertea/eternalterminal",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "CODE_REGRESSION",
+  "reason": "The error indicates a possible code change or update that led to a type not being recognized, which aligns with a code regression.",
+  "evidence_label": "CONFIG_ERROR"
+ },
+ {
+  "run_id": "alii/searchy_.github/workflows/cloudflare.yml_109_1",
+  "repo": "alii/searchy",
+  "pred": "INFRA_INCOMPATIBILITY",
+  "defensible": false,
+  "best": "CONFIG_ERROR",
+  "reason": "The failure is due to an authentication error with the Cloudflare API, indicating a likely configuration issue with credentials or secrets.",
+  "evidence_label": "CONFIG_ERROR"
+ },
+ {
+  "run_id": "tmewett/broguece_.github/workflows/build.yml_211_1",
+  "repo": "tmewett/broguece",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "CODE_REGRESSION",
+  "reason": "The error is due to an implicit function declaration, suggesting a recent code change introduced a regression by calling an undefined function.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "kosua20/midivisualizer_.github/workflows/CI.yml_145_1",
+  "repo": "kosua20/midivisualizer",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "CODE_REGRESSION",
+  "reason": "The failure in detecting pthreads could be due to a recent code change affecting the build configuration or compatibility.",
+  "evidence_label": "DEPENDENCY_CONFLICT"
+ },
+ {
+  "run_id": "scenee/floatingpanel_.github/workflows/ci.yml_273_1",
+  "repo": "scenee/floatingpanel",
+  "pred": "CODE_REGRESSION",
+  "defensible": true,
+  "best": "CODE_REGRESSION",
+  "reason": "The errors indicate a code change that introduced issues with closure capture semantics, which aligns with a code regression.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "idealvin/co_.github/workflows/win.yml_398_1",
+  "repo": "idealvin/co",
+  "pred": "CONFIG_ERROR",
+  "defensible": true,
+  "best": "CONFIG_ERROR",
+  "reason": "The error suggests a configuration issue with the build process, as indicated by the command line warning and the fatal error related to unmatched tokens in the code.",
+  "evidence_label": "CODE_REGRESSION"
+ },
+ {
+  "run_id": "quick/nimble_.github/workflows/ci-xcode.yml_376_1",
+  "repo": "quick/nimble",
+  "pred": "DEPENDENCY_CONFLICT",
+  "defensible": false,
+  "best": "CONFIG_ERROR",
+  "reason": "The failure is due to a missing DEVELOPER_DIR path, indicating a configuration issue rather than a dependency conflict.",
+  "evidence_label": "CONFIG_ERROR"
+ },
+ {
+  "run_id": "gerrymanoim/exchange_calendars_.github/workflows/release.yml_28_1",
+  "repo": "gerrymanoim/exchange_calendars",
+  "pred": "CONFIG_ERROR",
+  "defensible": true,
+  "best": "CONFIG_ERROR",
+  "reason": "The error is due to an invalid version format in the package configuration, which aligns with a configuration error.",
+  "evidence_label": "CONFIG_ERROR"
+ }
+]

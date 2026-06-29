@@ -1,0 +1,1434 @@
+{
+  "nerdwalletoss/shepherd_.github/workflows/release.yml_351_1": {
+    "primary": "CONFIG_ERROR",
+    "defensible": []
+  },
+  "ffmpegwasm/ffmpeg.wasm_.github/workflows/main.yml_349_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "openai/openai-node_.github/workflows/test.yml_86_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "getstream/stream-chat-react_.github/workflows/ci.yml_5436_1": {
+    "primary": "TEST_FLAKINESS",
+    "defensible": []
+  },
+  "maximecb/gym-minigrid_.github/workflows/build.yml_523_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "openimageio/oiio_.github/workflows/analysis.yml_909_1": {
+    "primary": "QUALITY_VIOLATION",
+    "defensible": []
+  },
+  "sobhe/hazm_.github/workflows/lint.yml_89_1": {
+    "primary": "QUALITY_VIOLATION",
+    "defensible": []
+  },
+  "ironlanguages/ironpython3_.github/workflows/main.yml_2492_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "microsoftgraph/msgraph-sdk-php_.github/workflows/update-docs.yml_338_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "p5-wrapper/react_.github/workflows/CD.yml_64_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "lmfdb/lmfdb_.github/workflows/python-package.yml_2229_2": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "metamask/eth-simple-keyring_.github/workflows/publish-rc-docs.yml_4_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "microsoft/graspologic_.github/workflows/publish.yml_66_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "quantumlib/openfermion_.github/workflows/nightly.yml_681_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "dioxuslabs/blitz_.github/workflows/macos.yml_31_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "segmentio/stats_.github/workflows/go.yml_55_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "julian-alarcon/prospect-mail_.github/workflows/snap.yml_17_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "jamesrweb/react-p5-wrapper_.github/workflows/CD.yml_64_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "ipfs/js-ipfsd-ctl_.github/workflows/js-test-and-release.yml_135_1": {
+    "primary": "CONFIG_ERROR",
+    "defensible": []
+  },
+  "getlogbook/logbook_.github/workflows/pypi-publish.yml_15_1": {
+    "primary": "CONFIG_ERROR",
+    "defensible": []
+  },
+  "tessel/node-usb_.github/workflows/prebuild.yml_580_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "airspeed-velocity/asv_.github/workflows/triggered.yml_5_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "pewu/topola-viewer_.github/workflows/node.js.yml_128_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "brentp/cyvcf2_.github/workflows/build.yml_181_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "ivanvotti/ember-svg-jar_.github/workflows/ci-ember-svg-jar.yml_106_1": {
+    "primary": "QUALITY_VIOLATION",
+    "defensible": []
+  },
+  "messense/cargo-xwin_.github/workflows/CI.yml_316_1": {
+    "primary": "CONFIG_ERROR",
+    "defensible": []
+  },
+  "serenity-bdd/serenity-cucumber-starter_.github/workflows/gradle-jdk11.yml_28_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "metamask/json-rpc-engine_.github/workflows/publish-main-docs.yml_16_1": {
+    "primary": "QUALITY_VIOLATION",
+    "defensible": []
+  },
+  "hipages/php-fpm_exporter_.github/workflows/release.yml_33_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "matanolabs/matano_.github/workflows/pr-build.yml_112_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "ipfs-shipyard/ipfs-webui_.github/workflows/node-versions.yml_65_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "shopify/js-buy-sdk_dynamic/dependabot/dependabot-updates_1_1": {
+    "primary": "CONFIG_ERROR",
+    "defensible": []
+  },
+  "oschwengers/bakta_.github/workflows/ci.yml_353_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "eldavoo/whatsapp-crypt14-crypt15-decrypter_.github/workflows/lint-test.yml_42_1": {
+    "primary": "QUALITY_VIOLATION",
+    "defensible": []
+  },
+  "d2-projects/d2-admin_.github/workflows/release.yml_99_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "easypost/easypost-node_.github/workflows/ci.yml_819_1": {
+    "primary": "QUALITY_VIOLATION",
+    "defensible": []
+  },
+  "freenet/locutus_.github/workflows/ci.yml_1669_1": {
+    "primary": "QUALITY_VIOLATION",
+    "defensible": []
+  },
+  "hugsy/gef-extras_.github/workflows/run-tests.yml_68_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "dwmkerr/effective-shell_.github/workflows/pull-request.yaml_226_2": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "vanus-labs/vanus_.github/workflows/docker-build.yml_212_1": {
+    "primary": "ENV_FLAKINESS",
+    "defensible": []
+  },
+  "chezou/tabula-py_.github/workflows/pythonpublish.yml_20_3": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "quick/nimble_.github/workflows/ci-xcode.yml_376_1": {
+    "primary": "CONFIG_ERROR",
+    "defensible": []
+  },
+  "tatsuz0u/ehpanda_.github/workflows/dependencies.yml_24_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "tensorflow/io_.github/workflows/benchmarks.yml_346_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "dbup/dbup_.github/workflows/test-code.yml_52_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "1password/onepassword-operator_.github/workflows/release-pr.yml_79_1": {
+    "primary": "CONFIG_ERROR",
+    "defensible": []
+  },
+  "clastix/capsule_.github/workflows/e2e.yml_1058_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "concrete5/concrete5_.github/workflows/update.yml_1604_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "microsoft/powerbi-visuals-gantt_.github/workflows/build.yml_25_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "ouranosinc/xclim_.github/workflows/publish-mastodon.yml_3_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "misp/misp-galaxy_.github/workflows/pytest.yml_583_2": {
+    "primary": "CONFIG_ERROR",
+    "defensible": []
+  },
+  "home-assistant/ios_.github/workflows/distribute.yml_463_1": {
+    "primary": "CONFIG_ERROR",
+    "defensible": []
+  },
+  "mkreiser/espn-fantasy-football-api_.github/workflows/codeclimate.yml_1_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "descendant-ai/functime_.github/workflows/test.yml_174_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "nanomsg/nng_.github/workflows/coverage.yml_809_1": {
+    "primary": "CONFIG_ERROR",
+    "defensible": []
+  },
+  "emberjs/rfcs_.github/workflows/trigger-opening-advancement-pr.yml_22_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "quantumlib/cirq_.github/workflows/ci-weekly.yml_26_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "whyoleg/cryptography-kotlin_.github/workflows/build-dev.yml_160_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "ironlanguages/dlr_.github/workflows/main.yml_174_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "openvinotoolkit/training_extensions_.github/workflows/docs_cleanup.yml_281_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "dotnet-campus/dotnetcampus.ipc_.github/workflows/dotnet-core.yml_590_1": {
+    "primary": "QUALITY_VIOLATION",
+    "defensible": []
+  },
+  "cowrie/cowrie_.github/workflows/pur.yml_235_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "xujiajun/nutsdb_.github/workflows/reviewdog.yml_560_1": {
+    "primary": "CONFIG_ERROR",
+    "defensible": []
+  },
+  "maxnut/gdmegaoverlay_.github/workflows/cmake.yml_47_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "nf-core/tools_.github/workflows/sync.yml_35_5": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "appliedzkp/maci_.github/workflows/domainobjs-build.yml_295_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "rlworkgroup/metaworld_.github/workflows/build.yml_44_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "megamek/mekhq_.github/workflows/code-coverage.yml_1230_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "aunetx/deezer-linux_dynamic/pages/pages-build-deployment_50_1": {
+    "primary": "CONFIG_ERROR",
+    "defensible": []
+  },
+  "mongey/terraform-provider-kafka_.github/workflows/test.yml_739_3": {
+    "primary": "TOOLING_ARTIFACT",
+    "defensible": []
+  },
+  "sls-mentor/sls-mentor_.github/workflows/push-master.yml_1_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "numandev1/react-native-keys_.github/workflows/build-ios.yml_32_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "serverless-stack/sst_.github/workflows/test.yml_1309_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "amanoteam/eduurobot_.github/workflows/run-bot.yml_1516_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "farama-foundation/metaworld_.github/workflows/pre-commit.yml_62_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "opendds/opendds_.github/workflows/sphinx_strict.yml_5689_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "servo/html5ever_.github/workflows/main.yml_163_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "viaversion/viafabric_.github/workflows/build.yml_428_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "photoview/photoview_.github/workflows/tests.yml_854_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "nebari-dev/nebari_.github/workflows/test_integration.yaml_26_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "harness-software/wp-graphql-gravity-forms_.github/workflows/integration-testing.yml_415_1": {
+    "primary": "CONFIG_ERROR",
+    "defensible": []
+  },
+  "axewp/wp-graphql-gravity-forms_.github/workflows/integration-testing.yml_415_1": {
+    "primary": "CONFIG_ERROR",
+    "defensible": []
+  },
+  "theporgs/impacket_.github/workflows/build_and_test.yml_59_1": {
+    "primary": "QUALITY_VIOLATION",
+    "defensible": []
+  },
+  "kaaveh/composenews_.github/workflows/build.yml_110_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "emurgo/yoroi-frontend_.github/workflows/nightly.yml_56_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "isl-org/open3d_.github/workflows/ubuntu-wheel.yml_2788_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "netlify/netlify-cms_.github/workflows/fossa.yml_1345_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "alirezanet/husky.net_.github/workflows/publish.yml_51_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "videotogether/videotogether_.github/workflows/release.yml_544_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "saketkc/pysradb_.github/workflows/pull_request.yml_76_2": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "slackadays/clipboard_.github/workflows/test-installer.yml_776_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "mrpowers/quinn_.github/workflows/ci.yml_83_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "jsmacros/jsmacros_.github/workflows/betabuild.yml_797_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "miczflor/rpi-jukebox-rfid_.github/workflows/docker_buster.yml_182_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "dotnet/silk.net_.github/workflows/bindings-regeneration.yml_186_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "auth0/lock_.github/workflows/publish.yml_2_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "capacitor-community/electron_dynamic/pages/pages-build-deployment_42_1": {
+    "primary": "CONFIG_ERROR",
+    "defensible": []
+  },
+  "metamask/keyringcontroller_.github/workflows/publish-main-docs.yml_26_1": {
+    "primary": "QUALITY_VIOLATION",
+    "defensible": []
+  },
+  "zxilly/ua2f_.github/workflows/ci.yml_134_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "gerrymanoim/exchange_calendars_.github/workflows/release.yml_28_1": {
+    "primary": "CONFIG_ERROR",
+    "defensible": []
+  },
+  "severecloud/vksdk_.github/workflows/master-test.yml_76_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "mirkosertic/bytecoder_.github/workflows/build.yml_461_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "palkan/action_policy_.github/workflows/docs-lint.yml_153_1": {
+    "primary": "QUALITY_VIOLATION",
+    "defensible": []
+  },
+  "automl/smac3_.github/workflows/pre-commit-update.yml_26_1": {
+    "primary": "QUALITY_VIOLATION",
+    "defensible": []
+  },
+  "nwjs/grunt-nw-builder_.github/workflows/cd.yml_27_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "cbeust/testng_.github/workflows/test.yml_669_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "lepture/flask-wtf_.github/workflows/tests.yaml_268_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "keshavdv/unifi-cam-proxy_.github/workflows/image.yml_75_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "wix/react-native-notifications_.github/workflows/documentation.yml_274_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "tinesoft/nxrocks_.github/workflows/smoke.yml_432_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "browsermt/bergamot-translator_.github/workflows/build.yml_363_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "area1/stpyv8_.github/workflows/build-windows.yml_26_4": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "obsproject/obs-studio_.github/workflows/dispatch.yaml_5_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "adepierre/botcraft_.github/workflows/manual_build.yml_16_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "akshata29/chatpdf_.github/workflows/pythonapi.yml_89_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "wicg/webmonetization_.github/workflows/contributors.yml_4_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "hynek/argon2-cffi_.github/workflows/pypi-package.yml_34_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "flink-extended/flink-ai-extended_.github/workflows/nightly-build.yaml_620_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "nxtrace/ntrace-core_.github/workflows/test.yml_131_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "giuliorossetti/cdlib_.github/workflows/python-package.yml_218_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "marekkon5/onetagger_.github/workflows/build.yml_559_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "jgromes/radiolib_.github/workflows/codeql-analysis.yml_728_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "nu-book/zxing-cpp_.github/workflows/msvc-analysis.yml_6_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "thinklab-sjtu/pygmtools_.github/workflows/python-package.yml_523_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "hawkw/mycelium_.github/workflows/ci.yml_1309_2": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "ivanceras/svgbob_.github/workflows/rust.yml_166_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "containerd/rust-extensions_.github/workflows/publish.yml_3_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "gagebenne/pydexcom_.github/workflows/publish.yaml_7_2": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "xxyzz/worddumb_.github/workflows/tests.yml_706_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "rapidai/rapidocr_.github/workflows/gen_whl_to_pypi_rapidocr_vino.yml_46_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "rtimothyedwards/magic_.github/workflows/main.yml_572_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "hofmeisteran/dotnet-testcontainers_.github/workflows/cicd.yml_1985_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "accenture/sfpowerscripts_.github/workflows/release.yml_844_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "micycle1/pgs_.github/workflows/gh-pages_javadoc.yml_44_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "chronoxor/cppcommon_.github/workflows/build-windows-msys2.yml_85_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "brechtm/rinohtype_.github/workflows/tests.yml_740_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "fdelmazo/fiuba-map_.github/workflows/node.js.yml_233_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "rocketchat/rocket.chat.electron_.github/workflows/build-release.yml_452_2": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "aurae-runtime/aurae_.github/workflows/206-deny-check-aurae-builder.yml_154_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "total-typescript/react-typescript-tutorial_.github/workflows/main.yml_173_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "aewallin/opencamlib_.github/workflows/test.yml_456_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "console-rs/dialoguer_.github/workflows/ci.yml_303_1": {
+    "primary": "CONFIG_ERROR",
+    "defensible": []
+  },
+  "burntsushi/rust-csv_.github/workflows/ci.yml_256_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "ivanceras/svgbob_.github/workflows/rust.yml_167_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "molssi-bse/basis_set_exchange_.github/workflows/tests.yml_451_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "aws-samples/serverless-dotnet-demo_.github/workflows/metrics-lambda-pipeline.yaml_6_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "python-validators/validators_.github/workflows/package.yaml_5_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "trufflesuite/ganache_.github/workflows/release.yml_149_1": {
+    "primary": "QUALITY_VIOLATION",
+    "defensible": []
+  },
+  "yuhattor/copilot-patterns_.github/workflows/publish-page.yaml_11_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "xboxdev/nxdk_.github/workflows/build_docker_image.yml_143_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "kasperskylab/kaspresso_.github/workflows/snapshot_check.yml_6_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "shopify/liquid-c_.github/workflows/liquid.yml_765_2": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "craftyboss/supermarioodysseyonline_.github/workflows/dev-release.yml_12_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "brooooooklyn/image_.github/workflows/CI.yml_256_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "arcthesia/arccreate_.github/workflows/testflight.yml_60_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "openxcom/openxcom_.github/workflows/nightly.yml_11_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "scorelab/codelabz_.github/workflows/main.yml_271_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "bantanger/im-whale-shark_.github/workflows/ant.yml_33_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "keras-team/keras-tuner_.github/workflows/nightly.yml_1041_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "trufflesuite/ganache-cli_.github/workflows/release.yml_149_1": {
+    "primary": "QUALITY_VIOLATION",
+    "defensible": []
+  },
+  "tongsuo-project/tongsuo_.github/workflows/speed-test.yml_596_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "shopify/semian_.github/workflows/test.yml_954_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "peltoche/lsd_.github/workflows/CICD.yml_1195_4": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "babassl/babassl_.github/workflows/speed-test.yml_596_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "descendant-ai/functime_.github/workflows/test.yml_178_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "coredb-io/coredb_.github/workflows/docs.yml_13_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "fluentdatetime/fluentdatetime_.github/workflows/on-push-do-docs.yml_65_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "louisbrunner/checks-action_.github/workflows/examples.yml_382_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "asjas/prisma-redis-middleware_.github/workflows/main.yml_1471_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "r-lib/gert_.github/workflows/R-CMD-check.yaml_347_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "warrenbuckley/compact-log-format-viewer_.github/workflows/intellicode.yml_537_1": {
+    "primary": "TOOLING_ARTIFACT",
+    "defensible": []
+  },
+  "saulius/croaring-rs_.github/workflows/rust.yml_226_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "mrrfv/linux-android-backup_.github/workflows/macos-test.yml_107_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "facundoolano/google-play-scraper_.github/workflows/main.yml_2_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "auth0/express-openid-connect_.github/workflows/publish.yml_3_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "benjamine/jsondiffpatch_.github/workflows/release.yml_2_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "Dicklesworthstone/llama_embeddings_fastapi_service_.github/workflows/docker-image.yml_73_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "nanojsx/nano_.github/workflows/deno.yml_508_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "sajya/server_.github/workflows/php-cs-fixer.yml_162_1": {
+    "primary": "CONFIG_ERROR",
+    "defensible": []
+  },
+  "repronim/neurodocker_.github/workflows/bootstrap.yml_70_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "jonhoo/flurry_.github/workflows/safety.yml_11_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "seaql/sea-schema_.github/workflows/rust.yml_583_1": {
+    "primary": "CONFIG_ERROR",
+    "defensible": []
+  },
+  "k2-fsa/fast_rnnt_.github/workflows/run_tests_cpu.yml_12_2": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "circl/ail-framework_.github/workflows/ail_framework_test.yml_232_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "oneflow-inc/oneflow_.github/workflows/release.yml_2054_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "spatie/laravel-livewire-wizard_.github/workflows/run-tests.yml_174_2": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "sp-nitech/sptk_.github/workflows/check-build.yml_144_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "testinggospels/camouflage_.github/workflows/main.yml_145_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "webdevcody/code-racer_.github/workflows/deploy-wss.yml_143_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "privacy-scaling-explorations/halo2_.github/workflows/ci_main.yml_29_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "pocka/storybook-addon-designs_.github/workflows/release.yml_13_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "rrousselgit/functional_widget_.github/workflows/build.yml_1027_1": {
+    "primary": "TOOLING_ARTIFACT",
+    "defensible": []
+  },
+  "truefieng/usedapp_.github/workflows/CI-gnosis.yml_134_1": {
+    "primary": "ENV_FLAKINESS",
+    "defensible": []
+  },
+  "privatenumber/get-tsconfig_.github/workflows/release.yml_24_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "seaql/sea-streamer_.github/workflows/rust.yml_178_1": {
+    "primary": "TEST_FLAKINESS",
+    "defensible": []
+  },
+  "rubickcenter/rubick_.github/workflows/main.yml_220_1": {
+    "primary": "QUALITY_VIOLATION",
+    "defensible": []
+  },
+  "wolph/python-progressbar_.github/workflows/main.yml_75_1": {
+    "primary": "CONFIG_ERROR",
+    "defensible": []
+  },
+  "liteldev/liteloaderbds_.github/workflows/build.yml_3560_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "mds1/evm-diff_.github/workflows/ci.yml_128_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "atsamd-rs/atsamd_.github/workflows/release-crates.yml_21_1": {
+    "primary": "CONFIG_ERROR",
+    "defensible": []
+  },
+  "bezhanSalleh/filament-google-analytics_.github/workflows/phpstan.yml_19_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "tonarino/innernet_.github/workflows/docker-tests.yml_411_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "openmessaging/openmessaging-storage-dledger_.github/workflows/maven.yml_174_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "kvesteri/validators_.github/workflows/package.yaml_5_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "azure-samples/azure-search-openai-demo-csharp_.github/workflows/azure-dev.yml_24_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "idealvin/cocoyaxi_.github/workflows/win.yml_398_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "kennethenevoldsen/asent_.github/workflows/tests.yml_156_1": {
+    "primary": "CONFIG_ERROR",
+    "defensible": []
+  },
+  "kaleidawave/ezno_.github/workflows/github-release.yml_2_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "factoryboy/factory_boy_.github/workflows/linkcheck.yml_140_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "spring-projects-experimental/spring-boot-migrator_.github/workflows/release-integration.yml_4_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "datamol-io/molfeat_.github/workflows/release.yml_23_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "batchdrake/sigdigger_.github/workflows/ci.yml_347_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "touchlab/kermit_.github/workflows/websitedeploy.yml_22_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "jigsaw-code/outline-server_.github/workflows/pull_request_checks.yml_398_2": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "leandrocfe/filament-apex-charts_.github/workflows/phpstan.yml_66_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "rabobank-cdc/dettect_.github/workflows/refresh_ATTCK_data.yml_1298_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "bblimke/webmock_.github/workflows/CI.yml_158_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "hubblo-org/scaphandre_.github/workflows/python_build.yml_20_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "azure-samples/contoso-real-estate_dynamic/codespaces/create_codespaces_prebuilds_39_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "aws-samples/cdk-eks-blueprints-patterns_.github/workflows/e2e.yaml_1_1": {
+    "primary": "CONFIG_ERROR",
+    "defensible": []
+  },
+  "google/atheris_.github/workflows/builds.yaml_72_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "brianpugh/belay_.github/workflows/tests.yaml_577_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "lissy93/dotfiles_.github/workflows/build.yml_151_1": {
+    "primary": "CONFIG_ERROR",
+    "defensible": []
+  },
+  "nojhan/liquidprompt_.github/workflows/tests.yml_744_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "saadpasta/developerfolio_.github/workflows/deploy.yml_197_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "ovyerus/prismaliser_.github/workflows/push.yaml_290_1": {
+    "primary": "QUALITY_VIOLATION",
+    "defensible": []
+  },
+  "arakoodev/edgechains_.github/workflows/BuildAndRun.yml_86_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "shopify/draggable_.github/workflows/snapit-v2.yml_10_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "simdjson/simdjson-java_.github/workflows/publish.yml_5_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "plasma-umass/slipcover_.github/workflows/build-and-upload.yml_37_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "frgfm/holocron_.github/workflows/doc-status.yml_123_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "parcel-bundler/parcel-css_.github/workflows/release.yml_109_1": {
+    "primary": "CONFIG_ERROR",
+    "defensible": []
+  },
+  "aircrack-ng/aircrack-ng_.github/workflows/docker.yml_154_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "rstudio/shinyuieditor_.github/workflows/update-visual-snapshots.yml_96_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "dynamorio/drmemory_.github/workflows/ci-package.yml_167_1": {
+    "primary": "TOOLING_ARTIFACT",
+    "defensible": []
+  },
+  "cytopiateam/cytopia_.github/workflows/sonarcloud.yml_530_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "remarshal-project/remarshal_.github/workflows/lint.yml_95_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "enlightn/enlightn_.github/workflows/manual.yaml_5_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "keras-team/autokeras_.github/workflows/nightly.yml_890_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "qiskit/qiskit-machine-learning_.github/workflows/main.yml_4282_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "ploomber/ploomber_.github/workflows/ci-unit-macos.yml_1227_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "microsoft/typespec_.github/workflows/merge-release-in-main.yml_36_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "babylonjs/babylonreactnative_.github/workflows/testVersion.yml_15_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "sanack/node-jq_.github/workflows/release.yml_1_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "dnschanger/dnschanger-desktop_.github/workflows/build.yml_6_1": {
+    "primary": "QUALITY_VIOLATION",
+    "defensible": []
+  },
+  "umskt/umskt_.github/workflows/macos.yml_121_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "edx/edx-app-android_.github/workflows/androidTestSuite.yml_733_1": {
+    "primary": "CONFIG_ERROR",
+    "defensible": []
+  },
+  "micro-gl/micro-gl_.github/workflows/compile.yml_34_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "asomers/mockall_.github/workflows/email.yml_202_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "varying-vagrant-vagrants/vvv_.github/workflows/vvv-provisioning.yml_945_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "mitsuhiko/dialoguer_.github/workflows/ci.yml_303_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "airspeed-velocity/asv_.github/workflows/triggered.yml_6_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "dioxuslabs/dioxus_.github/workflows/docs.yml_136_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "ashishrawat2911/flutter_commerce_.github/workflows/flutter_commerce_actions.yml_287_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "archeb/opentrace_.github/workflows/build-linux.yml_42_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "filecoin-saturn/l1-node_.github/workflows/integration-tests.yml_412_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "launchflow/buildflow_.github/workflows/gcp_release_tests.yaml_3_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "ninxsoft/lowprofile_.github/workflows/linting.yml_47_1": {
+    "primary": "QUALITY_VIOLATION",
+    "defensible": []
+  },
+  "dethcrypto/typechain_.github/workflows/ci.yml_1043_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "encord-team/encord-active_.github/workflows/build.yml_3_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "vityafx/serde-aux_.github/workflows/ci.yml_59_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "zekrotja/shinpuru_.github/workflows/upgrade.yml_20_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "seldonio/mlserver_.github/workflows/release.yml_105_5": {
+    "primary": "INFRA_INCOMPATIBILITY",
+    "defensible": []
+  },
+  "louisbrunner/dnd-multi-backend_.github/workflows/build.yml_480_1": {
+    "primary": "CONFIG_ERROR",
+    "defensible": []
+  },
+  "socketry/async-http_.github/workflows/test-async-head.yaml_133_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "instagram/libcst_.github/workflows/pypi_upload.yml_182_1": {
+    "primary": "CONFIG_ERROR",
+    "defensible": []
+  },
+  "dmitrytsepelev/store_model_.github/workflows/rspec.yml_1249_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "mauriciomutte/track-correios_.github/workflows/release.yml_45_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "shopify/vscode-ruby-lsp_dynamic/dependabot/dependabot-updates_2_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "cloudevents/sdk-python_.github/workflows/pypi-release.yml_55_1": {
+    "primary": "CONFIG_ERROR",
+    "defensible": []
+  },
+  "kovshenin/sail_.github/workflows/end2end-tests.yml_139_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "streamthoughts/kafka-connect-file-pulse_.github/workflows/release.yml_2_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "react-native-kit/react-native-track-player_.github/workflows/platform-validation.yml_1072_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "accruent/robotframework-zoomba_.github/workflows/run-tests.yml_735_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "thekevinscott/upscalerjs_.github/workflows/browserlist.yml_4_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "Lissy93/wapalyzer_.github/workflows/node.js.yml_1_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "d2l-ai/d2l-en_.github/workflows/build-docker.yml_7_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "iurysza/module-graph_.github/workflows/pre-merge.yaml_80_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "eldavoo/wa-crypt-tools_.github/workflows/lint-test.yml_42_1": {
+    "primary": "QUALITY_VIOLATION",
+    "defensible": []
+  },
+  "bretfisher/docker-ci-automation_.github/workflows/99-parallelize-jobs.yaml_68_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "foxundermoon/vs-shell-format_.github/workflows/CD.yml_102_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "ioquatix/sus_.github/workflows/coverage.yaml_252_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "cosmic-ide/cosmic-ide_.github/workflows/android.yml_2822_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "jsmonk/hegel_.github/workflows/ci.yml_111_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "prismaneui/prismane_.github/workflows/storybook.yml_1_1": {
+    "primary": "CONFIG_ERROR",
+    "defensible": []
+  },
+  "octokit/webhooks.js_.github/workflows/update.yml_240_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "feelfreelinux/cspot_.github/workflows/esp-idf.yml_414_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "ethereum-ts/typechain_.github/workflows/ci.yml_1043_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "shopify/ruby_memcheck_.github/workflows/test.yml_179_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "googlemaps/google-maps-services-java_.github/workflows/release.yml_182_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "github/codespaces-react_dynamic/dependabot/dependabot-updates_8_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "mouradmourafiq/datatile_.github/workflows/traceml.yml_93_8": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "iridiumidentity/iridium_.github/workflows/build-iridium-pull-request.yml_141_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "chieapp/chie_.github/workflows/build.yml_59_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "tedicross/tedicross_.github/workflows/node.js.yml_65_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "polyaxon/datatile_.github/workflows/traceml.yml_93_8": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "palkan/active_event_store_.github/workflows/minitest.yml_19_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "slack-ruby/slack-ruby-client_.github/workflows/integration_test.yml_195_1": {
+    "primary": "ENV_FLAKINESS",
+    "defensible": []
+  },
+  "ajndkr/fastapi-async-langchain_.github/workflows/ci.yaml_61_2": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "ar90n/serverless-s3-local_.github/workflows/bump.yml_17_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "antvis/g_.github/workflows/test.yml_158_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "geodacenter/geoda_.github/workflows/osx_build.yml_63_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "cysharp/ulid_.github/workflows/build-release.yml_21_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "dapperlib/dapperaot_.github/workflows/dotnet.yml_172_1": {
+    "primary": "CONFIG_ERROR",
+    "defensible": []
+  },
+  "pluginkollektiv/antispam-bee_.github/workflows/wordpress-plugin-asset-update.yml_92_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "tree-sitter/tree-sitter-c_.github/workflows/publish.yml_1_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "korken89/smlang-rs_.github/workflows/build.yml_140_2": {
+    "primary": "QUALITY_VIOLATION",
+    "defensible": []
+  },
+  "untitaker/hyperlink_.github/workflows/test.yml_479_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "nanshaner/repoll_.github/workflows/docker_ci.yml_1085_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "wfrest/wfrest_.github/workflows/CI.yml_371_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "cognitive-engineering-lab/aquascope_.github/workflows/release.yml_36_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "unum-cloud/ustore_.github/workflows/release.yml_8_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "seldonio/alibi_.github/workflows/test_all_notebooks.yml_133_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "sibyx/phpgpx_.github/workflows/coverage.yml_1_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "giggio/node-chromedriver_.github/workflows/tag.yml_12_1": {
+    "primary": "CONFIG_ERROR",
+    "defensible": []
+  },
+  "floating/frame_.github/workflows/build.yml_181_1": {
+    "primary": "CONFIG_ERROR",
+    "defensible": []
+  },
+  "dacotaco/priiloader_.github/workflows/Priiloader-CI.yml_580_1": {
+    "primary": "QUALITY_VIOLATION",
+    "defensible": []
+  },
+  "project-lemonlime/project_lemonlime_.github/workflows/watcher_macos.yml_13_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "mathieu2301/tradingview-api_.github/workflows/node.js.yml_660_2": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "zigrazor/cxxgraph_.github/workflows/windows-cmake.yml_64_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "marcominerva/chatgptnet_.github/workflows/publish.yml_35_1": {
+    "primary": "CONFIG_ERROR",
+    "defensible": []
+  },
+  "chimehq/swifttreesitter_.github/workflows/wasm.yml_127_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "rapidai/yolo2coco_.github/workflows/gen_whl_to_pypi.yml_1_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "pinecone-io/pinecone-ts-client_.github/workflows/release-prod.yml_2_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "gwion/gwion_.github/workflows/linux.yml_2226_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "clarkio/vscode-twitch-highlighter_.github/workflows/deploy.yml_10_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "tillsteinbach/vwsfriend_.github/workflows/compose.yml_70_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "dopplerhq/cli_.github/workflows/salus.yaml_2382_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "eleutherai/gpt-neox_.github/workflows/cpu_ci.yml_865_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "rodrigorodrigues/microservices-design-patterns_.github/workflows/docker-build-push-image-edge-service.yml_42_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "peteroupc/cbor_.github/workflows/Test.yml_209_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "cottonmc/libgui_.github/workflows/build.yml_308_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "armmbed/mbed-os_.github/workflows/docker_management.branch.yml_120_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "rhysd/github-action-benchmark_.github/workflows/rust.yml_290_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "spencekonde/megatinycore_.github/workflows/check-code-formatting.yml_537_1": {
+    "primary": "QUALITY_VIOLATION",
+    "defensible": []
+  },
+  "brianwatling/libfiber_.github/workflows/tsan.yml_13_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "bluefireteam/audioplayers_.github/workflows/test.yml_70_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "steam-headless/docker-steam-headless_.github/workflows/build_ci.yml_284_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "trufflesuite/ganache-core_.github/workflows/release.yml_149_1": {
+    "primary": "QUALITY_VIOLATION",
+    "defensible": []
+  },
+  "rasbt/mlxtend_.github/workflows/python-package-conda.yml_336_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "jina-ai/langchain-serve_.github/workflows/jcloud-integration.yml_28_3": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "facebookresearch/SONAR_.github/workflows/lint_and_test.yml_31_1": {
+    "primary": "QUALITY_VIOLATION",
+    "defensible": []
+  },
+  "iuiaoin/wechat-gptbot_.github/workflows/ruff.yml_109_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "tzapio/tzap_.github/workflows/push-test.yml_36_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "h311d1n3r/cerberus_.github/workflows/main.yml_67_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "thelastpickle/cassandra-reaper_.github/workflows/license-check.yaml_65_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "kolossal-io/laravel-multiplex_.github/workflows/run-tests.yml_88_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "linuxdeepin/unilang_.github/workflows/backup-to-gitlab.yml_45_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "mistertea/eternalterminal_.github/workflows/novcpkg_build_release.yml_3_1": {
+    "primary": "CONFIG_ERROR",
+    "defensible": []
+  },
+  "stackblitz/core_.github/workflows/close-innactive-issues-without-repro.yaml_4_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "ccsimple/vue-plugin-hiprint_.github/workflows/deploy-demo-beta.yml_91_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "alii/searchy_.github/workflows/cloudflare.yml_109_1": {
+    "primary": "CONFIG_ERROR",
+    "defensible": []
+  },
+  "melonruntime/melon_.github/workflows/dotnet.yml_165_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  },
+  "tmewett/broguece_.github/workflows/build.yml_211_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "kosua20/midivisualizer_.github/workflows/CI.yml_145_1": {
+    "primary": "DEPENDENCY_CONFLICT",
+    "defensible": []
+  },
+  "scenee/floatingpanel_.github/workflows/ci.yml_273_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "idealvin/co_.github/workflows/win.yml_398_1": {
+    "primary": "CODE_REGRESSION",
+    "defensible": []
+  },
+  "azure/bridge-to-kubernetes_.github/workflows/live-test.yml_175_1": {
+    "primary": "UNINFORMATIVE",
+    "defensible": []
+  }
+}

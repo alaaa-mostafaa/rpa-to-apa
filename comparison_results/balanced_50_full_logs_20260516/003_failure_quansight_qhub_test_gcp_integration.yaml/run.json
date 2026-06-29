@@ -1,0 +1,404 @@
+{
+  "_id": "quansight/qhub_.github/workflows/test_gcp_integration.yaml_14_1",
+  "repository_name": "quansight/qhub",
+  "workflow_path": ".github/workflows/test_gcp_integration.yaml",
+  "run_number": 14,
+  "run_attempt": 1,
+  "metadata": {
+    "id": 6357802458,
+    "name": "test-gcp-integration",
+    "node_id": "WFR_kwLODxIPEc8AAAABevRd2g",
+    "head_branch": "pr-test",
+    "head_sha": "12a55bcb3bbe86f92f9f539408dbb9d07e66488e",
+    "path": ".github/workflows/test_gcp_integration.yaml",
+    "display_title": "Test PR",
+    "run_number": 14,
+    "event": "pull_request",
+    "status": "completed",
+    "conclusion": "failure",
+    "workflow_id": 69902917,
+    "check_suite_id": 16721414267,
+    "check_suite_node_id": "CS_kwDODxIPEc8AAAAD5KyIew",
+    "url": "https://api.github.com/repos/nebari-dev/nebari/actions/runs/6357802458",
+    "html_url": "https://github.com/nebari-dev/nebari/actions/runs/6357802458",
+    "pull_requests": [],
+    "created_at": "2023-09-29T22:23:42Z",
+    "updated_at": "2023-09-29T22:25:18Z",
+    "actor": {
+      "login": "fangchenli",
+      "id": 7614606,
+      "node_id": "MDQ6VXNlcjc2MTQ2MDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7614606?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/fangchenli",
+      "html_url": "https://github.com/fangchenli",
+      "followers_url": "https://api.github.com/users/fangchenli/followers",
+      "following_url": "https://api.github.com/users/fangchenli/following{/other_user}",
+      "gists_url": "https://api.github.com/users/fangchenli/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/fangchenli/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/fangchenli/subscriptions",
+      "organizations_url": "https://api.github.com/users/fangchenli/orgs",
+      "repos_url": "https://api.github.com/users/fangchenli/repos",
+      "events_url": "https://api.github.com/users/fangchenli/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/fangchenli/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "run_attempt": 1,
+    "referenced_workflows": [],
+    "run_started_at": "2023-09-29T22:23:42Z",
+    "triggering_actor": {
+      "login": "fangchenli",
+      "id": 7614606,
+      "node_id": "MDQ6VXNlcjc2MTQ2MDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7614606?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/fangchenli",
+      "html_url": "https://github.com/fangchenli",
+      "followers_url": "https://api.github.com/users/fangchenli/followers",
+      "following_url": "https://api.github.com/users/fangchenli/following{/other_user}",
+      "gists_url": "https://api.github.com/users/fangchenli/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/fangchenli/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/fangchenli/subscriptions",
+      "organizations_url": "https://api.github.com/users/fangchenli/orgs",
+      "repos_url": "https://api.github.com/users/fangchenli/repos",
+      "events_url": "https://api.github.com/users/fangchenli/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/fangchenli/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "jobs_url": "https://api.github.com/repos/nebari-dev/nebari/actions/runs/6357802458/jobs",
+    "logs_url": "https://api.github.com/repos/nebari-dev/nebari/actions/runs/6357802458/logs",
+    "check_suite_url": "https://api.github.com/repos/nebari-dev/nebari/check-suites/16721414267",
+    "artifacts_url": "https://api.github.com/repos/nebari-dev/nebari/actions/runs/6357802458/artifacts",
+    "cancel_url": "https://api.github.com/repos/nebari-dev/nebari/actions/runs/6357802458/cancel",
+    "rerun_url": "https://api.github.com/repos/nebari-dev/nebari/actions/runs/6357802458/rerun",
+    "previous_attempt_url": null,
+    "workflow_url": "https://api.github.com/repos/nebari-dev/nebari/actions/workflows/69902917",
+    "head_commit": {
+      "id": "12a55bcb3bbe86f92f9f539408dbb9d07e66488e",
+      "tree_id": "313c4183d2eb68abb83ad2eca06a693d6697199c",
+      "message": "Merge remote-tracking branch 'origin/pr-test' into pr-test",
+      "timestamp": "2023-09-29T22:23:29Z",
+      "author": {
+        "name": "Fangchen Li",
+        "email": "fangchen.li@outlook.com"
+      },
+      "committer": {
+        "name": "Fangchen Li",
+        "email": "fangchen.li@outlook.com"
+      }
+    },
+    "repository": {
+      "id": 252841745,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNTI4NDE3NDU=",
+      "name": "nebari",
+      "full_name": "nebari-dev/nebari",
+      "private": false,
+      "owner": {
+        "login": "nebari-dev",
+        "id": 98419235,
+        "node_id": "O_kgDOBd3CIw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/98419235?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/nebari-dev",
+        "html_url": "https://github.com/nebari-dev",
+        "followers_url": "https://api.github.com/users/nebari-dev/followers",
+        "following_url": "https://api.github.com/users/nebari-dev/following{/other_user}",
+        "gists_url": "https://api.github.com/users/nebari-dev/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/nebari-dev/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/nebari-dev/subscriptions",
+        "organizations_url": "https://api.github.com/users/nebari-dev/orgs",
+        "repos_url": "https://api.github.com/users/nebari-dev/repos",
+        "events_url": "https://api.github.com/users/nebari-dev/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/nebari-dev/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/nebari-dev/nebari",
+      "description": "🪴 Nebari - your open source data science platform",
+      "fork": false,
+      "url": "https://api.github.com/repos/nebari-dev/nebari",
+      "forks_url": "https://api.github.com/repos/nebari-dev/nebari/forks",
+      "keys_url": "https://api.github.com/repos/nebari-dev/nebari/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/nebari-dev/nebari/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/nebari-dev/nebari/teams",
+      "hooks_url": "https://api.github.com/repos/nebari-dev/nebari/hooks",
+      "issue_events_url": "https://api.github.com/repos/nebari-dev/nebari/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/nebari-dev/nebari/events",
+      "assignees_url": "https://api.github.com/repos/nebari-dev/nebari/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/nebari-dev/nebari/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/nebari-dev/nebari/tags",
+      "blobs_url": "https://api.github.com/repos/nebari-dev/nebari/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/nebari-dev/nebari/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/nebari-dev/nebari/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/nebari-dev/nebari/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/nebari-dev/nebari/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/nebari-dev/nebari/languages",
+      "stargazers_url": "https://api.github.com/repos/nebari-dev/nebari/stargazers",
+      "contributors_url": "https://api.github.com/repos/nebari-dev/nebari/contributors",
+      "subscribers_url": "https://api.github.com/repos/nebari-dev/nebari/subscribers",
+      "subscription_url": "https://api.github.com/repos/nebari-dev/nebari/subscription",
+      "commits_url": "https://api.github.com/repos/nebari-dev/nebari/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/nebari-dev/nebari/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/nebari-dev/nebari/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/nebari-dev/nebari/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/nebari-dev/nebari/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/nebari-dev/nebari/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/nebari-dev/nebari/merges",
+      "archive_url": "https://api.github.com/repos/nebari-dev/nebari/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/nebari-dev/nebari/downloads",
+      "issues_url": "https://api.github.com/repos/nebari-dev/nebari/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/nebari-dev/nebari/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/nebari-dev/nebari/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/nebari-dev/nebari/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/nebari-dev/nebari/labels{/name}",
+      "releases_url": "https://api.github.com/repos/nebari-dev/nebari/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/nebari-dev/nebari/deployments"
+    },
+    "head_repository": {
+      "id": 679107820,
+      "node_id": "R_kgDOKHpc7A",
+      "name": "nebari",
+      "full_name": "fangchenli/nebari",
+      "private": false,
+      "owner": {
+        "login": "fangchenli",
+        "id": 7614606,
+        "node_id": "MDQ6VXNlcjc2MTQ2MDY=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7614606?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/fangchenli",
+        "html_url": "https://github.com/fangchenli",
+        "followers_url": "https://api.github.com/users/fangchenli/followers",
+        "following_url": "https://api.github.com/users/fangchenli/following{/other_user}",
+        "gists_url": "https://api.github.com/users/fangchenli/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/fangchenli/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/fangchenli/subscriptions",
+        "organizations_url": "https://api.github.com/users/fangchenli/orgs",
+        "repos_url": "https://api.github.com/users/fangchenli/repos",
+        "events_url": "https://api.github.com/users/fangchenli/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/fangchenli/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/fangchenli/nebari",
+      "description": "🪴 Nebari - your open source data science platform",
+      "fork": true,
+      "url": "https://api.github.com/repos/fangchenli/nebari",
+      "forks_url": "https://api.github.com/repos/fangchenli/nebari/forks",
+      "keys_url": "https://api.github.com/repos/fangchenli/nebari/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/fangchenli/nebari/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/fangchenli/nebari/teams",
+      "hooks_url": "https://api.github.com/repos/fangchenli/nebari/hooks",
+      "issue_events_url": "https://api.github.com/repos/fangchenli/nebari/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/fangchenli/nebari/events",
+      "assignees_url": "https://api.github.com/repos/fangchenli/nebari/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/fangchenli/nebari/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/fangchenli/nebari/tags",
+      "blobs_url": "https://api.github.com/repos/fangchenli/nebari/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/fangchenli/nebari/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/fangchenli/nebari/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/fangchenli/nebari/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/fangchenli/nebari/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/fangchenli/nebari/languages",
+      "stargazers_url": "https://api.github.com/repos/fangchenli/nebari/stargazers",
+      "contributors_url": "https://api.github.com/repos/fangchenli/nebari/contributors",
+      "subscribers_url": "https://api.github.com/repos/fangchenli/nebari/subscribers",
+      "subscription_url": "https://api.github.com/repos/fangchenli/nebari/subscription",
+      "commits_url": "https://api.github.com/repos/fangchenli/nebari/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/fangchenli/nebari/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/fangchenli/nebari/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/fangchenli/nebari/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/fangchenli/nebari/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/fangchenli/nebari/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/fangchenli/nebari/merges",
+      "archive_url": "https://api.github.com/repos/fangchenli/nebari/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/fangchenli/nebari/downloads",
+      "issues_url": "https://api.github.com/repos/fangchenli/nebari/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/fangchenli/nebari/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/fangchenli/nebari/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/fangchenli/nebari/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/fangchenli/nebari/labels{/name}",
+      "releases_url": "https://api.github.com/repos/fangchenli/nebari/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/fangchenli/nebari/deployments"
+    }
+  },
+  "logs_archive": {
+    "path": "/data/logs/nebari-dev/nebari/test_gcp_integration_d521/14-1.tar.gz"
+  },
+  "log_insights": [
+    {
+      "file": "1_test-gcp-integration (1).txt",
+      "total_lines": 1409,
+      "log_size": 141779,
+      "token_permissions": {
+        "Contents": "read",
+        "Metadata": "read",
+        "PullRequests": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20230924.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "fetch-depth": "0",
+            "repository": "nebari-dev/nebari",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {
+            "NEBARI_IMAGE_TAG": "main",
+            "TF_LOG": "info"
+          },
+          "start_date": "2023-09-29 22:23:51.838000",
+          "duration_sec": 1.631005
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "setup-python",
+          "version": "v4",
+          "sha": "61a6322f88396a6271a6ee3565807d608ecaddd1",
+          "with": {
+            "python-version": "3.11",
+            "check-latest": "false",
+            "token": "***",
+            "update-environment": "true",
+            "allow-prereleases": "false"
+          },
+          "env": {
+            "NEBARI_IMAGE_TAG": "main",
+            "TF_LOG": "info"
+          },
+          "start_date": "2023-09-29 22:23:53.469000",
+          "duration_sec": 0.191888
+        },
+        {
+          "type": "shell",
+          "env": {
+            "NEBARI_IMAGE_TAG": "main",
+            "TF_LOG": "info",
+            "pythonLocation": "/opt/hostedtoolcache/Python/3.11.5/x64",
+            "PKG_CONFIG_PATH": "/opt/hostedtoolcache/Python/3.11.5/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/opt/hostedtoolcache/Python/3.11.5/x64",
+            "Python2_ROOT_DIR": "/opt/hostedtoolcache/Python/3.11.5/x64",
+            "Python3_ROOT_DIR": "/opt/hostedtoolcache/Python/3.11.5/x64",
+            "LD_LIBRARY_PATH": "/opt/hostedtoolcache/Python/3.11.5/x64/lib"
+          },
+          "code": "pip install .[dev]\nconda install --quiet --yes conda-build\nplaywright install",
+          "commands": [
+            {
+              "annotations": [
+                "SC-PIP-INSTALL"
+              ],
+              "command": "pip",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": ".[dev]"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CONDA-INSTALL"
+              ],
+              "command": "conda",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-CONDA-INSTALL-QUIET"
+                  ],
+                  "content": "--quiet"
+                },
+                {
+                  "annotations": [
+                    "SC-CONDA-F-YES"
+                  ],
+                  "content": "--yes"
+                },
+                {
+                  "annotations": [
+                    "SC-CONDA-PACKAGE"
+                  ],
+                  "content": "conda-build"
+                }
+              ]
+            },
+            {
+              "command": "playwright",
+              "args": [
+                {
+                  "content": "install"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-29 22:23:53.661000",
+          "duration_sec": 80.956348
+        },
+        {
+          "type": "action",
+          "repository": "hashicorp",
+          "action": "vault-action",
+          "version": "v2.5.0",
+          "sha": "130d1f5f4fe645bb6c83e4225c04d64cfb62de6e",
+          "with": {
+            "method": "jwt",
+            "url": "https://quansight-vault-public-vault-b2379fa7.d415e30e.z1.hashicorp.cloud:8200",
+            "namespace": "admin/quansight",
+            "role": "repository-nebari-dev-nebari-role",
+            "secrets": "kv/data/repository/nebari-dev/nebari/google_cloud_platform/nebari-dev-ci/github-nebari-dev-repo-ci project_id | PROJECT_ID;",
+            "kubernetesTokenPath": "/var/run/secrets/kubernetes.io/serviceaccount/token",
+            "exportEnv": "true",
+            "exportToken": "false",
+            "tlsSkipVerify": "false",
+            "jwtTtl": "3600"
+          },
+          "env": {
+            "NEBARI_IMAGE_TAG": "main",
+            "TF_LOG": "info",
+            "pythonLocation": "/opt/hostedtoolcache/Python/3.11.5/x64",
+            "PKG_CONFIG_PATH": "/opt/hostedtoolcache/Python/3.11.5/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/opt/hostedtoolcache/Python/3.11.5/x64",
+            "Python2_ROOT_DIR": "/opt/hostedtoolcache/Python/3.11.5/x64",
+            "Python3_ROOT_DIR": "/opt/hostedtoolcache/Python/3.11.5/x64",
+            "LD_LIBRARY_PATH": "/opt/hostedtoolcache/Python/3.11.5/x64/lib"
+          },
+          "start_date": "2023-09-29 22:25:14.617000",
+          "duration_sec": 0.733395
+        }
+      ]
+    }
+  ],
+  "total_logs_size": 152107
+}

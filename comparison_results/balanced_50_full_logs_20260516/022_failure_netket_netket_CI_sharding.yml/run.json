@@ -1,0 +1,638 @@
+{
+  "_id": "netket/netket_.github/workflows/CI_sharding.yml_13_1",
+  "repository_name": "netket/netket",
+  "workflow_path": ".github/workflows/CI_sharding.yml",
+  "run_number": 13,
+  "run_attempt": 1,
+  "time_to_import": 34481.390186,
+  "metadata": {
+    "id": 6823537851,
+    "name": "CI",
+    "node_id": "WFR_kwLOB8r2F88AAAABlrbsuw",
+    "head_branch": "pjit",
+    "head_sha": "c99ed89cd171f618d11f77d467728ed43cfd960b",
+    "path": ".github/workflows/CI_sharding.yml",
+    "display_title": "[experimental] Add initial support for jax multi-device and multi-process environments (part 2)",
+    "run_number": 13,
+    "event": "pull_request",
+    "status": "completed",
+    "conclusion": "failure",
+    "workflow_id": 75563326,
+    "check_suite_id": 18079522779,
+    "check_suite_node_id": "CS_kwDOB8r2F88AAAAENZ-f2w",
+    "url": "https://api.github.com/repos/netket/netket/actions/runs/6823537851",
+    "html_url": "https://github.com/netket/netket/actions/runs/6823537851",
+    "pull_requests": [],
+    "created_at": "2023-11-10T10:17:20Z",
+    "updated_at": "2023-11-10T11:00:12Z",
+    "actor": {
+      "login": "inailuig",
+      "id": 7287577,
+      "node_id": "MDQ6VXNlcjcyODc1Nzc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7287577?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/inailuig",
+      "html_url": "https://github.com/inailuig",
+      "followers_url": "https://api.github.com/users/inailuig/followers",
+      "following_url": "https://api.github.com/users/inailuig/following{/other_user}",
+      "gists_url": "https://api.github.com/users/inailuig/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/inailuig/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/inailuig/subscriptions",
+      "organizations_url": "https://api.github.com/users/inailuig/orgs",
+      "repos_url": "https://api.github.com/users/inailuig/repos",
+      "events_url": "https://api.github.com/users/inailuig/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/inailuig/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "run_attempt": 1,
+    "referenced_workflows": [],
+    "run_started_at": "2023-11-10T10:17:20Z",
+    "triggering_actor": {
+      "login": "inailuig",
+      "id": 7287577,
+      "node_id": "MDQ6VXNlcjcyODc1Nzc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7287577?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/inailuig",
+      "html_url": "https://github.com/inailuig",
+      "followers_url": "https://api.github.com/users/inailuig/followers",
+      "following_url": "https://api.github.com/users/inailuig/following{/other_user}",
+      "gists_url": "https://api.github.com/users/inailuig/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/inailuig/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/inailuig/subscriptions",
+      "organizations_url": "https://api.github.com/users/inailuig/orgs",
+      "repos_url": "https://api.github.com/users/inailuig/repos",
+      "events_url": "https://api.github.com/users/inailuig/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/inailuig/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "jobs_url": "https://api.github.com/repos/netket/netket/actions/runs/6823537851/jobs",
+    "logs_url": "https://api.github.com/repos/netket/netket/actions/runs/6823537851/logs",
+    "check_suite_url": "https://api.github.com/repos/netket/netket/check-suites/18079522779",
+    "artifacts_url": "https://api.github.com/repos/netket/netket/actions/runs/6823537851/artifacts",
+    "cancel_url": "https://api.github.com/repos/netket/netket/actions/runs/6823537851/cancel",
+    "rerun_url": "https://api.github.com/repos/netket/netket/actions/runs/6823537851/rerun",
+    "previous_attempt_url": null,
+    "workflow_url": "https://api.github.com/repos/netket/netket/actions/workflows/75563326",
+    "head_commit": {
+      "id": "c99ed89cd171f618d11f77d467728ed43cfd960b",
+      "tree_id": "6b7ababa3ba544018be5988d6d592549848f0498",
+      "message": "ci oom debug cont",
+      "timestamp": "2023-11-10T10:17:04Z",
+      "author": {
+        "name": "Clemens Giuliani",
+        "email": "clemens@inailuig.it"
+      },
+      "committer": {
+        "name": "Clemens Giuliani",
+        "email": "clemens@inailuig.it"
+      }
+    },
+    "repository": {
+      "id": 130741783,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMzA3NDE3ODM=",
+      "name": "netket",
+      "full_name": "netket/netket",
+      "private": false,
+      "owner": {
+        "login": "netket",
+        "id": 38641916,
+        "node_id": "MDEyOk9yZ2FuaXphdGlvbjM4NjQxOTE2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/38641916?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/netket",
+        "html_url": "https://github.com/netket",
+        "followers_url": "https://api.github.com/users/netket/followers",
+        "following_url": "https://api.github.com/users/netket/following{/other_user}",
+        "gists_url": "https://api.github.com/users/netket/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/netket/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/netket/subscriptions",
+        "organizations_url": "https://api.github.com/users/netket/orgs",
+        "repos_url": "https://api.github.com/users/netket/repos",
+        "events_url": "https://api.github.com/users/netket/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/netket/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/netket/netket",
+      "description": "Machine learning algorithms for many-body quantum systems ",
+      "fork": false,
+      "url": "https://api.github.com/repos/netket/netket",
+      "forks_url": "https://api.github.com/repos/netket/netket/forks",
+      "keys_url": "https://api.github.com/repos/netket/netket/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/netket/netket/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/netket/netket/teams",
+      "hooks_url": "https://api.github.com/repos/netket/netket/hooks",
+      "issue_events_url": "https://api.github.com/repos/netket/netket/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/netket/netket/events",
+      "assignees_url": "https://api.github.com/repos/netket/netket/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/netket/netket/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/netket/netket/tags",
+      "blobs_url": "https://api.github.com/repos/netket/netket/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/netket/netket/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/netket/netket/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/netket/netket/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/netket/netket/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/netket/netket/languages",
+      "stargazers_url": "https://api.github.com/repos/netket/netket/stargazers",
+      "contributors_url": "https://api.github.com/repos/netket/netket/contributors",
+      "subscribers_url": "https://api.github.com/repos/netket/netket/subscribers",
+      "subscription_url": "https://api.github.com/repos/netket/netket/subscription",
+      "commits_url": "https://api.github.com/repos/netket/netket/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/netket/netket/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/netket/netket/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/netket/netket/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/netket/netket/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/netket/netket/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/netket/netket/merges",
+      "archive_url": "https://api.github.com/repos/netket/netket/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/netket/netket/downloads",
+      "issues_url": "https://api.github.com/repos/netket/netket/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/netket/netket/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/netket/netket/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/netket/netket/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/netket/netket/labels{/name}",
+      "releases_url": "https://api.github.com/repos/netket/netket/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/netket/netket/deployments"
+    },
+    "head_repository": {
+      "id": 313985566,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzMTM5ODU1NjY=",
+      "name": "netket",
+      "full_name": "inailuig/netket",
+      "private": false,
+      "owner": {
+        "login": "inailuig",
+        "id": 7287577,
+        "node_id": "MDQ6VXNlcjcyODc1Nzc=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7287577?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/inailuig",
+        "html_url": "https://github.com/inailuig",
+        "followers_url": "https://api.github.com/users/inailuig/followers",
+        "following_url": "https://api.github.com/users/inailuig/following{/other_user}",
+        "gists_url": "https://api.github.com/users/inailuig/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/inailuig/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/inailuig/subscriptions",
+        "organizations_url": "https://api.github.com/users/inailuig/orgs",
+        "repos_url": "https://api.github.com/users/inailuig/repos",
+        "events_url": "https://api.github.com/users/inailuig/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/inailuig/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/inailuig/netket",
+      "description": "Machine learning algorithms for many-body quantum systems ",
+      "fork": true,
+      "url": "https://api.github.com/repos/inailuig/netket",
+      "forks_url": "https://api.github.com/repos/inailuig/netket/forks",
+      "keys_url": "https://api.github.com/repos/inailuig/netket/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/inailuig/netket/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/inailuig/netket/teams",
+      "hooks_url": "https://api.github.com/repos/inailuig/netket/hooks",
+      "issue_events_url": "https://api.github.com/repos/inailuig/netket/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/inailuig/netket/events",
+      "assignees_url": "https://api.github.com/repos/inailuig/netket/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/inailuig/netket/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/inailuig/netket/tags",
+      "blobs_url": "https://api.github.com/repos/inailuig/netket/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/inailuig/netket/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/inailuig/netket/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/inailuig/netket/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/inailuig/netket/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/inailuig/netket/languages",
+      "stargazers_url": "https://api.github.com/repos/inailuig/netket/stargazers",
+      "contributors_url": "https://api.github.com/repos/inailuig/netket/contributors",
+      "subscribers_url": "https://api.github.com/repos/inailuig/netket/subscribers",
+      "subscription_url": "https://api.github.com/repos/inailuig/netket/subscription",
+      "commits_url": "https://api.github.com/repos/inailuig/netket/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/inailuig/netket/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/inailuig/netket/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/inailuig/netket/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/inailuig/netket/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/inailuig/netket/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/inailuig/netket/merges",
+      "archive_url": "https://api.github.com/repos/inailuig/netket/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/inailuig/netket/downloads",
+      "issues_url": "https://api.github.com/repos/inailuig/netket/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/inailuig/netket/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/inailuig/netket/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/inailuig/netket/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/inailuig/netket/labels{/name}",
+      "releases_url": "https://api.github.com/repos/inailuig/netket/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/inailuig/netket/deployments"
+    }
+  },
+  "logs_archive": {
+    "path": "/data/logs/netket/netket/CI_fe8e/13-1.tar.gz"
+  },
+  "log_insights": [
+    {
+      "file": "1_test_sharding (ubuntu-latest, 3.10, run_standard_tests_wit.txt",
+      "total_lines": 4933,
+      "log_size": 679861,
+      "token_permissions": {
+        "Actions": "read",
+        "Checks": "read",
+        "Contents": "read",
+        "Deployments": "read",
+        "Discussions": "read",
+        "Issues": "read",
+        "Metadata": "read",
+        "Packages": "read",
+        "Pages": "read",
+        "PullRequests": "read",
+        "RepositoryProjects": "read",
+        "SecurityEvents": "read",
+        "Statuses": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231030.2.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "submodules": "true",
+            "repository": "netket/netket",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-11-10 10:17:31.040000",
+          "duration_sec": 1.557876
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "setup-python",
+          "version": "v4",
+          "sha": "65d7f2d534ac1bc67fcd62888c5f4f3d2cb2b236",
+          "with": {
+            "python-version": "3.10",
+            "check-latest": "false",
+            "token": "***",
+            "update-environment": "true",
+            "allow-prereleases": "false"
+          },
+          "env": {},
+          "start_date": "2023-11-10 10:17:32.598000",
+          "duration_sec": 0.156836
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/opt/hostedtoolcache/Python/3.10.13/x64",
+            "PKG_CONFIG_PATH": "/opt/hostedtoolcache/Python/3.10.13/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/opt/hostedtoolcache/Python/3.10.13/x64",
+            "Python2_ROOT_DIR": "/opt/hostedtoolcache/Python/3.10.13/x64",
+            "Python3_ROOT_DIR": "/opt/hostedtoolcache/Python/3.10.13/x64",
+            "LD_LIBRARY_PATH": "/opt/hostedtoolcache/Python/3.10.13/x64/lib"
+          },
+          "code": "python -m pip install --upgrade pip\npython -m pip install wheel\npip install jaxlib\npip install -e \".[dev]\"",
+          "commands": [
+            {
+              "annotations": [
+                "SC-PYTHON-MODULE"
+              ],
+              "command": "python",
+              "categories": [
+                "DEVELOPMENT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-PYTHON-MODULE-M"
+                  ],
+                  "content": "-m"
+                },
+                {
+                  "annotations": [
+                    "SC-PYTHON-MODULE-M"
+                  ],
+                  "content": "pip"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-PYTHON-MODULE"
+              ],
+              "command": "python",
+              "categories": [
+                "DEVELOPMENT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-PYTHON-MODULE-M"
+                  ],
+                  "content": "-m"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-PIP-INSTALL"
+              ],
+              "command": "pip",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "jaxlib"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-PIP-INSTALL"
+              ],
+              "command": "pip",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-INSTALL-EDITABLE"
+                  ],
+                  "content": "-e \".[dev]\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-PIP-INSTALL"
+              ],
+              "command": "pip",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "wheel"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-10 10:17:32.755000",
+          "duration_sec": 41.397238
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/opt/hostedtoolcache/Python/3.10.13/x64",
+            "PKG_CONFIG_PATH": "/opt/hostedtoolcache/Python/3.10.13/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/opt/hostedtoolcache/Python/3.10.13/x64",
+            "Python2_ROOT_DIR": "/opt/hostedtoolcache/Python/3.10.13/x64",
+            "Python3_ROOT_DIR": "/opt/hostedtoolcache/Python/3.10.13/x64",
+            "LD_LIBRARY_PATH": "/opt/hostedtoolcache/Python/3.10.13/x64/lib"
+          },
+          "code": "./test_sharding/\"run_standard_tests_with_sharding.sh\"",
+          "commands": [
+            {
+              "command": "./test_sharding/\"run_standard_tests_with_sharding.sh\""
+            }
+          ],
+          "start_date": "2023-11-10 10:18:14.152000",
+          "duration_sec": 2512.573222
+        }
+      ]
+    },
+    {
+      "file": "0_test_sharding (ubuntu-latest, 3.10, run_test_sharding.sh).txt",
+      "total_lines": 1074,
+      "log_size": 93982,
+      "token_permissions": {
+        "Actions": "read",
+        "Checks": "read",
+        "Contents": "read",
+        "Deployments": "read",
+        "Discussions": "read",
+        "Issues": "read",
+        "Metadata": "read",
+        "Packages": "read",
+        "Pages": "read",
+        "PullRequests": "read",
+        "RepositoryProjects": "read",
+        "SecurityEvents": "read",
+        "Statuses": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231030.2.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "submodules": "true",
+            "repository": "netket/netket",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-11-10 10:17:29.446000",
+          "duration_sec": 1.754619
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "setup-python",
+          "version": "v4",
+          "sha": "65d7f2d534ac1bc67fcd62888c5f4f3d2cb2b236",
+          "with": {
+            "python-version": "3.10",
+            "check-latest": "false",
+            "token": "***",
+            "update-environment": "true",
+            "allow-prereleases": "false"
+          },
+          "env": {},
+          "start_date": "2023-11-10 10:17:31.201000",
+          "duration_sec": 0.155128
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/opt/hostedtoolcache/Python/3.10.13/x64",
+            "PKG_CONFIG_PATH": "/opt/hostedtoolcache/Python/3.10.13/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/opt/hostedtoolcache/Python/3.10.13/x64",
+            "Python2_ROOT_DIR": "/opt/hostedtoolcache/Python/3.10.13/x64",
+            "Python3_ROOT_DIR": "/opt/hostedtoolcache/Python/3.10.13/x64",
+            "LD_LIBRARY_PATH": "/opt/hostedtoolcache/Python/3.10.13/x64/lib"
+          },
+          "code": "python -m pip install --upgrade pip\npython -m pip install wheel\npip install jaxlib\npip install -e \".[dev]\"",
+          "commands": [
+            {
+              "annotations": [
+                "SC-PYTHON-MODULE"
+              ],
+              "command": "python",
+              "categories": [
+                "DEVELOPMENT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-PYTHON-MODULE-M"
+                  ],
+                  "content": "-m"
+                },
+                {
+                  "annotations": [
+                    "SC-PYTHON-MODULE-M"
+                  ],
+                  "content": "pip"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-PYTHON-MODULE"
+              ],
+              "command": "python",
+              "categories": [
+                "DEVELOPMENT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-PYTHON-MODULE-M"
+                  ],
+                  "content": "-m"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-PIP-INSTALL"
+              ],
+              "command": "pip",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "jaxlib"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-PIP-INSTALL"
+              ],
+              "command": "pip",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-INSTALL-EDITABLE"
+                  ],
+                  "content": "-e \".[dev]\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-PIP-INSTALL"
+              ],
+              "command": "pip",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "wheel"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-10 10:17:31.356000",
+          "duration_sec": 41.917205
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/opt/hostedtoolcache/Python/3.10.13/x64",
+            "PKG_CONFIG_PATH": "/opt/hostedtoolcache/Python/3.10.13/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/opt/hostedtoolcache/Python/3.10.13/x64",
+            "Python2_ROOT_DIR": "/opt/hostedtoolcache/Python/3.10.13/x64",
+            "Python3_ROOT_DIR": "/opt/hostedtoolcache/Python/3.10.13/x64",
+            "LD_LIBRARY_PATH": "/opt/hostedtoolcache/Python/3.10.13/x64/lib"
+          },
+          "code": "./test_sharding/\"run_test_sharding.sh\"",
+          "commands": [
+            {
+              "command": "./test_sharding/\"run_test_sharding.sh\""
+            }
+          ],
+          "start_date": "2023-11-10 10:18:13.273000",
+          "duration_sec": 48.420867
+        }
+      ]
+    }
+  ],
+  "total_logs_size": 785675
+}

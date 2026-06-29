@@ -1,0 +1,1200 @@
+{
+  "_id": "securisec/chepy_.github/workflows/tests_multi_os.yml_336_1",
+  "repository_name": "securisec/chepy",
+  "workflow_path": ".github/workflows/tests_multi_os.yml",
+  "run_number": 336,
+  "run_attempt": 1,
+  "time_to_import": 41864.688705,
+  "metadata": {
+    "id": 6701271501,
+    "name": "tests",
+    "node_id": "WFR_kwLODPse688AAAABj21JzQ",
+    "head_branch": "master",
+    "head_sha": "7376b161baeb34de56a4e9f3d00568a435867397",
+    "path": ".github/workflows/tests_multi_os.yml",
+    "display_title": "🗓 Oct 30, 2023 10:24:47 PM",
+    "run_number": 336,
+    "event": "push",
+    "status": "completed",
+    "conclusion": "failure",
+    "workflow_id": 74358,
+    "check_suite_id": 17768545935,
+    "check_suite_node_id": "CS_kwDODPse688AAAAEIxZ-jw",
+    "url": "https://api.github.com/repos/securisec/chepy/actions/runs/6701271501",
+    "html_url": "https://github.com/securisec/chepy/actions/runs/6701271501",
+    "pull_requests": [],
+    "created_at": "2023-10-31T02:25:23Z",
+    "updated_at": "2023-10-31T02:27:18Z",
+    "actor": {
+      "login": "securisec",
+      "id": 22226823,
+      "node_id": "MDQ6VXNlcjIyMjI2ODIz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22226823?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/securisec",
+      "html_url": "https://github.com/securisec",
+      "followers_url": "https://api.github.com/users/securisec/followers",
+      "following_url": "https://api.github.com/users/securisec/following{/other_user}",
+      "gists_url": "https://api.github.com/users/securisec/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/securisec/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/securisec/subscriptions",
+      "organizations_url": "https://api.github.com/users/securisec/orgs",
+      "repos_url": "https://api.github.com/users/securisec/repos",
+      "events_url": "https://api.github.com/users/securisec/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/securisec/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "run_attempt": 1,
+    "referenced_workflows": [],
+    "run_started_at": "2023-10-31T02:25:23Z",
+    "triggering_actor": {
+      "login": "securisec",
+      "id": 22226823,
+      "node_id": "MDQ6VXNlcjIyMjI2ODIz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22226823?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/securisec",
+      "html_url": "https://github.com/securisec",
+      "followers_url": "https://api.github.com/users/securisec/followers",
+      "following_url": "https://api.github.com/users/securisec/following{/other_user}",
+      "gists_url": "https://api.github.com/users/securisec/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/securisec/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/securisec/subscriptions",
+      "organizations_url": "https://api.github.com/users/securisec/orgs",
+      "repos_url": "https://api.github.com/users/securisec/repos",
+      "events_url": "https://api.github.com/users/securisec/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/securisec/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "jobs_url": "https://api.github.com/repos/securisec/chepy/actions/runs/6701271501/jobs",
+    "logs_url": "https://api.github.com/repos/securisec/chepy/actions/runs/6701271501/logs",
+    "check_suite_url": "https://api.github.com/repos/securisec/chepy/check-suites/17768545935",
+    "artifacts_url": "https://api.github.com/repos/securisec/chepy/actions/runs/6701271501/artifacts",
+    "cancel_url": "https://api.github.com/repos/securisec/chepy/actions/runs/6701271501/cancel",
+    "rerun_url": "https://api.github.com/repos/securisec/chepy/actions/runs/6701271501/rerun",
+    "previous_attempt_url": null,
+    "workflow_url": "https://api.github.com/repos/securisec/chepy/actions/workflows/74358",
+    "head_commit": {
+      "id": "7376b161baeb34de56a4e9f3d00568a435867397",
+      "tree_id": "8b4522ecf0ff3f25053cc5081432911e0dfb7402",
+      "message": "🗓 Oct 30, 2023 10:24:47 PM\n\n🐙 plugins updated\n✨ to/fom_utf21\n🧪 tests added/updated\n✨ new helpers",
+      "timestamp": "2023-10-31T02:25:18Z",
+      "author": {
+        "name": "securisec",
+        "email": "securisec@users.noreply.github.com"
+      },
+      "committer": {
+        "name": "securisec",
+        "email": "securisec@users.noreply.github.com"
+      }
+    },
+    "repository": {
+      "id": 217784043,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMTc3ODQwNDM=",
+      "name": "chepy",
+      "full_name": "securisec/chepy",
+      "private": false,
+      "owner": {
+        "login": "securisec",
+        "id": 22226823,
+        "node_id": "MDQ6VXNlcjIyMjI2ODIz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/22226823?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/securisec",
+        "html_url": "https://github.com/securisec",
+        "followers_url": "https://api.github.com/users/securisec/followers",
+        "following_url": "https://api.github.com/users/securisec/following{/other_user}",
+        "gists_url": "https://api.github.com/users/securisec/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/securisec/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/securisec/subscriptions",
+        "organizations_url": "https://api.github.com/users/securisec/orgs",
+        "repos_url": "https://api.github.com/users/securisec/repos",
+        "events_url": "https://api.github.com/users/securisec/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/securisec/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/securisec/chepy",
+      "description": "Chepy is a python lib/cli equivalent of the awesome CyberChef tool. ",
+      "fork": false,
+      "url": "https://api.github.com/repos/securisec/chepy",
+      "forks_url": "https://api.github.com/repos/securisec/chepy/forks",
+      "keys_url": "https://api.github.com/repos/securisec/chepy/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/securisec/chepy/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/securisec/chepy/teams",
+      "hooks_url": "https://api.github.com/repos/securisec/chepy/hooks",
+      "issue_events_url": "https://api.github.com/repos/securisec/chepy/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/securisec/chepy/events",
+      "assignees_url": "https://api.github.com/repos/securisec/chepy/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/securisec/chepy/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/securisec/chepy/tags",
+      "blobs_url": "https://api.github.com/repos/securisec/chepy/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/securisec/chepy/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/securisec/chepy/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/securisec/chepy/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/securisec/chepy/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/securisec/chepy/languages",
+      "stargazers_url": "https://api.github.com/repos/securisec/chepy/stargazers",
+      "contributors_url": "https://api.github.com/repos/securisec/chepy/contributors",
+      "subscribers_url": "https://api.github.com/repos/securisec/chepy/subscribers",
+      "subscription_url": "https://api.github.com/repos/securisec/chepy/subscription",
+      "commits_url": "https://api.github.com/repos/securisec/chepy/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/securisec/chepy/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/securisec/chepy/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/securisec/chepy/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/securisec/chepy/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/securisec/chepy/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/securisec/chepy/merges",
+      "archive_url": "https://api.github.com/repos/securisec/chepy/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/securisec/chepy/downloads",
+      "issues_url": "https://api.github.com/repos/securisec/chepy/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/securisec/chepy/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/securisec/chepy/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/securisec/chepy/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/securisec/chepy/labels{/name}",
+      "releases_url": "https://api.github.com/repos/securisec/chepy/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/securisec/chepy/deployments"
+    },
+    "head_repository": {
+      "id": 217784043,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMTc3ODQwNDM=",
+      "name": "chepy",
+      "full_name": "securisec/chepy",
+      "private": false,
+      "owner": {
+        "login": "securisec",
+        "id": 22226823,
+        "node_id": "MDQ6VXNlcjIyMjI2ODIz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/22226823?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/securisec",
+        "html_url": "https://github.com/securisec",
+        "followers_url": "https://api.github.com/users/securisec/followers",
+        "following_url": "https://api.github.com/users/securisec/following{/other_user}",
+        "gists_url": "https://api.github.com/users/securisec/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/securisec/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/securisec/subscriptions",
+        "organizations_url": "https://api.github.com/users/securisec/orgs",
+        "repos_url": "https://api.github.com/users/securisec/repos",
+        "events_url": "https://api.github.com/users/securisec/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/securisec/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/securisec/chepy",
+      "description": "Chepy is a python lib/cli equivalent of the awesome CyberChef tool. ",
+      "fork": false,
+      "url": "https://api.github.com/repos/securisec/chepy",
+      "forks_url": "https://api.github.com/repos/securisec/chepy/forks",
+      "keys_url": "https://api.github.com/repos/securisec/chepy/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/securisec/chepy/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/securisec/chepy/teams",
+      "hooks_url": "https://api.github.com/repos/securisec/chepy/hooks",
+      "issue_events_url": "https://api.github.com/repos/securisec/chepy/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/securisec/chepy/events",
+      "assignees_url": "https://api.github.com/repos/securisec/chepy/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/securisec/chepy/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/securisec/chepy/tags",
+      "blobs_url": "https://api.github.com/repos/securisec/chepy/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/securisec/chepy/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/securisec/chepy/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/securisec/chepy/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/securisec/chepy/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/securisec/chepy/languages",
+      "stargazers_url": "https://api.github.com/repos/securisec/chepy/stargazers",
+      "contributors_url": "https://api.github.com/repos/securisec/chepy/contributors",
+      "subscribers_url": "https://api.github.com/repos/securisec/chepy/subscribers",
+      "subscription_url": "https://api.github.com/repos/securisec/chepy/subscription",
+      "commits_url": "https://api.github.com/repos/securisec/chepy/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/securisec/chepy/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/securisec/chepy/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/securisec/chepy/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/securisec/chepy/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/securisec/chepy/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/securisec/chepy/merges",
+      "archive_url": "https://api.github.com/repos/securisec/chepy/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/securisec/chepy/downloads",
+      "issues_url": "https://api.github.com/repos/securisec/chepy/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/securisec/chepy/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/securisec/chepy/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/securisec/chepy/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/securisec/chepy/labels{/name}",
+      "releases_url": "https://api.github.com/repos/securisec/chepy/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/securisec/chepy/deployments"
+    }
+  },
+  "logs_archive": {
+    "path": "/data/logs/securisec/chepy/tests_5983/336-1.tar.gz"
+  },
+  "total_logs_size": 366721,
+  "log_insights": [
+    {
+      "file": "0_test (ubuntu-latest, 3.10).txt",
+      "total_lines": 1276,
+      "log_size": 120252,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231025.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "securisec/chepy",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-31 02:25:32.695000",
+          "duration_sec": 1.299891
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "setup-python",
+          "version": "v4",
+          "sha": "65d7f2d534ac1bc67fcd62888c5f4f3d2cb2b236",
+          "with": {
+            "python-version": "3.10",
+            "cache": "pip",
+            "check-latest": "false",
+            "token": "***",
+            "update-environment": "true",
+            "allow-prereleases": "false"
+          },
+          "env": {},
+          "start_date": "2023-10-31 02:25:33.995000",
+          "duration_sec": 39.369126
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/opt/hostedtoolcache/Python/3.10.13/x64",
+            "PKG_CONFIG_PATH": "/opt/hostedtoolcache/Python/3.10.13/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/opt/hostedtoolcache/Python/3.10.13/x64",
+            "Python2_ROOT_DIR": "/opt/hostedtoolcache/Python/3.10.13/x64",
+            "Python3_ROOT_DIR": "/opt/hostedtoolcache/Python/3.10.13/x64",
+            "LD_LIBRARY_PATH": "/opt/hostedtoolcache/Python/3.10.13/x64/lib"
+          },
+          "code": "git submodule update --init --recursive\npip install -r requirements.txt\npython -m pip install --upgrade pip\npip install .[extras]",
+          "commands": [
+            {
+              "annotations": [
+                "SC-GIT-SUBMODULE-UPDATE"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL"
+              ],
+              "args": [
+                {
+                  "content": "submodule"
+                },
+                {
+                  "content": "update"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-F-INIT"
+                  ],
+                  "content": "--init"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-F-RECURSIVE"
+                  ],
+                  "content": "--recursive"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-PIP-INSTALL"
+              ],
+              "command": "pip",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-REQUIREMENTS"
+                  ],
+                  "content": "-r requirements.txt"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-PYTHON-MODULE"
+              ],
+              "command": "python",
+              "categories": [
+                "DEVELOPMENT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-PYTHON-MODULE-M"
+                  ],
+                  "content": "-m"
+                },
+                {
+                  "annotations": [
+                    "SC-PYTHON-MODULE-M"
+                  ],
+                  "content": "pip"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-PIP-INSTALL"
+              ],
+              "command": "pip",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": ".[extras]"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-31 02:26:13.364000",
+          "duration_sec": 21.958624
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/opt/hostedtoolcache/Python/3.10.13/x64",
+            "PKG_CONFIG_PATH": "/opt/hostedtoolcache/Python/3.10.13/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/opt/hostedtoolcache/Python/3.10.13/x64",
+            "Python2_ROOT_DIR": "/opt/hostedtoolcache/Python/3.10.13/x64",
+            "Python3_ROOT_DIR": "/opt/hostedtoolcache/Python/3.10.13/x64",
+            "LD_LIBRARY_PATH": "/opt/hostedtoolcache/Python/3.10.13/x64/lib"
+          },
+          "code": "pip install sphinx recommonmark pytest==7.4.0 pytest-cov pyperclip ",
+          "commands": [
+            {
+              "annotations": [
+                "SC-PIP-INSTALL"
+              ],
+              "command": "pip",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "sphinx"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "recommonmark"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "pytest==7.4.0"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "pytest-cov"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "pyperclip"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-31 02:26:35.323000",
+          "duration_sec": 5.496289
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/opt/hostedtoolcache/Python/3.10.13/x64",
+            "PKG_CONFIG_PATH": "/opt/hostedtoolcache/Python/3.10.13/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/opt/hostedtoolcache/Python/3.10.13/x64",
+            "Python2_ROOT_DIR": "/opt/hostedtoolcache/Python/3.10.13/x64",
+            "Python3_ROOT_DIR": "/opt/hostedtoolcache/Python/3.10.13/x64",
+            "LD_LIBRARY_PATH": "/opt/hostedtoolcache/Python/3.10.13/x64/lib"
+          },
+          "code": "pytest -v --disable-pytest-warnings --cov-report=xml --cov=chepy --cov-config=.coveragerc tests/\ncoverage report -m",
+          "commands": [
+            {
+              "annotations": [
+                "SC-PYTEST"
+              ],
+              "command": "pytest",
+              "categories": [
+                "TEST_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-PYTEST-V"
+                  ],
+                  "content": "-v"
+                },
+                {
+                  "annotations": [
+                    "SC-PYTEST-DISABLE-PYTEST-WARNINGS"
+                  ],
+                  "content": "--disable-pytest-warnings"
+                },
+                {
+                  "annotations": [
+                    "SC-PYTEST-COV-REPORT",
+                    "SC-PYTEST-COV"
+                  ],
+                  "content": "--cov-report=xml"
+                },
+                {
+                  "annotations": [
+                    "SC-PYTEST-COV"
+                  ],
+                  "content": "--cov=chepy"
+                },
+                {
+                  "annotations": [
+                    "SC-PYTEST-COV",
+                    "SC-PYTEST-COV-CONFIG"
+                  ],
+                  "content": "--cov-config=.coveragerc"
+                },
+                {
+                  "annotations": [
+                    "SC-PYTEST-ARG"
+                  ],
+                  "content": "tests/"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-COVERAGE"
+              ],
+              "command": "coverage",
+              "categories": [
+                "CODE_COVERAGE"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-COVERAGE-ARG"
+                  ],
+                  "content": "report"
+                },
+                {
+                  "annotations": [
+                    "SC-COVERAGE-M"
+                  ],
+                  "content": "-m"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-31 02:26:40.819000",
+          "duration_sec": 9.119713
+        }
+      ]
+    },
+    {
+      "file": "1_test (windows-latest, 3.10).txt",
+      "total_lines": 1268,
+      "log_size": 119770,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "windows-2022",
+      "image_version": "20231024.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "securisec/chepy",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-31 02:25:35.716000",
+          "duration_sec": 6.76614
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "setup-python",
+          "version": "v4",
+          "sha": "65d7f2d534ac1bc67fcd62888c5f4f3d2cb2b236",
+          "with": {
+            "python-version": "3.10",
+            "cache": "pip",
+            "check-latest": "false",
+            "token": "***",
+            "update-environment": "true",
+            "allow-prereleases": "false"
+          },
+          "env": {},
+          "start_date": "2023-10-31 02:25:42.482000",
+          "duration_sec": 18.290067
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "C:\\hostedtoolcache\\windows\\Python\\3.10.11\\x64",
+            "PKG_CONFIG_PATH": "C:\\hostedtoolcache\\windows\\Python\\3.10.11\\x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "C:\\hostedtoolcache\\windows\\Python\\3.10.11\\x64",
+            "Python2_ROOT_DIR": "C:\\hostedtoolcache\\windows\\Python\\3.10.11\\x64",
+            "Python3_ROOT_DIR": "C:\\hostedtoolcache\\windows\\Python\\3.10.11\\x64"
+          },
+          "code": "git submodule update --init --recursive\npip install -r requirements.txt\npython -m pip install --upgrade pip\npip install .[extras]",
+          "commands": [
+            {
+              "annotations": [
+                "SC-GIT-SUBMODULE-UPDATE"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL"
+              ],
+              "args": [
+                {
+                  "content": "submodule"
+                },
+                {
+                  "content": "update"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-F-INIT"
+                  ],
+                  "content": "--init"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-F-RECURSIVE"
+                  ],
+                  "content": "--recursive"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-PIP-INSTALL"
+              ],
+              "command": "pip",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-REQUIREMENTS"
+                  ],
+                  "content": "-r requirements.txt"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-PYTHON-MODULE"
+              ],
+              "command": "python",
+              "categories": [
+                "DEVELOPMENT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-PYTHON-MODULE-M"
+                  ],
+                  "content": "-m"
+                },
+                {
+                  "annotations": [
+                    "SC-PYTHON-MODULE-M"
+                  ],
+                  "content": "pip"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-PIP-INSTALL"
+              ],
+              "command": "pip",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": ".[extras]"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-31 02:26:00.772000",
+          "duration_sec": 37.916666
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "C:\\hostedtoolcache\\windows\\Python\\3.10.11\\x64",
+            "PKG_CONFIG_PATH": "C:\\hostedtoolcache\\windows\\Python\\3.10.11\\x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "C:\\hostedtoolcache\\windows\\Python\\3.10.11\\x64",
+            "Python2_ROOT_DIR": "C:\\hostedtoolcache\\windows\\Python\\3.10.11\\x64",
+            "Python3_ROOT_DIR": "C:\\hostedtoolcache\\windows\\Python\\3.10.11\\x64"
+          },
+          "code": "pip install sphinx recommonmark pytest==7.4.0 pytest-cov pyperclip ",
+          "commands": [
+            {
+              "annotations": [
+                "SC-PIP-INSTALL"
+              ],
+              "command": "pip",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "sphinx"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "recommonmark"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "pytest==7.4.0"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "pytest-cov"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "pyperclip"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-31 02:26:38.689000",
+          "duration_sec": 18.88019
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "C:\\hostedtoolcache\\windows\\Python\\3.10.11\\x64",
+            "PKG_CONFIG_PATH": "C:\\hostedtoolcache\\windows\\Python\\3.10.11\\x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "C:\\hostedtoolcache\\windows\\Python\\3.10.11\\x64",
+            "Python2_ROOT_DIR": "C:\\hostedtoolcache\\windows\\Python\\3.10.11\\x64",
+            "Python3_ROOT_DIR": "C:\\hostedtoolcache\\windows\\Python\\3.10.11\\x64"
+          },
+          "code": "pytest -v --disable-pytest-warnings --cov-report=xml --cov=chepy --cov-config=.coveragerc tests/\ncoverage report -m",
+          "commands": [
+            {
+              "annotations": [
+                "SC-PYTEST"
+              ],
+              "command": "pytest",
+              "categories": [
+                "TEST_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-PYTEST-V"
+                  ],
+                  "content": "-v"
+                },
+                {
+                  "annotations": [
+                    "SC-PYTEST-DISABLE-PYTEST-WARNINGS"
+                  ],
+                  "content": "--disable-pytest-warnings"
+                },
+                {
+                  "annotations": [
+                    "SC-PYTEST-COV-REPORT",
+                    "SC-PYTEST-COV"
+                  ],
+                  "content": "--cov-report=xml"
+                },
+                {
+                  "annotations": [
+                    "SC-PYTEST-COV"
+                  ],
+                  "content": "--cov=chepy"
+                },
+                {
+                  "annotations": [
+                    "SC-PYTEST-COV",
+                    "SC-PYTEST-COV-CONFIG"
+                  ],
+                  "content": "--cov-config=.coveragerc"
+                },
+                {
+                  "annotations": [
+                    "SC-PYTEST-ARG"
+                  ],
+                  "content": "tests/"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-COVERAGE"
+              ],
+              "command": "coverage",
+              "categories": [
+                "CODE_COVERAGE"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-COVERAGE-ARG"
+                  ],
+                  "content": "report"
+                },
+                {
+                  "annotations": [
+                    "SC-COVERAGE-M"
+                  ],
+                  "content": "-m"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-31 02:26:57.569000",
+          "duration_sec": 16.964343
+        }
+      ]
+    },
+    {
+      "file": "2_test (macOS-latest, 3.10).txt",
+      "total_lines": 1287,
+      "log_size": 123779,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "macos-12",
+      "image_version": "20230921.1",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "securisec/chepy",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-31 02:25:35.504000",
+          "duration_sec": 2.095885
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "setup-python",
+          "version": "v4",
+          "sha": "65d7f2d534ac1bc67fcd62888c5f4f3d2cb2b236",
+          "with": {
+            "python-version": "3.10",
+            "cache": "pip",
+            "check-latest": "false",
+            "token": "***",
+            "update-environment": "true",
+            "allow-prereleases": "false"
+          },
+          "env": {},
+          "start_date": "2023-10-31 02:25:37.600000",
+          "duration_sec": 17.161089
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/Users/runner/hostedtoolcache/Python/3.10.13/x64",
+            "PKG_CONFIG_PATH": "/Users/runner/hostedtoolcache/Python/3.10.13/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.10.13/x64",
+            "Python2_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.10.13/x64",
+            "Python3_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.10.13/x64"
+          },
+          "code": "git submodule update --init --recursive\npip install -r requirements.txt\npython -m pip install --upgrade pip\npip install .[extras]",
+          "commands": [
+            {
+              "annotations": [
+                "SC-GIT-SUBMODULE-UPDATE"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL"
+              ],
+              "args": [
+                {
+                  "content": "submodule"
+                },
+                {
+                  "content": "update"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-F-INIT"
+                  ],
+                  "content": "--init"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-F-RECURSIVE"
+                  ],
+                  "content": "--recursive"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-PIP-INSTALL"
+              ],
+              "command": "pip",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-REQUIREMENTS"
+                  ],
+                  "content": "-r requirements.txt"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-PYTHON-MODULE"
+              ],
+              "command": "python",
+              "categories": [
+                "DEVELOPMENT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-PYTHON-MODULE-M"
+                  ],
+                  "content": "-m"
+                },
+                {
+                  "annotations": [
+                    "SC-PYTHON-MODULE-M"
+                  ],
+                  "content": "pip"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-PIP-INSTALL"
+              ],
+              "command": "pip",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": ".[extras]"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-31 02:25:54.761000",
+          "duration_sec": 24.360281
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/Users/runner/hostedtoolcache/Python/3.10.13/x64",
+            "PKG_CONFIG_PATH": "/Users/runner/hostedtoolcache/Python/3.10.13/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.10.13/x64",
+            "Python2_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.10.13/x64",
+            "Python3_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.10.13/x64"
+          },
+          "code": "pip install sphinx recommonmark pytest==7.4.0 pytest-cov pyperclip ",
+          "commands": [
+            {
+              "annotations": [
+                "SC-PIP-INSTALL"
+              ],
+              "command": "pip",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "sphinx"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "recommonmark"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "pytest==7.4.0"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "pytest-cov"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "pyperclip"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-31 02:26:19.121000",
+          "duration_sec": 8.93082
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/Users/runner/hostedtoolcache/Python/3.10.13/x64",
+            "PKG_CONFIG_PATH": "/Users/runner/hostedtoolcache/Python/3.10.13/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.10.13/x64",
+            "Python2_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.10.13/x64",
+            "Python3_ROOT_DIR": "/Users/runner/hostedtoolcache/Python/3.10.13/x64"
+          },
+          "code": "pytest -v --disable-pytest-warnings --cov-report=xml --cov=chepy --cov-config=.coveragerc tests/\ncoverage report -m",
+          "commands": [
+            {
+              "annotations": [
+                "SC-PYTEST"
+              ],
+              "command": "pytest",
+              "categories": [
+                "TEST_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-PYTEST-V"
+                  ],
+                  "content": "-v"
+                },
+                {
+                  "annotations": [
+                    "SC-PYTEST-DISABLE-PYTEST-WARNINGS"
+                  ],
+                  "content": "--disable-pytest-warnings"
+                },
+                {
+                  "annotations": [
+                    "SC-PYTEST-COV-REPORT",
+                    "SC-PYTEST-COV"
+                  ],
+                  "content": "--cov-report=xml"
+                },
+                {
+                  "annotations": [
+                    "SC-PYTEST-COV"
+                  ],
+                  "content": "--cov=chepy"
+                },
+                {
+                  "annotations": [
+                    "SC-PYTEST-COV",
+                    "SC-PYTEST-COV-CONFIG"
+                  ],
+                  "content": "--cov-config=.coveragerc"
+                },
+                {
+                  "annotations": [
+                    "SC-PYTEST-ARG"
+                  ],
+                  "content": "tests/"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-COVERAGE"
+              ],
+              "command": "coverage",
+              "categories": [
+                "CODE_COVERAGE"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-COVERAGE-ARG"
+                  ],
+                  "content": "report"
+                },
+                {
+                  "annotations": [
+                    "SC-COVERAGE-M"
+                  ],
+                  "content": "-m"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-31 02:26:28.052000",
+          "duration_sec": 8.578913
+        }
+      ]
+    }
+  ]
+}

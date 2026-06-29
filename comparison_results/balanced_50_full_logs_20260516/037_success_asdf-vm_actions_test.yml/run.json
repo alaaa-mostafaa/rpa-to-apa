@@ -1,0 +1,1704 @@
+{
+  "_id": "asdf-vm/actions_.github/workflows/test.yml_320_1",
+  "repository_name": "asdf-vm/actions",
+  "workflow_path": ".github/workflows/test.yml",
+  "run_number": 320,
+  "run_attempt": 1,
+  "time_to_import": 172255.679373,
+  "metadata": {
+    "id": 6489789618,
+    "name": "test",
+    "node_id": "WFR_kwLODWqGAs8AAAABgtJUsg",
+    "head_branch": "master",
+    "head_sha": "05e0d2ed97b598bfce82fd30daf324ae0c4570e6",
+    "path": ".github/workflows/test.yml",
+    "display_title": "chore(master): release 3.0.2 (#570)",
+    "run_number": 320,
+    "event": "push",
+    "status": "completed",
+    "conclusion": "success",
+    "workflow_id": 80691,
+    "check_suite_id": 17138661651,
+    "check_suite_node_id": "CS_kwDODWqGAs8AAAAD_Ys5Ew",
+    "url": "https://api.github.com/repos/asdf-vm/actions/actions/runs/6489789618",
+    "html_url": "https://github.com/asdf-vm/actions/actions/runs/6489789618",
+    "pull_requests": [
+      {
+        "url": "https://api.github.com/repos/emersonsoftware/fork-asdf-actions/pulls/1",
+        "id": 1370722337,
+        "number": 1,
+        "head": {
+          "ref": "master",
+          "sha": "05e0d2ed97b598bfce82fd30daf324ae0c4570e6",
+          "repo": {
+            "id": 225084930,
+            "url": "https://api.github.com/repos/asdf-vm/actions",
+            "name": "actions"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "33040b4b4f1df2824ee4a3c35c5c688bd0103e75",
+          "repo": {
+            "id": 568997980,
+            "url": "https://api.github.com/repos/emersonsoftware/fork-asdf-actions",
+            "name": "fork-asdf-actions"
+          }
+        }
+      }
+    ],
+    "created_at": "2023-10-12T00:48:42Z",
+    "updated_at": "2023-10-12T00:49:22Z",
+    "actor": {
+      "login": "jthegedus",
+      "id": 20798510,
+      "node_id": "MDQ6VXNlcjIwNzk4NTEw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20798510?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jthegedus",
+      "html_url": "https://github.com/jthegedus",
+      "followers_url": "https://api.github.com/users/jthegedus/followers",
+      "following_url": "https://api.github.com/users/jthegedus/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jthegedus/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jthegedus/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jthegedus/subscriptions",
+      "organizations_url": "https://api.github.com/users/jthegedus/orgs",
+      "repos_url": "https://api.github.com/users/jthegedus/repos",
+      "events_url": "https://api.github.com/users/jthegedus/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jthegedus/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "run_attempt": 1,
+    "referenced_workflows": [],
+    "run_started_at": "2023-10-12T00:48:42Z",
+    "triggering_actor": {
+      "login": "jthegedus",
+      "id": 20798510,
+      "node_id": "MDQ6VXNlcjIwNzk4NTEw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20798510?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jthegedus",
+      "html_url": "https://github.com/jthegedus",
+      "followers_url": "https://api.github.com/users/jthegedus/followers",
+      "following_url": "https://api.github.com/users/jthegedus/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jthegedus/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jthegedus/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jthegedus/subscriptions",
+      "organizations_url": "https://api.github.com/users/jthegedus/orgs",
+      "repos_url": "https://api.github.com/users/jthegedus/repos",
+      "events_url": "https://api.github.com/users/jthegedus/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jthegedus/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "jobs_url": "https://api.github.com/repos/asdf-vm/actions/actions/runs/6489789618/jobs",
+    "logs_url": "https://api.github.com/repos/asdf-vm/actions/actions/runs/6489789618/logs",
+    "check_suite_url": "https://api.github.com/repos/asdf-vm/actions/check-suites/17138661651",
+    "artifacts_url": "https://api.github.com/repos/asdf-vm/actions/actions/runs/6489789618/artifacts",
+    "cancel_url": "https://api.github.com/repos/asdf-vm/actions/actions/runs/6489789618/cancel",
+    "rerun_url": "https://api.github.com/repos/asdf-vm/actions/actions/runs/6489789618/rerun",
+    "previous_attempt_url": null,
+    "workflow_url": "https://api.github.com/repos/asdf-vm/actions/actions/workflows/80691",
+    "head_commit": {
+      "id": "05e0d2ed97b598bfce82fd30daf324ae0c4570e6",
+      "tree_id": "57b6cbcf4789f6fcf9dc01112457ab91fa0c4b10",
+      "message": "chore(master): release 3.0.2 (#570)\n\nCo-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>",
+      "timestamp": "2023-10-12T00:48:38Z",
+      "author": {
+        "name": "github-actions[bot]",
+        "email": "41898282+github-actions[bot]@users.noreply.github.com"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com"
+      }
+    },
+    "repository": {
+      "id": 225084930,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMjUwODQ5MzA=",
+      "name": "actions",
+      "full_name": "asdf-vm/actions",
+      "private": false,
+      "owner": {
+        "login": "asdf-vm",
+        "id": 17869024,
+        "node_id": "MDEyOk9yZ2FuaXphdGlvbjE3ODY5MDI0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/17869024?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/asdf-vm",
+        "html_url": "https://github.com/asdf-vm",
+        "followers_url": "https://api.github.com/users/asdf-vm/followers",
+        "following_url": "https://api.github.com/users/asdf-vm/following{/other_user}",
+        "gists_url": "https://api.github.com/users/asdf-vm/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/asdf-vm/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/asdf-vm/subscriptions",
+        "organizations_url": "https://api.github.com/users/asdf-vm/orgs",
+        "repos_url": "https://api.github.com/users/asdf-vm/repos",
+        "events_url": "https://api.github.com/users/asdf-vm/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/asdf-vm/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/asdf-vm/actions",
+      "description": "GitHub Actions for the asdf version manager",
+      "fork": false,
+      "url": "https://api.github.com/repos/asdf-vm/actions",
+      "forks_url": "https://api.github.com/repos/asdf-vm/actions/forks",
+      "keys_url": "https://api.github.com/repos/asdf-vm/actions/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/asdf-vm/actions/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/asdf-vm/actions/teams",
+      "hooks_url": "https://api.github.com/repos/asdf-vm/actions/hooks",
+      "issue_events_url": "https://api.github.com/repos/asdf-vm/actions/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/asdf-vm/actions/events",
+      "assignees_url": "https://api.github.com/repos/asdf-vm/actions/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/asdf-vm/actions/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/asdf-vm/actions/tags",
+      "blobs_url": "https://api.github.com/repos/asdf-vm/actions/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/asdf-vm/actions/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/asdf-vm/actions/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/asdf-vm/actions/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/asdf-vm/actions/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/asdf-vm/actions/languages",
+      "stargazers_url": "https://api.github.com/repos/asdf-vm/actions/stargazers",
+      "contributors_url": "https://api.github.com/repos/asdf-vm/actions/contributors",
+      "subscribers_url": "https://api.github.com/repos/asdf-vm/actions/subscribers",
+      "subscription_url": "https://api.github.com/repos/asdf-vm/actions/subscription",
+      "commits_url": "https://api.github.com/repos/asdf-vm/actions/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/asdf-vm/actions/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/asdf-vm/actions/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/asdf-vm/actions/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/asdf-vm/actions/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/asdf-vm/actions/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/asdf-vm/actions/merges",
+      "archive_url": "https://api.github.com/repos/asdf-vm/actions/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/asdf-vm/actions/downloads",
+      "issues_url": "https://api.github.com/repos/asdf-vm/actions/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/asdf-vm/actions/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/asdf-vm/actions/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/asdf-vm/actions/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/asdf-vm/actions/labels{/name}",
+      "releases_url": "https://api.github.com/repos/asdf-vm/actions/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/asdf-vm/actions/deployments"
+    },
+    "head_repository": {
+      "id": 225084930,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMjUwODQ5MzA=",
+      "name": "actions",
+      "full_name": "asdf-vm/actions",
+      "private": false,
+      "owner": {
+        "login": "asdf-vm",
+        "id": 17869024,
+        "node_id": "MDEyOk9yZ2FuaXphdGlvbjE3ODY5MDI0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/17869024?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/asdf-vm",
+        "html_url": "https://github.com/asdf-vm",
+        "followers_url": "https://api.github.com/users/asdf-vm/followers",
+        "following_url": "https://api.github.com/users/asdf-vm/following{/other_user}",
+        "gists_url": "https://api.github.com/users/asdf-vm/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/asdf-vm/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/asdf-vm/subscriptions",
+        "organizations_url": "https://api.github.com/users/asdf-vm/orgs",
+        "repos_url": "https://api.github.com/users/asdf-vm/repos",
+        "events_url": "https://api.github.com/users/asdf-vm/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/asdf-vm/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/asdf-vm/actions",
+      "description": "GitHub Actions for the asdf version manager",
+      "fork": false,
+      "url": "https://api.github.com/repos/asdf-vm/actions",
+      "forks_url": "https://api.github.com/repos/asdf-vm/actions/forks",
+      "keys_url": "https://api.github.com/repos/asdf-vm/actions/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/asdf-vm/actions/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/asdf-vm/actions/teams",
+      "hooks_url": "https://api.github.com/repos/asdf-vm/actions/hooks",
+      "issue_events_url": "https://api.github.com/repos/asdf-vm/actions/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/asdf-vm/actions/events",
+      "assignees_url": "https://api.github.com/repos/asdf-vm/actions/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/asdf-vm/actions/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/asdf-vm/actions/tags",
+      "blobs_url": "https://api.github.com/repos/asdf-vm/actions/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/asdf-vm/actions/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/asdf-vm/actions/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/asdf-vm/actions/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/asdf-vm/actions/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/asdf-vm/actions/languages",
+      "stargazers_url": "https://api.github.com/repos/asdf-vm/actions/stargazers",
+      "contributors_url": "https://api.github.com/repos/asdf-vm/actions/contributors",
+      "subscribers_url": "https://api.github.com/repos/asdf-vm/actions/subscribers",
+      "subscription_url": "https://api.github.com/repos/asdf-vm/actions/subscription",
+      "commits_url": "https://api.github.com/repos/asdf-vm/actions/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/asdf-vm/actions/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/asdf-vm/actions/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/asdf-vm/actions/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/asdf-vm/actions/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/asdf-vm/actions/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/asdf-vm/actions/merges",
+      "archive_url": "https://api.github.com/repos/asdf-vm/actions/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/asdf-vm/actions/downloads",
+      "issues_url": "https://api.github.com/repos/asdf-vm/actions/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/asdf-vm/actions/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/asdf-vm/actions/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/asdf-vm/actions/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/asdf-vm/actions/labels{/name}",
+      "releases_url": "https://api.github.com/repos/asdf-vm/actions/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/asdf-vm/actions/deployments"
+    }
+  },
+  "logs_archive": {
+    "path": "/data/logs/asdf-vm/actions/test_9f86/320-1.tar.gz"
+  },
+  "log_insights": [
+    {
+      "file": "1_asdf_updates_clone_if_installed (macos-latest).txt",
+      "total_lines": 161,
+      "log_size": 11843,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "macos-12",
+      "image_version": "20230921.4",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v4",
+          "sha": "8ade135a41bc03ea155e62e844d188df1ea18608",
+          "with": {
+            "repository": "asdf-vm/actions",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "show-progress": "true",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-12 00:48:56.945000",
+          "duration_sec": 3.262035
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "",
+          "start_date": "2023-10-12 00:49:00.207000",
+          "duration_sec": 0.718243
+        },
+        {
+          "type": "shell",
+          "env": {
+            "ASDF_DIR": "/Users/runner/.asdf",
+            "ASDF_DATA_DIR": "/Users/runner/.asdf"
+          },
+          "code": "asdf version",
+          "commands": [
+            {
+              "command": "asdf",
+              "args": [
+                {
+                  "content": "version"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-12 00:49:00.925000",
+          "duration_sec": 0.26714
+        },
+        {
+          "type": "shell",
+          "env": {
+            "ASDF_DIR": "/Users/runner/.asdf",
+            "ASDF_DATA_DIR": "/Users/runner/.asdf"
+          },
+          "code": "rm -rf /Users/runner/.asdf/bin/asdf",
+          "commands": [
+            {
+              "annotations": [
+                "SC-RM"
+              ],
+              "command": "rm",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-RM-F-RECURSIVE",
+                    "SC-RM-F-FORCE"
+                  ],
+                  "content": "-rf"
+                },
+                {
+                  "annotations": [
+                    "SC-RM-PATH",
+                    "BASH-PATH"
+                  ],
+                  "content": "/Users/runner/.asdf/bin/asdf"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-12 00:49:01.192000",
+          "duration_sec": 0.068279
+        },
+        {
+          "type": "shell",
+          "env": {
+            "ASDF_DIR": "/Users/runner/.asdf",
+            "ASDF_DATA_DIR": "/Users/runner/.asdf"
+          },
+          "code": "",
+          "start_date": "2023-10-12 00:49:01.261000",
+          "duration_sec": 1.277088
+        }
+      ]
+    },
+    {
+      "file": "2_asdf_is_installed (ubuntu-latest).txt",
+      "total_lines": 140,
+      "log_size": 10562,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231001.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v4",
+          "sha": "8ade135a41bc03ea155e62e844d188df1ea18608",
+          "with": {
+            "repository": "asdf-vm/actions",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "show-progress": "true",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-12 00:48:49.950000",
+          "duration_sec": 0.760794
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "",
+          "start_date": "2023-10-12 00:48:50.711000",
+          "duration_sec": 0.35609
+        },
+        {
+          "type": "shell",
+          "env": {
+            "ASDF_DIR": "/home/runner/.asdf",
+            "ASDF_DATA_DIR": "/home/runner/.asdf"
+          },
+          "code": "echo ASDF_DIR=\"${ASDF_DIR}\"\necho ASDF_DATA_DIR=\"${ASDF_DATA_DIR}\"\necho PATH=\"${PATH}\"\nasdf --version",
+          "commands": [
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "ASDF_DIR=\"${ASDF_DIR}\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "ASDF_DATA_DIR=\"${ASDF_DATA_DIR}\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "PATH=\"${PATH}\""
+                }
+              ]
+            },
+            {
+              "command": "asdf",
+              "args": [
+                {
+                  "content": "--version"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-12 00:48:51.067000",
+          "duration_sec": 0.280491
+        }
+      ]
+    },
+    {
+      "file": "1_asdf_is_installed (macos-latest).txt",
+      "total_lines": 142,
+      "log_size": 11262,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "macos-12",
+      "image_version": "20230921.1",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v4",
+          "sha": "8ade135a41bc03ea155e62e844d188df1ea18608",
+          "with": {
+            "repository": "asdf-vm/actions",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "show-progress": "true",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-12 00:48:52.094000",
+          "duration_sec": 1.482829
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "",
+          "start_date": "2023-10-12 00:48:53.577000",
+          "duration_sec": 0.705867
+        },
+        {
+          "type": "shell",
+          "env": {
+            "ASDF_DIR": "/Users/runner/.asdf",
+            "ASDF_DATA_DIR": "/Users/runner/.asdf"
+          },
+          "code": "echo ASDF_DIR=\"${ASDF_DIR}\"\necho ASDF_DATA_DIR=\"${ASDF_DATA_DIR}\"\necho PATH=\"${PATH}\"\nasdf --version",
+          "commands": [
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "ASDF_DIR=\"${ASDF_DIR}\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "ASDF_DATA_DIR=\"${ASDF_DATA_DIR}\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "PATH=\"${PATH}\""
+                }
+              ]
+            },
+            {
+              "command": "asdf",
+              "args": [
+                {
+                  "content": "--version"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-12 00:48:54.283000",
+          "duration_sec": 0.54986
+        }
+      ]
+    },
+    {
+      "file": "1_plugins_are_installed (macos-latest).txt",
+      "total_lines": 149,
+      "log_size": 11281,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "macos-12",
+      "image_version": "20230921.4",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v4",
+          "sha": "8ade135a41bc03ea155e62e844d188df1ea18608",
+          "with": {
+            "repository": "asdf-vm/actions",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "show-progress": "true",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-12 00:48:57.830000",
+          "duration_sec": 3.062789
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "",
+          "start_date": "2023-10-12 00:49:00.893000",
+          "duration_sec": 3.352172
+        },
+        {
+          "type": "shell",
+          "env": {
+            "ASDF_DIR": "/Users/runner/.asdf",
+            "ASDF_DATA_DIR": "/Users/runner/.asdf"
+          },
+          "code": "asdf plugin list --urls --refs | grep elixir\nasdf plugin list --urls --refs | grep nodejs",
+          "commands": [
+            {
+              "command": "asdf",
+              "args": [
+                {
+                  "content": "plugin"
+                },
+                {
+                  "content": "list"
+                },
+                {
+                  "content": "--urls"
+                },
+                {
+                  "content": "--refs"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-GREP"
+              ],
+              "command": "grep",
+              "categories": [
+                "SEARCH",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-GREP-PATTERN"
+                  ],
+                  "content": "elixir"
+                }
+              ]
+            },
+            {
+              "command": "asdf",
+              "args": [
+                {
+                  "content": "plugin"
+                },
+                {
+                  "content": "list"
+                },
+                {
+                  "content": "--urls"
+                },
+                {
+                  "content": "--refs"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-GREP"
+              ],
+              "command": "grep",
+              "categories": [
+                "SEARCH",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-GREP-PATTERN"
+                  ],
+                  "content": "nodejs"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-12 00:49:04.245000",
+          "duration_sec": 0.829242
+        }
+      ]
+    },
+    {
+      "file": "2_installing-plugins-already-installed-are-skiped (ubuntu-la.txt",
+      "total_lines": 167,
+      "log_size": 12136,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231001.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v4",
+          "sha": "8ade135a41bc03ea155e62e844d188df1ea18608",
+          "with": {
+            "repository": "asdf-vm/actions",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "show-progress": "true",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-12 00:48:51.292000",
+          "duration_sec": 0.830234
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "",
+          "start_date": "2023-10-12 00:48:52.122000",
+          "duration_sec": 0.316237
+        },
+        {
+          "type": "shell",
+          "env": {
+            "ASDF_DIR": "/home/runner/.asdf",
+            "ASDF_DATA_DIR": "/home/runner/.asdf"
+          },
+          "code": "asdf plugin-add clusterctl https://github.com/pfnet-research/asdf-clusterctl.git",
+          "commands": [
+            {
+              "command": "asdf",
+              "args": [
+                {
+                  "content": "plugin-add"
+                },
+                {
+                  "content": "clusterctl"
+                },
+                {
+                  "content": "https://github.com/pfnet-research/asdf-clusterctl.git"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-12 00:48:52.438000",
+          "duration_sec": 0.295562
+        },
+        {
+          "type": "shell",
+          "env": {
+            "ASDF_DIR": "/home/runner/.asdf",
+            "ASDF_DATA_DIR": "/home/runner/.asdf"
+          },
+          "code": "",
+          "start_date": "2023-10-12 00:48:52.734000",
+          "duration_sec": 1.44675
+        },
+        {
+          "type": "shell",
+          "env": {
+            "ASDF_DIR": "/home/runner/.asdf",
+            "ASDF_DATA_DIR": "/home/runner/.asdf"
+          },
+          "code": "asdf plugin list --urls --refs | grep elixir\nasdf plugin list --urls --refs | grep nodejs\nasdf plugin list --urls --refs | grep clusterctl",
+          "commands": [
+            {
+              "command": "asdf",
+              "args": [
+                {
+                  "content": "plugin"
+                },
+                {
+                  "content": "list"
+                },
+                {
+                  "content": "--urls"
+                },
+                {
+                  "content": "--refs"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-GREP"
+              ],
+              "command": "grep",
+              "categories": [
+                "SEARCH",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-GREP-PATTERN"
+                  ],
+                  "content": "elixir"
+                }
+              ]
+            },
+            {
+              "command": "asdf",
+              "args": [
+                {
+                  "content": "plugin"
+                },
+                {
+                  "content": "list"
+                },
+                {
+                  "content": "--urls"
+                },
+                {
+                  "content": "--refs"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-GREP"
+              ],
+              "command": "grep",
+              "categories": [
+                "SEARCH",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-GREP-PATTERN"
+                  ],
+                  "content": "nodejs"
+                }
+              ]
+            },
+            {
+              "command": "asdf",
+              "args": [
+                {
+                  "content": "plugin"
+                },
+                {
+                  "content": "list"
+                },
+                {
+                  "content": "--urls"
+                },
+                {
+                  "content": "--refs"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-GREP"
+              ],
+              "command": "grep",
+              "categories": [
+                "SEARCH",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-GREP-PATTERN"
+                  ],
+                  "content": "clusterctl"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-12 00:48:54.181000",
+          "duration_sec": 0.446234
+        }
+      ]
+    },
+    {
+      "file": "2_asdf_updates_clone_if_installed (ubuntu-latest).txt",
+      "total_lines": 159,
+      "log_size": 11414,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231001.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v4",
+          "sha": "8ade135a41bc03ea155e62e844d188df1ea18608",
+          "with": {
+            "repository": "asdf-vm/actions",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "show-progress": "true",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-12 00:48:50.389000",
+          "duration_sec": 0.789176
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "",
+          "start_date": "2023-10-12 00:48:51.178000",
+          "duration_sec": 0.318931
+        },
+        {
+          "type": "shell",
+          "env": {
+            "ASDF_DIR": "/home/runner/.asdf",
+            "ASDF_DATA_DIR": "/home/runner/.asdf"
+          },
+          "code": "asdf version",
+          "commands": [
+            {
+              "command": "asdf",
+              "args": [
+                {
+                  "content": "version"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-12 00:48:51.497000",
+          "duration_sec": 0.047374
+        },
+        {
+          "type": "shell",
+          "env": {
+            "ASDF_DIR": "/home/runner/.asdf",
+            "ASDF_DATA_DIR": "/home/runner/.asdf"
+          },
+          "code": "rm -rf /home/runner/.asdf/bin/asdf",
+          "commands": [
+            {
+              "annotations": [
+                "SC-RM"
+              ],
+              "command": "rm",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-RM-F-RECURSIVE",
+                    "SC-RM-F-FORCE"
+                  ],
+                  "content": "-rf"
+                },
+                {
+                  "annotations": [
+                    "SC-RM-PATH",
+                    "BASH-PATH"
+                  ],
+                  "content": "/home/runner/.asdf/bin/asdf"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-12 00:48:51.544000",
+          "duration_sec": 0.01823
+        },
+        {
+          "type": "shell",
+          "env": {
+            "ASDF_DIR": "/home/runner/.asdf",
+            "ASDF_DATA_DIR": "/home/runner/.asdf"
+          },
+          "code": "",
+          "start_date": "2023-10-12 00:48:51.562000",
+          "duration_sec": 0.522466
+        }
+      ]
+    },
+    {
+      "file": "2_tools_are_installed (ubuntu-latest).txt",
+      "total_lines": 146,
+      "log_size": 10742,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231001.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v4",
+          "sha": "8ade135a41bc03ea155e62e844d188df1ea18608",
+          "with": {
+            "repository": "asdf-vm/actions",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "show-progress": "true",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-12 00:48:53.185000",
+          "duration_sec": 1.087828
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "",
+          "start_date": "2023-10-12 00:48:54.273000",
+          "duration_sec": 4.121932
+        },
+        {
+          "type": "shell",
+          "env": {
+            "ASDF_DIR": "/home/runner/.asdf",
+            "ASDF_DATA_DIR": "/home/runner/.asdf"
+          },
+          "code": "direnv version",
+          "commands": [
+            {
+              "command": "direnv",
+              "args": [
+                {
+                  "content": "version"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-12 00:48:58.395000",
+          "duration_sec": 0.354028
+        }
+      ]
+    },
+    {
+      "file": "2_plugins_are_installed (ubuntu-latest).txt",
+      "total_lines": 147,
+      "log_size": 10869,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231001.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v4",
+          "sha": "8ade135a41bc03ea155e62e844d188df1ea18608",
+          "with": {
+            "repository": "asdf-vm/actions",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "show-progress": "true",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-12 00:48:53.385000",
+          "duration_sec": 1.106159
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "",
+          "start_date": "2023-10-12 00:48:54.491000",
+          "duration_sec": 3.484023
+        },
+        {
+          "type": "shell",
+          "env": {
+            "ASDF_DIR": "/home/runner/.asdf",
+            "ASDF_DATA_DIR": "/home/runner/.asdf"
+          },
+          "code": "asdf plugin list --urls --refs | grep elixir\nasdf plugin list --urls --refs | grep nodejs",
+          "commands": [
+            {
+              "command": "asdf",
+              "args": [
+                {
+                  "content": "plugin"
+                },
+                {
+                  "content": "list"
+                },
+                {
+                  "content": "--urls"
+                },
+                {
+                  "content": "--refs"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-GREP"
+              ],
+              "command": "grep",
+              "categories": [
+                "SEARCH",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-GREP-PATTERN"
+                  ],
+                  "content": "elixir"
+                }
+              ]
+            },
+            {
+              "command": "asdf",
+              "args": [
+                {
+                  "content": "plugin"
+                },
+                {
+                  "content": "list"
+                },
+                {
+                  "content": "--urls"
+                },
+                {
+                  "content": "--refs"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-GREP"
+              ],
+              "command": "grep",
+              "categories": [
+                "SEARCH",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-GREP-PATTERN"
+                  ],
+                  "content": "nodejs"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-12 00:48:57.975000",
+          "duration_sec": 0.378962
+        }
+      ]
+    },
+    {
+      "file": "1_tools_are_installed (macos-latest).txt",
+      "total_lines": 148,
+      "log_size": 11149,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "macos-12",
+      "image_version": "20230921.4",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v4",
+          "sha": "8ade135a41bc03ea155e62e844d188df1ea18608",
+          "with": {
+            "repository": "asdf-vm/actions",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "show-progress": "true",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-12 00:49:13.227000",
+          "duration_sec": 2.541831
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "",
+          "start_date": "2023-10-12 00:49:15.769000",
+          "duration_sec": 2.880308
+        },
+        {
+          "type": "shell",
+          "env": {
+            "ASDF_DIR": "/Users/runner/.asdf",
+            "ASDF_DATA_DIR": "/Users/runner/.asdf"
+          },
+          "code": "direnv version",
+          "commands": [
+            {
+              "command": "direnv",
+              "args": [
+                {
+                  "content": "version"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-12 00:49:18.650000",
+          "duration_sec": 1.019224
+        }
+      ]
+    },
+    {
+      "file": "1_plugin_is_tested (macos-latest).txt",
+      "total_lines": 144,
+      "log_size": 11001,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "macos-12",
+      "image_version": "20230921.4",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v4",
+          "sha": "8ade135a41bc03ea155e62e844d188df1ea18608",
+          "with": {
+            "repository": "asdf-vm/actions",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "show-progress": "true",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-12 00:48:58.271000",
+          "duration_sec": 4.145491
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "",
+          "start_date": "2023-10-12 00:49:02.416000",
+          "duration_sec": 4.877248
+        }
+      ]
+    },
+    {
+      "file": "1_installing-plugins-already-installed-are-skiped (macos-lat.txt",
+      "total_lines": 169,
+      "log_size": 12548,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "macos-12",
+      "image_version": "20230921.4",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v4",
+          "sha": "8ade135a41bc03ea155e62e844d188df1ea18608",
+          "with": {
+            "repository": "asdf-vm/actions",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "show-progress": "true",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-12 00:48:58.699000",
+          "duration_sec": 2.675398
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "",
+          "start_date": "2023-10-12 00:49:01.374000",
+          "duration_sec": 0.413018
+        },
+        {
+          "type": "shell",
+          "env": {
+            "ASDF_DIR": "/Users/runner/.asdf",
+            "ASDF_DATA_DIR": "/Users/runner/.asdf"
+          },
+          "code": "asdf plugin-add clusterctl https://github.com/pfnet-research/asdf-clusterctl.git",
+          "commands": [
+            {
+              "command": "asdf",
+              "args": [
+                {
+                  "content": "plugin-add"
+                },
+                {
+                  "content": "clusterctl"
+                },
+                {
+                  "content": "https://github.com/pfnet-research/asdf-clusterctl.git"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-12 00:49:01.788000",
+          "duration_sec": 0.529974
+        },
+        {
+          "type": "shell",
+          "env": {
+            "ASDF_DIR": "/Users/runner/.asdf",
+            "ASDF_DATA_DIR": "/Users/runner/.asdf"
+          },
+          "code": "",
+          "start_date": "2023-10-12 00:49:02.317000",
+          "duration_sec": 1.855719
+        },
+        {
+          "type": "shell",
+          "env": {
+            "ASDF_DIR": "/Users/runner/.asdf",
+            "ASDF_DATA_DIR": "/Users/runner/.asdf"
+          },
+          "code": "asdf plugin list --urls --refs | grep elixir\nasdf plugin list --urls --refs | grep nodejs\nasdf plugin list --urls --refs | grep clusterctl",
+          "commands": [
+            {
+              "command": "asdf",
+              "args": [
+                {
+                  "content": "plugin"
+                },
+                {
+                  "content": "list"
+                },
+                {
+                  "content": "--urls"
+                },
+                {
+                  "content": "--refs"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-GREP"
+              ],
+              "command": "grep",
+              "categories": [
+                "SEARCH",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-GREP-PATTERN"
+                  ],
+                  "content": "elixir"
+                }
+              ]
+            },
+            {
+              "command": "asdf",
+              "args": [
+                {
+                  "content": "plugin"
+                },
+                {
+                  "content": "list"
+                },
+                {
+                  "content": "--urls"
+                },
+                {
+                  "content": "--refs"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-GREP"
+              ],
+              "command": "grep",
+              "categories": [
+                "SEARCH",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-GREP-PATTERN"
+                  ],
+                  "content": "nodejs"
+                }
+              ]
+            },
+            {
+              "command": "asdf",
+              "args": [
+                {
+                  "content": "plugin"
+                },
+                {
+                  "content": "list"
+                },
+                {
+                  "content": "--urls"
+                },
+                {
+                  "content": "--refs"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-GREP"
+              ],
+              "command": "grep",
+              "categories": [
+                "SEARCH",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-GREP-PATTERN"
+                  ],
+                  "content": "clusterctl"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-12 00:49:04.173000",
+          "duration_sec": 0.974705
+        }
+      ]
+    },
+    {
+      "file": "2_plugin_is_tested (ubuntu-latest).txt",
+      "total_lines": 142,
+      "log_size": 10538,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231001.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v4",
+          "sha": "8ade135a41bc03ea155e62e844d188df1ea18608",
+          "with": {
+            "repository": "asdf-vm/actions",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "show-progress": "true",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-12 00:48:51.124000",
+          "duration_sec": 0.766941
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "",
+          "start_date": "2023-10-12 00:48:51.891000",
+          "duration_sec": 2.628927
+        }
+      ]
+    }
+  ],
+  "total_logs_size": 145081
+}

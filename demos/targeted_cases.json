@@ -1,0 +1,1591 @@
+[
+  {
+    "case_label": "thekevinscott/upscalerjs — Update a number of dependencies across multiple packages (#1",
+    "intake": {
+      "run_id": "thekevinscott/upscalerjs_.github/workflows/browserlist.yml_4_1",
+      "repo": "thekevinscott/upscalerjs",
+      "workflow": "browserlist.yml",
+      "branch": "main",
+      "event": "schedule",
+      "is_protected_branch": true,
+      "commit_sha": "26f7d1b2bf22",
+      "commit_title": "Update a number of dependencies across multiple packages (#1103)",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 1,
+      "n_jobs": 1,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 1,
+      "strategies": [
+        "error_marker"
+      ],
+      "total_lines_extracted": 156,
+      "error_markers_found": 1,
+      "sample_error_lines": [
+        "##[error]The process '/usr/local/bin/npx' failed with exit code 1"
+      ],
+      "mentioned_files": []
+    },
+    "classification": {
+      "category": "INFRA_INCOMPATIBILITY",
+      "severity": "LOW",
+      "confidence": 0.9,
+      "action": "FIX_WORKFLOW",
+      "reasoning": "The failure is due to 'pnpm: not found' when the browserslist-update-action tries to run pnpm to check the latest caniuse-lite version. This indicates the runner image (ubuntu-22.04) does not have pnpm installed, but the action expects it. The commit updates dependencies but does not cause this error; the issue is a missing tool in the CI environment. Since this is a scheduled workflow on main, but the failure is isolated to a tooling incompatibility, severity is LOW. The recommended action is to fix the workflow to install pnpm or use a different action.",
+      "evidence": [
+        "LOG EVIDENCE shows 'pnpm: not found' error",
+        "step type is action 'c2corg/browserslist-update-action@v2'",
+        "commit title 'Update a number of dependencies' but no dependency conflict error"
+      ],
+      "unknowns": [],
+      "mentioned_files": [],
+      "fix_suggestion": {
+        "file": "(unclear)",
+        "change": "Inspect the failing step output and apply the suggested change in the specific file named by the logs or manifest family once confirmed.",
+        "reason": "The evidence supports the remediation direction, but not the exact repository file that was suggested."
+      }
+    },
+    "ground_truth": {
+      "developer_action": "PIN_VERSION",
+      "method": "rubric",
+      "reasoning": "Developer pinned dependencies. Files: examples/models/index.js, internals/upscaler-cli/src/lib/package-scripts/prompt/getString.ts, internals/upscaler-cli/src/lib/package-scripts/validate-build.ts, examples/nodejs-custom-file-path/src/index.js, internals/upscaler-cli/src/commands/guide/index.ts, internals/upscaler-cli/src/lib/package-scripts/utils/browserStackOptions.json, internals/upscaler-cli/package.json, .github/workflows/tests.yml, internals/upscaler-cli/src/actions/guide/start.ts, .github/actions/setup-pnpm/action.yml",
+      "signals": {
+        "has_revert": false,
+        "has_pin": true,
+        "has_fix": false,
+        "has_retry": false,
+        "changed_workflow": true,
+        "changed_dependencies": true,
+        "changed_config": true,
+        "changed_source_code": true,
+        "commits_within_7_days": 5
+      },
+      "follow_up_commits": [
+        {
+          "sha": "d4e06e06f078",
+          "message_title": "Update all dependencies across the monorepo (#1100)",
+          "message_full": "Update all dependencies across the monorepo (#1100)",
+          "author": "Kevin Scott",
+          "date": "2023-08-15T10:42:27Z",
+          "files_changed": [
+            "docs/package.json",
+            "docs/workers/image-search/package.json",
+            "docs/workers/shared/package.json",
+            "docs/workers/upscale/package.json",
+            "models/package.json",
+            "package.json",
+            "pnpm-lock.yaml",
+            "scripts/package.json"
+          ],
+          "additions": 829,
+          "deletions": 515,
+          "file_summaries": [
+            {
+              "filename": "docs/package.json",
+              "status": "modified",
+              "additions": 2,
+              "deletions": 2,
+              "changes": 4,
+              "patch_excerpt": "@@ -30,7 +30,7 @@\n     \"@docusaurus/preset-classic\": \"^2.4.1\",\n     \"@docusaurus/theme-common\": \"^2.4.1\",\n     \"@mdx-js/react\": \"^1.6.2\",\n-    \"@shoelace-style/shoelace\": \"2.6.0\",\n+    \"@shoelace-style/shoelace\": \"2.7.0\",\n     \"@tensorflow/tfjs\": \"~4.8.0\",\n     \"@upscalerjs/esrgan-medium\": \"workspace:*\",\n     \"chart.js\": \"^4.3.3\",\n@@ -68,7 +68,7 @@\n     \"concurrently\": \"^8.2.0\",\n     \"docusaurus-plugin-sass\": \"^0.2.5\",\n     \"docusaurus-plugin-typedoc\": \"^0.19.2\",\n-    \"esbuild\": \"^0.19.0\",\n+    \"esbuild\": \"^0.19.2\",\n     \"esbuild-loader\": \"^4.0.0\",\n     \"nodemon\": \"^3.0.1\",\n     \"prop-types\": \"^15.8.1\","
+            },
+            {
+              "filename": "docs/workers/image-search/package.json",
+              "status": "modified",
+              "additions": 1,
+              "deletions": 1,
+              "changes": 2,
+              "patch_excerpt": "@@ -2,7 +2,7 @@\n   \"name\": \"@upscalerjs/workers.image-search\",\n   \"version\": \"1.0.0-beta.10\",\n   \"devDependencies\": {\n-    \"@cloudflare/workers-types\": \"^4.20230807.0\",\n+    \"@cloudflare/workers-types\": \"^4.20230814.0\",\n     \"@upscalerjs/workers.shared\": \"workspace:*\",\n     \"typescript\": \"^5.1.6\",\n     \"wrangler\": \"^3.5.0\""
+            },
+            {
+              "filename": "docs/workers/shared/package.json",
+              "status": "modified",
+              "additions": 1,
+              "deletions": 1,
+              "changes": 2,
+              "patch_excerpt": "@@ -3,7 +3,7 @@\n   \"version\": \"1.0.0-beta.10\",\n   \"main\": \"./src/index.ts\",\n   \"devDependencies\": {\n-    \"@cloudflare/workers-types\": \"^4.20230807.0\",\n+    \"@cloudflare/workers-types\": \"^4.20230814.0\",\n     \"typescript\": \"^5.1.6\",\n     \"wrangler\": \"^3.5.0\"\n   },"
+            },
+            {
+              "filename": "docs/workers/upscale/package.json",
+              "status": "modified",
+              "additions": 3,
+              "deletions": 3,
+              "changes": 6,
+              "patch_excerpt": "@@ -3,8 +3,8 @@\n   \"description\": \"Demonstration of cloudflare worker implementation with UpscalerJS\",\n   \"version\": \"1.0.0-beta.10\",\n   \"devDependencies\": {\n-    \"@cloudflare/workers-types\": \"^4.20230807.0\",\n-    \"@types/node\": \"^20.4.9\",\n+    \"@cloudflare/workers-types\": \"^4.20230814.0\",\n+    \"@types/node\": \"^20.5.0\",\n     \"@upscalerjs/default-model\": \"workspace:*\",\n     \"@upscalerjs/workers.shared\": \"workspace:*\",\n     \"seedrandom\": \"3.0.5\",\n@@ -20,7 +20,7 @@\n   },\n   \"dependencies\": {\n     \"@tensorflow/tfjs\": \"~4.8.0\",\n-    \"aws-sdk\": \"^2.1434.0\",\n+    \"aws-sdk\": \"^2.1436.0\",\n     \"jpeg-js\": \"^0.4.4\",\n     \"mock-aws-s3\": \"^4.0.2\",\n     \"nock\": \"^13.3.2\""
+            },
+            {
+              "filename": "models/package.json",
+              "status": "modified",
+              "additions": 1,
+              "deletions": 1,
+              "changes": 2,
+              "patch_excerpt": "@@ -8,7 +8,7 @@\n   \"devDependencies\": {\n     \"@types/fs-extra\": \"^11.0.1\",\n     \"@types/mkdirp\": \"^2.0.0\",\n-    \"@types/node\": \"^20.4.9\",\n+    \"@types/node\": \"^20.5.0\",\n     \"@types/uglify-js\": \"^3.17.1\",\n     \"fs-extra\": \"^11.1.1\",\n     \"mkdirp\": \"^3.0.1\","
+            },
+            {
+              "filename": "package.json",
+              "status": "modified",
+              "additions": 9,
+              "deletions": 8,
+              "changes": 17,
+              "patch_excerpt": "@@ -32,6 +32,7 @@\n     \"model:convert-python-model-folder\": \"pnpm --filter @upscalerjs/scripts model:convert-python-model-folder\",\n     \"model:create\": \"pnpm --filter @upscalerjs/scripts model:create\",\n     \"model:write-docs\": \"pnpm --filter @upscalerjs/scripts model:write-docs\",\n+    \"update:npm:dependencies\": \"pnpm --filter @upscalerjs/scripts update:npm:dependencies\",\n     \"test:start-test-server\": \"ts-node test/lib/start-test-server.ts\",\n     \"test:integration:browserstack\": \"pnpm --filter @upscalerjs/scripts test:integration:browserstack\",\n     \"test:integration:browser\": \"pnpm --filter @upscalerjs/scripts test:integration:browser\",\n@@ -59,7 +60,7 @@\n     \"@babel/plugin-transform-modules-commonjs\": \"7.22.5\",\n     \"@babel/preset-env\": \"7.22.10\",\n     \"@babel/preset-typescript\": \"7.22.5\",\n-    \"@rollup/plugin-commonjs\": \"25.0.3\",\n+    \"@rollup/plugin-commonjs\": \"25.0.4\",\n     \"@rollup/plugin-node-resolve\": \"15.1.0\",\n     \"@schemastore/package\": \"0.0.10\",\n     \"@tensorflow/tfjs\": \"4.8.0\",\n@@ -73,29 +74,29 @@\n     \"@types/jest\": \"29.5.3\",\n     \"@types/jsdom\": \"21.1.1\",\n     \"@types/mocha\": \"10.0.1\",\n-    \"@types/node\": \"20.4.9\",\n+    \"@types/node\": \"20.5.0\",\n     \"@types/pixelmatc"
+            },
+            {
+              "filename": "pnpm-lock.yaml",
+              "status": "modified",
+              "additions": 811,
+              "deletions": 498,
+              "changes": 1309,
+              "patch_excerpt": ""
+            },
+            {
+              "filename": "scripts/package.json",
+              "status": "modified",
+              "additions": 1,
+              "deletions": 1,
+              "changes": 2,
+              "patch_excerpt": "@@ -52,7 +52,7 @@\n   },\n   \"devDependencies\": {\n     \"@types/cli-table\": \"^0.3.1\",\n-    \"@types/inquirer\": \"^8.2.1\",\n+    \"@types/inquirer\": \"^9.0.3\",\n     \"@types/sequelize\": \"^4.28.15\",\n     \"@types/sharp\": \"^0.32.0\",\n     \"@types/sqlite3\": \"^3.1.8\","
+            }
+          ]
+        },
+        {
+          "sha": "8126a6b50cdf",
+          "message_title": "Update Github CI actions caching mechanism for pnpm (#1108)",
+          "message_full": "Update Github CI actions caching mechanism for pnpm (#1108)\n\n* Updade Github CI actions caching mechanism for pnpm",
+          "author": "Kevin Scott",
+          "date": "2023-08-20T20:48:42Z",
+          "files_changed": [
+            ".github/actions/setup-pnpm/action.yml",
+            ".github/workflows/tests.yml"
+          ],
+          "additions": 37,
+          "deletions": 81,
+          "file_summaries": [
+            {
+              "filename": ".github/actions/setup-pnpm/action.yml",
+              "status": "modified",
+              "additions": 11,
+              "deletions": 16,
+              "changes": 27,
+              "patch_excerpt": "@@ -1,29 +1,24 @@\n name: Setup PNPM\n description: \"Sets up PNPM\"\n+\n+inputs:\n+  node-version:\n+    description: 'Node Version'\n+    required: true\n+\n runs:\n   using: \"composite\"\n   steps:\n     - uses: pnpm/action-setup@v2\n-      name: Install pnpm\n-      id: pnpm-install\n       with:\n         version: 8\n-        run_install: true\n-\n-    - name: Get pnpm store directory\n-      id: pnpm-cache\n-      shell: bash\n-      run: |\n-        echo \"STORE_PATH=$(pnpm store path)\" >> $GITHUB_OUTPUT\n \n-    - uses: actions/cache@v3\n-      name: Setup pnpm cache\n+    - name: Use Node.js ${{ inputs.node-version }}\n+      uses: actions/setup-node@v3\n       with:\n-        path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}\n-        key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}\n-        restore-keys: |\n-          ${{ runner.os }}-pnpm-store-\n+        node-version: ${{ inputs.node-version }}\n+        cache: 'pnpm'\n \n     - name: Install dependencies\n       shell: bash\n-      run: pnpm liteinstall\n+      run: pnpm install"
+            },
+            {
+              "filename": ".github/workflows/tests.yml",
+              "status": "modified",
+              "additions": 26,
+              "deletions": 65,
+              "changes": 91,
+              "patch_excerpt": "@@ -15,14 +15,11 @@ jobs:\n       - name: 'Checkout repository'\n         uses: actions/checkout@v2\n \n-      - name: Use Node.js ${{ matrix.node-version }}\n-        uses: actions/setup-node@v2\n+      - name: 'Setup PNPM with Node ${{ matrix.node-version }}'\n+        uses: ./.github/actions/setup-pnpm\n         with:\n           node-version: ${{ matrix.node-version }}\n \n-      - name: 'Setup PNPM'\n-        uses: ./.github/actions/setup-pnpm\n-\n       - name: 'Lint'\n         run: 'pnpm lint'\n \n@@ -36,14 +33,11 @@ jobs:\n       - name: 'Checkout repository'\n         uses: actions/checkout@v2\n \n-      - name: Use Node.js ${{ matrix.node-version }}\n-        uses: actions/setup-node@v2\n+      - name: 'Setup PNPM with Node ${{ matrix.node-version }}'\n+        uses: ./.github/actions/setup-pnpm\n         with:\n           node-version: ${{ matrix.node-version }}\n \n-      - name: 'Setup PNPM'\n-        uses: ./.github/actions/setup-pnpm\n-\n       - name: 'Build Upscaler dependencies'\n         run: 'pnpm --filter=\"upscaler\" build:dependencies'\n \n@@ -63,14 +57,11 @@ jobs:\n       - name: 'Checkout repository'\n         uses: actions/checkout@v2\n \n-      - name: Use Node.js ${{ matrix.node-version }}\n-  "
+            }
+          ]
+        },
+        {
+          "sha": "ba1cebf62d68",
+          "message_title": "Upscaler CLI (#1106)",
+          "message_full": "Upscaler CLI (#1106)\n\n* Upscaler CLI\r\n\r\nSet up a bespoke CLI for managing the UpscalerJS monorepo.\r\n\r\nThis is to replace a menagerie of node scripts in favor of something a bit more resilient.",
+          "author": "Kevin Scott",
+          "date": "2023-08-20T20:49:15Z",
+          "files_changed": [
+            "docs/src/components/homepage/homepage-code-embed/index.js",
+            "examples/basic-npm/index.js",
+            "examples/custom-model-configurations/index.js",
+            "examples/models/index.js",
+            "examples/nodejs-custom-file-path/src/index.js",
+            "examples/nodejs-model/src/index.js",
+            "examples/nodejs/src/index.js",
+            "examples/self-hosting-models/index.js",
+            "internals/upscaler-cli/bin/cli.js",
+            "internals/upscaler-cli/package.json",
+            "internals/upscaler-cli/src/actions/guide/start.ts",
+            "internals/upscaler-cli/src/cli-types.ts",
+            "internals/upscaler-cli/src/commands/guide/index.ts",
+            "internals/upscaler-cli/src/commands/guide/start.ts",
+            "internals/upscaler-cli/src/commands/index.ts",
+            "internals/upscaler-cli/src/index.ts",
+            "internals/upscaler-cli/src/lib/guides/isValidGuide.ts",
+            "internals/upscaler-cli/src/lib/package-scripts/build-core.ts",
+            "internals/upscaler-cli/src/lib/package-scripts/build-model.ts",
+            "internals/upscaler-cli/src/lib/package-scripts/build-upscaler.ts",
+            "internals/upscaler-cli/src/lib/package-scripts/clean-model.ts",
+            "internals/upscaler-cli/src/lib/package-scripts/create-model-demo.ts",
+            "internals/upscaler-cli/src/lib/package-scripts/docs/build-api.ts",
+            "internals/upscaler-cli/src/lib/package-scripts/docs/build-guides.ts",
+            "internals/upscaler-cli/src/lib/package-scripts/docs/link-model-readmes.ts",
+            "internals/upscaler-cli/src/lib/package-scripts/docs/tense-checks.ts",
+            "internals/upscaler-cli/src/lib/package-scripts/docs/types.ts",
+            "internals/upscaler-cli/src/lib/package-scripts/docs/utils/clear-out-markdown-files.ts",
+            "internals/upscaler-cli/src/lib/package-scripts/find-all-packages.ts",
+            "internals/upscaler-cli/src/lib/package-scripts/prompt/getModel.ts",
+            "internals/upscaler-cli/src/lib/package-scripts/prompt/getNumber.ts",
+            "internals/upscaler-cli/src/lib/package-scripts/prompt/getOutputFormats.ts",
+            "internals/upscaler-cli/src/lib/package-scripts/prompt/getPlatform.ts",
+            "internals/upscaler-cli/src/lib/package-scripts/prompt/getString.ts",
+            "internals/upscaler-cli/src/lib/package-scripts/prompt/ifDefined.ts",
+            "internals/upscaler-cli/src/lib/package-scripts/prompt/prompt.ts",
+            "internals/upscaler-cli/src/lib/package-scripts/prompt/types.ts",
+            "internals/upscaler-cli/src/lib/package-scripts/scaffold-dependencies.ts",
+            "internals/upscaler-cli/src/lib/package-scripts/update-dependency.ts",
+            "internals/upscaler-cli/src/lib/package-scripts/update-npm-dependencies.ts",
+            "internals/upscaler-cli/src/lib/package-scripts/update-tfjs.ts",
+            "internals/upscaler-cli/src/lib/package-scripts/update-version.ts",
+            "internals/upscaler-cli/src/lib/package-scripts/upscalerjs-rollup-config.ts",
+            "internals/upscaler-cli/src/lib/package-scripts/utils/babelTransform.ts",
+            "internals/upscaler-cli/src/lib/package-scripts/utils/browserStack.ts",
+            "internals/upscaler-cli/src/lib/package-scripts/utils/browserStackMobileOptions.json",
+            "internals/upscaler-cli/src/lib/package-scripts/utils/browserStackOptions.json",
+            "internals/upscaler-cli/src/lib/package-scripts/utils/callExec.ts",
+            "internals/upscaler-cli/src/lib/package-scripts/utils/compile.ts",
+            "internals/upscaler-cli/src/lib/package-scripts/utils/constants.ts",
+            "internals/upscaler-cli/src/lib/package-scripts/utils/execute.ts",
+            "internals/upscaler-cli/src/lib/package-scripts/utils/getAllAvailableModels.ts",
+            "internals/upscaler-cli/src/lib/package-scripts/utils/getAllFilesRecursively.ts",
+            "internals/upscaler-cli/src/lib/package-scripts/utils/getHashedName.ts",
+            "internals/upscaler-cli/src/lib/package-scripts/utils/getPackageJSONExports.ts",
+            "internals/upscaler-cli/src/lib/package-scripts/utils/isValidVersion.ts",
+            "internals/upscaler-cli/src/lib/package-scripts/utils/packages.ts",
+            "internals/upscaler-cli/src/lib/package-scripts/utils/rollup.ts",
+            "internals/upscaler-cli/src/lib/package-scripts/utils/runDocker.ts",
+            "internals/upscaler-cli/src/lib/package-scripts/utils/uglify.ts",
+            "internals/upscaler-cli/src/lib/package-scripts/utils/withTmpDir.ts",
+            "internals/upscaler-cli/src/lib/package-scripts/validate-build.ts",
+            "internals/upscaler-cli/src/lib/package-scripts/write-model-docs.ts",
+            "internals/upscaler-cli/src/lib/utils/find-similar-files.test.ts",
+            "internals/upscaler-cli/src/lib/utils/find-similar-files.ts",
+            "internals/upscaler-cli/src/lib/utils/get-all-directories.test.ts",
+            "internals/upscaler-cli/src/lib/utils/get-all-directories.ts",
+            "internals/upscaler-cli/src/lib/utils/get-tfjs-library-target.test.ts",
+            "internals/upscaler-cli/src/lib/utils/get-tfjs-library-target.ts",
+            "internals/upscaler-cli/src/lib/utils/pluralize.test.ts",
+            "internals/upscaler-cli/src/lib/utils/pluralize.ts",
+            "internals/upscaler-cli/src/lib/utils/run-npm-command.test.ts",
+            "internals/upscaler-cli/src/lib/utils/run-npm-command.ts",
+            "internals/upscaler-cli/tsconfig.json",
+            "internals/upscaler-cli/vite.config.ts",
+            "package.json",
+            "pnpm-lock.yaml",
+            "pnpm-workspace.yaml"
+          ],
+          "additions": 5663,
+          "deletions": 324,
+          "file_summaries": [
+            {
+              "filename": "docs/src/components/homepage/homepage-code-embed/index.js",
+              "status": "modified",
+              "additions": 1,
+              "deletions": 1,
+              "changes": 2,
+              "patch_excerpt": "@@ -1,5 +1,5 @@\n import Upscaler from \"upscaler\";\n-import img from \"./public/flower.png\";\n+import img from \"/flower.png?url\";\n const target = document.getElementById(\"target\");\n const button = document.getElementById(\"button\");\n const info = document.getElementById(\"info\");"
+            },
+            {
+              "filename": "examples/basic-npm/index.js",
+              "status": "modified",
+              "additions": 1,
+              "deletions": 1,
+              "changes": 2,
+              "patch_excerpt": "@@ -1,5 +1,5 @@\n import Upscaler from \"upscaler\";\n-import img from \"./public/flower.png\";\n+import img from \"/flower.png?url\";\n const target = document.getElementById(\"target\");\n const button = document.getElementById(\"button\");\n const info = document.getElementById(\"info\");"
+            },
+            {
+              "filename": "examples/custom-model-configurations/index.js",
+              "status": "modified",
+              "additions": 1,
+              "deletions": 1,
+              "changes": 2,
+              "patch_excerpt": "@@ -1,5 +1,5 @@\n import Upscaler from \"upscaler\";\n-import img from \"./public/flower.png\";\n+import img from \"/flower.png?url\";\n const target = document.getElementById(\"target\");\n const button = document.getElementById(\"button\");\n const info = document.getElementById(\"info\");"
+            },
+            {
+              "filename": "examples/models/index.js",
+              "status": "modified",
+              "additions": 1,
+              "deletions": 1,
+              "changes": 2,
+              "patch_excerpt": "@@ -1,6 +1,6 @@\n import Upscaler from 'upscaler';\n import model from '@upscalerjs/esrgan-thick/2x';\n-import img from \"./public/flower.png\";\n+import img from \"/flower.png?url\";\n const target = document.getElementById(\"target\");\n const button = document.getElementById(\"upscale\");\n const info = document.getElementById(\"info\");"
+            },
+            {
+              "filename": "examples/nodejs-custom-file-path/src/index.js",
+              "status": "modified",
+              "additions": 3,
+              "deletions": 2,
+              "changes": 5,
+              "patch_excerpt": "@@ -20,8 +20,6 @@ app.get(\"/\", async (req, res) => {\n   res.end(null, 'binary');\n });\n \n-app.listen(8080);\n-\n const getUpscaledImage = async () => {\n   const file = fs.readFileSync(path.resolve(__dirname, './flower-small.png'));\n   const image = tf.node.decodeImage(file, 3);\n@@ -35,3 +33,6 @@ const getUpscaledImage = async () => {\n   tensor.dispose();\n   return upscaledTensor;\n }\n+\n+app.listen(8080);\n+console.log('Running on http://localhost:8080/');"
+            },
+            {
+              "filename": "examples/nodejs-model/src/index.js",
+              "status": "modified",
+              "additions": 3,
+              "deletions": 2,
+              "changes": 5,
+              "patch_excerpt": "@@ -18,8 +18,6 @@ app.get(\"/\", async (req, res) => {\n   res.end(null, 'binary');\n });\n \n-app.listen(8080);\n-\n const getUpscaledImage = async () => {\n   const file = fs.readFileSync(path.resolve(__dirname, './flower-small.png'));\n   const image = tf.node.decodeImage(file, 3);\n@@ -34,3 +32,6 @@ const getUpscaledImage = async () => {\n   tensor.dispose();\n   return upscaledTensor;\n }\n+\n+app.listen(8080);\n+console.log('Running on http://localhost:8080/');"
+            },
+            {
+              "filename": "examples/nodejs/src/index.js",
+              "status": "modified",
+              "additions": 3,
+              "deletions": 2,
+              "changes": 5,
+              "patch_excerpt": "@@ -15,8 +15,6 @@ app.get(\"/\", async (req, res) => {\n   res.end(null, 'binary');\n });\n \n-app.listen(8080);\n-\n const getUpscaledImage = async () => {\n   const file = fs.readFileSync(path.resolve(__dirname, './flower-small.png'));\n   const image = tf.node.decodeImage(file, 3);\n@@ -29,3 +27,6 @@ const getUpscaledImage = async () => {\n   tensor.dispose();\n   return upscaledTensor;\n }\n+\n+app.listen(8080);\n+console.log('Running on http://localhost:8080/');"
+            },
+            {
+              "filename": "examples/self-hosting-models/index.js",
+              "status": "modified",
+              "additions": 1,
+              "deletions": 1,
+              "changes": 2,
+              "patch_excerpt": "@@ -1,5 +1,5 @@\n import Upscaler from \"upscaler\";\n-import img from \"./public/flower.png\";\n+import img from \"/flower.png?url\";\n const target = document.getElementById(\"target\");\n const button = document.getElementById(\"button\");\n const info = document.getElementById(\"info\");"
+            },
+            {
+              "filename": "internals/upscaler-cli/bin/cli.js",
+              "status": "added",
+              "additions": 7,
+              "deletions": 0,
+              "changes": 7,
+              "patch_excerpt": "@@ -0,0 +1,7 @@\n+#!/usr/bin/env ts-node \n+import { CLI } from '../src/index.js';\n+\n+(async () => {\n+  const cli = new CLI();\n+  await cli.run();\n+})();"
+            },
+            {
+              "filename": "internals/upscaler-cli/package.json",
+              "status": "added",
+              "additions": 32,
+              "deletions": 0,
+              "changes": 32,
+              "patch_excerpt": "@@ -0,0 +1,32 @@\n+{\n+  \"name\": \"@internals/upscaler-cli\",\n+  \"private\": true,\n+  \"type\": \"module\",\n+  \"version\": \"0.1.0\",\n+  \"description\": \"CLI for managing the UpscalerJS repo\",\n+  \"author\": \"Kevin Scott\",\n+  \"bin\": {\n+    \"upscaler-cli\": \"./bin/cli.js\"\n+  },\n+  \"license\": \"MIT\",\n+  \"dependencies\": {\n+    \"@types/commander\": \"^2.12.2\",\n+    \"@types/fast-levenshtein\": \"^0.0.2\",\n+    \"commander\": \"^11.0.0\",\n+    \"fast-levenshtein\": \"^3.0.0\",\n+    \"inquirer\": \"^9.2.10\",\n+    \"ts-node\": \"^10.9.1\",\n+    \"tsc-alias\": \"^1.8.7\"\n+  },\n+  \"devDependencies\": {\n+    \"@types/node\": \"^16.18.40\",\n+    \"@types/uglify-js\": \"^3.17.1\",\n+    \"vitest\": \"^0.34.1\"\n+  },\n+  \"scripts\": {\n+    \"test\": \"vitest\"\n+  },\n+  \"engines\": {\n+    \"node\": \">=16.0.0\"\n+  }\n+}"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/actions/guide/start.ts",
+              "status": "added",
+              "additions": 43,
+              "deletions": 0,
+              "changes": 43,
+              "patch_excerpt": "@@ -0,0 +1,43 @@\n+import path from 'path';\n+import buildUpscaler from '../../lib/package-scripts/build-upscaler.js';\n+import { EXAMPLES_DIR, isValidGuide } from '../../lib/guides/isValidGuide.js';\n+import { runNPMCommand } from '../../lib/utils/run-npm-command.js';\n+import { pluralize } from '../../lib/utils/pluralize.js';\n+import { getTFJSLibraryTarget } from '../../lib/utils/get-tfjs-library-target.js';\n+import { getAllDirectories } from '../../lib/utils/get-all-directories.js';\n+import { findSimilarFiles } from '../../lib/utils/find-similar-files.js';\n+\n+interface Options {\n+  verbose?: boolean;\n+  skipUpscalerBuild?: boolean;\n+}\n+\n+type Action<T extends unknown[]> = (...args: T) => Promise<void>;\n+\n+export const start: Action<[string, Options]> = async (guide, { skipUpscalerBuild, verbose, }) => {\n+  console.log(`Starting guide: \"${guide}\"`);\n+  if (!await isValidGuide(guide)) {\n+    const examples = await getAllDirectories(EXAMPLES_DIR);\n+    const similarFiles = await findSimilarFiles(examples, guide, { n: 3, distance: 5 });\n+\n+    throw new Error([\n+      `\"${guide}\" is not a valid guide, and was not found in the examples directory.`,\n+      similarFiles.length > 0 ? `Did yo"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/cli-types.ts",
+              "status": "added",
+              "additions": 5,
+              "deletions": 0,
+              "changes": 5,
+              "patch_excerpt": "@@ -0,0 +1,5 @@\n+import { Command } from \"commander\";\n+\n+export type RegisterCommand = (program: Command) => void;\n+type Funct = (...args: unknown[]) => unknown;\n+export const isFunction = (command: unknown): command is Funct => typeof command === 'function';"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/commands/guide/index.ts",
+              "status": "added",
+              "additions": 11,
+              "deletions": 0,
+              "changes": 11,
+              "patch_excerpt": "@@ -0,0 +1,11 @@\n+import { RegisterCommand } from '../../cli-types.js';\n+import { registerGuideStart } from './start.js';\n+\n+  //   \"example:start\": \"pnpm __run_command ./start-example.ts\",\n+export const guide: RegisterCommand = (program) => {\n+  const guide = program.command('guide')\n+    .description('Commands related to guides & examples')\n+\n+  registerGuideStart(guide);\n+};\n+"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/commands/guide/start.ts",
+              "status": "added",
+              "additions": 14,
+              "deletions": 0,
+              "changes": 14,
+              "patch_excerpt": "@@ -0,0 +1,14 @@\n+// import inquirer from 'inquirer';\n+import { RegisterCommand } from '../../cli-types.js';\n+import { start } from '../../actions/guide/start.js';\n+\n+export const registerGuideStart: RegisterCommand = (program) => {\n+  program.command('start')\n+    .description('Start an example')\n+    .argument('<string>', 'example to start')\n+    .option('--skipUpscalerBuild', 'if true, skip building UpscalerJS when starting up')\n+    .option('--verbose', 'verbose mode')\n+    .action(start);\n+};\n+\n+"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/commands/index.ts",
+              "status": "added",
+              "additions": 1,
+              "deletions": 0,
+              "changes": 1,
+              "patch_excerpt": "@@ -0,0 +1 @@\n+export { guide } from './guide/index.js';"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/index.ts",
+              "status": "added",
+              "additions": 57,
+              "deletions": 0,
+              "changes": 57,
+              "patch_excerpt": "@@ -0,0 +1,57 @@\n+import { program } from 'commander';\n+import * as commands from './commands/index.js';\n+import { isFunction } from './cli-types.js';\n+import fsExtra from 'fs-extra';\n+const { readFileSync } = fsExtra;\n+\n+  // \"scripts\": {\n+  //   \"build:upscaler\": \"pnpm __run_command ./package-scripts/build-upscaler.ts\",\n+  //   \"build:core\": \"pnpm __run_command ./package-scripts/build-core.ts\",\n+  //   \"docs:build-api\": \"pnpm __run_command ./package-scripts/docs/build-api.ts\",\n+  //   \"docs:build-guides\": \"pnpm __run_command ./package-scripts/docs/build-guides.ts\",\n+  //   \"docs:link-model-readmes\": \"pnpm __run_command ./package-scripts/docs/link-model-readmes.ts\",\n+  //   \"docs:tense-checks\": \"pnpm __run_command ./package-scripts/docs/tense-checks.ts\",\n+  //   \"model:benchmark:performance\": \"pnpm __run_command ./package-scripts/benchmark/performance/index.ts\",\n+  //   \"find-all-packages\": \"pnpm __run_command ./package-scripts/find-all-packages.ts\",\n+  //   \"model:benchmark:speed\": \"pnpm __run_command ./package-scripts/benchmark/speed/index.ts\",\n+  //   \"model:build\": \"pnpm __run_command ./package-scripts/build-model.ts\",\n+  //   \"model:clean\": \"pnpm __run_command ./package-scrip"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/guides/isValidGuide.ts",
+              "status": "added",
+              "additions": 18,
+              "deletions": 0,
+              "changes": 18,
+              "patch_excerpt": "@@ -0,0 +1,18 @@\n+import path from 'path';\n+import fsExtra from 'fs-extra';\n+const { stat } = fsExtra;\n+import * as url from 'url';\n+// const __filename = url.fileURLToPath(import.meta.url);\n+const __dirname = url.fileURLToPath(new URL('.', import.meta.url));\n+export const EXAMPLES_DIR = path.resolve(__dirname, '../../../../../examples');\n+\n+export const isValidGuide = async (guide: string) => {\n+  const guidePath = path.resolve(EXAMPLES_DIR, guide);\n+  try {\n+    const stats = await stat(guidePath);\n+    stats.isDirectory();\n+  } catch(err) {\n+    return false;\n+  }\n+  return true;\n+};"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/build-core.ts",
+              "status": "added",
+              "additions": 126,
+              "deletions": 0,
+              "changes": 126,
+              "patch_excerpt": "@@ -0,0 +1,126 @@\n+import { mkdirp } from 'fs-extra';\n+import { sync as rimraf } from 'rimraf';\n+import path from 'path';\n+import yargs from 'yargs';\n+import { OutputFormat as _OutputFormat } from './prompt/types';\n+import { compileTypescript } from './utils/compile';\n+import { getOutputFormats } from './prompt/getOutputFormats';\n+import { CORE_DIR } from './utils/constants';\n+import { ifDefined as _ifDefined} from './prompt/ifDefined';\n+\n+/****\n+ * Types\n+ */\n+type BuildFnOptions = {\n+  clearDistFolder?: boolean;\n+}\n+type BuildFn = (opts?: BuildFnOptions) => Promise<void>;\n+type OutputFormat = Extract<_OutputFormat, 'cjs' | 'esm'>;\n+\n+/****\n+ * Constants\n+ */\n+const DIST = path.resolve(CORE_DIR, 'dist');\n+\n+/****\n+ * Utility functions\n+ */\n+\n+const getDistFolder = (outputFormat: OutputFormat) => {\n+  return path.resolve(DIST, outputFormat);\n+};\n+\n+const cleanOutput = (distFolder: string, clearDistFolder: boolean) => {\n+  if (clearDistFolder) {\n+    rimraf(distFolder);\n+  }\n+}\n+\n+/****\n+ * ESM build function\n+ */\n+const buildESM: BuildFn = async (platform, {\n+  clearDistFolder = true,\n+} = {}) => {\n+  const distFolder = getDistFolder('esm');\n+  cleanOutput(distFolder, clearDistFold"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/build-model.ts",
+              "status": "added",
+              "additions": 324,
+              "deletions": 0,
+              "changes": 324,
+              "patch_excerpt": "@@ -0,0 +1,324 @@\n+import fs, { mkdirp, existsSync, } from 'fs-extra';\n+import { sync as rimraf } from 'rimraf';\n+import path from 'path';\n+import scaffoldDependencies from './scaffold-dependencies';\n+import { rollupBuild } from './utils/rollup';\n+import { uglify } from './utils/uglify';\n+import { mkdirpSync } from 'fs-extra';\n+import yargs from 'yargs';\n+import { getPackageJSONExports } from './utils/getPackageJSONExports';\n+import { inputOptions, } from '../../../../../models/rollup.config';\n+import scaffoldDependenciesConfig from '../../../../../models/scaffolder';\n+import { ifDefined as _ifDefined } from './prompt/ifDefined';\n+import { OutputFormat } from './prompt/types';\n+import { compileTypescript } from './utils/compile';\n+import { DEFAULT_OUTPUT_FORMATS, getOutputFormats } from './prompt/getOutputFormats';\n+import { AVAILABLE_MODELS, getModel } from './prompt/getModel';\n+import { babelTransform } from './utils/babelTransform';\n+import { MODELS_DIR } from './utils/constants';\n+import { replaceTscAliasPaths } from 'tsc-alias';\n+import asyncPool from \"tiny-async-pool\";\n+\n+/***\n+ * Types\n+ */\n+\n+interface Opts {\n+  verbose?: boolean;\n+  forceRebuild?: boolean;\n+  skipCheckMode"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/build-upscaler.ts",
+              "status": "added",
+              "additions": 203,
+              "deletions": 0,
+              "changes": 203,
+              "patch_excerpt": "@@ -0,0 +1,203 @@\n+import { mkdirp } from 'fs-extra';\n+import { sync as rimraf } from 'rimraf';\n+import path from 'path';\n+import scaffoldDependencies, { ScaffoldDependenciesConfig, writeTFJSDependency } from './scaffold-dependencies.js';\n+import { rollupBuild } from './utils/rollup.js';\n+import { uglify } from './utils/uglify.js';\n+import { mkdirpSync } from 'fs-extra';\n+import * as rollupConfig from './upscalerjs-rollup-config.js';\n+import { OutputFormat, Platform } from './prompt/types.js';\n+import { compileTypescript } from './utils/compile.js';\n+import { withTmpDir } from './utils/withTmpDir.js';\n+import { UPSCALER_DIR } from './utils/constants.js';\n+import { ifDefined as _ifDefined} from './prompt/ifDefined.js';\n+\n+const { inputOptions, outputOptions, } = rollupConfig;\n+\n+/****\n+ * Types\n+ */\n+type BuildFnOptions = {\n+  clearDistFolder?: boolean;\n+}\n+type BuildFn = (platform: Platform, opts?: BuildFnOptions) => Promise<void>;\n+\n+/****\n+ * Constants\n+ */\n+const DIST = path.resolve(UPSCALER_DIR, 'dist');\n+\n+/****\n+ * Utility functions\n+ */\n+\n+const getDistFolder = (platform: Platform, outputFormat: OutputFormat) => {\n+  return path.resolve(DIST, platform, outputFormat);\n+};\n+\n+"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/clean-model.ts",
+              "status": "added",
+              "additions": 128,
+              "deletions": 0,
+              "changes": 128,
+              "patch_excerpt": "@@ -0,0 +1,128 @@\n+import { existsSync, rm } from 'fs-extra';\n+import path from 'path';\n+import yargs from 'yargs';\n+import { ifDefined as _ifDefined } from './prompt/ifDefined';\n+import { OutputFormat } from './prompt/types';\n+import { DEFAULT_OUTPUT_FORMATS, getOutputFormats } from './prompt/getOutputFormats';\n+import { AVAILABLE_MODELS, getModel } from './prompt/getModel';\n+import { MODELS_DIR } from './utils/constants';\n+\n+/***\n+ * Types\n+ */\n+\n+interface Opts {\n+  verbose?: boolean;\n+}\n+\n+/****\n+ * Utility functions\n+ */\n+const removeFolder = async (folderPath: string) => {\n+  if (existsSync(folderPath)) {\n+    await rm(folderPath, { recursive: true });\n+  }\n+}\n+\n+const cleanModel = async (\n+  model: string, \n+  outputFormats: Array<OutputFormat>,\n+  opts: Opts = {},\n+) => {\n+  const start = performance.now();\n+  const MODEL_ROOT = path.resolve(MODELS_DIR, model);\n+  const DIST = path.resolve(MODEL_ROOT, 'dist')\n+  if (outputFormats.length === DEFAULT_OUTPUT_FORMATS.length) {\n+    // clean whole dist folder\n+    if (opts.verbose) {\n+      console.log('Removing entire dist folder');\n+    }\n+    await removeFolder(DIST);\n+  } else {\n+    await Promise.all(outputFormats.map(async"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/create-model-demo.ts",
+              "status": "added",
+              "additions": 183,
+              "deletions": 0,
+              "changes": 183,
+              "patch_excerpt": "@@ -0,0 +1,183 @@\n+import { writeFile, copy, mkdirp, } from 'fs-extra';\n+import path from 'path';\n+import yargs from 'yargs';\n+import { ifDefined as _ifDefined } from './prompt/ifDefined';\n+import { MODELS_DIR } from './utils/constants';\n+\n+/***\n+ * Types\n+ */\n+\n+/****\n+ * Utility functions\n+ */\n+\n+const makeDemoFolder = async (model: string) => {\n+  await mkdirp(path.resolve(MODELS_DIR, model, 'demo'));\n+};\n+\n+const copyFixture = async (model: string) => {\n+  const modelRoot = path.resolve(MODELS_DIR, model);\n+  await copy(path.resolve(modelRoot, 'assets/fixture.png'), path.resolve(modelRoot, 'demo', 'fixture.png'));\n+};\n+\n+const getIndexJSFile = (model: string) => `\n+import Upscaler from \"upscaler\";\n+import * as models from '@upscalerjs/${model}';\n+import fixture from \"./fixture.png\";\n+\n+const upscaler = new Upscaler({\n+  model: models.small,\n+});\n+\n+upscaler.upscale(fixture).then((upscaledImgSrc) => {\n+  const img = document.createElement(\"img\");\n+  img.src = upscaledImgSrc;\n+  document.getElementById(\"target\").appendChild(img);\n+});\n+`;\n+\n+const getIndexHTMLFile = (model: string) => `\n+<html>\n+<head>\n+  <title>@upscalerjs/${model}</title>\n+  <style>\n+    body {\n+      padding: "
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/docs/build-api.ts",
+              "status": "added",
+              "additions": 888,
+              "deletions": 0,
+              "changes": 888,
+              "patch_excerpt": "@@ -0,0 +1,888 @@\n+import path from 'path';\n+import {\n+  mkdirp,\n+  writeFile,\n+} from 'fs-extra';\n+import {\n+  Application,\n+  DeclarationReflection as TypedocDeclarationReflection,\n+  TSConfigReader,\n+  TypeDocReader,\n+  ReflectionKind,\n+} from 'typedoc';\n+import { scaffoldDependenciesForUpscaler } from '../build-upscaler';\n+import { Platform } from '../prompt/types';\n+import { CORE_DIR, DOCS_DIR, UPSCALER_DIR } from '../utils/constants';\n+import { clearOutMarkdownFiles } from './utils/clear-out-markdown-files';\n+import { getSharedArgs, SharedArgs } from './types';\n+import {\n+  CommentDisplayPart,\n+  CommentTag,\n+  ParameterReflection,\n+  ArrayType,\n+  UnionType,\n+  IntersectionType,\n+  IntrinsicType,\n+  LiteralType,\n+  ReferenceType,\n+  SomeType,\n+  Comment,\n+  SignatureReflection,\n+  SourceReference,\n+  DeclarationReflection,\n+  TypeParameterReflection,\n+} from 'typedoc/dist/lib/serialization/schema';\n+\n+const REPO_ROOT = 'https://github.com/thekevinscott/UpscalerJS';\n+/****\n+ * Types\n+ */\n+type DecRef = DeclarationReflection | PlatformSpecificDeclarationReflection;\n+interface Definitions {\n+  constructors: Record<string, DecRef>;\n+  methods: Record<string, DecRef>;\n+  interfac"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/docs/build-guides.ts",
+              "status": "added",
+              "additions": 282,
+              "deletions": 0,
+              "changes": 282,
+              "patch_excerpt": "@@ -0,0 +1,282 @@\n+import path from 'path';\n+import { copyFile, existsSync, mkdirp, readdir, readdirSync, readFile, readFileSync, statSync, writeFile } from 'fs-extra';\n+import { DOCS_DIR, EXAMPLES_DIR } from '../utils/constants';\n+import { getPackageJSON } from '../utils/packages';\n+import fm from 'front-matter';\n+import { clearOutMarkdownFiles } from './utils/clear-out-markdown-files';\n+import { getSharedArgs, SharedArgs } from './types';\n+\n+/****\n+ * Types\n+ */\n+interface FrontMatter {\n+  [index: string]: string | number | FrontMatter;\n+}\n+interface ExampleContent {\n+  title: string;\n+  frontmatter: FrontMatter;\n+}\n+type Category = 'browser' | 'node' | 'other';\n+\n+/****\n+ * Constants\n+ */\n+const DEFAULT_EMBED_FOR_NODE = 'codesandbox';\n+const DEFAULT_EMBED_FOR_BROWSER = 'codesandbox';\n+// const DEFAULT_EMBED_FOR_BROWSER = 'stackblitz';\n+const EXAMPLES_DOCS_DEST = path.resolve(DOCS_DIR, 'docs/documentation/guides');\n+\n+/****\n+ * Utility functions\n+ */\n+const isCategory = (category: unknown): category is Category => typeof category === 'string' && ['browser', 'node', 'other'].includes(category);\n+const isDirectory = (root: string) => (folder: string) => statSync(path.resolve(root, "
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/docs/link-model-readmes.ts",
+              "status": "added",
+              "additions": 235,
+              "deletions": 0,
+              "changes": 235,
+              "patch_excerpt": "@@ -0,0 +1,235 @@\n+/*****\n+ * Script for linking model readmes locally in docs folder\n+ */\n+import path from 'path';\n+import { copy, existsSync, mkdirp, readFile, writeFile } from 'fs-extra';\n+import { DOCS_DIR, MODELS_DIR } from '../utils/constants';\n+import { getAllAvailableModelPackages } from \"../utils/getAllAvailableModels\";\n+import { getSharedArgs, SharedArgs } from './types';\n+import { clearOutMarkdownFiles } from './utils/clear-out-markdown-files';\n+\n+/****\n+ * Types\n+ */\n+\n+interface PackageWithMetadata {\n+  description: string;\n+  sidebarPosition: number;\n+  enhancedSrc: string;\n+  unenhancedSrc: string;\n+  category: string;\n+  packageName: string;\n+}\n+\n+/****\n+ * Utility functions\n+ */\n+\n+const copyAssets = async (packageName: string, targetDir: string) => {\n+  const packagePath = path.resolve(MODELS_DIR, packageName, 'assets');\n+  const targetPath = path.resolve(targetDir, packageName);\n+  await copy(packagePath, targetPath);\n+}\n+\n+const createMarkdown = (contents: string, targetPath: string) => writeFile(targetPath, contents, 'utf-8');\n+\n+const getCategory = (packageName: string, readmeContents: string) => {\n+  const lines = readmeContents.split('\\n');\n+  for (const li"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/docs/tense-checks.ts",
+              "status": "added",
+              "additions": 111,
+              "deletions": 0,
+              "changes": 111,
+              "patch_excerpt": "@@ -0,0 +1,111 @@\n+/*****\n+ * Script for checking tense in docs markdown files\n+ */\n+import { sync } from 'glob';\n+import { readFile } from 'fs-extra';\n+import path from 'path';\n+import { DOCS_DIR, } from '../utils/constants';\n+\n+/****\n+ * Constants\n+ */\n+\n+const EXCLUDED_DIRECTORIES = [\n+  'node_modules',\n+  'blog',\n+];\n+\n+/****\n+ * Utility functions\n+ */\n+\n+const getDocumentationFiles = (): string[] => {\n+  return sync(path.resolve(DOCS_DIR, '**/*.{md,mdx}')).filter(file => {\n+    return EXCLUDED_DIRECTORIES.reduce((include, dir) => {\n+      return !include ? false : !file.includes(dir);\n+    }, true);\n+  });\n+};\n+\n+// split a markdown file's contents into two concatenated strings,\n+// one containing the main content of the file, the other containing\n+// just the asides\n+const splitFileContents = (contents: string): [string, string] => {\n+  const nonAsides = [];\n+  const asides = [];\n+  let isAside = false;\n+  for (const line of contents.split('\\n')) {\n+    if (line.startsWith(':::')) {\n+      isAside = !isAside;\n+    } else {\n+      if (isAside) {\n+        asides.push(line);\n+      } else {\n+        nonAsides.push(line);\n+      }\n+    }\n+  }\n+  return [nonAsides.join('\\n'), asid"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/docs/types.ts",
+              "status": "added",
+              "additions": 17,
+              "deletions": 0,
+              "changes": 17,
+              "patch_excerpt": "@@ -0,0 +1,17 @@\n+import yargs from 'yargs';\n+\n+export interface SharedArgs {\n+  shouldClearMarkdown?: boolean;\n+  verbose?: boolean;\n+}\n+\n+export const getSharedArgs = async (): Promise<SharedArgs> => {\n+  const argv = await yargs(process.argv.slice(2)).options({\n+    shouldClearMarkdown: { type: 'boolean' },\n+    verbose: { type: 'boolean' },\n+  }).argv;\n+\n+  return {\n+    ...argv,\n+  }\n+};"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/docs/utils/clear-out-markdown-files.ts",
+              "status": "added",
+              "additions": 17,
+              "deletions": 0,
+              "changes": 17,
+              "patch_excerpt": "@@ -0,0 +1,17 @@\n+import { glob } from 'glob';\n+import { unlink } from 'fs-extra';\n+\n+const getAllMarkdownFiles = (target: string) => glob(`${target}/**/*.md?(x)`);\n+\n+export const clearOutMarkdownFiles = async (target: string, verbose?: boolean) => {\n+  const files = await getAllMarkdownFiles(target);\n+  if (files.length > 0) {\n+    await Promise.all(files.map(file => unlink(file)));\n+    if (verbose) {\n+      console.log([\n+        `Cleared out ${files.length} markdown files, including:`,\n+        ...files.map(file => file.split(/docs\\/documentation\\//gi).pop()).map(file => `- ${file}`),\n+      ].join('\\n'));\n+    }\n+  }\n+};"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/find-all-packages.ts",
+              "status": "added",
+              "additions": 34,
+              "deletions": 0,
+              "changes": 34,
+              "patch_excerpt": "@@ -0,0 +1,34 @@\n+import fs from 'fs';\n+import path from 'path';\n+import { ROOT_DIR } from './utils/constants.js';\n+\n+const ROOT = ROOT_DIR;\n+const EXCLUDED = ['node_modules', 'scratch'];\n+const MAX_DEPTH = 100;\n+\n+const findAllPackages = (dir: string, excluded: string[] = [], depth = 0): Array<string> => {\n+  let packages: Array<string> = [];\n+  if (depth > MAX_DEPTH) {\n+    throw new Error('Maximum depth reached');\n+  }\n+  const files = fs.readdirSync(dir);\n+  for (const file of files) {\n+    const fullFile = path.resolve(dir, file);\n+    if (file === 'package.json') {\n+      const strippedFile = fullFile.split(`${ROOT}/`).pop();\n+      if (!strippedFile) {\n+        throw new Error(`Error with file ${fullFile}`);\n+      }\n+      packages.push(strippedFile);\n+    } else if (!EXCLUDED.includes(file) && !excluded.includes(fullFile)) {\n+      const stat = fs.statSync(fullFile);\n+      if (stat?.isDirectory()) {\n+        const dirFiles = findAllPackages(fullFile, excluded, depth + 1);\n+        packages = packages.concat(dirFiles);\n+      }\n+    }\n+  }\n+  return packages;\n+};\n+\n+export default findAllPackages;"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/prompt/getModel.ts",
+              "status": "added",
+              "additions": 31,
+              "deletions": 0,
+              "changes": 31,
+              "patch_excerpt": "@@ -0,0 +1,31 @@\n+import inquirer from 'inquirer';\n+import { getAllAvailableModelPackages } from '../utils/getAllAvailableModels';\n+\n+export const AVAILABLE_MODELS = getAllAvailableModelPackages();\n+\n+export const getModel = async (model?: string | number | (string | number)[], all?: unknown) => {\n+  if (all === true) {\n+    const modelPackages = getAllAvailableModelPackages();\n+    return modelPackages;\n+  }\n+\n+  if (typeof model === 'string') {\n+    return [model];\n+  }\n+\n+  if (Array.isArray(model)) {\n+    return model.map(m => `${m}`);\n+  }\n+\n+  const { models } = await inquirer.prompt<{\n+    models: string[]\n+  }>([\n+    {\n+      type: 'checkbox',\n+      name: 'models',\n+      message: 'Which models do you want to build?',\n+      choices: AVAILABLE_MODELS,\n+    },\n+  ]);\n+  return models;\n+}"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/prompt/getNumber.ts",
+              "status": "added",
+              "additions": 17,
+              "deletions": 0,
+              "changes": 17,
+              "patch_excerpt": "@@ -0,0 +1,17 @@\n+import inquirer from 'inquirer';\n+\n+export const getNumber = async (message: string, arg?: unknown) => {\n+  if (typeof arg === 'number') {\n+    return arg;\n+  }\n+\n+  const response = await inquirer.prompt<{\n+    arg: number;\n+  }>([\n+    {\n+      name: 'arg',\n+      message,\n+    },\n+  ]);\n+  return response.arg;\n+};"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/prompt/getOutputFormats.ts",
+              "status": "added",
+              "additions": 37,
+              "deletions": 0,
+              "changes": 37,
+              "patch_excerpt": "@@ -0,0 +1,37 @@\n+import inquirer from 'inquirer';\n+import { OutputFormat } from './types';\n+\n+export const DEFAULT_OUTPUT_FORMATS: Array<OutputFormat> = ['cjs', 'esm', 'umd'];\n+\n+const isValidOutputFormat = (outputFormat: string): outputFormat is OutputFormat => {\n+  for (const f of DEFAULT_OUTPUT_FORMATS) {\n+    if (f === outputFormat) {\n+      return true;\n+    }\n+  }\n+  return false;\n+}\n+\n+export const getOutputFormats = async (outputFormat?: unknown, defaultToAll?: boolean) => {\n+  if (typeof outputFormat === 'string' && isValidOutputFormat(outputFormat)) {\n+    return [outputFormat]\n+  }\n+  if (Array.isArray(outputFormat)) {\n+    return outputFormat;\n+  }\n+  if (defaultToAll) {\n+    return DEFAULT_OUTPUT_FORMATS;\n+  }\n+  const { outputFormats } = await inquirer.prompt<{\n+    outputFormats: string[];\n+  }>([\n+    {\n+      type: 'checkbox',\n+      name: 'outputFormats',\n+      message: 'Which output formats do you want to build?',\n+      choices: DEFAULT_OUTPUT_FORMATS,\n+    },\n+  ]);\n+  return outputFormats;\n+}\n+"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/prompt/getPlatform.ts",
+              "status": "added",
+              "additions": 25,
+              "deletions": 0,
+              "changes": 25,
+              "patch_excerpt": "@@ -0,0 +1,25 @@\n+import inquirer from 'inquirer';\n+import { Platform } from \"./types\";\n+\n+export const AVAILABLE_PLATFORMS = ['node', 'node-gpu', 'browser'];\n+\n+const isValidPlatform = (platform?: string | number): platform is Platform => {\n+  return typeof platform === 'string' && AVAILABLE_PLATFORMS.includes(platform);\n+};\n+\n+export const getPlatform = async (platforms?: string | number) => {\n+  if (isValidPlatform(platforms)) {\n+    return platforms;\n+  }\n+\n+  const { value } = await inquirer.prompt([\n+    {\n+      type: 'list',\n+      name: 'value',\n+      message: 'Which platforms do you want to build for?',\n+      choices: AVAILABLE_PLATFORMS,\n+    },\n+  ]);\n+  return value;\n+}\n+"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/prompt/getString.ts",
+              "status": "added",
+              "additions": 37,
+              "deletions": 0,
+              "changes": 37,
+              "patch_excerpt": "@@ -0,0 +1,37 @@\n+import inquirer from 'inquirer';\n+\n+export const getString = async (message: string, arg?: unknown) => {\n+  if (typeof arg === 'string') {\n+    return arg;\n+  }\n+\n+  const response = await inquirer.prompt<{\n+    arg: string\n+  }>([\n+    {\n+      name: 'arg',\n+      message,\n+    },\n+  ]);\n+  return response.arg;\n+}\n+\n+export const getStringArray = async (message: string, arg?: unknown) => {\n+  if (typeof arg === 'string') {\n+    return [arg];\n+  }\n+\n+  if (Array.isArray(arg) && arg.length > 0) {\n+    return arg;\n+  }\n+\n+  const response = await inquirer.prompt<{\n+    arg: string\n+  }>([\n+    {\n+      name: 'arg',\n+      message,\n+    },\n+  ]);\n+  return response.arg.split(' ').filter(Boolean);\n+}"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/prompt/ifDefined.ts",
+              "status": "added",
+              "additions": 1,
+              "deletions": 0,
+              "changes": 1,
+              "patch_excerpt": "@@ -0,0 +1 @@\n+export function ifDefined<T>(argv: Record<string, string | boolean | number>, key: string, type: string) { return typeof argv[key] === type ? argv[key] as T: undefined; }"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/prompt/prompt.ts",
+              "status": "added",
+              "additions": 42,
+              "deletions": 0,
+              "changes": 42,
+              "patch_excerpt": "@@ -0,0 +1,42 @@\n+import yargs, { Options } from 'yargs';\n+import inquirer, { QuestionCollection } from 'inquirer';\n+\n+export interface PromptOption<T> extends Options {\n+  name: string;\n+  isValidType?: IsValidType<T>;\n+  prompt?: QuestionCollection;\n+};\n+\n+async function prompt<T extends unknown[]>(...options: PromptOption<T>[]) {\n+  const yargsOptions: {\n+    [key: string]: Options;\n+  } = options.reduce((obj, option) => {\n+    const { name, isValidType: _isValidType, ...yargsOption } = option;\n+    return {\n+      ...obj,\n+      [name]: yargsOption,\n+    };\n+  }, {});\n+  const argv = await yargs(process.argv.slice(2)).options(yargsOptions).argv;\n+\n+  for (const option of options) {\n+    if (option.isValidType && option.prompt) {\n+      argv[option.name] = await getArg(argv[option.name], option.isValidType, option.prompt);\n+    }\n+  }\n+  return argv;\n+}\n+\n+export type IsValidType<ExpectedType> = (arg: unknown) => arg is ExpectedType;\n+\n+async function getArg<ExpectedType>(defaultArg: ExpectedType, isValidType: IsValidType<ExpectedType>, promptOption: QuestionCollection): Promise<ExpectedType> {\n+  if (isValidType(defaultArg)) {\n+    return defaultArg;\n+  }\n+  const { arg } = awa"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/prompt/types.ts",
+              "status": "added",
+              "additions": 2,
+              "deletions": 0,
+              "changes": 2,
+              "patch_excerpt": "@@ -0,0 +1,2 @@\n+export type OutputFormat = 'cjs' | 'esm' | 'umd';\n+export type Platform = 'node' | 'node-gpu' | 'browser';"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/scaffold-dependencies.ts",
+              "status": "added",
+              "additions": 197,
+              "deletions": 0,
+              "changes": 197,
+              "patch_excerpt": "@@ -0,0 +1,197 @@\n+import fs from 'fs';\n+import path from 'path';\n+import { getPackageJSON } from './utils/packages.js';\n+import { JSONSchemaForNPMPackageJsonFiles } from '@schemastore/package';\n+import { ROOT_DIR } from './utils/constants.js';\n+\n+/****\n+ * Type Definitions\n+ */\n+export type Platform = 'browser' | 'node' | 'node-gpu';\n+\n+export type TFJSDependency = '@tensorflow/tfjs' | '@tensorflow/tfjs-node' | '@tensorflow/tfjs-node-gpu';\n+\n+type ContentFn = (arg: {\n+  tfjs?: TFJSDependency;\n+  platform?: Platform;\n+  packageJSON: JSONSchemaForNPMPackageJsonFiles;\n+}) => string;\n+type Content = string | ContentFn;\n+interface File {\n+  name: string;\n+  contents: Content[];\n+}\n+\n+export interface ScaffoldDependenciesConfig {\n+  scaffoldPlatformFiles?: boolean;\n+  files: File[];\n+}\n+\n+/****\n+ * Constants\n+ */\n+const ROOT = ROOT_DIR;\n+\n+/****\n+ * Dependency-specific utility functions\n+ */\n+export const writeTFJSDependency: ContentFn = ({ tfjs, }) => {\n+  if (tfjs === undefined) {\n+    throw new Error('TFJS Platform was undefined');\n+  }\n+  return `export * as tf from '${tfjs}';`;\n+};\n+\n+export const getPlatformSpecificTensorflow = (platform?: Platform): TFJSDependency | undefined => "
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/update-dependency.ts",
+              "status": "added",
+              "additions": 188,
+              "deletions": 0,
+              "changes": 188,
+              "patch_excerpt": "@@ -0,0 +1,188 @@\n+import yargs from 'yargs';\n+import inquirer from 'inquirer';\n+import isValidVersion from './utils/isValidVersion';\n+import { \n+  AVAILABLE_PACKAGES, \n+  DIRECTORIES, \n+  getPackageJSONPath, \n+  getPackageJSONValue, \n+  getPreparedFolderName, \n+  Package, \n+  TransformPackageJsonFn, \n+  updateMultiplePackages, \n+  updatePackageJSONForKey, \n+  updateSinglePackage,\n+ } from './utils/packages';\n+import { Dependency } from '@schemastore/package';\n+\n+/****\n+ * Utility functions\n+ */\n+\n+class Logger {\n+  updates: Array<string> = [];\n+  constructor(msg: string) {\n+    this.push(msg);\n+  }\n+\n+  push(msg: string) {\n+    this.updates.push(msg);\n+  }\n+\n+  write() {\n+    if (this.updates.length) {\n+      this.updates.forEach(message => console.log(message))\n+    }\n+  }\n+}\n+\n+const makeSetVersionForPackageJSON = (dependencies: string[], version: string): TransformPackageJsonFn => (packageJSON, dir) => {\n+  const packageJSONKeys = ['dependencies', 'peerDependencies', 'devDependencies', 'pnpm.overrides'];\n+  const logger = new Logger(`- Updated ${getPreparedFolderName(getPackageJSONPath(dir))}`);\n+  for (const packageJSONKey of packageJSONKeys) {\n+    const packageJSONListOfDepe"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/update-npm-dependencies.ts",
+              "status": "added",
+              "additions": 119,
+              "deletions": 0,
+              "changes": 119,
+              "patch_excerpt": "@@ -0,0 +1,119 @@\n+import { exec as _exec, ExecOptions } from 'child_process';\n+import yargs from 'yargs';\n+import path from 'path';\n+import { ifDefined as _ifDefined } from './prompt/ifDefined';\n+import { glob } from 'glob';\n+import { ROOT_DIR } from './utils/constants';\n+import asyncPool from \"tiny-async-pool\";\n+\n+/****\n+ * Types\n+ */\n+interface PNPMLSItem {\n+  name: string;\n+  version: string;\n+  path: string;\n+  private: boolean;\n+}\n+\n+/****\n+ * Constants\n+ */\n+const NUMBER_OF_CONCURRENT_THREADS = 5;\n+\n+/****\n+ * Utility functions\n+ */\n+const exec = (cmd: string, { verbose, ...opts }: { verbose?: boolean; } & ExecOptions = {}) => new Promise<void>((resolve, reject) => {\n+  const spawnedProcess = _exec(cmd, opts, (error) => {\n+    if (error) {\n+      reject(error);\n+    } else {\n+      resolve();\n+    }\n+  });\n+\n+  if (verbose) {\n+    spawnedProcess.stdout?.pipe(process.stdout);\n+  }\n+});\n+const getOutput = (cmd: string, { ...opts }: ExecOptions = {}) => new Promise<string>((resolve, reject) => {\n+  let output = '';\n+  const spawnedProcess = _exec(cmd, opts, (error) => {\n+    if (error) {\n+      reject(error);\n+    } else {\n+      resolve(output);\n+    }\n+  });\n+\n+  spawnedProce"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/update-tfjs.ts",
+              "status": "added",
+              "additions": 100,
+              "deletions": 0,
+              "changes": 100,
+              "patch_excerpt": "@@ -0,0 +1,100 @@\n+import yargs from 'yargs';\n+import inquirer, { DistinctQuestion } from 'inquirer';\n+import {\n+  AVAILABLE_PACKAGES,\n+  getPackageJSON,\n+  Package,\n+} from './utils/packages';\n+import updateDependency, { getMatchingDependency } from './update-dependency';\n+import { ROOT_DIR } from './utils/constants';\n+\n+/****\n+ * Constants\n+ */\n+const TFJS_PACKAGES = [\n+  '@tensorflow/tfjs',\n+  '@tensorflow/tfjs-node',\n+  '@tensorflow/tfjs-node-gpu',\n+  '@tensorflow/tfjs-layers',\n+  '@tensorflow/tfjs-core',\n+];\n+\n+/****\n+ * Main function\n+ */\n+\n+const updateTFJS = (version: string, packages: Package[]) => updateDependency(TFJS_PACKAGES, version, packages);\n+\n+export default updateTFJS;\n+\n+/****\n+ * Functions to expose the main function as a CLI tool\n+ */\n+const getTFJSVersion = (dir: string = ROOT_DIR): string => {\n+  const packageJSON = getPackageJSON(dir);\n+  const deps = packageJSON.peerDependencies;\n+  const gen = getMatchingDependency(TFJS_PACKAGES, deps);\n+  const matchingTFJS = gen.next().value;\n+  if (!matchingTFJS) {\n+    throw new Error(`Could not find a dependency matching @tensorflow/tfjs in ${dir}`);\n+  }\n+  const [_, val] = matchingTFJS;\n+  if (!val) {\n+    throw ne"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/update-version.ts",
+              "status": "added",
+              "additions": 128,
+              "deletions": 0,
+              "changes": 128,
+              "patch_excerpt": "@@ -0,0 +1,128 @@\n+import inquirer from 'inquirer';\n+import isValidVersion from './utils/isValidVersion';\n+import { AVAILABLE_PACKAGES, CORE, DIRECTORIES, EXAMPLES, getPackageJSON, getPackageJSONPath, getPreparedFolderName, Package, PackageUpdaterLogger, ROOT, TransformPackageJsonFn, updateMultiplePackages, updateSinglePackage, UPSCALER_JS, WRAPPER } from './utils/packages';\n+import { ROOT_DIR } from './utils/constants';\n+\n+/****\n+ * Type Definitions\n+ */\n+type Answers = { packages: Array<Package>, version: string, updateDependencies?: boolean, }\n+\n+/****\n+ * Constants\n+ */\n+const logger: PackageUpdaterLogger = (file: string) => {\n+  return `- Updated ${getPreparedFolderName(getPackageJSONPath(file))}`;\n+}\n+\n+const makeSetVersionForPackageJSON = (version: string): TransformPackageJsonFn => (packageJSON) => {\n+  packageJSON.version = version;\n+  return packageJSON;\n+}\n+\n+const getVersion = (dir: string) => {\n+  return getPackageJSON(dir).version;\n+};\n+\n+const getCurrentVersions = () => {\n+  const upscalerJSVersion = getVersion(DIRECTORIES[UPSCALER_JS].directory);\n+  const rootVersion = getVersion(DIRECTORIES[ROOT].directory);\n+  const coreVersion = getVersion(DIRECTORIES[CORE].direc"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/upscalerjs-rollup-config.ts",
+              "status": "added",
+              "additions": 43,
+              "deletions": 0,
+              "changes": 43,
+              "patch_excerpt": "@@ -0,0 +1,43 @@\n+import commonjs from '@rollup/plugin-commonjs';\n+import { nodeResolve, } from '@rollup/plugin-node-resolve';\n+import type { InputOptions, OutputOptions, } from 'rollup';\n+import DefaultUpscalerModel from '../../../../../models/default-model/umd-names.json' assert { type: \"json\" };;\n+\n+const isValidUMDNameFile = (contents: unknown): contents is {\n+   '.': string\n+} => typeof contents === 'object' && contents !== undefined && contents !== null && '.' in contents;\n+\n+const getModelUmdName = () => {\n+  if (isValidUMDNameFile(DefaultUpscalerModel)) {\n+    return DefaultUpscalerModel['.'];\n+  }\n+  throw new Error('Bad umd-names.json file for @upscalerjs/default-model');\n+};\n+\n+export const inputOptions: InputOptions = {\n+  context: 'window',\n+  external: [\n+    '@tensorflow/tfjs',\n+    '@upscalerjs/default-model',\n+  ],\n+  plugins: [\n+    nodeResolve({\n+      preferBuiltins: true,\n+      resolveOnly: [\n+        /^(?!.*(@tensorflow\\/tfjs))/, //skipcq: js-0113\n+        /^(?!.*(@tensorflow\\/tfjs-core))/, //skipcq: js-0113\n+      ],\n+    }),\n+    commonjs(),\n+  ],\n+};\n+\n+export const outputOptions: OutputOptions = {\n+  format: 'umd',\n+  globals: {\n+    '@tensorflow/tfjs': '"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/utils/babelTransform.ts",
+              "status": "added",
+              "additions": 19,
+              "deletions": 0,
+              "changes": 19,
+              "patch_excerpt": "@@ -0,0 +1,19 @@\n+import { transformAsync } from '@babel/core';\n+import fs from 'fs';\n+import { getAllFilesRecursively } from \"./getAllFilesRecursively\";\n+\n+export const babelTransform = async (directory: string) => {\n+  const files = getAllFilesRecursively(directory, file => file.endsWith('.js'));\n+\n+  await Promise.all(files.map(async filePath => {\n+    const contents = fs.readFileSync(filePath, 'utf-8');\n+    const transformedCode = await transformAsync(contents, {\n+      plugins: [\n+        \"@babel/plugin-transform-modules-commonjs\",\n+        \"babel-plugin-add-module-exports\",\n+        \"@babel/plugin-proposal-export-namespace-from\",\n+      ],\n+    });\n+    fs.writeFileSync(filePath, transformedCode?.code ?? '');\n+  }));\n+};"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/utils/browserStack.ts",
+              "status": "added",
+              "additions": 259,
+              "deletions": 0,
+              "changes": 259,
+              "patch_excerpt": "@@ -0,0 +1,259 @@\n+import path from 'path';\n+import browserstack from 'browserstack-local';\n+import webdriver, { WebDriver, ThenableWebDriver, Builder, logging } from 'selenium-webdriver';\n+import * as dotenv from 'dotenv';\n+import { ROOT_DIR } from './constants';\n+import { existsSync, readFileSync, writeFileSync } from 'fs-extra';\n+\n+/****\n+ * Types\n+ */\n+export type Browserstack = browserstack.Local;\n+\n+export interface BrowserOption {\n+  os?: string;\n+  os_version: string;\n+  browser?: string;\n+  browser_version?: string;\n+  device?: string;\n+  real_mobile?: 'true';\n+  browserName?: string;\n+  localhost?: string;\n+}\n+\n+export type FilterBrowserOption = (option: BrowserOption) => boolean;\n+\n+/****\n+ * Constants\n+ */\n+\n+const env = getEnv();\n+\n+const browserOptions: Array<BrowserOption> = JSON.parse(readFileSync(path.resolve(__dirname, './browserStackOptions.json'), 'utf8'));\n+const mobileBrowserOptions: Array<BrowserOption> = JSON.parse(readFileSync(path.resolve(__dirname, './browserStackMobileOptions.json'), 'utf8')).map((option: BrowserOption[]) => ({\n+  \"real_mobile\": \"true\",\n+  \"localhost\": \"bs-local.com\",\n+  ...option,\n+}));\n+\n+const username = env.BROWSERSTACK_USERNAME;\n+co"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/utils/browserStackMobileOptions.json",
+              "status": "added",
+              "additions": 78,
+              "deletions": 0,
+              "changes": 78,
+              "patch_excerpt": "@@ -0,0 +1,78 @@\n+[\n+  {\n+    \"browserName\": \"Android\",\n+    \"os_version\": \"12.0\",\n+    \"device\": \"Samsung Galaxy S22\"\n+  },\n+  {\n+    \"browserName\": \"Android\",\n+    \"os_version\": \"12.0\",\n+    \"device\": \"Samsung Galaxy S22 Ultra\"\n+  },\n+  {\n+    \"browserName\": \"Android\",\n+    \"os_version\": \"13.0\",\n+    \"device\": \"Google Pixel 7\"\n+  },\n+  {\n+    \"browserName\": \"Android\",\n+    \"os_version\": \"12.0\",\n+    \"device\": \"Google Pixel 6 Pro\"\n+  },\n+  {\n+    \"browserName\": \"Android\",\n+    \"os_version\": \"12.0\",\n+    \"device\": \"Google Pixel 6\"\n+  },\n+\n+\n+  {\n+    \"os_version\": \"16\",\n+    \"device\": \"iPhone 14\",\n+    \"browserName\": \"iPhone\"\n+  },\n+  {\n+    \"os_version\": \"16\",\n+    \"device\": \"iPhone 14 Pro Max\",\n+    \"browserName\": \"iPhone\"\n+  },\n+\n+  {\n+    \"os_version\": \"15\",\n+    \"device\": \"iPhone 13\",\n+    \"browserName\": \"iPhone\"\n+  },\n+  {\n+    \"os_version\": \"15\",\n+    \"device\": \"iPhone 13 Pro Max\",\n+    \"browserName\": \"iPhone\"\n+  },\n+\n+  {\n+    \"os_version\": \"16\",\n+    \"device\": \"iPhone 12 Mini\",\n+    \"browserName\": \"iPhone\"\n+  },\n+  {\n+    \"os_version\": \"16\",\n+    \"device\": \"iPhone 12 Pro Max\",\n+    \"browserName\": \"iPhone\"\n+  },\n+\n+\n+  {\n+    \"device\": \"iPad Pro 12.9 2021\",\n+    \"os_version"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/utils/browserStackOptions.json",
+              "status": "added",
+              "additions": 67,
+              "deletions": 0,
+              "changes": 67,
+              "patch_excerpt": "@@ -0,0 +1,67 @@\n+[\n+  {\n+    \"os\": \"windows\",\n+    \"os_version\": \"11\",\n+    \"browserName\": \"chrome\",\n+    \"browser_version\": \"latest\"\n+  },\n+  {\n+    \"os\": \"windows\",\n+    \"os_version\": \"11\",\n+    \"browserName\": \"firefox\",\n+    \"browser_version\": \"latest\"\n+  },\n+  {\n+    \"os\": \"windows\",\n+    \"os_version\": \"11\",\n+    \"browserName\": \"edge\",\n+    \"browser_version\": \"latest\"\n+  },\n+  {\n+    \"os\": \"OS X\",\n+    \"os_version\": \"Big Sur\",\n+    \"browserName\": \"chrome\",\n+    \"browser_version\": \"latest\"\n+  },\n+  {\n+    \"os\": \"OS X\",\n+    \"os_version\": \"Big Sur\",\n+    \"browserName\": \"firefox\",\n+    \"browser_version\": \"latest\"\n+  },\n+  {\n+    \"os\": \"OS X\",\n+    \"os_version\": \"Big Sur\",\n+    \"browserName\": \"safari\",\n+    \"browser_version\": \"latest\",\n+    \"localhost\": \"bs-local.com\"\n+  },\n+  {\n+    \"browserName\": \"Android\",\n+    \"os_version\": \"11.0\",\n+    \"device\": \"Samsung Galaxy S21 Ultra\",\n+    \"real_mobile\": \"true\",\n+    \"localhost\": \"bs-local.com\"\n+  },\n+  {\n+    \"browserName\": \"Android\",\n+    \"os_version\": \"12.0\",\n+    \"device\": \"Google Pixel 5\",\n+    \"real_mobile\": \"true\",\n+    \"localhost\": \"bs-local.com\"\n+  },\n+  {\n+    \"os_version\": \"16\",\n+    \"device\": \"iPhone 12 Pro Max\",\n+    \"real_m"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/utils/callExec.ts",
+              "status": "added",
+              "additions": 38,
+              "deletions": 0,
+              "changes": 38,
+              "patch_excerpt": "@@ -0,0 +1,38 @@\n+import { exec, ExecOptions } from 'child_process';\n+\n+export type StdOut = (chunk: string) => void;\n+export type StdErr = (chunk: string) => void;\n+\n+export const callExec = (cmd: string, {\n+  verbose = false,\n+  ...options\n+}: {\n+  encoding?: 'buffer' | null;\n+  verbose?: boolean;\n+} & ExecOptions = {}, stdout?: StdOut | boolean, stderr?: StdErr | boolean): Promise<void> => new Promise((resolve, reject) => {\n+  if (verbose) {\n+    console.log(`Running command: ${cmd}`);\n+  }\n+  const spawnedProcess = exec(cmd, options, (error) => {\n+    if (error) {\n+      reject(error);\n+    } else {\n+      resolve();\n+    }\n+  });\n+\n+  if (stderr === true || verbose) {\n+    spawnedProcess.stderr?.pipe(process.stderr);\n+  } else if (stderr && typeof stderr !== 'boolean') {\n+    spawnedProcess.stderr?.on('data', stderr);\n+  }\n+\n+  if (stdout === undefined || stdout === true) {\n+    spawnedProcess.stdout?.pipe(process.stdout);\n+  } else if (stdout) {\n+    spawnedProcess.stdout?.on('data', stdout);\n+  }\n+});\n+\n+export default callExec;\n+"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/utils/compile.ts",
+              "status": "added",
+              "additions": 48,
+              "deletions": 0,
+              "changes": 48,
+              "patch_excerpt": "@@ -0,0 +1,48 @@\n+import path from 'path';\n+// import ts, { ProjectReference } from 'typescript';\n+import callExec from './callExec.js';\n+import { OutputFormat } from '../prompt/types.js';\n+\n+// export function _old_compile(rootNames: string[], options: ts.CompilerOptions, projectReferences?: Array<ProjectReference>) {\n+//   let program = ts.createProgram({\n+//     rootNames, \n+//     options,\n+//     projectReferences,\n+//   });\n+//   let emitResult = program.emit();\n+\n+//   let allDiagnostics = ts\n+//     .getPreEmitDiagnostics(program)\n+//     .concat(emitResult.diagnostics);\n+\n+//   allDiagnostics.forEach(diagnostic => {\n+//     if (diagnostic.file) {\n+//       let { line, character } = ts.getLineAndCharacterOfPosition(diagnostic.file, diagnostic.start!);\n+//       let message = ts.flattenDiagnosticMessageText(diagnostic.messageText, \"\\n\");\n+//       console.log(`${diagnostic.file.fileName} (${line + 1},${character + 1}): ${message}`);\n+//     } else {\n+//       console.log(ts.flattenDiagnosticMessageText(diagnostic.messageText, \"\\n\"));\n+//     }\n+//   });\n+\n+//   return emitResult;\n+// };\n+\n+type CompileTypescriptOpts = {\n+  outDir?: string;\n+  verbose?: boolean;\n+}\n+type Comp"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/utils/constants.ts",
+              "status": "added",
+              "additions": 22,
+              "deletions": 0,
+              "changes": 22,
+              "patch_excerpt": "@@ -0,0 +1,22 @@\n+import path from 'path';\n+import { fileURLToPath } from 'url';\n+\n+const dirname = path.dirname(fileURLToPath(import.meta.url));\n+\n+export const ROOT_DIR = path.resolve(dirname, '../../../../../../');\n+export const MODELS_DIR = path.resolve(ROOT_DIR, 'models');\n+export const EXAMPLES_DIR = path.resolve(ROOT_DIR, 'examples');\n+export const TEST_DIR = path.resolve(ROOT_DIR, 'test');\n+export const FIXTURES_DIR = path.resolve(TEST_DIR, '__fixtures__');\n+\n+export const DOCS_DIR = path.resolve(ROOT_DIR, 'docs');\n+export const ASSETS_DIR = path.resolve(DOCS_DIR, 'assets/assets');\n+\n+export const TMP_DIR = path.resolve(ROOT_DIR, 'tmp');\n+export const DEV_DIR = path.resolve(ROOT_DIR, 'dev');\n+export const PACKAGES_DIR = path.resolve(ROOT_DIR, 'packages');\n+\n+export const UPSCALER_DIR = path.resolve(PACKAGES_DIR, 'upscalerjs');\n+export const CORE_DIR = path.resolve(PACKAGES_DIR, 'core');\n+export const SHARED_DIR = path.resolve(PACKAGES_DIR, 'shared');\n+export const WRAPPER_DIR = path.resolve(PACKAGES_DIR, 'upscalerjs-wrapper');"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/utils/execute.ts",
+              "status": "added",
+              "additions": 16,
+              "deletions": 0,
+              "changes": 16,
+              "patch_excerpt": "@@ -0,0 +1,16 @@\n+import { exec } from 'child_process';\n+const execute = (cmd: string, { cwd, }: { cwd?: string } = {}): Promise<void> => new Promise((resolve, reject) => {\n+  const spawnedProcess = exec(cmd, {\n+    cwd,\n+  }, (error: Error | null) => {\n+    if (error) {\n+      reject(error.message);\n+    } else {\n+      resolve();\n+    }\n+  });\n+  spawnedProcess.stderr?.pipe(process.stderr);\n+  spawnedProcess.stdout?.pipe(process.stdout);\n+})\n+export default execute;\n+"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/utils/getAllAvailableModels.ts",
+              "status": "added",
+              "additions": 111,
+              "deletions": 0,
+              "changes": 111,
+              "patch_excerpt": "@@ -0,0 +1,111 @@\n+import { readdirSync, lstatSync, readFileSync, existsSync } from 'fs-extra';\n+import path from 'path';\n+import { getPackageJSONExports, PackageJSONExport } from './getPackageJSONExports';\n+\n+const ROOT = path.resolve(__dirname, '../../../');\n+const MODELS_DIR = path.resolve(ROOT, 'models');\n+const EXCLUDED = ['dist', 'types', 'node_modules', 'docs'];\n+\n+const jsonParse = (fileName: string) => JSON.parse(readFileSync(fileName, 'utf-8'))\n+\n+export const getAllAvailableModelPackages = (includeExperimental = false): Array<string> => readdirSync(MODELS_DIR).filter(file => {\n+  const modelDir = path.resolve(MODELS_DIR, file);\n+  if (EXCLUDED.includes(file) || !lstatSync(modelDir).isDirectory()) {\n+    return false;\n+  }\n+\n+  const packageJSONPath = path.resolve(modelDir, 'package.json');\n+\n+  if (!existsSync(packageJSONPath)) {\n+    return false;\n+  }\n+\n+  if (includeExperimental === false) {\n+    const packageJSON = JSON.parse(readFileSync(packageJSONPath, 'utf-8'));\n+    const experimental = packageJSON['@upscalerjs']?.['model']?.['experimental'];\n+    return experimental !== true;\n+  }\n+\n+  return true;\n+});\n+\n+export interface AvailableModel {\n+  export: string;\n+ "
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/utils/getAllFilesRecursively.ts",
+              "status": "added",
+              "additions": 17,
+              "deletions": 0,
+              "changes": 17,
+              "patch_excerpt": "@@ -0,0 +1,17 @@\n+import path from 'path';\n+import fs from 'fs';\n+\n+type Filter = (file: string) => boolean;\n+\n+export const getAllFilesRecursively = (directory: string, filter: Filter = (_file) => true): string[] => {\n+  return fs.readdirSync(directory).map(file => path.resolve(directory, file)).reduce((arr, file) => {\n+    const stat = fs.statSync(file);\n+    if (stat?.isDirectory()) {\n+      return arr.concat(getAllFilesRecursively(file, filter));\n+    }\n+    if (filter(file)) {\n+      return arr.concat([file]);\n+    }\n+    return arr;\n+  }, [] as string[])\n+}"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/utils/getHashedName.ts",
+              "status": "added",
+              "additions": 3,
+              "deletions": 0,
+              "changes": 3,
+              "patch_excerpt": "@@ -0,0 +1,3 @@\n+import crypto from 'crypto';\n+\n+export const getHashedName = (contents: string) => crypto.createHash('md5').update(contents).digest('hex');"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/utils/getPackageJSONExports.ts",
+              "status": "added",
+              "additions": 50,
+              "deletions": 0,
+              "changes": 50,
+              "patch_excerpt": "@@ -0,0 +1,50 @@\n+import path from 'path';\n+import fs from 'fs';\n+\n+const shouldIncludeExportName = (_exportName: string) => {\n+  throw new Error('Not implemented');\n+  /*\n+  if (exportName === '.') {\n+    return false;\n+  }\n+\n+  // TODO: Rethink whether we should deselect any node or node-gpu exports.\n+  // It seems like the exports field is doing double duty.\n+  if (exportName.endsWith('node') || exportName.endsWith('node-gpu')) {\n+    return false;\n+  }\n+\n+  // return true;\n+  */\n+}\n+\n+\n+export type PackageJSONExport = string | {\n+  require: string;\n+  import: string;\n+};\n+\n+const isPackageJSONExports = (exports: unknown): exports is {\n+  [index: string]: PackageJSONExport;\n+} => {\n+  if (typeof exports !== 'object' || exports === null) {\n+    return false;\n+  };\n+  return Object.entries(exports).reduce((isValid, [_exportName, exportValue]) => {\n+    return isValid === false ? false : typeof exportValue === 'string' || (typeof exportValue === 'object' && 'require' in exportValue && 'import' in exportValue);\n+  }, true);\n+}\n+\n+export const getPackageJSONExports = (modelFolder: string): Array<[string, PackageJSONExport]> => {\n+  const packageJSONPath = path.resolve(modelFolder, 'p"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/utils/isValidVersion.ts",
+              "status": "added",
+              "additions": 23,
+              "deletions": 0,
+              "changes": 23,
+              "patch_excerpt": "@@ -0,0 +1,23 @@\n+const splitParts = (version: string) => {\n+  try {\n+    const firstPart = version.split('-')[0];\n+    return firstPart.split(\".\");\n+  } catch(err) {\n+    console.error(`Could not split version ${version}`);\n+    throw err;\n+  }\n+}\n+export default (version: string) => {\n+  const parts = splitParts(version);\n+  if (parts.length !== 3) {\n+    return false;\n+  }\n+  for (let i = 0; i < 3; i++) {\n+    try {\n+      parseInt(parts[i], 10);\n+    } catch(err) {\n+      return false;\n+    }\n+  }\n+  return true;\n+}"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/utils/packages.ts",
+              "status": "added",
+              "additions": 107,
+              "deletions": 0,
+              "changes": 107,
+              "patch_excerpt": "@@ -0,0 +1,107 @@\n+import fs from 'fs';\n+import path from 'path';\n+import findAllPackages from '../find-all-packages.js';\n+import { JSONSchemaForNPMPackageJsonFiles } from '@schemastore/package';\n+import { CORE_DIR, DEV_DIR, DOCS_DIR, EXAMPLES_DIR, MODELS_DIR, PACKAGES_DIR, ROOT_DIR, TEST_DIR, UPSCALER_DIR, WRAPPER_DIR } from './constants.js';\n+\n+interface FakeExports {\n+  [index: string]: string | FakeExports;\n+}\n+\n+export type JSONSchema = JSONSchemaForNPMPackageJsonFiles & {\n+  exports: FakeExports;\n+};\n+\n+export type Package = 'UpscalerJS' | 'Core' | 'Models' | 'Test' | 'Examples' | 'Root' | 'Wrapper' | 'Dev' | 'Packages';\n+export type TransformPackageJsonFn = (packageJSON: JSONSchema, dir: string) => JSONSchema;\n+export type PackageUpdaterLogger = (file: string) => (string | undefined);\n+\n+export const UPSCALER_JS = 'UpscalerJS';\n+export const CORE = 'Core';\n+export const ROOT = 'Root';\n+export const WRAPPER = 'Wrapper';\n+export const EXAMPLES = 'Examples';\n+export const MODELS = 'Models';\n+export const TEST = 'Test';\n+export const DEV = 'Development';\n+export const DOCS = 'Docs';\n+export const PACKAGES = 'Packages';\n+\n+export const AVAILABLE_PACKAGES = [ ROOT, UPSCALER_JS, CO"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/utils/rollup.ts",
+              "status": "added",
+              "additions": 93,
+              "deletions": 0,
+              "changes": 93,
+              "patch_excerpt": "@@ -0,0 +1,93 @@\n+import fs from 'fs';\n+import path from 'path';\n+import { OutputOptions, rollup, RollupBuild, RollupOptions } from 'rollup';\n+\n+export async function rollupBuild(inputOptions: RollupOptions, outputOptionsList: Array<OutputOptions>, dist: string) {\n+  let bundle: RollupBuild | undefined;\n+  let buildFailed = false;\n+  try {\n+    // create a bundle\n+    bundle = await rollup({\n+      ...inputOptions,\n+      onwarn: (warning) => {\n+        if (warning.code === 'MIXED_EXPORTS') {\n+          throw new Error(warning.message);\n+        } else {\n+          console.warn(warning);\n+          throw new Error(warning.message);\n+        }\n+      }\n+    });\n+\n+    // // an array of file names this bundle depends on\n+    // console.log(bundle.watchFiles);\n+\n+    await generateOutputs(bundle, outputOptionsList, dist);\n+  } catch (error) {\n+    buildFailed = true;\n+    // do some error reporting\n+    console.error(error);\n+  }\n+  if (bundle) {\n+    // closes the bundle\n+    await bundle.close();\n+  }\n+  if (buildFailed) {\n+    throw new Error('build failed');\n+  }\n+}\n+\n+async function generateOutputs(bundle: RollupBuild, outputOptionsList: Array<OutputOptions>, dist: string) {\n+  f"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/utils/runDocker.ts",
+              "status": "added",
+              "additions": 21,
+              "deletions": 0,
+              "changes": 21,
+              "patch_excerpt": "@@ -0,0 +1,21 @@\n+import callExec from \"../../../test/lib/utils/callExec\";\n+\n+interface Volume {\n+  external: string;\n+  internal: string;\n+\n+}\n+interface DockerOptions {\n+  volumes?: Volume[];\n+}\n+type RunDocker = (dockerImage: string, cmd: string, opts?: DockerOptions) => Promise<void>;\n+export const runDocker: RunDocker = (dockerImage, cmd, { volumes = [] } = {}) => {\n+  return callExec([\n+    \"docker run --rm\",\n+    ...volumes.map(({ internal, external }) => {\n+      return `-v \"${external}:${internal}\"`;\n+    }),\n+    dockerImage,\n+    cmd,\n+  ].join(' '));\n+}"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/utils/uglify.ts",
+              "status": "added",
+              "additions": 14,
+              "deletions": 0,
+              "changes": 14,
+              "patch_excerpt": "@@ -0,0 +1,14 @@\n+import fs from 'fs';\n+import path from 'path';\n+import Uglify from 'uglify-js';\n+// const Uglify = require('uglify-js');\n+\n+export const uglify = (folder: string, filename: string) => {\n+  const filenameWithoutExt = filename.split('.').slice(0, -1).join('.');\n+  const { code, map } = Uglify.minify(fs.readFileSync(path.resolve(folder, `${filenameWithoutExt}.js`), 'utf-8'), {\n+    sourceMap: true,\n+    // comments: true,\n+  });\n+  fs.writeFileSync(path.resolve(folder, `${filenameWithoutExt}.min.js`), code, 'utf-8');\n+  fs.writeFileSync(path.resolve(folder, `${filenameWithoutExt}.min.js.map`), map, 'utf-8');\n+}"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/utils/withTmpDir.ts",
+              "status": "added",
+              "additions": 40,
+              "deletions": 0,
+              "changes": 40,
+              "patch_excerpt": "@@ -0,0 +1,40 @@\n+import path from 'path';\n+import { sync as rimraf } from 'rimraf';\n+import fsExtra from 'fs-extra';\n+import { getHashedName } from './getHashedName.js';\n+import { TMP_DIR } from './constants.js';\n+const { existsSync, mkdirpSync } = fsExtra;\n+\n+export const makeTmpDir = (root = TMP_DIR): string => {\n+  const hashedName = getHashedName(`${Math.random()}`);\n+  const folder = path.resolve(root, hashedName);\n+  mkdirpSync(folder);\n+  if (!existsSync(folder)) {\n+    throw new Error(`Tmp directory ${folder} was not created`);\n+  }\n+  return folder;\n+};\n+\n+interface WithTmpDirOpts {\n+  rootDir?: string;\n+  removeTmpDir?: boolean;\n+}\n+type WithTmpDir = (callback: WithTmpDirFn, opts?: WithTmpDirOpts) => (Promise<void> | void);\n+type WithTmpDirFn = (tmp: string) => Promise<void>;\n+export const withTmpDir: WithTmpDir = async (callback, { rootDir, removeTmpDir = true } = {}) => {\n+  const tmpDir = makeTmpDir(rootDir);\n+\n+  try {\n+    await callback(tmpDir);\n+  }\n+  finally {\n+    try {\n+      if (removeTmpDir) {\n+        rimraf(tmpDir);\n+      }\n+    }\n+    catch (e) {\n+      console.error(`An error has occurred while removing the temp folder at ${tmpDir}. Please remove it man"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/validate-build.ts",
+              "status": "added",
+              "additions": 124,
+              "deletions": 0,
+              "changes": 124,
+              "patch_excerpt": "@@ -0,0 +1,124 @@\n+import path from 'path';\n+import yargs from 'yargs';\n+import fs from 'fs';\n+import { getPackageJSON, JSONSchema } from './utils/packages';\n+import { sync } from 'glob';\n+\n+const ROOT = path.resolve(__dirname, '../..');\n+\n+/****\n+ * Utility methods\n+ */\n+const getKeysOfObj = (json: JSONSchema, keys: string[]): Partial<JSONSchema> => {\n+  return keys.reduce((obj, jsonKey) => {\n+    if (json[jsonKey]) {\n+      return {\n+        ...obj,\n+        [jsonKey]: json[jsonKey],\n+      }\n+    };\n+    return obj;\n+  }, {});\n+};\n+const getObjAsArray = (obj: Partial<JSONSchema>): string[] => {\n+  return Object.values(obj).reduce((arr, file) => {\n+    if (typeof file === 'string') {\n+      return arr.concat(file);\n+    }\n+    return arr.concat(getObjAsArray(file));\n+  }, [] as string[]);\n+};\n+\n+export const extractAllFilesFromPackageJSON = (packagePath: string): string[] => {\n+  const packageJSON = getPackageJSON(packagePath);\n+  return getObjAsArray(getKeysOfObj(packageJSON, [\n+    'exports',\n+    'main',\n+    'module',\n+    'types',\n+    'umd:main',\n+  ]));\n+};\n+\n+/****\n+ * Main function\n+ */\n+\n+const validateBuild = (packageName: string, include: string[] = [], {\n+  includeFi"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/package-scripts/write-model-docs.ts",
+              "status": "added",
+              "additions": 171,
+              "deletions": 0,
+              "changes": 171,
+              "patch_excerpt": "@@ -0,0 +1,171 @@\n+import { existsSync, readdirSync, readFile, readFileSync, writeFile } from 'fs-extra';\n+import path from 'path';\n+import yargs from 'yargs';\n+import { ifDefined as _ifDefined } from './prompt/ifDefined';\n+import { AVAILABLE_MODELS, getModel } from './prompt/getModel';\n+import { SHARED_DIR, MODELS_DIR } from './utils/constants';\n+import { getPackageJSON, JSONSchema } from './utils/packages';\n+\n+/***\n+ * Types\n+ */\n+\n+interface Opts {\n+  verbose?: boolean;\n+}\n+\n+/****\n+ * Utility functions\n+ */\n+\n+const getModelFamily = (packageJSON: JSONSchema) => {\n+  return packageJSON['@upscalerjs']?.['modelFamily'];\n+};\n+\n+const getSharedDoc = async (modelFamily: string) => {\n+  const sharedDoc = path.resolve(SHARED_DIR, 'src', modelFamily, 'DOC.mdx');\n+  if (!existsSync(sharedDoc)) {\n+    throw new Error(`File does not exist: ${sharedDoc}`)\n+  }\n+  return await readFile(sharedDoc, 'utf-8');\n+};\n+\n+const getSnippets = (model: string): Record<string, string> => {\n+  const snippets: Record<string, string> = {};\n+  const docSnippetsPath = path.resolve(MODELS_DIR, model, 'doc-snippets');\n+  if (!existsSync(docSnippetsPath)) {\n+    throw new Error(`doc snippets folder does not exis"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/utils/find-similar-files.test.ts",
+              "status": "added",
+              "additions": 20,
+              "deletions": 0,
+              "changes": 20,
+              "patch_excerpt": "@@ -0,0 +1,20 @@\n+import { findSimilarFiles } from './find-similar-files';\n+\n+describe(\"findSimilarFiles\", () => {\n+  it('finds similar files', () => {\n+    expect(findSimilarFiles(['foo', 'bar', 'baz'], 'ba')).toEqual(['bar', 'baz', 'foo']);\n+  });\n+\n+  it('can limit to an n', () => {\n+    expect(findSimilarFiles(['foo', 'bar', 'baz'], 'ba', { n: 1 })).toEqual(['bar']);\n+  });\n+\n+  it('can limit to a threshold distance', () => {\n+    expect(findSimilarFiles(['foo', 'bar', 'baz', 'baaa'], 'ba', { n: 3, distance: 2, })).toEqual(['bar', 'baz']);\n+  });\n+\n+  it('sorts the files correctly', () => {\n+    expect(findSimilarFiles(['former', 'fogey', 'foo'], 'fo')).toEqual(['foo', 'fogey', 'former']);\n+  });\n+});\n+"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/utils/find-similar-files.ts",
+              "status": "added",
+              "additions": 35,
+              "deletions": 0,
+              "changes": 35,
+              "patch_excerpt": "@@ -0,0 +1,35 @@\n+import levenshtein from 'fast-levenshtein';\n+\n+/**\n+ * For a particular query (e.g., one that is misspelled), \n+ * find most similar files from an array\n+ */\n+export const findSimilarFiles = (\n+  files: string[],\n+  query: string, \n+  {\n+    n,\n+    distance: threshold,\n+  }: {\n+    n?: number, \n+    distance?: number,\n+  } = {}\n+): string[] => {\n+  const filesWithDistance = files.reduce<{ file: string; distance: number; }[]>((arr, file) => {\n+    const distance = levenshtein.get(query, file);\n+    if (threshold === undefined || distance < threshold) {\n+      return arr.concat({\n+        file,\n+        distance,\n+      });\n+    }\n+\n+    return arr;\n+  }, []);\n+\n+  const sortedFiles = filesWithDistance.sort((a, b) => {\n+    return a.distance - b.distance;\n+  });\n+\n+  return sortedFiles.slice(0, n).map(({ file }) => file);\n+};"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/utils/get-all-directories.test.ts",
+              "status": "added",
+              "additions": 44,
+              "deletions": 0,
+              "changes": 44,
+              "patch_excerpt": "@@ -0,0 +1,44 @@\n+import { vi } from 'vitest';\n+import fsExtra from \"fs-extra\";\n+import { getAllDirectories } from './get-all-directories';\n+const { readdir, stat } = fsExtra;\n+\n+vi.mock('fs-extra', () => {\n+  return {\n+    default: {\n+      readdir: vi.fn(),\n+      stat: vi.fn(),\n+    },\n+  }\n+});\n+\n+describe(\"getAllDirectories\", () => {\n+  afterEach(() => {\n+    vi.resetAllMocks();\n+  });\n+\n+  it('returns only directories', async () => {\n+    const mockReadDir = () => Promise.resolve([\n+      'foo-dir',\n+      'bar-dir',\n+      'foo-non-dir',\n+      'bar-non-dir',\n+      'baz-dir',\n+      'baz-non-dir',\n+    ]);\n+    const mockStat = (name: string) => Promise.resolve({\n+      isDirectory: () => {\n+        return name.endsWith('non-dir') === false;\n+      },\n+    });\n+\n+    vi.mocked(readdir).mockImplementation(mockReadDir as unknown as typeof readdir);\n+    vi.mocked(stat).mockImplementation(mockStat as unknown as typeof stat);\n+\n+    expect(await getAllDirectories('foo')).toEqual([\n+      'foo-dir',\n+      'bar-dir',\n+      'baz-dir',\n+    ]);\n+  });\n+});"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/utils/get-all-directories.ts",
+              "status": "added",
+              "additions": 15,
+              "deletions": 0,
+              "changes": 15,
+              "patch_excerpt": "@@ -0,0 +1,15 @@\n+import path from 'path';\n+import fsExtra from \"fs-extra\";\n+const { readdir, stat } = fsExtra;\n+\n+export const getAllDirectories = async (rootDir: string) => {\n+  const directories: string[] = [];\n+  const files = await readdir(rootDir);\n+  await Promise.all(files.map(async file => {\n+    const stats = await stat(path.resolve(rootDir, file));\n+    if (stats.isDirectory()) {\n+      directories.push(file);\n+    }\n+  }));\n+  return directories;\n+};"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/utils/get-tfjs-library-target.test.ts",
+              "status": "added",
+              "additions": 60,
+              "deletions": 0,
+              "changes": 60,
+              "patch_excerpt": "@@ -0,0 +1,60 @@\n+import { vi } from 'vitest';\n+import fsExtra from \"fs-extra\";\n+import { TFJS_LIBRARY_TARGET_ERROR, getTFJSLibraryTarget } from './get-tfjs-library-target';\n+const { readFile } = fsExtra;\n+\n+vi.mock('fs-extra', () => {\n+  return {\n+    default: {\n+      readFile: vi.fn(),\n+    },\n+  }\n+});\n+\n+describe('getTFJSLibraryTarget', () => {\n+  afterEach(() => {\n+    vi.resetAllMocks();\n+  });\n+\n+  const makeMock = (dependencies: Record<string, string>) => {\n+    vi.mocked(readFile).mockImplementation(() => Promise.resolve(Buffer.from(JSON.stringify({\n+      dependencies,\n+    }))));\n+  }\n+\n+  it('loads the correct package json from the right directory', async () => {\n+    makeMock({\n+      '@tensorflow/tfjs': '1.0.0',\n+    });\n+    expect(readFile).toHaveBeenCalledTimes(0);\n+    expect(await getTFJSLibraryTarget('foo')).toBe('browser');\n+    expect(readFile).toHaveBeenCalledWith(expect.stringContaining('foo/package.json'), expect.anything());\n+  });\n+\n+  it('returns browser for @tensorflow/tfjs', async () => {\n+    makeMock({\n+      '@tensorflow/tfjs': '1.0.0',\n+    });\n+    expect(await getTFJSLibraryTarget('foo')).toBe('browser');\n+  });\n+\n+  it('returns node for @tensor"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/utils/get-tfjs-library-target.ts",
+              "status": "added",
+              "additions": 22,
+              "deletions": 0,
+              "changes": 22,
+              "patch_excerpt": "@@ -0,0 +1,22 @@\n+import path from 'path';\n+import fsExtra from \"fs-extra\";\n+const { readFile } = fsExtra;\n+\n+type TFJSLibraryTarget = 'browser' | 'node' | 'node-gpu';\n+\n+export const TFJS_LIBRARY_TARGET_ERROR = (dir: string) => new Error(`Could not determine valid TFJS dependency in directory ${dir}`);\n+\n+export const getTFJSLibraryTarget = async (dir: string): Promise<TFJSLibraryTarget> => {\n+  const packageJSON = JSON.parse(await readFile(path.resolve(dir, 'package.json'), 'utf8'));\n+  const deps = Object.keys(packageJSON.dependencies);\n+  if (deps.includes('@tensorflow/tfjs')) {\n+    return 'browser';\n+  } else if (deps.includes('@tensorflow/tfjs-node')) {\n+    return 'node';\n+  } else if (deps.includes('@tensorflow/tfjs-node-gpu')) {\n+    return 'node-gpu';\n+  }\n+\n+  throw TFJS_LIBRARY_TARGET_ERROR(dir);\n+};\n+"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/utils/pluralize.test.ts",
+              "status": "added",
+              "additions": 23,
+              "deletions": 0,
+              "changes": 23,
+              "patch_excerpt": "@@ -0,0 +1,23 @@\n+import { DEFAULT_SEPARATOR, EMPTY_ITEMS_ERROR, pluralize } from \"./pluralize\";\n+\n+describe(\"pluralize\", () => {\n+  it('throws if given no items', () => {\n+    expect(() => pluralize([])).toThrow(EMPTY_ITEMS_ERROR);\n+  });\n+\n+  it('returns a single item', () => {\n+    expect(pluralize(['foo'])).toEqual('foo');\n+  });\n+\n+  it('returns two items with a separator', () => {\n+    expect(pluralize(['foo', 'bar'])).toEqual(`foo ${DEFAULT_SEPARATOR} bar`);\n+  });\n+\n+  it('returns three items with commas and a separator', () => {\n+    expect(pluralize(['foo', 'bar', 'baz'])).toEqual(`foo, bar, ${DEFAULT_SEPARATOR} baz`);\n+  });\n+\n+  it('accepts a custom separator', () => {\n+    expect(pluralize(['foo', 'bar', 'baz'], 'and')).toEqual('foo, bar, and baz');\n+  });\n+});"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/utils/pluralize.ts",
+              "status": "added",
+              "additions": 13,
+              "deletions": 0,
+              "changes": 13,
+              "patch_excerpt": "@@ -0,0 +1,13 @@\n+export const EMPTY_ITEMS_ERROR = new Error('Must provide at least one item to pluralize')\n+export const DEFAULT_SEPARATOR = 'or';\n+export const pluralize = (items: string[], separator = DEFAULT_SEPARATOR): string => {\n+  if (items.length === 0) {\n+    throw EMPTY_ITEMS_ERROR;\n+  }\n+  if (items.length <= 2) {\n+    return items.join(` ${separator} `);\n+  }\n+\n+  return `${items.slice(0, -1).join(', ')}, ${separator} ${items[items.length - 1]}`;\n+};\n+"
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/utils/run-npm-command.test.ts",
+              "status": "added",
+              "additions": 50,
+              "deletions": 0,
+              "changes": 50,
+              "patch_excerpt": "@@ -0,0 +1,50 @@\n+import { vi } from 'vitest';\n+import { spawn } from 'child_process';\n+import { runNPMCommand } from \"./run-npm-command\";\n+\n+vi.mock('child_process', () => {\n+  return {\n+    spawn: vi.fn(),\n+  }\n+});\n+\n+describe('run-npm-command', () => {\n+  afterEach(() => {\n+    vi.resetAllMocks();\n+  });\n+\n+  it('if the command throws an error, it should reject', async () => {\n+    const error = 'huzzah';\n+    vi.mocked(spawn).mockImplementation(() => ({\n+      on: (event: string, callback: (...args: unknown[]) => unknown) => {\n+        if (event === 'error') {\n+          callback(error);\n+        }\n+      },\n+    }));\n+    await expect(() => runNPMCommand([], 'foo')).rejects.toThrow(error);\n+  });\n+\n+  it('if the command exits with a non-0 exit code, it should reject with that code', async () => {\n+    const code = 1;\n+    vi.mocked(spawn).mockImplementation(() => ({\n+      on: (event: string, callback: (...args: unknown[]) => unknown) => {\n+        if (event === 'close') {\n+          callback(`${code}`); // skipcq: JS-0255\n+        }\n+      },\n+    }));\n+    await expect(() => runNPMCommand([], 'foo')).rejects.toThrow(`${code}`);\n+  });\n+\n+  it('if the command exits with a 0 "
+            },
+            {
+              "filename": "internals/upscaler-cli/src/lib/utils/run-npm-command.ts",
+              "status": "added",
+              "additions": 19,
+              "deletions": 0,
+              "changes": 19,
+              "patch_excerpt": "@@ -0,0 +1,19 @@\n+import { spawn } from 'child_process';\n+\n+export const runNPMCommand = (command: string[], cwd: string) => new Promise<void>((resolve, reject) => {\n+  const child = spawn(\"npm\", command, {\n+    shell: true,\n+    cwd,\n+    stdio: \"inherit\"\n+  });\n+\n+  child.on('error', reject);\n+\n+  child.on('close', code => {\n+    if (code === 0) {\n+      resolve();\n+    } else {\n+      reject(code);\n+    }\n+  });\n+});"
+            },
+            {
+              "filename": "internals/upscaler-cli/tsconfig.json",
+              "status": "added",
+              "additions": 16,
+              "deletions": 0,
+              "changes": 16,
+              "patch_excerpt": "@@ -0,0 +1,16 @@\n+{\n+  \"compilerOptions\": {\n+    \"target\": \"ESNext\",\n+    \"strict\": true,\n+    \"esModuleInterop\": true,\n+    \"module\": \"ESNext\",\n+    \"moduleResolution\": \"node\",\n+    \"skipLibCheck\": true,\n+    \"resolveJsonModule\": true,\n+    \"forceConsistentCasingInFileNames\": true,\n+    \"types\": [\"vitest/globals\"]\n+  },\n+  \"ts-node\": {\n+    \"esm\": true\n+  }\n+}"
+            },
+            {
+              "filename": "internals/upscaler-cli/vite.config.ts",
+              "status": "added",
+              "additions": 8,
+              "deletions": 0,
+              "changes": 8,
+              "patch_excerpt": "@@ -0,0 +1,8 @@\n+// vite.config.ts\n+import { defineConfig } from 'vitest/config'\n+\n+export default defineConfig({\n+  test: {\n+    globals: true,\n+  },\n+})"
+            },
+            {
+              "filename": "package.json",
+              "status": "modified",
+              "additions": 1,
+              "deletions": 0,
+              "changes": 1,
+              "patch_excerpt": "@@ -103,6 +103,7 @@\n     \"inquirer\": \"9.2.10\",\n     \"jest\": \"29.6.2\",\n     \"jest-canvas-mock\": \"2.5.2\",\n+    \"@internals/upscaler-cli\": \"workspace:*\",\n     \"jsdom\": \"22.1.0\",\n     \"mocha\": \"10.2.0\",\n     \"pixelmatch\": \"5.3.0\","
+            },
+            {
+              "filename": "pnpm-lock.yaml",
+              "status": "modified",
+              "additions": 298,
+              "deletions": 313,
+              "changes": 611,
+              "patch_excerpt": "@@ -35,6 +35,9 @@ importers:\n       '@babel/preset-typescript':\n         specifier: 7.22.5\n         version: 7.22.5(@babel/core@7.22.10)\n+      '@internals/upscaler-cli':\n+        specifier: workspace:*\n+        version: link:internals/upscaler-cli\n       '@rollup/plugin-commonjs':\n         specifier: 25.0.4\n         version: 25.0.4(rollup@3.28.0)\n@@ -272,7 +275,7 @@ importers:\n         version: link:../../packages/upscalerjs\n       vite:\n         specifier: ^4.4.9\n-        version: 4.4.9(@types/node@20.4.9)\n+        version: 4.4.9(@types/node@20.5.0)\n \n   dev/node:\n     dependencies:\n@@ -287,7 +290,7 @@ importers:\n         version: 3.0.5\n       ts-node:\n         specifier: ^10.9.1\n-        version: 10.9.1(@types/node@20.4.9)(typescript@5.1.6)\n+        version: 10.9.1(@types/node@20.5.0)(typescript@5.1.6)\n       upscaler:\n         specifier: workspace:*\n         version: link:../../packages/upscalerjs\n@@ -531,6 +534,40 @@ importers:\n         specifier: ^3.5.0\n         version: 3.5.0\n \n+  internals/upscaler-cli:\n+    dependencies:\n+      '@types/commander':\n+        specifier: ^2.12.2\n+        version: 2.12.2\n+      '@types/fast-levenshtein':\n+        specifier: ^0.0.2\n+        vers"
+            },
+            {
+              "filename": "pnpm-workspace.yaml",
+              "status": "modified",
+              "additions": 1,
+              "deletions": 0,
+              "changes": 1,
+              "patch_excerpt": "@@ -1,6 +1,7 @@\n packages:\n   - 'dev/**'\n   - 'packages/**'\n+  - 'internals/**'\n   - 'models/**'\n   - 'scripts/**'\n   - 'docs/**'"
+            }
+          ]
+        },
+        {
+          "sha": "d1a8339cb91e",
+          "message_title": "Remove rimraf as a top level dependency (#1109)",
+          "message_full": "Remove rimraf as a top level dependency (#1109)",
+          "author": "Kevin Scott",
+          "date": "2023-08-20T21:16:57Z",
+          "files_changed": [
+            "package.json",
+            "pnpm-lock.yaml"
+          ],
+          "additions": 4,
+          "deletions": 17,
+          "file_summaries": [
+            {
+              "filename": "package.json",
+              "status": "modified",
+              "additions": 0,
+              "deletions": 3,
+              "changes": 3,
+              "patch_excerpt": "@@ -156,8 +156,5 @@\n       \"@tensorflow/tfjs-node\": \"4.8.0\",\n       \"@tensorflow/tfjs-node-gpu\": \"4.8.0\"\n     }\n-  },\n-  \"dependencies\": {\n-    \"rimraf\": \"^5.0.1\"\n   }\n }"
+            },
+            {
+              "filename": "pnpm-lock.yaml",
+              "status": "modified",
+              "additions": 4,
+              "deletions": 14,
+              "changes": 18,
+              "patch_excerpt": "@@ -12,10 +12,6 @@ overrides:\n importers:\n \n   .:\n-    dependencies:\n-      rimraf:\n-        specifier: ^5.0.1\n-        version: 5.0.1\n     devDependencies:\n       '@babel/cli':\n         specifier: 7.22.10\n@@ -188,6 +184,9 @@ importers:\n       puppeteer:\n         specifier: ^21.0.3\n         version: 21.0.3\n+      rimraf:\n+        specifier: 5.0.1\n+        version: 5.0.1\n       rollup:\n         specifier: 3.28.0\n         version: 3.28.0\n@@ -5148,7 +5147,6 @@ packages:\n       strip-ansi-cjs: /strip-ansi@6.0.1\n       wrap-ansi: 8.1.0\n       wrap-ansi-cjs: /wrap-ansi@7.0.0\n-    dev: false\n \n   /@istanbuljs/load-nyc-config@1.1.0:\n     resolution: {integrity: sha512-VjeHSlIzpv/NyD3N0YuHfXOPDIixcA1q2ZV98wsMqcYlPmv2n3Yb2lYP9XMElnaFVXg5A7YLTeLu6V84uQDjmQ==}\n@@ -5568,7 +5566,6 @@ packages:\n     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}\n     engines: {node: '>=14'}\n     requiresBuild: true\n-    dev: false\n     optional: true\n \n   /@polka/url@0.5.0:\n@@ -10398,7 +10395,6 @@ packages:\n     dependencies:\n       cross-spawn: 7.0.3\n       signal-exit: 4.1.0\n-    dev: false\n \n   /fork-ts-checker-webpack-plugin@6.5.2(eslin"
+            }
+          ]
+        },
+        {
+          "sha": "7af9bce66a36",
+          "message_title": "Investigate failing browserstack (#1111)",
+          "message_full": "Investigate failing browserstack (#1111)\n\nPin `selenium-webdriver` to no greater than `4.4.0`",
+          "author": "Kevin Scott",
+          "date": "2023-08-21T16:04:41Z",
+          "files_changed": [
+            "docs/package.json",
+            "docs/workers/image-search/package.json",
+            "docs/workers/shared/package.json",
+            "docs/workers/upscale/package.json",
+            "internals/upscaler-cli/package.json",
+            "models/package.json",
+            "package.json",
+            "pnpm-lock.yaml",
+            "scripts/package.json"
+          ],
+          "additions": 787,
+          "deletions": 2177,
+          "file_summaries": [
+            {
+              "filename": "docs/package.json",
+              "status": "modified",
+              "additions": 2,
+              "deletions": 2,
+              "changes": 4,
+              "patch_excerpt": "@@ -69,10 +69,10 @@\n     \"docusaurus-plugin-sass\": \"^0.2.5\",\n     \"docusaurus-plugin-typedoc\": \"^0.19.2\",\n     \"esbuild\": \"^0.19.2\",\n-    \"esbuild-loader\": \"^4.0.0\",\n+    \"esbuild-loader\": \"^4.0.1\",\n     \"nodemon\": \"^3.0.1\",\n     \"prop-types\": \"^15.8.1\",\n-    \"sass\": \"^1.65.1\",\n+    \"sass\": \"^1.66.1\",\n     \"sass-loader\": \"^13.3.2\",\n     \"typedoc\": \"^0.24.8\",\n     \"typedoc-plugin-markdown\": \"^3.15.4\","
+            },
+            {
+              "filename": "docs/workers/image-search/package.json",
+              "status": "modified",
+              "additions": 1,
+              "deletions": 1,
+              "changes": 2,
+              "patch_excerpt": "@@ -5,7 +5,7 @@\n     \"@cloudflare/workers-types\": \"^4.20230814.0\",\n     \"@upscalerjs/workers.shared\": \"workspace:*\",\n     \"typescript\": \"^5.1.6\",\n-    \"wrangler\": \"^3.5.0\"\n+    \"wrangler\": \"^3.5.1\"\n   },\n   \"private\": true,\n   \"scripts\": {"
+            },
+            {
+              "filename": "docs/workers/shared/package.json",
+              "status": "modified",
+              "additions": 1,
+              "deletions": 1,
+              "changes": 2,
+              "patch_excerpt": "@@ -5,7 +5,7 @@\n   \"devDependencies\": {\n     \"@cloudflare/workers-types\": \"^4.20230814.0\",\n     \"typescript\": \"^5.1.6\",\n-    \"wrangler\": \"^3.5.0\"\n+    \"wrangler\": \"^3.5.1\"\n   },\n   \"private\": true\n }"
+            },
+            {
+              "filename": "docs/workers/upscale/package.json",
+              "status": "modified",
+              "additions": 4,
+              "deletions": 4,
+              "changes": 8,
+              "patch_excerpt": "@@ -4,13 +4,13 @@\n   \"version\": \"1.0.0-beta.10\",\n   \"devDependencies\": {\n     \"@cloudflare/workers-types\": \"^4.20230814.0\",\n-    \"@types/node\": \"^20.5.0\",\n+    \"@types/node\": \"^20.5.1\",\n     \"@upscalerjs/default-model\": \"workspace:*\",\n     \"@upscalerjs/workers.shared\": \"workspace:*\",\n     \"seedrandom\": \"3.0.5\",\n     \"typescript\": \"^5.1.6\",\n     \"upscaler\": \"workspace:*\",\n-    \"wrangler\": \"^3.5.0\"\n+    \"wrangler\": \"^3.5.1\"\n   },\n   \"private\": true,\n   \"scripts\": {\n@@ -20,9 +20,9 @@\n   },\n   \"dependencies\": {\n     \"@tensorflow/tfjs\": \"~4.8.0\",\n-    \"aws-sdk\": \"^2.1436.0\",\n+    \"aws-sdk\": \"^2.1440.0\",\n     \"jpeg-js\": \"^0.4.4\",\n     \"mock-aws-s3\": \"^4.0.2\",\n-    \"nock\": \"^13.3.2\"\n+    \"nock\": \"^13.3.3\"\n   }\n }"
+            },
+            {
+              "filename": "internals/upscaler-cli/package.json",
+              "status": "modified",
+              "additions": 2,
+              "deletions": 2,
+              "changes": 4,
+              "patch_excerpt": "@@ -19,9 +19,9 @@\n     \"tsc-alias\": \"^1.8.7\"\n   },\n   \"devDependencies\": {\n-    \"@types/node\": \"^16.18.40\",\n+    \"@types/node\": \"^20.5.1\",\n     \"@types/uglify-js\": \"^3.17.1\",\n-    \"vitest\": \"^0.34.1\"\n+    \"vitest\": \"^0.34.2\"\n   },\n   \"scripts\": {\n     \"test\": \"vitest\""
+            },
+            {
+              "filename": "models/package.json",
+              "status": "modified",
+              "additions": 1,
+              "deletions": 1,
+              "changes": 2,
+              "patch_excerpt": "@@ -8,7 +8,7 @@\n   \"devDependencies\": {\n     \"@types/fs-extra\": \"^11.0.1\",\n     \"@types/mkdirp\": \"^2.0.0\",\n-    \"@types/node\": \"^20.5.0\",\n+    \"@types/node\": \"^20.5.1\",\n     \"@types/uglify-js\": \"^3.17.1\",\n     \"fs-extra\": \"^11.1.1\",\n     \"mkdirp\": \"^3.0.1\","
+            },
+            {
+              "filename": "package.json",
+              "status": "modified",
+              "additions": 8,
+              "deletions": 8,
+              "changes": 16,
+              "patch_excerpt": "@@ -60,8 +60,9 @@\n     \"@babel/plugin-transform-modules-commonjs\": \"7.22.5\",\n     \"@babel/preset-env\": \"7.22.10\",\n     \"@babel/preset-typescript\": \"7.22.5\",\n+    \"@internals/upscaler-cli\": \"workspace:*\",\n     \"@rollup/plugin-commonjs\": \"25.0.4\",\n-    \"@rollup/plugin-node-resolve\": \"15.1.0\",\n+    \"@rollup/plugin-node-resolve\": \"15.2.0\",\n     \"@schemastore/package\": \"0.0.10\",\n     \"@tensorflow/tfjs\": \"4.8.0\",\n     \"@tensorflow/tfjs-node\": \"4.8.0\",\n@@ -74,7 +75,7 @@\n     \"@types/jest\": \"29.5.3\",\n     \"@types/jsdom\": \"21.1.1\",\n     \"@types/mocha\": \"10.0.1\",\n-    \"@types/node\": \"20.5.0\",\n+    \"@types/node\": \"20.5.1\",\n     \"@types/pixelmatch\": \"5.2.4\",\n     \"@types/pngjs\": \"6.0.1\",\n     \"@types/selenium-webdriver\": \"4.1.15\",\n@@ -94,27 +95,26 @@\n     \"esbuild\": \"0.19.2\",\n     \"eslint\": \"8.47.0\",\n     \"eslint-config-prettier\": \"9.0.0\",\n-    \"eslint-plugin-jsdoc\": \"46.4.6\",\n+    \"eslint-plugin-jsdoc\": \"46.5.0\",\n     \"eslint-plugin-prefer-arrow\": \"1.2.3\",\n     \"fast-folder-size\": \"2.2.0\",\n     \"fs-extra\": \"11.1.1\",\n     \"heapdump\": \"0.3.15\",\n     \"html-webpack-plugin\": \"5.5.3\",\n     \"inquirer\": \"9.2.10\",\n-    \"jest\": \"29.6.2\",\n+    \"jest\": \"29.6.3\",\n     \"jest-canvas-mock\": \"2.5.2\",\n-    \"@i"
+            },
+            {
+              "filename": "pnpm-lock.yaml",
+              "status": "modified",
+              "additions": 767,
+              "deletions": 2157,
+              "changes": 2924,
+              "patch_excerpt": ""
+            },
+            {
+              "filename": "scripts/package.json",
+              "status": "modified",
+              "additions": 1,
+              "deletions": 1,
+              "changes": 2,
+              "patch_excerpt": "@@ -60,7 +60,7 @@\n     \"crimson-progressbar\": \"^1.3.0\",\n     \"image-size\": \"^1.0.2\",\n     \"inquirer\": \"^8.2.4\",\n-    \"sharp\": \"^0.32.4\",\n+    \"sharp\": \"^0.32.5\",\n     \"yargs\": \"^17.7.2\"\n   }\n }"
+            }
+          ]
+        }
+      ],
+      "n_follow_up_commits": 5,
+      "branch_found": true,
+      "repo_accessible": true,
+      "api_error": ""
+    }
+  },
+  {
+    "case_label": "Lissy93/wapalyzer — Merge pull request #1 from wappalyzer/master",
+    "intake": {
+      "run_id": "Lissy93/wapalyzer_.github/workflows/node.js.yml_1_1",
+      "repo": "Lissy93/wapalyzer",
+      "workflow": "node.js.yml",
+      "branch": "main",
+      "event": "push",
+      "is_protected_branch": true,
+      "commit_sha": "ea776288e31d",
+      "commit_title": "Merge pull request #1 from wappalyzer/master",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 3,
+      "n_jobs": 3,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 3,
+      "strategies": [
+        "error_marker",
+        "error_marker",
+        "error_marker"
+      ],
+      "total_lines_extracted": 468,
+      "error_markers_found": 3,
+      "sample_error_lines": [
+        "##[error]The operation was canceled.",
+        "##[error]Process completed with exit code 1."
+      ],
+      "mentioned_files": [
+        {
+          "path": "package-lock.json",
+          "line": null,
+          "column": null,
+          "context": "npm ERR! `npm ci` can only install packages when your package.json and package-lock.json or npm-shrinkwrap.json are in sync. Please update your lock file with `npm install` before "
+        },
+        {
+          "path": "package.json",
+          "line": null,
+          "column": null,
+          "context": "npm ERR! `npm ci` can only install packages when your package.json and package-lock.json or npm-shrinkwrap.json are in sync. Please update your lock file with `npm install` before "
+        }
+      ]
+    },
+    "classification": {
+      "category": "DEPENDENCY_CONFLICT",
+      "severity": "CRITICAL",
+      "confidence": 0.95,
+      "action": "FIX_CODE",
+      "reasoning": "The logs show 'npm ERR! Missing: ... from lock file' for many packages, indicating that the lockfile is out of sync with package.json after a merge. The commit is a merge from wappalyzer/master, which likely updated dependencies without updating the lockfile. This is a dependency conflict because the lockfile does not match package.json. The branch is protected (main), so severity is CRITICAL. The action is FIX_CODE because the lockfile needs to be regenerated to match the updated package.json.",
+      "evidence": [
+        "LOG EVIDENCE: npm ERR! Missing: ... from lock file",
+        "COMMIT: Merge pull request #1 from wappalyzer/master",
+        "MENTIONED FILES: package-lock.json, package.json"
+      ],
+      "unknowns": [],
+      "mentioned_files": [
+        {
+          "path": "package-lock.json",
+          "line": null,
+          "column": null,
+          "context": "npm ERR! `npm ci` can only install packages when your package.json and package-lock.json or npm-shrinkwrap.json are in sync. Please update your lock file with `npm install` before "
+        },
+        {
+          "path": "package.json",
+          "line": null,
+          "column": null,
+          "context": "npm ERR! `npm ci` can only install packages when your package.json and package-lock.json or npm-shrinkwrap.json are in sync. Please update your lock file with `npm install` before "
+        }
+      ],
+      "fix_suggestion": {
+        "file": "package-lock.json",
+        "change": "Regenerate package-lock.json by running `npm install` to sync with the updated package.json after the merge.",
+        "reason": "The logs show 'npm ERR! Missing: ... from lock file' for many packages, indicating the lockfile is out of sync with package.json. The commit is a merge from wappalyzer/master, which likely updated dependencies. The fix is to regenerate the lockfile so it matches package.json."
+      }
+    },
+    "ground_truth": {
+      "developer_action": "CODE_CHANGE",
+      "method": "llm",
+      "reasoning": "The follow-up commits modify src/technologies/p.json, which is part of the source code. The first commit updates a CMS entry, and the second adds an 'additional trace'. These changes are not clearly reverting, pinning versions, fixing CI config, or retrying; they appear to be ongoing development work that may or may not address the failure. Since the failure was a job-level fallback with 3 failed jobs, and the changes are in source code, they are classified as CODE_CHANGE.",
+      "signals": {
+        "has_revert": false,
+        "has_pin": false,
+        "has_fix": false,
+        "has_retry": false,
+        "changed_workflow": false,
+        "changed_dependencies": false,
+        "changed_config": false,
+        "changed_source_code": true,
+        "commits_within_7_days": 5
+      },
+      "follow_up_commits": [
+        {
+          "sha": "cfcc1db55df0",
+          "message_title": "Update Prepr / cms",
+          "message_full": "Update Prepr / cms",
+          "author": "nurbek",
+          "date": "2023-07-18T18:51:23Z",
+          "files_changed": [
+            "src/technologies/p.json"
+          ],
+          "additions": 1,
+          "deletions": 0,
+          "file_summaries": [
+            {
+              "filename": "src/technologies/p.json",
+              "status": "modified",
+              "additions": 1,
+              "deletions": 0,
+              "changes": 1,
+              "patch_excerpt": "@@ -2648,6 +2648,7 @@\n     ],\n     \"requiresCategory\": 12,\n     \"saas\": true,\n+    \"scriptSrc\": \"\\\\.prepr\\\\.io/\",\n     \"website\": \"https://prepr.io\"\n   },\n   \"Press Customizr\": {"
+            }
+          ]
+        },
+        {
+          "sha": "ca348754b60a",
+          "message_title": "additional trace",
+          "message_full": "additional trace",
+          "author": "nurbek",
+          "date": "2023-07-18T18:54:13Z",
+          "files_changed": [
+            "src/technologies/p.json"
+          ],
+          "additions": 3,
+          "deletions": 0,
+          "file_summaries": [
+            {
+              "filename": "src/technologies/p.json",
+              "status": "modified",
+              "additions": 3,
+              "deletions": 0,
+              "changes": 3,
+              "patch_excerpt": "@@ -3076,6 +3076,9 @@\n     ],\n     \"description\": \"PRONOTE is an information system created by Index Education, a French company, designed for deployment in approximately 7,400 schools to enable streamlined communication among administrative personnel, teachers, and families.\",\n     \"icon\": \"PRONOTE.png\",\n+    \"meta\": {\n+      \"application-name\": \"^PRONOTE$\"\n+    },\n     \"headers\": {\n       \"Server\": \"^PRONOTE\\\\s[\\\\d]{4}\\\\s-\\\\s([\\\\d\\\\.]+)\\\\;version:\\\\1\"\n     },"
+            }
+          ]
+        },
+        {
+          "sha": "5580148f78af",
+          "message_title": "Update Plesk / hosting-panels",
+          "message_full": "Update Plesk / hosting-panels",
+          "author": "nurbek",
+          "date": "2023-07-18T19:12:51Z",
+          "files_changed": [
+            "src/drivers/webextension/images/icons/Pleroma.svg",
+            "src/drivers/webextension/images/icons/Plesk.png",
+            "src/drivers/webextension/images/icons/Plesk.svg",
+            "src/technologies/p.json"
+          ],
+          "additions": 29,
+          "deletions": 25,
+          "file_summaries": [
+            {
+              "filename": "src/drivers/webextension/images/icons/Pleroma.svg",
+              "status": "modified",
+              "additions": 13,
+              "deletions": 23,
+              "changes": 36,
+              "patch_excerpt": "@@ -1,23 +1,13 @@\n-<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n-<!-- Created with Inkscape (http://www.inkscape.org/) -->\n-<svg xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:cc=\"http://creativecommons.org/ns#\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:svg=\"http://www.w3.org/2000/svg\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:sodipodi=\"http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd\" xmlns:inkscape=\"http://www.inkscape.org/namespaces/inkscape\" version=\"1.1\" id=\"svg4485\" width=\"209.00002\" height=\"334\" viewBox=\"0 0 209.00002 334\" sodipodi:docname=\"pleroma_logo_vector_nobg_nopad.svg\" inkscape:version=\"0.92.1 r15371\">\n-  <metadata id=\"metadata4491\">\n-    <rdf:RDF>\n-      <cc:Work rdf:about=\"\">\n-        <dc:format>image/svg+xml</dc:format>\n-        <dc:type rdf:resource=\"http://purl.org/dc/dcmitype/StillImage\"/>\n-        <dc:title/>\n-      </cc:Work>\n-    </rdf:RDF>\n-  </metadata>\n-  <defs id=\"defs4489\"/>\n-  <sodipodi:namedview pagecolor=\"#ffffff\" bordercolor=\"#666666\" borderopacity=\"1\" objecttolerance=\"10\" gridtolerance=\"10\" guidetolerance=\"10\" inkscape:pageopacity=\"0\" inkscape:pageshadow=\"2\" inkscape:window-width=\"2560\" inkscape:window-height=\"1387\""
+            },
+            {
+              "filename": "src/drivers/webextension/images/icons/Plesk.png",
+              "status": "removed",
+              "additions": 0,
+              "deletions": 0,
+              "changes": 0,
+              "patch_excerpt": ""
+            },
+            {
+              "filename": "src/drivers/webextension/images/icons/Plesk.svg",
+              "status": "added",
+              "additions": 4,
+              "deletions": 0,
+              "changes": 4,
+              "patch_excerpt": "@@ -0,0 +1,4 @@\n+<svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n+<path d=\"M10.7 6.99999C3 13.1 9.8 25.1 19 21.8C22.8 20.5 25.4 15.9 24.5 11.9C23.7 8.29999 19.6 4.99999 16 4.99999C14.5 4.99999 12.1 5.89999 10.7 6.99999ZM20.9 9.59999C23.6 13.1 23.5 15.5 20.5 18.5C17.7 21.4 15 21.7 12.2 19.2C9 16.6 8.5 12.9 11 9.69999C13.9 6.09999 18.1 6.09999 20.9 9.59999Z\" fill=\"black\"/>\n+<path d=\"M9.50001 26C9.10001 26.6 11.5 27 16 27C20.5 27 22.9 26.6 22.5 26C21.7 24.7 10.3 24.7 9.50001 26Z\" fill=\"#BD0101\"/>\n+</svg>"
+            },
+            {
+              "filename": "src/technologies/p.json",
+              "status": "modified",
+              "additions": 12,
+              "deletions": 2,
+              "changes": 14,
+              "patch_excerpt": "@@ -2026,9 +2026,19 @@\n       \"X-Powered-By\": \"^Plesk(?:L|W)in\",\n       \"X-Powered-By-Plesk\": \"^Plesk\"\n     },\n-    \"icon\": \"Plesk.png\",\n+    \"icon\": \"Plesk.svg\",\n+    \"meta\": {\n+      \"plesk-build\": \"\"\n+    },\n+    \"js\": {\n+      \"Plesk.Form\": \"\"\n+    },\n     \"scriptSrc\": \"common\\\\.js\\\\?plesk\",\n-    \"website\": \"https://www.plesk.com/\"\n+    \"pricing\": [\n+      \"low\",\n+      \"recurring\"\n+    ],\n+    \"website\": \"https://www.plesk.com\"\n   },\n   \"Pligg\": {\n     \"cats\": ["
+            }
+          ]
+        },
+        {
+          "sha": "a5e17c022ff7",
+          "message_title": "Add BigCommerce B2B Edition / ecommerce",
+          "message_full": "Add BigCommerce B2B Edition / ecommerce",
+          "author": "nurbek",
+          "date": "2023-07-18T20:39:01Z",
+          "files_changed": [
+            "src/drivers/webextension/images/icons/BigCommerce B2B Edition.svg",
+            "src/technologies/b.json"
+          ],
+          "additions": 24,
+          "deletions": 0,
+          "file_summaries": [
+            {
+              "filename": "src/drivers/webextension/images/icons/BigCommerce B2B Edition.svg",
+              "status": "added",
+              "additions": 4,
+              "deletions": 0,
+              "changes": 4,
+              "patch_excerpt": "@@ -0,0 +1,4 @@\n+<svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n+<path d=\"M22.2945 15.9296C22.2945 16.3868 22.2593 16.8088 22.2242 17.2659C22.0835 18.4967 21.6967 19.622 21.1692 20.6769C20.7473 21.4857 20.2549 22.2593 19.622 22.9626C19.3407 23.2791 19.0242 23.5956 18.6725 23.9121C16.8088 25.5648 14.3473 26.5846 11.6396 26.5846C8.93187 26.5846 6.5055 25.5648 4.60659 23.9121C4.57143 23.8769 4.5011 23.8417 4.46593 23.8066C4.18462 23.5604 3.9033 23.2791 3.65715 22.9978C3.3055 22.611 2.98901 22.189 2.70769 21.767C1.86374 20.4659 1.3011 18.9538 1.09011 17.3011C1.05495 16.8088 1.05495 16.3868 1.05495 15.9296V7.94723C1.05495 7.20876 1.65275 6.61096 2.39121 6.61096C3.12967 6.61096 3.72747 7.20876 3.72747 7.94723V15.9296C3.72747 16.3868 3.76264 16.8439 3.83297 17.2659C3.97363 18.0395 4.18462 18.778 4.53627 19.4461C4.95824 20.2901 5.48572 21.0285 6.15385 21.6615C7.59561 23.0329 9.52967 23.8769 11.6747 23.8769C14.8044 23.8769 17.5121 22.0835 18.8132 19.4813C19.1648 18.778 19.411 18.0395 19.5517 17.2307C19.622 16.8088 19.6571 16.3516 19.6571 15.8945C19.6571 15.156 20.2549 14.5582 20.9934 14.5582C21.6967 14.5934 22.2945 15.1912 22.2945 15.9296Z\" f"
+            },
+            {
+              "filename": "src/technologies/b.json",
+              "status": "modified",
+              "additions": 20,
+              "deletions": 0,
+              "changes": 20,
+              "patch_excerpt": "@@ -658,6 +658,26 @@\n     \"url\": \"mybigcommerce\\\\.com\",\n     \"website\": \"https://www.bigcommerce.com\"\n   },\n+  \"BigCommerce B2B Edition\": {\n+    \"cats\": [\n+      6\n+    ],\n+    \"description\": \"BigCommerce B2B Edition is a specialised version of the BigCommerce ecommerce platform tailored for B2B companies, offering features such as custom pricing, catalogues, bulk ordering, quote requests, multi-user accounts, PO processing, and advanced reporting.\",\n+    \"icon\": \"BigCommerce B2B Edition.svg\",\n+    \"requires\": \"BigCommerce\",\n+    \"excludes\": \"BigCommerce\",\n+    \"js\": {\n+      \"bundleB2BFeatureFlags\": \"\",\n+      \"bundleb2b.text.tpa\": \"\"\n+    },\n+    \"pricing\": [\n+      \"mid\",\n+      \"recurring\"\n+    ],\n+    \"saas\": true,\n+    \"scriptSrc\": \"cdn\\\\.bundleb2b\\\\.net/\",\n+    \"website\": \"https://www.bundleb2b.com\"\n+  },\n   \"BigDataCloud IP Geolocation\": {\n     \"cats\": [\n       79"
+            }
+          ]
+        },
+        {
+          "sha": "6894e7ff75bd",
+          "message_title": "Add LeadChat / crm",
+          "message_full": "Add LeadChat / crm",
+          "author": "nurbek",
+          "date": "2023-07-18T21:33:52Z",
+          "files_changed": [
+            "src/drivers/webextension/images/icons/LeadChat.svg",
+            "src/technologies/l.json"
+          ],
+          "additions": 19,
+          "deletions": 0,
+          "file_summaries": [
+            {
+              "filename": "src/drivers/webextension/images/icons/LeadChat.svg",
+              "status": "added",
+              "additions": 4,
+              "deletions": 0,
+              "changes": 4,
+              "patch_excerpt": "@@ -0,0 +1,4 @@\n+<svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n+<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M29.98 4.97998C28.58 5.57998 27.54 6.01998 26.84 6.29998C26.76 6.33998 26.68 6.39998 26.62 6.47998C24.66 9.01998 23.2 10.94 22.24 12.2C22.2 12.24 22.16 12.28 22.12 12.3C22.08 12.32 22.04 12.32 21.98 12.32C20.02 12.12 18.54 11.96 17.56 11.86C17.14 11.82 16.84 11.78 16.64 11.74C16.58 11.74 16.52 11.74 16.48 11.76C16.44 11.78 16.4 11.8 16.36 11.84L11.44 15.66C11.36 15.72 11.26 15.76 11.18 15.76C10.18 15.74 8.68 15.72 6.68 15.7C6.24 15.7 5.82 15.68 5.44 15.66C5.38 15.66 5.3 15.68 5.26 15.7C5.22 15.72 5.18 15.76 5.12 15.8C4.62 16.24 3.36 17.36 1.34 19.12C1.34 19.12 1.32 19.14 1.3 19.16C1.28 19.18 1.26 19.2 1.24 19.2C1.22 19.16 1.2 19.12 1.2 19.08C1.2 19.02 1.2 18.98 1.2 18.96C1.2 17.88 1.2 16.28 1.22 14.16C1.22 12.28 1.22 10.68 1.2 9.37998C1.2 8.81998 1.3 8.31998 1.52 7.87998C1.74 7.43998 2.08 7.05998 2.52 6.71998C3.32 6.11998 4.28 5.73998 5.4 5.57998C5.96 5.49998 7.32 5.29998 9.48 4.99998L22.06 3.21998C23.9 2.95998 25 2.81998 25.3 2.75998C25.38 2.73998 25.48 2.73998 25.64 2.71998C25.78 2.69998 25.88 2.67998 25.98 2.65998C25.9"
+            },
+            {
+              "filename": "src/technologies/l.json",
+              "status": "modified",
+              "additions": 15,
+              "deletions": 0,
+              "changes": 15,
+              "patch_excerpt": "@@ -331,6 +331,21 @@\n     \"scriptSrc\": \"ls\\\\.unveilhooks(?:\\\\.min)?\\\\.js\",\n     \"website\": \"https://github.com/aFarkas/lazysizes/tree/gh-pages/plugins/unveilhooks\"\n   },\n+  \"LeadChat\": {\n+    \"cats\": [\n+      53\n+    ],\n+    \"description\": \"LeadChat offers live-operators and CRM solutions that utilise LiveChat chat software to facilitate real-time engagement with website visitors for businesses.\",\n+    \"icon\": \"LeadChat.svg\",\n+    \"requires\": \"LiveChat\",\n+    \"scriptSrc\": \"(?://|\\\\.)chatsystem\\\\.io/\",\n+    \"pricing\": [\n+      \"recurring\",\n+      \"payg\",\n+      \"poa\"\n+    ],\n+    \"website\": \"https://www.leadchat.com\"\n+  },\n   \"Leadfeeder\": {\n     \"cats\": [\n       10"
+            }
+          ]
+        }
+      ],
+      "n_follow_up_commits": 5,
+      "branch_found": true,
+      "repo_accessible": true,
+      "api_error": ""
+    }
+  },
+  {
+    "case_label": "ibm/zshot — Improve/documentation (#67)",
+    "intake": {
+      "run_id": "ibm/zshot_.github/workflows/publish-pages-doc.yml_75_1",
+      "repo": "ibm/zshot",
+      "workflow": "publish-pages-doc.yml",
+      "branch": "main",
+      "event": "push",
+      "is_protected_branch": true,
+      "commit_sha": "c081a77a99ad",
+      "commit_title": "Improve/documentation (#67)",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 1,
+      "n_jobs": 1,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 1,
+      "strategies": [
+        "error_marker"
+      ],
+      "total_lines_extracted": 156,
+      "error_markers_found": 1,
+      "sample_error_lines": [
+        "##[error]Process completed with exit code 1."
+      ],
+      "mentioned_files": [
+        {
+          "path": "zshot/utils/displacy/templates.py",
+          "line": 31,
+          "column": null,
+          "context": "File \"zshot/utils/displacy/templates.py\", line 31, in"
+        },
+        {
+          "path": "pyproject.toml",
+          "line": null,
+          "column": null,
+          "context": "Building wheel for mkdocs-markdownextradata-plugin (pyproject.toml): finished with status 'done'"
+        }
+      ]
+    },
+    "classification": {
+      "category": "CODE_REGRESSION",
+      "severity": "CRITICAL",
+      "confidence": 0.95,
+      "action": "FIX_CODE",
+      "reasoning": "The commit added documentation for a 'Relations extractor' but the mkdocs build failed because the module 'zshot.relations_extractor.RelationsExtractorZSRC' could not be found, indicating the code references a class that does not exist or is not properly exported. The error is a build failure in a protected branch (main) with a release workflow, making it critical. The log shows the failure is due to a missing Python class, not a configuration or dependency issue.",
+      "evidence": [
+        "commit message",
+        "branch",
+        "protected flag",
+        "log error: 'Could not collect zshot.relations_extractor.RelationsExtractorZSRC'"
+      ],
+      "unknowns": [],
+      "mentioned_files": [
+        {
+          "path": "zshot/utils/displacy/templates.py",
+          "line": 31,
+          "column": null,
+          "context": "File \"zshot/utils/displacy/templates.py\", line 31, in"
+        },
+        {
+          "path": "pyproject.toml",
+          "line": null,
+          "column": null,
+          "context": "Building wheel for mkdocs-markdownextradata-plugin (pyproject.toml): finished with status 'done'"
+        }
+      ],
+      "fix_suggestion": {
+        "file": "(unclear)",
+        "change": "Inspect the failing step output and apply the suggested change in the specific file named by the logs or manifest family once confirmed.",
+        "reason": "The evidence supports the remediation direction, but not the exact repository file that was suggested."
+      }
+    },
+    "ground_truth": {
+      "developer_action": "CODE_FIX",
+      "method": "rubric",
+      "reasoning": "Developer fixed source code. Files: requirements/test.txt, zshot/utils/data_models/relation_span.py, zshot/tests/linker/test_blinker_linker.py, zshot/utils/data_models/relation.py, zshot/tests/README.md, zshot/utils/file_utils.py, zshot/tests/config.py, mkdocs.yml, zshot/tests/relations_extractor/test_zsrc_relations_extractor.py, zshot/mentions_extractor/mentions_extractor_flair.py",
+      "signals": {
+        "has_revert": false,
+        "has_pin": false,
+        "has_fix": true,
+        "has_retry": false,
+        "changed_workflow": false,
+        "changed_dependencies": true,
+        "changed_config": false,
+        "changed_source_code": true,
+        "commits_within_7_days": 3
+      },
+      "follow_up_commits": [
+        {
+          "sha": "f8208170cb55",
+          "message_title": ":memo: Fixed docs names in relations extraction",
+          "message_full": ":memo: Fixed docs names in relations extraction\n\nSigned-off-by: Marcos Martinez <Marcos.Martinez.Galindo@ibm.com>",
+          "author": "Marcos Martinez",
+          "date": "2023-09-05T12:14:59Z",
+          "files_changed": [
+            "docs/zsbert_relations_extractor.md"
+          ],
+          "additions": 1,
+          "deletions": 1,
+          "file_summaries": [
+            {
+              "filename": "docs/zsbert_relations_extractor.md",
+              "status": "modified",
+              "additions": 1,
+              "deletions": 1,
+              "changes": 2,
+              "patch_excerpt": "@@ -7,4 +7,4 @@ This `RelationsExtractor` uses relations pre-defined along with their descriptio\n - [Paper](https://arxiv.org/abs/2104.04697)\n - [Original Repo](https://github.com/dinobby/ZS-BERT)\n \n-::: zshot.relations_extractor.RelationsExtractorZSRC\n\\ No newline at end of file\n+::: zshot.relation_extractor.RelationsExtractorZSRC\n\\ No newline at end of file"
+            }
+          ]
+        },
+        {
+          "sha": "76823da0740e",
+          "message_title": ":memo: Updated docs",
+          "message_full": ":memo: Updated docs\n\nSigned-off-by: Marcos Martinez <Marcos.Martinez.Galindo@ibm.com>",
+          "author": "Marcos Martinez",
+          "date": "2023-09-05T13:17:03Z",
+          "files_changed": [
+            "mkdocs.yml"
+          ],
+          "additions": 1,
+          "deletions": 1,
+          "file_summaries": [
+            {
+              "filename": "mkdocs.yml",
+              "status": "modified",
+              "additions": 1,
+              "deletions": 1,
+              "changes": 2,
+              "patch_excerpt": "@@ -22,7 +22,7 @@ nav:\n     - smxm_linker.md\n     - tars_linker.md\n   - Relations Extractor:\n-      - relations_extractor.md\n+      - relation_extractor.md\n       - zsbert_relations_extractor.md\n   - Knowledge Extractor:\n       - knowledge_extractor.md"
+            }
+          ]
+        },
+        {
+          "sha": "f98a878f70ab",
+          "message_title": ":white_check_mark: Improve coverage (#68)",
+          "message_full": ":white_check_mark: Improve coverage (#68)\n\n* :white_check_mark: Updated tests\r\n\r\nSigned-off-by: Marcos Martinez <Marcos.Martinez.Galindo@ibm.com>\r\n\r\n* :white_check_mark: Updated tests\r\n\r\nSigned-off-by: Marcos Martinez <Marcos.Martinez.Galindo@ibm.com>\r\n\r\n* :white_check_mark: Updated tests\r\n\r\nSigned-off-by: Marcos Martinez <Marcos.Martinez.Galindo@ibm.com>\r\n\r\n* :white_check_mark: Updated tests\r\n\r\nSigned-off-by: Marcos Martinez <Marcos.Martinez.Galindo@ibm.com>\r\n\r\n* :white_check_mark: Updated tests\r\n\r\nSigned-off-by: Marcos Martinez <Marcos.Martinez.Galindo@ibm.com>\r\n\r\n* :white_check_mark: Updated tests\r\n\r\nSigned-off-by: Marcos Martinez <Marcos.Martinez.Galindo@ibm.com>\r\n\r\n* :white_check_mark: Updated tests\r\n\r\nSigned-off-by: Marcos Martinez <Marcos.Martinez.Galindo@ibm.com>\r\n\r\n* :white_check_mark: Updated tests\r\n\r\nSigned-off-by: Marcos Martinez <Marcos.Martinez.Galindo@ibm.com>\r\n\r\n* :white_check_mark: Updated tests\r\n\r\nSigned-off-by: Marcos Martinez <Marcos.Martinez.Galindo@ibm.com>\r\n\r\n---------\r\n\r\nSigned-off-by: Marcos Martinez <Marcos.Martinez.Galindo@ibm.com>",
+          "author": "Marcos Martinez",
+          "date": "2023-09-06T11:15:48Z",
+          "files_changed": [
+            "zshot/tests/config.py",
+            "zshot/tests/linker/test_blinker_linker.py",
+            "zshot/tests/relations_extractor/test_zsrc_relations_extractor.py",
+            "zshot/tests/utils/test_data_models.py",
+            "zshot/utils/data_models/relation.py",
+            "zshot/utils/data_models/relation_span.py",
+            "zshot/utils/data_models/span.py",
+            "zshot/utils/file_utils.py"
+          ],
+          "additions": 259,
+          "deletions": 59,
+          "file_summaries": [
+            {
+              "filename": "zshot/tests/config.py",
+              "status": "modified",
+              "additions": 0,
+              "deletions": 1,
+              "changes": 1,
+              "patch_excerpt": "@@ -56,7 +56,6 @@\n                             'start': 45}]],\n     'labels': ['crosses', 'crosses']}\n \n-\n TEXT_CUBESAT = \"The Italian Space Agency’s Light Italian CubeSat for Imaging of Asteroids, or LICIACube, will fly by Dimorphos to capture images and video of the impact plume as it sprays up off the asteroid and maybe even spy the crater it could leave behind.\"\n TEXT_ACETAMIDE = \"CH2O2 is a chemical compound similar to Acetamide used in International Business Machines Corporation (IBM).\"\n TEXTS = [TEXT_CUBESAT, TEXT_ACETAMIDE]"
+            },
+            {
+              "filename": "zshot/tests/linker/test_blinker_linker.py",
+              "status": "added",
+              "additions": 74,
+              "deletions": 0,
+              "changes": 74,
+              "patch_excerpt": "@@ -0,0 +1,74 @@\n+import gc\n+import logging\n+import pkgutil\n+\n+import pytest\n+import spacy\n+\n+from zshot import PipelineConfig, Linker\n+from zshot.linker import LinkerBlink\n+from zshot.tests.config import EX_DOCS, EX_ENTITIES\n+\n+logger = logging.getLogger(__name__)\n+\n+\n+@pytest.fixture(scope=\"module\", autouse=True)\n+def teardown():\n+    logger.warning(\"Starting blink tests\")\n+    yield True\n+    gc.collect()\n+\n+\n+@pytest.mark.skipif(not pkgutil.find_loader(\"blink\"), reason=\"BLINK is not installed\")\n+def test_blink():\n+    linker = LinkerBlink()\n+    with pytest.raises(Exception):\n+        assert len(linker.entities_list) > 1\n+    with pytest.raises(Exception):\n+        assert len(linker.local_id2wikipedia_id) > 1\n+    with pytest.raises(Exception):\n+        assert linker.local_name2wikipedia_url('IBM').startswith(\"https://en.wikipedia.org/wiki\")\n+\n+\n+@pytest.mark.skip(reason=\"Too expensive to run on every commit\")\n+def test_blink_download():\n+    linker = LinkerBlink()\n+    linker.load_models()\n+    assert isinstance(linker, Linker)\n+    del linker.tokenizer, linker.model, linker\n+\n+\n+@pytest.mark.skip(reason=\"Too expensive to run on every commit\")\n+def test_blink_linker():\n+    nl"
+            },
+            {
+              "filename": "zshot/tests/relations_extractor/test_zsrc_relations_extractor.py",
+              "status": "modified",
+              "additions": 15,
+              "deletions": 7,
+              "changes": 22,
+              "patch_excerpt": "@@ -1,21 +1,29 @@\n+from typing import Iterator\n+\n import spacy\n+from spacy.tokens import Doc\n \n-from zshot import PipelineConfig\n+from zshot import PipelineConfig, Linker\n from zshot.relation_extractor import RelationsExtractorZSRC\n-from zshot.tests.config import EX_DOCS, EX_ENTITIES, EX_RELATIONS\n-from zshot.tests.linker.test_linker import DummyLinkerEnd2End\n+from zshot.tests.config import EX_RELATIONS, EX_DATASET_RELATIONS, EX_DOCS\n+from zshot.utils.data_models import Span\n+\n+\n+class DummyLinkerEnd2End(Linker):\n+    def predict(self, docs: Iterator[Doc], batch_size=None):\n+        return [[Span(187, 165, label='label', score=0.9),\n+                 Span(111, 129, label='label', score=0.9)] for doc in docs]\n \n \n def test_zsrc_with_entities_config_dummy_annotator():\n     nlp = spacy.blank(\"en\")\n     config_zshot = PipelineConfig(\n         linker=DummyLinkerEnd2End(),\n         relations_extractor=RelationsExtractorZSRC(),\n-        entities=EX_ENTITIES,\n         relations=EX_RELATIONS,\n     )\n     nlp.add_pipe(\"zshot\", config=config_zshot, last=True)\n-    assert \"zshot\" in nlp.pipe_names\n-    doc = nlp(EX_DOCS[0])\n-    assert len(doc.ents) >= 0\n+    doc = nlp(EX_DOCS[1])\n     assert "
+            },
+            {
+              "filename": "zshot/tests/utils/test_data_models.py",
+              "status": "added",
+              "additions": 139,
+              "deletions": 0,
+              "changes": 139,
+              "patch_excerpt": "@@ -0,0 +1,139 @@\n+import pytest\n+import spacy\n+\n+from zshot.tests.config import EX_DATASET_RELATIONS\n+from zshot.utils.data_models import Entity, Relation, Span\n+from zshot.utils.data_models.relation_span import RelationSpan\n+\n+\n+def test_span():\n+    # Full\n+    s = Span(start=0, end=10, label='E', score=1, kb_id='e1')\n+    assert type(s) is Span\n+    assert s.start == 0\n+    assert s.end == 10\n+    assert s.label == 'E'\n+    assert s.score == 1\n+    assert s.kb_id == 'e1'\n+\n+    # No score/KB Id\n+    s = Span(start=165, end=187, label='Q5034838')\n+    assert type(s) is Span\n+    assert s.start == 165\n+    assert s.end == 187\n+    assert s.label == 'Q5034838'\n+\n+    # Check hash\n+    assert hash(s) == 10737688\n+\n+    # Check repr\n+    assert repr(s) == f\"{s.label}, {s.start}, {s.end}, {s.score}\"\n+\n+    # From Dict\n+    with pytest.raises(ValueError):\n+        s1 = Span.from_dict({})\n+    with pytest.raises(ValueError):\n+        s1 = Span.from_dict({'start': 0})\n+    with pytest.raises(ValueError):\n+        s1 = Span.from_dict({'start': 0, 'end': 0})\n+\n+    s1 = Span.from_dict(EX_DATASET_RELATIONS['sentence_entities'][0][0])\n+    assert type(s1) is Span\n+    assert s1.start == 165"
+            },
+            {
+              "filename": "zshot/utils/data_models/relation.py",
+              "status": "modified",
+              "additions": 3,
+              "deletions": 1,
+              "changes": 4,
+              "patch_excerpt": "@@ -1,5 +1,6 @@\n from typing import Optional\n \n+import zlib\n from pydantic import BaseModel\n \n \n@@ -8,4 +9,5 @@ class Relation(BaseModel):\n     description: Optional[str]\n \n     def __hash__(self):\n-        return hash(self.__repr__())\n+        self_repr = f\"{self.__class__.__name__}.{str(self.__dict__)}\"\n+        return zlib.crc32(self_repr.encode())"
+            },
+            {
+              "filename": "zshot/utils/data_models/relation_span.py",
+              "status": "modified",
+              "additions": 10,
+              "deletions": 3,
+              "changes": 13,
+              "patch_excerpt": "@@ -6,7 +6,15 @@\n \n \n class RelationSpan:\n-    def __init__(self, start: Span, end: Span, relation: Relation = None, score: float = None, kb_id: str = None):\n+    def __init__(self, start: Span, end: Span, relation: Relation, score: float = None, kb_id: str = None):\n+        \"\"\" Create a RelationSpan that relates two entities\n+\n+        :param start: Entity acting as subject in the relation\n+        :param end: Entity acting as object in the relation\n+        :param relation: Relation\n+        :param score: Score of the relation classification\n+        :param kb_id: ID of the Relation in a KB\n+        \"\"\"\n         self.start = start\n         self.end = end\n         self.relation = relation\n@@ -23,5 +31,4 @@ def __eq__(self, other):\n         return (type(other) is type(self)\n                 and self.start == other.start\n                 and self.end == other.end\n-                and self.relation == other.relation\n-                and self.score == other.score)\n+                and self.relation == other.relation)"
+            },
+            {
+              "filename": "zshot/utils/data_models/span.py",
+              "status": "modified",
+              "additions": 18,
+              "deletions": 1,
+              "changes": 19,
+              "patch_excerpt": "@@ -1,4 +1,4 @@\n-from typing import Any\n+from typing import Any, Dict\n \n import zlib\n \n@@ -50,3 +50,20 @@ def to_spacy_span(self, doc: Doc) -> spacy.tokens.Span:\n     def from_spacy_span(spacy_span: spacy.tokens.Span, score=None) -> \"Span\":\n         return Span(spacy_span.start_char, spacy_span.end_char, spacy_span.label_, score=score,\n                     kb_id=str(spacy_span.kb_id))\n+\n+    @staticmethod\n+    def from_dict(d: Dict[str, Any]) -> \"Span\":\n+        start = d.get('start', None) if 'start' in d else d.get('start_char', None)\n+        end = d.get('end', None) if 'end' in d else d.get('end_char', None)\n+        label = d.get('label', None)\n+        score = d.get('score', None)\n+        kb_id = d.get('kb_id', None)\n+        if not start:\n+            raise ValueError('One of [start, start_char] must be defined in dict.')\n+        if not end:\n+            raise ValueError('One of [end, end_char] must be defined in dict.')\n+        if not label:\n+            raise ValueError('Label must be defined in dict.')\n+\n+        return Span(start, end, label=label, score=score,\n+                    kb_id=str(kb_id))"
+            },
+            {
+              "filename": "zshot/utils/file_utils.py",
+              "status": "modified",
+              "additions": 0,
+              "deletions": 46,
+              "changes": 46,
+              "patch_excerpt": "@@ -3,17 +3,11 @@\n import os\n import pathlib\n import shutil\n-from typing import List\n from urllib.request import urlopen\n \n import requests\n-from spacy.tokens import Doc\n from tqdm.auto import tqdm\n \n-from spacy.util import filter_spans as spacy_filter_spans\n-\n-from zshot.utils.data_models import Span\n-\n \n def download_file(url, output_dir=\".\") -> pathlib.Path:\n     \"\"\"\n@@ -35,43 +29,3 @@ def download_file(url, output_dir=\".\") -> pathlib.Path:\n             with path.open(\"wb\") as output:\n                 shutil.copyfileobj(raw, output)\n     return path\n-\n-\n-def filter_extended_spans(spans: List[Span], doc: Doc = None) -> List[Span]:\n-    \"\"\" If a token belongs to more than one entity, will return only the one with the higher confidence.\n-\n-    :param spans: List of spans to filter\n-    :param doc: The Spacy Document\n-    :return: List of spans without overlap\n-    \"\"\"\n-    spacy_spans = [span.to_spacy_span(doc) for span in spans]\n-    spans = [Span.from_spacy_span(spacy_span, score=span.score) for spacy_span, span in zip(spacy_spans, spans)]\n-    if not all([s.score for s in spans]):\n-        spans = spacy_filter_spans(spacy_spans)\n-        spans = [Span.from_spacy_span(span) for s"
+            }
+          ]
+        },
+        {
+          "sha": "08f47f35df4d",
+          "message_title": ":arrow_up: Update torch requirements (#71)",
+          "message_full": ":arrow_up: Update torch requirements (#71)\n\nSigned-off-by: Marcos Martinez <Marcos.Martinez.Galindo@ibm.com>",
+          "author": "Marcos Martinez",
+          "date": "2023-10-04T14:15:27Z",
+          "files_changed": [
+            "setup.py"
+          ],
+          "additions": 1,
+          "deletions": 1,
+          "file_summaries": [
+            {
+              "filename": "setup.py",
+              "status": "modified",
+              "additions": 1,
+              "deletions": 1,
+              "changes": 2,
+              "patch_excerpt": "@@ -24,7 +24,7 @@\n           \"tqdm>=4.62.3\",\n           \"setuptools>=65.5.1\",  # Needed to install dynamic packages from source (e.g. Blink)\n           \"prettytable>=3.4\",\n-          \"torch>=1,<2\",\n+          \"torch>=1\",\n           \"transformers>=4.20\",\n           \"datasets>=2.9.1\",\n           \"evaluate>=0.3.0\","
+            }
+          ]
+        },
+        {
+          "sha": "cf8fa81c47ed",
+          "message_title": ":white_check_mark: :memo: Updated flair version",
+          "message_full": ":white_check_mark: :memo: Updated flair version",
+          "author": "Marcos Martinez",
+          "date": "2023-10-31T11:29:09Z",
+          "files_changed": [
+            "requirements/test.txt",
+            "zshot/linker/linker_tars.py",
+            "zshot/mentions_extractor/mentions_extractor_flair.py",
+            "zshot/mentions_extractor/mentions_extractor_tars.py",
+            "zshot/tests/README.md"
+          ],
+          "additions": 4,
+          "deletions": 263,
+          "file_summaries": [
+            {
+              "filename": "requirements/test.txt",
+              "status": "modified",
+              "additions": 1,
+              "deletions": 1,
+              "changes": 2,
+              "patch_excerpt": "@@ -1,7 +1,7 @@\n pytest>=7.0\n pytest-cov>=3.0.0\n setuptools>=65.5.1\n-flair>=0.11.3\n+flair>=0.13\n flake8>=4.0.1\n coverage>=6.4.1\n pydantic==1.9.2"
+            },
+            {
+              "filename": "zshot/linker/linker_tars.py",
+              "status": "modified",
+              "additions": 1,
+              "deletions": 1,
+              "changes": 2,
+              "patch_excerpt": "@@ -23,7 +23,7 @@ def __init__(self, default_entities: Optional[str] = \"conll-short\"):\n         super().__init__()\n         if not pkgutil.find_loader(\"flair\"):\n             raise Exception(\"Flair module not installed. You need to install Flair for using this class.\"\n-                            \"Install it with: pip install flair==0.11\")\n+                            \"Install it with: pip install flair>pip install =0.13\")\n \n         self.is_end2end = True\n         self.default_entities = default_entities"
+            },
+            {
+              "filename": "zshot/mentions_extractor/mentions_extractor_flair.py",
+              "status": "modified",
+              "additions": 1,
+              "deletions": 1,
+              "changes": 2,
+              "patch_excerpt": "@@ -22,7 +22,7 @@ def __init__(self, extractor_type: Optional[ExtractorType] = ExtractorType.NER):\n         \"\"\"\n         if not pkgutil.find_loader(\"flair\"):\n             raise Exception(\"Flair module not installed. You need to install Flair for using this class.\"\n-                            \"Install it with: pip install flair==0.11\")\n+                            \"Install it with: pip install flair>=0.13\")\n \n         super(MentionsExtractorFlair, self).__init__()\n "
+            },
+            {
+              "filename": "zshot/mentions_extractor/mentions_extractor_tars.py",
+              "status": "modified",
+              "additions": 1,
+              "deletions": 1,
+              "changes": 2,
+              "patch_excerpt": "@@ -23,7 +23,7 @@ def __init__(self, default_entities: Optional[str] = \"conll-short\"):\n         super().__init__()\n         if not pkgutil.find_loader(\"flair\"):\n             raise Exception(\"Flair module not installed. You need to install Flair for using this class.\"\n-                            \"Install it with: pip install flair==0.11\")\n+                            \"Install it with: pip install flair>=0.13\")\n \n         self.is_end2end = True\n         self.default_entities = default_entities"
+            },
+            {
+              "filename": "zshot/tests/README.md",
+              "status": "removed",
+              "additions": 0,
+              "deletions": 259,
+              "changes": 259,
+              "patch_excerpt": "@@ -1,259 +0,0 @@\n-<div align=\"center\">\n-  \n-  <img height=\"170x\" src=\"https://ibm.github.io/zshot/img/graph.png\" />\n-  \n-  <h1>Zshot</h1>\n-\n-  <p>\n-    <strong>Zero and Few shot named entity & relationships recognition</strong>\n-  </p>\n-\n-  <p>    \n-    \n-<a href=\"https://ibm.github.io/zshot/\"><img alt=\"Tutorials\" src=\"https://img.shields.io/badge/docs-tutorials-green\" /></a>\n-<a href=\"https://pypi.org/project/zshot/\"><img src=\"https://img.shields.io/pypi/v/zshot\" /></a>\n-<a href=\"https://pypi.org/project/zshot/\"><img src=\"https://img.shields.io/pypi/dm/zshot\" /></a>\n-<a href=\"https://github.com/IBM/zshot/actions/workflows/python-tests.yml\"> <img alt=\"Build\" src=\"https://github.com/IBM/zshot/actions/workflows/python-tests.yml/badge.svg\" /></a>\n-<a href=\"https://app.codecov.io/github/ibm/zshot\"> <img alt=\"Build\" src=\"https://codecov.io/github/ibm/zshot/branch/main/graph/badge.svg\" /></a>\n-\n-  </p>\n-</div>\n-\n-**Documentation**: <a href=\"https://ibm.github.io/zshot/\" target=\"_blank\">https://ibm.github.io/zshot</a>\n-\n-**Source Code**: <a href=\"https://github.com/IBM/zshot\" target=\"_blank\">https://github.com/IBM/zshot</a>\n-\n-**Paper**: <a href=\"https://aclanthology.org/2023.acl-demo.34"
+            }
+          ]
+        }
+      ],
+      "n_follow_up_commits": 5,
+      "branch_found": true,
+      "repo_accessible": true,
+      "api_error": ""
+    }
+  }
+]

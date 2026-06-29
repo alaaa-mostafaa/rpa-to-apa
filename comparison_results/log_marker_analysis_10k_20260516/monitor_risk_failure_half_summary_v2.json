@@ -1,0 +1,70 @@
+{
+  "n_cases": 5000,
+  "n_cases_scored": 5000,
+  "n_cases_skipped": 0,
+  "n_errors_reading": 0,
+  "n_timeouts": 0,
+  "triage_threshold": 0.75,
+  "lines_per_chunk": 10,
+  "actual": {
+    "failure": 5000,
+    "success": 0
+  },
+  "marker_breakdown": {
+    "failure": {
+      "with_marker": 4648,
+      "without_marker": 352,
+      "triggered_with_marker": 4648,
+      "triggered_before_marker": 594,
+      "triggered_at_or_after_marker": 4054
+    },
+    "success": {
+      "with_marker": 0,
+      "without_marker": 0,
+      "triggered_with_marker": 0,
+      "triggered_before_marker": 0,
+      "triggered_at_or_after_marker": 0
+    }
+  },
+  "predicted_early": {
+    "failure": 4688,
+    "success": 312
+  },
+  "confusion_matrix": {
+    "tp": 4688,
+    "fp": 0,
+    "tn": 0,
+    "fn": 312
+  },
+  "metrics": {
+    "accuracy": 0.9376,
+    "accuracy_scored": 0.9376,
+    "precision": 1.0,
+    "recall": 0.9376,
+    "f1": 0.9678
+  },
+  "trigger": {
+    "count": 4688,
+    "pct_of_all": 93.76,
+    "trigger_line_stats": {
+      "avg": 5344.5,
+      "median": 945.5
+    },
+    "trigger_pct_of_log": {
+      "avg": 30.64,
+      "median": 24.64,
+      "p90": 66.14,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "before_first_error_marker": {
+    "eligible_cases": 4648,
+    "triggered_before": 594,
+    "pct": 12.78
+  },
+  "missed_failures": {
+    "count": 312,
+    "with_error_marker": 0
+  }
+}

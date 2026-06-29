@@ -1,0 +1,1055 @@
+{
+  "_id": "rack/rack_.github/workflows/test.yaml_461_1",
+  "repository_name": "rack/rack",
+  "workflow_path": ".github/workflows/test.yaml",
+  "run_number": 461,
+  "run_attempt": 1,
+  "time_to_import": 23547.625489,
+  "metadata": {
+    "id": 6704740332,
+    "name": "Test",
+    "node_id": "WFR_kwLOAAF3R88AAAABj6I37A",
+    "head_branch": "main",
+    "head_sha": "958ed518cda851546c4d26ff9fd4db6255bd4021",
+    "path": ".github/workflows/test.yaml",
+    "display_title": "Support for the `Partitioned` cookie attribute (#2131)",
+    "run_number": 461,
+    "event": "push",
+    "status": "completed",
+    "conclusion": "failure",
+    "workflow_id": 33317898,
+    "check_suite_id": 17776998701,
+    "check_suite_node_id": "CS_kwDOAAF3R88AAAAEI5d5LQ",
+    "url": "https://api.github.com/repos/rack/rack/actions/runs/6704740332",
+    "html_url": "https://github.com/rack/rack/actions/runs/6704740332",
+    "pull_requests": [],
+    "created_at": "2023-10-31T09:46:30Z",
+    "updated_at": "2023-10-31T09:51:50Z",
+    "actor": {
+      "login": "ioquatix",
+      "id": 30030,
+      "node_id": "MDQ6VXNlcjMwMDMw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/30030?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ioquatix",
+      "html_url": "https://github.com/ioquatix",
+      "followers_url": "https://api.github.com/users/ioquatix/followers",
+      "following_url": "https://api.github.com/users/ioquatix/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ioquatix/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ioquatix/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ioquatix/subscriptions",
+      "organizations_url": "https://api.github.com/users/ioquatix/orgs",
+      "repos_url": "https://api.github.com/users/ioquatix/repos",
+      "events_url": "https://api.github.com/users/ioquatix/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ioquatix/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "run_attempt": 1,
+    "referenced_workflows": [],
+    "run_started_at": "2023-10-31T09:46:30Z",
+    "triggering_actor": {
+      "login": "ioquatix",
+      "id": 30030,
+      "node_id": "MDQ6VXNlcjMwMDMw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/30030?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ioquatix",
+      "html_url": "https://github.com/ioquatix",
+      "followers_url": "https://api.github.com/users/ioquatix/followers",
+      "following_url": "https://api.github.com/users/ioquatix/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ioquatix/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ioquatix/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ioquatix/subscriptions",
+      "organizations_url": "https://api.github.com/users/ioquatix/orgs",
+      "repos_url": "https://api.github.com/users/ioquatix/repos",
+      "events_url": "https://api.github.com/users/ioquatix/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ioquatix/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "jobs_url": "https://api.github.com/repos/rack/rack/actions/runs/6704740332/jobs",
+    "logs_url": "https://api.github.com/repos/rack/rack/actions/runs/6704740332/logs",
+    "check_suite_url": "https://api.github.com/repos/rack/rack/check-suites/17776998701",
+    "artifacts_url": "https://api.github.com/repos/rack/rack/actions/runs/6704740332/artifacts",
+    "cancel_url": "https://api.github.com/repos/rack/rack/actions/runs/6704740332/cancel",
+    "rerun_url": "https://api.github.com/repos/rack/rack/actions/runs/6704740332/rerun",
+    "previous_attempt_url": null,
+    "workflow_url": "https://api.github.com/repos/rack/rack/actions/workflows/33317898",
+    "head_commit": {
+      "id": "958ed518cda851546c4d26ff9fd4db6255bd4021",
+      "tree_id": "89186d0dcc63bff079e79e5b8fa606135cb4bfe7",
+      "message": "Support for the `Partitioned` cookie attribute (#2131)",
+      "timestamp": "2023-10-31T09:46:27Z",
+      "author": {
+        "name": "flavio-b",
+        "email": "flaviobombonatti@gmail.com"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com"
+      }
+    },
+    "repository": {
+      "id": 96071,
+      "node_id": "MDEwOlJlcG9zaXRvcnk5NjA3MQ==",
+      "name": "rack",
+      "full_name": "rack/rack",
+      "private": false,
+      "owner": {
+        "login": "rack",
+        "id": 42379,
+        "node_id": "MDEyOk9yZ2FuaXphdGlvbjQyMzc5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/42379?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/rack",
+        "html_url": "https://github.com/rack",
+        "followers_url": "https://api.github.com/users/rack/followers",
+        "following_url": "https://api.github.com/users/rack/following{/other_user}",
+        "gists_url": "https://api.github.com/users/rack/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/rack/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/rack/subscriptions",
+        "organizations_url": "https://api.github.com/users/rack/orgs",
+        "repos_url": "https://api.github.com/users/rack/repos",
+        "events_url": "https://api.github.com/users/rack/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/rack/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/rack/rack",
+      "description": "A modular Ruby web server interface.",
+      "fork": false,
+      "url": "https://api.github.com/repos/rack/rack",
+      "forks_url": "https://api.github.com/repos/rack/rack/forks",
+      "keys_url": "https://api.github.com/repos/rack/rack/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/rack/rack/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/rack/rack/teams",
+      "hooks_url": "https://api.github.com/repos/rack/rack/hooks",
+      "issue_events_url": "https://api.github.com/repos/rack/rack/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/rack/rack/events",
+      "assignees_url": "https://api.github.com/repos/rack/rack/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/rack/rack/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/rack/rack/tags",
+      "blobs_url": "https://api.github.com/repos/rack/rack/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/rack/rack/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/rack/rack/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/rack/rack/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/rack/rack/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/rack/rack/languages",
+      "stargazers_url": "https://api.github.com/repos/rack/rack/stargazers",
+      "contributors_url": "https://api.github.com/repos/rack/rack/contributors",
+      "subscribers_url": "https://api.github.com/repos/rack/rack/subscribers",
+      "subscription_url": "https://api.github.com/repos/rack/rack/subscription",
+      "commits_url": "https://api.github.com/repos/rack/rack/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/rack/rack/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/rack/rack/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/rack/rack/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/rack/rack/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/rack/rack/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/rack/rack/merges",
+      "archive_url": "https://api.github.com/repos/rack/rack/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/rack/rack/downloads",
+      "issues_url": "https://api.github.com/repos/rack/rack/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/rack/rack/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/rack/rack/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/rack/rack/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/rack/rack/labels{/name}",
+      "releases_url": "https://api.github.com/repos/rack/rack/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/rack/rack/deployments"
+    },
+    "head_repository": {
+      "id": 96071,
+      "node_id": "MDEwOlJlcG9zaXRvcnk5NjA3MQ==",
+      "name": "rack",
+      "full_name": "rack/rack",
+      "private": false,
+      "owner": {
+        "login": "rack",
+        "id": 42379,
+        "node_id": "MDEyOk9yZ2FuaXphdGlvbjQyMzc5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/42379?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/rack",
+        "html_url": "https://github.com/rack",
+        "followers_url": "https://api.github.com/users/rack/followers",
+        "following_url": "https://api.github.com/users/rack/following{/other_user}",
+        "gists_url": "https://api.github.com/users/rack/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/rack/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/rack/subscriptions",
+        "organizations_url": "https://api.github.com/users/rack/orgs",
+        "repos_url": "https://api.github.com/users/rack/repos",
+        "events_url": "https://api.github.com/users/rack/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/rack/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/rack/rack",
+      "description": "A modular Ruby web server interface.",
+      "fork": false,
+      "url": "https://api.github.com/repos/rack/rack",
+      "forks_url": "https://api.github.com/repos/rack/rack/forks",
+      "keys_url": "https://api.github.com/repos/rack/rack/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/rack/rack/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/rack/rack/teams",
+      "hooks_url": "https://api.github.com/repos/rack/rack/hooks",
+      "issue_events_url": "https://api.github.com/repos/rack/rack/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/rack/rack/events",
+      "assignees_url": "https://api.github.com/repos/rack/rack/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/rack/rack/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/rack/rack/tags",
+      "blobs_url": "https://api.github.com/repos/rack/rack/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/rack/rack/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/rack/rack/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/rack/rack/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/rack/rack/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/rack/rack/languages",
+      "stargazers_url": "https://api.github.com/repos/rack/rack/stargazers",
+      "contributors_url": "https://api.github.com/repos/rack/rack/contributors",
+      "subscribers_url": "https://api.github.com/repos/rack/rack/subscribers",
+      "subscription_url": "https://api.github.com/repos/rack/rack/subscription",
+      "commits_url": "https://api.github.com/repos/rack/rack/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/rack/rack/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/rack/rack/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/rack/rack/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/rack/rack/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/rack/rack/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/rack/rack/merges",
+      "archive_url": "https://api.github.com/repos/rack/rack/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/rack/rack/downloads",
+      "issues_url": "https://api.github.com/repos/rack/rack/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/rack/rack/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/rack/rack/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/rack/rack/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/rack/rack/labels{/name}",
+      "releases_url": "https://api.github.com/repos/rack/rack/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/rack/rack/deployments"
+    }
+  },
+  "logs_archive": {
+    "path": "/data/logs/rack/rack/Test_532e/461-1.tar.gz"
+  },
+  "log_insights": [
+    {
+      "file": "3_test (ubuntu-latest, 2.7).txt",
+      "total_lines": 908,
+      "log_size": 61192,
+      "token_permissions": {
+        "Contents": "read",
+        "Metadata": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231025.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "rack/rack",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {
+            "CI": "spec"
+          },
+          "start_date": "2023-10-31 09:46:38.574000",
+          "duration_sec": 0.779375
+        },
+        {
+          "type": "action",
+          "repository": "ruby",
+          "action": "setup-ruby",
+          "version": "v1",
+          "sha": "54a18e26dbbb1eabc604f317ade9a5788dddef81",
+          "with": {
+            "ruby-version": "2.7",
+            "bundler-cache": "true"
+          },
+          "env": {
+            "CI": "spec"
+          },
+          "start_date": "2023-10-31 09:46:39.354000",
+          "duration_sec": 151.303918
+        },
+        {
+          "type": "shell",
+          "env": {
+            "CI": "spec"
+          },
+          "code": "bundle exec rake",
+          "commands": [
+            {
+              "annotations": [
+                "SC-BUNDLE-EXEC"
+              ],
+              "command": "bundle",
+              "categories": [
+                "PACKAGE_MANAGEMENT"
+              ],
+              "args": [
+                {
+                  "content": "exec"
+                },
+                {
+                  "content": "rake"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-31 09:49:10.658000",
+          "duration_sec": 19.22003
+        }
+      ]
+    },
+    {
+      "file": "0_test (ubuntu-latest, 2.4).txt",
+      "total_lines": 975,
+      "log_size": 70245,
+      "token_permissions": {
+        "Contents": "read",
+        "Metadata": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231025.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "rack/rack",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {
+            "CI": "spec"
+          },
+          "start_date": "2023-10-31 09:46:39.535000",
+          "duration_sec": 0.959193
+        },
+        {
+          "type": "action",
+          "repository": "ruby",
+          "action": "setup-ruby",
+          "version": "v1",
+          "sha": "54a18e26dbbb1eabc604f317ade9a5788dddef81",
+          "with": {
+            "ruby-version": "2.4",
+            "bundler-cache": "true"
+          },
+          "env": {
+            "CI": "spec"
+          },
+          "start_date": "2023-10-31 09:46:40.495000",
+          "duration_sec": 149.924448
+        },
+        {
+          "type": "shell",
+          "env": {
+            "CI": "spec"
+          },
+          "code": "bundle exec rake",
+          "commands": [
+            {
+              "annotations": [
+                "SC-BUNDLE-EXEC"
+              ],
+              "command": "bundle",
+              "categories": [
+                "PACKAGE_MANAGEMENT"
+              ],
+              "args": [
+                {
+                  "content": "exec"
+                },
+                {
+                  "content": "rake"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-31 09:49:10.419000",
+          "duration_sec": 15.722057
+        }
+      ]
+    },
+    {
+      "file": "1_test (ubuntu-latest, 2.5).txt",
+      "total_lines": 974,
+      "log_size": 70093,
+      "token_permissions": {
+        "Contents": "read",
+        "Metadata": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231025.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "rack/rack",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {
+            "CI": "spec"
+          },
+          "start_date": "2023-10-31 09:46:39.363000",
+          "duration_sec": 1.024484
+        },
+        {
+          "type": "action",
+          "repository": "ruby",
+          "action": "setup-ruby",
+          "version": "v1",
+          "sha": "54a18e26dbbb1eabc604f317ade9a5788dddef81",
+          "with": {
+            "ruby-version": "2.5",
+            "bundler-cache": "true"
+          },
+          "env": {
+            "CI": "spec"
+          },
+          "start_date": "2023-10-31 09:46:40.387000",
+          "duration_sec": 151.469574
+        },
+        {
+          "type": "shell",
+          "env": {
+            "CI": "spec"
+          },
+          "code": "bundle exec rake",
+          "commands": [
+            {
+              "annotations": [
+                "SC-BUNDLE-EXEC"
+              ],
+              "command": "bundle",
+              "categories": [
+                "PACKAGE_MANAGEMENT"
+              ],
+              "args": [
+                {
+                  "content": "exec"
+                },
+                {
+                  "content": "rake"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-31 09:49:11.857000",
+          "duration_sec": 16.043754
+        }
+      ]
+    },
+    {
+      "file": "5_test (ubuntu-latest, 3.1).txt",
+      "total_lines": 898,
+      "log_size": 60377,
+      "token_permissions": {
+        "Contents": "read",
+        "Metadata": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231025.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "rack/rack",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {
+            "CI": "spec"
+          },
+          "start_date": "2023-10-31 09:46:38.886000",
+          "duration_sec": 0.893831
+        },
+        {
+          "type": "action",
+          "repository": "ruby",
+          "action": "setup-ruby",
+          "version": "v1",
+          "sha": "54a18e26dbbb1eabc604f317ade9a5788dddef81",
+          "with": {
+            "ruby-version": "3.1",
+            "bundler-cache": "true"
+          },
+          "env": {
+            "CI": "spec"
+          },
+          "start_date": "2023-10-31 09:46:39.780000",
+          "duration_sec": 136.511847
+        },
+        {
+          "type": "shell",
+          "env": {
+            "CI": "spec"
+          },
+          "code": "bundle exec rake",
+          "commands": [
+            {
+              "annotations": [
+                "SC-BUNDLE-EXEC"
+              ],
+              "command": "bundle",
+              "categories": [
+                "PACKAGE_MANAGEMENT"
+              ],
+              "args": [
+                {
+                  "content": "exec"
+                },
+                {
+                  "content": "rake"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-31 09:48:56.292000",
+          "duration_sec": 20.824578
+        }
+      ]
+    },
+    {
+      "file": "4_test (ubuntu-latest, 3.0).txt",
+      "total_lines": 906,
+      "log_size": 60947,
+      "token_permissions": {
+        "Contents": "read",
+        "Metadata": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231025.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "rack/rack",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {
+            "CI": "spec"
+          },
+          "start_date": "2023-10-31 09:46:40.848000",
+          "duration_sec": 1.17747
+        },
+        {
+          "type": "action",
+          "repository": "ruby",
+          "action": "setup-ruby",
+          "version": "v1",
+          "sha": "54a18e26dbbb1eabc604f317ade9a5788dddef81",
+          "with": {
+            "ruby-version": "3.0",
+            "bundler-cache": "true"
+          },
+          "env": {
+            "CI": "spec"
+          },
+          "start_date": "2023-10-31 09:46:42.026000",
+          "duration_sec": 136.166277
+        },
+        {
+          "type": "shell",
+          "env": {
+            "CI": "spec"
+          },
+          "code": "bundle exec rake",
+          "commands": [
+            {
+              "annotations": [
+                "SC-BUNDLE-EXEC"
+              ],
+              "command": "bundle",
+              "categories": [
+                "PACKAGE_MANAGEMENT"
+              ],
+              "args": [
+                {
+                  "content": "exec"
+                },
+                {
+                  "content": "rake"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-31 09:48:58.192000",
+          "duration_sec": 22.813415
+        }
+      ]
+    },
+    {
+      "file": "2_test (ubuntu-latest, 2.6).txt",
+      "total_lines": 914,
+      "log_size": 62861,
+      "token_permissions": {
+        "Contents": "read",
+        "Metadata": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231025.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "rack/rack",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {
+            "CI": "spec"
+          },
+          "start_date": "2023-10-31 09:46:38.270000",
+          "duration_sec": 0.802481
+        },
+        {
+          "type": "action",
+          "repository": "ruby",
+          "action": "setup-ruby",
+          "version": "v1",
+          "sha": "54a18e26dbbb1eabc604f317ade9a5788dddef81",
+          "with": {
+            "ruby-version": "2.6",
+            "bundler-cache": "true"
+          },
+          "env": {
+            "CI": "spec"
+          },
+          "start_date": "2023-10-31 09:46:39.073000",
+          "duration_sec": 151.506017
+        },
+        {
+          "type": "shell",
+          "env": {
+            "CI": "spec"
+          },
+          "code": "bundle exec rake",
+          "commands": [
+            {
+              "annotations": [
+                "SC-BUNDLE-EXEC"
+              ],
+              "command": "bundle",
+              "categories": [
+                "PACKAGE_MANAGEMENT"
+              ],
+              "args": [
+                {
+                  "content": "exec"
+                },
+                {
+                  "content": "rake"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-31 09:49:10.579000",
+          "duration_sec": 19.242113
+        }
+      ]
+    },
+    {
+      "file": "9_test (macos-latest, 3.1).txt",
+      "total_lines": 904,
+      "log_size": 61956,
+      "token_permissions": {
+        "Contents": "read",
+        "Metadata": "read"
+      },
+      "image": "macos-12",
+      "image_version": "20230921.1",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "rack/rack",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {
+            "CI": "spec"
+          },
+          "start_date": "2023-10-31 09:46:20.236000",
+          "duration_sec": 1.957682
+        },
+        {
+          "type": "action",
+          "repository": "ruby",
+          "action": "setup-ruby",
+          "version": "v1",
+          "sha": "54a18e26dbbb1eabc604f317ade9a5788dddef81",
+          "with": {
+            "ruby-version": "3.1",
+            "bundler-cache": "true"
+          },
+          "env": {
+            "CI": "spec"
+          },
+          "start_date": "2023-10-31 09:46:22.194000",
+          "duration_sec": 138.901259
+        },
+        {
+          "type": "shell",
+          "env": {
+            "CI": "spec",
+            "PATH": "/usr/local/opt/pipx_bin:/Users/runner/.cargo/bin:/usr/local/opt/curl/bin:/usr/local/bin:/usr/local/sbin:/Users/runner/bin:/Users/runner/.yarn/bin:/Users/runner/Library/Android/sdk/tools:/Users/runner/Library/Android/sdk/platform-tools:/Library/Frameworks/Python.framework/Versions/Current/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/usr/bin:/bin:/usr/sbin:/sbin:/Users/runner/.dotnet/tools:/Users/runner/.ghcup/bin:/Users/runner/hostedtoolcache/stack/2.11.1/x64"
+          },
+          "code": "bundle exec rake",
+          "commands": [
+            {
+              "annotations": [
+                "SC-BUNDLE-EXEC"
+              ],
+              "command": "bundle",
+              "categories": [
+                "PACKAGE_MANAGEMENT"
+              ],
+              "args": [
+                {
+                  "content": "exec"
+                },
+                {
+                  "content": "rake"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-31 09:48:41.095000",
+          "duration_sec": 39.840046
+        }
+      ]
+    },
+    {
+      "file": "6_test (ubuntu-latest, 3.2).txt",
+      "total_lines": 906,
+      "log_size": 60949,
+      "token_permissions": {
+        "Contents": "read",
+        "Metadata": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231025.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "rack/rack",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {
+            "CI": "spec"
+          },
+          "start_date": "2023-10-31 09:46:39.374000",
+          "duration_sec": 0.872801
+        },
+        {
+          "type": "action",
+          "repository": "ruby",
+          "action": "setup-ruby",
+          "version": "v1",
+          "sha": "54a18e26dbbb1eabc604f317ade9a5788dddef81",
+          "with": {
+            "ruby-version": "3.2",
+            "bundler-cache": "true"
+          },
+          "env": {
+            "CI": "spec"
+          },
+          "start_date": "2023-10-31 09:46:40.246000",
+          "duration_sec": 135.412265
+        },
+        {
+          "type": "shell",
+          "env": {
+            "CI": "spec"
+          },
+          "code": "bundle exec rake",
+          "commands": [
+            {
+              "annotations": [
+                "SC-BUNDLE-EXEC"
+              ],
+              "command": "bundle",
+              "categories": [
+                "PACKAGE_MANAGEMENT"
+              ],
+              "args": [
+                {
+                  "content": "exec"
+                },
+                {
+                  "content": "rake"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-31 09:48:55.659000",
+          "duration_sec": 19.90314
+        }
+      ]
+    },
+    {
+      "file": "8_test (ubuntu-latest, truffleruby-head).txt",
+      "total_lines": 906,
+      "log_size": 61326,
+      "token_permissions": {
+        "Contents": "read",
+        "Metadata": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231025.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "rack/rack",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {
+            "CI": "spec"
+          },
+          "start_date": "2023-10-31 09:46:39.243000",
+          "duration_sec": 0.917107
+        },
+        {
+          "type": "action",
+          "repository": "ruby",
+          "action": "setup-ruby",
+          "version": "v1",
+          "sha": "54a18e26dbbb1eabc604f317ade9a5788dddef81",
+          "with": {
+            "ruby-version": "truffleruby-head",
+            "bundler-cache": "true"
+          },
+          "env": {
+            "CI": "spec"
+          },
+          "start_date": "2023-10-31 09:46:40.161000",
+          "duration_sec": 156.7271
+        },
+        {
+          "type": "shell",
+          "env": {
+            "CI": "spec"
+          },
+          "code": "bundle exec rake",
+          "commands": [
+            {
+              "annotations": [
+                "SC-BUNDLE-EXEC"
+              ],
+              "command": "bundle",
+              "categories": [
+                "PACKAGE_MANAGEMENT"
+              ],
+              "args": [
+                {
+                  "content": "exec"
+                },
+                {
+                  "content": "rake"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-31 09:49:16.888000",
+          "duration_sec": 150.979452
+        }
+      ]
+    },
+    {
+      "file": "7_test (ubuntu-latest, jruby).txt",
+      "total_lines": 561,
+      "log_size": 44333,
+      "token_permissions": {
+        "Contents": "read",
+        "Metadata": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231025.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "rack/rack",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {
+            "CI": "spec"
+          },
+          "start_date": "2023-10-31 09:46:39.304000",
+          "duration_sec": 0.9904
+        },
+        {
+          "type": "action",
+          "repository": "ruby",
+          "action": "setup-ruby",
+          "version": "v1",
+          "sha": "54a18e26dbbb1eabc604f317ade9a5788dddef81",
+          "with": {
+            "ruby-version": "jruby",
+            "bundler-cache": "true"
+          },
+          "env": {
+            "CI": "spec"
+          },
+          "start_date": "2023-10-31 09:46:40.295000",
+          "duration_sec": 166.880993
+        },
+        {
+          "type": "shell",
+          "env": {
+            "CI": "spec"
+          },
+          "code": "bundle exec rake",
+          "commands": [
+            {
+              "annotations": [
+                "SC-BUNDLE-EXEC"
+              ],
+              "command": "bundle",
+              "categories": [
+                "PACKAGE_MANAGEMENT"
+              ],
+              "args": [
+                {
+                  "content": "exec"
+                },
+                {
+                  "content": "rake"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-31 09:49:27.176000",
+          "duration_sec": 29.891053
+        }
+      ]
+    }
+  ],
+  "total_logs_size": 621500
+}

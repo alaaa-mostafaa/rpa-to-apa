@@ -1,0 +1,232 @@
+{
+  "case": {
+    "label": "pyca/bcrypt — actions/checkout v4 vs manylinux2014 glibc",
+    "run_id": "pyca/bcrypt_.github/workflows/wheel-builder.yml_82_1"
+  },
+  "intake_event": {
+    "run_id": "pyca/bcrypt_.github/workflows/wheel-builder.yml_82_1",
+    "repo": "pyca/bcrypt",
+    "workflow": "wheel-builder.yml",
+    "run_number": 82,
+    "attempt": 1,
+    "event": "pull_request",
+    "branch": "dependabot/github_actions/actions/checkout-4.1.0",
+    "is_protected_branch": false,
+    "actor": "dependabot[bot]",
+    "commit_sha": "b4cbf468dbfe",
+    "commit_title": "Bump actions/checkout from 3.6.0 to 4.1.0",
+    "commit_message": "Bump actions/checkout from 3.6.0 to 4.1.0\n\nBumps [actions/checkout](https://github.com/actions/checkout) from 3.6.0 to 4.1.0.\n- [Release notes](https://github.com/actions/checkout/releases)\n- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/actions/checkout/compare/v3.6.0...v4.1.0)\n\n---\nupdated-dependencies:\n- dependency-name: actions/checkout\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+    "commit_author": "dependabot[bot]",
+    "conclusion": "failure",
+    "started_at": "2023-09-25T03:47:38Z",
+    "duration_sec": 141.0,
+    "n_jobs": 8,
+    "failed_jobs_count": 8,
+    "failed_steps": [
+      {
+        "job_file": "3_cp37-cp37m for musllinux_1_1.txt",
+        "runner_image": "ubuntu-22.04",
+        "step_index": 5,
+        "step_type": "shell",
+        "step_label": "if [ -n \"cp37\" ]; then\n    PY_LIMITED_API=\"--py-limited-api=cp37\"\nfi\ncd bcrypt* ",
+        "step_duration_sec": 3.784948,
+        "error_text": null,
+        "detection_mode": "job_level_fallback",
+        "tooling_artifact_suspected": false,
+        "raw_keys": [
+          "code",
+          "commands",
+          "duration_sec",
+          "env",
+          "errors",
+          "start_date",
+          "type"
+        ]
+      },
+      {
+        "job_file": "4_pp39-pypy39_pp73 for manylinux2014.txt",
+        "runner_image": "ubuntu-22.04",
+        "step_index": 0,
+        "step_type": "action",
+        "step_label": "actions/checkout@v4.1.0",
+        "step_duration_sec": 0.797047,
+        "error_text": null,
+        "detection_mode": "single_step_inferred",
+        "tooling_artifact_suspected": false,
+        "raw_keys": [
+          "action",
+          "duration_sec",
+          "env",
+          "repository",
+          "sha",
+          "start_date",
+          "type",
+          "version",
+          "with"
+        ]
+      },
+      {
+        "job_file": "1_cp37-cp37m for manylinux2014.txt",
+        "runner_image": "ubuntu-22.04",
+        "step_index": 0,
+        "step_type": "action",
+        "step_label": "actions/checkout@v4.1.0",
+        "step_duration_sec": 0.823961,
+        "error_text": null,
+        "detection_mode": "single_step_inferred",
+        "tooling_artifact_suspected": false,
+        "raw_keys": [
+          "action",
+          "duration_sec",
+          "env",
+          "repository",
+          "sha",
+          "start_date",
+          "type",
+          "version",
+          "with"
+        ]
+      },
+      {
+        "job_file": "1_3.7 cp37 x86.txt",
+        "runner_image": "windows-2022",
+        "step_index": 3,
+        "step_type": "shell",
+        "step_label": ": parse toolchain version\nif [[ $toolchain =~ ^stable' '[0-9]+' '(year|month|wee",
+        "step_duration_sec": 0.318103,
+        "error_text": "{'node': None, 'originalError': {'message': 'src.sh:8:1: \"elif\" can only be used in an if'}}",
+        "detection_mode": "per_step_error",
+        "tooling_artifact_suspected": false,
+        "raw_keys": [
+          "code",
+          "duration_sec",
+          "env",
+          "errors",
+          "start_date",
+          "type"
+        ]
+      },
+      {
+        "job_file": "2_3.7 cp37 x64.txt",
+        "runner_image": "windows-2022",
+        "step_index": 3,
+        "step_type": "shell",
+        "step_label": ": parse toolchain version\nif [[ $toolchain =~ ^stable' '[0-9]+' '(year|month|wee",
+        "step_duration_sec": 0.638369,
+        "error_text": "{'node': None, 'originalError': {'message': 'src.sh:8:1: \"elif\" can only be used in an if'}}",
+        "detection_mode": "per_step_error",
+        "tooling_artifact_suspected": false,
+        "raw_keys": [
+          "code",
+          "duration_sec",
+          "env",
+          "errors",
+          "start_date",
+          "type"
+        ]
+      },
+      {
+        "job_file": "1_Python 3.11 for ABI cp37 on macOS.txt",
+        "runner_image": "macos-11",
+        "step_index": 3,
+        "step_type": "shell",
+        "step_label": ": parse toolchain version\nif [[ $toolchain =~ ^stable' '[0-9]+' '(year|month|wee",
+        "step_duration_sec": 0.109069,
+        "error_text": "{'node': None, 'originalError': {'message': 'src.sh:8:1: \"elif\" can only be used in an if'}}",
+        "detection_mode": "per_step_error",
+        "tooling_artifact_suspected": false,
+        "raw_keys": [
+          "code",
+          "duration_sec",
+          "env",
+          "errors",
+          "start_date",
+          "type"
+        ]
+      },
+      {
+        "job_file": "7_pp310-pypy310_pp73 for manylinux_2_28.txt",
+        "runner_image": "ubuntu-22.04",
+        "step_index": 1,
+        "step_type": "shell",
+        "step_label": "/opt/python/pp310-pypy310_pp73/bin/python -m venv .venv",
+        "step_duration_sec": 5.2468,
+        "error_text": null,
+        "detection_mode": "job_level_fallback",
+        "tooling_artifact_suspected": false,
+        "raw_keys": [
+          "code",
+          "commands",
+          "duration_sec",
+          "env",
+          "errors",
+          "start_date",
+          "type"
+        ]
+      },
+      {
+        "job_file": "2_cp37-cp37m for manylinux_2_28.txt",
+        "runner_image": "ubuntu-22.04",
+        "step_index": 2,
+        "step_type": "shell",
+        "step_label": ".venv/bin/pip install -U pip wheel setuptools-rust",
+        "step_duration_sec": 1.29456,
+        "error_text": null,
+        "detection_mode": "job_level_fallback",
+        "tooling_artifact_suspected": false,
+        "raw_keys": [
+          "code",
+          "commands",
+          "duration_sec",
+          "env",
+          "errors",
+          "start_date",
+          "type"
+        ]
+      }
+    ],
+    "failure_detection": "job_level_fallback",
+    "all_failures_are_tooling_artifacts": false,
+    "has_log_insights": true
+  },
+  "n_excerpts": 8,
+  "total_log_lines_extracted": 664,
+  "without_logs": {
+    "category": "CONFIG_ERROR",
+    "severity": "MODERATE",
+    "confidence": 0.85,
+    "action": "HOTFIX_REQUIRED",
+    "reasoning": "The commit updates actions/checkout from v3.6.0 to v4.1.0, a major version change that likely introduced breaking changes to the workflow configuration. Multiple failed steps across different runners show identical shell syntax errors ('elif' can only be used in an if), indicating a bash script parsing issue in the workflow YAML or related scripts, not a code regression. Since this is a feature branch (dependabot/github_actions/actions/checkout-4.1.0) with all jobs failing due to a consistent config problem, severity is moderate and a specific fix is needed before retry.",
+    "evidence": [
+      "COMMIT.title",
+      "COMMIT.message",
+      "FAILED_STEPS.error_text",
+      "branch",
+      "protected"
+    ],
+    "unknowns": [
+      "Exact workflow YAML content",
+      "Specific breaking changes in actions/checkout v4.1.0",
+      "Full error logs beyond the shell syntax message"
+    ]
+  },
+  "with_logs": {
+    "category": "CONFIG_ERROR",
+    "severity": "MODERATE",
+    "confidence": 0.85,
+    "action": "HOTFIX_REQUIRED",
+    "reasoning": "The commit updates actions/checkout from v3.6.0 to v4.1.0, a major version bump that likely introduced a breaking change. The log evidence shows GLIBC version errors in steps 2 and 3, indicating a dependency conflict with the Node.js runtime in the manylinux2014 container, while steps 1, 7, and 8 were canceled due to sibling failures. This is a configuration error from the workflow update, not a code regression or transient issue.",
+    "evidence": [
+      "COMMIT title and message",
+      "LOG EVIDENCE steps 2 and 3 GLIBC errors",
+      "FAILED STEPS error_text for steps 4-6",
+      "RUN branch and protected status"
+    ],
+    "unknowns": [
+      "Exact breaking change in actions/checkout v4.1.0",
+      "Full workflow YAML to confirm configuration",
+      "Whether other jobs succeeded before cancellation"
+    ]
+  },
+  "differences": []
+}

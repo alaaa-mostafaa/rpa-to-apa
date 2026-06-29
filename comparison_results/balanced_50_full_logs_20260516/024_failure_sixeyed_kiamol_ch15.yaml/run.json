@@ -1,0 +1,375 @@
+{
+  "_id": "sixeyed/kiamol_.github/workflows/ch15.yaml_3076_1",
+  "repository_name": "sixeyed/kiamol",
+  "workflow_path": ".github/workflows/ch15.yaml",
+  "run_number": 3076,
+  "run_attempt": 1,
+  "time_to_import": 273733.368302,
+  "metadata": {
+    "id": 6448390217,
+    "name": "Ch15 Image Builds",
+    "node_id": "WFR_kwLODppfbc8AAAABgFqgSQ",
+    "head_branch": "master",
+    "head_sha": "25cbb16acd8aa989f8f3f560af0f2406d9d4aa95",
+    "path": ".github/workflows/ch15.yaml",
+    "display_title": "Ch15 Image Builds",
+    "run_number": 3076,
+    "event": "schedule",
+    "status": "completed",
+    "conclusion": "failure",
+    "workflow_id": 1800515,
+    "check_suite_id": 17005065298,
+    "check_suite_node_id": "CS_kwDODppfbc8AAAAD9ZS0Ug",
+    "url": "https://api.github.com/repos/sixeyed/kiamol/actions/runs/6448390217",
+    "html_url": "https://github.com/sixeyed/kiamol/actions/runs/6448390217",
+    "pull_requests": [
+      {
+        "url": "https://api.github.com/repos/iancooper/kiamol/pulls/9",
+        "id": 803874174,
+        "number": 9,
+        "head": {
+          "ref": "master",
+          "sha": "25cbb16acd8aa989f8f3f560af0f2406d9d4aa95",
+          "repo": {
+            "id": 244997997,
+            "url": "https://api.github.com/repos/sixeyed/kiamol",
+            "name": "kiamol"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "d3632258eec41e63072eace7636f2ede7c3ed1d1",
+          "repo": {
+            "id": 318202866,
+            "url": "https://api.github.com/repos/iancooper/kiamol",
+            "name": "kiamol"
+          }
+        }
+      }
+    ],
+    "created_at": "2023-10-08T15:09:19Z",
+    "updated_at": "2023-10-09T21:07:01Z",
+    "actor": {
+      "login": "sixeyed",
+      "id": 157413,
+      "node_id": "MDQ6VXNlcjE1NzQxMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/157413?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sixeyed",
+      "html_url": "https://github.com/sixeyed",
+      "followers_url": "https://api.github.com/users/sixeyed/followers",
+      "following_url": "https://api.github.com/users/sixeyed/following{/other_user}",
+      "gists_url": "https://api.github.com/users/sixeyed/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/sixeyed/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/sixeyed/subscriptions",
+      "organizations_url": "https://api.github.com/users/sixeyed/orgs",
+      "repos_url": "https://api.github.com/users/sixeyed/repos",
+      "events_url": "https://api.github.com/users/sixeyed/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/sixeyed/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "run_attempt": 1,
+    "referenced_workflows": [],
+    "run_started_at": "2023-10-08T15:09:19Z",
+    "triggering_actor": {
+      "login": "sixeyed",
+      "id": 157413,
+      "node_id": "MDQ6VXNlcjE1NzQxMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/157413?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sixeyed",
+      "html_url": "https://github.com/sixeyed",
+      "followers_url": "https://api.github.com/users/sixeyed/followers",
+      "following_url": "https://api.github.com/users/sixeyed/following{/other_user}",
+      "gists_url": "https://api.github.com/users/sixeyed/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/sixeyed/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/sixeyed/subscriptions",
+      "organizations_url": "https://api.github.com/users/sixeyed/orgs",
+      "repos_url": "https://api.github.com/users/sixeyed/repos",
+      "events_url": "https://api.github.com/users/sixeyed/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/sixeyed/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "jobs_url": "https://api.github.com/repos/sixeyed/kiamol/actions/runs/6448390217/jobs",
+    "logs_url": "https://api.github.com/repos/sixeyed/kiamol/actions/runs/6448390217/logs",
+    "check_suite_url": "https://api.github.com/repos/sixeyed/kiamol/check-suites/17005065298",
+    "artifacts_url": "https://api.github.com/repos/sixeyed/kiamol/actions/runs/6448390217/artifacts",
+    "cancel_url": "https://api.github.com/repos/sixeyed/kiamol/actions/runs/6448390217/cancel",
+    "rerun_url": "https://api.github.com/repos/sixeyed/kiamol/actions/runs/6448390217/rerun",
+    "previous_attempt_url": null,
+    "workflow_url": "https://api.github.com/repos/sixeyed/kiamol/actions/workflows/1800515",
+    "head_commit": {
+      "id": "25cbb16acd8aa989f8f3f560af0f2406d9d4aa95",
+      "tree_id": "19012b9ecc0c628a622ee9e6b6efb7608aeb7a5f",
+      "message": "Fix manifest push",
+      "timestamp": "2022-09-01T12:47:17Z",
+      "author": {
+        "name": "Elton Stoneman",
+        "email": "elton@sixeyed.com"
+      },
+      "committer": {
+        "name": "Elton Stoneman",
+        "email": "elton@sixeyed.com"
+      }
+    },
+    "repository": {
+      "id": 244997997,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNDQ5OTc5OTc=",
+      "name": "kiamol",
+      "full_name": "sixeyed/kiamol",
+      "private": false,
+      "owner": {
+        "login": "sixeyed",
+        "id": 157413,
+        "node_id": "MDQ6VXNlcjE1NzQxMw==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/157413?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sixeyed",
+        "html_url": "https://github.com/sixeyed",
+        "followers_url": "https://api.github.com/users/sixeyed/followers",
+        "following_url": "https://api.github.com/users/sixeyed/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sixeyed/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sixeyed/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sixeyed/subscriptions",
+        "organizations_url": "https://api.github.com/users/sixeyed/orgs",
+        "repos_url": "https://api.github.com/users/sixeyed/repos",
+        "events_url": "https://api.github.com/users/sixeyed/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sixeyed/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/sixeyed/kiamol",
+      "description": "Learn Kubernetes in a Month of Lunches",
+      "fork": false,
+      "url": "https://api.github.com/repos/sixeyed/kiamol",
+      "forks_url": "https://api.github.com/repos/sixeyed/kiamol/forks",
+      "keys_url": "https://api.github.com/repos/sixeyed/kiamol/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/sixeyed/kiamol/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/sixeyed/kiamol/teams",
+      "hooks_url": "https://api.github.com/repos/sixeyed/kiamol/hooks",
+      "issue_events_url": "https://api.github.com/repos/sixeyed/kiamol/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/sixeyed/kiamol/events",
+      "assignees_url": "https://api.github.com/repos/sixeyed/kiamol/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/sixeyed/kiamol/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/sixeyed/kiamol/tags",
+      "blobs_url": "https://api.github.com/repos/sixeyed/kiamol/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/sixeyed/kiamol/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/sixeyed/kiamol/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/sixeyed/kiamol/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/sixeyed/kiamol/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/sixeyed/kiamol/languages",
+      "stargazers_url": "https://api.github.com/repos/sixeyed/kiamol/stargazers",
+      "contributors_url": "https://api.github.com/repos/sixeyed/kiamol/contributors",
+      "subscribers_url": "https://api.github.com/repos/sixeyed/kiamol/subscribers",
+      "subscription_url": "https://api.github.com/repos/sixeyed/kiamol/subscription",
+      "commits_url": "https://api.github.com/repos/sixeyed/kiamol/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/sixeyed/kiamol/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/sixeyed/kiamol/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/sixeyed/kiamol/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/sixeyed/kiamol/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/sixeyed/kiamol/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/sixeyed/kiamol/merges",
+      "archive_url": "https://api.github.com/repos/sixeyed/kiamol/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/sixeyed/kiamol/downloads",
+      "issues_url": "https://api.github.com/repos/sixeyed/kiamol/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/sixeyed/kiamol/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/sixeyed/kiamol/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/sixeyed/kiamol/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/sixeyed/kiamol/labels{/name}",
+      "releases_url": "https://api.github.com/repos/sixeyed/kiamol/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/sixeyed/kiamol/deployments"
+    },
+    "head_repository": {
+      "id": 244997997,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNDQ5OTc5OTc=",
+      "name": "kiamol",
+      "full_name": "sixeyed/kiamol",
+      "private": false,
+      "owner": {
+        "login": "sixeyed",
+        "id": 157413,
+        "node_id": "MDQ6VXNlcjE1NzQxMw==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/157413?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sixeyed",
+        "html_url": "https://github.com/sixeyed",
+        "followers_url": "https://api.github.com/users/sixeyed/followers",
+        "following_url": "https://api.github.com/users/sixeyed/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sixeyed/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sixeyed/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sixeyed/subscriptions",
+        "organizations_url": "https://api.github.com/users/sixeyed/orgs",
+        "repos_url": "https://api.github.com/users/sixeyed/repos",
+        "events_url": "https://api.github.com/users/sixeyed/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sixeyed/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/sixeyed/kiamol",
+      "description": "Learn Kubernetes in a Month of Lunches",
+      "fork": false,
+      "url": "https://api.github.com/repos/sixeyed/kiamol",
+      "forks_url": "https://api.github.com/repos/sixeyed/kiamol/forks",
+      "keys_url": "https://api.github.com/repos/sixeyed/kiamol/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/sixeyed/kiamol/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/sixeyed/kiamol/teams",
+      "hooks_url": "https://api.github.com/repos/sixeyed/kiamol/hooks",
+      "issue_events_url": "https://api.github.com/repos/sixeyed/kiamol/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/sixeyed/kiamol/events",
+      "assignees_url": "https://api.github.com/repos/sixeyed/kiamol/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/sixeyed/kiamol/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/sixeyed/kiamol/tags",
+      "blobs_url": "https://api.github.com/repos/sixeyed/kiamol/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/sixeyed/kiamol/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/sixeyed/kiamol/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/sixeyed/kiamol/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/sixeyed/kiamol/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/sixeyed/kiamol/languages",
+      "stargazers_url": "https://api.github.com/repos/sixeyed/kiamol/stargazers",
+      "contributors_url": "https://api.github.com/repos/sixeyed/kiamol/contributors",
+      "subscribers_url": "https://api.github.com/repos/sixeyed/kiamol/subscribers",
+      "subscription_url": "https://api.github.com/repos/sixeyed/kiamol/subscription",
+      "commits_url": "https://api.github.com/repos/sixeyed/kiamol/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/sixeyed/kiamol/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/sixeyed/kiamol/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/sixeyed/kiamol/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/sixeyed/kiamol/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/sixeyed/kiamol/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/sixeyed/kiamol/merges",
+      "archive_url": "https://api.github.com/repos/sixeyed/kiamol/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/sixeyed/kiamol/downloads",
+      "issues_url": "https://api.github.com/repos/sixeyed/kiamol/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/sixeyed/kiamol/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/sixeyed/kiamol/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/sixeyed/kiamol/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/sixeyed/kiamol/labels{/name}",
+      "releases_url": "https://api.github.com/repos/sixeyed/kiamol/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/sixeyed/kiamol/deployments"
+    }
+  },
+  "logs_archive": {
+    "path": "/data/logs/sixeyed/kiamol/Ch15_Image_Builds_05e7/3076-1.tar.gz"
+  },
+  "log_insights": [
+    {
+      "file": "1_build-amd64 (1).txt",
+      "total_lines": 199,
+      "log_size": 15095,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231001.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "master",
+          "sha": "8ade135a41bc03ea155e62e844d188df1ea18608",
+          "with": {
+            "repository": "***/kiamol",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "show-progress": "true",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-08 15:09:28.569000",
+          "duration_sec": 1.232462
+        },
+        {
+          "type": "action",
+          "repository": "azure",
+          "action": "docker-login",
+          "version": "v1",
+          "sha": "83efeb77770c98b620c73055fbb59b2847e17dc0",
+          "with": {
+            "username": "***",
+            "password": "***",
+            "login-server": "https://index.docker.io/v1/"
+          },
+          "env": {},
+          "start_date": "2023-10-08 15:09:29.802000",
+          "duration_sec": 0.185952
+        },
+        {
+          "type": "shell",
+          "env": {
+            "DOCKER_CONFIG": "/home/runner/work/_temp/docker_login_1696777769973"
+          },
+          "code": "docker-compose -f docker-compose.yml -f amd64.yml build --pull\ndocker-compose -f docker-compose.yml -f amd64.yml push",
+          "commands": [
+            {
+              "command": "docker-compose",
+              "args": [
+                {
+                  "content": "-f"
+                },
+                {
+                  "content": "docker-compose.yml"
+                },
+                {
+                  "content": "-f"
+                },
+                {
+                  "content": "amd64.yml"
+                },
+                {
+                  "content": "build"
+                },
+                {
+                  "content": "--pull"
+                }
+              ]
+            },
+            {
+              "command": "docker-compose",
+              "args": [
+                {
+                  "content": "-f"
+                },
+                {
+                  "content": "docker-compose.yml"
+                },
+                {
+                  "content": "-f"
+                },
+                {
+                  "content": "amd64.yml"
+                },
+                {
+                  "content": "push"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-08 15:09:29.988000",
+          "duration_sec": 3.663831
+        }
+      ]
+    }
+  ],
+  "total_logs_size": 16656
+}

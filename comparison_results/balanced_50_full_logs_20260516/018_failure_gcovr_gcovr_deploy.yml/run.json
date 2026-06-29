@@ -1,0 +1,808 @@
+{
+  "_id": "gcovr/gcovr_.github/workflows/deploy.yml_1286_1",
+  "repository_name": "gcovr/gcovr",
+  "workflow_path": ".github/workflows/deploy.yml",
+  "run_number": 1286,
+  "run_attempt": 1,
+  "time_to_import": 68625.259106,
+  "metadata": {
+    "id": 6836305381,
+    "name": "Deploy",
+    "node_id": "WFR_kwLOAJmjPs8AAAABl3m95Q",
+    "head_branch": "add_support_for_fips_enabled_os",
+    "head_sha": "ff6b34271e4c41b78f6a45a5b047d888a0599ef1",
+    "path": ".github/workflows/deploy.yml",
+    "display_title": "Add support for FIPS enabled OS",
+    "run_number": 1286,
+    "event": "pull_request",
+    "status": "completed",
+    "conclusion": "failure",
+    "workflow_id": 2585729,
+    "check_suite_id": 18110051313,
+    "check_suite_node_id": "CS_kwDOAJmjPs8AAAAEN3Fz8Q",
+    "url": "https://api.github.com/repos/gcovr/gcovr/actions/runs/6836305381",
+    "html_url": "https://github.com/gcovr/gcovr/actions/runs/6836305381",
+    "pull_requests": [],
+    "created_at": "2023-11-11T20:07:19Z",
+    "updated_at": "2023-11-11T20:09:07Z",
+    "actor": {
+      "login": "Spacetown",
+      "id": 40258682,
+      "node_id": "MDQ6VXNlcjQwMjU4Njgy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40258682?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Spacetown",
+      "html_url": "https://github.com/Spacetown",
+      "followers_url": "https://api.github.com/users/Spacetown/followers",
+      "following_url": "https://api.github.com/users/Spacetown/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Spacetown/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Spacetown/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Spacetown/subscriptions",
+      "organizations_url": "https://api.github.com/users/Spacetown/orgs",
+      "repos_url": "https://api.github.com/users/Spacetown/repos",
+      "events_url": "https://api.github.com/users/Spacetown/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Spacetown/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "run_attempt": 1,
+    "referenced_workflows": [],
+    "run_started_at": "2023-11-11T20:07:19Z",
+    "triggering_actor": {
+      "login": "Spacetown",
+      "id": 40258682,
+      "node_id": "MDQ6VXNlcjQwMjU4Njgy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40258682?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Spacetown",
+      "html_url": "https://github.com/Spacetown",
+      "followers_url": "https://api.github.com/users/Spacetown/followers",
+      "following_url": "https://api.github.com/users/Spacetown/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Spacetown/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Spacetown/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Spacetown/subscriptions",
+      "organizations_url": "https://api.github.com/users/Spacetown/orgs",
+      "repos_url": "https://api.github.com/users/Spacetown/repos",
+      "events_url": "https://api.github.com/users/Spacetown/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Spacetown/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "jobs_url": "https://api.github.com/repos/gcovr/gcovr/actions/runs/6836305381/jobs",
+    "logs_url": "https://api.github.com/repos/gcovr/gcovr/actions/runs/6836305381/logs",
+    "check_suite_url": "https://api.github.com/repos/gcovr/gcovr/check-suites/18110051313",
+    "artifacts_url": "https://api.github.com/repos/gcovr/gcovr/actions/runs/6836305381/artifacts",
+    "cancel_url": "https://api.github.com/repos/gcovr/gcovr/actions/runs/6836305381/cancel",
+    "rerun_url": "https://api.github.com/repos/gcovr/gcovr/actions/runs/6836305381/rerun",
+    "previous_attempt_url": null,
+    "workflow_url": "https://api.github.com/repos/gcovr/gcovr/actions/workflows/2585729",
+    "head_commit": {
+      "id": "ff6b34271e4c41b78f6a45a5b047d888a0599ef1",
+      "tree_id": "0670324fcfdbfd7fe410e5f6ed80eac97e3a05b2",
+      "message": "Add support for FIPS enabled OS\n\nOn FIPS enabled OS the md5 is disabled for cryptographic usage. Since\npython 3.9 it can be enabled for non security usage by setting\nuserforsecurity to False.",
+      "timestamp": "2023-11-11T20:07:12Z",
+      "author": {
+        "name": "Spacetown",
+        "email": "40258682+spacetown@users.noreply.github.com"
+      },
+      "committer": {
+        "name": "Spacetown",
+        "email": "40258682+spacetown@users.noreply.github.com"
+      }
+    },
+    "repository": {
+      "id": 10068798,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMDA2ODc5OA==",
+      "name": "gcovr",
+      "full_name": "gcovr/gcovr",
+      "private": false,
+      "owner": {
+        "login": "gcovr",
+        "id": 4433154,
+        "node_id": "MDEyOk9yZ2FuaXphdGlvbjQ0MzMxNTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4433154?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gcovr",
+        "html_url": "https://github.com/gcovr",
+        "followers_url": "https://api.github.com/users/gcovr/followers",
+        "following_url": "https://api.github.com/users/gcovr/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gcovr/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/gcovr/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/gcovr/subscriptions",
+        "organizations_url": "https://api.github.com/users/gcovr/orgs",
+        "repos_url": "https://api.github.com/users/gcovr/repos",
+        "events_url": "https://api.github.com/users/gcovr/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/gcovr/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/gcovr/gcovr",
+      "description": "generate code coverage reports with gcc/gcov",
+      "fork": false,
+      "url": "https://api.github.com/repos/gcovr/gcovr",
+      "forks_url": "https://api.github.com/repos/gcovr/gcovr/forks",
+      "keys_url": "https://api.github.com/repos/gcovr/gcovr/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/gcovr/gcovr/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/gcovr/gcovr/teams",
+      "hooks_url": "https://api.github.com/repos/gcovr/gcovr/hooks",
+      "issue_events_url": "https://api.github.com/repos/gcovr/gcovr/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/gcovr/gcovr/events",
+      "assignees_url": "https://api.github.com/repos/gcovr/gcovr/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/gcovr/gcovr/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/gcovr/gcovr/tags",
+      "blobs_url": "https://api.github.com/repos/gcovr/gcovr/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/gcovr/gcovr/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/gcovr/gcovr/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/gcovr/gcovr/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/gcovr/gcovr/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/gcovr/gcovr/languages",
+      "stargazers_url": "https://api.github.com/repos/gcovr/gcovr/stargazers",
+      "contributors_url": "https://api.github.com/repos/gcovr/gcovr/contributors",
+      "subscribers_url": "https://api.github.com/repos/gcovr/gcovr/subscribers",
+      "subscription_url": "https://api.github.com/repos/gcovr/gcovr/subscription",
+      "commits_url": "https://api.github.com/repos/gcovr/gcovr/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/gcovr/gcovr/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/gcovr/gcovr/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/gcovr/gcovr/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/gcovr/gcovr/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/gcovr/gcovr/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/gcovr/gcovr/merges",
+      "archive_url": "https://api.github.com/repos/gcovr/gcovr/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/gcovr/gcovr/downloads",
+      "issues_url": "https://api.github.com/repos/gcovr/gcovr/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/gcovr/gcovr/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/gcovr/gcovr/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/gcovr/gcovr/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/gcovr/gcovr/labels{/name}",
+      "releases_url": "https://api.github.com/repos/gcovr/gcovr/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/gcovr/gcovr/deployments"
+    },
+    "head_repository": {
+      "id": 137521645,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMzc1MjE2NDU=",
+      "name": "gcovr",
+      "full_name": "Spacetown/gcovr",
+      "private": false,
+      "owner": {
+        "login": "Spacetown",
+        "id": 40258682,
+        "node_id": "MDQ6VXNlcjQwMjU4Njgy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/40258682?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Spacetown",
+        "html_url": "https://github.com/Spacetown",
+        "followers_url": "https://api.github.com/users/Spacetown/followers",
+        "following_url": "https://api.github.com/users/Spacetown/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Spacetown/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Spacetown/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Spacetown/subscriptions",
+        "organizations_url": "https://api.github.com/users/Spacetown/orgs",
+        "repos_url": "https://api.github.com/users/Spacetown/repos",
+        "events_url": "https://api.github.com/users/Spacetown/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Spacetown/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/Spacetown/gcovr",
+      "description": "generate code coverage reports with gcc/gcov",
+      "fork": true,
+      "url": "https://api.github.com/repos/Spacetown/gcovr",
+      "forks_url": "https://api.github.com/repos/Spacetown/gcovr/forks",
+      "keys_url": "https://api.github.com/repos/Spacetown/gcovr/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/Spacetown/gcovr/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/Spacetown/gcovr/teams",
+      "hooks_url": "https://api.github.com/repos/Spacetown/gcovr/hooks",
+      "issue_events_url": "https://api.github.com/repos/Spacetown/gcovr/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/Spacetown/gcovr/events",
+      "assignees_url": "https://api.github.com/repos/Spacetown/gcovr/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/Spacetown/gcovr/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/Spacetown/gcovr/tags",
+      "blobs_url": "https://api.github.com/repos/Spacetown/gcovr/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/Spacetown/gcovr/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/Spacetown/gcovr/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/Spacetown/gcovr/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/Spacetown/gcovr/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/Spacetown/gcovr/languages",
+      "stargazers_url": "https://api.github.com/repos/Spacetown/gcovr/stargazers",
+      "contributors_url": "https://api.github.com/repos/Spacetown/gcovr/contributors",
+      "subscribers_url": "https://api.github.com/repos/Spacetown/gcovr/subscribers",
+      "subscription_url": "https://api.github.com/repos/Spacetown/gcovr/subscription",
+      "commits_url": "https://api.github.com/repos/Spacetown/gcovr/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/Spacetown/gcovr/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/Spacetown/gcovr/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/Spacetown/gcovr/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/Spacetown/gcovr/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/Spacetown/gcovr/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/Spacetown/gcovr/merges",
+      "archive_url": "https://api.github.com/repos/Spacetown/gcovr/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/Spacetown/gcovr/downloads",
+      "issues_url": "https://api.github.com/repos/Spacetown/gcovr/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/Spacetown/gcovr/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/Spacetown/gcovr/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/Spacetown/gcovr/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/Spacetown/gcovr/labels{/name}",
+      "releases_url": "https://api.github.com/repos/Spacetown/gcovr/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/Spacetown/gcovr/deployments"
+    }
+  },
+  "logs_archive": {
+    "path": "/data/logs/gcovr/gcovr/Deploy_4c23/1286-1.tar.gz"
+  },
+  "log_insights": [
+    {
+      "file": "0_release-check.txt",
+      "total_lines": 578,
+      "log_size": 42498,
+      "token_permissions": {
+        "Contents": "read",
+        "Metadata": "read",
+        "Packages": "read"
+      },
+      "image": "ubuntu-20.04",
+      "image_version": "20231030.2.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "gcovr/gcovr",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-11-11 20:07:26.556000",
+          "duration_sec": 0.822019
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "git fetch --force --tags --depth=1",
+          "commands": [
+            {
+              "annotations": [
+                "SC-GIT-FETCH"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL"
+              ],
+              "args": [
+                {
+                  "content": "fetch"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-F-FORCE"
+                  ],
+                  "content": "--force"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-F-TAGS"
+                  ],
+                  "content": "--tags"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-FETCH-DEPTH"
+                  ],
+                  "content": "--depth=1"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-11 20:07:27.378000",
+          "duration_sec": 0.836855
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "echo \"EXTRA_CHECKLIST_ARGS=--no-verify-tags --no-verify-docs-next-version\" >> $GITHUB_ENV",
+          "commands": [
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"EXTRA_CHECKLIST_ARGS=--no-verify-tags --no-verify-docs-next-version\""
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-11 20:07:28.214000",
+          "duration_sec": 0.008814
+        },
+        {
+          "type": "shell",
+          "env": {
+            "EXTRA_CHECKLIST_ARGS": "--no-verify-tags --no-verify-docs-next-version"
+          },
+          "code": "admin/release_checklist $EXTRA_CHECKLIST_ARGS 6.0+master",
+          "commands": [
+            {
+              "command": "admin/release_checklist",
+              "args": [
+                {
+                  "content": "$EXTRA_CHECKLIST_ARGS"
+                },
+                {
+                  "content": "6.0+master"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-11 20:07:28.223000",
+          "duration_sec": 0.169831
+        }
+      ]
+    },
+    {
+      "file": "0_deploy.txt",
+      "total_lines": 80651,
+      "log_size": 6978603,
+      "token_permissions": {
+        "Contents": "read",
+        "Metadata": "read",
+        "Packages": "read"
+      },
+      "image": "ubuntu-20.04",
+      "image_version": "20231030.2.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "gcovr/gcovr",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {
+            "FORCE_COLOR": "1",
+            "PYTHON_VERSION": "3.8",
+            "CC": "gcc-8"
+          },
+          "start_date": "2023-11-11 20:07:36.492000",
+          "duration_sec": 0.783586
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "setup-python",
+          "version": "v4",
+          "sha": "65d7f2d534ac1bc67fcd62888c5f4f3d2cb2b236",
+          "with": {
+            "python-version": "3.8",
+            "check-latest": "false",
+            "token": "***",
+            "update-environment": "true",
+            "allow-prereleases": "false"
+          },
+          "env": {
+            "FORCE_COLOR": "1",
+            "PYTHON_VERSION": "3.8",
+            "CC": "gcc-8"
+          },
+          "start_date": "2023-11-11 20:07:37.275000",
+          "duration_sec": 0.215886
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "cache",
+          "version": "v3",
+          "sha": "704facf57e6136b1bc63b828d79edcd491f0ee84",
+          "with": {
+            "path": "~/.cache/pip",
+            "key": "Linux-pip-1d2757c0b27a4ad20951924c50d863a12ba7a39558909d307869377d73e551d6",
+            "restore-keys": "Linux-pip-",
+            "enableCrossOsArchive": "false",
+            "fail-on-cache-miss": "false",
+            "lookup-only": "false"
+          },
+          "env": {
+            "FORCE_COLOR": "1",
+            "PYTHON_VERSION": "3.8",
+            "CC": "gcc-8",
+            "pythonLocation": "/opt/hostedtoolcache/Python/3.8.18/x64",
+            "PKG_CONFIG_PATH": "/opt/hostedtoolcache/Python/3.8.18/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/opt/hostedtoolcache/Python/3.8.18/x64",
+            "Python2_ROOT_DIR": "/opt/hostedtoolcache/Python/3.8.18/x64",
+            "Python3_ROOT_DIR": "/opt/hostedtoolcache/Python/3.8.18/x64",
+            "LD_LIBRARY_PATH": "/opt/hostedtoolcache/Python/3.8.18/x64/lib"
+          },
+          "start_date": "2023-11-11 20:07:37.491000",
+          "duration_sec": 0.762945
+        },
+        {
+          "type": "shell",
+          "env": {
+            "FORCE_COLOR": "1",
+            "PYTHON_VERSION": "3.8",
+            "CC": "gcc-8",
+            "pythonLocation": "/opt/hostedtoolcache/Python/3.8.18/x64",
+            "PKG_CONFIG_PATH": "/opt/hostedtoolcache/Python/3.8.18/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/opt/hostedtoolcache/Python/3.8.18/x64",
+            "Python2_ROOT_DIR": "/opt/hostedtoolcache/Python/3.8.18/x64",
+            "Python3_ROOT_DIR": "/opt/hostedtoolcache/Python/3.8.18/x64",
+            "LD_LIBRARY_PATH": "/opt/hostedtoolcache/Python/3.8.18/x64/lib"
+          },
+          "code": "sudo apt update\nsudo apt-get install -y \\\n  make \\\n  ninja-build \\\n  $CC \\\n  $(echo $CC | sed -e 's/gcc/g\\+\\+/')\nsudo apt-get clean",
+          "commands": [
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-APT-UPDATE"
+              ],
+              "command": "apt",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "UPDATE_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "update"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-APT-INSTALL"
+              ],
+              "command": "apt-get",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-APT-F-YES"
+                  ],
+                  "content": "-y"
+                },
+                {
+                  "annotations": [
+                    "SC-APT-PACKAGE"
+                  ],
+                  "content": "make"
+                },
+                {
+                  "annotations": [
+                    "SC-APT-PACKAGE"
+                  ],
+                  "content": "ninja-build"
+                },
+                {
+                  "annotations": [
+                    "SC-APT-PACKAGE"
+                  ],
+                  "content": "$CC"
+                },
+                {
+                  "annotations": [
+                    "SC-APT-PACKAGE"
+                  ],
+                  "content": "$(echo $CC | sed -e 's/gcc/g\\+\\+/')"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "$CC"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SED"
+              ],
+              "command": "sed",
+              "categories": [
+                "REGEX"
+              ],
+              "args": [
+                {
+                  "content": "-e"
+                },
+                {
+                  "annotations": [
+                    "SC-SED-PATHS"
+                  ],
+                  "content": "'s/gcc/g\\+\\+/'"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-APT-CLEAN"
+              ],
+              "command": "apt-get",
+              "categories": [
+                "PACKAGE_MANAGEMENT"
+              ],
+              "args": [
+                {
+                  "content": "clean"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-11 20:07:38.254000",
+          "duration_sec": 13.702531
+        },
+        {
+          "type": "shell",
+          "env": {
+            "FORCE_COLOR": "1",
+            "PYTHON_VERSION": "3.8",
+            "CC": "gcc-8",
+            "pythonLocation": "/opt/hostedtoolcache/Python/3.8.18/x64",
+            "PKG_CONFIG_PATH": "/opt/hostedtoolcache/Python/3.8.18/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/opt/hostedtoolcache/Python/3.8.18/x64",
+            "Python2_ROOT_DIR": "/opt/hostedtoolcache/Python/3.8.18/x64",
+            "Python3_ROOT_DIR": "/opt/hostedtoolcache/Python/3.8.18/x64",
+            "LD_LIBRARY_PATH": "/opt/hostedtoolcache/Python/3.8.18/x64/lib"
+          },
+          "code": "sudo apt-get install -y libxml2-utils\nsudo apt-get clean",
+          "commands": [
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-APT-INSTALL"
+              ],
+              "command": "apt-get",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-APT-F-YES"
+                  ],
+                  "content": "-y"
+                },
+                {
+                  "annotations": [
+                    "SC-APT-PACKAGE"
+                  ],
+                  "content": "libxml2-utils"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-APT-CLEAN"
+              ],
+              "command": "apt-get",
+              "categories": [
+                "PACKAGE_MANAGEMENT"
+              ],
+              "args": [
+                {
+                  "content": "clean"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-11 20:07:51.956000",
+          "duration_sec": 3.678156
+        },
+        {
+          "type": "shell",
+          "env": {
+            "FORCE_COLOR": "1",
+            "PYTHON_VERSION": "3.8",
+            "CC": "gcc-8",
+            "pythonLocation": "/opt/hostedtoolcache/Python/3.8.18/x64",
+            "PKG_CONFIG_PATH": "/opt/hostedtoolcache/Python/3.8.18/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/opt/hostedtoolcache/Python/3.8.18/x64",
+            "Python2_ROOT_DIR": "/opt/hostedtoolcache/Python/3.8.18/x64",
+            "Python3_ROOT_DIR": "/opt/hostedtoolcache/Python/3.8.18/x64",
+            "LD_LIBRARY_PATH": "/opt/hostedtoolcache/Python/3.8.18/x64/lib"
+          },
+          "code": "python -m pip install nox",
+          "commands": [
+            {
+              "annotations": [
+                "SC-PYTHON-MODULE"
+              ],
+              "command": "python",
+              "categories": [
+                "DEVELOPMENT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-PYTHON-MODULE-M"
+                  ],
+                  "content": "-m"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-PIP-INSTALL"
+              ],
+              "command": "pip",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "nox"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-11 20:07:55.635000",
+          "duration_sec": 1.657391
+        },
+        {
+          "type": "shell",
+          "env": {
+            "FORCE_COLOR": "1",
+            "PYTHON_VERSION": "3.8",
+            "CC": "gcc-8",
+            "pythonLocation": "/opt/hostedtoolcache/Python/3.8.18/x64",
+            "PKG_CONFIG_PATH": "/opt/hostedtoolcache/Python/3.8.18/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/opt/hostedtoolcache/Python/3.8.18/x64",
+            "Python2_ROOT_DIR": "/opt/hostedtoolcache/Python/3.8.18/x64",
+            "Python3_ROOT_DIR": "/opt/hostedtoolcache/Python/3.8.18/x64",
+            "LD_LIBRARY_PATH": "/opt/hostedtoolcache/Python/3.8.18/x64/lib"
+          },
+          "code": "nox --non-interactive --session lint",
+          "commands": [
+            {
+              "command": "nox",
+              "args": [
+                {
+                  "content": "--non-interactive"
+                },
+                {
+                  "content": "--session"
+                },
+                {
+                  "content": "lint"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-11 20:07:57.292000",
+          "duration_sec": 7.163177
+        },
+        {
+          "type": "shell",
+          "env": {
+            "FORCE_COLOR": "1",
+            "PYTHON_VERSION": "3.8",
+            "CC": "gcc-8",
+            "pythonLocation": "/opt/hostedtoolcache/Python/3.8.18/x64",
+            "PKG_CONFIG_PATH": "/opt/hostedtoolcache/Python/3.8.18/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/opt/hostedtoolcache/Python/3.8.18/x64",
+            "Python2_ROOT_DIR": "/opt/hostedtoolcache/Python/3.8.18/x64",
+            "Python3_ROOT_DIR": "/opt/hostedtoolcache/Python/3.8.18/x64",
+            "LD_LIBRARY_PATH": "/opt/hostedtoolcache/Python/3.8.18/x64/lib"
+          },
+          "code": "nox --non-interactive --session \"tests_compiler($CC)\"",
+          "commands": [
+            {
+              "command": "nox",
+              "args": [
+                {
+                  "content": "--non-interactive"
+                },
+                {
+                  "content": "--session"
+                },
+                {
+                  "content": "\"tests_compiler($CC)\""
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-11 20:08:04.455000",
+          "duration_sec": 59.451478
+        }
+      ]
+    }
+  ],
+  "total_logs_size": 7023890
+}

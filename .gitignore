@@ -1,0 +1,45 @@
+.env
+*.json.gz
+*.zip
+gha_data/
+data/prior_counts.json
+__pycache__/
+*.pyc
+thesis_venv/
+batch_excerpts/
+hard_case_excerpts/
+case_studies/
+comparison_results/.vscode-server/
+.antigravity-server/
+.codex/
+snap/
+*.vsix
+node_modules/
+.vscode-server/
+.antigravity-server/
+.codex/
+snap/
+
+# Local/server tool folders .
+.vscode-server/
+.antigravity-server/
+.codex/.tmp/
+__pycache__/
+*.pyc
+.env
+
+# secrets / virtualenvs / caches
+.env.*
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# raw third-party corpora (excluded due to size / licensing; see README data note)
+data/runs_zenodo.json.gz
+data/logchunks/
+
+# trimmed raw demo/comparison logs (kept structured .json only)
+streaming_cases_10/**/*.log
+streaming_cases_10/**/logs/
+comparison_results/**/full_log.txt

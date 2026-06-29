@@ -1,0 +1,26 @@
+{
+  "index": 8,
+  "label": "failure",
+  "run_id": "aliyuncontainerservice/minikube_.github/workflows/update-golang-version.yml_108_1",
+  "repo": "aliyuncontainerservice/minikube",
+  "workflow_path": ".github/workflows/update-golang-version.yml",
+  "run_number": "108",
+  "attempt": "1",
+  "scan_line": 157498,
+  "case_dir": "/home/guc_alaa/comparison_results/balanced_50_full_logs_20260516/008_failure_aliyuncontainerservice_minikube_update-golang-version.yml",
+  "full_log_path": "/home/guc_alaa/comparison_results/balanced_50_full_logs_20260516/008_failure_aliyuncontainerservice_minikube_update-golang-version.yml/full_log.txt",
+  "tarball": "logs/AliyunContainerService/minikube/update_golang_versions_3ce7/108-1.tar.gz",
+  "n_job_logs": 9,
+  "job_log_files": [
+    "bump-golang-version/2_Run actionscheckout@629c2de402a417ea7690ca6ce3f33229e27606.txt",
+    "bump-golang-version/3_Run actionssetup-go@f6164bd8c8acb4a71fb2791a8b6c4024ff038d.txt",
+    "bump-golang-version/10_Post Run actionscheckout@629c2de402a417ea7690ca6ce3f33229.txt",
+    "bump-golang-version/1_Set up job.txt",
+    "bump-golang-version/4_Bump Golang Versions.txt",
+    "1_bump-golang-version.txt",
+    "bump-golang-version/11_Complete job.txt",
+    "bump-golang-version/5_Create PR.txt",
+    "1_bump-golang-version (1).txt"
+  ],
+  "full_log_chars": 108996
+}

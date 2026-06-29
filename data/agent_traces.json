@@ -1,0 +1,1568 @@
+[
+ {
+  "run_id": "nerdwalletoss/shepherd_.github/workflows/release.yml_351_1",
+  "repo": "nerdwalletoss/shepherd",
+  "gt_bucket": "CODE",
+  "category": "CONFIG_ERROR",
+  "pred_bucket": "CONFIG",
+  "correct": false,
+  "confidence": 0.95,
+  "steps": 2,
+  "n_tools": 1,
+  "tools": [
+   "workflow_contents"
+  ],
+  "signals": [
+   "deep_log_analysis",
+   "workflow_contents"
+  ],
+  "info_gains": [
+   1.1097,
+   0.507
+  ],
+  "stop": "entropy_threshold",
+  "entropy_traj": [
+   0.592,
+   0.085
+  ],
+  "entropy_start": 0.592,
+  "entropy_end": 0.085
+ },
+ {
+  "run_id": "ffmpegwasm/ffmpeg.wasm_.github/workflows/main.yml_349_1",
+  "repo": "ffmpegwasm/ffmpeg.wasm",
+  "gt_bucket": "CODE",
+  "category": "CODE_REGRESSION",
+  "pred_bucket": "CODE",
+  "correct": true,
+  "confidence": 0.98,
+  "steps": 1,
+  "n_tools": 0,
+  "tools": [],
+  "signals": [
+   "deep_log_analysis"
+  ],
+  "info_gains": [
+   1.5522
+  ],
+  "stop": "entropy_threshold",
+  "entropy_traj": [
+   0.149
+  ],
+  "entropy_start": 0.149,
+  "entropy_end": 0.149
+ },
+ {
+  "run_id": "openai/openai-node_.github/workflows/test.yml_86_1",
+  "repo": "openai/openai-node",
+  "gt_bucket": "CODE",
+  "category": "CODE_REGRESSION",
+  "pred_bucket": "CODE",
+  "correct": true,
+  "confidence": 0.83,
+  "steps": 2,
+  "n_tools": 1,
+  "tools": [
+   "dependency_changes"
+  ],
+  "signals": [
+   "deep_log_analysis",
+   "dependency_changes"
+  ],
+  "info_gains": [
+   0.5447,
+   0.4397
+  ],
+  "stop": "entropy_threshold",
+  "entropy_traj": [
+   1.157,
+   0.717
+  ],
+  "entropy_start": 1.157,
+  "entropy_end": 0.717
+ },
+ {
+  "run_id": "getstream/stream-chat-react_.github/workflows/ci.yml_5436_1",
+  "repo": "getstream/stream-chat-react",
+  "gt_bucket": "CODE",
+  "category": "CONFIG_ERROR",
+  "pred_bucket": "CONFIG",
+  "correct": false,
+  "confidence": 0.75,
+  "steps": 1,
+  "n_tools": 0,
+  "tools": [],
+  "signals": [
+   "deep_log_analysis"
+  ],
+  "info_gains": [
+   -0.0561
+  ],
+  "stop": "budget_or_exhausted",
+  "entropy_traj": [
+   1.758
+  ],
+  "entropy_start": 1.758,
+  "entropy_end": 1.758
+ },
+ {
+  "run_id": "sobhe/hazm_.github/workflows/lint.yml_89_1",
+  "repo": "sobhe/hazm",
+  "gt_bucket": "CODE",
+  "category": "CODE_REGRESSION",
+  "pred_bucket": "CODE",
+  "correct": true,
+  "confidence": 0.85,
+  "steps": 1,
+  "n_tools": 0,
+  "tools": [],
+  "signals": [
+   "deep_log_analysis"
+  ],
+  "info_gains": [
+   0.6754
+  ],
+  "stop": "budget_or_exhausted",
+  "entropy_traj": [
+   1.026
+  ],
+  "entropy_start": 1.026,
+  "entropy_end": 1.026
+ },
+ {
+  "run_id": "ironlanguages/ironpython3_.github/workflows/main.yml_2492_1",
+  "repo": "ironlanguages/ironpython3",
+  "gt_bucket": "CONFIG",
+  "category": "CONFIG_ERROR",
+  "pred_bucket": "CONFIG",
+  "correct": true,
+  "confidence": 0.9,
+  "steps": 2,
+  "n_tools": 1,
+  "tools": [
+   "workflow_contents"
+  ],
+  "signals": [
+   "deep_log_analysis",
+   "workflow_contents"
+  ],
+  "info_gains": [
+   -0.1777,
+   1.1669
+  ],
+  "stop": "entropy_threshold",
+  "entropy_traj": [
+   1.879,
+   0.712
+  ],
+  "entropy_start": 1.879,
+  "entropy_end": 0.712
+ },
+ {
+  "run_id": "p5-wrapper/react_.github/workflows/CD.yml_64_1",
+  "repo": "p5-wrapper/react",
+  "gt_bucket": "CONFIG",
+  "category": "CONFIG_ERROR",
+  "pred_bucket": "CONFIG",
+  "correct": true,
+  "confidence": 0.75,
+  "steps": 1,
+  "n_tools": 0,
+  "tools": [],
+  "signals": [
+   "deep_log_analysis"
+  ],
+  "info_gains": [
+   0.5233
+  ],
+  "stop": "budget_or_exhausted",
+  "entropy_traj": [
+   1.178
+  ],
+  "entropy_start": 1.178,
+  "entropy_end": 1.178
+ },
+ {
+  "run_id": "lmfdb/lmfdb_.github/workflows/python-package.yml_2229_2",
+  "repo": "lmfdb/lmfdb",
+  "gt_bucket": "CODE",
+  "category": "CODE_REGRESSION",
+  "pred_bucket": "CODE",
+  "correct": true,
+  "confidence": 0.7,
+  "steps": 2,
+  "n_tools": 1,
+  "tools": [
+   "runner_environment"
+  ],
+  "signals": [
+   "deep_log_analysis",
+   "runner_environment"
+  ],
+  "info_gains": [
+   -0.4267,
+   0.5709
+  ],
+  "stop": "budget_or_exhausted",
+  "entropy_traj": [
+   2.128,
+   1.557
+  ],
+  "entropy_start": 2.128,
+  "entropy_end": 1.557
+ },
+ {
+  "run_id": "microsoft/graspologic_.github/workflows/publish.yml_66_1",
+  "repo": "microsoft/graspologic",
+  "gt_bucket": "CODE",
+  "category": "CODE_REGRESSION",
+  "pred_bucket": "CODE",
+  "correct": true,
+  "confidence": 0.99,
+  "steps": 1,
+  "n_tools": 0,
+  "tools": [],
+  "signals": [
+   "deep_log_analysis"
+  ],
+  "info_gains": [
+   1.6291
+  ],
+  "stop": "entropy_threshold",
+  "entropy_traj": [
+   0.072
+  ],
+  "entropy_start": 0.072,
+  "entropy_end": 0.072
+ },
+ {
+  "run_id": "quantumlib/openfermion_.github/workflows/nightly.yml_681_1",
+  "repo": "quantumlib/openfermion",
+  "gt_bucket": "CODE",
+  "category": "CODE_REGRESSION",
+  "pred_bucket": "CODE",
+  "correct": true,
+  "confidence": 0.98,
+  "steps": 1,
+  "n_tools": 0,
+  "tools": [],
+  "signals": [
+   "deep_log_analysis"
+  ],
+  "info_gains": [
+   1.552
+  ],
+  "stop": "entropy_threshold",
+  "entropy_traj": [
+   0.15
+  ],
+  "entropy_start": 0.15,
+  "entropy_end": 0.15
+ },
+ {
+  "run_id": "dioxuslabs/blitz_.github/workflows/macos.yml_31_1",
+  "repo": "dioxuslabs/blitz",
+  "gt_bucket": "CONFIG",
+  "category": "CONFIG_ERROR",
+  "pred_bucket": "CONFIG",
+  "correct": true,
+  "confidence": 0.95,
+  "steps": 3,
+  "n_tools": 2,
+  "tools": [
+   "runner_environment",
+   "workflow_contents"
+  ],
+  "signals": [
+   "deep_log_analysis",
+   "runner_environment",
+   "workflow_contents"
+  ],
+  "info_gains": [
+   0.5272,
+   -0.3577,
+   1.3574
+  ],
+  "stop": "entropy_threshold",
+  "entropy_traj": [
+   1.174,
+   1.532,
+   0.175
+  ],
+  "entropy_start": 1.174,
+  "entropy_end": 0.175
+ },
+ {
+  "run_id": "freenet/locutus_.github/workflows/ci.yml_1669_1",
+  "repo": "freenet/locutus",
+  "gt_bucket": "CODE",
+  "category": "CODE_REGRESSION",
+  "pred_bucket": "CODE",
+  "correct": true,
+  "confidence": 0.97,
+  "steps": 1,
+  "n_tools": 0,
+  "tools": [],
+  "signals": [
+   "deep_log_analysis"
+  ],
+  "info_gains": [
+   1.52
+  ],
+  "stop": "entropy_threshold",
+  "entropy_traj": [
+   0.182
+  ],
+  "entropy_start": 0.182,
+  "entropy_end": 0.182
+ },
+ {
+  "run_id": "console-rs/dialoguer_.github/workflows/ci.yml_303_1",
+  "repo": "console-rs/dialoguer",
+  "gt_bucket": "CODE",
+  "category": "QUALITY_VIOLATION",
+  "pred_bucket": "CODE",
+  "correct": true,
+  "confidence": 0.53,
+  "steps": 1,
+  "n_tools": 0,
+  "tools": [],
+  "signals": [
+   "deep_log_analysis"
+  ],
+  "info_gains": [
+   0.3636
+  ],
+  "stop": "budget_or_exhausted",
+  "entropy_traj": [
+   1.338
+  ],
+  "entropy_start": 1.338,
+  "entropy_end": 1.338
+ },
+ {
+  "run_id": "hugsy/gef-extras_.github/workflows/run-tests.yml_68_1",
+  "repo": "hugsy/gef-extras",
+  "gt_bucket": "CONFIG",
+  "category": "DEPENDENCY_CONFLICT",
+  "pred_bucket": "DEPENDENCY",
+  "correct": false,
+  "confidence": 0.95,
+  "steps": 2,
+  "n_tools": 1,
+  "tools": [
+   "dependency_changes"
+  ],
+  "signals": [
+   "deep_log_analysis",
+   "dependency_changes"
+  ],
+  "info_gains": [
+   0.4202,
+   1.0803
+  ],
+  "stop": "entropy_threshold",
+  "entropy_traj": [
+   1.281,
+   0.201
+  ],
+  "entropy_start": 1.281,
+  "entropy_end": 0.201
+ },
+ {
+  "run_id": "segmentio/stats_.github/workflows/go.yml_55_1",
+  "repo": "segmentio/stats",
+  "gt_bucket": "DEPENDENCY",
+  "category": "CODE_REGRESSION",
+  "pred_bucket": "CODE",
+  "correct": false,
+  "confidence": 0.85,
+  "steps": 1,
+  "n_tools": 0,
+  "tools": [],
+  "signals": [
+   "deep_log_analysis"
+  ],
+  "info_gains": [
+   0.5636
+  ],
+  "stop": "budget_or_exhausted",
+  "entropy_traj": [
+   1.138
+  ],
+  "entropy_start": 1.138,
+  "entropy_end": 1.138
+ },
+ {
+  "run_id": "dbup/dbup_.github/workflows/test-code.yml_52_1",
+  "repo": "dbup/dbup",
+  "gt_bucket": "CODE",
+  "category": "CONFIG_ERROR",
+  "pred_bucket": "CONFIG",
+  "correct": false,
+  "confidence": 0.7,
+  "steps": 1,
+  "n_tools": 0,
+  "tools": [],
+  "signals": [
+   "deep_log_analysis"
+  ],
+  "info_gains": [
+   0.5616
+  ],
+  "stop": "budget_or_exhausted",
+  "entropy_traj": [
+   1.14
+  ],
+  "entropy_start": 1.14,
+  "entropy_end": 1.14
+ },
+ {
+  "run_id": "1password/onepassword-operator_.github/workflows/release-pr.yml_79_1",
+  "repo": "1password/onepassword-operator",
+  "gt_bucket": "CODE",
+  "category": "CONFIG_ERROR",
+  "pred_bucket": "CONFIG",
+  "correct": false,
+  "confidence": 0.9,
+  "steps": 1,
+  "n_tools": 0,
+  "tools": [],
+  "signals": [
+   "deep_log_analysis"
+  ],
+  "info_gains": [
+   1.3054
+  ],
+  "stop": "entropy_threshold",
+  "entropy_traj": [
+   0.396
+  ],
+  "entropy_start": 0.396,
+  "entropy_end": 0.396
+ },
+ {
+  "run_id": "clastix/capsule_.github/workflows/e2e.yml_1058_1",
+  "repo": "clastix/capsule",
+  "gt_bucket": "CODE",
+  "category": "CODE_REGRESSION",
+  "pred_bucket": "CODE",
+  "correct": true,
+  "confidence": 0.75,
+  "steps": 2,
+  "n_tools": 1,
+  "tools": [
+   "runner_environment"
+  ],
+  "signals": [
+   "deep_log_analysis",
+   "runner_environment"
+  ],
+  "info_gains": [
+   0.0039,
+   0.1301
+  ],
+  "stop": "budget_or_exhausted",
+  "entropy_traj": [
+   1.698,
+   1.568
+  ],
+  "entropy_start": 1.698,
+  "entropy_end": 1.568
+ },
+ {
+  "run_id": "alirezanet/husky.net_.github/workflows/publish.yml_51_1",
+  "repo": "alirezanet/husky.net",
+  "gt_bucket": "CODE",
+  "category": "CODE_REGRESSION",
+  "pred_bucket": "CODE",
+  "correct": true,
+  "confidence": 0.85,
+  "steps": 1,
+  "n_tools": 0,
+  "tools": [],
+  "signals": [
+   "deep_log_analysis"
+  ],
+  "info_gains": [
+   0.5083
+  ],
+  "stop": "budget_or_exhausted",
+  "entropy_traj": [
+   1.193
+  ],
+  "entropy_start": 1.193,
+  "entropy_end": 1.193
+ },
+ {
+  "run_id": "pewu/topola-viewer_.github/workflows/node.js.yml_128_1",
+  "repo": "pewu/topola-viewer",
+  "gt_bucket": "CODE",
+  "category": "CODE_REGRESSION",
+  "pred_bucket": "CODE",
+  "correct": true,
+  "confidence": 0.96,
+  "steps": 1,
+  "n_tools": 0,
+  "tools": [],
+  "signals": [
+   "deep_log_analysis"
+  ],
+  "info_gains": [
+   1.3921
+  ],
+  "stop": "entropy_threshold",
+  "entropy_traj": [
+   0.309
+  ],
+  "entropy_start": 0.309,
+  "entropy_end": 0.309
+ },
+ {
+  "run_id": "brentp/cyvcf2_.github/workflows/build.yml_181_1",
+  "repo": "brentp/cyvcf2",
+  "gt_bucket": "CONFIG",
+  "category": "CODE_REGRESSION",
+  "pred_bucket": "CODE",
+  "correct": false,
+  "confidence": 0.98,
+  "steps": 1,
+  "n_tools": 0,
+  "tools": [],
+  "signals": [
+   "deep_log_analysis"
+  ],
+  "info_gains": [
+   1.552
+  ],
+  "stop": "entropy_threshold",
+  "entropy_traj": [
+   0.15
+  ],
+  "entropy_start": 0.15,
+  "entropy_end": 0.15
+ },
+ {
+  "run_id": "ivanvotti/ember-svg-jar_.github/workflows/ci-ember-svg-jar.yml_106_1",
+  "repo": "ivanvotti/ember-svg-jar",
+  "gt_bucket": "CONFIG",
+  "category": "CODE_REGRESSION",
+  "pred_bucket": "CODE",
+  "correct": false,
+  "confidence": 0.85,
+  "steps": 1,
+  "n_tools": 0,
+  "tools": [],
+  "signals": [
+   "deep_log_analysis"
+  ],
+  "info_gains": [
+   -0.3211
+  ],
+  "stop": "budget_or_exhausted",
+  "entropy_traj": [
+   2.023
+  ],
+  "entropy_start": 2.023,
+  "entropy_end": 2.023
+ },
+ {
+  "run_id": "messense/cargo-xwin_.github/workflows/CI.yml_316_1",
+  "repo": "messense/cargo-xwin",
+  "gt_bucket": "DEPENDENCY",
+  "category": "DEPENDENCY_CONFLICT",
+  "pred_bucket": "DEPENDENCY",
+  "correct": true,
+  "confidence": 0.92,
+  "steps": 1,
+  "n_tools": 0,
+  "tools": [],
+  "signals": [
+   "deep_log_analysis"
+  ],
+  "info_gains": [
+   1.5095
+  ],
+  "stop": "entropy_threshold",
+  "entropy_traj": [
+   0.192
+  ],
+  "entropy_start": 0.192,
+  "entropy_end": 0.192
+ },
+ {
+  "run_id": "serenity-bdd/serenity-cucumber-starter_.github/workflows/gradle-jdk11.yml_28_1",
+  "repo": "serenity-bdd/serenity-cucumber-starter",
+  "gt_bucket": "CONFIG",
+  "category": "CODE_REGRESSION",
+  "pred_bucket": "CODE",
+  "correct": false,
+  "confidence": 0.78,
+  "steps": 2,
+  "n_tools": 1,
+  "tools": [
+   "runner_environment"
+  ],
+  "signals": [
+   "deep_log_analysis",
+   "runner_environment"
+  ],
+  "info_gains": [
+   0.671,
+   0.0207
+  ],
+  "stop": "budget_or_exhausted",
+  "entropy_traj": [
+   1.03,
+   1.01
+  ],
+  "entropy_start": 1.03,
+  "entropy_end": 1.01
+ },
+ {
+  "run_id": "metamask/json-rpc-engine_.github/workflows/publish-main-docs.yml_16_1",
+  "repo": "metamask/json-rpc-engine",
+  "gt_bucket": "DEPENDENCY",
+  "category": "CONFIG_ERROR",
+  "pred_bucket": "CONFIG",
+  "correct": false,
+  "confidence": 0.95,
+  "steps": 1,
+  "n_tools": 0,
+  "tools": [],
+  "signals": [
+   "deep_log_analysis"
+  ],
+  "info_gains": [
+   1.6637
+  ],
+  "stop": "entropy_threshold",
+  "entropy_traj": [
+   0.038
+  ],
+  "entropy_start": 0.038,
+  "entropy_end": 0.038
+ },
+ {
+  "run_id": "hipages/php-fpm_exporter_.github/workflows/release.yml_33_1",
+  "repo": "hipages/php-fpm_exporter",
+  "gt_bucket": "CONFIG",
+  "category": "CONFIG_ERROR",
+  "pred_bucket": "CONFIG",
+  "correct": true,
+  "confidence": 0.966,
+  "steps": 2,
+  "n_tools": 1,
+  "tools": [
+   "workflow_contents"
+  ],
+  "signals": [
+   "deep_log_analysis",
+   "workflow_contents"
+  ],
+  "info_gains": [
+   -0.3849,
+   1.8132
+  ],
+  "stop": "entropy_threshold",
+  "entropy_traj": [
+   2.086,
+   0.273
+  ],
+  "entropy_start": 2.086,
+  "entropy_end": 0.273
+ },
+ {
+  "run_id": "matanolabs/matano_.github/workflows/pr-build.yml_112_1",
+  "repo": "matanolabs/matano",
+  "gt_bucket": "CODE",
+  "category": "CODE_REGRESSION",
+  "pred_bucket": "CODE",
+  "correct": true,
+  "confidence": 0.92,
+  "steps": 2,
+  "n_tools": 1,
+  "tools": [
+   "runner_environment"
+  ],
+  "signals": [
+   "deep_log_analysis",
+   "runner_environment"
+  ],
+  "info_gains": [
+   0.5183,
+   0.0819
+  ],
+  "stop": "budget_or_exhausted",
+  "entropy_traj": [
+   1.183,
+   1.101
+  ],
+  "entropy_start": 1.183,
+  "entropy_end": 1.101
+ },
+ {
+  "run_id": "ipfs-shipyard/ipfs-webui_.github/workflows/node-versions.yml_65_1",
+  "repo": "ipfs-shipyard/ipfs-webui",
+  "gt_bucket": "DEPENDENCY",
+  "category": "CODE_REGRESSION",
+  "pred_bucket": "CODE",
+  "correct": false,
+  "confidence": 0.85,
+  "steps": 2,
+  "n_tools": 1,
+  "tools": [
+   "dependency_changes"
+  ],
+  "signals": [
+   "deep_log_analysis",
+   "dependency_changes"
+  ],
+  "info_gains": [
+   0.5447,
+   0.4559
+  ],
+  "stop": "entropy_threshold",
+  "entropy_traj": [
+   1.157,
+   0.701
+  ],
+  "entropy_start": 1.157,
+  "entropy_end": 0.701
+ },
+ {
+  "run_id": "shopify/js-buy-sdk_dynamic/dependabot/dependabot-updates_1_1",
+  "repo": "shopify/js-buy-sdk",
+  "gt_bucket": "CODE",
+  "category": "TOOLING_ARTIFACT",
+  "pred_bucket": "TRANSIENT",
+  "correct": false,
+  "confidence": 0.75,
+  "steps": 1,
+  "n_tools": 0,
+  "tools": [],
+  "signals": [
+   "deep_log_analysis"
+  ],
+  "info_gains": [
+   -0.3445
+  ],
+  "stop": "budget_or_exhausted",
+  "entropy_traj": [
+   2.046
+  ],
+  "entropy_start": 2.046,
+  "entropy_end": 2.046
+ },
+ {
+  "run_id": "eldavoo/whatsapp-crypt14-crypt15-decrypter_.github/workflows/lint-test.yml_42_1",
+  "repo": "eldavoo/whatsapp-crypt14-crypt15-decrypter",
+  "gt_bucket": "DEPENDENCY",
+  "category": "CONFIG_ERROR",
+  "pred_bucket": "CONFIG",
+  "correct": false,
+  "confidence": 0.72,
+  "steps": 1,
+  "n_tools": 0,
+  "tools": [],
+  "signals": [
+   "deep_log_analysis"
+  ],
+  "info_gains": [
+   0.3604
+  ],
+  "stop": "budget_or_exhausted",
+  "entropy_traj": [
+   1.341
+  ],
+  "entropy_start": 1.341,
+  "entropy_end": 1.341
+ },
+ {
+  "run_id": "d2-projects/d2-admin_.github/workflows/release.yml_99_1",
+  "repo": "d2-projects/d2-admin",
+  "gt_bucket": "CONFIG",
+  "category": "CONFIG_ERROR",
+  "pred_bucket": "CONFIG",
+  "correct": true,
+  "confidence": 0.7,
+  "steps": 3,
+  "n_tools": 2,
+  "tools": [
+   "workflow_contents",
+   "dependency_changes"
+  ],
+  "signals": [
+   "deep_log_analysis",
+   "workflow_contents",
+   "dependency_changes"
+  ],
+  "info_gains": [
+   -0.3959,
+   -0.0015,
+   0.8469
+  ],
+  "stop": "budget_or_exhausted",
+  "entropy_traj": [
+   2.097,
+   2.099,
+   1.252
+  ],
+  "entropy_start": 2.097,
+  "entropy_end": 1.252
+ },
+ {
+  "run_id": "vanus-labs/vanus_.github/workflows/docker-build.yml_212_1",
+  "repo": "vanus-labs/vanus",
+  "gt_bucket": "CONFIG",
+  "category": "CODE_REGRESSION",
+  "pred_bucket": "CODE",
+  "correct": false,
+  "confidence": 0.75,
+  "steps": 2,
+  "n_tools": 1,
+  "tools": [
+   "runner_environment"
+  ],
+  "signals": [
+   "deep_log_analysis",
+   "runner_environment"
+  ],
+  "info_gains": [
+   0.1267,
+   -0.1421
+  ],
+  "stop": "budget_or_exhausted",
+  "entropy_traj": [
+   1.575,
+   1.717
+  ],
+  "entropy_start": 1.575,
+  "entropy_end": 1.717
+ },
+ {
+  "run_id": "easypost/easypost-node_.github/workflows/ci.yml_819_1",
+  "repo": "easypost/easypost-node",
+  "gt_bucket": "CODE",
+  "category": "CODE_REGRESSION",
+  "pred_bucket": "CODE",
+  "correct": true,
+  "confidence": 0.95,
+  "steps": 1,
+  "n_tools": 0,
+  "tools": [],
+  "signals": [
+   "deep_log_analysis"
+  ],
+  "info_gains": [
+   1.5816
+  ],
+  "stop": "entropy_threshold",
+  "entropy_traj": [
+   0.12
+  ],
+  "entropy_start": 0.12,
+  "entropy_end": 0.12
+ },
+ {
+  "run_id": "slackadays/clipboard_.github/workflows/test-installer.yml_776_1",
+  "repo": "slackadays/clipboard",
+  "gt_bucket": "CODE",
+  "category": "CODE_REGRESSION",
+  "pred_bucket": "CODE",
+  "correct": true,
+  "confidence": 0.98,
+  "steps": 1,
+  "n_tools": 0,
+  "tools": [],
+  "signals": [
+   "deep_log_analysis"
+  ],
+  "info_gains": [
+   1.5221
+  ],
+  "stop": "entropy_threshold",
+  "entropy_traj": [
+   0.179
+  ],
+  "entropy_start": 0.179,
+  "entropy_end": 0.179
+ },
+ {
+  "run_id": "wix/react-native-notifications_.github/workflows/documentation.yml_274_1",
+  "repo": "wix/react-native-notifications",
+  "gt_bucket": "CODE",
+  "category": "DEPENDENCY_CONFLICT",
+  "pred_bucket": "DEPENDENCY",
+  "correct": false,
+  "confidence": 0.8,
+  "steps": 3,
+  "n_tools": 2,
+  "tools": [
+   "runner_environment",
+   "dependency_changes"
+  ],
+  "signals": [
+   "deep_log_analysis",
+   "runner_environment",
+   "dependency_changes"
+  ],
+  "info_gains": [
+   -0.285,
+   0.3325,
+   -0.2391
+  ],
+  "stop": "budget_or_exhausted",
+  "entropy_traj": [
+   1.986,
+   1.654,
+   1.893
+  ],
+  "entropy_start": 1.986,
+  "entropy_end": 1.893
+ },
+ {
+  "run_id": "marekkon5/onetagger_.github/workflows/build.yml_559_1",
+  "repo": "marekkon5/onetagger",
+  "gt_bucket": "CODE",
+  "category": "CODE_REGRESSION",
+  "pred_bucket": "CODE",
+  "correct": true,
+  "confidence": 0.98,
+  "steps": 1,
+  "n_tools": 0,
+  "tools": [],
+  "signals": [
+   "deep_log_analysis"
+  ],
+  "info_gains": [
+   1.546
+  ],
+  "stop": "entropy_threshold",
+  "entropy_traj": [
+   0.156
+  ],
+  "entropy_start": 0.156,
+  "entropy_end": 0.156
+ },
+ {
+  "run_id": "wicg/webmonetization_.github/workflows/contributors.yml_4_1",
+  "repo": "wicg/webmonetization",
+  "gt_bucket": "CONFIG",
+  "category": "CONFIG_ERROR",
+  "pred_bucket": "CONFIG",
+  "correct": true,
+  "confidence": 0.95,
+  "steps": 1,
+  "n_tools": 0,
+  "tools": [],
+  "signals": [
+   "deep_log_analysis"
+  ],
+  "info_gains": [
+   1.6291
+  ],
+  "stop": "entropy_threshold",
+  "entropy_traj": [
+   0.072
+  ],
+  "entropy_start": 0.072,
+  "entropy_end": 0.072
+ },
+ {
+  "run_id": "ivanceras/svgbob_.github/workflows/rust.yml_167_1",
+  "repo": "ivanceras/svgbob",
+  "gt_bucket": "CODE",
+  "category": "CODE_REGRESSION",
+  "pred_bucket": "CODE",
+  "correct": true,
+  "confidence": 0.65,
+  "steps": 1,
+  "n_tools": 0,
+  "tools": [],
+  "signals": [
+   "deep_log_analysis"
+  ],
+  "info_gains": [
+   0.9048
+  ],
+  "stop": "entropy_threshold",
+  "entropy_traj": [
+   0.797
+  ],
+  "entropy_start": 0.797,
+  "entropy_end": 0.797
+ },
+ {
+  "run_id": "xxyzz/worddumb_.github/workflows/tests.yml_706_1",
+  "repo": "xxyzz/worddumb",
+  "gt_bucket": "CODE",
+  "category": "CODE_REGRESSION",
+  "pred_bucket": "CODE",
+  "correct": true,
+  "confidence": 0.85,
+  "steps": 1,
+  "n_tools": 0,
+  "tools": [],
+  "signals": [
+   "deep_log_analysis"
+  ],
+  "info_gains": [
+   0.7034
+  ],
+  "stop": "entropy_threshold",
+  "entropy_traj": [
+   0.998
+  ],
+  "entropy_start": 0.998,
+  "entropy_end": 0.998
+ },
+ {
+  "run_id": "brechtm/rinohtype_.github/workflows/tests.yml_740_1",
+  "repo": "brechtm/rinohtype",
+  "gt_bucket": "CODE",
+  "category": "CODE_REGRESSION",
+  "pred_bucket": "CODE",
+  "correct": true,
+  "confidence": 0.9,
+  "steps": 2,
+  "n_tools": 1,
+  "tools": [
+   "runner_environment"
+  ],
+  "signals": [
+   "deep_log_analysis",
+   "runner_environment"
+  ],
+  "info_gains": [
+   0.4056,
+   0.0818
+  ],
+  "stop": "budget_or_exhausted",
+  "entropy_traj": [
+   1.296,
+   1.214
+  ],
+  "entropy_start": 1.296,
+  "entropy_end": 1.214
+ },
+ {
+  "run_id": "aws-samples/serverless-dotnet-demo_.github/workflows/metrics-lambda-pipeline.yaml_6_1",
+  "repo": "aws-samples/serverless-dotnet-demo",
+  "gt_bucket": "CODE",
+  "category": "CODE_REGRESSION",
+  "pred_bucket": "CODE",
+  "correct": true,
+  "confidence": 0.99,
+  "steps": 1,
+  "n_tools": 0,
+  "tools": [],
+  "signals": [
+   "deep_log_analysis"
+  ],
+  "info_gains": [
+   1.6291
+  ],
+  "stop": "entropy_threshold",
+  "entropy_traj": [
+   0.072
+  ],
+  "entropy_start": 0.072,
+  "entropy_end": 0.072
+ },
+ {
+  "run_id": "python-validators/validators_.github/workflows/package.yaml_5_1",
+  "repo": "python-validators/validators",
+  "gt_bucket": "CONFIG",
+  "category": "CONFIG_ERROR",
+  "pred_bucket": "CONFIG",
+  "correct": true,
+  "confidence": 0.99,
+  "steps": 2,
+  "n_tools": 1,
+  "tools": [
+   "workflow_contents"
+  ],
+  "signals": [
+   "deep_log_analysis",
+   "workflow_contents"
+  ],
+  "info_gains": [
+   0.8923,
+   0.7583
+  ],
+  "stop": "entropy_threshold",
+  "entropy_traj": [
+   0.809,
+   0.051
+  ],
+  "entropy_start": 0.809,
+  "entropy_end": 0.051
+ },
+ {
+  "run_id": "trufflesuite/ganache_.github/workflows/release.yml_149_1",
+  "repo": "trufflesuite/ganache",
+  "gt_bucket": "CONFIG",
+  "category": "CONFIG_ERROR",
+  "pred_bucket": "CONFIG",
+  "correct": true,
+  "confidence": 0.85,
+  "steps": 1,
+  "n_tools": 0,
+  "tools": [],
+  "signals": [
+   "deep_log_analysis"
+  ],
+  "info_gains": [
+   0.0762
+  ],
+  "stop": "budget_or_exhausted",
+  "entropy_traj": [
+   1.625
+  ],
+  "entropy_start": 1.625,
+  "entropy_end": 1.625
+ },
+ {
+  "run_id": "yuhattor/copilot-patterns_.github/workflows/publish-page.yaml_11_1",
+  "repo": "yuhattor/copilot-patterns",
+  "gt_bucket": "CONFIG",
+  "category": "CODE_REGRESSION",
+  "pred_bucket": "CODE",
+  "correct": false,
+  "confidence": 0.95,
+  "steps": 1,
+  "n_tools": 0,
+  "tools": [],
+  "signals": [
+   "deep_log_analysis"
+  ],
+  "info_gains": [
+   1.5171
+  ],
+  "stop": "entropy_threshold",
+  "entropy_traj": [
+   0.184
+  ],
+  "entropy_start": 0.184,
+  "entropy_end": 0.184
+ },
+ {
+  "run_id": "xboxdev/nxdk_.github/workflows/build_docker_image.yml_143_1",
+  "repo": "xboxdev/nxdk",
+  "gt_bucket": "CONFIG",
+  "category": "CONFIG_ERROR",
+  "pred_bucket": "CONFIG",
+  "correct": true,
+  "confidence": 0.983596263367625,
+  "steps": 2,
+  "n_tools": 1,
+  "tools": [
+   "workflow_contents"
+  ],
+  "signals": [
+   "deep_log_analysis",
+   "workflow_contents"
+  ],
+  "info_gains": [
+   1.2546,
+   0.3949
+  ],
+  "stop": "entropy_threshold",
+  "entropy_traj": [
+   0.447,
+   0.052
+  ],
+  "entropy_start": 0.447,
+  "entropy_end": 0.052
+ },
+ {
+  "run_id": "kasperskylab/kaspresso_.github/workflows/snapshot_check.yml_6_1",
+  "repo": "kasperskylab/kaspresso",
+  "gt_bucket": "CONFIG",
+  "category": "CODE_REGRESSION",
+  "pred_bucket": "CODE",
+  "correct": false,
+  "confidence": 0.93,
+  "steps": 1,
+  "n_tools": 0,
+  "tools": [],
+  "signals": [
+   "deep_log_analysis"
+  ],
+  "info_gains": [
+   1.2675
+  ],
+  "stop": "entropy_threshold",
+  "entropy_traj": [
+   0.434
+  ],
+  "entropy_start": 0.434,
+  "entropy_end": 0.434
+ },
+ {
+  "run_id": "shopify/liquid-c_.github/workflows/liquid.yml_765_2",
+  "repo": "shopify/liquid-c",
+  "gt_bucket": "CONFIG",
+  "category": "ENV_FLAKINESS",
+  "pred_bucket": "TRANSIENT",
+  "correct": false,
+  "confidence": 0.65,
+  "steps": 2,
+  "n_tools": 1,
+  "tools": [
+   "runner_environment"
+  ],
+  "signals": [
+   "deep_log_analysis",
+   "runner_environment"
+  ],
+  "info_gains": [
+   -0.6858,
+   0.1747
+  ],
+  "stop": "budget_or_exhausted",
+  "entropy_traj": [
+   2.387,
+   2.213
+  ],
+  "entropy_start": 2.387,
+  "entropy_end": 2.213
+ },
+ {
+  "run_id": "craftyboss/supermarioodysseyonline_.github/workflows/dev-release.yml_12_1",
+  "repo": "craftyboss/supermarioodysseyonline",
+  "gt_bucket": "CONFIG",
+  "category": "CONFIG_ERROR",
+  "pred_bucket": "CONFIG",
+  "correct": true,
+  "confidence": 0.93,
+  "steps": 2,
+  "n_tools": 1,
+  "tools": [
+   "workflow_contents"
+  ],
+  "signals": [
+   "deep_log_analysis",
+   "workflow_contents"
+  ],
+  "info_gains": [
+   1.2137,
+   0.0255
+  ],
+  "stop": "entropy_threshold",
+  "entropy_traj": [
+   0.488,
+   0.462
+  ],
+  "entropy_start": 0.488,
+  "entropy_end": 0.462
+ },
+ {
+  "run_id": "brooooooklyn/image_.github/workflows/CI.yml_256_1",
+  "repo": "brooooooklyn/image",
+  "gt_bucket": "CODE",
+  "category": "CODE_REGRESSION",
+  "pred_bucket": "CODE",
+  "correct": true,
+  "confidence": 0.95,
+  "steps": 1,
+  "n_tools": 0,
+  "tools": [],
+  "signals": [
+   "deep_log_analysis"
+  ],
+  "info_gains": [
+   1.6179
+  ],
+  "stop": "entropy_threshold",
+  "entropy_traj": [
+   0.084
+  ],
+  "entropy_start": 0.084,
+  "entropy_end": 0.084
+ },
+ {
+  "run_id": "arcthesia/arccreate_.github/workflows/testflight.yml_60_1",
+  "repo": "arcthesia/arccreate",
+  "gt_bucket": "CONFIG",
+  "category": "CODE_REGRESSION",
+  "pred_bucket": "CODE",
+  "correct": false,
+  "confidence": 0.95,
+  "steps": 1,
+  "n_tools": 0,
+  "tools": [],
+  "signals": [
+   "deep_log_analysis"
+  ],
+  "info_gains": [
+   1.4111
+  ],
+  "stop": "entropy_threshold",
+  "entropy_traj": [
+   0.29
+  ],
+  "entropy_start": 0.29,
+  "entropy_end": 0.29
+ },
+ {
+  "run_id": "openxcom/openxcom_.github/workflows/nightly.yml_11_1",
+  "repo": "openxcom/openxcom",
+  "gt_bucket": "CONFIG",
+  "category": "CONFIG_ERROR",
+  "pred_bucket": "CONFIG",
+  "correct": true,
+  "confidence": 0.99,
+  "steps": 2,
+  "n_tools": 1,
+  "tools": [
+   "workflow_contents"
+  ],
+  "signals": [
+   "deep_log_analysis",
+   "workflow_contents"
+  ],
+  "info_gains": [
+   0.7852,
+   0.8603
+  ],
+  "stop": "entropy_threshold",
+  "entropy_traj": [
+   0.916,
+   0.056
+  ],
+  "entropy_start": 0.916,
+  "entropy_end": 0.056
+ },
+ {
+  "run_id": "keras-team/keras-tuner_.github/workflows/nightly.yml_1041_1",
+  "repo": "keras-team/keras-tuner",
+  "gt_bucket": "CODE",
+  "category": "CODE_REGRESSION",
+  "pred_bucket": "CODE",
+  "correct": true,
+  "confidence": 0.95,
+  "steps": 1,
+  "n_tools": 0,
+  "tools": [],
+  "signals": [
+   "deep_log_analysis"
+  ],
+  "info_gains": [
+   1.1286
+  ],
+  "stop": "entropy_threshold",
+  "entropy_traj": [
+   0.573
+  ],
+  "entropy_start": 0.573,
+  "entropy_end": 0.573
+ },
+ {
+  "run_id": "trufflesuite/ganache-cli_.github/workflows/release.yml_149_1",
+  "repo": "trufflesuite/ganache-cli",
+  "gt_bucket": "CONFIG",
+  "category": "CONFIG_ERROR",
+  "pred_bucket": "CONFIG",
+  "correct": true,
+  "confidence": 0.75,
+  "steps": 1,
+  "n_tools": 0,
+  "tools": [],
+  "signals": [
+   "deep_log_analysis"
+  ],
+  "info_gains": [
+   0.1961
+  ],
+  "stop": "budget_or_exhausted",
+  "entropy_traj": [
+   1.505
+  ],
+  "entropy_start": 1.505,
+  "entropy_end": 1.505
+ },
+ {
+  "run_id": "julian-alarcon/prospect-mail_.github/workflows/snap.yml_17_1",
+  "repo": "julian-alarcon/prospect-mail",
+  "gt_bucket": "CONFIG",
+  "category": "CONFIG_ERROR",
+  "pred_bucket": "CONFIG",
+  "correct": true,
+  "confidence": 0.95,
+  "steps": 2,
+  "n_tools": 1,
+  "tools": [
+   "workflow_contents"
+  ],
+  "signals": [
+   "deep_log_analysis",
+   "workflow_contents"
+  ],
+  "info_gains": [
+   1.2552,
+   0.3932
+  ],
+  "stop": "entropy_threshold",
+  "entropy_traj": [
+   0.446,
+   0.053
+  ],
+  "entropy_start": 0.446,
+  "entropy_end": 0.053
+ },
+ {
+  "run_id": "concrete5/concrete5_.github/workflows/update.yml_1604_1",
+  "repo": "concrete5/concrete5",
+  "gt_bucket": "CODE",
+  "category": "CODE_REGRESSION",
+  "pred_bucket": "CODE",
+  "correct": true,
+  "confidence": 0.99,
+  "steps": 1,
+  "n_tools": 0,
+  "tools": [],
+  "signals": [
+   "deep_log_analysis"
+  ],
+  "info_gains": [
+   1.6291
+  ],
+  "stop": "entropy_threshold",
+  "entropy_traj": [
+   0.072
+  ],
+  "entropy_start": 0.072,
+  "entropy_end": 0.072
+ },
+ {
+  "run_id": "ouranosinc/xclim_.github/workflows/publish-mastodon.yml_3_1",
+  "repo": "ouranosinc/xclim",
+  "gt_bucket": "CODE",
+  "category": "CONFIG_ERROR",
+  "pred_bucket": "CONFIG",
+  "correct": false,
+  "confidence": 0.8,
+  "steps": 3,
+  "n_tools": 2,
+  "tools": [
+   "runner_environment",
+   "dependency_changes"
+  ],
+  "signals": [
+   "deep_log_analysis",
+   "runner_environment",
+   "dependency_changes"
+  ],
+  "info_gains": [
+   0.2538,
+   -0.3011,
+   1.1554
+  ],
+  "stop": "entropy_threshold",
+  "entropy_traj": [
+   1.448,
+   1.749,
+   0.593
+  ],
+  "entropy_start": 1.448,
+  "entropy_end": 0.593
+ },
+ {
+  "run_id": "home-assistant/ios_.github/workflows/distribute.yml_463_1",
+  "repo": "home-assistant/ios",
+  "gt_bucket": "CODE",
+  "category": "CODE_REGRESSION",
+  "pred_bucket": "CODE",
+  "correct": true,
+  "confidence": 0.85,
+  "steps": 1,
+  "n_tools": 0,
+  "tools": [],
+  "signals": [
+   "deep_log_analysis"
+  ],
+  "info_gains": [
+   0.8564
+  ],
+  "stop": "entropy_threshold",
+  "entropy_traj": [
+   0.845
+  ],
+  "entropy_start": 0.845,
+  "entropy_end": 0.845
+ },
+ {
+  "run_id": "peltoche/lsd_.github/workflows/CICD.yml_1195_4",
+  "repo": "peltoche/lsd",
+  "gt_bucket": "DEPENDENCY",
+  "category": "DEPENDENCY_CONFLICT",
+  "pred_bucket": "DEPENDENCY",
+  "correct": true,
+  "confidence": 0.95,
+  "steps": 1,
+  "n_tools": 0,
+  "tools": [],
+  "signals": [
+   "deep_log_analysis"
+  ],
+  "info_gains": [
+   0.9912
+  ],
+  "stop": "entropy_threshold",
+  "entropy_traj": [
+   0.71
+  ],
+  "entropy_start": 0.71,
+  "entropy_end": 0.71
+ },
+ {
+  "run_id": "descendant-ai/functime_.github/workflows/test.yml_178_1",
+  "repo": "descendant-ai/functime",
+  "gt_bucket": "CODE",
+  "category": "CODE_REGRESSION",
+  "pred_bucket": "CODE",
+  "correct": true,
+  "confidence": 0.98,
+  "steps": 1,
+  "n_tools": 0,
+  "tools": [],
+  "signals": [
+   "deep_log_analysis"
+  ],
+  "info_gains": [
+   1.6179
+  ],
+  "stop": "entropy_threshold",
+  "entropy_traj": [
+   0.084
+  ],
+  "entropy_start": 0.084,
+  "entropy_end": 0.084
+ },
+ {
+  "run_id": "quantumlib/cirq_.github/workflows/ci-weekly.yml_26_1",
+  "repo": "quantumlib/cirq",
+  "gt_bucket": "CODE",
+  "category": "CODE_REGRESSION",
+  "pred_bucket": "CODE",
+  "correct": true,
+  "confidence": 0.95,
+  "steps": 1,
+  "n_tools": 0,
+  "tools": [],
+  "signals": [
+   "deep_log_analysis"
+  ],
+  "info_gains": [
+   1.3248
+  ],
+  "stop": "entropy_threshold",
+  "entropy_traj": [
+   0.377
+  ],
+  "entropy_start": 0.377,
+  "entropy_end": 0.377
+ }
+]

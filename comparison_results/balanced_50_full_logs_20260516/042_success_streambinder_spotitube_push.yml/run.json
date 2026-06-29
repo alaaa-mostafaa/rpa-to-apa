@@ -1,0 +1,1456 @@
+{
+  "_id": "streambinder/spotitube_.github/workflows/push.yml_268_1",
+  "repository_name": "streambinder/spotitube",
+  "workflow_path": ".github/workflows/push.yml",
+  "run_number": 268,
+  "run_attempt": 1,
+  "metadata": {
+    "id": 6259837492,
+    "name": "push",
+    "node_id": "WFR_kwLOBY3asc8AAAABdR2KNA",
+    "head_branch": "master",
+    "head_sha": "fdc0d9e16d7d9e0b0a9c29116617cbb3b091e2d7",
+    "path": ".github/workflows/push.yml",
+    "display_title": "docs(assets): flush demo GIF",
+    "run_number": 268,
+    "event": "push",
+    "status": "completed",
+    "conclusion": "success",
+    "workflow_id": 48960055,
+    "check_suite_id": 16404657329,
+    "check_suite_node_id": "CS_kwDOBY3asc8AAAAD0cs0sQ",
+    "url": "https://api.github.com/repos/streambinder/spotitube/actions/runs/6259837492",
+    "html_url": "https://github.com/streambinder/spotitube/actions/runs/6259837492",
+    "pull_requests": [],
+    "created_at": "2023-09-21T09:31:26Z",
+    "updated_at": "2023-09-21T09:42:56Z",
+    "actor": {
+      "login": "streambinder",
+      "id": 7783188,
+      "node_id": "MDQ6VXNlcjc3ODMxODg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7783188?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/streambinder",
+      "html_url": "https://github.com/streambinder",
+      "followers_url": "https://api.github.com/users/streambinder/followers",
+      "following_url": "https://api.github.com/users/streambinder/following{/other_user}",
+      "gists_url": "https://api.github.com/users/streambinder/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/streambinder/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/streambinder/subscriptions",
+      "organizations_url": "https://api.github.com/users/streambinder/orgs",
+      "repos_url": "https://api.github.com/users/streambinder/repos",
+      "events_url": "https://api.github.com/users/streambinder/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/streambinder/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "run_attempt": 1,
+    "referenced_workflows": [],
+    "run_started_at": "2023-09-21T09:31:26Z",
+    "triggering_actor": {
+      "login": "streambinder",
+      "id": 7783188,
+      "node_id": "MDQ6VXNlcjc3ODMxODg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7783188?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/streambinder",
+      "html_url": "https://github.com/streambinder",
+      "followers_url": "https://api.github.com/users/streambinder/followers",
+      "following_url": "https://api.github.com/users/streambinder/following{/other_user}",
+      "gists_url": "https://api.github.com/users/streambinder/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/streambinder/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/streambinder/subscriptions",
+      "organizations_url": "https://api.github.com/users/streambinder/orgs",
+      "repos_url": "https://api.github.com/users/streambinder/repos",
+      "events_url": "https://api.github.com/users/streambinder/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/streambinder/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "jobs_url": "https://api.github.com/repos/streambinder/spotitube/actions/runs/6259837492/jobs",
+    "logs_url": "https://api.github.com/repos/streambinder/spotitube/actions/runs/6259837492/logs",
+    "check_suite_url": "https://api.github.com/repos/streambinder/spotitube/check-suites/16404657329",
+    "artifacts_url": "https://api.github.com/repos/streambinder/spotitube/actions/runs/6259837492/artifacts",
+    "cancel_url": "https://api.github.com/repos/streambinder/spotitube/actions/runs/6259837492/cancel",
+    "rerun_url": "https://api.github.com/repos/streambinder/spotitube/actions/runs/6259837492/rerun",
+    "previous_attempt_url": null,
+    "workflow_url": "https://api.github.com/repos/streambinder/spotitube/actions/workflows/48960055",
+    "head_commit": {
+      "id": "fdc0d9e16d7d9e0b0a9c29116617cbb3b091e2d7",
+      "tree_id": "b7f13037e10327191c355c5b179221b78cd5af57",
+      "message": "docs(assets): flush demo GIF",
+      "timestamp": "2023-09-21T09:31:04Z",
+      "author": {
+        "name": "streambinder",
+        "email": "posta@davidepucci.it"
+      },
+      "committer": {
+        "name": "streambinder",
+        "email": "posta@davidepucci.it"
+      }
+    },
+    "repository": {
+      "id": 93182641,
+      "node_id": "MDEwOlJlcG9zaXRvcnk5MzE4MjY0MQ==",
+      "name": "spotitube",
+      "full_name": "streambinder/spotitube",
+      "private": false,
+      "owner": {
+        "login": "streambinder",
+        "id": 7783188,
+        "node_id": "MDQ6VXNlcjc3ODMxODg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7783188?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/streambinder",
+        "html_url": "https://github.com/streambinder",
+        "followers_url": "https://api.github.com/users/streambinder/followers",
+        "following_url": "https://api.github.com/users/streambinder/following{/other_user}",
+        "gists_url": "https://api.github.com/users/streambinder/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/streambinder/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/streambinder/subscriptions",
+        "organizations_url": "https://api.github.com/users/streambinder/orgs",
+        "repos_url": "https://api.github.com/users/streambinder/repos",
+        "events_url": "https://api.github.com/users/streambinder/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/streambinder/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/streambinder/spotitube",
+      "description": "Synchronize your Spotify collections downloading from external providers",
+      "fork": false,
+      "url": "https://api.github.com/repos/streambinder/spotitube",
+      "forks_url": "https://api.github.com/repos/streambinder/spotitube/forks",
+      "keys_url": "https://api.github.com/repos/streambinder/spotitube/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/streambinder/spotitube/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/streambinder/spotitube/teams",
+      "hooks_url": "https://api.github.com/repos/streambinder/spotitube/hooks",
+      "issue_events_url": "https://api.github.com/repos/streambinder/spotitube/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/streambinder/spotitube/events",
+      "assignees_url": "https://api.github.com/repos/streambinder/spotitube/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/streambinder/spotitube/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/streambinder/spotitube/tags",
+      "blobs_url": "https://api.github.com/repos/streambinder/spotitube/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/streambinder/spotitube/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/streambinder/spotitube/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/streambinder/spotitube/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/streambinder/spotitube/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/streambinder/spotitube/languages",
+      "stargazers_url": "https://api.github.com/repos/streambinder/spotitube/stargazers",
+      "contributors_url": "https://api.github.com/repos/streambinder/spotitube/contributors",
+      "subscribers_url": "https://api.github.com/repos/streambinder/spotitube/subscribers",
+      "subscription_url": "https://api.github.com/repos/streambinder/spotitube/subscription",
+      "commits_url": "https://api.github.com/repos/streambinder/spotitube/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/streambinder/spotitube/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/streambinder/spotitube/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/streambinder/spotitube/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/streambinder/spotitube/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/streambinder/spotitube/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/streambinder/spotitube/merges",
+      "archive_url": "https://api.github.com/repos/streambinder/spotitube/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/streambinder/spotitube/downloads",
+      "issues_url": "https://api.github.com/repos/streambinder/spotitube/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/streambinder/spotitube/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/streambinder/spotitube/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/streambinder/spotitube/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/streambinder/spotitube/labels{/name}",
+      "releases_url": "https://api.github.com/repos/streambinder/spotitube/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/streambinder/spotitube/deployments"
+    },
+    "head_repository": {
+      "id": 93182641,
+      "node_id": "MDEwOlJlcG9zaXRvcnk5MzE4MjY0MQ==",
+      "name": "spotitube",
+      "full_name": "streambinder/spotitube",
+      "private": false,
+      "owner": {
+        "login": "streambinder",
+        "id": 7783188,
+        "node_id": "MDQ6VXNlcjc3ODMxODg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7783188?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/streambinder",
+        "html_url": "https://github.com/streambinder",
+        "followers_url": "https://api.github.com/users/streambinder/followers",
+        "following_url": "https://api.github.com/users/streambinder/following{/other_user}",
+        "gists_url": "https://api.github.com/users/streambinder/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/streambinder/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/streambinder/subscriptions",
+        "organizations_url": "https://api.github.com/users/streambinder/orgs",
+        "repos_url": "https://api.github.com/users/streambinder/repos",
+        "events_url": "https://api.github.com/users/streambinder/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/streambinder/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/streambinder/spotitube",
+      "description": "Synchronize your Spotify collections downloading from external providers",
+      "fork": false,
+      "url": "https://api.github.com/repos/streambinder/spotitube",
+      "forks_url": "https://api.github.com/repos/streambinder/spotitube/forks",
+      "keys_url": "https://api.github.com/repos/streambinder/spotitube/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/streambinder/spotitube/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/streambinder/spotitube/teams",
+      "hooks_url": "https://api.github.com/repos/streambinder/spotitube/hooks",
+      "issue_events_url": "https://api.github.com/repos/streambinder/spotitube/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/streambinder/spotitube/events",
+      "assignees_url": "https://api.github.com/repos/streambinder/spotitube/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/streambinder/spotitube/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/streambinder/spotitube/tags",
+      "blobs_url": "https://api.github.com/repos/streambinder/spotitube/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/streambinder/spotitube/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/streambinder/spotitube/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/streambinder/spotitube/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/streambinder/spotitube/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/streambinder/spotitube/languages",
+      "stargazers_url": "https://api.github.com/repos/streambinder/spotitube/stargazers",
+      "contributors_url": "https://api.github.com/repos/streambinder/spotitube/contributors",
+      "subscribers_url": "https://api.github.com/repos/streambinder/spotitube/subscribers",
+      "subscription_url": "https://api.github.com/repos/streambinder/spotitube/subscription",
+      "commits_url": "https://api.github.com/repos/streambinder/spotitube/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/streambinder/spotitube/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/streambinder/spotitube/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/streambinder/spotitube/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/streambinder/spotitube/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/streambinder/spotitube/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/streambinder/spotitube/merges",
+      "archive_url": "https://api.github.com/repos/streambinder/spotitube/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/streambinder/spotitube/downloads",
+      "issues_url": "https://api.github.com/repos/streambinder/spotitube/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/streambinder/spotitube/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/streambinder/spotitube/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/streambinder/spotitube/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/streambinder/spotitube/labels{/name}",
+      "releases_url": "https://api.github.com/repos/streambinder/spotitube/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/streambinder/spotitube/deployments"
+    }
+  },
+  "logs_archive": {
+    "path": "/data/logs/streambinder/spotitube/push_d107/268-1.tar.gz"
+  },
+  "log_insights": [
+    {
+      "file": "1_golangci-lint.txt",
+      "total_lines": 474,
+      "log_size": 35184,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20230911.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "streambinder/spotitube",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-09-21 09:31:40.089000",
+          "duration_sec": 1.104873
+        },
+        {
+          "type": "action",
+          "repository": "golangci",
+          "action": "golangci-lint-action",
+          "version": "v3",
+          "sha": "3a919529898de77ec3da873e3063ca4b10e7f5cc",
+          "with": {
+            "github-token": "***",
+            "only-new-issues": "false",
+            "skip-cache": "false",
+            "skip-pkg-cache": "false",
+            "skip-build-cache": "false",
+            "install-mode": "binary"
+          },
+          "env": {},
+          "start_date": "2023-09-21 09:31:41.194000",
+          "duration_sec": 46.619449
+        }
+      ]
+    },
+    {
+      "file": "1_go-http-body-closure.txt",
+      "total_lines": 446,
+      "log_size": 33018,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20230911.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "streambinder/spotitube",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-09-21 09:31:37.550000",
+          "duration_sec": 0.997069
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "test \"$(grep -rc --exclude-dir=\".git*\" 'http.Get(\\|http.Head(\\|http.DefaultClient.Do(')\" = \"$(grep -rc --exclude-dir=\".git*\" '.Body.Close()')\"",
+          "commands": [
+            {
+              "command": "test",
+              "args": [
+                {
+                  "content": "\"$(grep -rc --exclude-dir=\".git*\" 'http.Get(\\|http.Head(\\|http.DefaultClient.Do(')\""
+                },
+                {
+                  "content": "="
+                },
+                {
+                  "content": "\"$(grep -rc --exclude-dir=\".git*\" '.Body.Close()')\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-GREP"
+              ],
+              "command": "grep",
+              "categories": [
+                "SEARCH",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-GREP-F-RECURSIVE",
+                    "SC-GREP-F-COUNT"
+                  ],
+                  "content": "-rc"
+                },
+                {
+                  "annotations": [
+                    "SC-GREP-EXCLUDE-DIR"
+                  ],
+                  "content": "--exclude-dir=\".git*\""
+                },
+                {
+                  "annotations": [
+                    "SC-GREP-PATTERN"
+                  ],
+                  "content": "'http.Get(\\|http.Head(\\|http.DefaultClient.Do('"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-GREP"
+              ],
+              "command": "grep",
+              "categories": [
+                "SEARCH",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-GREP-F-RECURSIVE",
+                    "SC-GREP-F-COUNT"
+                  ],
+                  "content": "-rc"
+                },
+                {
+                  "annotations": [
+                    "SC-GREP-EXCLUDE-DIR"
+                  ],
+                  "content": "--exclude-dir=\".git*\""
+                },
+                {
+                  "annotations": [
+                    "SC-GREP-PATTERN"
+                  ],
+                  "content": "'.Body.Close()'"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-21 09:31:38.547000",
+          "duration_sec": 0.291428
+        }
+      ]
+    },
+    {
+      "file": "1_go-monkey-unpatch.txt",
+      "total_lines": 446,
+      "log_size": 32859,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20230911.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "streambinder/spotitube",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-09-21 09:31:38.182000",
+          "duration_sec": 1.143286
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "test \"$(grep -cr 'defer gomonkey\\.')\" = \"$(grep -cr 'Reset()$')\"",
+          "commands": [
+            {
+              "command": "test",
+              "args": [
+                {
+                  "content": "\"$(grep -cr 'defer gomonkey\\.')\""
+                },
+                {
+                  "content": "="
+                },
+                {
+                  "content": "\"$(grep -cr 'Reset()$')\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-GREP"
+              ],
+              "command": "grep",
+              "categories": [
+                "SEARCH",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-GREP-F-COUNT",
+                    "SC-GREP-F-RECURSIVE"
+                  ],
+                  "content": "-cr"
+                },
+                {
+                  "annotations": [
+                    "SC-GREP-PATTERN"
+                  ],
+                  "content": "'defer gomonkey\\.'"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-GREP"
+              ],
+              "command": "grep",
+              "categories": [
+                "SEARCH",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-GREP-F-COUNT",
+                    "SC-GREP-F-RECURSIVE"
+                  ],
+                  "content": "-cr"
+                },
+                {
+                  "annotations": [
+                    "SC-GREP-PATTERN"
+                  ],
+                  "content": "'Reset()$'"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-21 09:31:39.325000",
+          "duration_sec": 0.256045
+        }
+      ]
+    },
+    {
+      "file": "1_gofumpt.txt",
+      "total_lines": 516,
+      "log_size": 37084,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20230911.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "streambinder/spotitube",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-09-21 09:31:37.914000",
+          "duration_sec": 0.810065
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "setup-go",
+          "version": "v4",
+          "sha": "93397bea11091df50f3d7e59dc26a7711a8bcfbe",
+          "with": {
+            "check-latest": "false",
+            "token": "***",
+            "cache": "true"
+          },
+          "env": {},
+          "start_date": "2023-09-21 09:31:38.724000",
+          "duration_sec": 1.511819
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "export PATH=$PATH:$(go env GOPATH)/bin\ngo install mvdan.cc/gofumpt@latest\nif gofumpt -l -e . | grep '^' -q; then exit 1; fi",
+          "commands": [
+            {
+              "annotations": [
+                "SC-GO-INSTALL"
+              ],
+              "command": "go",
+              "categories": [
+                "BUILD_SYSTEM",
+                "DEVELOPMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-GO-PACKAGE"
+                  ],
+                  "content": "mvdan.cc/gofumpt@latest"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-GO-ENV"
+              ],
+              "command": "go",
+              "categories": [
+                "BUILD_SYSTEM",
+                "DEVELOPMENT",
+                "ENVIRONMENT"
+              ],
+              "args": [
+                {
+                  "content": "env"
+                },
+                {
+                  "annotations": [
+                    "SC-GO-ENV-ARG"
+                  ],
+                  "content": "GOPATH"
+                }
+              ]
+            },
+            {
+              "command": "gofumpt",
+              "args": [
+                {
+                  "content": "-l"
+                },
+                {
+                  "content": "-e"
+                },
+                {
+                  "content": "."
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-GREP"
+              ],
+              "command": "grep",
+              "categories": [
+                "SEARCH",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-GREP-PATTERN"
+                  ],
+                  "content": "'^'"
+                },
+                {
+                  "annotations": [
+                    "SC-GREP-F-SILENT"
+                  ],
+                  "content": "-q"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-EXIT"
+              ],
+              "command": "exit",
+              "categories": [
+                "CONTROL_FLOW"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-EXIT-CODE"
+                  ],
+                  "content": "1"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-21 09:31:40.236000",
+          "duration_sec": 3.885908
+        }
+      ]
+    },
+    {
+      "file": "1_notify.txt",
+      "total_lines": 489,
+      "log_size": 35830,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20230911.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "streambinder/spotitube",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-09-21 09:33:26.167000",
+          "duration_sec": 0.871898
+        },
+        {
+          "type": "action",
+          "repository": "dorny",
+          "action": "paths-filter",
+          "version": "v2",
+          "sha": "4512585405083f25c027a35db413c2b3b9006d50",
+          "with": {
+            "filters: docs": "  - 'docs/**'",
+            "token": "***",
+            "list-files": "none",
+            "initial-fetch-depth": "100"
+          },
+          "env": {},
+          "start_date": "2023-09-21 09:33:27.038000",
+          "duration_sec": 0.667216
+        },
+        {
+          "type": "action",
+          "repository": "peter-evans",
+          "action": "repository-dispatch",
+          "version": "v2",
+          "sha": "bf47d102fdb849e755b0b0023ea3e81a44b6f570",
+          "with": {
+            "token": "***",
+            "repository": "streambinder/streambinder",
+            "event-type": "doc-sync",
+            "client-payload: {\"repo\": \"streambinder/spotitube\", \"ref\": \"refs/heads/master\", \"sha\"": "\"fdc0d9e16d7d9e0b0a9c29116617cbb3b091e2d7\"}"
+          },
+          "env": {},
+          "start_date": "2023-09-21 09:33:27.706000",
+          "duration_sec": 0.780396
+        }
+      ]
+    },
+    {
+      "file": "1_go-channel-closure.txt",
+      "total_lines": 446,
+      "log_size": 32946,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20230911.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "streambinder/spotitube",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-09-21 09:31:36.028000",
+          "duration_sec": 0.737988
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "test \"$(grep -Erc --exclude-dir=\".git*\" 'make\\(chan\\s')\" = \"$(grep -Erc --exclude-dir=\".git*\" '\\sclose\\(')\"",
+          "commands": [
+            {
+              "command": "test",
+              "args": [
+                {
+                  "content": "\"$(grep -Erc --exclude-dir=\".git*\" 'make\\(chan\\s')\""
+                },
+                {
+                  "content": "="
+                },
+                {
+                  "content": "\"$(grep -Erc --exclude-dir=\".git*\" '\\sclose\\(')\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-GREP"
+              ],
+              "command": "grep",
+              "categories": [
+                "SEARCH",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-GREP-F-EXTENDED-REGEXP",
+                    "SC-GREP-F-RECURSIVE",
+                    "SC-GREP-F-COUNT"
+                  ],
+                  "content": "-Erc"
+                },
+                {
+                  "annotations": [
+                    "SC-GREP-EXCLUDE-DIR"
+                  ],
+                  "content": "--exclude-dir=\".git*\""
+                },
+                {
+                  "annotations": [
+                    "SC-GREP-PATTERN"
+                  ],
+                  "content": "'make\\(chan\\s'"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-GREP"
+              ],
+              "command": "grep",
+              "categories": [
+                "SEARCH",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-GREP-F-EXTENDED-REGEXP",
+                    "SC-GREP-F-RECURSIVE",
+                    "SC-GREP-F-COUNT"
+                  ],
+                  "content": "-Erc"
+                },
+                {
+                  "annotations": [
+                    "SC-GREP-EXCLUDE-DIR"
+                  ],
+                  "content": "--exclude-dir=\".git*\""
+                },
+                {
+                  "annotations": [
+                    "SC-GREP-PATTERN"
+                  ],
+                  "content": "'\\sclose\\('"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-21 09:31:36.766000",
+          "duration_sec": 0.251656
+        }
+      ]
+    },
+    {
+      "file": "1_commitlint (1).txt",
+      "total_lines": 601,
+      "log_size": 44859,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20230911.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "fetch-depth": "0",
+            "repository": "streambinder/spotitube",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-09-21 09:31:51.566000",
+          "duration_sec": 1.616413
+        },
+        {
+          "type": "action",
+          "repository": "wagoid",
+          "action": "commitlint-github-action",
+          "version": "v5",
+          "sha": "6319f54d83768b60acd6fd60e61007ccc583e62f",
+          "with": {
+            "configFile": "./commitlint.config.js",
+            "failOnWarnings": "false",
+            "failOnErrors": "true",
+            "helpURL": "https://github.com/conventional-changelog/commitlint/#what-is-commitlint",
+            "token": "***"
+          },
+          "env": {},
+          "start_date": "2023-09-21 09:31:53.182000",
+          "duration_sec": 2.058542
+        }
+      ]
+    },
+    {
+      "file": "1_benchmark.txt",
+      "total_lines": 578,
+      "log_size": 2632009,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20230917.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "streambinder/spotitube",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-09-21 09:33:28.800000",
+          "duration_sec": 1.094025
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "setup-go",
+          "version": "v4",
+          "sha": "93397bea11091df50f3d7e59dc26a7711a8bcfbe",
+          "with": {
+            "check-latest": "false",
+            "token": "***",
+            "cache": "true"
+          },
+          "env": {},
+          "start_date": "2023-09-21 09:33:29.894000",
+          "duration_sec": 2.125588
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "go test -benchmem -bench '^Benchmark.*$' ./... | grep ^Benchmark",
+          "commands": [
+            {
+              "annotations": [
+                "SC-GO-TEST",
+                "SC-GO-F-N",
+                "SC-GO-F-C"
+              ],
+              "command": "go",
+              "categories": [
+                "BUILD_SYSTEM",
+                "DEVELOPMENT",
+                "TEST_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "test"
+                },
+                {
+                  "content": "-benchmem"
+                },
+                {
+                  "content": "-bench"
+                },
+                {
+                  "annotations": [
+                    "SC-GO-H"
+                  ],
+                  "content": "'^Benchmark.*$'"
+                },
+                {
+                  "annotations": [
+                    "SC-GO-PACKAGE"
+                  ],
+                  "content": "./..."
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-GREP"
+              ],
+              "command": "grep",
+              "categories": [
+                "SEARCH",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-GREP-PATTERN"
+                  ],
+                  "content": "^Benchmark"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-21 09:33:32.019000",
+          "duration_sec": 74.456672
+        }
+      ]
+    },
+    {
+      "file": "1_codespell.txt",
+      "total_lines": 531,
+      "log_size": 41483,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20230917.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "streambinder/spotitube",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-09-21 09:31:46.292000",
+          "duration_sec": 1.037796
+        },
+        {
+          "type": "action",
+          "repository": "codespell-project",
+          "action": "actions-codespell",
+          "version": "v2",
+          "sha": "94259cd8be02ad2903ba34a22d9c13de21a74461",
+          "with": {
+            "check_filenames": "true",
+            "skip": "./.git"
+          },
+          "env": {},
+          "start_date": "2023-09-21 09:31:47.330000",
+          "duration_sec": 1.069603
+        }
+      ]
+    },
+    {
+      "file": "1_build.txt",
+      "total_lines": 1761,
+      "log_size": 128978,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20230911.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "streambinder/spotitube",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-09-21 09:33:27.524000",
+          "duration_sec": 0.664437
+        },
+        {
+          "type": "action",
+          "repository": "docker",
+          "action": "setup-qemu-action",
+          "version": "v2",
+          "sha": "2b82ce82d56a2a04d2637cd93a637ae1b359c0a7",
+          "with": {
+            "image": "tonistiigi/binfmt:latest",
+            "platforms": "all"
+          },
+          "env": {},
+          "start_date": "2023-09-21 09:33:28.188000",
+          "duration_sec": 2.550252
+        },
+        {
+          "type": "action",
+          "repository": "docker",
+          "action": "setup-buildx-action",
+          "version": "v2",
+          "sha": "885d1462b80bc1c1c7f0b00334ad271f09369c55",
+          "with": {
+            "driver": "docker-container",
+            "buildkitd-flags": "--allow-insecure-entitlement security.insecure --allow-insecure-entitlement network.host",
+            "install": "false",
+            "use": "true",
+            "cleanup": "true"
+          },
+          "env": {},
+          "start_date": "2023-09-21 09:33:30.738000",
+          "duration_sec": 1.780751
+        },
+        {
+          "type": "action",
+          "repository": "docker",
+          "action": "login-action",
+          "version": "v2",
+          "sha": "465a07811f14bebb1938fbed4728c6a1ff8901fc",
+          "with": {
+            "registry": "ghcr.io",
+            "username": "streambinder",
+            "password": "***",
+            "ecr": "auto",
+            "logout": "true"
+          },
+          "env": {},
+          "start_date": "2023-09-21 09:33:32.519000",
+          "duration_sec": 0.379009
+        },
+        {
+          "type": "action",
+          "repository": "docker",
+          "action": "build-push-action",
+          "version": "v4",
+          "sha": "0a97817b6ade9f46837855d676c4cca3a2471fc9",
+          "with": {
+            "secrets": "SPOTIFY_ID=***",
+            "platforms": "linux/amd64,linux/arm/v7,linux/arm64/v8",
+            "tags": "ghcr.io/streambinder/spotitube:latest",
+            "push": "true",
+            "load": "false",
+            "no-cache": "false",
+            "pull": "false",
+            "github-token": "***"
+          },
+          "env": {},
+          "start_date": "2023-09-21 09:33:32.898000",
+          "duration_sec": 559.482512
+        }
+      ]
+    },
+    {
+      "file": "1_test.txt",
+      "total_lines": 1103,
+      "log_size": 223129,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20230911.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "streambinder/spotitube",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-09-21 09:32:42.568000",
+          "duration_sec": 1.038166
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "setup-go",
+          "version": "v4",
+          "sha": "93397bea11091df50f3d7e59dc26a7711a8bcfbe",
+          "with": {
+            "check-latest": "false",
+            "token": "***",
+            "cache": "true"
+          },
+          "env": {},
+          "start_date": "2023-09-21 09:32:43.607000",
+          "duration_sec": 2.165291
+        },
+        {
+          "type": "shell",
+          "env": {
+            "XDG_MUSIC_DIR": "/tmp"
+          },
+          "code": "go test -v -timeout 30s -coverprofile=coverage.out ./...\ngo tool cover -func=coverage.out | grep -E '^total:.*100.0%$'",
+          "commands": [
+            {
+              "annotations": [
+                "SC-GO-TEST",
+                "SC-GO-F-I",
+                "SC-GO-TEST-M",
+                "SC-GO-TEST-U",
+                "SC-GO-F-C",
+                "SC-GO-TEST-P",
+                "SC-GO-TEST-F",
+                "SC-GO-TEST-L"
+              ],
+              "command": "go",
+              "categories": [
+                "BUILD_SYSTEM",
+                "DEVELOPMENT",
+                "TEST_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "test"
+                },
+                {
+                  "annotations": [
+                    "SC-GO-F-V"
+                  ],
+                  "content": "-v"
+                },
+                {
+                  "content": "-timeout"
+                },
+                {
+                  "annotations": [
+                    "SC-GO-T"
+                  ],
+                  "content": "30s"
+                },
+                {
+                  "content": "-coverprofile=coverage.out"
+                },
+                {
+                  "annotations": [
+                    "SC-GO-PACKAGE"
+                  ],
+                  "content": "./..."
+                }
+              ]
+            },
+            {
+              "command": "go",
+              "args": [
+                {
+                  "content": "tool"
+                },
+                {
+                  "content": "cover"
+                },
+                {
+                  "content": "-func=coverage.out"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-GREP"
+              ],
+              "command": "grep",
+              "categories": [
+                "SEARCH",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-GREP-F-EXTENDED-REGEXP"
+                  ],
+                  "content": "-E"
+                },
+                {
+                  "annotations": [
+                    "SC-GREP-PATTERN"
+                  ],
+                  "content": "'^total:.*100.0%$'"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-21 09:32:45.772000",
+          "duration_sec": 26.946663
+        }
+      ]
+    }
+  ],
+  "total_logs_size": 3282514
+}

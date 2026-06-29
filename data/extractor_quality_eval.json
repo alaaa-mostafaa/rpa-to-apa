@@ -1,0 +1,235 @@
+{
+  "model": "gpt-4o",
+  "n_cases": 20,
+  "n_scored": 19,
+  "mean_score": 4.05,
+  "score_distribution": {
+    "1": 3,
+    "3": 2,
+    "4": 2,
+    "5": 12
+  },
+  "key_signal_present_rate": 0.8,
+  "results": [
+    {
+      "case": "failure",
+      "strategy": "error_marker",
+      "error_markers": 2,
+      "raw_chars": 2468434,
+      "extracted_chars": 18026,
+      "score": 5,
+      "key_signal_present": true,
+      "missing": "none",
+      "justification": "The extracted excerpt includes the core error message about missing dependencies, the Maven command suggestion, and the exit code, allowing for full diagnosis."
+    },
+    {
+      "case": "failure",
+      "strategy": "error_marker",
+      "error_markers": 2,
+      "raw_chars": 715722,
+      "extracted_chars": 10568,
+      "score": 1,
+      "key_signal_present": false,
+      "missing": "git command errors and cleanup details",
+      "justification": "The extracted excerpt does not include any of the git command errors or cleanup details from the raw log, which are crucial for diagnosing the failure related to git configuration and submodule handling."
+    },
+    {
+      "case": "failure",
+      "strategy": "error_marker",
+      "error_markers": 2,
+      "raw_chars": 285865,
+      "extracted_chars": 17419,
+      "score": 5,
+      "key_signal_present": true,
+      "missing": "none",
+      "justification": "The extracted excerpt includes the key error message 'Unable to get ACTIONS_ID_TOKEN_REQUEST_URL env variable' along with the relevant context of the Vault action configuration, allowing for full diagnosis of the issue."
+    },
+    {
+      "case": "failure",
+      "strategy": "group_fallback",
+      "error_markers": 0,
+      "raw_chars": 20273,
+      "extracted_chars": 6750,
+      "score": 3,
+      "key_signal_present": true,
+      "missing": "specific command causing error",
+      "justification": "The excerpt includes the error message 'can't connect without a private SSH key or password', but lacks the specific command or context that led to this error, making it difficult to diagnose the exact cause."
+    },
+    {
+      "case": "failure",
+      "strategy": "error_marker",
+      "error_markers": 2,
+      "raw_chars": 150745,
+      "extracted_chars": 19094,
+      "score": 5,
+      "key_signal_present": true,
+      "missing": "none",
+      "justification": "The extracted excerpt contains all the necessary details about the failure, including the specific error messages, the context of the failure in the test file, and the relevant attachments for further investigation, allowing for a complete diagnosis."
+    },
+    {
+      "case": "failure",
+      "strategy": "group_fallback",
+      "error_markers": 0,
+      "raw_chars": 534791,
+      "extracted_chars": 20000,
+      "score": 1,
+      "key_signal_present": false,
+      "missing": "failure-defining content",
+      "justification": "The extracted excerpt does not contain any of the failure-defining content from the raw log, making it impossible to diagnose the issue from the excerpt alone."
+    },
+    {
+      "case": "failure",
+      "strategy": "error_marker",
+      "error_markers": 4,
+      "raw_chars": 180158,
+      "extracted_chars": 14916,
+      "score": 5,
+      "key_signal_present": true,
+      "missing": "none",
+      "justification": "The extracted excerpt includes the key error message 'Running error: context loading failed: no go files to analyze' and the associated exit code, providing sufficient information for diagnosis."
+    },
+    {
+      "case": "failure",
+      "strategy": "error_marker",
+      "error_markers": 2,
+      "raw_chars": 108996,
+      "extracted_chars": 10463,
+      "score": 4,
+      "key_signal_present": true,
+      "missing": "none",
+      "justification": "The extracted excerpt includes the core error message about the repository not being a fork, which is crucial for diagnosing the failure, but some surrounding context about the steps leading to this error is missing."
+    },
+    {
+      "case": "failure",
+      "strategy": "error_marker",
+      "error_markers": 4,
+      "raw_chars": 421000,
+      "extracted_chars": 20000,
+      "score": 3,
+      "key_signal_present": true,
+      "missing": "test failure context",
+      "justification": "The excerpt includes the test failure and error message, but lacks context about which specific test or environment caused the failure."
+    },
+    {
+      "case": "failure",
+      "strategy": "error_marker",
+      "error_markers": 2,
+      "raw_chars": 120402,
+      "extracted_chars": 20000,
+      "score": 5,
+      "key_signal_present": true,
+      "missing": "none",
+      "justification": "The extracted excerpt contains the key failure message 'FATAL ERROR: Reached heap limit Allocation failed - JavaScript heap out of memory' along with the relevant context and stack trace, allowing for full diagnosis of the issue."
+    },
+    {
+      "case": "failure",
+      "strategy": "error_marker",
+      "error_markers": 6,
+      "raw_chars": 6861890,
+      "extracted_chars": 20000,
+      "score": 4,
+      "key_signal_present": true,
+      "missing": "specific test case names",
+      "justification": "The extracted excerpt contains the core error messages and assertion failures, but lacks specific test case names and some surrounding context that could aid in pinpointing the exact issue."
+    },
+    {
+      "case": "failure",
+      "strategy": "error_marker",
+      "error_markers": 2,
+      "raw_chars": 108952,
+      "extracted_chars": 4340,
+      "score": 5,
+      "key_signal_present": true,
+      "missing": "none",
+      "justification": "The extracted excerpt includes the key error message about the unused import, the file and line number where it occurred, and the compilation failure message, allowing for full diagnosis."
+    },
+    {
+      "case": "failure",
+      "strategy": "error_marker",
+      "error_markers": 20,
+      "raw_chars": 943431,
+      "extracted_chars": 20000,
+      "score": 5,
+      "key_signal_present": true,
+      "missing": "none",
+      "justification": "The extracted excerpt contains the key error message indicating a 404 error from the curl command, along with subsequent errors related to the Debian archive format and tar extraction, allowing for full diagnosis of the failure."
+    },
+    {
+      "case": "failure",
+      "strategy": "error_marker",
+      "error_markers": 6,
+      "raw_chars": 75380,
+      "extracted_chars": 12226,
+      "score": 5,
+      "key_signal_present": true,
+      "missing": "none",
+      "justification": "The extracted excerpt includes all the critical error messages and the context needed to diagnose the failure, such as the missing modules and the specific files and lines where the errors occurred."
+    },
+    {
+      "case": "failure",
+      "strategy": "error_marker",
+      "error_markers": 2,
+      "raw_chars": 111492,
+      "extracted_chars": 6810,
+      "score": 5,
+      "key_signal_present": true,
+      "missing": "none",
+      "justification": "The extracted excerpt includes the key error message indicating that 'expo-template-bare-minimum has changed' and the instruction to run 'et generate-bare-diffs', along with the exit code 1, which are sufficient for diagnosing the failure."
+    },
+    {
+      "case": "failure",
+      "strategy": "error_marker",
+      "error_markers": 10,
+      "raw_chars": 474560,
+      "extracted_chars": 20000,
+      "score": 5,
+      "key_signal_present": true,
+      "missing": "none",
+      "justification": "The extracted excerpt contains all the necessary information about the vulnerabilities and dependency conflicts, including the specific packages involved and the error messages, allowing for a complete diagnosis of the failure."
+    },
+    {
+      "case": "failure",
+      "strategy": "error_marker",
+      "error_markers": 4,
+      "raw_chars": 49040,
+      "extracted_chars": 13120,
+      "score": 5,
+      "key_signal_present": true,
+      "missing": "none",
+      "justification": "The extracted excerpt includes the core error message indicating the missing files and the process exit code, which are sufficient for diagnosing the failure."
+    },
+    {
+      "case": "failure",
+      "strategy": "error_marker",
+      "error_markers": 2,
+      "raw_chars": 14048704,
+      "extracted_chars": 20000,
+      "score": null,
+      "key_signal_present": null,
+      "missing": "EVAL_ERROR",
+      "justification": "Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o in organization org-ZkmxDbMRH5zNMFTo6iwjgUAF on tokens per min (TPM): Limit 30000, Used 24545, Requested 6831. Please try again in 2.752s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}"
+    },
+    {
+      "case": "failure",
+      "strategy": "error_marker",
+      "error_markers": 2,
+      "raw_chars": 121129,
+      "extracted_chars": 12676,
+      "score": 1,
+      "key_signal_present": false,
+      "missing": "failure-defining content",
+      "justification": "The extracted excerpt does not contain any of the failure-defining content from the raw log, such as the specific error or its cause, making it impossible to diagnose the issue from the excerpt alone."
+    },
+    {
+      "case": "failure",
+      "strategy": "error_marker",
+      "error_markers": 2,
+      "raw_chars": 72769,
+      "extracted_chars": 14380,
+      "score": 5,
+      "key_signal_present": true,
+      "missing": "none",
+      "justification": "The extracted excerpt includes the core error message indicating the missing file, the specific test that failed, and the serialized error details, allowing for full diagnosis from the excerpt alone."
+    }
+  ]
+}

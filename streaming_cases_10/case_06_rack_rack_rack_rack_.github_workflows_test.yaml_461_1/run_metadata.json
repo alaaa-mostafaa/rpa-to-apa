@@ -1,0 +1,15 @@
+{
+  "run_id": "rack/rack_.github/workflows/test.yaml_461_1",
+  "repository_name": "rack/rack",
+  "workflow_path": ".github/workflows/test.yaml",
+  "run_number": 461,
+  "attempt": 1,
+  "event": "push",
+  "conclusion": "failure",
+  "branch": "main",
+  "commit_sha": "958ed518cda851546c4d26ff9fd4db6255bd4021",
+  "commit_message": "Support for the `Partitioned` cookie attribute (#2131)",
+  "logs_archive": {
+    "path": "/data/logs/rack/rack/Test_532e/461-1.tar.gz"
+  }
+}

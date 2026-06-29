@@ -1,0 +1,1442 @@
+[
+ {
+  "run_id": "nerdwalletoss/shepherd_.github/workflows/release.yml_351_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "ffmpegwasm/ffmpeg.wasm_.github/workflows/main.yml_349_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "openai/openai-node_.github/workflows/test.yml_86_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "getstream/stream-chat-react_.github/workflows/ci.yml_5436_1",
+  "l3_cat": "ENV_FLAKINESS",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "sobhe/hazm_.github/workflows/lint.yml_89_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "ironlanguages/ironpython3_.github/workflows/main.yml_2492_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "p5-wrapper/react_.github/workflows/CD.yml_64_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "lmfdb/lmfdb_.github/workflows/python-package.yml_2229_2",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": false
+ },
+ {
+  "run_id": "microsoft/graspologic_.github/workflows/publish.yml_66_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "quantumlib/openfermion_.github/workflows/nightly.yml_681_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "dioxuslabs/blitz_.github/workflows/macos.yml_31_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "freenet/locutus_.github/workflows/ci.yml_1669_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "console-rs/dialoguer_.github/workflows/ci.yml_303_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "hugsy/gef-extras_.github/workflows/run-tests.yml_68_1",
+  "l3_cat": "DEPENDENCY_CONFLICT",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "segmentio/stats_.github/workflows/go.yml_55_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "dbup/dbup_.github/workflows/test-code.yml_52_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "1password/onepassword-operator_.github/workflows/release-pr.yml_79_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "clastix/capsule_.github/workflows/e2e.yml_1058_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "alirezanet/husky.net_.github/workflows/publish.yml_51_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "pewu/topola-viewer_.github/workflows/node.js.yml_128_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "brentp/cyvcf2_.github/workflows/build.yml_181_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "ivanvotti/ember-svg-jar_.github/workflows/ci-ember-svg-jar.yml_106_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "messense/cargo-xwin_.github/workflows/CI.yml_316_1",
+  "l3_cat": "DEPENDENCY_CONFLICT",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "serenity-bdd/serenity-cucumber-starter_.github/workflows/gradle-jdk11.yml_28_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": false
+ },
+ {
+  "run_id": "metamask/json-rpc-engine_.github/workflows/publish-main-docs.yml_16_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "hipages/php-fpm_exporter_.github/workflows/release.yml_33_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "matanolabs/matano_.github/workflows/pr-build.yml_112_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "ipfs-shipyard/ipfs-webui_.github/workflows/node-versions.yml_65_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "shopify/js-buy-sdk_dynamic/dependabot/dependabot-updates_1_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "eldavoo/whatsapp-crypt14-crypt15-decrypter_.github/workflows/lint-test.yml_42_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "d2-projects/d2-admin_.github/workflows/release.yml_99_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "vanus-labs/vanus_.github/workflows/docker-build.yml_212_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "easypost/easypost-node_.github/workflows/ci.yml_819_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "slackadays/clipboard_.github/workflows/test-installer.yml_776_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "wix/react-native-notifications_.github/workflows/documentation.yml_274_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "marekkon5/onetagger_.github/workflows/build.yml_559_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "wicg/webmonetization_.github/workflows/contributors.yml_4_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "ivanceras/svgbob_.github/workflows/rust.yml_167_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": false
+ },
+ {
+  "run_id": "xxyzz/worddumb_.github/workflows/tests.yml_706_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "brechtm/rinohtype_.github/workflows/tests.yml_740_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": false
+ },
+ {
+  "run_id": "aws-samples/serverless-dotnet-demo_.github/workflows/metrics-lambda-pipeline.yaml_6_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "python-validators/validators_.github/workflows/package.yaml_5_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "trufflesuite/ganache_.github/workflows/release.yml_149_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "yuhattor/copilot-patterns_.github/workflows/publish-page.yaml_11_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "xboxdev/nxdk_.github/workflows/build_docker_image.yml_143_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "kasperskylab/kaspresso_.github/workflows/snapshot_check.yml_6_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": false
+ },
+ {
+  "run_id": "shopify/liquid-c_.github/workflows/liquid.yml_765_2",
+  "l3_cat": "INFRA_INCOMPATIBILITY",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "craftyboss/supermarioodysseyonline_.github/workflows/dev-release.yml_12_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "brooooooklyn/image_.github/workflows/CI.yml_256_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "arcthesia/arccreate_.github/workflows/testflight.yml_60_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": false
+ },
+ {
+  "run_id": "openxcom/openxcom_.github/workflows/nightly.yml_11_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "keras-team/keras-tuner_.github/workflows/nightly.yml_1041_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "trufflesuite/ganache-cli_.github/workflows/release.yml_149_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "julian-alarcon/prospect-mail_.github/workflows/snap.yml_17_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "concrete5/concrete5_.github/workflows/update.yml_1604_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "ouranosinc/xclim_.github/workflows/publish-mastodon.yml_3_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": false
+ },
+ {
+  "run_id": "home-assistant/ios_.github/workflows/distribute.yml_463_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "peltoche/lsd_.github/workflows/CICD.yml_1195_4",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": false
+ },
+ {
+  "run_id": "descendant-ai/functime_.github/workflows/test.yml_178_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "quantumlib/cirq_.github/workflows/ci-weekly.yml_26_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "whyoleg/cryptography-kotlin_.github/workflows/build-dev.yml_160_1",
+  "l3_cat": "DEPENDENCY_CONFLICT",
+  "defensible": false,
+  "informative": false
+ },
+ {
+  "run_id": "getlogbook/logbook_.github/workflows/pypi-publish.yml_15_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "ironlanguages/dlr_.github/workflows/main.yml_174_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "chezou/tabula-py_.github/workflows/pythonpublish.yml_20_3",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": false
+ },
+ {
+  "run_id": "louisbrunner/checks-action_.github/workflows/examples.yml_382_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "miczflor/rpi-jukebox-rfid_.github/workflows/docker_buster.yml_182_1",
+  "l3_cat": "DEPENDENCY_CONFLICT",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "dotnet/silk.net_.github/workflows/bindings-regeneration.yml_186_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": false
+ },
+ {
+  "run_id": "auth0/lock_.github/workflows/publish.yml_2_1",
+  "l3_cat": "DEPENDENCY_CONFLICT",
+  "defensible": false,
+  "informative": false
+ },
+ {
+  "run_id": "capacitor-community/electron_dynamic/pages/pages-build-deployment_42_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "metamask/keyringcontroller_.github/workflows/publish-main-docs.yml_26_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "mirkosertic/bytecoder_.github/workflows/build.yml_461_1",
+  "l3_cat": "ENV_FLAKINESS",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "palkan/action_policy_.github/workflows/docs-lint.yml_153_1",
+  "l3_cat": "QUALITY_VIOLATION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "automl/smac3_.github/workflows/pre-commit-update.yml_26_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "cbeust/testng_.github/workflows/test.yml_669_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "lepture/flask-wtf_.github/workflows/tests.yaml_268_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "keshavdv/unifi-cam-proxy_.github/workflows/image.yml_75_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "tensorflow/io_.github/workflows/benchmarks.yml_346_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "r-lib/gert_.github/workflows/R-CMD-check.yaml_347_1",
+  "l3_cat": "DEPENDENCY_CONFLICT",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "warrenbuckley/compact-log-format-viewer_.github/workflows/intellicode.yml_537_1",
+  "l3_cat": "DEPENDENCY_CONFLICT",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "saulius/croaring-rs_.github/workflows/rust.yml_226_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "facundoolano/google-play-scraper_.github/workflows/main.yml_2_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "benjamine/jsondiffpatch_.github/workflows/release.yml_2_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": false
+ },
+ {
+  "run_id": "Dicklesworthstone/llama_embeddings_fastapi_service_.github/workflows/docker-image.yml_73_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "nanojsx/nano_.github/workflows/deno.yml_508_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "sajya/server_.github/workflows/php-cs-fixer.yml_162_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "repronim/neurodocker_.github/workflows/bootstrap.yml_70_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": false
+ },
+ {
+  "run_id": "jonhoo/flurry_.github/workflows/safety.yml_11_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "seaql/sea-schema_.github/workflows/rust.yml_583_1",
+  "l3_cat": "QUALITY_VIOLATION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "k2-fsa/fast_rnnt_.github/workflows/run_tests_cpu.yml_12_2",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "circl/ail-framework_.github/workflows/ail_framework_test.yml_232_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": false
+ },
+ {
+  "run_id": "oneflow-inc/oneflow_.github/workflows/release.yml_2054_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": false
+ },
+ {
+  "run_id": "spatie/laravel-livewire-wizard_.github/workflows/run-tests.yml_174_2",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "sp-nitech/sptk_.github/workflows/check-build.yml_144_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "testinggospels/camouflage_.github/workflows/main.yml_145_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": false
+ },
+ {
+  "run_id": "webdevcody/code-racer_.github/workflows/deploy-wss.yml_143_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": false
+ },
+ {
+  "run_id": "privacy-scaling-explorations/halo2_.github/workflows/ci_main.yml_29_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": false
+ },
+ {
+  "run_id": "pocka/storybook-addon-designs_.github/workflows/release.yml_13_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": false
+ },
+ {
+  "run_id": "truefieng/usedapp_.github/workflows/CI-gnosis.yml_134_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "seaql/sea-streamer_.github/workflows/rust.yml_178_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "rubickcenter/rubick_.github/workflows/main.yml_220_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "wolph/python-progressbar_.github/workflows/main.yml_75_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "mds1/evm-diff_.github/workflows/ci.yml_128_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "atsamd-rs/atsamd_.github/workflows/release-crates.yml_21_1",
+  "l3_cat": "DEPENDENCY_CONFLICT",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "bezhanSalleh/filament-google-analytics_.github/workflows/phpstan.yml_19_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": false
+ },
+ {
+  "run_id": "tonarino/innernet_.github/workflows/docker-tests.yml_411_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": false
+ },
+ {
+  "run_id": "openmessaging/openmessaging-storage-dledger_.github/workflows/maven.yml_174_1",
+  "l3_cat": "DEPENDENCY_CONFLICT",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "kvesteri/validators_.github/workflows/package.yaml_5_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "azure-samples/azure-search-openai-demo-csharp_.github/workflows/azure-dev.yml_24_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": false
+ },
+ {
+  "run_id": "idealvin/cocoyaxi_.github/workflows/win.yml_398_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "kennethenevoldsen/asent_.github/workflows/tests.yml_156_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "kaleidawave/ezno_.github/workflows/github-release.yml_2_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "factoryboy/factory_boy_.github/workflows/linkcheck.yml_140_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": false
+ },
+ {
+  "run_id": "spring-projects-experimental/spring-boot-migrator_.github/workflows/release-integration.yml_4_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "datamol-io/molfeat_.github/workflows/release.yml_23_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": false
+ },
+ {
+  "run_id": "batchdrake/sigdigger_.github/workflows/ci.yml_347_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "touchlab/kermit_.github/workflows/websitedeploy.yml_22_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "leandrocfe/filament-apex-charts_.github/workflows/phpstan.yml_66_1",
+  "l3_cat": "QUALITY_VIOLATION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "azure-samples/contoso-real-estate_dynamic/codespaces/create_codespaces_prebuilds_39_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": false
+ },
+ {
+  "run_id": "aws-samples/cdk-eks-blueprints-patterns_.github/workflows/e2e.yaml_1_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "google/atheris_.github/workflows/builds.yaml_72_1",
+  "l3_cat": "QUALITY_VIOLATION",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "brianpugh/belay_.github/workflows/tests.yaml_577_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "lissy93/dotfiles_.github/workflows/build.yml_151_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "saadpasta/developerfolio_.github/workflows/deploy.yml_197_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "ovyerus/prismaliser_.github/workflows/push.yaml_290_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "simdjson/simdjson-java_.github/workflows/publish.yml_5_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "plasma-umass/slipcover_.github/workflows/build-and-upload.yml_37_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": false
+ },
+ {
+  "run_id": "frgfm/holocron_.github/workflows/doc-status.yml_123_1",
+  "l3_cat": "DEPENDENCY_CONFLICT",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "parcel-bundler/parcel-css_.github/workflows/release.yml_109_1",
+  "l3_cat": "DEPENDENCY_CONFLICT",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "rstudio/shinyuieditor_.github/workflows/update-visual-snapshots.yml_96_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "cytopiateam/cytopia_.github/workflows/sonarcloud.yml_530_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "remarshal-project/remarshal_.github/workflows/lint.yml_95_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "enlightn/enlightn_.github/workflows/manual.yaml_5_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "keras-team/autokeras_.github/workflows/nightly.yml_890_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "qiskit/qiskit-machine-learning_.github/workflows/main.yml_4282_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "ploomber/ploomber_.github/workflows/ci-unit-macos.yml_1227_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "microsoft/typespec_.github/workflows/merge-release-in-main.yml_36_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": false
+ },
+ {
+  "run_id": "edx/edx-app-android_.github/workflows/androidTestSuite.yml_733_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "micro-gl/micro-gl_.github/workflows/compile.yml_34_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "asomers/mockall_.github/workflows/email.yml_202_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": false
+ },
+ {
+  "run_id": "dotnet-campus/dotnetcampus.ipc_.github/workflows/dotnet-core.yml_590_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "cowrie/cowrie_.github/workflows/pur.yml_235_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "tessel/node-usb_.github/workflows/prebuild.yml_580_1",
+  "l3_cat": "DEPENDENCY_CONFLICT",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "mitsuhiko/dialoguer_.github/workflows/ci.yml_303_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": false
+ },
+ {
+  "run_id": "xujiajun/nutsdb_.github/workflows/reviewdog.yml_560_1",
+  "l3_cat": "QUALITY_VIOLATION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "nf-core/tools_.github/workflows/sync.yml_35_5",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "rlworkgroup/metaworld_.github/workflows/build.yml_44_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "airspeed-velocity/asv_.github/workflows/triggered.yml_6_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "megamek/mekhq_.github/workflows/code-coverage.yml_1230_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": false
+ },
+ {
+  "run_id": "mongey/terraform-provider-kafka_.github/workflows/test.yml_739_3",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "sls-mentor/sls-mentor_.github/workflows/push-master.yml_1_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "numandev1/react-native-keys_.github/workflows/build-ios.yml_32_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "serverless-stack/sst_.github/workflows/test.yml_1309_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "farama-foundation/metaworld_.github/workflows/pre-commit.yml_62_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "opendds/opendds_.github/workflows/sphinx_strict.yml_5689_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": false
+ },
+ {
+  "run_id": "servo/html5ever_.github/workflows/main.yml_163_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": false
+ },
+ {
+  "run_id": "viaversion/viafabric_.github/workflows/build.yml_428_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "photoview/photoview_.github/workflows/tests.yml_854_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "nebari-dev/nebari_.github/workflows/test_integration.yaml_26_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "harness-software/wp-graphql-gravity-forms_.github/workflows/integration-testing.yml_415_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "axewp/wp-graphql-gravity-forms_.github/workflows/integration-testing.yml_415_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "theporgs/impacket_.github/workflows/build_and_test.yml_59_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "kaaveh/composenews_.github/workflows/build.yml_110_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "emurgo/yoroi-frontend_.github/workflows/nightly.yml_56_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "isl-org/open3d_.github/workflows/ubuntu-wheel.yml_2788_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": false
+ },
+ {
+  "run_id": "netlify/netlify-cms_.github/workflows/fossa.yml_1345_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "archeb/opentrace_.github/workflows/build-linux.yml_42_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "filecoin-saturn/l1-node_.github/workflows/integration-tests.yml_412_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "launchflow/buildflow_.github/workflows/gcp_release_tests.yaml_3_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": false
+ },
+ {
+  "run_id": "ninxsoft/lowprofile_.github/workflows/linting.yml_47_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "dethcrypto/typechain_.github/workflows/ci.yml_1043_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "encord-team/encord-active_.github/workflows/build.yml_3_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "zekrotja/shinpuru_.github/workflows/upgrade.yml_20_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": false
+ },
+ {
+  "run_id": "seldonio/mlserver_.github/workflows/release.yml_105_5",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "louisbrunner/dnd-multi-backend_.github/workflows/build.yml_480_1",
+  "l3_cat": "DEPENDENCY_CONFLICT",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "socketry/async-http_.github/workflows/test-async-head.yaml_133_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "instagram/libcst_.github/workflows/pypi_upload.yml_182_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "dmitrytsepelev/store_model_.github/workflows/rspec.yml_1249_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "mauriciomutte/track-correios_.github/workflows/release.yml_45_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "shopify/vscode-ruby-lsp_dynamic/dependabot/dependabot-updates_2_1",
+  "l3_cat": "DEPENDENCY_CONFLICT",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "cloudevents/sdk-python_.github/workflows/pypi-release.yml_55_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "kovshenin/sail_.github/workflows/end2end-tests.yml_139_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "streamthoughts/kafka-connect-file-pulse_.github/workflows/release.yml_2_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "react-native-kit/react-native-track-player_.github/workflows/platform-validation.yml_1072_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "accruent/robotframework-zoomba_.github/workflows/run-tests.yml_735_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": false
+ },
+ {
+  "run_id": "thekevinscott/upscalerjs_.github/workflows/browserlist.yml_4_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": false
+ },
+ {
+  "run_id": "eldavoo/wa-crypt-tools_.github/workflows/lint-test.yml_42_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "bretfisher/docker-ci-automation_.github/workflows/99-parallelize-jobs.yaml_68_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "foxundermoon/vs-shell-format_.github/workflows/CD.yml_102_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "cosmic-ide/cosmic-ide_.github/workflows/android.yml_2822_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "jsmonk/hegel_.github/workflows/ci.yml_111_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "prismaneui/prismane_.github/workflows/storybook.yml_1_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "octokit/webhooks.js_.github/workflows/update.yml_240_1",
+  "l3_cat": "DEPENDENCY_CONFLICT",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "feelfreelinux/cspot_.github/workflows/esp-idf.yml_414_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": false
+ },
+ {
+  "run_id": "ethereum-ts/typechain_.github/workflows/ci.yml_1043_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "googlemaps/google-maps-services-java_.github/workflows/release.yml_182_1",
+  "l3_cat": "DEPENDENCY_CONFLICT",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "github/codespaces-react_dynamic/dependabot/dependabot-updates_8_1",
+  "l3_cat": "DEPENDENCY_CONFLICT",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "mouradmourafiq/datatile_.github/workflows/traceml.yml_93_8",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "iridiumidentity/iridium_.github/workflows/build-iridium-pull-request.yml_141_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "chieapp/chie_.github/workflows/build.yml_59_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "polyaxon/datatile_.github/workflows/traceml.yml_93_8",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "palkan/active_event_store_.github/workflows/minitest.yml_19_1",
+  "l3_cat": "DEPENDENCY_CONFLICT",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "slack-ruby/slack-ruby-client_.github/workflows/integration_test.yml_195_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "ajndkr/fastapi-async-langchain_.github/workflows/ci.yaml_61_2",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "ar90n/serverless-s3-local_.github/workflows/bump.yml_17_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "antvis/g_.github/workflows/test.yml_158_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": false
+ },
+ {
+  "run_id": "geodacenter/geoda_.github/workflows/osx_build.yml_63_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "cysharp/ulid_.github/workflows/build-release.yml_21_1",
+  "l3_cat": "INFRA_INCOMPATIBILITY",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "dapperlib/dapperaot_.github/workflows/dotnet.yml_172_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "pluginkollektiv/antispam-bee_.github/workflows/wordpress-plugin-asset-update.yml_92_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "tree-sitter/tree-sitter-c_.github/workflows/publish.yml_1_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": false
+ },
+ {
+  "run_id": "korken89/smlang-rs_.github/workflows/build.yml_140_2",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "untitaker/hyperlink_.github/workflows/test.yml_479_1",
+  "l3_cat": "QUALITY_VIOLATION",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "nanshaner/repoll_.github/workflows/docker_ci.yml_1085_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "wfrest/wfrest_.github/workflows/CI.yml_371_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "cognitive-engineering-lab/aquascope_.github/workflows/release.yml_36_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "unum-cloud/ustore_.github/workflows/release.yml_8_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "seldonio/alibi_.github/workflows/test_all_notebooks.yml_133_1",
+  "l3_cat": "QUALITY_VIOLATION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "sibyx/phpgpx_.github/workflows/coverage.yml_1_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "giggio/node-chromedriver_.github/workflows/tag.yml_12_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "floating/frame_.github/workflows/build.yml_181_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "dacotaco/priiloader_.github/workflows/Priiloader-CI.yml_580_1",
+  "l3_cat": "QUALITY_VIOLATION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "mathieu2301/tradingview-api_.github/workflows/node.js.yml_660_2",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "zigrazor/cxxgraph_.github/workflows/windows-cmake.yml_64_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "chimehq/swifttreesitter_.github/workflows/wasm.yml_127_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "pinecone-io/pinecone-ts-client_.github/workflows/release-prod.yml_2_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": false
+ },
+ {
+  "run_id": "tillsteinbach/vwsfriend_.github/workflows/compose.yml_70_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "dopplerhq/cli_.github/workflows/salus.yaml_2382_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "eleutherai/gpt-neox_.github/workflows/cpu_ci.yml_865_1",
+  "l3_cat": "QUALITY_VIOLATION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "cottonmc/libgui_.github/workflows/build.yml_308_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": false
+ },
+ {
+  "run_id": "armmbed/mbed-os_.github/workflows/docker_management.branch.yml_120_1",
+  "l3_cat": "DEPENDENCY_CONFLICT",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "rhysd/github-action-benchmark_.github/workflows/rust.yml_290_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "spencekonde/megatinycore_.github/workflows/check-code-formatting.yml_537_1",
+  "l3_cat": "QUALITY_VIOLATION",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "bluefireteam/audioplayers_.github/workflows/test.yml_70_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "steam-headless/docker-steam-headless_.github/workflows/build_ci.yml_284_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "trufflesuite/ganache-core_.github/workflows/release.yml_149_1",
+  "l3_cat": "CONFIG_ERROR",
+  "defensible": true,
+  "informative": true
+ },
+ {
+  "run_id": "rasbt/mlxtend_.github/workflows/python-package-conda.yml_336_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "jina-ai/langchain-serve_.github/workflows/jcloud-integration.yml_28_3",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "facebookresearch/SONAR_.github/workflows/lint_and_test.yml_31_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": false,
+  "informative": true
+ },
+ {
+  "run_id": "iuiaoin/wechat-gptbot_.github/workflows/ruff.yml_109_1",
+  "l3_cat": "QUALITY_VIOLATION",
+  "defensible": true,
+  "informative": false
+ },
+ {
+  "run_id": "tzapio/tzap_.github/workflows/push-test.yml_36_1",
+  "l3_cat": "CODE_REGRESSION",
+  "defensible": true,
+  "informative": false
+ }
+]

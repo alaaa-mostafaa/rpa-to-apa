@@ -1,0 +1,26 @@
+{
+  "index": 3,
+  "label": "failure",
+  "run_id": "quansight/qhub_.github/workflows/test_gcp_integration.yaml_14_1",
+  "repo": "quansight/qhub",
+  "workflow_path": ".github/workflows/test_gcp_integration.yaml",
+  "run_number": "14",
+  "attempt": "1",
+  "scan_line": 190785,
+  "case_dir": "/home/guc_alaa/comparison_results/balanced_50_full_logs_20260516/003_failure_quansight_qhub_test_gcp_integration.yaml",
+  "full_log_path": "/home/guc_alaa/comparison_results/balanced_50_full_logs_20260516/003_failure_quansight_qhub_test_gcp_integration.yaml/full_log.txt",
+  "tarball": "logs/nebari-dev/nebari/test_gcp_integration_d521/14-1.tar.gz",
+  "n_job_logs": 9,
+  "job_log_files": [
+    "test-gcp-integration/4_Install Nebari.txt",
+    "1_test-gcp-integration.txt",
+    "1_test-gcp-integration (1).txt",
+    "test-gcp-integration/3_Set up Python.txt",
+    "test-gcp-integration/15_Complete job.txt",
+    "test-gcp-integration/14_Post Checkout.txt",
+    "test-gcp-integration/1_Set up job.txt",
+    "test-gcp-integration/2_Checkout.txt",
+    "test-gcp-integration/5_Retrieve secret from Vault.txt"
+  ],
+  "full_log_chars": 285865
+}

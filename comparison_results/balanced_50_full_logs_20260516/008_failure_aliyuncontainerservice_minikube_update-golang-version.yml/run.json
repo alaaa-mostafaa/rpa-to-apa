@@ -1,0 +1,384 @@
+{
+  "_id": "aliyuncontainerservice/minikube_.github/workflows/update-golang-version.yml_108_1",
+  "repository_name": "aliyuncontainerservice/minikube",
+  "workflow_path": ".github/workflows/update-golang-version.yml",
+  "run_number": 108,
+  "run_attempt": 1,
+  "metadata": {
+    "id": 6220474859,
+    "name": "update-golang-versions",
+    "node_id": "WFR_kwLOBfrexs8AAAABcsTp6w",
+    "head_branch": "master",
+    "head_sha": "e1745fa3948f4a219a3789e39085b13eaeb683eb",
+    "path": ".github/workflows/update-golang-version.yml",
+    "display_title": "update-golang-versions",
+    "run_number": 108,
+    "event": "schedule",
+    "status": "completed",
+    "conclusion": "failure",
+    "workflow_id": 12503272,
+    "check_suite_id": 16276629832,
+    "check_suite_node_id": "CS_kwDOBfrexs8AAAADyimpSA",
+    "url": "https://api.github.com/repos/AliyunContainerService/minikube/actions/runs/6220474859",
+    "html_url": "https://github.com/AliyunContainerService/minikube/actions/runs/6220474859",
+    "pull_requests": [],
+    "created_at": "2023-09-18T09:09:13Z",
+    "updated_at": "2023-09-18T09:09:46Z",
+    "actor": {
+      "login": "denverdino",
+      "id": 409721,
+      "node_id": "MDQ6VXNlcjQwOTcyMQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/409721?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/denverdino",
+      "html_url": "https://github.com/denverdino",
+      "followers_url": "https://api.github.com/users/denverdino/followers",
+      "following_url": "https://api.github.com/users/denverdino/following{/other_user}",
+      "gists_url": "https://api.github.com/users/denverdino/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/denverdino/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/denverdino/subscriptions",
+      "organizations_url": "https://api.github.com/users/denverdino/orgs",
+      "repos_url": "https://api.github.com/users/denverdino/repos",
+      "events_url": "https://api.github.com/users/denverdino/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/denverdino/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "run_attempt": 1,
+    "referenced_workflows": [],
+    "run_started_at": "2023-09-18T09:09:13Z",
+    "triggering_actor": {
+      "login": "denverdino",
+      "id": 409721,
+      "node_id": "MDQ6VXNlcjQwOTcyMQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/409721?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/denverdino",
+      "html_url": "https://github.com/denverdino",
+      "followers_url": "https://api.github.com/users/denverdino/followers",
+      "following_url": "https://api.github.com/users/denverdino/following{/other_user}",
+      "gists_url": "https://api.github.com/users/denverdino/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/denverdino/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/denverdino/subscriptions",
+      "organizations_url": "https://api.github.com/users/denverdino/orgs",
+      "repos_url": "https://api.github.com/users/denverdino/repos",
+      "events_url": "https://api.github.com/users/denverdino/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/denverdino/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "jobs_url": "https://api.github.com/repos/AliyunContainerService/minikube/actions/runs/6220474859/jobs",
+    "logs_url": "https://api.github.com/repos/AliyunContainerService/minikube/actions/runs/6220474859/logs",
+    "check_suite_url": "https://api.github.com/repos/AliyunContainerService/minikube/check-suites/16276629832",
+    "artifacts_url": "https://api.github.com/repos/AliyunContainerService/minikube/actions/runs/6220474859/artifacts",
+    "cancel_url": "https://api.github.com/repos/AliyunContainerService/minikube/actions/runs/6220474859/cancel",
+    "rerun_url": "https://api.github.com/repos/AliyunContainerService/minikube/actions/runs/6220474859/rerun",
+    "previous_attempt_url": null,
+    "workflow_url": "https://api.github.com/repos/AliyunContainerService/minikube/actions/workflows/12503272",
+    "head_commit": {
+      "id": "e1745fa3948f4a219a3789e39085b13eaeb683eb",
+      "tree_id": "4e5be60e6e2e9dc7549071d8cb11e02fab584b8a",
+      "message": "Merge pull request #13654 from chungjin/benchmark\n\n[benchmark] add cpu utilization",
+      "timestamp": "2022-03-25T22:13:32Z",
+      "author": {
+        "name": "Steven Powell",
+        "email": "44844360+spowelljr@users.noreply.github.com"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com"
+      }
+    },
+    "repository": {
+      "id": 100327110,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMDAzMjcxMTA=",
+      "name": "minikube",
+      "full_name": "AliyunContainerService/minikube",
+      "private": false,
+      "owner": {
+        "login": "AliyunContainerService",
+        "id": 16377432,
+        "node_id": "MDEyOk9yZ2FuaXphdGlvbjE2Mzc3NDMy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/16377432?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/AliyunContainerService",
+        "html_url": "https://github.com/AliyunContainerService",
+        "followers_url": "https://api.github.com/users/AliyunContainerService/followers",
+        "following_url": "https://api.github.com/users/AliyunContainerService/following{/other_user}",
+        "gists_url": "https://api.github.com/users/AliyunContainerService/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/AliyunContainerService/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/AliyunContainerService/subscriptions",
+        "organizations_url": "https://api.github.com/users/AliyunContainerService/orgs",
+        "repos_url": "https://api.github.com/users/AliyunContainerService/repos",
+        "events_url": "https://api.github.com/users/AliyunContainerService/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/AliyunContainerService/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/AliyunContainerService/minikube",
+      "description": "普大喜奔，官方Minikube提供了完整对国内用户支持，完美支持Addon组件。 建议参考 https://yq.aliyun.com/articles/221687 或 https://github.com/AliyunContainerService/minikube/wiki 最新支持minikube v1.24.0",
+      "fork": true,
+      "url": "https://api.github.com/repos/AliyunContainerService/minikube",
+      "forks_url": "https://api.github.com/repos/AliyunContainerService/minikube/forks",
+      "keys_url": "https://api.github.com/repos/AliyunContainerService/minikube/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/AliyunContainerService/minikube/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/AliyunContainerService/minikube/teams",
+      "hooks_url": "https://api.github.com/repos/AliyunContainerService/minikube/hooks",
+      "issue_events_url": "https://api.github.com/repos/AliyunContainerService/minikube/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/AliyunContainerService/minikube/events",
+      "assignees_url": "https://api.github.com/repos/AliyunContainerService/minikube/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/AliyunContainerService/minikube/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/AliyunContainerService/minikube/tags",
+      "blobs_url": "https://api.github.com/repos/AliyunContainerService/minikube/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/AliyunContainerService/minikube/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/AliyunContainerService/minikube/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/AliyunContainerService/minikube/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/AliyunContainerService/minikube/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/AliyunContainerService/minikube/languages",
+      "stargazers_url": "https://api.github.com/repos/AliyunContainerService/minikube/stargazers",
+      "contributors_url": "https://api.github.com/repos/AliyunContainerService/minikube/contributors",
+      "subscribers_url": "https://api.github.com/repos/AliyunContainerService/minikube/subscribers",
+      "subscription_url": "https://api.github.com/repos/AliyunContainerService/minikube/subscription",
+      "commits_url": "https://api.github.com/repos/AliyunContainerService/minikube/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/AliyunContainerService/minikube/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/AliyunContainerService/minikube/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/AliyunContainerService/minikube/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/AliyunContainerService/minikube/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/AliyunContainerService/minikube/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/AliyunContainerService/minikube/merges",
+      "archive_url": "https://api.github.com/repos/AliyunContainerService/minikube/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/AliyunContainerService/minikube/downloads",
+      "issues_url": "https://api.github.com/repos/AliyunContainerService/minikube/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/AliyunContainerService/minikube/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/AliyunContainerService/minikube/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/AliyunContainerService/minikube/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/AliyunContainerService/minikube/labels{/name}",
+      "releases_url": "https://api.github.com/repos/AliyunContainerService/minikube/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/AliyunContainerService/minikube/deployments"
+    },
+    "head_repository": {
+      "id": 100327110,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMDAzMjcxMTA=",
+      "name": "minikube",
+      "full_name": "AliyunContainerService/minikube",
+      "private": false,
+      "owner": {
+        "login": "AliyunContainerService",
+        "id": 16377432,
+        "node_id": "MDEyOk9yZ2FuaXphdGlvbjE2Mzc3NDMy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/16377432?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/AliyunContainerService",
+        "html_url": "https://github.com/AliyunContainerService",
+        "followers_url": "https://api.github.com/users/AliyunContainerService/followers",
+        "following_url": "https://api.github.com/users/AliyunContainerService/following{/other_user}",
+        "gists_url": "https://api.github.com/users/AliyunContainerService/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/AliyunContainerService/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/AliyunContainerService/subscriptions",
+        "organizations_url": "https://api.github.com/users/AliyunContainerService/orgs",
+        "repos_url": "https://api.github.com/users/AliyunContainerService/repos",
+        "events_url": "https://api.github.com/users/AliyunContainerService/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/AliyunContainerService/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/AliyunContainerService/minikube",
+      "description": "普大喜奔，官方Minikube提供了完整对国内用户支持，完美支持Addon组件。 建议参考 https://yq.aliyun.com/articles/221687 或 https://github.com/AliyunContainerService/minikube/wiki 最新支持minikube v1.24.0",
+      "fork": true,
+      "url": "https://api.github.com/repos/AliyunContainerService/minikube",
+      "forks_url": "https://api.github.com/repos/AliyunContainerService/minikube/forks",
+      "keys_url": "https://api.github.com/repos/AliyunContainerService/minikube/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/AliyunContainerService/minikube/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/AliyunContainerService/minikube/teams",
+      "hooks_url": "https://api.github.com/repos/AliyunContainerService/minikube/hooks",
+      "issue_events_url": "https://api.github.com/repos/AliyunContainerService/minikube/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/AliyunContainerService/minikube/events",
+      "assignees_url": "https://api.github.com/repos/AliyunContainerService/minikube/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/AliyunContainerService/minikube/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/AliyunContainerService/minikube/tags",
+      "blobs_url": "https://api.github.com/repos/AliyunContainerService/minikube/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/AliyunContainerService/minikube/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/AliyunContainerService/minikube/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/AliyunContainerService/minikube/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/AliyunContainerService/minikube/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/AliyunContainerService/minikube/languages",
+      "stargazers_url": "https://api.github.com/repos/AliyunContainerService/minikube/stargazers",
+      "contributors_url": "https://api.github.com/repos/AliyunContainerService/minikube/contributors",
+      "subscribers_url": "https://api.github.com/repos/AliyunContainerService/minikube/subscribers",
+      "subscription_url": "https://api.github.com/repos/AliyunContainerService/minikube/subscription",
+      "commits_url": "https://api.github.com/repos/AliyunContainerService/minikube/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/AliyunContainerService/minikube/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/AliyunContainerService/minikube/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/AliyunContainerService/minikube/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/AliyunContainerService/minikube/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/AliyunContainerService/minikube/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/AliyunContainerService/minikube/merges",
+      "archive_url": "https://api.github.com/repos/AliyunContainerService/minikube/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/AliyunContainerService/minikube/downloads",
+      "issues_url": "https://api.github.com/repos/AliyunContainerService/minikube/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/AliyunContainerService/minikube/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/AliyunContainerService/minikube/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/AliyunContainerService/minikube/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/AliyunContainerService/minikube/labels{/name}",
+      "releases_url": "https://api.github.com/repos/AliyunContainerService/minikube/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/AliyunContainerService/minikube/deployments"
+    }
+  },
+  "logs_archive": {
+    "path": "/data/logs/AliyunContainerService/minikube/update_golang_versions_3ce7/108-1.tar.gz"
+  },
+  "log_insights": [
+    {
+      "file": "1_bump-golang-version (1).txt",
+      "total_lines": 751,
+      "log_size": 53291,
+      "token_permissions": {
+        "Contents": "read",
+        "Metadata": "read"
+      },
+      "image": "ubuntu-20.04",
+      "image_version": "20230911.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "629c2de402a417ea7690ca6ce3f33229e27606a5",
+          "sha": "629c2de402a417ea7690ca6ce3f33229e27606a5",
+          "with": {
+            "repository": "AliyunContainerService/minikube",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "fetch-depth": "1",
+            "lfs": "false",
+            "submodules": "false"
+          },
+          "env": {
+            "GOPROXY": "https://proxy.golang.org",
+            "GO_VERSION": "1.17.7"
+          },
+          "start_date": "2023-09-18 09:09:24.325000",
+          "duration_sec": 5.238307
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "setup-go",
+          "version": "f6164bd8c8acb4a71fb2791a8b6c4024ff038dab",
+          "sha": "f6164bd8c8acb4a71fb2791a8b6c4024ff038dab",
+          "with": {
+            "go-version": "1.17.7",
+            "stable": "true",
+            "check-latest": "false",
+            "token": "***"
+          },
+          "env": {
+            "GOPROXY": "https://proxy.golang.org",
+            "GO_VERSION": "1.17.7"
+          },
+          "start_date": "2023-09-18 09:09:29.563000",
+          "duration_sec": 9.11928
+        },
+        {
+          "type": "shell",
+          "env": {
+            "GOPROXY": "https://proxy.golang.org",
+            "GO_VERSION": "1.17.7",
+            "GOROOT": "/opt/hostedtoolcache/go/1.17.7/x64"
+          },
+          "code": "make update-golang-version\necho \"::set-output name=changes::$(git status --porcelain)\"",
+          "commands": [
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "update-golang-version"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"::set-output name=changes::$(git status --porcelain)\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-GIT"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL"
+              ],
+              "args": [
+                {
+                  "content": "status"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-PORCELAIN"
+                  ],
+                  "content": "--porcelain"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-18 09:09:38.682000",
+          "duration_sec": 4.319669
+        },
+        {
+          "type": "action",
+          "repository": "peter-evans",
+          "action": "create-pull-request",
+          "version": "d6d5519d05f5814158ef015b8448f2f74648c421",
+          "sha": "d6d5519d05f5814158ef015b8448f2f74648c421",
+          "with": {
+            "commit-message": "bump golang versions",
+            "committer": "minikube-bot <minikube-bot@google.com>",
+            "author": "minikube-bot <minikube-bot@google.com>",
+            "branch": "auto_bump_golang_version",
+            "push-to-fork": "minikube-bot/minikube",
+            "base": "master",
+            "delete-branch": "true",
+            "title": "bump golang version",
+            "labels": "ok-to-test",
+            "body": "Kubernetes Project just updated the [golang version](https://github.com/kubernetes/kubernetes/blob/master/build/build-image/cross/VERSION), updating minikube golang to match Kubernetes.",
+            "2023-09-18T09:09:43.0030341Z   signoff": "false",
+            "draft": "false"
+          },
+          "env": {
+            "GOPROXY": "https://proxy.golang.org",
+            "GO_VERSION": "1.17.7",
+            "GOROOT": "/opt/hostedtoolcache/go/1.17.7/x64"
+          },
+          "start_date": "2023-09-18 09:09:43.002000",
+          "duration_sec": 0.567145
+        }
+      ]
+    }
+  ],
+  "total_logs_size": 53767
+}

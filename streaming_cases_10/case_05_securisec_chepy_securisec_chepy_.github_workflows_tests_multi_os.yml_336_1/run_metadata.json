@@ -1,0 +1,15 @@
+{
+  "run_id": "securisec/chepy_.github/workflows/tests_multi_os.yml_336_1",
+  "repository_name": "securisec/chepy",
+  "workflow_path": ".github/workflows/tests_multi_os.yml",
+  "run_number": 336,
+  "attempt": 1,
+  "event": "push",
+  "conclusion": "failure",
+  "branch": "master",
+  "commit_sha": "7376b161baeb34de56a4e9f3d00568a435867397",
+  "commit_message": "🗓 Oct 30, 2023 10:24:47 PM\n\n🐙 plugins updated\n✨ to/fom_utf21\n🧪 tests added/updated\n✨ new helpers",
+  "logs_archive": {
+    "path": "/data/logs/securisec/chepy/tests_5983/336-1.tar.gz"
+  }
+}

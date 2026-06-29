@@ -1,0 +1,62 @@
+{
+  "case_label": "apache/incubator-opendal — ci: Passing GITHUB_TOKEN to avoid rate limit (#3272)",
+  "intake": {
+    "run_id": "apache/incubator-opendal_.github/workflows/fs_write_full_disk.yml_2_1",
+    "repo": "apache/incubator-opendal",
+    "workflow": "fs_write_full_disk.yml",
+    "branch": "main",
+    "event": "push",
+    "is_protected_branch": true,
+    "commit_sha": "2ce0e9358623",
+    "commit_title": "ci: Passing GITHUB_TOKEN to avoid rate limit (#3272)",
+    "conclusion": "failure",
+    "failure_detection": "job_level_fallback",
+    "failed_jobs_count": 1,
+    "n_jobs": 1,
+    "all_failures_are_tooling_artifacts": false
+  },
+  "extraction": {
+    "total_steps_extracted": 1,
+    "strategies": [
+      "error_marker"
+    ],
+    "total_lines_extracted": 156,
+    "error_markers_found": 1,
+    "sample_error_lines": [
+      "##[error]Process completed with exit code 1."
+    ]
+  },
+  "classification": {
+    "category": "ENV_FLAKINESS",
+    "severity": "CRITICAL",
+    "confidence": 0.9,
+    "action": "RETRY",
+    "reasoning": "The failure occurred on the protected main branch in a core workflow, raising severity to CRITICAL. The log shows a permission error when changing permissions on a mounted directory, which is often caused by environment or runner restrictions rather than code changes. The commit message indicates only a CI token change unrelated to filesystem permissions, supporting that this is likely an environment flakiness issue. Retrying the run is recommended before further escalation.",
+    "evidence": [
+      "branch: main",
+      "protected: True",
+      "commit message: ci: Passing GITHUB_TOKEN to avoid rate limit (#3272)",
+      "log: chmod: changing permissions of './td': Operation not permitted",
+      "log: Process completed with exit code 1"
+    ],
+    "unknowns": [
+      "runner environment configuration details",
+      "whether this error has occurred in previous runs",
+      "full workflow YAML to check mount permissions"
+    ]
+  },
+  "ground_truth": {
+    "developer_action": "NO_IMMEDIATE_RESPONSE",
+    "method": "rubric",
+    "reasoning": "Follow-up commits exist but none are within 7 days of the failure. Developer likely retried or ignored the failure without a code change.",
+    "match_verdict": "MATCH",
+    "judge_reasoning": "The AI triage identified the failure as environment flakiness due to permission errors on a mounted directory and recommended a retry. The developer did not immediately respond with a fix or retry within 7 days, and the follow-up commits were unrelated refactors and removals of the scheme concept, not addressing the failure directly. This supports that the failure was likely transient or environment-related, validating the AI's RETRY action and ENV_FLAKINESS category.",
+    "judge_confidence": 0.9,
+    "judge_evidence_used": [
+      "commit message: ci: Passing GITHUB_TOKEN to avoid rate limit (#3272)",
+      "log: chmod: changing permissions of './td': Operation not permitted",
+      "no commits within 7 days addressing the failure",
+      "follow-up commits are refactors unrelated to filesystem permissions or workflow"
+    ]
+  }
+}

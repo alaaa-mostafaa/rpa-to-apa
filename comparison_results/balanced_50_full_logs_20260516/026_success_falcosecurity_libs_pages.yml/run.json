@@ -1,0 +1,1263 @@
+{
+  "_id": "falcosecurity/libs_.github/workflows/pages.yml_201_1",
+  "repository_name": "falcosecurity/libs",
+  "workflow_path": ".github/workflows/pages.yml",
+  "run_number": 201,
+  "run_attempt": 1,
+  "time_to_import": 71569.185053,
+  "metadata": {
+    "id": 6822166311,
+    "name": "Deploy Github Pages",
+    "node_id": "WFR_kwLOFBfcCs8AAAABlqH_Jw",
+    "head_branch": "master",
+    "head_sha": "289df4fa9ceea1668fd9112c774a39b9d39a5344",
+    "path": ".github/workflows/pages.yml",
+    "display_title": "update(cmake): Install libraries into CMAKE_INSTALL_LIBDIR",
+    "run_number": 201,
+    "event": "push",
+    "status": "completed",
+    "conclusion": "success",
+    "workflow_id": 64076789,
+    "check_suite_id": 18075990636,
+    "check_suite_node_id": "CS_kwDOFBfcCs8AAAAENWm6bA",
+    "url": "https://api.github.com/repos/falcosecurity/libs/actions/runs/6822166311",
+    "html_url": "https://github.com/falcosecurity/libs/actions/runs/6822166311",
+    "pull_requests": [],
+    "created_at": "2023-11-10T07:55:34Z",
+    "updated_at": "2023-11-10T08:06:36Z",
+    "actor": {
+      "login": "poiana",
+      "id": 51138685,
+      "node_id": "MDQ6VXNlcjUxMTM4Njg1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51138685?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/poiana",
+      "html_url": "https://github.com/poiana",
+      "followers_url": "https://api.github.com/users/poiana/followers",
+      "following_url": "https://api.github.com/users/poiana/following{/other_user}",
+      "gists_url": "https://api.github.com/users/poiana/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/poiana/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/poiana/subscriptions",
+      "organizations_url": "https://api.github.com/users/poiana/orgs",
+      "repos_url": "https://api.github.com/users/poiana/repos",
+      "events_url": "https://api.github.com/users/poiana/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/poiana/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "run_attempt": 1,
+    "referenced_workflows": [
+      {
+        "path": "falcosecurity/libs/.github/workflows/reusable_kernel_tests.yaml@289df4fa9ceea1668fd9112c774a39b9d39a5344",
+        "sha": "289df4fa9ceea1668fd9112c774a39b9d39a5344",
+        "ref": "refs/heads/master"
+      }
+    ],
+    "run_started_at": "2023-11-10T07:55:34Z",
+    "triggering_actor": {
+      "login": "poiana",
+      "id": 51138685,
+      "node_id": "MDQ6VXNlcjUxMTM4Njg1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51138685?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/poiana",
+      "html_url": "https://github.com/poiana",
+      "followers_url": "https://api.github.com/users/poiana/followers",
+      "following_url": "https://api.github.com/users/poiana/following{/other_user}",
+      "gists_url": "https://api.github.com/users/poiana/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/poiana/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/poiana/subscriptions",
+      "organizations_url": "https://api.github.com/users/poiana/orgs",
+      "repos_url": "https://api.github.com/users/poiana/repos",
+      "events_url": "https://api.github.com/users/poiana/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/poiana/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "jobs_url": "https://api.github.com/repos/falcosecurity/libs/actions/runs/6822166311/jobs",
+    "logs_url": "https://api.github.com/repos/falcosecurity/libs/actions/runs/6822166311/logs",
+    "check_suite_url": "https://api.github.com/repos/falcosecurity/libs/check-suites/18075990636",
+    "artifacts_url": "https://api.github.com/repos/falcosecurity/libs/actions/runs/6822166311/artifacts",
+    "cancel_url": "https://api.github.com/repos/falcosecurity/libs/actions/runs/6822166311/cancel",
+    "rerun_url": "https://api.github.com/repos/falcosecurity/libs/actions/runs/6822166311/rerun",
+    "previous_attempt_url": null,
+    "workflow_url": "https://api.github.com/repos/falcosecurity/libs/actions/workflows/64076789",
+    "head_commit": {
+      "id": "289df4fa9ceea1668fd9112c774a39b9d39a5344",
+      "tree_id": "6d285c4fad95645e1cc985e630ea64eb3654210c",
+      "message": "update(cmake): Install libraries into CMAKE_INSTALL_LIBDIR\n\nPull in and update a patch from Dima Kogan which installs libraries into\nCMAKE_INSTALL_LIBDIR:\n\nhttps://salsa.debian.org/debian/falcosecurity-libs/-/blob/master/debian/patches/fix-library-install-path.patch\n\nThis simplifies things when BUILD_SHARED_LIBS is enabled since it\nreduces the need to mess with LD_LIBRARY_PATH or DYLD_LIBRARY_PATH.\n\nSigned-off-by: Gerald Combs <gerald@wireshark.org>",
+      "timestamp": "2023-11-10T07:55:31Z",
+      "author": {
+        "name": "Gerald Combs",
+        "email": "gerald@wireshark.org"
+      },
+      "committer": {
+        "name": "poiana",
+        "email": "51138685+poiana@users.noreply.github.com"
+      }
+    },
+    "repository": {
+      "id": 337107978,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzMzcxMDc5Nzg=",
+      "name": "libs",
+      "full_name": "falcosecurity/libs",
+      "private": false,
+      "owner": {
+        "login": "falcosecurity",
+        "id": 42391047,
+        "node_id": "MDEyOk9yZ2FuaXphdGlvbjQyMzkxMDQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/42391047?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/falcosecurity",
+        "html_url": "https://github.com/falcosecurity",
+        "followers_url": "https://api.github.com/users/falcosecurity/followers",
+        "following_url": "https://api.github.com/users/falcosecurity/following{/other_user}",
+        "gists_url": "https://api.github.com/users/falcosecurity/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/falcosecurity/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/falcosecurity/subscriptions",
+        "organizations_url": "https://api.github.com/users/falcosecurity/orgs",
+        "repos_url": "https://api.github.com/users/falcosecurity/repos",
+        "events_url": "https://api.github.com/users/falcosecurity/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/falcosecurity/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/falcosecurity/libs",
+      "description": "libsinsp, libscap, the kernel module driver, and the eBPF driver sources",
+      "fork": false,
+      "url": "https://api.github.com/repos/falcosecurity/libs",
+      "forks_url": "https://api.github.com/repos/falcosecurity/libs/forks",
+      "keys_url": "https://api.github.com/repos/falcosecurity/libs/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/falcosecurity/libs/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/falcosecurity/libs/teams",
+      "hooks_url": "https://api.github.com/repos/falcosecurity/libs/hooks",
+      "issue_events_url": "https://api.github.com/repos/falcosecurity/libs/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/falcosecurity/libs/events",
+      "assignees_url": "https://api.github.com/repos/falcosecurity/libs/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/falcosecurity/libs/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/falcosecurity/libs/tags",
+      "blobs_url": "https://api.github.com/repos/falcosecurity/libs/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/falcosecurity/libs/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/falcosecurity/libs/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/falcosecurity/libs/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/falcosecurity/libs/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/falcosecurity/libs/languages",
+      "stargazers_url": "https://api.github.com/repos/falcosecurity/libs/stargazers",
+      "contributors_url": "https://api.github.com/repos/falcosecurity/libs/contributors",
+      "subscribers_url": "https://api.github.com/repos/falcosecurity/libs/subscribers",
+      "subscription_url": "https://api.github.com/repos/falcosecurity/libs/subscription",
+      "commits_url": "https://api.github.com/repos/falcosecurity/libs/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/falcosecurity/libs/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/falcosecurity/libs/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/falcosecurity/libs/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/falcosecurity/libs/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/falcosecurity/libs/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/falcosecurity/libs/merges",
+      "archive_url": "https://api.github.com/repos/falcosecurity/libs/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/falcosecurity/libs/downloads",
+      "issues_url": "https://api.github.com/repos/falcosecurity/libs/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/falcosecurity/libs/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/falcosecurity/libs/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/falcosecurity/libs/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/falcosecurity/libs/labels{/name}",
+      "releases_url": "https://api.github.com/repos/falcosecurity/libs/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/falcosecurity/libs/deployments"
+    },
+    "head_repository": {
+      "id": 337107978,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzMzcxMDc5Nzg=",
+      "name": "libs",
+      "full_name": "falcosecurity/libs",
+      "private": false,
+      "owner": {
+        "login": "falcosecurity",
+        "id": 42391047,
+        "node_id": "MDEyOk9yZ2FuaXphdGlvbjQyMzkxMDQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/42391047?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/falcosecurity",
+        "html_url": "https://github.com/falcosecurity",
+        "followers_url": "https://api.github.com/users/falcosecurity/followers",
+        "following_url": "https://api.github.com/users/falcosecurity/following{/other_user}",
+        "gists_url": "https://api.github.com/users/falcosecurity/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/falcosecurity/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/falcosecurity/subscriptions",
+        "organizations_url": "https://api.github.com/users/falcosecurity/orgs",
+        "repos_url": "https://api.github.com/users/falcosecurity/repos",
+        "events_url": "https://api.github.com/users/falcosecurity/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/falcosecurity/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/falcosecurity/libs",
+      "description": "libsinsp, libscap, the kernel module driver, and the eBPF driver sources",
+      "fork": false,
+      "url": "https://api.github.com/repos/falcosecurity/libs",
+      "forks_url": "https://api.github.com/repos/falcosecurity/libs/forks",
+      "keys_url": "https://api.github.com/repos/falcosecurity/libs/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/falcosecurity/libs/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/falcosecurity/libs/teams",
+      "hooks_url": "https://api.github.com/repos/falcosecurity/libs/hooks",
+      "issue_events_url": "https://api.github.com/repos/falcosecurity/libs/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/falcosecurity/libs/events",
+      "assignees_url": "https://api.github.com/repos/falcosecurity/libs/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/falcosecurity/libs/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/falcosecurity/libs/tags",
+      "blobs_url": "https://api.github.com/repos/falcosecurity/libs/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/falcosecurity/libs/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/falcosecurity/libs/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/falcosecurity/libs/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/falcosecurity/libs/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/falcosecurity/libs/languages",
+      "stargazers_url": "https://api.github.com/repos/falcosecurity/libs/stargazers",
+      "contributors_url": "https://api.github.com/repos/falcosecurity/libs/contributors",
+      "subscribers_url": "https://api.github.com/repos/falcosecurity/libs/subscribers",
+      "subscription_url": "https://api.github.com/repos/falcosecurity/libs/subscription",
+      "commits_url": "https://api.github.com/repos/falcosecurity/libs/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/falcosecurity/libs/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/falcosecurity/libs/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/falcosecurity/libs/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/falcosecurity/libs/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/falcosecurity/libs/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/falcosecurity/libs/merges",
+      "archive_url": "https://api.github.com/repos/falcosecurity/libs/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/falcosecurity/libs/downloads",
+      "issues_url": "https://api.github.com/repos/falcosecurity/libs/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/falcosecurity/libs/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/falcosecurity/libs/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/falcosecurity/libs/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/falcosecurity/libs/labels{/name}",
+      "releases_url": "https://api.github.com/repos/falcosecurity/libs/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/falcosecurity/libs/deployments"
+    }
+  },
+  "logs_archive": {
+    "path": "/data/logs/falcosecurity/libs/Deploy_Github_Pages_1621/201-1.tar.gz"
+  },
+  "log_insights": [
+    {
+      "file": "1_kernel-tests-master  test-kernels (ARM64).txt",
+      "total_lines": 878,
+      "log_size": 114952,
+      "token_permissions": {
+        "Contents": "read",
+        "Metadata": "read",
+        "Pages": "write"
+      },
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "b4ffde65f46336ab88eb53be808477a3936bae11",
+          "sha": "b4ffde65f46336ab88eb53be808477a3936bae11",
+          "with": {
+            "repository": "falcosecurity/kernel-testing",
+            "ref": "v0.2.3",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "show-progress": "true",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-11-10 07:55:46.943000",
+          "duration_sec": 1.803757
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "cat > vars.yml <<EOF\nrun_id: \"id-6822166311\"\noutput_dir: \"~/ansible_output_6822166311\"\nrepos:\n  libs: {name: \"falcosecurity-libs\", repo: \"https://github.com/falcosecurity/libs.git\", version: \"master\"}\nEOF",
+          "commands": [
+            {
+              "annotations": [
+                "SC-CAT"
+              ],
+              "command": "cat",
+              "categories": [
+                "PRINT"
+              ]
+            }
+          ],
+          "start_date": "2023-11-10 07:55:48.746000",
+          "duration_sec": 0.033493
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "ansible-playbook bootstrap.yml --extra-vars \"@vars.yml\"",
+          "commands": [
+            {
+              "command": "ansible-playbook",
+              "args": [
+                {
+                  "content": "bootstrap.yml"
+                },
+                {
+                  "content": "--extra-vars"
+                },
+                {
+                  "content": "\"@vars.yml\""
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-10 07:55:48.780000",
+          "duration_sec": 85.682727
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "ansible-playbook common.yml --extra-vars \"@vars.yml\"",
+          "commands": [
+            {
+              "command": "ansible-playbook",
+              "args": [
+                {
+                  "content": "common.yml"
+                },
+                {
+                  "content": "--extra-vars"
+                },
+                {
+                  "content": "\"@vars.yml\""
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-10 07:57:14.463000",
+          "duration_sec": 2.411231
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "ansible-playbook git-repos.yml --extra-vars \"@vars.yml\"",
+          "commands": [
+            {
+              "command": "ansible-playbook",
+              "args": [
+                {
+                  "content": "git-repos.yml"
+                },
+                {
+                  "content": "--extra-vars"
+                },
+                {
+                  "content": "\"@vars.yml\""
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-10 07:57:16.874000",
+          "duration_sec": 7.282634
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "ansible-playbook scap-open.yml --extra-vars \"@vars.yml\" || :",
+          "commands": [
+            {
+              "command": "ansible-playbook",
+              "args": [
+                {
+                  "content": "scap-open.yml"
+                },
+                {
+                  "content": "--extra-vars"
+                },
+                {
+                  "content": "\"@vars.yml\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-TRUE"
+              ],
+              "command": ":",
+              "categories": [
+                "UTILS"
+              ]
+            }
+          ],
+          "start_date": "2023-11-10 07:57:24.156000",
+          "duration_sec": 169.972902
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "tar -cvf ansible_output.tar ~/ansible_output_6822166311",
+          "commands": [
+            {
+              "annotations": [
+                "SC-TAR",
+                "SC-TAR-C",
+                "SC-TAR-V"
+              ],
+              "command": "tar",
+              "categories": [
+                "ARCHIVE",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "content": "-cvf"
+                },
+                {
+                  "annotations": [
+                    "BASH-PATH",
+                    "SC-TAR-FILE"
+                  ],
+                  "content": "ansible_output.tar"
+                },
+                {
+                  "annotations": [
+                    "SC-TAR-ARG",
+                    "SC-TAR-FILE"
+                  ],
+                  "content": "~/ansible_output_6822166311"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-10 08:00:14.129000",
+          "duration_sec": 0.039438
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "upload-artifact",
+          "version": "a8a3f3ad30e3422c9c7b888a15615d19a852ae32",
+          "sha": "a8a3f3ad30e3422c9c7b888a15615d19a852ae32",
+          "with": {
+            "name": "ansible_output_ARM64",
+            "path": "ansible_output.tar",
+            "if-no-files-found": "warn"
+          },
+          "env": {},
+          "start_date": "2023-11-10 08:00:14.169000",
+          "duration_sec": 0.810337
+        },
+        {
+          "type": "shell",
+          "env": {
+            "GOPATH": "/root/go",
+            "GOCACHE": "/root/.cache/go-build"
+          },
+          "code": "go build .",
+          "commands": [
+            {
+              "annotations": [
+                "SC-GO-BUILD"
+              ],
+              "command": "go",
+              "categories": [
+                "BUILD_SYSTEM",
+                "DEVELOPMENT",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "build"
+                },
+                {
+                  "annotations": [
+                    "SC-GO-PACKAGE"
+                  ],
+                  "content": "."
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-10 08:00:14.979000",
+          "duration_sec": 0.305153
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "./matrix_gen --root-folder ~/ansible_output_6822166311 --output-file matrix_ARM64.md",
+          "commands": [
+            {
+              "command": "./matrix_gen",
+              "args": [
+                {
+                  "content": "--root-folder"
+                },
+                {
+                  "content": "~/ansible_output_6822166311"
+                },
+                {
+                  "content": "--output-file"
+                },
+                {
+                  "content": "matrix_ARM64.md"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-10 08:00:15.284000",
+          "duration_sec": 0.039608
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "upload-artifact",
+          "version": "a8a3f3ad30e3422c9c7b888a15615d19a852ae32",
+          "sha": "a8a3f3ad30e3422c9c7b888a15615d19a852ae32",
+          "with": {
+            "name": "matrix_ARM64",
+            "path": "./matrix_gen/matrix_ARM64.md",
+            "if-no-files-found": "warn"
+          },
+          "env": {},
+          "start_date": "2023-11-10 08:00:15.324000",
+          "duration_sec": 0.829999
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "ansible-playbook clean-up.yml --extra-vars \"@vars.yml\" || :",
+          "commands": [
+            {
+              "command": "ansible-playbook",
+              "args": [
+                {
+                  "content": "clean-up.yml"
+                },
+                {
+                  "content": "--extra-vars"
+                },
+                {
+                  "content": "\"@vars.yml\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-TRUE"
+              ],
+              "command": ":",
+              "categories": [
+                "UTILS"
+              ]
+            }
+          ],
+          "start_date": "2023-11-10 08:00:16.154000",
+          "duration_sec": 32.323925
+        }
+      ]
+    },
+    {
+      "file": "0_deploy-pages.txt",
+      "total_lines": 445,
+      "log_size": 35941,
+      "token_permissions": {
+        "Contents": "read",
+        "Metadata": "read",
+        "Pages": "write"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231030.2.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "b4ffde65f46336ab88eb53be808477a3936bae11",
+          "sha": "b4ffde65f46336ab88eb53be808477a3936bae11",
+          "with": {
+            "repository": "falcosecurity/libs",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "show-progress": "true",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-11-10 08:05:55.204000",
+          "duration_sec": 4.617179
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "download-artifact",
+          "version": "9bc31d5ccc31df68ecc42ccf4149144866c47d8a",
+          "sha": "9bc31d5ccc31df68ecc42ccf4149144866c47d8a",
+          "with": {
+            "name": "matrix_X64"
+          },
+          "env": {},
+          "start_date": "2023-11-10 08:05:59.821000",
+          "duration_sec": 2.466922
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "download-artifact",
+          "version": "9bc31d5ccc31df68ecc42ccf4149144866c47d8a",
+          "sha": "9bc31d5ccc31df68ecc42ccf4149144866c47d8a",
+          "with": {
+            "name": "matrix_ARM64"
+          },
+          "env": {},
+          "start_date": "2023-11-10 08:06:02.288000",
+          "duration_sec": 0.300504
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "mv matrix_*.md docs/\nsed -i '1s/^/---\\nhide:\\n- toc\\n---\\n\\n/' docs/matrix_X64.md\nsed -i '1s/^/---\\nhide:\\n- toc\\n---\\n\\n/' docs/matrix_ARM64.md",
+          "commands": [
+            {
+              "annotations": [
+                "SC-MV"
+              ],
+              "command": "mv",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MV-PATH"
+                  ],
+                  "content": "matrix_*.md"
+                },
+                {
+                  "annotations": [
+                    "SC-MV-PATH",
+                    "SC-MV-DESTINATION"
+                  ],
+                  "content": "docs/"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SED"
+              ],
+              "command": "sed",
+              "categories": [
+                "REGEX"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-SED-F-IN-PLACE"
+                  ],
+                  "content": "-i"
+                },
+                {
+                  "annotations": [
+                    "SC-SED-EXPRESSION"
+                  ],
+                  "content": "'1s/^/---\nhide:\n- toc\n---\n\\\n/'"
+                },
+                {
+                  "annotations": [
+                    "SC-SED-PATH"
+                  ],
+                  "content": "docs/matrix_X64.md"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SED"
+              ],
+              "command": "sed",
+              "categories": [
+                "REGEX"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-SED-F-IN-PLACE"
+                  ],
+                  "content": "-i"
+                },
+                {
+                  "annotations": [
+                    "SC-SED-EXPRESSION"
+                  ],
+                  "content": "'1s/^/---\nhide:\n- toc\n---\n\\\n/'"
+                },
+                {
+                  "annotations": [
+                    "SC-SED-PATH"
+                  ],
+                  "content": "docs/matrix_ARM64.md"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-10 08:06:02.589000",
+          "duration_sec": 0.044204
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "setup-python",
+          "version": "65d7f2d534ac1bc67fcd62888c5f4f3d2cb2b236",
+          "sha": "65d7f2d534ac1bc67fcd62888c5f4f3d2cb2b236",
+          "with": {
+            "python-version": "3.x",
+            "check-latest": "false",
+            "token": "***",
+            "update-environment": "true",
+            "allow-prereleases": "false"
+          },
+          "env": {},
+          "start_date": "2023-11-10 08:06:02.633000",
+          "duration_sec": 0.22491
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/opt/hostedtoolcache/Python/3.12.0/x64",
+            "PKG_CONFIG_PATH": "/opt/hostedtoolcache/Python/3.12.0/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/opt/hostedtoolcache/Python/3.12.0/x64",
+            "Python2_ROOT_DIR": "/opt/hostedtoolcache/Python/3.12.0/x64",
+            "Python3_ROOT_DIR": "/opt/hostedtoolcache/Python/3.12.0/x64",
+            "LD_LIBRARY_PATH": "/opt/hostedtoolcache/Python/3.12.0/x64/lib"
+          },
+          "code": "pip install mkdocs mkdocs-material",
+          "commands": [
+            {
+              "annotations": [
+                "SC-PIP-INSTALL"
+              ],
+              "command": "pip",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "mkdocs"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "mkdocs-material"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-10 08:06:02.858000",
+          "duration_sec": 22.438583
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/opt/hostedtoolcache/Python/3.12.0/x64",
+            "PKG_CONFIG_PATH": "/opt/hostedtoolcache/Python/3.12.0/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/opt/hostedtoolcache/Python/3.12.0/x64",
+            "Python2_ROOT_DIR": "/opt/hostedtoolcache/Python/3.12.0/x64",
+            "Python3_ROOT_DIR": "/opt/hostedtoolcache/Python/3.12.0/x64",
+            "LD_LIBRARY_PATH": "/opt/hostedtoolcache/Python/3.12.0/x64/lib"
+          },
+          "code": "mkdocs build",
+          "commands": [
+            {
+              "command": "mkdocs",
+              "args": [
+                {
+                  "content": "build"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-10 08:06:25.297000",
+          "duration_sec": 1.112072
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "upload-pages-artifact",
+          "version": "a753861a5debcf57bf8b404356158c8e1e33150c",
+          "sha": "a753861a5debcf57bf8b404356158c8e1e33150c",
+          "with": {
+            "path": "site",
+            "name": "github-pages",
+            "retention-days": "1"
+          },
+          "env": {
+            "pythonLocation": "/opt/hostedtoolcache/Python/3.12.0/x64",
+            "PKG_CONFIG_PATH": "/opt/hostedtoolcache/Python/3.12.0/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/opt/hostedtoolcache/Python/3.12.0/x64",
+            "Python2_ROOT_DIR": "/opt/hostedtoolcache/Python/3.12.0/x64",
+            "Python3_ROOT_DIR": "/opt/hostedtoolcache/Python/3.12.0/x64",
+            "LD_LIBRARY_PATH": "/opt/hostedtoolcache/Python/3.12.0/x64/lib"
+          },
+          "start_date": "2023-11-10 08:06:26.409000",
+          "duration_sec": 0.030431
+        },
+        {
+          "type": "shell",
+          "env": {
+            "pythonLocation": "/opt/hostedtoolcache/Python/3.12.0/x64",
+            "PKG_CONFIG_PATH": "/opt/hostedtoolcache/Python/3.12.0/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/opt/hostedtoolcache/Python/3.12.0/x64",
+            "Python2_ROOT_DIR": "/opt/hostedtoolcache/Python/3.12.0/x64",
+            "Python3_ROOT_DIR": "/opt/hostedtoolcache/Python/3.12.0/x64",
+            "LD_LIBRARY_PATH": "/opt/hostedtoolcache/Python/3.12.0/x64/lib",
+            "INPUT_PATH": "site"
+          },
+          "code": "tar \\\n  --dereference --hard-dereference \\\n  --directory \"$INPUT_PATH\" \\\n  -cvf \"$RUNNER_TEMP/artifact.tar\" \\\n  --exclude=.git \\\n  --exclude=.github \\\n  .",
+          "commands": [
+            {
+              "annotations": [
+                "SC-TAR",
+                "SC-TAR-C",
+                "SC-TAR-V"
+              ],
+              "command": "tar",
+              "categories": [
+                "ARCHIVE",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-TAR-DEREFERENCE"
+                  ],
+                  "content": "--dereference"
+                },
+                {
+                  "annotations": [
+                    "SC-TAR-HARD-DEREFERENCE"
+                  ],
+                  "content": "--hard-dereference"
+                },
+                {
+                  "annotations": [
+                    "SC-TAR-DIRECTORY"
+                  ],
+                  "content": "--directory \"$INPUT_PATH\""
+                },
+                {
+                  "content": "-cvf"
+                },
+                {
+                  "annotations": [
+                    "BASH-PATH",
+                    "SC-TAR-FILE"
+                  ],
+                  "content": "\"$RUNNER_TEMP/artifact.tar\""
+                },
+                {
+                  "annotations": [
+                    "SC-TAR-EXCLUDE"
+                  ],
+                  "content": "--exclude=.git"
+                },
+                {
+                  "annotations": [
+                    "SC-TAR-EXCLUDE"
+                  ],
+                  "content": "--exclude=.github"
+                },
+                {
+                  "annotations": [
+                    "SC-TAR-ARG",
+                    "SC-TAR-FILE"
+                  ],
+                  "content": "."
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-10 08:06:26.439000",
+          "duration_sec": 0.039141
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "upload-artifact",
+          "version": "v3",
+          "sha": "a8a3f3ad30e3422c9c7b888a15615d19a852ae32",
+          "with": {
+            "name": "github-pages",
+            "path": "/home/runner/work/_temp/artifact.tar",
+            "retention-days": "1",
+            "if-no-files-found": "error"
+          },
+          "env": {
+            "pythonLocation": "/opt/hostedtoolcache/Python/3.12.0/x64",
+            "PKG_CONFIG_PATH": "/opt/hostedtoolcache/Python/3.12.0/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/opt/hostedtoolcache/Python/3.12.0/x64",
+            "Python2_ROOT_DIR": "/opt/hostedtoolcache/Python/3.12.0/x64",
+            "Python3_ROOT_DIR": "/opt/hostedtoolcache/Python/3.12.0/x64",
+            "LD_LIBRARY_PATH": "/opt/hostedtoolcache/Python/3.12.0/x64/lib"
+          },
+          "start_date": "2023-11-10 08:06:26.478000",
+          "duration_sec": 1.023935
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "deploy-pages",
+          "version": "9dbe3824824f8a1377b8e298bafde1a50ede43e5",
+          "sha": "9dbe3824824f8a1377b8e298bafde1a50ede43e5",
+          "with": {
+            "token": "***",
+            "timeout": "600000",
+            "error_count": "10",
+            "reporting_interval": "5000",
+            "artifact_name": "github-pages",
+            "preview": "false"
+          },
+          "env": {
+            "pythonLocation": "/opt/hostedtoolcache/Python/3.12.0/x64",
+            "PKG_CONFIG_PATH": "/opt/hostedtoolcache/Python/3.12.0/x64/lib/pkgconfig",
+            "Python_ROOT_DIR": "/opt/hostedtoolcache/Python/3.12.0/x64",
+            "Python2_ROOT_DIR": "/opt/hostedtoolcache/Python/3.12.0/x64",
+            "Python3_ROOT_DIR": "/opt/hostedtoolcache/Python/3.12.0/x64",
+            "LD_LIBRARY_PATH": "/opt/hostedtoolcache/Python/3.12.0/x64/lib"
+          },
+          "start_date": "2023-11-10 08:06:27.502000",
+          "duration_sec": 6.186077
+        }
+      ]
+    },
+    {
+      "file": "0_kernel-tests-master  test-kernels (X64).txt",
+      "total_lines": 1692,
+      "log_size": 202395,
+      "token_permissions": {
+        "Contents": "read",
+        "Metadata": "read",
+        "Pages": "write"
+      },
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "b4ffde65f46336ab88eb53be808477a3936bae11",
+          "sha": "b4ffde65f46336ab88eb53be808477a3936bae11",
+          "with": {
+            "repository": "falcosecurity/kernel-testing",
+            "ref": "v0.2.3",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "show-progress": "true",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-11-10 07:55:46.595000",
+          "duration_sec": 0.707785
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "cat > vars.yml <<EOF\nrun_id: \"id-6822166311\"\noutput_dir: \"~/ansible_output_6822166311\"\nrepos:\n  libs: {name: \"falcosecurity-libs\", repo: \"https://github.com/falcosecurity/libs.git\", version: \"master\"}\nEOF",
+          "commands": [
+            {
+              "annotations": [
+                "SC-CAT"
+              ],
+              "command": "cat",
+              "categories": [
+                "PRINT"
+              ]
+            }
+          ],
+          "start_date": "2023-11-10 07:55:47.302000",
+          "duration_sec": 0.019429
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "ansible-playbook bootstrap.yml --extra-vars \"@vars.yml\"",
+          "commands": [
+            {
+              "command": "ansible-playbook",
+              "args": [
+                {
+                  "content": "bootstrap.yml"
+                },
+                {
+                  "content": "--extra-vars"
+                },
+                {
+                  "content": "\"@vars.yml\""
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-10 07:55:47.322000",
+          "duration_sec": 325.289437
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "ansible-playbook common.yml --extra-vars \"@vars.yml\"",
+          "commands": [
+            {
+              "command": "ansible-playbook",
+              "args": [
+                {
+                  "content": "common.yml"
+                },
+                {
+                  "content": "--extra-vars"
+                },
+                {
+                  "content": "\"@vars.yml\""
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-10 08:01:12.611000",
+          "duration_sec": 3.69767
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "ansible-playbook git-repos.yml --extra-vars \"@vars.yml\"",
+          "commands": [
+            {
+              "command": "ansible-playbook",
+              "args": [
+                {
+                  "content": "git-repos.yml"
+                },
+                {
+                  "content": "--extra-vars"
+                },
+                {
+                  "content": "\"@vars.yml\""
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-10 08:01:16.309000",
+          "duration_sec": 10.64484
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "ansible-playbook scap-open.yml --extra-vars \"@vars.yml\" || :",
+          "commands": [
+            {
+              "command": "ansible-playbook",
+              "args": [
+                {
+                  "content": "scap-open.yml"
+                },
+                {
+                  "content": "--extra-vars"
+                },
+                {
+                  "content": "\"@vars.yml\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-TRUE"
+              ],
+              "command": ":",
+              "categories": [
+                "UTILS"
+              ]
+            }
+          ],
+          "start_date": "2023-11-10 08:01:26.954000",
+          "duration_sec": 204.144846
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "tar -cvf ansible_output.tar ~/ansible_output_6822166311",
+          "commands": [
+            {
+              "annotations": [
+                "SC-TAR",
+                "SC-TAR-C",
+                "SC-TAR-V"
+              ],
+              "command": "tar",
+              "categories": [
+                "ARCHIVE",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "content": "-cvf"
+                },
+                {
+                  "annotations": [
+                    "BASH-PATH",
+                    "SC-TAR-FILE"
+                  ],
+                  "content": "ansible_output.tar"
+                },
+                {
+                  "annotations": [
+                    "SC-TAR-ARG",
+                    "SC-TAR-FILE"
+                  ],
+                  "content": "~/ansible_output_6822166311"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-10 08:04:51.099000",
+          "duration_sec": 0.022742
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "upload-artifact",
+          "version": "a8a3f3ad30e3422c9c7b888a15615d19a852ae32",
+          "sha": "a8a3f3ad30e3422c9c7b888a15615d19a852ae32",
+          "with": {
+            "name": "ansible_output_X64",
+            "path": "ansible_output.tar",
+            "if-no-files-found": "warn"
+          },
+          "env": {},
+          "start_date": "2023-11-10 08:04:51.121000",
+          "duration_sec": 0.641791
+        },
+        {
+          "type": "shell",
+          "env": {
+            "GOPATH": "/root/go",
+            "GOCACHE": "/root/.cache/go-build"
+          },
+          "code": "go build .",
+          "commands": [
+            {
+              "annotations": [
+                "SC-GO-BUILD"
+              ],
+              "command": "go",
+              "categories": [
+                "BUILD_SYSTEM",
+                "DEVELOPMENT",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "build"
+                },
+                {
+                  "annotations": [
+                    "SC-GO-PACKAGE"
+                  ],
+                  "content": "."
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-10 08:04:51.763000",
+          "duration_sec": 0.202027
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "./matrix_gen --root-folder ~/ansible_output_6822166311 --output-file matrix_X64.md",
+          "commands": [
+            {
+              "command": "./matrix_gen",
+              "args": [
+                {
+                  "content": "--root-folder"
+                },
+                {
+                  "content": "~/ansible_output_6822166311"
+                },
+                {
+                  "content": "--output-file"
+                },
+                {
+                  "content": "matrix_X64.md"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-10 08:04:51.965000",
+          "duration_sec": 0.017699
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "upload-artifact",
+          "version": "a8a3f3ad30e3422c9c7b888a15615d19a852ae32",
+          "sha": "a8a3f3ad30e3422c9c7b888a15615d19a852ae32",
+          "with": {
+            "name": "matrix_X64",
+            "path": "./matrix_gen/matrix_X64.md",
+            "if-no-files-found": "warn"
+          },
+          "env": {},
+          "start_date": "2023-11-10 08:04:51.983000",
+          "duration_sec": 0.659706
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "ansible-playbook clean-up.yml --extra-vars \"@vars.yml\" || :",
+          "commands": [
+            {
+              "command": "ansible-playbook",
+              "args": [
+                {
+                  "content": "clean-up.yml"
+                },
+                {
+                  "content": "--extra-vars"
+                },
+                {
+                  "content": "\"@vars.yml\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-TRUE"
+              ],
+              "command": ":",
+              "categories": [
+                "UTILS"
+              ]
+            }
+          ],
+          "start_date": "2023-11-10 08:04:52.643000",
+          "duration_sec": 47.385229
+        }
+      ]
+    }
+  ],
+  "total_logs_size": 357175
+}

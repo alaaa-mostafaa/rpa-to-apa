@@ -1,0 +1,15 @@
+{
+  "run_id": "superfluid-finance/protocol-monorepo_.github/workflows/ci.canary.yml_689_1",
+  "repository_name": "superfluid-finance/protocol-monorepo",
+  "workflow_path": ".github/workflows/ci.canary.yml",
+  "run_number": 689,
+  "attempt": 1,
+  "event": "push",
+  "conclusion": "failure",
+  "branch": "dev",
+  "commit_sha": "ddc8213dc066decb57c6ef6445bede9f19d5f6a8",
+  "commit_message": "Bump browserify-sign in /packages/sdk-core/previous-versions-testing (#1740)\n\nBumps [browserify-sign](https://github.com/crypto-browserify/browserify-sign) from 4.2.1 to 4.2.2.\n- [Changelog](https://github.com/browserify/browserify-sign/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/crypto-browserify/browserify-sign/compare/v4.2.1...v4.2.2)\n\n---\nupdated-dependencies:\n- dependency-name: browserify-sign\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+  "logs_archive": {
+    "path": "/data/logs/superfluid-finance/protocol-monorepo/CI_Canary_Dev__2dcc/689-1.tar.gz"
+  }
+}

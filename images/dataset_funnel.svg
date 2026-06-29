@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="760" viewBox="0 0 1180 760" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2.5" stdDeviation="3" flood-color="#1a2a44" flood-opacity="0.18"/>
+    </filter>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#9aa7bd"/>
+    </marker>
+    <marker id="rarr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#B07A7A"/>
+    </marker>
+  </defs>
+
+  <text x="50" y="48" font-size="26" font-weight="700" fill="#1F2D45">From 91,163 raw failures to 5,000 clean, scorable cases</text>
+  <text x="50" y="74" font-size="15" fill="#5A6B85">Six deterministic filters, applied in one pass. Every surviving case has logs, a real failure, a unique repo, and a known developer fix.</text>
+
+  <!-- ============ FUNNEL: each block flat, stepping blue -> green ============ -->
+  <!-- discrete palette: 4A7BD8 -> 4F94C4 -> 4FA89E -> 3DAE7E -> 2FB37A -> 1F9E68 -->
+
+  <!-- Stage 0  (blue) -->
+  <path d="M70,110 L650,110 L632,176 L88,176 Z" fill="#4A7BD8" filter="url(#sh)"/>
+  <text x="360" y="140" text-anchor="middle" font-size="17" font-weight="700" fill="#fff">SOURCE CORPUS</text>
+  <text x="360" y="162" text-anchor="middle" font-size="15" fill="#EAF1FF">91,163 failed GitHub Actions runs</text>
+
+  <!-- Stage 1-3 -->
+  <path d="M92,194 L628,194 L610,260 L110,260 Z" fill="#4F94C4" filter="url(#sh)"/>
+  <text x="360" y="220" text-anchor="middle" font-size="15.5" font-weight="700" fill="#fff">FILTERS 1–3 · context</text>
+  <text x="360" y="241" text-anchor="middle" font-size="12.5" fill="#EAF6FA">failed conclusion · logs present · main/master/develop/release · 2+ steps + shell</text>
+
+  <!-- Stage 4 -->
+  <path d="M114,278 L606,278 L588,344 L132,344 Z" fill="#4FA89E" filter="url(#sh)"/>
+  <text x="360" y="304" text-anchor="middle" font-size="15.5" font-weight="700" fill="#fff">FILTER 4 · real failure</text>
+  <text x="360" y="325" text-anchor="middle" font-size="12.5" fill="#EAFAF6">not a GHALogs data-mining artifact</text>
+
+  <!-- Stage 5 -->
+  <path d="M136,362 L584,362 L566,428 L154,428 Z" fill="#3DAE7E" filter="url(#sh)"/>
+  <text x="360" y="388" text-anchor="middle" font-size="15.5" font-weight="700" fill="#fff">FILTER 5 · diversity</text>
+  <text x="360" y="409" text-anchor="middle" font-size="12.5" fill="#EAFBF2">at most ONE case per repository</text>
+
+  <!-- Stage 6 -->
+  <path d="M158,446 L562,446 L544,512 L176,512 Z" fill="#2FB37A" filter="url(#sh)"/>
+  <text x="360" y="472" text-anchor="middle" font-size="15.5" font-weight="700" fill="#fff">FILTER 6 · ground truth</text>
+  <text x="360" y="493" text-anchor="middle" font-size="12.5" fill="#E9FBF1">a verifiable developer fix exists (1 API call)</text>
+
+  <!-- Output (deepest green, rectangular = the kept set) -->
+  <path d="M188,532 L532,532 L532,612 L188,612 Z" fill="#1F9E68" filter="url(#sh)"/>
+  <text x="360" y="566" text-anchor="middle" font-size="19" font-weight="800" fill="#fff">5,000 CURATED CASES</text>
+  <text x="360" y="590" text-anchor="middle" font-size="14" fill="#E6FBF0">5,000 distinct repositories · one per repo</text>
+
+  <!-- down arrows between stages -->
+  <g stroke="#9aa7bd" stroke-width="2.4" marker-end="url(#arr)" fill="none">
+    <path d="M360,177 L360,191"/>
+    <path d="M360,261 L360,275"/>
+    <path d="M360,345 L360,359"/>
+    <path d="M360,429 L360,443"/>
+    <path d="M360,513 L360,529"/>
+  </g>
+
+  <!-- ============ REJECT BRANCHES (right), muted grey-red ============ -->
+  <g stroke="#B07A7A" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#rarr)" fill="none">
+    <path d="M606,311 C660,311 690,300 724,300"/>
+    <path d="M584,395 C648,395 690,384 724,384"/>
+    <path d="M562,479 C636,479 690,468 724,468"/>
+  </g>
+
+  <text x="928" y="250" text-anchor="middle" font-size="13" font-weight="700" fill="#8A6A6A" letter-spacing="1.5">REJECTED AND WHY</text>
+
+  <g>
+    <rect x="726" y="278" width="404" height="46" rx="8" fill="#F2ECEC" stroke="#CBB3B3"/>
+    <text x="744" y="299" font-size="13.5" font-weight="700" fill="#8A4A4A">✗ tooling artifact</text>
+    <text x="744" y="316" font-size="12" fill="#6E5656">circular-JSON / BashWord parser crashes</text>
+  </g>
+  <g>
+    <rect x="726" y="362" width="404" height="46" rx="8" fill="#F2ECEC" stroke="#CBB3B3"/>
+    <text x="744" y="383" font-size="13.5" font-weight="700" fill="#8A4A4A">✗ repository already used</text>
+    <text x="744" y="400" font-size="12" fill="#6E5656" font-family="monospace">wix/react-native-notifications (2nd case)</text>
+  </g>
+  <g>
+    <rect x="726" y="446" width="404" height="62" rx="8" fill="#F2ECEC" stroke="#CBB3B3"/>
+    <text x="744" y="467" font-size="13.5" font-weight="700" fill="#8A4A4A">✗ no verifiable fix</text>
+    <text x="744" y="484" font-size="12" fill="#6E5656"><tspan font-family="monospace">devfile/api</tspan> — no timely response</text>
+    <text x="744" y="500" font-size="12" fill="#6E5656"><tspan font-family="monospace">area1/stpyv8</tspan> — ambiguous follow-up</text>
+  </g>
+
+  <!-- ============ accepted-actions legend (bottom) ============ -->
+  <rect x="70" y="648" width="1040" height="74" rx="10" fill="#FFFFFF" stroke="#DCE3EE"/>
+  <text x="90" y="674" font-size="13.5" font-weight="700" fill="#1F2D45">Accepted as ground truth (the fix the developer actually shipped):</text>
+  <g font-size="12.5" fill="#2C3E5C">
+    <rect x="92" y="686" width="150" height="24" rx="12" fill="#EAF1FF" stroke="#B9CEF0"/><text x="167" y="702" text-anchor="middle">CODE_FIX</text>
+    <rect x="252" y="686" width="150" height="24" rx="12" fill="#EAF1FF" stroke="#B9CEF0"/><text x="327" y="702" text-anchor="middle">WORKFLOW_FIX</text>
+    <rect x="412" y="686" width="150" height="24" rx="12" fill="#EAF1FF" stroke="#B9CEF0"/><text x="487" y="702" text-anchor="middle">PIN_VERSION</text>
+    <rect x="572" y="686" width="130" height="24" rx="12" fill="#EAF1FF" stroke="#B9CEF0"/><text x="637" y="702" text-anchor="middle">REVERT</text>
+    <rect x="712" y="686" width="180" height="24" rx="12" fill="#EAF1FF" stroke="#B9CEF0"/><text x="802" y="702" text-anchor="middle">DEPENDENCY_CHANGE</text>
+    <rect x="902" y="686" width="150" height="24" rx="12" fill="#EAF1FF" stroke="#B9CEF0"/><text x="977" y="702" text-anchor="middle">PR_MERGED</text>
+  </g>
+</svg>

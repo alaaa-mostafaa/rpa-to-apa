@@ -1,0 +1,28 @@
+{
+  "index": 10,
+  "label": "failure",
+  "run_id": "iobroker/iobroker.vis_.github/workflows/test-and-release.yml_895_1",
+  "repo": "iobroker/iobroker.vis",
+  "workflow_path": ".github/workflows/test-and-release.yml",
+  "run_number": "895",
+  "attempt": "1",
+  "scan_line": 174284,
+  "case_dir": "/home/guc_alaa/comparison_results/balanced_50_full_logs_20260516/010_failure_iobroker_iobroker.vis_test-and-release.yml",
+  "full_log_path": "/home/guc_alaa/comparison_results/balanced_50_full_logs_20260516/010_failure_iobroker_iobroker.vis_test-and-release.yml/full_log.txt",
+  "tarball": "logs/ioBroker/ioBroker.vis/Test_and_Release_59ce/895-1.tar.gz",
+  "n_job_logs": 11,
+  "job_log_files": [
+    "adapter-tests-gui/7_Archive screenshots.txt",
+    "adapter-tests-gui/15_Complete job.txt",
+    "1_adapter-tests-gui.txt",
+    "1_adapter-tests-gui (1).txt",
+    "adapter-tests-gui/1_Set up job.txt",
+    "adapter-tests-gui/5_Build.txt",
+    "adapter-tests-gui/4_Install Dependencies.txt",
+    "adapter-tests-gui/3_Use Node.js 16.x.txt",
+    "adapter-tests-gui/14_Post Run actionscheckout@v3.txt",
+    "adapter-tests-gui/2_Run actionscheckout@v3.txt",
+    "2_deploy.txt"
+  ],
+  "full_log_chars": 120402
+}

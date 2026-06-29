@@ -1,0 +1,402 @@
+[
+  {
+    "run_id": "nerdwalletoss/shepherd_.github/workflows/release.yml_351_1",
+    "repo": "nerdwalletoss/shepherd",
+    "category": "CONFIG_ERROR",
+    "recommendation": "Update actions/checkout@v2 to actions/checkout@v4, actions/setup-node@v2 to actions/setup-node@v4, and actions/cache@v2 to actions/cache@v4 in .github/workflows/ci.yml and .github/workflows/release.yml.",
+    "verdict": "PARTIAL",
+    "reason": "The tool's recommendation to update GitHub Actions versions aligns with the developer's changes in the workflows, but it does not address the broader dependency updates and node version support changes made by the developer."
+  },
+  {
+    "run_id": "ffmpegwasm/ffmpeg.wasm_.github/workflows/main.yml_349_1",
+    "repo": "ffmpegwasm/ffmpeg.wasm",
+    "category": "CODE_REGRESSION",
+    "recommendation": "Revert the changes in src/browser/getCreateFFmpegCore.js from commit nianxy/bug-fix to restore the previous working version.",
+    "verdict": "HELPFUL",
+    "reason": "The tool's recommendation to revert changes in the specified file aligns with the developer's action to fix the source code in the same file, indicating the tool would have led to the correct fix."
+  },
+  {
+    "run_id": "openai/openai-node_.github/workflows/test.yml_86_1",
+    "repo": "openai/openai-node",
+    "category": "CODE_REGRESSION",
+    "recommendation": "Revert the v4 refactor merge commit (Merge pull request #220 from openai/v4) to restore the previous stable state, then incrementally reintroduce changes with proper testing.",
+    "verdict": "PARTIAL",
+    "reason": "The tool's recommendation to revert the merge could help identify the issue, but it may not be necessary if the problem is isolated to configuration files rather than the source code itself."
+  },
+  {
+    "run_id": "getstream/stream-chat-react_.github/workflows/ci.yml_5436_1",
+    "repo": "getstream/stream-chat-react",
+    "category": "TEST_FLAKINESS",
+    "recommendation": "Re-run the CI pipeline for this commit to confirm flakiness, as the failure is likely pre-existing and unrelated to the CHANGELOG.md change.",
+    "verdict": "UNHELPFUL",
+    "reason": "The tool suggested re-running the CI for flakiness, but the developer fixed source code issues, indicating the failure was not due to flakiness."
+  },
+  {
+    "run_id": "sobhe/hazm_.github/workflows/lint.yml_89_1",
+    "repo": "sobhe/hazm",
+    "category": "CODE_REGRESSION",
+    "recommendation": "Revert the changes in hazm/word_tokenizer.py and tests/test_word_tokenizer.py from the commit 'improve join abbreviations performance' to restore the previous working version.",
+    "verdict": "PARTIAL",
+    "reason": "The tool's recommendation to revert changes would have temporarily fixed the issue, but the developer's approach to fix the source code was more appropriate for a long-term solution."
+  },
+  {
+    "run_id": "ironlanguages/ironpython3_.github/workflows/main.yml_2492_1",
+    "repo": "ironlanguages/ironpython3",
+    "category": "CONFIG_ERROR",
+    "recommendation": "In .github/workflows/main.yml, update actions/checkout from v2 to v4 and replace deprecated actions/setup-dotnet with v4, then ensure .NET SDK version is explicitly set to 6.0 or later.",
+    "verdict": "PARTIAL",
+    "reason": "The tool's recommendation to update the CI configuration aligns with the developer's changes in .github/workflows/main.yml, but it does not address the broader source code changes made by the developer."
+  },
+  {
+    "run_id": "p5-wrapper/react_.github/workflows/CD.yml_64_1",
+    "repo": "p5-wrapper/react",
+    "category": "CONFIG_ERROR",
+    "recommendation": "Revert the change in .github/workflows/CODEQL.yml to use actions/checkout@v3 instead of v4, as v4 may be incompatible with the current workflow.",
+    "verdict": "HELPFUL",
+    "reason": "The tool's recommendation to revert to actions/checkout@v3 would likely resolve the compatibility issue causing the failure."
+  },
+  {
+    "run_id": "lmfdb/lmfdb_.github/workflows/python-package.yml_2229_2",
+    "repo": "lmfdb/lmfdb",
+    "category": "CODE_REGRESSION",
+    "recommendation": "Revert the changes in lmfdb/modular_curves/web_curve.py from commit #5661 to restore the previous Weierstrass model handling.",
+    "verdict": "PARTIAL",
+    "reason": "The tool's recommendation to revert changes would address the failure, but it does not guide the developer to the correct fix for handling Weierstrass models with non-unit coefficients."
+  },
+  {
+    "run_id": "microsoft/graspologic_.github/workflows/publish.yml_66_1",
+    "repo": "microsoft/graspologic",
+    "category": "CODE_REGRESSION",
+    "recommendation": "Revert the changes in graspologic/plot/plot.py that added the `ax` argument to `screeplot`, as this change introduced a regression causing all CI jobs to fail.",
+    "verdict": "UNHELPFUL",
+    "reason": "The tool's recommendation to revert the changes does not align with the developer's action of merging the PR, indicating the fix was not to remove the ax argument but to address the issue differently."
+  },
+  {
+    "run_id": "quantumlib/openfermion_.github/workflows/nightly.yml_681_1",
+    "repo": "quantumlib/openfermion",
+    "category": "CODE_REGRESSION",
+    "recommendation": "Revert the commit that added the new files under src/openfermion/resource_estimates/pbc/ to restore the previous passing state.",
+    "verdict": "UNHELPFUL",
+    "reason": "The tool's recommendation to revert the commit does not address the specific cause of the failure, which the developer resolved by merging the PR with changes to the source code."
+  },
+  {
+    "run_id": "dioxuslabs/blitz_.github/workflows/macos.yml_31_1",
+    "repo": "dioxuslabs/blitz",
+    "category": "CONFIG_ERROR",
+    "recommendation": "Revert the merge commit and pin actions/checkout to v3 in .github/workflows/macos.yml and .github/workflows/main.yml, as the upgrade to v4 introduced a configuration error causing exit code 101.",
+    "verdict": "HELPFUL",
+    "reason": "The tool's recommendation to revert the merge and pin actions/checkout to v3 directly addresses the configuration error introduced by the upgrade to v4, which aligns with the developer's actions."
+  },
+  {
+    "run_id": "freenet/locutus_.github/workflows/ci.yml_1669_1",
+    "repo": "freenet/locutus",
+    "category": "CODE_REGRESSION",
+    "recommendation": "Revert the merge commit to restore the previous passing state, as the README-only change cannot cause test failures, indicating the regression was introduced by the merged branch.",
+    "verdict": "UNHELPFUL",
+    "reason": "The tool incorrectly assumed the change was README-only, missing the actual source code changes that caused the failure."
+  },
+  {
+    "run_id": "console-rs/dialoguer_.github/workflows/ci.yml_303_1",
+    "repo": "console-rs/dialoguer",
+    "category": "CODE_REGRESSION",
+    "recommendation": "Revert the merge commit to restore the previous state, as the merge introduced a regression despite no file changes.",
+    "verdict": "UNHELPFUL",
+    "reason": "The tool's recommendation to revert the merge commit would not have addressed the underlying issue, which was fixed by modifying source code files in a subsequent PR."
+  },
+  {
+    "run_id": "hugsy/gef-extras_.github/workflows/run-tests.yml_68_1",
+    "repo": "hugsy/gef-extras",
+    "category": "DEPENDENCY_CONFLICT",
+    "recommendation": "Revert the addition of pytest-cov in tests/requirements.txt, or pin pytest-cov to a specific version that is compatible with the project's test environment.",
+    "verdict": "UNHELPFUL",
+    "reason": "The developer's actions did not address the missing pytest-cov issue, indicating the tool's recommendation was not relevant to the actual fix."
+  },
+  {
+    "run_id": "segmentio/stats_.github/workflows/go.yml_55_1",
+    "repo": "segmentio/stats",
+    "category": "CONFIG_ERROR",
+    "recommendation": "Revert the addition of .github/workflows/go.yml and .github/workflows/golangci-lint.yml, and ensure the existing .circleci/config.yml is correctly configured for the project's build and test steps.",
+    "verdict": "UNHELPFUL",
+    "reason": "The tool's recommendation focused on CI configuration files, while the actual fix involved updating dependencies."
+  },
+  {
+    "run_id": "dbup/dbup_.github/workflows/test-code.yml_52_1",
+    "repo": "dbup/dbup",
+    "category": "CODE_REGRESSION",
+    "recommendation": "Revert the commit that added the SQLite journal extension, as it introduced a code regression causing build/test failure.",
+    "verdict": "UNHELPFUL",
+    "reason": "The developer did not revert the commit but instead merged the PR, indicating the tool's recommendation was not aligned with the actual resolution."
+  },
+  {
+    "run_id": "1password/onepassword-operator_.github/workflows/release-pr.yml_79_1",
+    "repo": "1password/onepassword-operator",
+    "category": "CONFIG_ERROR",
+    "recommendation": "Update the CI workflow to check if the release/v1 branch exists and has commits ahead of main before attempting to create a pull request, or change the pull request trigger condition to use a different base branch.",
+    "verdict": "UNHELPFUL",
+    "reason": "The tool's recommendation addresses a CI configuration issue, while the developer's actual fix involved source code changes unrelated to the CI error."
+  },
+  {
+    "run_id": "clastix/capsule_.github/workflows/e2e.yml_1058_1",
+    "repo": "clastix/capsule",
+    "category": "INFRA_INCOMPATIBILITY",
+    "recommendation": "Pin the Go version in the CI workflow file (e.g., .github/workflows/ci.yml) to a known compatible version like 1.21 by adding `go-version: '1.21'` to the setup-go step.",
+    "verdict": "UNHELPFUL",
+    "reason": "The tool's recommendation to pin the Go version did not address the source code issue that the developer fixed."
+  },
+  {
+    "run_id": "alirezanet/husky.net_.github/workflows/publish.yml_51_1",
+    "repo": "alirezanet/husky.net",
+    "category": "CODE_REGRESSION",
+    "recommendation": "Revert the version bump in src/Husky/Husky.csproj to the previous version to resolve the regression.",
+    "verdict": "UNHELPFUL",
+    "reason": "The tool's recommendation to revert the version bump does not address the actual cause of the failure, which was resolved by modifying the test code."
+  },
+  {
+    "run_id": "pewu/topola-viewer_.github/workflows/node.js.yml_128_1",
+    "repo": "pewu/topola-viewer",
+    "category": "CODE_REGRESSION",
+    "recommendation": "Revert the changes in src/datasource/load_data.ts, src/menu/upload_menu.tsx, and src/util/gedcom_util.ts to their previous state, then incrementally reapply them to identify the regression causing exit code 1.",
+    "verdict": "UNHELPFUL",
+    "reason": "The tool's recommendation focused on reverting code changes, while the actual fix involved pinning dependencies, indicating the issue was likely with dependency versions rather than the code changes themselves."
+  },
+  {
+    "run_id": "brentp/cyvcf2_.github/workflows/build.yml_181_1",
+    "repo": "brentp/cyvcf2",
+    "category": "CODE_REGRESSION",
+    "recommendation": "Revert commit Fix memory leak in vcf.raw_header (#281) to restore previous stable state, as the code regression caused all CI jobs to cancel.",
+    "verdict": "UNHELPFUL",
+    "reason": "The tool's recommendation to revert the commit would not have addressed the CI configuration errors that the developer fixed."
+  },
+  {
+    "run_id": "ivanvotti/ember-svg-jar_.github/workflows/ci-ember-svg-jar.yml_106_1",
+    "repo": "ivanvotti/ember-svg-jar",
+    "category": "CODE_REGRESSION",
+    "recommendation": "Revert the changes in packages/ember-svg-jar/addon/template-registry.d.ts and packages/ember-svg-jar/addon/types.ts, and restore the removed file packages/ember-svg-jar/types/glint.d.ts to fix the regression.",
+    "verdict": "UNHELPFUL",
+    "reason": "The tool's recommendation focused on code changes, while the developer fixed the issue by modifying the CI workflow configuration."
+  },
+  {
+    "run_id": "messense/cargo-xwin_.github/workflows/CI.yml_316_1",
+    "repo": "messense/cargo-xwin",
+    "category": "DEPENDENCY_CONFLICT",
+    "recommendation": "Revert the Cargo.lock change to restore xwin to its previous version, then update the dependency to 0.2.15 only after verifying compatibility with the current build environment.",
+    "verdict": "PARTIAL",
+    "reason": "The tool's recommendation to revert and verify compatibility aligns with the developer's approach to adjust dependencies, but it lacks guidance on updating specific Cargo.lock files."
+  },
+  {
+    "run_id": "serenity-bdd/serenity-cucumber-starter_.github/workflows/gradle-jdk11.yml_28_1",
+    "repo": "serenity-bdd/serenity-cucumber-starter",
+    "category": "CODE_REGRESSION",
+    "recommendation": "Add the missing DuckDuckGoHomePage.java page object class to src/test/java/starter/navigation/ as shown in the commit.",
+    "verdict": "UNHELPFUL",
+    "reason": "The tool's recommendation did not address the CI workflow and configuration issues that the developer actually fixed."
+  },
+  {
+    "run_id": "metamask/json-rpc-engine_.github/workflows/publish-main-docs.yml_16_1",
+    "repo": "metamask/json-rpc-engine",
+    "category": "CONFIG_ERROR",
+    "recommendation": "Add the missing deploy key or token as a CI secret in the repository settings, and ensure the CI workflow references it correctly (e.g., in the GitHub Actions YAML file).",
+    "verdict": "UNHELPFUL",
+    "reason": "The tool's recommendation did not address the dependency pinning issue that the developer resolved."
+  },
+  {
+    "run_id": "hipages/php-fpm_exporter_.github/workflows/release.yml_33_1",
+    "repo": "hipages/php-fpm_exporter",
+    "category": "CONFIG_ERROR",
+    "recommendation": "In .github/workflows/test_pr.yml and .github/workflows/test_push.yml, add a step before the anchore/scan-action step to log in to Docker using secrets.DOCKER_USERNAME and secrets.DOCKER_PASSWORD, or configure the action to use the DOCKER_USER and DOCKER_PASSWORD environment variables.",
+    "verdict": "UNHELPFUL",
+    "reason": "The tool's recommendation to log in to Docker does not address the developer's actual fix of pinning dependencies."
+  },
+  {
+    "run_id": "matanolabs/matano_.github/workflows/pr-build.yml_112_1",
+    "repo": "matanolabs/matano",
+    "category": "CODE_REGRESSION",
+    "recommendation": "Revert the changes in infra/lib/iceberg-maintenance.ts and lib/java/matano/iceberg_main/src/main/kotlin/com/matano/iceberg/ExpireSnapshots.kt to the previous commit to restore the working state, then re-apply the fix with proper error handling for the ICEBERG_CANNOT_OPEN_SPLIT error.",
+    "verdict": "PARTIAL",
+    "reason": "The tool's recommendation to revert and reapply with error handling is partially helpful, but it misses the need for workflow and dependency adjustments made by the developer."
+  },
+  {
+    "run_id": "ipfs-shipyard/ipfs-webui_.github/workflows/node-versions.yml_65_1",
+    "repo": "ipfs-shipyard/ipfs-webui",
+    "category": "CODE_REGRESSION",
+    "recommendation": "Revert the dependency change from 'go-ipfs' to 'kubo' in package.json and package-lock.json, and update the test files in src/bundles/identity.test.js and test/e2e/ to use the correct API for kubo, or pin the kubo version to a known working version.",
+    "verdict": "PARTIAL",
+    "reason": "The tool's recommendation to pin the kubo version aligns with the developer's action, but the suggestion to revert the dependency change and update test files was unnecessary."
+  },
+  {
+    "run_id": "shopify/js-buy-sdk_dynamic/dependabot/dependabot-updates_1_1",
+    "repo": "shopify/js-buy-sdk",
+    "category": "DEPENDENCY_CONFLICT",
+    "recommendation": "Revert the version bump in package.json from 2.20.1 back to 2.20.0 to restore the previous working state, then investigate and resolve the underlying dependency conflict before attempting the update again.",
+    "verdict": "PARTIAL",
+    "reason": "The tool's recommendation to revert the version bump addresses the immediate issue but does not guide the developer to pin dependencies, which was the actual solution implemented."
+  },
+  {
+    "run_id": "eldavoo/whatsapp-crypt14-crypt15-decrypter_.github/workflows/lint-test.yml_42_1",
+    "repo": "eldavoo/whatsapp-crypt14-crypt15-decrypter",
+    "category": "CONFIG_ERROR",
+    "recommendation": "Revert the Dependabot bump of actions/checkout from v3 to v4 in both .github/workflows/codeql-analysis.yml and .github/workflows/lint-test.yml, and pin actions/checkout to v3 until the workflow configuration is updated to be compatible with v4.",
+    "verdict": "UNHELPFUL",
+    "reason": "The tool's recommendation focused on GitHub Actions configuration, while the developer addressed dependency pinning in requirements.txt, indicating a different issue."
+  },
+  {
+    "run_id": "d2-projects/d2-admin_.github/workflows/release.yml_99_1",
+    "repo": "d2-projects/d2-admin",
+    "category": "CONFIG_ERROR",
+    "recommendation": "Revert the removal of .github/workflows/deploy.yml and update its credentials by replacing the invalid token with a valid GitHub personal access token or GITHUB_TOKEN.",
+    "verdict": "PARTIAL",
+    "reason": "The tool correctly identified the need to update credentials, but suggested reverting a different file than the one the developer edited."
+  },
+  {
+    "run_id": "vanus-labs/vanus_.github/workflows/docker-build.yml_212_1",
+    "repo": "vanus-labs/vanus",
+    "category": "CODE_REGRESSION",
+    "recommendation": "Revert the changes in internal/controller/tenant/controller.go and internal/controller/tenant/config.go, as the regression likely stems from the new tenant suppression logic.",
+    "verdict": "UNHELPFUL",
+    "reason": "The tool's recommendation focused on code changes, while the actual fix was in the CI configuration."
+  },
+  {
+    "run_id": "easypost/easypost-node_.github/workflows/ci.yml_819_1",
+    "repo": "easypost/easypost-node",
+    "category": "CODE_REGRESSION",
+    "recommendation": "Revert the commit that added the apiKeys method to User service, as it introduced a regression causing exit code 2.",
+    "verdict": "UNHELPFUL",
+    "reason": "The tool's recommendation to revert the commit would not address the dependency issue that the developer actually fixed."
+  },
+  {
+    "run_id": "slackadays/clipboard_.github/workflows/test-installer.yml_776_1",
+    "repo": "slackadays/clipboard",
+    "category": "CODE_REGRESSION",
+    "recommendation": "Revert the changes in src/cb/src/themes.cpp and src/tests/themes.sh from commit 159 to restore the previous working state, then re-implement the ANSI theme with proper error handling and test validation.",
+    "verdict": "UNHELPFUL",
+    "reason": "The tool's recommendation focused on reverting and re-implementing changes in different files than those the developer actually fixed."
+  },
+  {
+    "run_id": "wix/react-native-notifications_.github/workflows/documentation.yml_274_1",
+    "repo": "wix/react-native-notifications",
+    "category": "CODE_REGRESSION",
+    "recommendation": "Revert the changes in lib/android/app/build.gradle and lib/android/build.gradle to their previous state, then pin the Android compileSdkVersion and targetSdkVersion to 32 until the code is fully compatible with Android 33 APIs.",
+    "verdict": "UNHELPFUL",
+    "reason": "The tool's recommendation focused on reverting build configuration changes, while the developer resolved the issue by modifying source code files."
+  },
+  {
+    "run_id": "marekkon5/onetagger_.github/workflows/build.yml_559_1",
+    "repo": "marekkon5/onetagger",
+    "category": "CODE_REGRESSION",
+    "recommendation": "Fix the type mismatch in `client/src/components/PlatformsRepo.vue` at line 80, column 79, by ensuring the argument passed matches the expected type for the function call.",
+    "verdict": "PARTIAL",
+    "reason": "The tool correctly identified the location of the type mismatch, but the developer's fix involved changes across multiple files, suggesting a broader issue."
+  },
+  {
+    "run_id": "wicg/webmonetization_.github/workflows/contributors.yml_4_1",
+    "repo": "wicg/webmonetization",
+    "category": "CONFIG_ERROR",
+    "recommendation": "In .github/workflows/deploy.yml, pin the action versions to specific commit SHAs or major versions (e.g., actions/checkout@v4) to avoid breaking changes, and ensure all steps have proper error handling.",
+    "verdict": "PARTIAL",
+    "reason": "The tool's recommendation to pin action versions is good practice but did not directly address the specific deployment issue the developer fixed."
+  },
+  {
+    "run_id": "ivanceras/svgbob_.github/workflows/rust.yml_167_1",
+    "repo": "ivanceras/svgbob",
+    "category": "DEPENDENCY_CONFLICT",
+    "recommendation": "Pin the version of a transitive dependency in packages/svgbob/Cargo.toml or update Cargo.lock to resolve a potential conflict, as the error may stem from an incompatible dependency version.",
+    "verdict": "UNHELPFUL",
+    "reason": "The tool's recommendation focused on dependency management, while the developer resolved the issue by modifying source code files."
+  },
+  {
+    "run_id": "xxyzz/worddumb_.github/workflows/tests.yml_706_1",
+    "repo": "xxyzz/worddumb",
+    "category": "CODE_REGRESSION",
+    "recommendation": "Revert the changes in deps.py and utils.py from commit 'Update Proficiency v0.5.9' to restore the previous working version.",
+    "verdict": "PARTIAL",
+    "reason": "The tool's recommendation to revert changes would have temporarily resolved the failure, but the developer's approach to modify and fix the code was necessary for a long-term solution."
+  },
+  {
+    "run_id": "brechtm/rinohtype_.github/workflows/tests.yml_740_1",
+    "repo": "brechtm/rinohtype",
+    "category": "CODE_REGRESSION",
+    "recommendation": "Revert the commit that modified src/rinoh/paragraph.py to restore the previous behavior, as the change introduced a regression in the hyphenate method.",
+    "verdict": "UNHELPFUL",
+    "reason": "The tool's recommendation to revert the commit would not have addressed the broader changes and tests the developer implemented to fix the issue."
+  },
+  {
+    "run_id": "aws-samples/serverless-dotnet-demo_.github/workflows/metrics-lambda-pipeline.yaml_6_1",
+    "repo": "aws-samples/serverless-dotnet-demo",
+    "category": "CODE_REGRESSION",
+    "recommendation": "Revert the changes in metrics/src/logsToMetrics/Function.cs and remove the added files in src/NET6CustomRuntime/ to restore the previous working state.",
+    "verdict": "UNHELPFUL",
+    "reason": "The tool recommended reverting changes, but the developer fixed the source code instead, indicating the issue was with the code itself rather than the changes made."
+  },
+  {
+    "run_id": "python-validators/validators_.github/workflows/package.yaml_5_1",
+    "repo": "python-validators/validators",
+    "category": "CONFIG_ERROR",
+    "recommendation": "In .github/workflows/package.yaml, add 'sudo: false' or set 'permissions: write-all' at the job level, and ensure the 'mkdir /dist' command uses a writable directory like './dist'.",
+    "verdict": "PARTIAL",
+    "reason": "The tool's recommendation to modify the workflow file aligns with the developer's actions, but it may not have directly addressed the specific permission issue."
+  },
+  {
+    "run_id": "trufflesuite/ganache_.github/workflows/release.yml_149_1",
+    "repo": "trufflesuite/ganache",
+    "category": "CONFIG_ERROR",
+    "recommendation": "Revert the changes in `.github/workflows/release.yml` to the previous working version, as the current modifications introduced a configuration error causing the workflow to fail.",
+    "verdict": "HELPFUL",
+    "reason": "The tool's recommendation to revert changes in the workflow file aligns with the developer's action to fix the CI workflow, indicating the tool's suggestion would have led to the correct fix."
+  },
+  {
+    "run_id": "yuhattor/copilot-patterns_.github/workflows/publish-page.yaml_11_1",
+    "repo": "yuhattor/copilot-patterns",
+    "category": "CODE_REGRESSION",
+    "recommendation": "Revert the changes in scripts/generate-marp-slides.py to its state before the migration commit, as the exit code 1 likely originates from a regression in that script.",
+    "verdict": "UNHELPFUL",
+    "reason": "The tool's recommendation focused on reverting script changes, while the actual fix involved updating CI workflow files, indicating the issue was with CI configuration, not the script."
+  },
+  {
+    "run_id": "xboxdev/nxdk_.github/workflows/build_docker_image.yml_143_1",
+    "repo": "xboxdev/nxdk",
+    "category": "CONFIG_ERROR",
+    "recommendation": "In .github/workflows/build_docker_image.yml, ensure the DOCKER_TAG environment variable is defined before use, e.g., by setting it in the env block or using a default value like 'latest'.",
+    "verdict": "HELPFUL",
+    "reason": "The tool's recommendation to define the DOCKER_TAG environment variable addresses the error and aligns with the developer's CI config changes."
+  },
+  {
+    "run_id": "kasperskylab/kaspresso_.github/workflows/snapshot_check.yml_6_1",
+    "repo": "kasperskylab/kaspresso",
+    "category": "CODE_REGRESSION",
+    "recommendation": "Revert the merge commit (Merge pull request #566) to restore the previous stable state, as the new feature introduced in the commit causes a build failure with exit code 1.",
+    "verdict": "UNHELPFUL",
+    "reason": "The tool's recommendation to revert the merge commit was unnecessary as the developer fixed the issue by editing the CI configuration."
+  },
+  {
+    "run_id": "shopify/liquid-c_.github/workflows/liquid.yml_765_2",
+    "repo": "shopify/liquid-c",
+    "category": "CODE_REGRESSION",
+    "recommendation": "Revert commit that changed README.md to restore previous documentation, as the failure is likely unrelated to the change but reverting will eliminate the commit as a variable.",
+    "verdict": "UNHELPFUL",
+    "reason": "The tool's recommendation to revert the README.md change does not address the CI configuration issue that the developer fixed."
+  },
+  {
+    "run_id": "craftyboss/supermarioodysseyonline_.github/workflows/dev-release.yml_12_1",
+    "repo": "craftyboss/supermarioodysseyonline",
+    "category": "CONFIG_ERROR",
+    "recommendation": "In .github/workflows/build.yml, correct the artifact name from '20230904_000205_SMO_Online_for_Emulators}' to '20230904_000205_SMO_Online_for_Emulators' by removing the trailing curly brace.",
+    "verdict": "UNHELPFUL",
+    "reason": "The tool's recommendation did not address the underlying issue, as the developer restructured the CI/CD pipeline instead of correcting the artifact name."
+  },
+  {
+    "run_id": "brooooooklyn/image_.github/workflows/CI.yml_256_1",
+    "repo": "brooooooklyn/image",
+    "category": "DEPENDENCY_CONFLICT",
+    "recommendation": "Revert the version bump of mozjpeg-sys in packages/binding/Cargo.toml back to the previous version, then pin the dependency to a compatible version range (e.g., \"=2.0.0\") to avoid future breaking changes.",
+    "verdict": "PARTIAL",
+    "reason": "The tool's recommendation to revert and pin the version was partially helpful, but the developer also needed to pin dependencies in multiple files beyond Cargo.toml."
+  },
+  {
+    "run_id": "arcthesia/arccreate_.github/workflows/testflight.yml_60_1",
+    "repo": "arcthesia/arccreate",
+    "category": "CODE_REGRESSION",
+    "recommendation": "Revert commit 'Storage: Fix iOS URI path problem (attempt 3)' to restore previous working state, as the code changes introduced a regression causing exit code 1.",
+    "verdict": "UNHELPFUL",
+    "reason": "The tool's recommendation to revert the commit did not address the actual CI configuration issue that the developer fixed."
+  }
+]

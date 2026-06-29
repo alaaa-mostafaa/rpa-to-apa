@@ -1,0 +1,704 @@
+{
+  "_id": "astro/deadnix_.github/workflows/flakestry-publish.yaml_2_1",
+  "repository_name": "astro/deadnix",
+  "workflow_path": ".github/workflows/flakestry-publish.yaml",
+  "run_number": 2,
+  "run_attempt": 1,
+  "time_to_import": 53277.704364,
+  "metadata": {
+    "id": 6699921079,
+    "name": "Publish a flake to flakestry",
+    "node_id": "WFR_kwLOGfIoh88AAAABj1iutw",
+    "head_branch": "main",
+    "head_sha": "49741c9b2a0b96b21452db8176966e910eb25b0c",
+    "path": ".github/workflows/flakestry-publish.yaml",
+    "display_title": "Cargo.lock: update",
+    "run_number": 2,
+    "event": "push",
+    "status": "completed",
+    "conclusion": "failure",
+    "workflow_id": 74424345,
+    "check_suite_id": 17765610563,
+    "check_suite_node_id": "CS_kwDOGfIoh88AAAAEIum0Qw",
+    "url": "https://api.github.com/repos/astro/deadnix/actions/runs/6699921079",
+    "html_url": "https://github.com/astro/deadnix/actions/runs/6699921079",
+    "pull_requests": [],
+    "created_at": "2023-10-30T23:28:54Z",
+    "updated_at": "2023-10-30T23:29:41Z",
+    "actor": {
+      "login": "astro",
+      "id": 12923,
+      "node_id": "MDQ6VXNlcjEyOTIz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12923?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/astro",
+      "html_url": "https://github.com/astro",
+      "followers_url": "https://api.github.com/users/astro/followers",
+      "following_url": "https://api.github.com/users/astro/following{/other_user}",
+      "gists_url": "https://api.github.com/users/astro/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/astro/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/astro/subscriptions",
+      "organizations_url": "https://api.github.com/users/astro/orgs",
+      "repos_url": "https://api.github.com/users/astro/repos",
+      "events_url": "https://api.github.com/users/astro/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/astro/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "run_attempt": 1,
+    "referenced_workflows": [],
+    "run_started_at": "2023-10-30T23:28:54Z",
+    "triggering_actor": {
+      "login": "astro",
+      "id": 12923,
+      "node_id": "MDQ6VXNlcjEyOTIz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12923?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/astro",
+      "html_url": "https://github.com/astro",
+      "followers_url": "https://api.github.com/users/astro/followers",
+      "following_url": "https://api.github.com/users/astro/following{/other_user}",
+      "gists_url": "https://api.github.com/users/astro/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/astro/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/astro/subscriptions",
+      "organizations_url": "https://api.github.com/users/astro/orgs",
+      "repos_url": "https://api.github.com/users/astro/repos",
+      "events_url": "https://api.github.com/users/astro/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/astro/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "jobs_url": "https://api.github.com/repos/astro/deadnix/actions/runs/6699921079/jobs",
+    "logs_url": "https://api.github.com/repos/astro/deadnix/actions/runs/6699921079/logs",
+    "check_suite_url": "https://api.github.com/repos/astro/deadnix/check-suites/17765610563",
+    "artifacts_url": "https://api.github.com/repos/astro/deadnix/actions/runs/6699921079/artifacts",
+    "cancel_url": "https://api.github.com/repos/astro/deadnix/actions/runs/6699921079/cancel",
+    "rerun_url": "https://api.github.com/repos/astro/deadnix/actions/runs/6699921079/rerun",
+    "previous_attempt_url": null,
+    "workflow_url": "https://api.github.com/repos/astro/deadnix/actions/workflows/74424345",
+    "head_commit": {
+      "id": "49741c9b2a0b96b21452db8176966e910eb25b0c",
+      "tree_id": "ca9958966465270b48cf688a94df58168ba73b92",
+      "message": "Cargo.lock: update",
+      "timestamp": "2023-10-30T23:28:35Z",
+      "author": {
+        "name": "Astro",
+        "email": "astro@spaceboyz.net"
+      },
+      "committer": {
+        "name": "Astro",
+        "email": "astro@spaceboyz.net"
+      }
+    },
+    "repository": {
+      "id": 435300487,
+      "node_id": "R_kgDOGfIohw",
+      "name": "deadnix",
+      "full_name": "astro/deadnix",
+      "private": false,
+      "owner": {
+        "login": "astro",
+        "id": 12923,
+        "node_id": "MDQ6VXNlcjEyOTIz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12923?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/astro",
+        "html_url": "https://github.com/astro",
+        "followers_url": "https://api.github.com/users/astro/followers",
+        "following_url": "https://api.github.com/users/astro/following{/other_user}",
+        "gists_url": "https://api.github.com/users/astro/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/astro/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/astro/subscriptions",
+        "organizations_url": "https://api.github.com/users/astro/orgs",
+        "repos_url": "https://api.github.com/users/astro/repos",
+        "events_url": "https://api.github.com/users/astro/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/astro/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/astro/deadnix",
+      "description": "Scan Nix files for dead code",
+      "fork": false,
+      "url": "https://api.github.com/repos/astro/deadnix",
+      "forks_url": "https://api.github.com/repos/astro/deadnix/forks",
+      "keys_url": "https://api.github.com/repos/astro/deadnix/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/astro/deadnix/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/astro/deadnix/teams",
+      "hooks_url": "https://api.github.com/repos/astro/deadnix/hooks",
+      "issue_events_url": "https://api.github.com/repos/astro/deadnix/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/astro/deadnix/events",
+      "assignees_url": "https://api.github.com/repos/astro/deadnix/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/astro/deadnix/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/astro/deadnix/tags",
+      "blobs_url": "https://api.github.com/repos/astro/deadnix/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/astro/deadnix/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/astro/deadnix/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/astro/deadnix/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/astro/deadnix/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/astro/deadnix/languages",
+      "stargazers_url": "https://api.github.com/repos/astro/deadnix/stargazers",
+      "contributors_url": "https://api.github.com/repos/astro/deadnix/contributors",
+      "subscribers_url": "https://api.github.com/repos/astro/deadnix/subscribers",
+      "subscription_url": "https://api.github.com/repos/astro/deadnix/subscription",
+      "commits_url": "https://api.github.com/repos/astro/deadnix/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/astro/deadnix/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/astro/deadnix/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/astro/deadnix/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/astro/deadnix/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/astro/deadnix/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/astro/deadnix/merges",
+      "archive_url": "https://api.github.com/repos/astro/deadnix/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/astro/deadnix/downloads",
+      "issues_url": "https://api.github.com/repos/astro/deadnix/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/astro/deadnix/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/astro/deadnix/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/astro/deadnix/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/astro/deadnix/labels{/name}",
+      "releases_url": "https://api.github.com/repos/astro/deadnix/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/astro/deadnix/deployments"
+    },
+    "head_repository": {
+      "id": 435300487,
+      "node_id": "R_kgDOGfIohw",
+      "name": "deadnix",
+      "full_name": "astro/deadnix",
+      "private": false,
+      "owner": {
+        "login": "astro",
+        "id": 12923,
+        "node_id": "MDQ6VXNlcjEyOTIz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12923?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/astro",
+        "html_url": "https://github.com/astro",
+        "followers_url": "https://api.github.com/users/astro/followers",
+        "following_url": "https://api.github.com/users/astro/following{/other_user}",
+        "gists_url": "https://api.github.com/users/astro/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/astro/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/astro/subscriptions",
+        "organizations_url": "https://api.github.com/users/astro/orgs",
+        "repos_url": "https://api.github.com/users/astro/repos",
+        "events_url": "https://api.github.com/users/astro/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/astro/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/astro/deadnix",
+      "description": "Scan Nix files for dead code",
+      "fork": false,
+      "url": "https://api.github.com/repos/astro/deadnix",
+      "forks_url": "https://api.github.com/repos/astro/deadnix/forks",
+      "keys_url": "https://api.github.com/repos/astro/deadnix/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/astro/deadnix/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/astro/deadnix/teams",
+      "hooks_url": "https://api.github.com/repos/astro/deadnix/hooks",
+      "issue_events_url": "https://api.github.com/repos/astro/deadnix/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/astro/deadnix/events",
+      "assignees_url": "https://api.github.com/repos/astro/deadnix/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/astro/deadnix/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/astro/deadnix/tags",
+      "blobs_url": "https://api.github.com/repos/astro/deadnix/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/astro/deadnix/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/astro/deadnix/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/astro/deadnix/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/astro/deadnix/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/astro/deadnix/languages",
+      "stargazers_url": "https://api.github.com/repos/astro/deadnix/stargazers",
+      "contributors_url": "https://api.github.com/repos/astro/deadnix/contributors",
+      "subscribers_url": "https://api.github.com/repos/astro/deadnix/subscribers",
+      "subscription_url": "https://api.github.com/repos/astro/deadnix/subscription",
+      "commits_url": "https://api.github.com/repos/astro/deadnix/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/astro/deadnix/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/astro/deadnix/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/astro/deadnix/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/astro/deadnix/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/astro/deadnix/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/astro/deadnix/merges",
+      "archive_url": "https://api.github.com/repos/astro/deadnix/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/astro/deadnix/downloads",
+      "issues_url": "https://api.github.com/repos/astro/deadnix/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/astro/deadnix/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/astro/deadnix/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/astro/deadnix/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/astro/deadnix/labels{/name}",
+      "releases_url": "https://api.github.com/repos/astro/deadnix/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/astro/deadnix/deployments"
+    }
+  },
+  "logs_archive": {
+    "path": "/data/logs/astro/deadnix/Publish_a_flake_to_flakestry_6d75/2-1.tar.gz"
+  },
+  "log_insights": [
+    {
+      "file": "0_publish-flake.txt",
+      "total_lines": 563,
+      "log_size": 40371,
+      "token_permissions": {
+        "Contents": "read",
+        "Metadata": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231025.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "flakestry",
+          "action": "flakestry-publish",
+          "version": "main",
+          "sha": "645c2ab3c99b97f5f1abc383370ae5e72c9e7d9b",
+          "with": {
+            "version": "main",
+            "url": "https://flakestry.dev"
+          },
+          "env": {},
+          "start_date": "2023-10-30 23:29:03.794000",
+          "duration_sec": 0.027323
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "ref": "main",
+            "repository": "astro/deadnix",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-30 23:29:03.821000",
+          "duration_sec": 0.909598
+        },
+        {
+          "type": "action",
+          "repository": "cachix",
+          "action": "install-nix-action",
+          "version": "v22",
+          "sha": "6ed004b9ccb68dbc28e7c85bee15fa93dbd214ac",
+          "with": {},
+          "env": {},
+          "start_date": "2023-10-30 23:29:04.731000",
+          "duration_sec": 0.007512
+        },
+        {
+          "type": "shell",
+          "env": {
+            "INPUT_EXTRA_NIX_CONFIG": "",
+            "INPUT_GITHUB_ACCESS_TOKEN": "",
+            "INPUT_INSTALL_OPTIONS": "",
+            "INPUT_INSTALL_URL": "",
+            "INPUT_NIX_PATH": "",
+            "GITHUB_TOKEN": "***"
+          },
+          "code": "${GITHUB_ACTION_PATH}/install-nix.sh",
+          "commands": [
+            {
+              "command": "${GITHUB_ACTION_PATH}/install-nix.sh"
+            }
+          ],
+          "start_date": "2023-10-30 23:29:04.738000",
+          "duration_sec": 4.284672
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "echo null > metadata.err\necho null > metadata.json\necho null > outputs.json\nnix flake metadata --json > metadata.json 2> metadata.err || echo \"nix flake metadata --json failed\"\nnix flake show --json --all-systems > outputs.json 2> outputs.err || echo \"nix flake show --json --all-systems failed\"\n\nif [ ! -e metadata.json ]; then\n    echo null > metadata.json\nfi\nif [ ! -e outputs.json ]; then\n    echo null > outputs.json\nfi\n\nRESPONSE=$(curl -H \"Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN\" \"$ACTIONS_ID_TOKEN_REQUEST_URL&audience=https://flakestry.dev\")\nOIDC=$(echo $RESPONSE | jq -r '.value')\nREADME=$(find . -iname \"README*\" -maxdepth 1 -print -quit)\n\nnix run nixpkgs#jo metadata=:metadata.json metadata_error=@metadata.err outputs=:outputs.json outputs_errors=@outputs.err readme=\"$README\" version=\"main\"> publish.json\n\necho \"Publishing to https://flakestry.dev\"\n\ncurl --fail-with-body -X POST -H 'Content-Type: application/json' \\\n     -H \"Github-Token: ***\" \\\n     -H \"Authorization: ***\" \\\n     -d @publish.json \\\n     https://flakestry.dev/api/publish",
+          "commands": [
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "null"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "null"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "null"
+                }
+              ]
+            },
+            {
+              "command": "nix",
+              "args": [
+                {
+                  "content": "run"
+                },
+                {
+                  "content": "nixpkgs#jo"
+                },
+                {
+                  "content": "metadata=:metadata.json"
+                },
+                {
+                  "content": "metadata_error=@metadata.err"
+                },
+                {
+                  "content": "outputs=:outputs.json"
+                },
+                {
+                  "content": "outputs_errors=@outputs.err"
+                },
+                {
+                  "content": "readme=\"$README\""
+                },
+                {
+                  "content": "version=\"main\""
+                },
+                {
+                  "content": "\"Publishing to https://flakestry.dev\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CURL"
+              ],
+              "command": "curl",
+              "categories": [
+                "DOWNLOAD"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CURL-FAIL-WITH-BODY"
+                  ],
+                  "content": "--fail-with-body"
+                },
+                {
+                  "annotations": [
+                    "SC-CURL-X"
+                  ],
+                  "content": "-X POST"
+                },
+                {
+                  "annotations": [
+                    "SC-CURL-H"
+                  ],
+                  "content": "-H 'Content-Type: application/json'"
+                },
+                {
+                  "annotations": [
+                    "SC-CURL-H"
+                  ],
+                  "content": "-H \"Github-Token: ***\""
+                },
+                {
+                  "annotations": [
+                    "SC-CURL-H"
+                  ],
+                  "content": "-H \"Authorization: ***\""
+                },
+                {
+                  "annotations": [
+                    "SC-CURL-D"
+                  ],
+                  "content": "-d @publish.json"
+                },
+                {
+                  "annotations": [
+                    "SC-CURL-URL"
+                  ],
+                  "content": "https://flakestry.dev/api/publish"
+                }
+              ]
+            },
+            {
+              "command": "nix",
+              "args": [
+                {
+                  "content": "flake"
+                },
+                {
+                  "content": "metadata"
+                },
+                {
+                  "content": "--json"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"nix flake metadata --json failed\""
+                }
+              ]
+            },
+            {
+              "command": "nix",
+              "args": [
+                {
+                  "content": "flake"
+                },
+                {
+                  "content": "show"
+                },
+                {
+                  "content": "--json"
+                },
+                {
+                  "content": "--all-systems"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"nix flake show --json --all-systems failed\""
+                }
+              ]
+            },
+            {
+              "command": "[",
+              "args": [
+                {
+                  "content": "!"
+                },
+                {
+                  "content": "-e"
+                },
+                {
+                  "content": "metadata.json"
+                },
+                {
+                  "content": "]"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "null"
+                }
+              ]
+            },
+            {
+              "command": "[",
+              "args": [
+                {
+                  "content": "!"
+                },
+                {
+                  "content": "-e"
+                },
+                {
+                  "content": "outputs.json"
+                },
+                {
+                  "content": "]"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "null"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CURL"
+              ],
+              "command": "curl",
+              "categories": [
+                "DOWNLOAD"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CURL-H"
+                  ],
+                  "content": "-H \"Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN\""
+                },
+                {
+                  "annotations": [
+                    "SC-CURL-URL"
+                  ],
+                  "content": "\"$ACTIONS_ID_TOKEN_REQUEST_URL&audience=https://flakestry.dev\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "$RESPONSE"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-JQ"
+              ],
+              "command": "jq",
+              "categories": [
+                "DATA_PROCESSING"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-JQ-F-R"
+                  ],
+                  "content": "-r"
+                },
+                {
+                  "annotations": [
+                    "SC-JQ-FILTER"
+                  ],
+                  "content": "'.value'"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-FIND",
+                "SC-FIND-N",
+                "SC-FIND-A",
+                "SC-FIND-M",
+                "SC-FIND-Q",
+                "SC-FIND-U",
+                "SC-FIND-T"
+              ],
+              "command": "find",
+              "categories": [
+                "FILE_SYSTEM",
+                "SEARCH"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-FIND-TARGET"
+                  ],
+                  "content": "."
+                },
+                {
+                  "content": "-iname"
+                },
+                {
+                  "annotations": [
+                    "SC-FIND-E"
+                  ],
+                  "content": "\"README*\""
+                },
+                {
+                  "annotations": [
+                    "SC-FIND-MAXDEPTH"
+                  ],
+                  "content": "-maxdepth 1"
+                },
+                {
+                  "annotations": [
+                    "SC-FIND-F-PRINT"
+                  ],
+                  "content": "-print"
+                },
+                {
+                  "content": "-quit"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 23:29:09.023000",
+          "duration_sec": 28.916459
+        }
+      ]
+    }
+  ],
+  "total_logs_size": 40841
+}

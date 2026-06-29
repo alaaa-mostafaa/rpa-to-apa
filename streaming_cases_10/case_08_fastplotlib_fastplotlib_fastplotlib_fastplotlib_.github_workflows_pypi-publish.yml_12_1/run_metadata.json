@@ -1,0 +1,15 @@
+{
+  "run_id": "fastplotlib/fastplotlib_.github/workflows/pypi-publish.yml_12_1",
+  "repository_name": "fastplotlib/fastplotlib",
+  "workflow_path": ".github/workflows/pypi-publish.yml",
+  "run_number": 12,
+  "attempt": 1,
+  "event": "release",
+  "conclusion": "failure",
+  "branch": "v0.1.0.a14",
+  "commit_sha": "932454fee8580e0266d88be4aca51c7b6a771603",
+  "commit_message": "Plot frame (#313)\n\n* WIP on plot frame\r\n\r\n* create Output context classes, basic layout of Frame, not tested yet\r\n\r\n* plot frame system working for jupyter\r\n\r\n* make it work with imagewidget\r\n\r\n* update demo nbs\r\n\r\n* fix finding if imagegraphic is present\r\n\r\n* fix finding images again\r\n\r\n* update desk image screenshots\r\n\r\n* update screenshot\r\n\r\n* qt works with toolbar\r\n\r\n* qt context works with image widget\r\n\r\n* comments\r\n\r\n* bugfix with flipping\r\n\r\n* remove junk files\r\n\r\n* fix flip, image widget can reset vmin vmax based on currently displayed frame\r\n\r\n* hlut autoscales plot area when set_data() called\r\n\r\n* return buffer\r\n\r\n* reset hlut button\r\n\r\n* add reset hlut button to QToolbar\r\n\r\n* add wiget property to imagewidget, fix gridplot kwargs handling\r\n\r\n* qt toolbar layouting\r\n\r\n* add standalone qt image widget example",
+  "logs_archive": {
+    "path": "/data/logs/fastplotlib/fastplotlib/Upload_Python_Package_ac22/12-1.tar.gz"
+  }
+}

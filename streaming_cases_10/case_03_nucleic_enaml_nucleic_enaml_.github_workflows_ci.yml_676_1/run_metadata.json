@@ -1,0 +1,15 @@
+{
+  "run_id": "nucleic/enaml_.github/workflows/ci.yml_676_1",
+  "repository_name": "nucleic/enaml",
+  "workflow_path": ".github/workflows/ci.yml",
+  "run_number": 676,
+  "attempt": 1,
+  "event": "schedule",
+  "conclusion": "failure",
+  "branch": "main",
+  "commit_sha": "a68008915958e94c1b1a40519ec9fa9ac0f753d5",
+  "commit_message": "build(deps): bump actions/checkout from 3 to 4 (#531)\n\nBumps [actions/checkout](https://github.com/actions/checkout) from 3 to 4.\r\n- [Release notes](https://github.com/actions/checkout/releases)\r\n- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)\r\n- [Commits](https://github.com/actions/checkout/compare/v3...v4)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: actions/checkout\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-major\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+  "logs_archive": {
+    "path": "/data/logs/nucleic/enaml/Continuous_Integration_77c8/676-1.tar.gz"
+  }
+}

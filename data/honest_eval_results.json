@@ -1,0 +1,2621 @@
+[
+  {
+    "case_label": "forem/dev-android — Fix #138: Implemented Forem app popup on start (#143)",
+    "intake": {
+      "run_id": "forem/dev-android_.github/workflows/update-gradle-wrapper.yml_1051_1",
+      "repo": "forem/dev-android",
+      "workflow": "update-gradle-wrapper.yml",
+      "branch": "main",
+      "event": "schedule",
+      "is_protected_branch": true,
+      "commit_sha": "e07b9c2e23ed",
+      "commit_title": "Fix #138: Implemented Forem app popup on start (#143)",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 1,
+      "n_jobs": 1,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 1,
+      "strategies": [
+        "error_marker"
+      ],
+      "total_lines_extracted": 156,
+      "error_markers_found": 1,
+      "sample_error_lines": [
+        "##[error]❌ e: file:///home/runner/work/DEV-Android/DEV-Android/buildSrc/build.gradle.kts:16:5: Unresolved reference: exp",
+        "##[error]❌ e: file:///home/runner/work/DEV-Android/DEV-Android/buildSrc/build.gradle.kts:16:5: Unresolved reference: exp"
+      ]
+    },
+    "classification": {
+      "category": "DEPENDENCY_CONFLICT",
+      "severity": "HIGH",
+      "confidence": 0.9,
+      "action": "HOTFIX_REQUIRED",
+      "reasoning": "The failure is due to an unresolved reference 'experimentalWarning' in the build.gradle.kts file, indicating a dependency or compatibility issue with Gradle 8.3. The failure occurred on the main branch, which is protected, raising the severity. A specific fix is needed to resolve the dependency conflict before retrying the build.",
+      "evidence": [
+        "LOG EVIDENCE: Unresolved reference: experimentalWarning",
+        "LOG EVIDENCE: Script compilation error",
+        "LOG EVIDENCE: BUILD FAILED in 1m 33s",
+        "branch: main",
+        "protected: True"
+      ],
+      "unknowns": [
+        "Whether the experimentalWarning reference was recently introduced or modified",
+        "Compatibility details between Gradle 8.3 and the project's build scripts"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "NO_IMMEDIATE_RESPONSE",
+      "method": "rubric",
+      "reasoning": "Follow-up commits exist but none are within 7 days of the failure. Developer likely retried or ignored the failure without a code change.",
+      "match_verdict": "PARTIAL",
+      "judge_reasoning": "The AI's recommendation of a HOTFIX_REQUIRED for a DEPENDENCY_CONFLICT aligns with the severity of the unresolved reference error in the build.gradle.kts file. However, the developer's NO_IMMEDIATE_RESPONSE action suggests they either retried the build without changes or deemed the issue non-critical, introducing ambiguity in whether the AI's recommendation was fully appropriate."
+    }
+  },
+  {
+    "case_label": "ionic-team/ionic-native — chore(deps): update dependency eslint to v8.50.0",
+    "intake": {
+      "run_id": "ionic-team/ionic-native_.github/workflows/nodejs.yml_2217_1",
+      "repo": "ionic-team/ionic-native",
+      "workflow": "nodejs.yml",
+      "branch": "renovate/eslint-8.x",
+      "event": "push",
+      "is_protected_branch": false,
+      "commit_sha": "9840fdca60f2",
+      "commit_title": "chore(deps): update dependency eslint to v8.50.0",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 1,
+      "n_jobs": 1,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 1,
+      "strategies": [
+        "error_marker"
+      ],
+      "total_lines_extracted": 156,
+      "error_markers_found": 1,
+      "sample_error_lines": [
+        "##[error]Process completed with exit code 1.",
+        "577:36  error  Parsing error: ',' expected",
+        "✖ 1 problem (1 error, 0 warnings)"
+      ]
+    },
+    "classification": {
+      "category": "CODE_REGRESSION",
+      "severity": "MODERATE",
+      "confidence": 0.95,
+      "action": "BLOCK_DEPLOY",
+      "reasoning": "The linting step failed with a parsing error in the TypeScript code, specifically a missing comma at line 577 in the diagnostic plugin. This indicates a syntax error introduced by the dependency update, likely due to an incompatibility with the new eslint version. Since this is a feature branch and not a protected branch, the severity is moderate.",
+      "evidence": [
+        "COMMIT.title: chore(deps): update dependency eslint to v8.50.0",
+        "LOG EVIDENCE: Parsing error: ',' expected",
+        "LOG EVIDENCE: Process completed with exit code 1"
+      ],
+      "unknowns": [
+        "Whether the linting error is due to a breaking change in eslint v8.50.0 or an existing issue in the codebase"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "UNKNOWN",
+      "method": "none",
+      "reasoning": "Branch deleted, no PR found by SHA or branch name, no successful re-run detected.",
+      "match_verdict": "NOT_SCORABLE",
+      "judge_reasoning": "The developer's action is UNKNOWN, as the branch was deleted and no further information is available. Without knowing whether the developer retried, ignored, or addressed the issue, it is impossible to judge whether the AI's recommendation was aligned with their actions."
+    }
+  },
+  {
+    "case_label": "motiwari/banditpam — add back files from scripts directory that were removed for ",
+    "intake": {
+      "run_id": "motiwari/banditpam_.github/workflows/run_mac_tests.yml_503_1",
+      "repo": "motiwari/banditpam",
+      "workflow": "run_mac_tests.yml",
+      "branch": "fasterpam",
+      "event": "push",
+      "is_protected_branch": false,
+      "commit_sha": "c1649696f1d4",
+      "commit_title": "add back files from scripts directory that were removed for AAAI submission",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 4,
+      "n_jobs": 4,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 4,
+      "strategies": [
+        "error_marker",
+        "error_marker",
+        "group_fallback",
+        "group_fallback"
+      ],
+      "total_lines_extracted": 370,
+      "error_markers_found": 2,
+      "sample_error_lines": [
+        "##[error]Process completed with exit code 1.",
+        "ERROR: Ignored the following versions that require a different python version: 2.12.0 Requires-Python >=3.8; 2.12.0rc0 R",
+        "ERROR: Could not find a version that satisfies the requirement keras==2.13.1 (from versions: 0.2.0, 0.3.0, 0.3.1, 0.3.2,",
+        "ERROR: No matching distribution found for keras==2.13.1",
+        "ERROR: Ignored the following versions that require a different python version: 1.11.0 Requires-Python <3.13,>=3.9; 1.11."
+      ]
+    },
+    "classification": {
+      "category": "DEPENDENCY_CONFLICT",
+      "severity": "MODERATE",
+      "confidence": 0.95,
+      "action": "HOTFIX_REQUIRED",
+      "reasoning": "The failure is due to incompatible Python package versions specified in requirements.txt. Specifically, keras==2.13.1 and scipy==1.11.2 require Python >=3.8 and >=3.9 respectively, but the builds are running on Python 3.7 and 3.8. This is a dependency conflict that needs to be resolved by updating the requirements.txt file.",
+      "evidence": [
+        "ERROR: Ignored the following versions that require a different python version: 2.12.0 Requires-Python >=3.8; 2.12.0rc0 Requires-Python >=3.8; 2.12.0rc1 Requires-Python >=3.8; 2.13.1 Requires-Python >=3.8; 2.13.1rc0 Requires-Python >=3.8; 2.13.1rc1 Requires-Python >=3.8; 2.14.0rc0 Requires-Python >=3.9",
+        "ERROR: Could not find a version that satisfies the requirement keras==2.13.1",
+        "ERROR: Could not find a version that satisfies the requirement scipy==1.11.2"
+      ],
+      "unknowns": [
+        "Why Python 3.7 and 3.8 are being used if the dependencies require higher versions",
+        "Whether there are specific reasons for requiring keras==2.13.1 and scipy==1.11.2"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "UNRELATED",
+      "method": "llm",
+      "reasoning": "The follow-up commits do not appear to address the CI failure. Commit 1 adds back files from the data directory, and Commit 2 modifies code and scripts for reproducing experiments and reformatting Python code. Neither commit directly addresses the failure detected in the original commit or modifies the CI/workflow configuration.",
+      "match_verdict": "PARTIAL",
+      "judge_reasoning": "The AI correctly identified a dependency conflict as the cause of the failure, but the developer's action was unrelated to addressing this issue. Since the developer did not modify the requirements.txt or CI configuration, the AI's recommendation was not acted upon, but this does not necessarily mean the AI was wrong. The developer's inaction could be due to low priority or other reasons, making the alignment ambiguous."
+    }
+  },
+  {
+    "case_label": "cdcseacave/openmvs — Update MvsReadDMAP.py",
+    "intake": {
+      "run_id": "cdcseacave/openmvs_.github/workflows/continuous_integration.yml_188_1",
+      "repo": "cdcseacave/openmvs",
+      "workflow": "continuous_integration.yml",
+      "branch": "develop",
+      "event": "pull_request",
+      "is_protected_branch": false,
+      "commit_sha": "20b22938dfca",
+      "commit_title": "Update MvsReadDMAP.py",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 3,
+      "n_jobs": 3,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 3,
+      "strategies": [
+        "group_fallback",
+        "error_marker",
+        "group_fallback"
+      ],
+      "total_lines_extracted": 396,
+      "error_markers_found": 3,
+      "sample_error_lines": [
+        "##[error]/Users/runner/work/openMVS/openMVS/apps/InterfaceMVSNet/InterfaceMVSNet.cpp:472:39: error: cannot pass object o",
+        "##[error]/Users/runner/work/openMVS/openMVS/apps/InterfaceMVSNet/InterfaceMVSNet.cpp:640:39: error: cannot pass object o",
+        "##[error]/Users/runner/work/openMVS/openMVS/apps/InterfaceMVSNet/InterfaceMVSNet.cpp:472:39: error: cannot pass object o",
+        "##[error]/Users/runner/work/openMVS/openMVS/apps/InterfaceMVSNet/InterfaceMVSNet.cpp:640:39: error: cannot pass object o",
+        "make: *** [all] Error 2"
+      ]
+    },
+    "classification": {
+      "category": "DEPENDENCY_CONFLICT",
+      "severity": "MODERATE",
+      "confidence": 0.85,
+      "action": "HOTFIX_REQUIRED",
+      "reasoning": "The macOS build failed with multiple linker warnings indicating symbol visibility issues between Eigen and OpenCV libraries, suggesting a dependency conflict. The failure is isolated to macOS, and the commit only updates a Python script, making a code regression unlikely. The severity is moderate as it affects a feature branch but not a protected branch.",
+      "evidence": [
+        "step [2] 2_Build on macOS-latest.txt",
+        "ld: warning: direct access in function 'void Eigen::internal::evaluateProductBlockingSizesHeuristic<double, double, 4, long>(long&, long&, long&, long)'",
+        "commit message: Update MvsReadDMAP.py"
+      ],
+      "unknowns": [
+        "Exact versions of Eigen and OpenCV being used",
+        "Whether this issue is reproducible locally"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "UNRELATED",
+      "method": "llm",
+      "reasoning": "The follow-up commits do not appear to address the CI failure directly. Commit 1 introduces a major update with various features and fixes, Commit 2 adds Python utilities for reading DMAP files, Commit 3 adds JPEG file extension support, Commit 4 improves texture transfer, and Commit 5 adjusts pixel center conventions. None of these changes seem to be directly related to the failure in MvsReadDMAP.py.",
+      "match_verdict": "MISMATCH",
+      "judge_reasoning": "The AI recommended a HOTFIX_REQUIRED due to a suspected dependency conflict, but the developer's follow-up commits did not address the CI failure directly, suggesting the issue was either ignored or deemed unrelated. The developer's action indicates the AI's diagnosis and recommendation were incorrect or unnecessary."
+    }
+  },
+  {
+    "case_label": "guanguans/music-php — chore(deps-dev): bump friendsofphp/php-cs-fixer from 3.30.0 ",
+    "intake": {
+      "run_id": "guanguans/music-php_.github/workflows/php-cs-fixer.yml_1320_1",
+      "repo": "guanguans/music-php",
+      "workflow": "php-cs-fixer.yml",
+      "branch": "dependabot/composer/friendsofphp/php-cs-fixer-3.34.0",
+      "event": "push",
+      "is_protected_branch": false,
+      "commit_sha": "9fd2e6c17757",
+      "commit_title": "chore(deps-dev): bump friendsofphp/php-cs-fixer from 3.30.0 to 3.34.0",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 1,
+      "n_jobs": 1,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 1,
+      "strategies": [
+        "group_fallback"
+      ],
+      "total_lines_extracted": 80,
+      "error_markers_found": 0,
+      "sample_error_lines": []
+    },
+    "classification": {
+      "category": "DEPENDENCY_CONFLICT",
+      "severity": "MODERATE",
+      "confidence": 0.85,
+      "action": "HOTFIX_REQUIRED",
+      "reasoning": "The failure occurred due to 'lint-md' not being found, which suggests a missing dependency or misconfiguration in the project's development environment. This is likely related to the dependency update from friendsofphp/php-cs-fixer 3.30.0 to 3.34.0, as the commit message indicates a dependency bump.",
+      "evidence": [
+        "COMMIT.message",
+        "LOG EVIDENCE"
+      ],
+      "unknowns": [
+        "Whether lint-md is a required dependency for the project",
+        "If lint-md was previously installed and removed or never installed"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "PR_MERGED",
+      "method": "pr_state",
+      "reasoning": "PR #583 ('chore(deps-dev): bump friendsofphp/php-cs-fixer from 3.30.0 to 3.34.0') was merged on 2023-09-29T21:27:35Z.",
+      "match_verdict": "PARTIAL",
+      "judge_reasoning": "The AI's recommendation of a HOTFIX_REQUIRED due to a DEPENDENCY_CONFLICT is somewhat aligned with the developer's action of merging the PR, as the developer may have addressed the issue in a separate commit or judged it non-blocking. However, the AI missed the nuance that the developer proceeded with the merge, suggesting the failure was either resolved or deemed insignificant, which the AI did not account for."
+    }
+  },
+  {
+    "case_label": "nesbox/tic-80 — build fix",
+    "intake": {
+      "run_id": "nesbox/tic-80_.github/workflows/webapp.yml_3_1",
+      "repo": "nesbox/tic-80",
+      "workflow": "webapp.yml",
+      "branch": "v1.1.2729",
+      "event": "release",
+      "is_protected_branch": false,
+      "commit_sha": "20dcf5900ada",
+      "commit_title": "build fix",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 1,
+      "n_jobs": 1,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 1,
+      "strategies": [
+        "error_marker"
+      ],
+      "total_lines_extracted": 156,
+      "error_markers_found": 1,
+      "sample_error_lines": [
+        "##[error]Process completed with exit code 2.",
+        "emcc: error: '/home/runner/work/_temp/e5149806-65d1-4f5d-a508-e7924d60ab42/emsdk-master/upstream/bin/clang -target wasm3",
+        "gmake[2]: *** [CMakeFiles/tic80.dir/build.make:77: CMakeFiles/tic80.dir/src/system/sdl/main.c.o] Error 1",
+        "gmake[1]: *** [CMakeFiles/Makefile2:683: CMakeFiles/tic80.dir/all] Error 2",
+        "gmake: *** [Makefile:136: all] Error 2"
+      ]
+    },
+    "classification": {
+      "category": "CODE_REGRESSION",
+      "severity": "HIGH",
+      "confidence": 0.95,
+      "action": "BLOCK_DEPLOY",
+      "reasoning": "The log evidence shows compilation errors related to SDL_GameControllerHasAxis and SDL_GameControllerHasButton functions, which are not declared in C99. This indicates a code regression introduced by the commit titled 'build fix'. The failure occurred in a release branch, raising the severity to HIGH.",
+      "evidence": [
+        "LOG EVIDENCE: implicit declaration of function 'SDL_GameControllerHasAxis' is invalid in C99",
+        "LOG EVIDENCE: implicit declaration of function 'SDL_GameControllerHasButton' is invalid in C99",
+        "COMMIT: title 'build fix'",
+        "OUTCOME: conclusion failure"
+      ],
+      "unknowns": [
+        "Exact changes introduced by the commit",
+        "Previous build status before this commit"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "UNKNOWN",
+      "method": "none",
+      "reasoning": "Branch deleted, no PR found by SHA or branch name, no successful re-run detected.",
+      "match_verdict": "NOT_SCORABLE",
+      "judge_reasoning": "The developer's action is marked as UNKNOWN, with no PR found, branch deleted, and no successful re-run detected. This lack of information makes it impossible to judge whether the AI's recommendation was aligned with the developer's actual response or intent."
+    }
+  },
+  {
+    "case_label": "stararawn/bevy_ecs_tilemap — Merge pull request #460 from st0rmbtw/main",
+    "intake": {
+      "run_id": "stararawn/bevy_ecs_tilemap_.github/workflows/code_quality.yml_372_1",
+      "repo": "stararawn/bevy_ecs_tilemap",
+      "workflow": "code_quality.yml",
+      "branch": "main",
+      "event": "push",
+      "is_protected_branch": true,
+      "commit_sha": "8a86bbed6db8",
+      "commit_title": "Merge pull request #460 from st0rmbtw/main",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 2,
+      "n_jobs": 2,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 2,
+      "strategies": [
+        "group_fallback",
+        "error_marker"
+      ],
+      "total_lines_extracted": 609,
+      "error_markers_found": 1,
+      "sample_error_lines": [
+        "##[error]The process '/home/runner/.cargo/bin/cargo' failed with exit code 1"
+      ]
+    },
+    "classification": {
+      "category": "CODE_REGRESSION",
+      "severity": "CRITICAL",
+      "confidence": 0.95,
+      "action": "BLOCK_DEPLOY",
+      "reasoning": "The failure occurred in the 'Formatting' step with a clear error message indicating a formatting issue in the code. The log evidence shows specific diffs in the code that failed to meet formatting standards, suggesting a regression introduced by the recent merge. Since this is on the protected 'main' branch, the severity is critical.",
+      "evidence": [
+        "LOG EVIDENCE: step [2] 1_Formatting (1).txt",
+        "branch: main",
+        "protected: True",
+        "conclusion: failure"
+      ],
+      "unknowns": [
+        "Exact details of the formatting rules violated",
+        "Whether the formatting issue affects functionality"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "NO_IMMEDIATE_RESPONSE",
+      "method": "rubric",
+      "reasoning": "Follow-up commits exist but none are within 7 days of the failure. Developer likely retried or ignored the failure without a code change.",
+      "match_verdict": "PARTIAL",
+      "judge_reasoning": "The AI's recommendation to BLOCK_DEPLOY due to a CODE_REGRESSION is reasonable given the critical nature of the failure on a protected branch. However, the developer's NO_IMMEDIATE_RESPONSE action suggests they may have retried or ignored the failure, indicating the issue might not have been as severe as the AI judged. The ambiguity in the developer's action prevents a full MATCH verdict."
+    }
+  },
+  {
+    "case_label": "infracloudio/botkube — Migrate Cloud Slack Dev E2E tests and fix migration test",
+    "intake": {
+      "run_id": "infracloudio/botkube_.github/workflows/cloud-slack-dev-e2e.yaml_10_1",
+      "repo": "infracloudio/botkube",
+      "workflow": "cloud-slack-dev-e2e.yaml",
+      "branch": "cloud-slack-dev-e2e",
+      "event": "push",
+      "is_protected_branch": false,
+      "commit_sha": "8260b08c4b97",
+      "commit_title": "Migrate Cloud Slack Dev E2E tests and fix migration test",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 1,
+      "n_jobs": 1,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 1,
+      "strategies": [
+        "error_marker"
+      ],
+      "total_lines_extracted": 156,
+      "error_markers_found": 1,
+      "sample_error_lines": [
+        "##[error]Process completed with exit code 2.",
+        "make: *** [Makefile:30: test-cloud-slack-dev-e2e] Error 1"
+      ]
+    },
+    "classification": {
+      "category": "CODE_REGRESSION",
+      "severity": "MODERATE",
+      "confidence": 0.85,
+      "action": "BLOCK_DEPLOY",
+      "reasoning": "The commit message indicates migration of E2E tests and fixes, but the logs show specific test failures in the 'TestCloudSlackE2E' suite, particularly in 'Cloud_->_Botkube_Deployment_sync' and 'Executed_commands_and_events_are_audited'. This suggests the changes introduced a regression in the test logic or functionality.",
+      "evidence": [
+        "COMMIT.message",
+        "LOG EVIDENCE.TestCloudSlackE2E/Run_E2E_tests_with_deployment",
+        "LOG EVIDENCE.FAIL"
+      ],
+      "unknowns": [
+        "Detailed error messages from the failed tests",
+        "Specific changes in the commit that might have caused the regression"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "UNKNOWN",
+      "method": "none",
+      "reasoning": "Branch deleted, no PR found by SHA or branch name, no successful re-run detected.",
+      "match_verdict": "NOT_SCORABLE",
+      "judge_reasoning": "The developer's action is marked as 'UNKNOWN', meaning there is no information available about whether they retried, ignored, or addressed the failure. Without this context, it is impossible to judge whether the AI's recommendation to block the deploy was reasonable or aligned with the developer's actions."
+    }
+  },
+  {
+    "case_label": "aws/aws-lambda-dotnet — Update RELEASE.CHANGELOG.md (#1579)",
+    "intake": {
+      "run_id": "aws/aws-lambda-dotnet_.github/workflows/update-Dockerfiles.yml_33_2",
+      "repo": "aws/aws-lambda-dotnet",
+      "workflow": "update-Dockerfiles.yml",
+      "branch": "master",
+      "event": "workflow_dispatch",
+      "is_protected_branch": true,
+      "commit_sha": "b57c6793a29d",
+      "commit_title": "Update RELEASE.CHANGELOG.md (#1579)",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 1,
+      "n_jobs": 1,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 1,
+      "strategies": [
+        "error_marker"
+      ],
+      "total_lines_extracted": 156,
+      "error_markers_found": 1,
+      "sample_error_lines": [
+        "##[error]Process completed with exit code 1."
+      ]
+    },
+    "classification": {
+      "category": "CONFIG_ERROR",
+      "severity": "HIGH",
+      "confidence": 0.85,
+      "action": "HOTFIX_REQUIRED",
+      "reasoning": "The failure occurs during the execution of a PowerShell script (`update-dockerfile.ps1`) with a null-valued expression error. This suggests a misconfiguration in the script or its inputs, particularly for the .NET 8.0.0-rc.1 Dockerfile update. The protected branch (`master`) raises the severity.",
+      "evidence": [
+        "LOG EVIDENCE: 'You cannot call a method on a null-valued expression.'",
+        "LOG EVIDENCE: 'Process completed with exit code 1.'",
+        "branch: master",
+        "protected: True"
+      ],
+      "unknowns": [
+        "Specific details about the null-valued expression in the PowerShell script",
+        "Whether this issue is reproducible or specific to this run"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "NO_IMMEDIATE_RESPONSE",
+      "method": "rubric",
+      "reasoning": "Follow-up commits exist but none are within 7 days of the failure. Developer likely retried or ignored the failure without a code change.",
+      "match_verdict": "PARTIAL",
+      "judge_reasoning": "The AI's recommendation of a HOTFIX_REQUIRED due to a CONFIG_ERROR aligns with the severity of the failure and the protected branch context. However, the developer's NO_IMMEDIATE_RESPONSE action suggests the issue may not have been as urgent or critical as the AI judged, indicating a potential overestimation of severity or misalignment with developer priorities."
+    }
+  },
+  {
+    "case_label": "buchgr/bazel-remote — Test /metrics with basic-auth and mTLS",
+    "intake": {
+      "run_id": "buchgr/bazel-remote_.github/workflows/release.yml_24_1",
+      "repo": "buchgr/bazel-remote",
+      "workflow": "release.yml",
+      "branch": "v2.4.2",
+      "event": "release",
+      "is_protected_branch": false,
+      "commit_sha": "aa29c185c5ee",
+      "commit_title": "Test /metrics with basic-auth and mTLS",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 2,
+      "n_jobs": 2,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 2,
+      "strategies": [
+        "error_marker",
+        "error_marker"
+      ],
+      "total_lines_extracted": 312,
+      "error_markers_found": 2,
+      "sample_error_lines": [
+        "##[error]Process completed with exit code 1.",
+        "Use --verbose_failures to see the command lines of failed build steps.",
+        "FAILED: Build did NOT complete successfully",
+        "ERROR: Analysis of target '//:bazel-remote-linux-arm64' failed; build aborted:",
+        "FAILED: Build did NOT complete successfully (0 packages loaded, 8631 targets configured)"
+      ]
+    },
+    "classification": {
+      "category": "INFRA_INCOMPATIBILITY",
+      "severity": "HIGH",
+      "confidence": 0.9,
+      "action": "PIN_VERSION",
+      "reasoning": "The macOS job failed due to a linker error ('library not found for -lcrt0.o'), which suggests an incompatibility between the Go toolchain and the macOS runner environment. The Linux job failed because of a missing toolchain ('No matching toolchains found for types @bazel_tools//tools/cpp:toolchain_type'), indicating a Bazel toolchain configuration issue. Both failures point to infrastructure incompatibility rather than code or dependency issues.",
+      "evidence": [
+        "LOG EVIDENCE: macOS job linker error",
+        "LOG EVIDENCE: Linux job toolchain error",
+        "workflow: release.yml",
+        "branch: v2.4.2"
+      ],
+      "unknowns": [
+        "Specific versions of Go and Bazel being used",
+        "Runner environment details (e.g., macOS version)"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "PR_MERGED",
+      "method": "pr_state",
+      "reasoning": "PR #687 ('Metrics debugging') was merged on 2023-08-09T23:21:14Z.",
+      "match_verdict": "PARTIAL",
+      "judge_reasoning": "The AI's recommendation focused on infrastructure incompatibility and suggested version pinning, which does not directly align with the developer's action of merging a PR related to metrics debugging. However, the developer's decision to merge despite the failure could imply they judged the failure as non-blocking or addressed it indirectly, leaving room for ambiguity. The AI's reasoning was plausible but lacked insight into the developer's specific context or priorities."
+    }
+  },
+  {
+    "case_label": "apicurio/apicurio-registry — modified state change checks in ArtifactStateExt and Abstrac",
+    "intake": {
+      "run_id": "apicurio/apicurio-registry_.github/workflows/release.yaml_70_1",
+      "repo": "apicurio/apicurio-registry",
+      "workflow": "release.yaml",
+      "branch": "main",
+      "event": "workflow_dispatch",
+      "is_protected_branch": true,
+      "commit_sha": "25fa05117054",
+      "commit_title": "modified state change checks in ArtifactStateExt and AbstractSqlRegistryStorage (#3637)",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 2,
+      "n_jobs": 2,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 2,
+      "strategies": [
+        "group_fallback",
+        "error_marker"
+      ],
+      "total_lines_extracted": 199,
+      "error_markers_found": 2,
+      "sample_error_lines": [
+        "##[error]Input required and not supplied: token",
+        "##[error]Input required and not supplied: url"
+      ]
+    },
+    "classification": {
+      "category": "CONFIG_ERROR",
+      "severity": "HIGH",
+      "confidence": 0.95,
+      "action": "HOTFIX_REQUIRED",
+      "reasoning": "The failure occurred in a release workflow on the protected main branch. The log evidence shows that the workflow failed due to missing required inputs ('token' and 'url') in the job-trigger step. This is a configuration error that needs to be fixed before the release can proceed.",
+      "evidence": [
+        "branch: main",
+        "protected: True",
+        "step [2] 1_job-trigger tag-registry-examples.txt",
+        "##[error]Input required and not supplied: token",
+        "##[error]Input required and not supplied: url"
+      ],
+      "unknowns": [
+        "Why were the required inputs not supplied?",
+        "Was this a recent change in the workflow configuration?"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "NO_IMMEDIATE_RESPONSE",
+      "method": "rubric",
+      "reasoning": "Follow-up commits exist but none are within 7 days of the failure. Developer likely retried or ignored the failure without a code change.",
+      "match_verdict": "PARTIAL",
+      "judge_reasoning": "The AI correctly identified the failure as a CONFIG_ERROR with HIGH severity, which aligns with the missing inputs ('token' and 'url') in the logs. However, the developer's NO_IMMEDIATE_RESPONSE action suggests they either retried the workflow without code changes or deemed the issue non-critical, which introduces ambiguity. The AI's recommendation for a HOTFIX_REQUIRED is reasonable but may not fully align with the developer's decision to not address it immediately."
+    }
+  },
+  {
+    "case_label": "imicknl/ha-nest-protect — Fix deps",
+    "intake": {
+      "run_id": "imicknl/ha-nest-protect_.github/workflows/pytest.yml_301_1",
+      "repo": "imicknl/ha-nest-protect",
+      "workflow": "pytest.yml",
+      "branch": "python3.11-devcontainer-try2",
+      "event": "pull_request",
+      "is_protected_branch": false,
+      "commit_sha": "7a246e096310",
+      "commit_title": "Fix deps",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 1,
+      "n_jobs": 1,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 1,
+      "strategies": [
+        "error_marker"
+      ],
+      "total_lines_extracted": 156,
+      "error_markers_found": 1,
+      "sample_error_lines": [
+        "##[error]Process completed with exit code 1."
+      ]
+    },
+    "classification": {
+      "category": "DEPENDENCY_CONFLICT",
+      "severity": "MODERATE",
+      "confidence": 0.95,
+      "action": "HOTFIX_REQUIRED",
+      "reasoning": "The failure is due to a dependency conflict between pytest==7.2.0 and pytest-homeassistant-custom-component==0.13.51, which requires pytest==7.3.1. This is evident from the error message 'Cannot install -r requirements_test.txt (line 4), -r requirements_test.txt (line 5) and pytest==7.2.0 because these package versions have conflicting dependencies.' The commit message 'Fix deps' suggests this was an attempt to resolve dependency issues, but it introduced a conflict instead.",
+      "evidence": [
+        "LOG EVIDENCE: ERROR: Cannot install -r requirements_test.txt (line 4), -r requirements_test.txt (line 5) and pytest==7.2.0 because these package versions have conflicting dependencies.",
+        "COMMIT: title=Fix deps",
+        "OUTCOME: conclusion=failure"
+      ],
+      "unknowns": [
+        "Why pytest==7.2.0 was specified instead of pytest==7.3.1",
+        "Whether other dependencies are also conflicting"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "PR_MERGED",
+      "method": "pr_state",
+      "reasoning": "PR #251 ('Update devcontainer to Python 3.11 and bump to Home Assistant 2023.8.2') was merged on 2023-08-13T10:47:05Z.",
+      "match_verdict": "PARTIAL",
+      "judge_reasoning": "The AI correctly identified a dependency conflict and recommended a hotfix, which aligns with the developer's attempt to fix dependencies. However, the developer merged the PR despite the failure, suggesting they may have judged the conflict as non-blocking or resolved it elsewhere. This ambiguity means the AI's recommendation is somewhat aligned but missed the nuance of the developer's decision."
+    }
+  },
+  {
+    "case_label": "vgmtrans/vgmtrans — Build: Don't override CMAKE_PREFIX_PATH for Qt on Apple Sili",
+    "intake": {
+      "run_id": "vgmtrans/vgmtrans_.github/workflows/build.yml_377_1",
+      "repo": "vgmtrans/vgmtrans",
+      "workflow": "build.yml",
+      "branch": "qt6-macos",
+      "event": "pull_request",
+      "is_protected_branch": false,
+      "commit_sha": "1d2ce4ce28d2",
+      "commit_title": "Build: Don't override CMAKE_PREFIX_PATH for Qt on Apple Silicon",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 4,
+      "n_jobs": 4,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 4,
+      "strategies": [
+        "group_fallback",
+        "error_marker",
+        "group_fallback",
+        "group_fallback"
+      ],
+      "total_lines_extracted": 327,
+      "error_markers_found": 1,
+      "sample_error_lines": [
+        "##[error]Process completed with exit code 1.",
+        "Error: can't modify frozen Hash"
+      ]
+    },
+    "classification": {
+      "category": "DEPENDENCY_CONFLICT",
+      "severity": "MODERATE",
+      "confidence": 0.85,
+      "action": "HOTFIX_REQUIRED",
+      "reasoning": "The failure occurred during the installation of Qt dependencies on Apple Silicon, specifically with an error 'can't modify frozen Hash'. This suggests a dependency conflict related to the Qt installation process. The commit message indicates changes to CMAKE_PREFIX_PATH for Qt on Apple Silicon, which aligns with this issue.",
+      "evidence": [
+        "commit.title",
+        "commit.message",
+        "step [2] 1_macOS (Apple Silicon) (1).txt"
+      ],
+      "unknowns": [
+        "specific details about the frozen Hash error",
+        "exact Qt version being installed"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "PR_CLOSED_UNMERGED",
+      "method": "pr_state",
+      "reasoning": "PR #381 ('Upgrade macOS builds to Qt6, native M1 builds') was closed without merging on 2023-12-14T15:47:11Z. Developer rejected the change.",
+      "match_verdict": "PARTIAL",
+      "judge_reasoning": "The AI correctly identified a dependency conflict related to Qt installation on Apple Silicon, which aligns with the error message and commit context. However, the developer chose to close the PR without merging, indicating they rejected the change entirely rather than applying a hotfix. This suggests the AI's recommendation for a hotfix was not fully aligned with the developer's decision, though the root cause analysis was accurate."
+    }
+  },
+  {
+    "case_label": "androz2091/discord-player — chore(opus): release 0.1.1",
+    "intake": {
+      "run_id": "androz2091/discord-player_.github/workflows/docs.yml_12_1",
+      "repo": "androz2091/discord-player",
+      "workflow": "docs.yml",
+      "branch": "@discord-player/opus@0.1.1",
+      "event": "release",
+      "is_protected_branch": false,
+      "commit_sha": "2d04fcd69f30",
+      "commit_title": "chore(opus): release 0.1.1",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 1,
+      "n_jobs": 1,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 1,
+      "strategies": [
+        "error_marker"
+      ],
+      "total_lines_extracted": 156,
+      "error_markers_found": 1,
+      "sample_error_lines": [
+        "##[error]Process completed with exit code 1."
+      ]
+    },
+    "classification": {
+      "category": "CONFIG_ERROR",
+      "severity": "MODERATE",
+      "confidence": 0.95,
+      "action": "HOTFIX_REQUIRED",
+      "reasoning": "The failure occurred due to a bad substitution in the git push command, specifically `${GITHUB_REF_TYPE == 'tag' ? 'master' : GITHUB_REF_NAME}`. This indicates a misconfiguration in the workflow YAML, likely an incorrect or unsupported syntax for the shell script. The failure is not transient and requires a specific fix to the workflow configuration.",
+      "evidence": [
+        "LOG EVIDENCE: /home/runner/work/_temp/33cfb21b-0177-4f52-add5-3a84003e4fc9.sh: line 5: ${GITHUB_REF_TYPE == 'tag' ? 'master' : GITHUB_REF_NAME}: bad substitution",
+        "LOG EVIDENCE: ##[error]Process completed with exit code 1."
+      ],
+      "unknowns": [
+        "Exact workflow YAML configuration",
+        "Intended behavior for the git push command"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "UNKNOWN",
+      "method": "none",
+      "reasoning": "Branch deleted, no PR found by SHA or branch name, no successful re-run detected.",
+      "match_verdict": "NOT_SCORABLE",
+      "judge_reasoning": "The developer's action is marked as UNKNOWN, with no PR found, branch deleted, and no successful re-run detected. This lack of information makes it impossible to determine whether the AI's recommendation was aligned with the developer's actual response or not."
+    }
+  },
+  {
+    "case_label": "nilcoalescing/djangochannelsrestframework — Return error if unable to capture action",
+    "intake": {
+      "run_id": "nilcoalescing/djangochannelsrestframework_.github/workflows/tests.yaml_220_1",
+      "repo": "nilcoalescing/djangochannelsrestframework",
+      "workflow": "tests.yaml",
+      "branch": "fix/26",
+      "event": "pull_request",
+      "is_protected_branch": false,
+      "commit_sha": "d41f41124def",
+      "commit_title": "Return error if unable to capture action",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 12,
+      "n_jobs": 12,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 12,
+      "strategies": [
+        "error_marker",
+        "error_marker",
+        "error_marker",
+        "error_marker",
+        "error_marker",
+        "error_marker",
+        "error_marker",
+        "error_marker",
+        "error_marker",
+        "error_marker",
+        "error_marker",
+        "error_marker"
+      ],
+      "total_lines_extracted": 1872,
+      "error_markers_found": 12,
+      "sample_error_lines": [
+        "##[error]Process completed with exit code 2.",
+        "ERROR tests/test_observer.py",
+        "ERROR tests/test_permission.py",
+        "!!!!!!!!!!!!!!!!!!! Interrupted: 8 errors during collection !!!!!!!!!!!!!!!!!!!!",
+        "============================== 8 errors in 0.59s ==============================="
+      ]
+    },
+    "classification": {
+      "category": "CODE_REGRESSION",
+      "severity": "MODERATE",
+      "confidence": 0.95,
+      "action": "BLOCK_DEPLOY",
+      "reasoning": "The failure is consistent across all jobs, showing 'ModuleNotFoundError: No module named 'exceptions''. This indicates a code regression likely introduced by the commit 'Return error if unable to capture action'. The error is not transient and affects multiple Python and Django versions.",
+      "evidence": [
+        "LOG EVIDENCE",
+        "COMMIT",
+        "FAILED STEPS"
+      ],
+      "unknowns": [
+        "Exact changes in the commit that caused the regression"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "PR_MERGED",
+      "method": "pr_state",
+      "reasoning": "PR #188 ('Return error if unable to capture action') was merged on 2023-08-21T00:52:49Z.",
+      "match_verdict": "PARTIAL",
+      "judge_reasoning": "The AI recommended BLOCK_DEPLOY due to a consistent failure across all jobs, suggesting a code regression. However, the developer merged the PR despite the failure, indicating they either judged the issue as non-blocking or resolved it separately. This discrepancy suggests the AI's recommendation missed nuance in the developer's judgment or context."
+    }
+  },
+  {
+    "case_label": "facontidavide/plotjuggler — Add \"Steps\" when drawing curves",
+    "intake": {
+      "run_id": "facontidavide/plotjuggler_.github/workflows/snap.yaml_218_1",
+      "repo": "facontidavide/plotjuggler",
+      "workflow": "snap.yaml",
+      "branch": "step_interpolation",
+      "event": "pull_request",
+      "is_protected_branch": false,
+      "commit_sha": "f253eebfea45",
+      "commit_title": "Add \"Steps\" when drawing curves",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 1,
+      "n_jobs": 1,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 1,
+      "strategies": [
+        "error_marker"
+      ],
+      "total_lines_extracted": 156,
+      "error_markers_found": 1,
+      "sample_error_lines": [
+        "##[error]The process '/usr/bin/sg' failed with exit code 2",
+        "Failed to fetch stage packages: Error downloading packages for part 'plotjuggler-ros2': The package 'ros-foxy-pacmod-msg"
+      ]
+    },
+    "classification": {
+      "category": "DEPENDENCY_CONFLICT",
+      "severity": "MODERATE",
+      "confidence": 0.85,
+      "action": "HOTFIX_REQUIRED",
+      "reasoning": "The failure occurred during the staging of dependencies, specifically with the package 'ros-foxy-pacmod-msgs' not being found. This suggests a dependency conflict or missing package in the environment. The commit message indicates a feature addition ('Add Steps when drawing curves'), which is unlikely to directly cause this issue, pointing more towards a dependency problem.",
+      "evidence": [
+        "Failed to fetch stage packages: Error downloading packages for part 'plotjuggler-ros2': The package 'ros-foxy-pacmod-msgs' was not found.",
+        "commit message: Add Steps when drawing curves"
+      ],
+      "unknowns": [
+        "Exact dependency specifications in the project",
+        "Availability of the 'ros-foxy-pacmod-msgs' package in the repository"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "PR_MERGED",
+      "method": "pr_state",
+      "reasoning": "PR #869 ('Add \"Steps\" when drawing curves') was merged on 2023-09-22T06:09:34Z.",
+      "match_verdict": "PARTIAL",
+      "judge_reasoning": "The AI correctly identified a dependency conflict ('ros-foxy-pacmod-msgs') and recommended a hotfix, which is reasonable given the error. However, the developer merged the PR without addressing the failure directly, suggesting they either deemed it non-blocking or resolved it elsewhere. This ambiguity makes the AI's recommendation only partially aligned with the developer's action."
+    }
+  },
+  {
+    "case_label": "CambioML/pykoi — Create python-app.yml",
+    "intake": {
+      "run_id": "CambioML/pykoi_.github/workflows/pylint.yml_2_1",
+      "repo": "CambioML/pykoi",
+      "workflow": "pylint.yml",
+      "branch": "main",
+      "event": "push",
+      "is_protected_branch": true,
+      "commit_sha": "01715fa12413",
+      "commit_title": "Create python-app.yml",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 3,
+      "n_jobs": 3,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 3,
+      "strategies": [
+        "error_marker",
+        "error_marker",
+        "error_marker"
+      ],
+      "total_lines_extracted": 468,
+      "error_markers_found": 3,
+      "sample_error_lines": [
+        "##[error]The operation was canceled.",
+        "##[error]Process completed with exit code 30."
+      ]
+    },
+    "classification": {
+      "category": "CODE_REGRESSION",
+      "severity": "CRITICAL",
+      "confidence": 0.95,
+      "action": "BLOCK_DEPLOY",
+      "reasoning": "The pylint checks failed with multiple code quality issues across different Python versions (3.8, 3.9, 3.10). The errors include unused imports, missing docstrings, and code style violations. Since this is on the protected 'main' branch, it poses a critical risk to code quality and maintainability.",
+      "evidence": [
+        "LOG EVIDENCE: pylint errors in 1_build (3.8).txt",
+        "LOG EVIDENCE: pylint errors in 2_build (3.9).txt",
+        "LOG EVIDENCE: pylint errors in 3_build (3.10).txt",
+        "branch: main",
+        "protected: True"
+      ],
+      "unknowns": [
+        "Whether these issues existed before this commit",
+        "The specific pylint configuration thresholds"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "NO_IMMEDIATE_RESPONSE",
+      "method": "rubric",
+      "reasoning": "Follow-up commits exist but none are within 7 days of the failure. Developer likely retried or ignored the failure without a code change.",
+      "match_verdict": "PARTIAL",
+      "judge_reasoning": "The AI's recommendation to BLOCK_DEPLOY due to critical code quality issues aligns with the severity of the failure, but the developer's NO_IMMEDIATE_RESPONSE action introduces ambiguity. The developer may have retried or ignored the failure, suggesting the AI's recommendation might have been overly strict or not fully considered the context of the branch or workflow."
+    }
+  },
+  {
+    "case_label": "gramaddict/bot — fix: get rid of Activity class when starting app",
+    "intake": {
+      "run_id": "gramaddict/bot_.github/workflows/deploy.yml_6_4",
+      "repo": "gramaddict/bot",
+      "workflow": "deploy.yml",
+      "branch": "3.2.6",
+      "event": "release",
+      "is_protected_branch": false,
+      "commit_sha": "e99fe699ca87",
+      "commit_title": "fix: get rid of Activity class when starting app",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 1,
+      "n_jobs": 1,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 1,
+      "strategies": [
+        "error_marker"
+      ],
+      "total_lines_extracted": 156,
+      "error_markers_found": 1,
+      "sample_error_lines": [
+        "##[error]Process completed with exit code 1.",
+        "raise HTTPError(http_error_msg, response=self)",
+        "requests.exceptions.HTTPError: 400 Client Error: File already exists. See https://pypi.org/help/#file-name-reuse for mor"
+      ]
+    },
+    "classification": {
+      "category": "CONFIG_ERROR",
+      "severity": "MODERATE",
+      "confidence": 0.95,
+      "action": "HOTFIX_REQUIRED",
+      "reasoning": "The failure occurred during the 'Build and Publish' step due to an HTTP 400 error indicating that the file already exists on PyPI. This suggests a configuration issue with the version number or the publishing process. The commit message indicates a code change unrelated to the deployment process, reinforcing that this is a configuration problem.",
+      "evidence": [
+        "LOG EVIDENCE: Traceback (most recent call last):",
+        "LOG EVIDENCE: requests.exceptions.HTTPError: 400 Client Error: File already exists.",
+        "COMMIT: title: fix: get rid of Activity class when starting app",
+        "OUTCOME: conclusion: failure"
+      ],
+      "unknowns": [
+        "Whether the version number in the package needs to be incremented",
+        "Whether the PyPI token has the correct permissions"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "UNKNOWN",
+      "method": "llm",
+      "reasoning": "The follow-up commit (92e1289b6de8) modified GramAddict/__init__.py with a minor change (+1 -1), but there is no clear indication that this change was directly related to fixing the CI failure or addressing the issue with the Activity class. Without more context or explicit changes tied to the failure, it is impossible to determine the developer's intent or action.",
+      "match_verdict": "NOT_SCORABLE",
+      "judge_reasoning": "The developer's action is marked as 'UNKNOWN,' and there is no clear indication of whether they addressed the CI failure or ignored it. The AI's recommendation, while reasonable based on the error, cannot be judged as aligned or misaligned without further context on the developer's intent or actions."
+    }
+  },
+  {
+    "case_label": "ksp-ckan/ckan — Obey suppress_recommendations for CmdLine installs",
+    "intake": {
+      "run_id": "ksp-ckan/ckan_.github/workflows/build.yml_1324_1",
+      "repo": "ksp-ckan/ckan",
+      "workflow": "build.yml",
+      "branch": "feature/PLINQ",
+      "event": "pull_request",
+      "is_protected_branch": false,
+      "commit_sha": "ee43cfe218e1",
+      "commit_title": "Obey suppress_recommendations for CmdLine installs",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 10,
+      "n_jobs": 10,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 10,
+      "strategies": [
+        "group_fallback",
+        "error_marker",
+        "group_fallback",
+        "group_fallback",
+        "group_fallback",
+        "group_fallback",
+        "group_fallback",
+        "error_marker",
+        "group_fallback",
+        "group_fallback"
+      ],
+      "total_lines_extracted": 1335,
+      "error_markers_found": 10,
+      "sample_error_lines": [
+        "##[error]/home/runner/work/CKAN/CKAN/Core/Repositories/RepositoryData.cs(194,57): error CS0121: The call is ambiguous be",
+        "##[error]/home/runner/work/CKAN/CKAN/Core/Repositories/RepositoryData.cs(251,57): error CS0121: The call is ambiguous be",
+        "Error: One or more errors occurred. (.NET Core CLI: Process returned an error (exit code 1).)",
+        ".NET Core CLI: Process returned an error (exit code 1).",
+        "##[error]Process completed with exit code 1."
+      ]
+    },
+    "classification": {
+      "category": "CODE_REGRESSION",
+      "severity": "MODERATE",
+      "confidence": 0.95,
+      "action": "BLOCK_DEPLOY",
+      "reasoning": "The failure is due to ambiguous method calls in the RepositoryData.cs file, specifically between System.TupleExtensions.Deconstruct and CKAN.Extensions.EnumerableExtensions.Deconstruct. This is a code regression introduced by the commit, as evidenced by the CS0121 errors in the logs. The failure affects multiple jobs and is not transient.",
+      "evidence": [
+        "LOG EVIDENCE step [2] 2_build_NetCore (Release_NetCore).txt",
+        "LOG EVIDENCE step [8] 1_build_NetCore (Debug_NetCore).txt"
+      ],
+      "unknowns": [
+        "Exact changes in the commit that introduced the ambiguity",
+        "Whether this affects production code or is limited to test environments"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "UNKNOWN",
+      "method": "none",
+      "reasoning": "Branch deleted, no PR found by SHA or branch name, no successful re-run detected.",
+      "match_verdict": "NOT_SCORABLE",
+      "judge_reasoning": "The developer's action is UNKNOWN, as the branch was deleted and no PR or successful re-run was detected. Without knowing whether the developer retried, ignored, or addressed the failure, it is impossible to judge whether the AI's recommendation to block deployment was aligned with the developer's actions."
+    }
+  },
+  {
+    "case_label": "graalvm/graalvm-demos — Merge pull request #209 from sachin-pikle/master",
+    "intake": {
+      "run_id": "graalvm/graalvm-demos_.github/workflows/java-kotlin-aot.yml_75_1",
+      "repo": "graalvm/graalvm-demos",
+      "workflow": "java-kotlin-aot.yml",
+      "branch": "master",
+      "event": "schedule",
+      "is_protected_branch": true,
+      "commit_sha": "d5dae4bc2410",
+      "commit_title": "Merge pull request #209 from sachin-pikle/master",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 2,
+      "n_jobs": 2,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 2,
+      "strategies": [
+        "error_marker",
+        "error_marker"
+      ],
+      "total_lines_extracted": 312,
+      "error_markers_found": 2,
+      "sample_error_lines": [
+        "##[error]Process completed with exit code 1.",
+        "[ERROR] Re-run Maven using the -X switch to enable full debug logging.",
+        "[ERROR]",
+        "[ERROR] For more information about the errors and possible solutions, please read the following articles:",
+        "[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginContainerException"
+      ]
+    },
+    "classification": {
+      "category": "CASCADE_FAILURE",
+      "severity": "HIGH",
+      "confidence": 0.9,
+      "action": "ESCALATE_HUMAN",
+      "reasoning": "The first job failed due to an API incompatibility with the maven-jar-plugin, causing a build failure. The second job was canceled because the first job failed, indicating a cascade failure. Since this is on the protected master branch, the severity is high.",
+      "evidence": [
+        "LOG EVIDENCE: [ERROR] Failed to execute goal org.apache.maven.plugins:maven-jar-plugin:2.6:jar",
+        "LOG EVIDENCE: ##[error]The operation was canceled.",
+        "branch: master",
+        "protected: True"
+      ],
+      "unknowns": [
+        "Specific details on the API incompatibility",
+        "Whether the maven-jar-plugin version needs to be updated"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "NO_IMMEDIATE_RESPONSE",
+      "method": "rubric",
+      "reasoning": "Follow-up commits exist but none are within 7 days of the failure. Developer likely retried or ignored the failure without a code change.",
+      "match_verdict": "PARTIAL",
+      "judge_reasoning": "The AI's recommendation to escalate due to a cascade failure on a protected branch is reasonable, but the developer's 'NO_IMMEDIATE_RESPONSE' action suggests the issue may not have been as critical as the AI judged. The developer likely retried or ignored the failure, indicating the AI's severity assessment might have been overstated."
+    }
+  },
+  {
+    "case_label": "jetbrains/skiko — Update IOS_SIM_UUID (#805)",
+    "intake": {
+      "run_id": "jetbrains/skiko_.github/workflows/ci.yml_800_1",
+      "repo": "jetbrains/skiko",
+      "workflow": "ci.yml",
+      "branch": "master",
+      "event": "push",
+      "is_protected_branch": true,
+      "commit_sha": "7ae944d90aa3",
+      "commit_title": "Update IOS_SIM_UUID (#805)",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 5,
+      "n_jobs": 5,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 5,
+      "strategies": [
+        "group_fallback",
+        "group_fallback",
+        "group_fallback",
+        "group_fallback",
+        "error_marker"
+      ],
+      "total_lines_extracted": 388,
+      "error_markers_found": 1,
+      "sample_error_lines": [
+        "##[error]Final attempt failed. Child_process exited with error code 1",
+        "BUILD FAILED in 44s"
+      ]
+    },
+    "classification": {
+      "category": "CODE_REGRESSION",
+      "severity": "CRITICAL",
+      "confidence": 0.85,
+      "action": "BLOCK_DEPLOY",
+      "reasoning": "The failure occurred on the master branch, which is protected, indicating a high-stakes scenario. The log evidence from the iOS job shows a Gradle build failure with a clear error message 'BUILD FAILED in 44s', suggesting a code regression. The commit message indicates an update to IOS_SIM_UUID, which might have introduced the issue.",
+      "evidence": [
+        "branch: master",
+        "protected: True",
+        "LOG EVIDENCE: BUILD FAILED in 44s",
+        "COMMIT: Update IOS_SIM_UUID (#805)"
+      ],
+      "unknowns": [
+        "Specific details of the Gradle build failure",
+        "Impact of IOS_SIM_UUID update"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "NO_IMMEDIATE_RESPONSE",
+      "method": "rubric",
+      "reasoning": "Follow-up commits exist but none are within 7 days of the failure. Developer likely retried or ignored the failure without a code change.",
+      "match_verdict": "PARTIAL",
+      "judge_reasoning": "The AI's recommendation to BLOCK_DEPLOY due to a CODE_REGRESSION on a protected branch is reasonable given the severity of the failure and the context. However, the developer's NO_IMMEDIATE_RESPONSE action suggests they did not perceive the issue as critical enough to warrant immediate action, introducing ambiguity. The AI's recommendation might have been overly cautious in this case."
+    }
+  },
+  {
+    "case_label": "bearware/teamtalk5 — Fix all stream types being enabled when all should be disabl",
+    "intake": {
+      "run_id": "bearware/teamtalk5_.github/workflows/smoketest.yml_2419_1",
+      "repo": "bearware/teamtalk5",
+      "workflow": "smoketest.yml",
+      "branch": "issue-1663",
+      "event": "push",
+      "is_protected_branch": false,
+      "commit_sha": "6e4d28228619",
+      "commit_title": "Fix all stream types being enabled when all should be disabled",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 1,
+      "n_jobs": 1,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 1,
+      "strategies": [
+        "error_marker"
+      ],
+      "total_lines_extracted": 156,
+      "error_markers_found": 1,
+      "sample_error_lines": [
+        "##[error]Process completed with exit code 2.",
+        "java: /home/runner/work/TeamTalk5/TeamTalk5/Library/TeamTalkLib/teamtalk/client/StreamPlayers.cpp:562: virtual bool team",
+        "make: *** [Makefile:103: runjunitpro] Error 134"
+      ]
+    },
+    "classification": {
+      "category": "CODE_REGRESSION",
+      "severity": "MODERATE",
+      "confidence": 0.9,
+      "action": "BLOCK_DEPLOY",
+      "reasoning": "The failure is caused by an assertion error in the OpusPlayer::DecodeFrame method, which aligns with the commit message about fixing stream types. This indicates a logic error introduced by the code change. The branch is not protected, but the failure is significant enough to block deployment until fixed.",
+      "evidence": [
+        "COMMIT.message",
+        "LOG EVIDENCE: Assertion `fpp == int(enc_frame.enc_frame_sizes.size())' failed",
+        "LOG EVIDENCE: Process completed with exit code 2"
+      ],
+      "unknowns": [
+        "Exact nature of the assertion failure",
+        "Impact on other parts of the system"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "PR_MERGED",
+      "method": "pr_state",
+      "reasoning": "PR #2027 ('Fix all stream types being enabled when all should be disabled') was merged on 2023-09-18T17:45:01Z.",
+      "match_verdict": "PARTIAL",
+      "judge_reasoning": "The AI recommended blocking deployment due to a suspected code regression, which aligns with the severity of the failure and the commit message. However, the developer merged the PR despite the failure, suggesting they either fixed the issue in a separate commit or deemed it non-blocking. This ambiguity means the AI's recommendation was partially aligned but missed the developer's nuanced decision-making."
+    }
+  },
+  {
+    "case_label": "cysharp/zlogger — wip",
+    "intake": {
+      "run_id": "cysharp/zlogger_.github/workflows/build-debug.yml_123_1",
+      "repo": "cysharp/zlogger",
+      "workflow": "build-debug.yml",
+      "branch": "hadashiA/formatter-abstraction",
+      "event": "pull_request",
+      "is_protected_branch": false,
+      "commit_sha": "28c38b53a661",
+      "commit_title": "wip",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 2,
+      "n_jobs": 2,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 2,
+      "strategies": [
+        "group_fallback",
+        "error_marker"
+      ],
+      "total_lines_extracted": 209,
+      "error_markers_found": 7,
+      "sample_error_lines": [
+        "##[error]/home/runner/work/ZLogger/ZLogger/src/ZLogger/Entries/StringFormatterEntry.cs(10,49): error CS0535: 'StringForm",
+        "3 Error(s)",
+        "##[error]Process completed with exit code 1."
+      ]
+    },
+    "classification": {
+      "category": "CODE_REGRESSION",
+      "severity": "MODERATE",
+      "confidence": 0.95,
+      "action": "BLOCK_DEPLOY",
+      "reasoning": "The failure is due to a code regression where 'StringFormatterEntry<TState>' does not implement the required interface member 'IZLoggerEntry.FormatUtf8(IZLoggerFormatter, ZLoggerOptions)'. This is evident from the error messages in the log. The commit message 'wip' suggests this is a work-in-progress change, which aligns with the introduction of a regression.",
+      "evidence": [
+        "LOG EVIDENCE: error CS0535: 'StringFormatterEntry<TState>' does not implement interface member 'IZLoggerEntry.FormatUtf8(IZLoggerFormatter, ZLoggerOptions)'",
+        "COMMIT: title: wip",
+        "OUTCOME: conclusion: failure"
+      ],
+      "unknowns": [
+        "Specific details of the interface 'IZLoggerEntry' and its requirements",
+        "Whether this failure affects all target frameworks equally"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "PR_MERGED",
+      "method": "pr_state",
+      "reasoning": "PR #76 ('Make log format abstraction') was merged on 2023-10-06T01:34:11Z.",
+      "match_verdict": "PARTIAL",
+      "judge_reasoning": "The AI correctly identified a code regression and recommended blocking deployment, which aligns with the severity of the error. However, the developer merged the PR despite the failure, suggesting they either fixed the issue in a separate commit or deemed it non-blocking, which introduces ambiguity in evaluating the AI's recommendation."
+    }
+  },
+  {
+    "case_label": "gnosis/safe-contracts — Revert removal of an unused parameters in checkSignatures",
+    "intake": {
+      "run_id": "gnosis/safe-contracts_.github/workflows/certora.yml_274_1",
+      "repo": "gnosis/safe-contracts",
+      "workflow": "certora.yml",
+      "branch": "feat/external-contract-signature",
+      "event": "pull_request",
+      "is_protected_branch": false,
+      "commit_sha": "07de95b4d81f",
+      "commit_title": "Revert removal of an unused parameters in checkSignatures",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 4,
+      "n_jobs": 4,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 4,
+      "strategies": [
+        "error_marker",
+        "error_marker",
+        "error_marker",
+        "error_marker"
+      ],
+      "total_lines_extracted": 624,
+      "error_markers_found": 4,
+      "sample_error_lines": [
+        "##[error]The operation was canceled.",
+        "##[error]Process completed with exit code 2.",
+        "Hunk #3 FAILED at 364.",
+        "1 out of 3 hunks FAILED -- saving rejects to file Safe.sol.rej",
+        "make: *** [Makefile:16: munged] Error 1"
+      ]
+    },
+    "classification": {
+      "category": "CASCADE_FAILURE",
+      "severity": "MODERATE",
+      "confidence": 0.95,
+      "action": "RETRY",
+      "reasoning": "The logs indicate that three of the four failed jobs were canceled ('The operation was canceled'), suggesting they were aborted due to a failure in the fourth job. The fourth job (verifySignatures.sh) failed with a patch application error ('Hunk #3 FAILED at 364'), which appears to be the root cause. This is a feature branch, so severity is moderate.",
+      "evidence": [
+        "step [1] 1_verify (verifyOwners.sh).txt: '##[error]The operation was canceled.'",
+        "step [2] 3_verify (verifyModules.sh).txt: '##[error]The operation was canceled.'",
+        "step [4] 2_verify (verifySafe.sh).txt: '##[error]The operation was canceled.'",
+        "step [3] 4_verify (verifySignatures.sh).txt: 'Hunk #3 FAILED at 364'"
+      ],
+      "unknowns": [
+        "Why the patch application failed in verifySignatures.sh",
+        "Whether this is a recurring issue or a one-time fluke"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "UNKNOWN",
+      "method": "none",
+      "reasoning": "Branch deleted, no PR found by SHA or branch name, no successful re-run detected.",
+      "match_verdict": "NOT_SCORABLE",
+      "judge_reasoning": "The developer's action is UNKNOWN, as the branch was deleted and no PR or successful re-run was detected. Without knowing whether the developer retried, ignored, or addressed the failure in another way, it is impossible to judge whether the AI's recommendation was reasonable or aligned with the developer's actions."
+    }
+  },
+  {
+    "case_label": "ferraridamiano/converternow — Bump msix from 3.16.1 to 3.16.3",
+    "intake": {
+      "run_id": "ferraridamiano/converternow_.github/workflows/tests.yml_638_1",
+      "repo": "ferraridamiano/converternow",
+      "workflow": "tests.yml",
+      "branch": "dependabot/pub/msix-3.16.3",
+      "event": "pull_request",
+      "is_protected_branch": false,
+      "commit_sha": "70eb0d62bc14",
+      "commit_title": "Bump msix from 3.16.1 to 3.16.3",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 2,
+      "n_jobs": 2,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 2,
+      "strategies": [
+        "error_marker",
+        "group_fallback"
+      ],
+      "total_lines_extracted": 196,
+      "error_markers_found": 2,
+      "sample_error_lines": [
+        "##[error]7 tests passed, 1 failed.",
+        "##[error]Process completed with exit code 1."
+      ]
+    },
+    "classification": {
+      "category": "DEPENDENCY_CONFLICT",
+      "severity": "MODERATE",
+      "confidence": 0.85,
+      "action": "HOTFIX_REQUIRED",
+      "reasoning": "The failure occurred in a pull request from dependabot updating the 'msix' package from 3.16.1 to 3.16.3. The integration test failed with a TestFailure, indicating a potential incompatibility introduced by the dependency update. Since this is a feature branch and not a protected branch, the severity is moderate.",
+      "evidence": [
+        "COMMIT.title",
+        "COMMIT.message",
+        "LOG EVIDENCE.step [1] 1_Integration testing.txt"
+      ],
+      "unknowns": [
+        "Detailed changelog of msix 3.16.3",
+        "Specific integration test expectations"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "PR_CLOSED_UNMERGED",
+      "method": "pr_state",
+      "reasoning": "PR #249 ('Bump msix from 3.16.1 to 3.16.3') was closed without merging on 2023-10-02T21:32:19Z. Developer rejected the change.",
+      "match_verdict": "PARTIAL",
+      "judge_reasoning": "The AI correctly identified the failure as related to a dependency update ('DEPENDENCY_CONFLICT') and suggested a 'HOTFIX_REQUIRED', which aligns with the developer's decision to close the PR without merging. However, the AI's severity assessment ('MODERATE') might not fully capture the developer's judgment that the issue warranted rejecting the change entirely, suggesting a more critical view of the conflict."
+    }
+  },
+  {
+    "case_label": "material-foundation/google-fonts-flutter — Bump actions/labeler from 4.0.4 to 4.3.0 (#445)",
+    "intake": {
+      "run_id": "material-foundation/google-fonts-flutter_dynamic/github-code-scanning/codeql_2_1",
+      "repo": "material-foundation/google-fonts-flutter",
+      "workflow": "codeql",
+      "branch": "main",
+      "event": "dynamic",
+      "is_protected_branch": true,
+      "commit_sha": "76e9f094d246",
+      "commit_title": "Bump actions/labeler from 4.0.4 to 4.3.0 (#445)",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 1,
+      "n_jobs": 1,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 1,
+      "strategies": [
+        "error_marker"
+      ],
+      "total_lines_extracted": 156,
+      "error_markers_found": 1,
+      "sample_error_lines": [
+        "##[error]Encountered a fatal error while running \"/opt/hostedtoolcache/CodeQL/2.14.1/x64/codeql/codeql database finalize",
+        "##[error]Encountered a fatal error while running \"/opt/hostedtoolcache/CodeQL/2.14.1/x64/codeql/codeql database finalize",
+        "[command]/opt/hostedtoolcache/CodeQL/2.14.1/x64/codeql/codeql database export-diagnostics /home/runner/work/_temp/codeql"
+      ]
+    },
+    "classification": {
+      "category": "CONFIG_ERROR",
+      "severity": "HIGH",
+      "confidence": 0.9,
+      "action": "HOTFIX_REQUIRED",
+      "reasoning": "The failure occurred because CodeQL detected code in C/C++, YAML, Swift, and Java but not Ruby, despite the workflow being configured to analyze Ruby. This suggests a misconfiguration in the workflow or repository setup. The protected branch 'main' raises the severity.",
+      "evidence": [
+        "LOG EVIDENCE: CodeQL detected code written in C/C++, YAML, Swift and Java, but not any written in Ruby.",
+        "branch: main",
+        "protected: True"
+      ],
+      "unknowns": [
+        "Why the workflow was configured to analyze Ruby when no Ruby code was detected."
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "NO_IMMEDIATE_RESPONSE",
+      "method": "rubric",
+      "reasoning": "Follow-up commits exist but none are within 7 days of the failure. Developer likely retried or ignored the failure without a code change.",
+      "match_verdict": "PARTIAL",
+      "judge_reasoning": "The AI correctly identified a CONFIG_ERROR with HIGH severity, which aligns with the fatal error in the logs. However, the developer's NO_IMMEDIATE_RESPONSE action suggests the issue may not have been as urgent as the AI implied, or the developer chose to retry without a code change. This ambiguity makes the alignment partial rather than a full match."
+    }
+  },
+  {
+    "case_label": "cert-polska/drakvuf-sandbox — Check also returncode 2",
+    "intake": {
+      "run_id": "cert-polska/drakvuf-sandbox_.github/workflows/build.yml_147_1",
+      "repo": "cert-polska/drakvuf-sandbox",
+      "workflow": "build.yml",
+      "branch": "refactor/draklib",
+      "event": "pull_request",
+      "is_protected_branch": false,
+      "commit_sha": "a8253f86b32f",
+      "commit_title": "Check also returncode 2",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 6,
+      "n_jobs": 6,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 6,
+      "strategies": [
+        "group_fallback",
+        "group_fallback",
+        "group_fallback",
+        "group_fallback",
+        "group_fallback",
+        "error_marker"
+      ],
+      "total_lines_extracted": 354,
+      "error_markers_found": 1,
+      "sample_error_lines": [
+        "##[error]Process completed with exit code 1."
+      ]
+    },
+    "classification": {
+      "category": "CODE_REGRESSION",
+      "severity": "MODERATE",
+      "confidence": 0.9,
+      "action": "BLOCK_DEPLOY",
+      "reasoning": "The commit message 'Check also returncode 2' suggests a code change that may have introduced a regression. The log evidence shows that the 'black --check --diff drakrun/' step failed because a file would be reformatted, indicating a code style issue that was not caught before the commit. This is a feature branch, so the severity is moderate.",
+      "evidence": [
+        "commit.message",
+        "step[6].log_evidence"
+      ],
+      "unknowns": [
+        "specific code change details",
+        "impact of the reformatting on functionality"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "PR_CLOSED_UNMERGED",
+      "method": "pr_state",
+      "reasoning": "PR #824 ('draklib/draksh: refactored replacement for Drakvuf utilities and draksetup') was closed without merging on 2024-03-28T14:05:16Z. Developer rejected the change.",
+      "match_verdict": "PARTIAL",
+      "judge_reasoning": "The AI's recommendation to BLOCK_DEPLOY due to a suspected CODE_REGRESSION aligns somewhat with the developer's action of closing the PR without merging, as both suggest a rejection of the change. However, the AI focused on a code style issue, while the developer's decision might have been based on broader concerns about the refactoring effort, indicating the AI missed some nuance."
+    }
+  },
+  {
+    "case_label": "eldavoo/wa-crypt-tools — Merge pull request #83 from ElDavoo/dependabot/github_action",
+    "intake": {
+      "run_id": "eldavoo/wa-crypt-tools_.github/workflows/lint-test.yml_42_1",
+      "repo": "eldavoo/wa-crypt-tools",
+      "workflow": "lint-test.yml",
+      "branch": "main",
+      "event": "push",
+      "is_protected_branch": true,
+      "commit_sha": "8b518a8e9268",
+      "commit_title": "Merge pull request #83 from ElDavoo/dependabot/github_actions/actions/checkout-4",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 4,
+      "n_jobs": 4,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 4,
+      "strategies": [
+        "error_marker",
+        "error_marker",
+        "error_marker",
+        "error_marker"
+      ],
+      "total_lines_extracted": 624,
+      "error_markers_found": 4,
+      "sample_error_lines": [
+        "##[error]Process completed with exit code 1.",
+        "FAILED tests/test_waencrypt.py::Test_Encryption::test_encryption14 - FileNotFoundError: [Errno 2] No such file or direct",
+        "FAILED tests/test_waencrypt.py::Test_Encryption::test_encryption14_noexpiry - FileNotFoundError: [Errno 2] No such file ",
+        "FAILED tests/test_waencrypt.py::Test_Encryption::test_encryption12 - FileNotFoundError: [Errno 2] No such file or direct",
+        "========================= 4 failed, 2 passed in 0.33s =========================="
+      ]
+    },
+    "classification": {
+      "category": "CONFIG_ERROR",
+      "severity": "HIGH",
+      "confidence": 0.95,
+      "action": "HOTFIX_REQUIRED",
+      "reasoning": "The failure is due to missing resource files ('res/msgstore.db' and 'res/encrypted_backup.key') required by the tests. This is a configuration issue as the necessary test resources are not present in the repository. The failure occurs across all Python versions tested, indicating a systemic problem rather than a transient issue.",
+      "evidence": [
+        "FileNotFoundError: [Errno 2] No such file or directory: 'res/msgstore.db'",
+        "The key file specified does not exist",
+        "failure across all Python versions"
+      ],
+      "unknowns": [
+        "Why the required resource files are missing",
+        "Whether this is a new test suite or if the files were accidentally removed"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "PIN_VERSION",
+      "method": "rubric",
+      "reasoning": "Developer pinned dependencies. Files: requirements.txt",
+      "match_verdict": "MISMATCH",
+      "judge_reasoning": "The AI recommended a HOTFIX_REQUIRED due to missing resource files, indicating a configuration error. However, the developer pinned dependencies in requirements.txt, which addresses a different issue entirely. The developer's action does not align with the AI's recommendation, suggesting the AI missed the actual cause of the failure."
+    }
+  },
+  {
+    "case_label": "antfu/vite-plugin-components — Merge branch 'main' into Amber-372-patch-1",
+    "intake": {
+      "run_id": "antfu/vite-plugin-components_.github/workflows/ci.yml_411_2",
+      "repo": "antfu/vite-plugin-components",
+      "workflow": "ci.yml",
+      "branch": "Amber-372-patch-1",
+      "event": "pull_request",
+      "is_protected_branch": false,
+      "commit_sha": "14aa6d17a2a9",
+      "commit_title": "Merge branch 'main' into Amber-372-patch-1",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 7,
+      "n_jobs": 7,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 7,
+      "strategies": [
+        "error_marker",
+        "error_marker",
+        "error_marker",
+        "error_marker",
+        "error_marker",
+        "error_marker",
+        "error_marker"
+      ],
+      "total_lines_extracted": 1099,
+      "error_markers_found": 9,
+      "sample_error_lines": [
+        "##[error]Process completed with exit code 1.",
+        "ELIFECYCLE  Test failed. See above for more details.",
+        "##[error]  10:1   error  Trailing spaces not allowed                                                                no-t",
+        "##[error]  11:46  error  Unexpected parentheses around single function argument having a body with no curly braces  arro",
+        "✖ 2 problems (2 errors, 0 warnings)"
+      ]
+    },
+    "classification": {
+      "category": "CODE_REGRESSION",
+      "severity": "MODERATE",
+      "confidence": 0.9,
+      "action": "BLOCK_DEPLOY",
+      "reasoning": "The log evidence shows consistent snapshot mismatches across multiple test jobs, indicating a regression in the codebase. The failures are not transient and occur across different environments (macOS, Ubuntu, Windows), suggesting a genuine issue introduced by the merge commit.",
+      "evidence": [
+        "FAIL test/search.test.ts > search > should with namespace & collapse",
+        "Error: Snapshot `search > should with namespace & collapse 1` mismatched",
+        "FAIL test/search.test.ts > search > should globs exclude work",
+        "AssertionError: expected [ Array(6) ] to not deeply equal ArrayContaining{ …(3) }"
+      ],
+      "unknowns": [
+        "Specific changes in the merge commit that caused the regression",
+        "Whether the snapshot tests need to be updated or if the code behavior changed"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "PR_MERGED",
+      "method": "pr_state",
+      "reasoning": "PR #677 ('feat: add support for path with brackets ()') was merged on 2023-09-14T02:03:06Z.",
+      "match_verdict": "MISMATCH",
+      "judge_reasoning": "The AI recommended BLOCK_DEPLOY due to consistent snapshot mismatches across multiple test jobs, suggesting a code regression. However, the developer merged the PR despite the failure, indicating they either judged the issue as non-blocking or resolved it separately. This action directly contradicts the AI's recommendation, suggesting the AI's assessment was incorrect or overly cautious."
+    }
+  },
+  {
+    "case_label": "microsoft/botframework-composer — Bump electron in /Composer/packages/electron-server",
+    "intake": {
+      "run_id": "microsoft/botframework-composer_.github/workflows/docker.yml_10944_1",
+      "repo": "microsoft/botframework-composer",
+      "workflow": "docker.yml",
+      "branch": "dependabot/npm_and_yarn/Composer/packages/electron-server/electron-22.3.21",
+      "event": "pull_request",
+      "is_protected_branch": false,
+      "commit_sha": "32207f25c1ba",
+      "commit_title": "Bump electron in /Composer/packages/electron-server",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 1,
+      "n_jobs": 1,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 1,
+      "strategies": [
+        "error_marker"
+      ],
+      "total_lines_extracted": 167,
+      "error_markers_found": 2,
+      "sample_error_lines": [
+        "##[error]buildx failed with: ERROR: failed to solve: process \"/bin/sh -c yarn install --immutable $YARN_ARGS\" did not co",
+        "##[error]Process completed with exit code 1."
+      ]
+    },
+    "classification": {
+      "category": "DEPENDENCY_CONFLICT",
+      "severity": "MODERATE",
+      "confidence": 0.9,
+      "action": "HOTFIX_REQUIRED",
+      "reasoning": "The failure occurred during a dependency installation step (`yarn install --immutable`), and the log explicitly states that the lockfile would have been modified, which is forbidden. This suggests a version conflict or incompatibility introduced by the electron version bump from 14.2.6 to 22.3.21. Since this is a feature branch (dependabot/npm_and_yarn/Composer/packages/electron-server/electron-22.3.21) and not a protected branch, the severity is moderate.",
+      "evidence": [
+        "COMMIT.title",
+        "COMMIT.message",
+        "LOG EVIDENCE: 'The lockfile would have been modified by this install, which is explicitly forbidden.'",
+        "LOG EVIDENCE: 'Failed with errors in 2s 702ms'"
+      ],
+      "unknowns": [
+        "Exact dependency conflict details",
+        "Whether other dependencies are incompatible with electron 22.3.21"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "PR_CLOSED_UNMERGED",
+      "method": "pr_state",
+      "reasoning": "PR #9636 ('Bump electron from 14.2.6 to 22.3.21 in /Composer/packages/electron-server') was closed without merging on 2023-10-05T18:06:14Z. Developer rejected the change.",
+      "match_verdict": "PARTIAL",
+      "judge_reasoning": "The AI correctly identified the issue as a dependency conflict and recommended a hotfix, which aligns with the severity of the problem. However, the developer chose to close the PR without merging, indicating they rejected the change entirely rather than attempting a hotfix. This suggests the AI's recommendation, while reasonable, did not fully capture the developer's intent to discard the change rather than resolve the conflict."
+    }
+  },
+  {
+    "case_label": "soketi/pws — Bump the typescript group with 15 updates",
+    "intake": {
+      "run_id": "soketi/pws_.github/workflows/docker-commit.yml_1301_1",
+      "repo": "soketi/pws",
+      "workflow": "docker-commit.yml",
+      "branch": "dependabot/npm_and_yarn/typescript-0e1d108837",
+      "event": "pull_request",
+      "is_protected_branch": false,
+      "commit_sha": "d3ad56241d3e",
+      "commit_title": "Bump the typescript group with 15 updates",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 3,
+      "n_jobs": 3,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 3,
+      "strategies": [
+        "error_marker",
+        "group_fallback",
+        "error_marker"
+      ],
+      "total_lines_extracted": 837,
+      "error_markers_found": 2,
+      "sample_error_lines": [
+        "##[error]buildx failed with: ERROR: failed to solve: process \"/bin/sh -c apt-get update -y ;     apt-get upgrade -y ;   ",
+        "ERROR: failed to solve: process \"/bin/sh -c apt-get update -y ;     apt-get upgrade -y ;     apt-get install -y git pyth",
+        "##[error]buildx failed with: ERROR: failed to solve: process \"/bin/sh -c apt-get update -y ;     apt-get upgrade -y ;   ",
+        "##[error]buildx failed with: ERROR: failed to solve: process \"/bin/sh -c apk add --no-cache --update git python3 gcompat",
+        "ERROR: failed to solve: process \"/bin/sh -c apk add --no-cache --update git python3 gcompat ;     apk add --virtual buil"
+      ]
+    },
+    "classification": {
+      "category": "DEPENDENCY_CONFLICT",
+      "severity": "MODERATE",
+      "confidence": 0.95,
+      "action": "HOTFIX_REQUIRED",
+      "reasoning": "The failure is caused by a dependency conflict between ts-jest@29.1.1 and jest@26.6.3, as indicated by the npm ERR! ERESOLVE error. This is a direct result of the dependency updates in the commit, which bumped ts-jest to a version incompatible with the existing jest version. The failure is consistent across multiple jobs, indicating a systemic issue.",
+      "evidence": [
+        "LOG EVIDENCE: npm ERR! ERESOLVE could not resolve",
+        "LOG EVIDENCE: peer jest@\"^29.0.0\" from ts-jest@29.1.1",
+        "COMMIT: Bump the typescript group with 15 updates"
+      ],
+      "unknowns": [
+        "Whether jest can be safely updated to a compatible version",
+        "Whether other dependencies are affected by the ts-jest update"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "PR_CLOSED_UNMERGED",
+      "method": "pr_state",
+      "reasoning": "PR #979 ('Bump the typescript group with 15 updates') was closed without merging on 2023-10-02T09:54:27Z. Developer rejected the change.",
+      "match_verdict": "MISMATCH",
+      "judge_reasoning": "The AI recommended a HOTFIX_REQUIRED due to a dependency conflict, but the developer closed the PR without merging, indicating they rejected the change entirely. This suggests the AI's diagnosis of a dependency conflict was incorrect or misaligned with the developer's judgment, as the developer chose not to address the issue but rather to discard the update."
+    }
+  },
+  {
+    "case_label": "gorse-io/gorse — debug",
+    "intake": {
+      "run_id": "gorse-io/gorse_.github/workflows/build_test.yml_1216_2",
+      "repo": "gorse-io/gorse",
+      "workflow": "build_test.yml",
+      "branch": "shiucf",
+      "event": "pull_request",
+      "is_protected_branch": false,
+      "commit_sha": "eeb1d75add0d",
+      "commit_title": "debug",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 6,
+      "n_jobs": 6,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 6,
+      "strategies": [
+        "group_fallback",
+        "error_marker",
+        "error_marker",
+        "error_marker",
+        "error_marker",
+        "error_marker"
+      ],
+      "total_lines_extracted": 965,
+      "error_markers_found": 6,
+      "sample_error_lines": [
+        "##[error]ineffectual assignment to err (ineffassign)",
+        "##[error]issues found",
+        "##[error]The operation was canceled.",
+        "##[error]Process completed with exit code 1.",
+        "##[error]Error: The process '/usr/bin/curl' failed with exit code 56"
+      ]
+    },
+    "classification": {
+      "category": "CASCADE_FAILURE",
+      "severity": "MODERATE",
+      "confidence": 0.85,
+      "action": "RETRY",
+      "reasoning": "The logs show multiple steps failing with 'The operation was canceled', indicating a cascade failure likely triggered by an earlier issue. The unit tests passed, suggesting the root cause might be transient. Retrying the workflow could resolve the issue.",
+      "evidence": [
+        "FAILED STEPS",
+        "LOG EVIDENCE: step [3] 1_integrate tests (mysql).txt",
+        "LOG EVIDENCE: step [4] 2_integrate tests (postgres).txt",
+        "LOG EVIDENCE: step [6] 3_integrate tests (mongo).txt"
+      ],
+      "unknowns": [
+        "Root cause of the initial failure triggering the cascade",
+        "Detailed logs from the first failing step"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "UNKNOWN",
+      "method": "none",
+      "reasoning": "Branch deleted, no PR found by SHA or branch name, no successful re-run detected.",
+      "match_verdict": "NOT_SCORABLE",
+      "judge_reasoning": "The developer's action is UNKNOWN, as the branch was deleted and no PR or successful re-run was detected. Without knowing whether the developer retried, ignored, or addressed the issue in another way, it is impossible to judge whether the AI's recommendation was aligned with their actions."
+    }
+  },
+  {
+    "case_label": "mkb79/audible — Create FUNDING.yml",
+    "intake": {
+      "run_id": "mkb79/audible_.github/workflows/release.yml_76_1",
+      "repo": "mkb79/audible",
+      "workflow": "release.yml",
+      "branch": "master",
+      "event": "push",
+      "is_protected_branch": true,
+      "commit_sha": "6a0d89b3927b",
+      "commit_title": "Create FUNDING.yml",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 1,
+      "n_jobs": 1,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 1,
+      "strategies": [
+        "group_fallback"
+      ],
+      "total_lines_extracted": 42,
+      "error_markers_found": 0,
+      "sample_error_lines": []
+    },
+    "classification": {
+      "category": "TOOLING_ARTIFACT",
+      "severity": "LOW",
+      "confidence": 0.9,
+      "action": "IGNORE_INFRA_BUG",
+      "reasoning": "The log evidence shows no substantive error related to the commit or the workflow. The '##[error] markers: 0' indicates no real failure occurred. The workflow appears to have completed its tasks without issues, suggesting this is a tooling artifact rather than a genuine failure.",
+      "evidence": [
+        "LOG EVIDENCE: ##[error] markers: 0",
+        "LOG EVIDENCE: No draft release found",
+        "LOG EVIDENCE: Creating new release"
+      ],
+      "unknowns": [
+        "Why the workflow concluded as a failure despite no substantive errors"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "NO_IMMEDIATE_RESPONSE",
+      "method": "rubric",
+      "reasoning": "Follow-up commits exist but none are within 7 days of the failure. Developer likely retried or ignored the failure without a code change.",
+      "match_verdict": "PARTIAL",
+      "judge_reasoning": "The AI's recommendation to IGNORE_INFRA_BUG aligns with the developer's NO_IMMEDIATE_RESPONSE, suggesting the developer also perceived the failure as non-critical. However, the AI's reasoning focuses on the absence of error markers, while the developer's inaction could also imply a retry or low-priority handling, introducing ambiguity in alignment."
+    }
+  },
+  {
+    "case_label": "deeptest-com/deeptest — Update makefile.yml",
+    "intake": {
+      "run_id": "deeptest-com/deeptest_.github/workflows/makefile.yml_56_1",
+      "repo": "deeptest-com/deeptest",
+      "workflow": "makefile.yml",
+      "branch": "main",
+      "event": "workflow_dispatch",
+      "is_protected_branch": true,
+      "commit_sha": "6ed20f1e98d5",
+      "commit_title": "Update makefile.yml",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 1,
+      "n_jobs": 1,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 1,
+      "strategies": [
+        "error_marker"
+      ],
+      "total_lines_extracted": 152,
+      "error_markers_found": 1,
+      "sample_error_lines": [
+        "##[error]Process completed with exit code 2.",
+        "error Command failed with exit code 137.",
+        "make: *** [Makefile:57: compile_ui_demo] Error 137"
+      ]
+    },
+    "classification": {
+      "category": "ENV_FLAKINESS",
+      "severity": "HIGH",
+      "confidence": 0.85,
+      "action": "RETRY",
+      "reasoning": "The failure occurred during the UI compilation step with exit code 137, which typically indicates an out-of-memory (OOM) error. This is likely due to a transient resource issue on the runner, especially given the long duration of the step (1501.698215s). The protected branch (main) raises the severity, but the nature of the error suggests a retry could succeed.",
+      "evidence": [
+        "FAILED STEPS",
+        "LOG EVIDENCE",
+        "branch: main",
+        "protected: True"
+      ],
+      "unknowns": [
+        "Runner resource limits",
+        "Runner memory usage at the time of failure"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "UNKNOWN",
+      "method": "none",
+      "reasoning": "",
+      "match_verdict": "NOT_SCORABLE",
+      "judge_reasoning": "The developer's action is marked as UNKNOWN, meaning there is no information about whether they retried, ignored, or addressed the failure. Without knowing what the developer did, it is impossible to judge whether the AI's recommendation was aligned or not."
+    }
+  },
+  {
+    "case_label": "papermc/paperweight — setup server project dependencies",
+    "intake": {
+      "run_id": "papermc/paperweight_.github/workflows/test.yml_721_1",
+      "repo": "papermc/paperweight",
+      "workflow": "test.yml",
+      "branch": "softspoon-v2",
+      "event": "push",
+      "is_protected_branch": false,
+      "commit_sha": "17ba6dcfa460",
+      "commit_title": "setup server project dependencies",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 1,
+      "n_jobs": 1,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 1,
+      "strategies": [
+        "error_marker"
+      ],
+      "total_lines_extracted": 156,
+      "error_markers_found": 1,
+      "sample_error_lines": [
+        "##[error]Process completed with exit code 1.",
+        "BUILD FAILED in 3m 37s"
+      ]
+    },
+    "classification": {
+      "category": "CODE_REGRESSION",
+      "severity": "MODERATE",
+      "confidence": 0.85,
+      "action": "BLOCK_DEPLOY",
+      "reasoning": "The commit message indicates changes to server project dependencies, and the build failed with a Gradle execution error. The log shows a substantive build failure ('BUILD FAILED in 3m 37s') rather than a transient issue or cascade failure. This suggests the dependency changes introduced a regression.",
+      "evidence": [
+        "commit.message",
+        "log.BUILD FAILED in 3m 37s",
+        "log.Process completed with exit code 1"
+      ],
+      "unknowns": [
+        "specific Gradle error message",
+        "which dependency caused the failure"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "PR_CLOSED_UNMERGED",
+      "method": "pr_state",
+      "reasoning": "PR #231 ('Softspoon') was closed without merging on 2024-12-13T21:02:50Z. Developer rejected the change.",
+      "match_verdict": "MATCH",
+      "judge_reasoning": "The AI's recommendation to block the deploy due to a suspected code regression aligns well with the developer's action of closing the PR without merging. Both actions indicate a recognition that the changes introduced a significant issue, likely related to the dependency changes, and that proceeding with the changes was not advisable."
+    }
+  },
+  {
+    "case_label": "tj/connect-redis — fix(readme): replace redisClient error handler",
+    "intake": {
+      "run_id": "tj/connect-redis_.github/workflows/build.yml_94_2",
+      "repo": "tj/connect-redis",
+      "workflow": "build.yml",
+      "branch": "fix/callback-redis-error",
+      "event": "pull_request",
+      "is_protected_branch": false,
+      "commit_sha": "ebc1e2d8b81d",
+      "commit_title": "fix(readme): replace redisClient error handler",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 2,
+      "n_jobs": 2,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 2,
+      "strategies": [
+        "error_marker",
+        "error_marker"
+      ],
+      "total_lines_extracted": 312,
+      "error_markers_found": 2,
+      "sample_error_lines": [
+        "##[error]Process completed with exit code 1.",
+        "##[error]The operation was canceled."
+      ]
+    },
+    "classification": {
+      "category": "CASCADE_FAILURE",
+      "severity": "LOW",
+      "confidence": 0.95,
+      "action": "RETRY",
+      "reasoning": "The first job failed due to a formatting issue in the README file, while the second job was canceled because of the first job's failure. This is a cascade failure, not a root cause. The branch is not protected, and the issue is isolated to formatting.",
+      "evidence": [
+        "FAILED STEPS",
+        "LOG EVIDENCE",
+        "branch: fix/callback-redis-error",
+        "protected: False"
+      ],
+      "unknowns": [
+        "Why the formatting check failed specifically"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "UNKNOWN",
+      "method": "none",
+      "reasoning": "Branch deleted, no PR found by SHA or branch name, no successful re-run detected.",
+      "match_verdict": "NOT_SCORABLE",
+      "judge_reasoning": "The developer's action is UNKNOWN, as the branch was deleted, and no PR or successful re-run was detected. Without knowing what the developer actually did, it is impossible to judge whether the AI's recommendation was reasonable or aligned with their actions."
+    }
+  },
+  {
+    "case_label": "ngrok/ngrok-rs — add test for forwarding proxy proto plus tls",
+    "intake": {
+      "run_id": "ngrok/ngrok-rs_.github/workflows/ci.yml_453_1",
+      "repo": "ngrok/ngrok-rs",
+      "workflow": "ci.yml",
+      "branch": "josh/forward-proxy-proto",
+      "event": "pull_request",
+      "is_protected_branch": false,
+      "commit_sha": "3f7b5ddb6b78",
+      "commit_title": "add test for forwarding proxy proto plus tls",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 8,
+      "n_jobs": 8,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 8,
+      "strategies": [
+        "group_fallback",
+        "group_fallback",
+        "error_marker",
+        "group_fallback",
+        "group_fallback",
+        "error_marker",
+        "group_fallback",
+        "error_marker"
+      ],
+      "total_lines_extracted": 1953,
+      "error_markers_found": 3,
+      "sample_error_lines": [
+        "##[error]The process '/home/runner/.cargo/bin/cargo' failed with exit code 101",
+        "test result: FAILED. 31 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 12.81s",
+        "error: test failed, to rerun pass `-p ngrok --lib`",
+        "##[error]The process 'C:\\Users\\runneradmin\\.cargo\\bin\\cargo.exe' failed with exit code 101",
+        "test result: FAILED. 8 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.21s"
+      ]
+    },
+    "classification": {
+      "category": "CODE_REGRESSION",
+      "severity": "MODERATE",
+      "confidence": 0.95,
+      "action": "BLOCK_DEPLOY",
+      "reasoning": "The failure is caused by a test panic in the 'proxy_proto::test::test_noheader' test, which explicitly panics at line 433 in the proxy_proto.rs file. This indicates a code regression introduced by the commit that added tests for forwarding proxy protocol plus TLS. The failure is consistent across multiple platforms (Linux, Windows, Nix), confirming it's not environment-specific.",
+      "evidence": [
+        "LOG EVIDENCE step [3] 1_Test Stable.txt",
+        "LOG EVIDENCE step [6] 1_Test Windows Stable.txt",
+        "LOG EVIDENCE step [8] 1_Test Nix.txt"
+      ],
+      "unknowns": [
+        "Full context of the panic in proxy_proto.rs",
+        "Impact of the regression on production functionality"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "PR_MERGED",
+      "method": "pr_state",
+      "reasoning": "PR #112 ('Forward proxy-protocol correctly to tls backends') was merged on 2023-10-03T21:23:53Z.",
+      "match_verdict": "MISMATCH",
+      "judge_reasoning": "The AI recommended BLOCK_DEPLOY due to a code regression indicated by a test panic, which suggests a significant issue. However, the developer merged the PR despite the failure, implying they either fixed the issue separately or deemed it non-blocking. This action directly contradicts the AI's recommendation, indicating the AI's assessment was overly cautious or incorrect in this context."
+    }
+  },
+  {
+    "case_label": "netflix/photon — Generating non Base-64-encoded hashes for CPL files in IMPBu",
+    "intake": {
+      "run_id": "netflix/photon_.github/workflows/update-gradle-wrapper.yml_611_1",
+      "repo": "netflix/photon",
+      "workflow": "update-gradle-wrapper.yml",
+      "branch": "master",
+      "event": "schedule",
+      "is_protected_branch": true,
+      "commit_sha": "f2eb0374d5e9",
+      "commit_title": "Generating non Base-64-encoded hashes for CPL files in IMPBuilder (#357)",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 1,
+      "n_jobs": 1,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 1,
+      "strategies": [
+        "error_marker"
+      ],
+      "total_lines_extracted": 156,
+      "error_markers_found": 1,
+      "sample_error_lines": [
+        "##[error]❌ FAILURE: Build failed with an exception."
+      ]
+    },
+    "classification": {
+      "category": "INFRA_INCOMPATIBILITY",
+      "severity": "HIGH",
+      "confidence": 0.95,
+      "action": "PIN_VERSION",
+      "reasoning": "The failure occurred during the Gradle wrapper update to version 8.3, with a specific error indicating incompatibility with the Java plugin configuration. The error message suggests that the project's build configuration is not compatible with Gradle 8.3, likely due to deprecated features or changes in the plugin API. Since this is a protected branch (master), the severity is high.",
+      "evidence": [
+        "FAILURE: Build failed with an exception.",
+        "Failed to apply plugin 'org.gradle.java'.",
+        "No signature of method: static org.gradle.api.plugins.internal.JvmPluginsHelper.configureDocumentationVariantWithArtifact() is applicable for argument types: (String, null, String, EmptyList, String, org.gradle.api.internal.file.DefaultSourceDirectorySet_Decorated...)",
+        "Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0."
+      ],
+      "unknowns": [
+        "Specific deprecated features causing the incompatibility",
+        "Previous Gradle version used in the project"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "NO_IMMEDIATE_RESPONSE",
+      "method": "rubric",
+      "reasoning": "Follow-up commits exist but none are within 7 days of the failure. Developer likely retried or ignored the failure without a code change.",
+      "match_verdict": "PARTIAL",
+      "judge_reasoning": "The AI's recommendation to PIN_VERSION due to INFRA_INCOMPATIBILITY is reasonable given the error message and Gradle version mismatch. However, the developer's NO_IMMEDIATE_RESPONSE action suggests they either retried without changes or ignored the failure, indicating the issue may not have been as severe as the AI judged. The ambiguity in the developer's response prevents a full MATCH."
+    }
+  },
+  {
+    "case_label": "timescale/timescaledb-kubernetes — chore(deps): update curlimages/curl docker tag to v8",
+    "intake": {
+      "run_id": "timescale/timescaledb-kubernetes_.github/workflows/tests.yml_570_1",
+      "repo": "timescale/timescaledb-kubernetes",
+      "workflow": "tests.yml",
+      "branch": "renovate/major-helm-charts",
+      "event": "pull_request",
+      "is_protected_branch": false,
+      "commit_sha": "8e8c3df6b03d",
+      "commit_title": "chore(deps): update curlimages/curl docker tag to v8",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 5,
+      "n_jobs": 5,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 5,
+      "strategies": [
+        "error_marker",
+        "group_fallback",
+        "group_fallback",
+        "group_fallback",
+        "group_fallback"
+      ],
+      "total_lines_extracted": 6195,
+      "error_markers_found": 1,
+      "sample_error_lines": [
+        "##[error]Process completed with exit code 2.",
+        "failed linting charts: failed processing charts",
+        "make: *** [Makefile:16: lint] Error 1"
+      ]
+    },
+    "classification": {
+      "category": "CONFIG_ERROR",
+      "severity": "MODERATE",
+      "confidence": 0.85,
+      "action": "HOTFIX_REQUIRED",
+      "reasoning": "The failure is due to a Kubernetes permission issue where the service account cannot create services, indicated by the 'Forbidden' error. This is a configuration problem rather than a code regression or transient issue. The branch is not protected, and the failure is specific to the Kubernetes setup.",
+      "evidence": [
+        "FAILED STEPS",
+        "LOG EVIDENCE step [4] 2_test (1.24).txt",
+        "LOG EVIDENCE step [5] 1_test (1.23).txt"
+      ],
+      "unknowns": [
+        "Exact Kubernetes RBAC configuration",
+        "Service account permissions"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "NO_IMMEDIATE_RESPONSE",
+      "method": "rubric",
+      "reasoning": "Follow-up commits exist but none are within 7 days of the failure. Developer likely retried or ignored the failure without a code change.",
+      "match_verdict": "PARTIAL",
+      "judge_reasoning": "The AI classified the failure as a CONFIG_ERROR requiring a HOTFIX_REQUIRED, but the developer took NO_IMMEDIATE_RESPONSE, which could imply they either retried without a code change or ignored the issue. Since the branch was not protected and the failure was specific to Kubernetes setup, the AI's reasoning is plausible, but the developer's ambiguous action suggests the AI may have missed nuance in the severity or urgency of the issue."
+    }
+  },
+  {
+    "case_label": "ibm/zshot — :white_check_mark: Updated tests",
+    "intake": {
+      "run_id": "ibm/zshot_.github/workflows/python-tests.yml_228_1",
+      "repo": "ibm/zshot",
+      "workflow": "python-tests.yml",
+      "branch": "feat/data-models-test",
+      "event": "pull_request",
+      "is_protected_branch": false,
+      "commit_sha": "76994974cf05",
+      "commit_title": ":white_check_mark: Updated tests",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 1,
+      "n_jobs": 1,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 1,
+      "strategies": [
+        "error_marker"
+      ],
+      "total_lines_extracted": 156,
+      "error_markers_found": 1,
+      "sample_error_lines": [
+        "##[error]Process completed with exit code 1."
+      ]
+    },
+    "classification": {
+      "category": "CODE_REGRESSION",
+      "severity": "MODERATE",
+      "confidence": 0.9,
+      "action": "BLOCK_DEPLOY",
+      "reasoning": "The log evidence shows multiple flake8 errors in the test files, specifically E721 errors indicating type comparison issues. This aligns with the commit message 'Updated tests', suggesting the tests were modified but introduced regressions. Since this is on a feature branch, severity is MODERATE.",
+      "evidence": [
+        "LOG EVIDENCE: flake8 errors in test_data_models.py",
+        "COMMIT: title 'Updated tests'",
+        "OUTCOME: conclusion failure"
+      ],
+      "unknowns": [
+        "Exact changes made in the commit",
+        "Whether these tests were previously passing"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "PR_MERGED",
+      "method": "pr_state",
+      "reasoning": "PR #68 (':white_check_mark: Improve coverage') was merged on 2023-09-06T11:15:49Z.",
+      "match_verdict": "MISMATCH",
+      "judge_reasoning": "The AI recommended BLOCK_DEPLOY due to CODE_REGRESSION, citing flake8 errors in test files. However, the developer merged the PR despite the failure, indicating they either fixed the issue in a separate commit or deemed it non-blocking. This suggests the AI's recommendation was overly cautious and misaligned with the developer's judgment."
+    }
+  },
+  {
+    "case_label": "tum-pbs/phiflow — Support 3D spheres in Matplotlib",
+    "intake": {
+      "run_id": "tum-pbs/phiflow_.github/workflows/unit-tests.yml_1056_1",
+      "repo": "tum-pbs/phiflow",
+      "workflow": "unit-tests.yml",
+      "branch": "future",
+      "event": "push",
+      "is_protected_branch": false,
+      "commit_sha": "9930b25db739",
+      "commit_title": "Support 3D spheres in Matplotlib",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 3,
+      "n_jobs": 3,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 3,
+      "strategies": [
+        "error_marker",
+        "error_marker",
+        "error_marker"
+      ],
+      "total_lines_extracted": 468,
+      "error_markers_found": 3,
+      "sample_error_lines": [
+        "##[error]Process completed with exit code 1.",
+        "FAILED tests/commit/vis/test__plots.py::TestPlots::test_plot_vector_3d_batched - ValueError: NoneType must implement '__",
+        "FAILED tests/commit/vis/test__plots.py::TestPlots::test_plot_vector_grid_2d - NotImplementedError: <class 'phi.geom._gri",
+        "FAILED tests/commit/vis/test__vis_base.py::TestVisBase::test_tensor_as_field - TypeError: isinstance() arg 2 must be a t",
+        "=========== 98 failed, 88 passed, 4529 warnings in 71.10s (0:01:11) ============"
+      ]
+    },
+    "classification": {
+      "category": "CODE_REGRESSION",
+      "severity": "MODERATE",
+      "confidence": 0.95,
+      "action": "BLOCK_DEPLOY",
+      "reasoning": "The commit introduced changes to support 3D spheres in Matplotlib, and the test failures indicate multiple TypeError and ValueError exceptions related to function arguments and data types. These errors are consistent with a code regression rather than a transient or environmental issue. The branch is not protected, but the widespread test failures suggest a significant issue.",
+      "evidence": [
+        "COMMIT.title",
+        "LOG_EVIDENCE.step[1]",
+        "FAILED_STEPS"
+      ],
+      "unknowns": [
+        "Detailed changes in the commit",
+        "Previous test results for comparison"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "UNKNOWN",
+      "method": "none",
+      "reasoning": "Branch deleted, no PR found by SHA or branch name, no successful re-run detected.",
+      "match_verdict": "NOT_SCORABLE",
+      "judge_reasoning": "The developer's action is UNKNOWN, as the branch was deleted and no further information is available. Without knowing whether the developer retried, ignored, or addressed the issue, it is impossible to judge whether the AI's recommendation to BLOCK_DEPLOY was aligned with the developer's actual decision."
+    }
+  },
+  {
+    "case_label": "maiot-io/zenml — revert the changes done on gh in macos due to failing bug in",
+    "intake": {
+      "run_id": "maiot-io/zenml_.github/workflows/integration-test.yml_70_1",
+      "repo": "maiot-io/zenml",
+      "workflow": "integration-test.yml",
+      "branch": "bugfix/OSS-2371-revert-gh-macos-to-normal-ionstall-colima",
+      "event": "workflow_dispatch",
+      "is_protected_branch": false,
+      "commit_sha": "d0967b61846c",
+      "commit_title": "revert the changes done on gh in macos due to failing bug in colima",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 1,
+      "n_jobs": 1,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 1,
+      "strategies": [
+        "error_marker"
+      ],
+      "total_lines_extracted": 156,
+      "error_markers_found": 1,
+      "sample_error_lines": [
+        "##[error]Process completed with exit code 1.",
+        "Error: invalid option: --reinstall"
+      ]
+    },
+    "classification": {
+      "category": "CONFIG_ERROR",
+      "severity": "MODERATE",
+      "confidence": 0.85,
+      "action": "HOTFIX_REQUIRED",
+      "reasoning": "The log evidence shows an 'invalid option: --reinstall' error, indicating a misconfiguration in the Homebrew command. The commit message mentions reverting changes due to a failing bug in colima, suggesting this is a configuration issue rather than a code regression or transient problem.",
+      "evidence": [
+        "LOG EVIDENCE",
+        "COMMIT"
+      ],
+      "unknowns": [
+        "Exact Homebrew command being executed",
+        "Context of the --reinstall flag usage"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "PR_MERGED",
+      "method": "pr_state",
+      "reasoning": "PR #1779 ('Revert GH changes to fix colima bug in macos gh') was merged on 2023-09-04T10:00:44Z.",
+      "match_verdict": "PARTIAL",
+      "judge_reasoning": "The AI correctly identified the issue as a configuration error (CONFIG_ERROR) and recommended a hotfix (HOTFIX_REQUIRED), which aligns with the developer's action of merging a PR that reverts changes. However, the AI's severity assessment (MODERATE) may not fully capture the developer's urgency, as they merged the PR without immediate retries or further investigation, suggesting the issue might have been more critical than MODERATE implies."
+    }
+  },
+  {
+    "case_label": "esmci/cime — do not set unless assigned",
+    "intake": {
+      "run_id": "esmci/cime_.github/workflows/docs.yml_289_1",
+      "repo": "esmci/cime",
+      "workflow": "docs.yml",
+      "branch": "add_gpu_gust",
+      "event": "pull_request",
+      "is_protected_branch": false,
+      "commit_sha": "8f97110e80c7",
+      "commit_title": "do not set unless assigned",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 1,
+      "n_jobs": 1,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 1,
+      "strategies": [
+        "error_marker"
+      ],
+      "total_lines_extracted": 156,
+      "error_markers_found": 1,
+      "sample_error_lines": [
+        "##[error]Unhandled error: HttpError: Resource not accessible by integration"
+      ]
+    },
+    "classification": {
+      "category": "CONFIG_ERROR",
+      "severity": "MODERATE",
+      "confidence": 0.9,
+      "action": "HOTFIX_REQUIRED",
+      "reasoning": "The failure is due to a GitHub API permissions issue ('Resource not accessible by integration'), indicating the GitHub token used in the workflow lacks sufficient permissions to comment on the pull request. This is a configuration error that requires updating the workflow's permissions or token settings.",
+      "evidence": [
+        "LOG EVIDENCE: RequestError [HttpError]: Resource not accessible by integration",
+        "LOG EVIDENCE: message: 'Resource not accessible by integration'",
+        "LOG EVIDENCE: documentation_url: 'https://docs.github.com/rest/issues/comments#create-an-issue-comment'"
+      ],
+      "unknowns": [
+        "Exact permissions required by the workflow",
+        "Current token permissions configuration"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "PR_MERGED",
+      "method": "pr_state",
+      "reasoning": "PR #4396 ('Add flexible controls of GPU configuration') was merged on 2023-08-16T17:31:43Z.",
+      "match_verdict": "PARTIAL",
+      "judge_reasoning": "The AI correctly identified a GitHub API permissions issue ('Resource not accessible by integration') as a configuration error, which aligns with the failure. However, the developer merged the PR despite the failure, suggesting they either deemed it non-blocking or resolved it separately. This ambiguity means the AI's recommendation of a 'HOTFIX_REQUIRED' is partially aligned but lacks full context."
+    }
+  },
+  {
+    "case_label": "knplabs/snappy — feat: add bundle configuration",
+    "intake": {
+      "run_id": "knplabs/snappy_.github/workflows/build.yaml_191_1",
+      "repo": "knplabs/snappy",
+      "workflow": "build.yaml",
+      "branch": "v2-unstable-bundle-config",
+      "event": "push",
+      "is_protected_branch": false,
+      "commit_sha": "4b1f059a856a",
+      "commit_title": "feat: add bundle configuration",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 11,
+      "n_jobs": 11,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 11,
+      "strategies": [
+        "group_fallback",
+        "group_fallback",
+        "group_fallback",
+        "error_marker",
+        "error_marker",
+        "error_marker",
+        "group_fallback",
+        "group_fallback",
+        "group_fallback",
+        "group_fallback",
+        "error_marker"
+      ],
+      "total_lines_extracted": 857,
+      "error_markers_found": 5,
+      "sample_error_lines": [
+        "##[error]Process completed with exit code 1.",
+        "##[error]Your requirements could not be resolved to an installable set of packages."
+      ]
+    },
+    "classification": {
+      "category": "DEPENDENCY_CONFLICT",
+      "severity": "MODERATE",
+      "confidence": 0.95,
+      "action": "HOTFIX_REQUIRED",
+      "reasoning": "The failure is due to a PHP version incompatibility, specifically requiring PHP >=8.1 while the runner is using PHP 7.3.33. This is evident from the error message in step [11] which states 'Root composer.json requires php >=8.1 but your php version (7.3.33) does not satisfy that requirement.' This is a dependency conflict that needs to be resolved by either updating the PHP version or modifying the composer.json requirements.",
+      "evidence": [
+        "LOG EVIDENCE step [11]",
+        "error_text in step [11]"
+      ],
+      "unknowns": [
+        "Why PHP 7.3.33 is being used instead of PHP 8.1",
+        "Whether the composer.json requirements can be adjusted"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "PR_MERGED",
+      "method": "pr_state",
+      "reasoning": "PR #483 ('feat: add bundle configuration') was merged on 2023-10-09T09:01:08Z.",
+      "match_verdict": "PARTIAL",
+      "judge_reasoning": "The AI correctly identified a dependency conflict due to PHP version incompatibility, which aligns with the error logs. However, the developer merged the PR despite the failure, suggesting they either fixed the issue in a separate commit or deemed it non-blocking. This ambiguity means the AI's recommendation of a hotfix was partially aligned but missed the nuance of the developer's decision."
+    }
+  },
+  {
+    "case_label": "anthropics/anthropic-sdk-typescript — chore(next => main): release 0.6.3",
+    "intake": {
+      "run_id": "anthropics/anthropic-sdk-typescript_.github/workflows/open-release-prs.yml_3_1",
+      "repo": "anthropics/anthropic-sdk-typescript",
+      "workflow": "open-release-prs.yml",
+      "branch": "next",
+      "event": "push",
+      "is_protected_branch": false,
+      "commit_sha": "52d16f602254",
+      "commit_title": "chore(next => main): release 0.6.3",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 1,
+      "n_jobs": 1,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 1,
+      "strategies": [
+        "error_marker"
+      ],
+      "total_lines_extracted": 156,
+      "error_markers_found": 1,
+      "sample_error_lines": [
+        "##[error]trigger-release-please failed: API Error 500 - Invalid state",
+        "API Response { error: 'Invalid state' }"
+      ]
+    },
+    "classification": {
+      "category": "CONFIG_ERROR",
+      "severity": "MODERATE",
+      "confidence": 0.85,
+      "action": "HOTFIX_REQUIRED",
+      "reasoning": "The failure is due to an 'Invalid state' error from the Release Please API, indicating a configuration issue with the release process. The branch is not protected, but the failure impacts a release workflow, which is significant.",
+      "evidence": [
+        "API Response { error: 'Invalid state' }",
+        "##[error]trigger-release-please failed: API Error 500 - Invalid state"
+      ],
+      "unknowns": [
+        "Specific configuration details causing the 'Invalid state' error"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "NO_IMMEDIATE_RESPONSE",
+      "method": "rubric",
+      "reasoning": "Follow-up commits exist but none are within 7 days of the failure. Developer likely retried or ignored the failure without a code change.",
+      "match_verdict": "PARTIAL",
+      "judge_reasoning": "The AI's recommendation of HOTFIX_REQUIRED aligns with the severity of the issue (a release workflow failure), but the developer's NO_IMMEDIATE_RESPONSE suggests they either retried without a code change or deemed the issue non-critical. The AI correctly identified the configuration error but overestimated the urgency, as the developer did not act immediately."
+    }
+  },
+  {
+    "case_label": "oca/mis-builder — [UPD] README.rst",
+    "intake": {
+      "run_id": "oca/mis-builder_.github/workflows/pre-commit.yml_682_1",
+      "repo": "oca/mis-builder",
+      "workflow": "pre-commit.yml",
+      "branch": "13.0",
+      "event": "push",
+      "is_protected_branch": false,
+      "commit_sha": "dd24b0c67a50",
+      "commit_title": "[UPD] README.rst",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 1,
+      "n_jobs": 1,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 1,
+      "strategies": [
+        "error_marker"
+      ],
+      "total_lines_extracted": 156,
+      "error_markers_found": 1,
+      "sample_error_lines": [
+        "##[error]Version 3.9.7 with arch x64 not found",
+        "Version 3.9.7 was not found in the local cache"
+      ]
+    },
+    "classification": {
+      "category": "INFRA_INCOMPATIBILITY",
+      "severity": "MODERATE",
+      "confidence": 0.9,
+      "action": "PIN_VERSION",
+      "reasoning": "The failure occurred because Python version 3.9.7 was not found in the local cache, indicating an incompatibility with the runner's environment. This is not a code regression or transient issue but rather a mismatch between the requested Python version and what's available on the runner.",
+      "evidence": [
+        "LOG EVIDENCE: Version 3.9.7 was not found in the local cache",
+        "LOG EVIDENCE: ##[error]Version 3.9.7 with arch x64 not found"
+      ],
+      "unknowns": [
+        "Whether Python 3.9.7 is a hard requirement or if a different version could be used",
+        "Details on the runner's Python version availability"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "NO_IMMEDIATE_RESPONSE",
+      "method": "rubric",
+      "reasoning": "Follow-up commits exist but none are within 7 days of the failure. Developer likely retried or ignored the failure without a code change.",
+      "match_verdict": "PARTIAL",
+      "judge_reasoning": "The AI's recommendation to PIN_VERSION aligns with the issue of Python version incompatibility, which is a reasonable diagnosis. However, the developer's 'NO_IMMEDIATE_RESPONSE' action suggests they did not prioritize fixing this issue, possibly due to low priority or retrying without a code change. This ambiguity means the AI's recommendation is somewhat aligned but lacks confirmation of its effectiveness."
+    }
+  },
+  {
+    "case_label": "glotpress/glotpress — Skip the preg_split if the second parameter is null",
+    "intake": {
+      "run_id": "glotpress/glotpress_.github/workflows/coding-standards.yml_1427_1",
+      "repo": "glotpress/glotpress",
+      "workflow": "coding-standards.yml",
+      "branch": "deprecated-preg-split-translation",
+      "event": "pull_request",
+      "is_protected_branch": false,
+      "commit_sha": "bff633211e20",
+      "commit_title": "Skip the preg_split if the second parameter is null",
+      "conclusion": "failure",
+      "failure_detection": "job_level_fallback",
+      "failed_jobs_count": 2,
+      "n_jobs": 2,
+      "all_failures_are_tooling_artifacts": false
+    },
+    "extraction": {
+      "total_steps_extracted": 2,
+      "strategies": [
+        "group_fallback",
+        "error_marker"
+      ],
+      "total_lines_extracted": 180,
+      "error_markers_found": 2,
+      "sample_error_lines": [
+        "##[error]Use Yoda Condition checks, you must.",
+        "##[error]Process completed with exit code 1."
+      ]
+    },
+    "classification": {
+      "category": "CODE_REGRESSION",
+      "severity": "MODERATE",
+      "confidence": 0.85,
+      "action": "BLOCK_DEPLOY",
+      "reasoning": "The failure is in the PHP coding standards check, specifically indicating a Yoda Condition issue. This aligns with the commit message about modifying preg_split behavior, suggesting the change introduced a code style regression. The branch is not protected, but the failure is in a core workflow.",
+      "evidence": [
+        "COMMIT.message",
+        "LOG EVIDENCE.step [2]"
+      ],
+      "unknowns": [
+        "Specific details of the Yoda Condition violation",
+        "Impact on other parts of the codebase"
+      ]
+    },
+    "ground_truth": {
+      "developer_action": "PR_MERGED",
+      "method": "pr_state",
+      "reasoning": "PR #1709 ('Deprecation. Check if the preg_split parameter is null') was merged on 2023-10-03T11:29:13Z.",
+      "match_verdict": "MISMATCH",
+      "judge_reasoning": "The AI recommended BLOCK_DEPLOY due to a code style regression (Yoda Condition issue), suggesting the change introduced a problem. However, the developer merged the PR despite the failure, indicating they judged the issue as non-blocking or fixed it separately. This directly conflicts with the AI's recommendation."
+    }
+  }
+]

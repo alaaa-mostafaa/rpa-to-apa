@@ -1,0 +1,34 @@
+{
+  "metamask/eth-simple-keyring_.github/workflows/publish-rc-docs.yml_4_1": {
+    "action": "NOT_SCORABLE",
+    "reason": "version-bump metadata only (CHANGELOG.md + package.json version); no failure-category signal \u2014 auto-label DEPENDENCY is unsupported"
+  },
+  "coredb-io/coredb_.github/workflows/docs.yml_13_1": {
+    "action": "NOT_SCORABLE",
+    "reason": "documentation update (README.md + docs/*.md + mkdocs.yml via docs.yml workflow); auto-label DEPENDENCY came from an incidental pyproject.toml"
+  },
+  "nwjs/grunt-nw-builder_.github/workflows/cd.yml_27_1": {
+    "action": "NOT_SCORABLE",
+    "reason": "fix is a lock-file only (package-lock.json) \u2014 a bare re-pin carries no failure-category signal"
+  },
+  "cbeust/testng_.github/workflows/test.yml_669_1": {
+    "action": "CONFIG",
+    "reason": "substantive fix is Gradle BUILD CONFIGURATION (settings.gradle.kts, build-logic/.../build.gradle.kts); the failure is a build/config issue, not a dependency conflict"
+  },
+  "auth0/express-openid-connect_.github/workflows/publish.yml_3_1": {
+    "action": "NOT_SCORABLE",
+    "reason": "fix is a lock-file only (package-lock.json) \u2014 no substantive dependency edit"
+  },
+  "babylonjs/babylonreactnative_.github/workflows/testVersion.yml_15_1": {
+    "action": "NOT_SCORABLE",
+    "reason": "no extractable fix files \u2014 cannot derive a reliable bucket"
+  },
+  "dioxuslabs/dioxus_.github/workflows/docs.yml_136_1": {
+    "action": "NOT_SCORABLE",
+    "reason": "docs-dominant fix (Cargo.toml + 6 docs/*.md/.gitignore files) \u2014 auto-label DEPENDENCY from incidental Cargo.toml"
+  },
+  "iurysza/module-graph_.github/workflows/pre-merge.yaml_80_1": {
+    "action": "NOT_SCORABLE",
+    "reason": "build-config + docs/asset fix (build.gradle.kts, README.md, .png) \u2014 not a dependency-manifest change"
+  }
+}

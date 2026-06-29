@@ -1,0 +1,924 @@
+{
+  "_id": "nextcloud/text_.github/workflows/npm-audit-fix.yml_26_1",
+  "repository_name": "nextcloud/text",
+  "workflow_path": ".github/workflows/npm-audit-fix.yml",
+  "run_number": 26,
+  "run_attempt": 1,
+  "time_to_import": 238251.218631,
+  "metadata": {
+    "id": 6601230426,
+    "name": "Npm audit fix and compile",
+    "node_id": "WFR_kwLOCn6rbc8AAAABiXbIWg",
+    "head_branch": "main",
+    "head_sha": "3e52eb8bb03b96c0ab89e160534c208de0b0b4b2",
+    "path": ".github/workflows/npm-audit-fix.yml",
+    "display_title": "Npm audit fix and compile",
+    "run_number": 26,
+    "event": "schedule",
+    "status": "completed",
+    "conclusion": "failure",
+    "workflow_id": 56069720,
+    "check_suite_id": 17493705172,
+    "check_suite_node_id": "CS_kwDOCn6rbc8AAAAEErTB1A",
+    "url": "https://api.github.com/repos/nextcloud/text/actions/runs/6601230426",
+    "html_url": "https://github.com/nextcloud/text/actions/runs/6601230426",
+    "pull_requests": [],
+    "created_at": "2023-10-22T02:36:28Z",
+    "updated_at": "2023-10-22T03:08:44Z",
+    "actor": {
+      "login": "juliushaertl",
+      "id": 3404133,
+      "node_id": "MDQ6VXNlcjM0MDQxMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3404133?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/juliushaertl",
+      "html_url": "https://github.com/juliushaertl",
+      "followers_url": "https://api.github.com/users/juliushaertl/followers",
+      "following_url": "https://api.github.com/users/juliushaertl/following{/other_user}",
+      "gists_url": "https://api.github.com/users/juliushaertl/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/juliushaertl/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/juliushaertl/subscriptions",
+      "organizations_url": "https://api.github.com/users/juliushaertl/orgs",
+      "repos_url": "https://api.github.com/users/juliushaertl/repos",
+      "events_url": "https://api.github.com/users/juliushaertl/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/juliushaertl/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "run_attempt": 1,
+    "referenced_workflows": [],
+    "run_started_at": "2023-10-22T02:36:28Z",
+    "triggering_actor": {
+      "login": "juliushaertl",
+      "id": 3404133,
+      "node_id": "MDQ6VXNlcjM0MDQxMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3404133?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/juliushaertl",
+      "html_url": "https://github.com/juliushaertl",
+      "followers_url": "https://api.github.com/users/juliushaertl/followers",
+      "following_url": "https://api.github.com/users/juliushaertl/following{/other_user}",
+      "gists_url": "https://api.github.com/users/juliushaertl/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/juliushaertl/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/juliushaertl/subscriptions",
+      "organizations_url": "https://api.github.com/users/juliushaertl/orgs",
+      "repos_url": "https://api.github.com/users/juliushaertl/repos",
+      "events_url": "https://api.github.com/users/juliushaertl/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/juliushaertl/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "jobs_url": "https://api.github.com/repos/nextcloud/text/actions/runs/6601230426/jobs",
+    "logs_url": "https://api.github.com/repos/nextcloud/text/actions/runs/6601230426/logs",
+    "check_suite_url": "https://api.github.com/repos/nextcloud/text/check-suites/17493705172",
+    "artifacts_url": "https://api.github.com/repos/nextcloud/text/actions/runs/6601230426/artifacts",
+    "cancel_url": "https://api.github.com/repos/nextcloud/text/actions/runs/6601230426/cancel",
+    "rerun_url": "https://api.github.com/repos/nextcloud/text/actions/runs/6601230426/rerun",
+    "previous_attempt_url": null,
+    "workflow_url": "https://api.github.com/repos/nextcloud/text/actions/workflows/56069720",
+    "head_commit": {
+      "id": "3e52eb8bb03b96c0ab89e160534c208de0b0b4b2",
+      "tree_id": "9a850c43524a7dbf52ed24e7ea9ae2df367f8b11",
+      "message": "Fix(l10n): Update translations from Transifex\n\nSigned-off-by: Nextcloud bot <bot@nextcloud.com>",
+      "timestamp": "2023-10-22T01:49:08Z",
+      "author": {
+        "name": "Nextcloud bot",
+        "email": "bot@nextcloud.com"
+      },
+      "committer": {
+        "name": "Nextcloud bot",
+        "email": "bot@nextcloud.com"
+      }
+    },
+    "repository": {
+      "id": 176073581,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNzYwNzM1ODE=",
+      "name": "text",
+      "full_name": "nextcloud/text",
+      "private": false,
+      "owner": {
+        "login": "nextcloud",
+        "id": 19211038,
+        "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5MjExMDM4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19211038?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/nextcloud",
+        "html_url": "https://github.com/nextcloud",
+        "followers_url": "https://api.github.com/users/nextcloud/followers",
+        "following_url": "https://api.github.com/users/nextcloud/following{/other_user}",
+        "gists_url": "https://api.github.com/users/nextcloud/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/nextcloud/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/nextcloud/subscriptions",
+        "organizations_url": "https://api.github.com/users/nextcloud/orgs",
+        "repos_url": "https://api.github.com/users/nextcloud/repos",
+        "events_url": "https://api.github.com/users/nextcloud/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/nextcloud/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/nextcloud/text",
+      "description": "📑 Collaborative document editing using Markdown",
+      "fork": false,
+      "url": "https://api.github.com/repos/nextcloud/text",
+      "forks_url": "https://api.github.com/repos/nextcloud/text/forks",
+      "keys_url": "https://api.github.com/repos/nextcloud/text/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/nextcloud/text/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/nextcloud/text/teams",
+      "hooks_url": "https://api.github.com/repos/nextcloud/text/hooks",
+      "issue_events_url": "https://api.github.com/repos/nextcloud/text/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/nextcloud/text/events",
+      "assignees_url": "https://api.github.com/repos/nextcloud/text/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/nextcloud/text/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/nextcloud/text/tags",
+      "blobs_url": "https://api.github.com/repos/nextcloud/text/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/nextcloud/text/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/nextcloud/text/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/nextcloud/text/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/nextcloud/text/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/nextcloud/text/languages",
+      "stargazers_url": "https://api.github.com/repos/nextcloud/text/stargazers",
+      "contributors_url": "https://api.github.com/repos/nextcloud/text/contributors",
+      "subscribers_url": "https://api.github.com/repos/nextcloud/text/subscribers",
+      "subscription_url": "https://api.github.com/repos/nextcloud/text/subscription",
+      "commits_url": "https://api.github.com/repos/nextcloud/text/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/nextcloud/text/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/nextcloud/text/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/nextcloud/text/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/nextcloud/text/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/nextcloud/text/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/nextcloud/text/merges",
+      "archive_url": "https://api.github.com/repos/nextcloud/text/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/nextcloud/text/downloads",
+      "issues_url": "https://api.github.com/repos/nextcloud/text/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/nextcloud/text/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/nextcloud/text/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/nextcloud/text/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/nextcloud/text/labels{/name}",
+      "releases_url": "https://api.github.com/repos/nextcloud/text/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/nextcloud/text/deployments"
+    },
+    "head_repository": {
+      "id": 176073581,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNzYwNzM1ODE=",
+      "name": "text",
+      "full_name": "nextcloud/text",
+      "private": false,
+      "owner": {
+        "login": "nextcloud",
+        "id": 19211038,
+        "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5MjExMDM4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19211038?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/nextcloud",
+        "html_url": "https://github.com/nextcloud",
+        "followers_url": "https://api.github.com/users/nextcloud/followers",
+        "following_url": "https://api.github.com/users/nextcloud/following{/other_user}",
+        "gists_url": "https://api.github.com/users/nextcloud/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/nextcloud/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/nextcloud/subscriptions",
+        "organizations_url": "https://api.github.com/users/nextcloud/orgs",
+        "repos_url": "https://api.github.com/users/nextcloud/repos",
+        "events_url": "https://api.github.com/users/nextcloud/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/nextcloud/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/nextcloud/text",
+      "description": "📑 Collaborative document editing using Markdown",
+      "fork": false,
+      "url": "https://api.github.com/repos/nextcloud/text",
+      "forks_url": "https://api.github.com/repos/nextcloud/text/forks",
+      "keys_url": "https://api.github.com/repos/nextcloud/text/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/nextcloud/text/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/nextcloud/text/teams",
+      "hooks_url": "https://api.github.com/repos/nextcloud/text/hooks",
+      "issue_events_url": "https://api.github.com/repos/nextcloud/text/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/nextcloud/text/events",
+      "assignees_url": "https://api.github.com/repos/nextcloud/text/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/nextcloud/text/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/nextcloud/text/tags",
+      "blobs_url": "https://api.github.com/repos/nextcloud/text/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/nextcloud/text/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/nextcloud/text/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/nextcloud/text/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/nextcloud/text/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/nextcloud/text/languages",
+      "stargazers_url": "https://api.github.com/repos/nextcloud/text/stargazers",
+      "contributors_url": "https://api.github.com/repos/nextcloud/text/contributors",
+      "subscribers_url": "https://api.github.com/repos/nextcloud/text/subscribers",
+      "subscription_url": "https://api.github.com/repos/nextcloud/text/subscription",
+      "commits_url": "https://api.github.com/repos/nextcloud/text/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/nextcloud/text/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/nextcloud/text/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/nextcloud/text/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/nextcloud/text/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/nextcloud/text/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/nextcloud/text/merges",
+      "archive_url": "https://api.github.com/repos/nextcloud/text/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/nextcloud/text/downloads",
+      "issues_url": "https://api.github.com/repos/nextcloud/text/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/nextcloud/text/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/nextcloud/text/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/nextcloud/text/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/nextcloud/text/labels{/name}",
+      "releases_url": "https://api.github.com/repos/nextcloud/text/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/nextcloud/text/deployments"
+    }
+  },
+  "logs_archive": {
+    "path": "/data/logs/nextcloud/text/Npm_audit_fix_and_compile_6d09/26-1.tar.gz"
+  },
+  "log_insights": [
+    {
+      "file": "1_npm-audit-fix-stable27.txt",
+      "total_lines": 589,
+      "log_size": 45121,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "c85c95e3d7251135ab7dc9ce3241c5835cc595a9",
+          "sha": "c85c95e3d7251135ab7dc9ce3241c5835cc595a9",
+          "with": {
+            "ref": "stable27",
+            "repository": "nextcloud/text",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-22 03:07:37.998000",
+          "duration_sec": 7.56989
+        },
+        {
+          "type": "action",
+          "repository": "skjnldsv",
+          "action": "read-package-engines-version-actions",
+          "version": "8205673bab74a63eb9b8093402fd9e0e018663a1",
+          "sha": "8205673bab74a63eb9b8093402fd9e0e018663a1",
+          "with": {
+            "fallbackNode": "^20",
+            "fallbackNpm": "^9",
+            "path": "./"
+          },
+          "env": {},
+          "start_date": "2023-10-22 03:07:45.568000",
+          "duration_sec": 0.153587
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "setup-node",
+          "version": "64ed1c7eab4cce3362f8c340dee64e5eaeef8f7c",
+          "sha": "64ed1c7eab4cce3362f8c340dee64e5eaeef8f7c",
+          "with": {
+            "node-version": "^16.0.0",
+            "always-auth": "false",
+            "check-latest": "false",
+            "token": "***"
+          },
+          "env": {},
+          "start_date": "2023-10-22 03:07:45.722000",
+          "duration_sec": 6.381681
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "npm i -g npm@\"^7.0.0 || ^8.0.0\"",
+          "commands": [
+            {
+              "annotations": [
+                "SC-NPM-INSTALL"
+              ],
+              "command": "npm",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "i"
+                },
+                {
+                  "annotations": [
+                    "SC-NPM-F-GLOBAL"
+                  ],
+                  "content": "-g"
+                },
+                {
+                  "annotations": [
+                    "SC-NPM-PACKAGE"
+                  ],
+                  "content": "npm@\"^7.0.0 || ^8.0.0\""
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-22 03:07:52.103000",
+          "duration_sec": 6.202718
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "npm audit fix",
+          "commands": [
+            {
+              "annotations": [
+                "SC-NPM"
+              ],
+              "command": "npm",
+              "categories": [
+                "PACKAGE_MANAGEMENT"
+              ],
+              "args": [
+                {
+                  "content": "audit"
+                },
+                {
+                  "content": "fix"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-22 03:07:58.306000",
+          "duration_sec": 3.20141
+        }
+      ]
+    },
+    {
+      "file": "4_npm-audit-fix-stable24.txt",
+      "total_lines": 589,
+      "log_size": 44966,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "c85c95e3d7251135ab7dc9ce3241c5835cc595a9",
+          "sha": "c85c95e3d7251135ab7dc9ce3241c5835cc595a9",
+          "with": {
+            "ref": "stable24",
+            "repository": "nextcloud/text",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-22 03:06:30.661000",
+          "duration_sec": 5.184494
+        },
+        {
+          "type": "action",
+          "repository": "skjnldsv",
+          "action": "read-package-engines-version-actions",
+          "version": "8205673bab74a63eb9b8093402fd9e0e018663a1",
+          "sha": "8205673bab74a63eb9b8093402fd9e0e018663a1",
+          "with": {
+            "fallbackNode": "^20",
+            "fallbackNpm": "^9",
+            "path": "./"
+          },
+          "env": {},
+          "start_date": "2023-10-22 03:06:35.846000",
+          "duration_sec": 0.099603
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "setup-node",
+          "version": "64ed1c7eab4cce3362f8c340dee64e5eaeef8f7c",
+          "sha": "64ed1c7eab4cce3362f8c340dee64e5eaeef8f7c",
+          "with": {
+            "node-version": "^14.0.0",
+            "always-auth": "false",
+            "check-latest": "false",
+            "token": "***"
+          },
+          "env": {},
+          "start_date": "2023-10-22 03:06:35.945000",
+          "duration_sec": 6.585473
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "npm i -g npm@\"^7.0.0\"",
+          "commands": [
+            {
+              "annotations": [
+                "SC-NPM-INSTALL"
+              ],
+              "command": "npm",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "i"
+                },
+                {
+                  "annotations": [
+                    "SC-NPM-F-GLOBAL"
+                  ],
+                  "content": "-g"
+                },
+                {
+                  "annotations": [
+                    "SC-NPM-PACKAGE"
+                  ],
+                  "content": "npm@\"^7.0.0\""
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-22 03:06:42.531000",
+          "duration_sec": 10.592953
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "npm audit fix",
+          "commands": [
+            {
+              "annotations": [
+                "SC-NPM"
+              ],
+              "command": "npm",
+              "categories": [
+                "PACKAGE_MANAGEMENT"
+              ],
+              "args": [
+                {
+                  "content": "audit"
+                },
+                {
+                  "content": "fix"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-22 03:06:53.124000",
+          "duration_sec": 8.772186
+        }
+      ]
+    },
+    {
+      "file": "2_npm-audit-fix-stable26.txt",
+      "total_lines": 590,
+      "log_size": 45435,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "c85c95e3d7251135ab7dc9ce3241c5835cc595a9",
+          "sha": "c85c95e3d7251135ab7dc9ce3241c5835cc595a9",
+          "with": {
+            "ref": "stable26",
+            "repository": "nextcloud/text",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-22 03:07:38.485000",
+          "duration_sec": 7.634319
+        },
+        {
+          "type": "action",
+          "repository": "skjnldsv",
+          "action": "read-package-engines-version-actions",
+          "version": "8205673bab74a63eb9b8093402fd9e0e018663a1",
+          "sha": "8205673bab74a63eb9b8093402fd9e0e018663a1",
+          "with": {
+            "fallbackNode": "^20",
+            "fallbackNpm": "^9",
+            "path": "./"
+          },
+          "env": {},
+          "start_date": "2023-10-22 03:07:46.119000",
+          "duration_sec": 0.198151
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "setup-node",
+          "version": "64ed1c7eab4cce3362f8c340dee64e5eaeef8f7c",
+          "sha": "64ed1c7eab4cce3362f8c340dee64e5eaeef8f7c",
+          "with": {
+            "node-version": "^16.0.0",
+            "always-auth": "false",
+            "check-latest": "false",
+            "token": "***"
+          },
+          "env": {},
+          "start_date": "2023-10-22 03:07:46.317000",
+          "duration_sec": 5.216607
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "npm i -g npm@\"^7.0.0 || ^8.0.0\"",
+          "commands": [
+            {
+              "annotations": [
+                "SC-NPM-INSTALL"
+              ],
+              "command": "npm",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "i"
+                },
+                {
+                  "annotations": [
+                    "SC-NPM-F-GLOBAL"
+                  ],
+                  "content": "-g"
+                },
+                {
+                  "annotations": [
+                    "SC-NPM-PACKAGE"
+                  ],
+                  "content": "npm@\"^7.0.0 || ^8.0.0\""
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-22 03:07:51.534000",
+          "duration_sec": 6.128448
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "npm audit fix",
+          "commands": [
+            {
+              "annotations": [
+                "SC-NPM"
+              ],
+              "command": "npm",
+              "categories": [
+                "PACKAGE_MANAGEMENT"
+              ],
+              "args": [
+                {
+                  "content": "audit"
+                },
+                {
+                  "content": "fix"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-22 03:07:57.662000",
+          "duration_sec": 3.146568
+        }
+      ]
+    },
+    {
+      "file": "3_npm-audit-fix-stable25.txt",
+      "total_lines": 639,
+      "log_size": 47173,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "c85c95e3d7251135ab7dc9ce3241c5835cc595a9",
+          "sha": "c85c95e3d7251135ab7dc9ce3241c5835cc595a9",
+          "with": {
+            "ref": "stable25",
+            "repository": "nextcloud/text",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-22 03:06:30.961000",
+          "duration_sec": 3.686621
+        },
+        {
+          "type": "action",
+          "repository": "skjnldsv",
+          "action": "read-package-engines-version-actions",
+          "version": "8205673bab74a63eb9b8093402fd9e0e018663a1",
+          "sha": "8205673bab74a63eb9b8093402fd9e0e018663a1",
+          "with": {
+            "fallbackNode": "^20",
+            "fallbackNpm": "^9",
+            "path": "./"
+          },
+          "env": {},
+          "start_date": "2023-10-22 03:06:34.648000",
+          "duration_sec": 0.113076
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "setup-node",
+          "version": "64ed1c7eab4cce3362f8c340dee64e5eaeef8f7c",
+          "sha": "64ed1c7eab4cce3362f8c340dee64e5eaeef8f7c",
+          "with": {
+            "node-version": "^16.0.0",
+            "always-auth": "false",
+            "check-latest": "false",
+            "token": "***"
+          },
+          "env": {},
+          "start_date": "2023-10-22 03:06:34.761000",
+          "duration_sec": 6.174264
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "npm i -g npm@\"^7.0.0 || ^8.0.0\"",
+          "commands": [
+            {
+              "annotations": [
+                "SC-NPM-INSTALL"
+              ],
+              "command": "npm",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "i"
+                },
+                {
+                  "annotations": [
+                    "SC-NPM-F-GLOBAL"
+                  ],
+                  "content": "-g"
+                },
+                {
+                  "annotations": [
+                    "SC-NPM-PACKAGE"
+                  ],
+                  "content": "npm@\"^7.0.0 || ^8.0.0\""
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-22 03:06:40.935000",
+          "duration_sec": 6.260709
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "npm audit fix",
+          "commands": [
+            {
+              "annotations": [
+                "SC-NPM"
+              ],
+              "command": "npm",
+              "categories": [
+                "PACKAGE_MANAGEMENT"
+              ],
+              "args": [
+                {
+                  "content": "audit"
+                },
+                {
+                  "content": "fix"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-22 03:06:47.196000",
+          "duration_sec": 60.413294
+        }
+      ]
+    },
+    {
+      "file": "0_npm-audit-fix-main.txt",
+      "total_lines": 625,
+      "log_size": 46792,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "c85c95e3d7251135ab7dc9ce3241c5835cc595a9",
+          "sha": "c85c95e3d7251135ab7dc9ce3241c5835cc595a9",
+          "with": {
+            "ref": "main",
+            "repository": "nextcloud/text",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-22 03:07:21.482000",
+          "duration_sec": 11.287632
+        },
+        {
+          "type": "action",
+          "repository": "skjnldsv",
+          "action": "read-package-engines-version-actions",
+          "version": "8205673bab74a63eb9b8093402fd9e0e018663a1",
+          "sha": "8205673bab74a63eb9b8093402fd9e0e018663a1",
+          "with": {
+            "fallbackNode": "^20",
+            "fallbackNpm": "^9",
+            "path": "./"
+          },
+          "env": {},
+          "start_date": "2023-10-22 03:07:32.769000",
+          "duration_sec": 0.08965
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "setup-node",
+          "version": "64ed1c7eab4cce3362f8c340dee64e5eaeef8f7c",
+          "sha": "64ed1c7eab4cce3362f8c340dee64e5eaeef8f7c",
+          "with": {
+            "node-version": "^20.0.0",
+            "always-auth": "false",
+            "check-latest": "false",
+            "token": "***"
+          },
+          "env": {},
+          "start_date": "2023-10-22 03:07:32.859000",
+          "duration_sec": 7.473822
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "npm i -g npm@\"^9.0.0\"",
+          "commands": [
+            {
+              "annotations": [
+                "SC-NPM-INSTALL"
+              ],
+              "command": "npm",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "i"
+                },
+                {
+                  "annotations": [
+                    "SC-NPM-F-GLOBAL"
+                  ],
+                  "content": "-g"
+                },
+                {
+                  "annotations": [
+                    "SC-NPM-PACKAGE"
+                  ],
+                  "content": "npm@\"^9.0.0\""
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-22 03:07:40.333000",
+          "duration_sec": 3.631041
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "npm audit fix",
+          "commands": [
+            {
+              "annotations": [
+                "SC-NPM"
+              ],
+              "command": "npm",
+              "categories": [
+                "PACKAGE_MANAGEMENT"
+              ],
+              "args": [
+                {
+                  "content": "audit"
+                },
+                {
+                  "content": "fix"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-22 03:07:43.964000",
+          "duration_sec": 54.513461
+        }
+      ]
+    }
+  ],
+  "total_logs_size": 234902
+}

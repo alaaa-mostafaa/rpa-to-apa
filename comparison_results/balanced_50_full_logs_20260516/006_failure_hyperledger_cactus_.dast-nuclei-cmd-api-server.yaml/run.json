@@ -1,0 +1,1313 @@
+{
+  "_id": "hyperledger/cactus_.github/workflows/.dast-nuclei-cmd-api-server.yaml_3269_1",
+  "repository_name": "hyperledger/cactus",
+  "workflow_path": ".github/workflows/.dast-nuclei-cmd-api-server.yaml",
+  "run_number": 3269,
+  "run_attempt": 1,
+  "metadata": {
+    "id": 6343660568,
+    "name": "DAST_Scan_Nuclei",
+    "node_id": "WFR_kwLODOk1Zs8AAAABehyUGA",
+    "head_branch": "release-v2.0.0-alpha.2",
+    "head_sha": "7c363ebb8e6854cc15813de155d82291ae26d049",
+    "path": ".github/workflows/.dast-nuclei-cmd-api-server.yaml",
+    "display_title": "chore(release): publish v2.0.0-alpha.2",
+    "run_number": 3269,
+    "event": "pull_request",
+    "status": "completed",
+    "conclusion": "failure",
+    "workflow_id": 21921825,
+    "check_suite_id": 16677728865,
+    "check_suite_node_id": "CS_kwDODOk1Zs8AAAAD4hHyYQ",
+    "url": "https://api.github.com/repos/hyperledger/cacti/actions/runs/6343660568",
+    "html_url": "https://github.com/hyperledger/cacti/actions/runs/6343660568",
+    "pull_requests": [
+      {
+        "url": "https://api.github.com/repos/hyperledger/cacti/pulls/2722",
+        "id": 1531877641,
+        "number": 2722,
+        "head": {
+          "ref": "release-v2.0.0-alpha.2",
+          "sha": "e190396e9470e0b7f96283da19a26e7f5ca05d18",
+          "repo": {
+            "id": 216610150,
+            "url": "https://api.github.com/repos/hyperledger/cacti",
+            "name": "cacti"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "b7ad571e77c6b9e2abb2b5ab8ecd7ffb93172747",
+          "repo": {
+            "id": 216610150,
+            "url": "https://api.github.com/repos/hyperledger/cacti",
+            "name": "cacti"
+          }
+        }
+      }
+    ],
+    "created_at": "2023-09-28T19:59:44Z",
+    "updated_at": "2023-09-28T20:12:47Z",
+    "actor": {
+      "login": "sandeepnRES",
+      "id": 17192099,
+      "node_id": "MDQ6VXNlcjE3MTkyMDk5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/17192099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sandeepnRES",
+      "html_url": "https://github.com/sandeepnRES",
+      "followers_url": "https://api.github.com/users/sandeepnRES/followers",
+      "following_url": "https://api.github.com/users/sandeepnRES/following{/other_user}",
+      "gists_url": "https://api.github.com/users/sandeepnRES/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/sandeepnRES/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/sandeepnRES/subscriptions",
+      "organizations_url": "https://api.github.com/users/sandeepnRES/orgs",
+      "repos_url": "https://api.github.com/users/sandeepnRES/repos",
+      "events_url": "https://api.github.com/users/sandeepnRES/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/sandeepnRES/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "run_attempt": 1,
+    "referenced_workflows": [],
+    "run_started_at": "2023-09-28T19:59:44Z",
+    "triggering_actor": {
+      "login": "sandeepnRES",
+      "id": 17192099,
+      "node_id": "MDQ6VXNlcjE3MTkyMDk5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/17192099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sandeepnRES",
+      "html_url": "https://github.com/sandeepnRES",
+      "followers_url": "https://api.github.com/users/sandeepnRES/followers",
+      "following_url": "https://api.github.com/users/sandeepnRES/following{/other_user}",
+      "gists_url": "https://api.github.com/users/sandeepnRES/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/sandeepnRES/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/sandeepnRES/subscriptions",
+      "organizations_url": "https://api.github.com/users/sandeepnRES/orgs",
+      "repos_url": "https://api.github.com/users/sandeepnRES/repos",
+      "events_url": "https://api.github.com/users/sandeepnRES/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/sandeepnRES/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "jobs_url": "https://api.github.com/repos/hyperledger/cacti/actions/runs/6343660568/jobs",
+    "logs_url": "https://api.github.com/repos/hyperledger/cacti/actions/runs/6343660568/logs",
+    "check_suite_url": "https://api.github.com/repos/hyperledger/cacti/check-suites/16677728865",
+    "artifacts_url": "https://api.github.com/repos/hyperledger/cacti/actions/runs/6343660568/artifacts",
+    "cancel_url": "https://api.github.com/repos/hyperledger/cacti/actions/runs/6343660568/cancel",
+    "rerun_url": "https://api.github.com/repos/hyperledger/cacti/actions/runs/6343660568/rerun",
+    "previous_attempt_url": null,
+    "workflow_url": "https://api.github.com/repos/hyperledger/cacti/actions/workflows/21921825",
+    "head_commit": {
+      "id": "7c363ebb8e6854cc15813de155d82291ae26d049",
+      "tree_id": "613af835705ff6d72506cb7853fcf9f4634c4a32",
+      "message": "chore(release): publish v2.0.0-alpha.2\n\n- fix: update cargo.lock when upgrading versions using weaver-update-version.sh\n- build: hot-fixing the version bumping script by upgrading from prettier\nv2.8.8 to v3.0.3 because the latter ships with typescript types out of the\nbox. Not sure how this was working to begin with while I was testing the\nscript but here we are. Apologies! - Peter\n- fix(protos-sol): delete package line with string pattern matching\n- chore(dockerfile): change user id and group id to 1000 in fabric driver and iin agent\n\nCo-authored-by: Peter Somogyvari <peter.somogyvari@accenture.com>\n\nSigned-off-by: Sandeep Nishad <sandeep.nishad1@ibm.com>\nSigned-off-by: Peter Somogyvari <peter.somogyvari@accenture.com>",
+      "timestamp": "2023-09-28T19:59:28Z",
+      "author": {
+        "name": "Sandeep Nishad",
+        "email": "sandeep.nishad1@ibm.com"
+      },
+      "committer": {
+        "name": "Sandeep Nishad",
+        "email": "sandeep.nishad1@ibm.com"
+      }
+    },
+    "repository": {
+      "id": 216610150,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMTY2MTAxNTA=",
+      "name": "cacti",
+      "full_name": "hyperledger/cacti",
+      "private": false,
+      "owner": {
+        "login": "hyperledger",
+        "id": 7657900,
+        "node_id": "MDEyOk9yZ2FuaXphdGlvbjc2NTc5MDA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7657900?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hyperledger",
+        "html_url": "https://github.com/hyperledger",
+        "followers_url": "https://api.github.com/users/hyperledger/followers",
+        "following_url": "https://api.github.com/users/hyperledger/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hyperledger/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hyperledger/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hyperledger/subscriptions",
+        "organizations_url": "https://api.github.com/users/hyperledger/orgs",
+        "repos_url": "https://api.github.com/users/hyperledger/repos",
+        "events_url": "https://api.github.com/users/hyperledger/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hyperledger/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/hyperledger/cacti",
+      "description": "Hyperledger Cacti is a new approach to the blockchain interoperability problem",
+      "fork": false,
+      "url": "https://api.github.com/repos/hyperledger/cacti",
+      "forks_url": "https://api.github.com/repos/hyperledger/cacti/forks",
+      "keys_url": "https://api.github.com/repos/hyperledger/cacti/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/hyperledger/cacti/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/hyperledger/cacti/teams",
+      "hooks_url": "https://api.github.com/repos/hyperledger/cacti/hooks",
+      "issue_events_url": "https://api.github.com/repos/hyperledger/cacti/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/hyperledger/cacti/events",
+      "assignees_url": "https://api.github.com/repos/hyperledger/cacti/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/hyperledger/cacti/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/hyperledger/cacti/tags",
+      "blobs_url": "https://api.github.com/repos/hyperledger/cacti/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/hyperledger/cacti/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/hyperledger/cacti/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/hyperledger/cacti/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/hyperledger/cacti/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/hyperledger/cacti/languages",
+      "stargazers_url": "https://api.github.com/repos/hyperledger/cacti/stargazers",
+      "contributors_url": "https://api.github.com/repos/hyperledger/cacti/contributors",
+      "subscribers_url": "https://api.github.com/repos/hyperledger/cacti/subscribers",
+      "subscription_url": "https://api.github.com/repos/hyperledger/cacti/subscription",
+      "commits_url": "https://api.github.com/repos/hyperledger/cacti/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/hyperledger/cacti/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/hyperledger/cacti/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/hyperledger/cacti/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/hyperledger/cacti/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/hyperledger/cacti/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/hyperledger/cacti/merges",
+      "archive_url": "https://api.github.com/repos/hyperledger/cacti/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/hyperledger/cacti/downloads",
+      "issues_url": "https://api.github.com/repos/hyperledger/cacti/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/hyperledger/cacti/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/hyperledger/cacti/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/hyperledger/cacti/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/hyperledger/cacti/labels{/name}",
+      "releases_url": "https://api.github.com/repos/hyperledger/cacti/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/hyperledger/cacti/deployments"
+    },
+    "head_repository": {
+      "id": 216610150,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMTY2MTAxNTA=",
+      "name": "cacti",
+      "full_name": "hyperledger/cacti",
+      "private": false,
+      "owner": {
+        "login": "hyperledger",
+        "id": 7657900,
+        "node_id": "MDEyOk9yZ2FuaXphdGlvbjc2NTc5MDA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7657900?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hyperledger",
+        "html_url": "https://github.com/hyperledger",
+        "followers_url": "https://api.github.com/users/hyperledger/followers",
+        "following_url": "https://api.github.com/users/hyperledger/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hyperledger/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hyperledger/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hyperledger/subscriptions",
+        "organizations_url": "https://api.github.com/users/hyperledger/orgs",
+        "repos_url": "https://api.github.com/users/hyperledger/repos",
+        "events_url": "https://api.github.com/users/hyperledger/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hyperledger/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/hyperledger/cacti",
+      "description": "Hyperledger Cacti is a new approach to the blockchain interoperability problem",
+      "fork": false,
+      "url": "https://api.github.com/repos/hyperledger/cacti",
+      "forks_url": "https://api.github.com/repos/hyperledger/cacti/forks",
+      "keys_url": "https://api.github.com/repos/hyperledger/cacti/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/hyperledger/cacti/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/hyperledger/cacti/teams",
+      "hooks_url": "https://api.github.com/repos/hyperledger/cacti/hooks",
+      "issue_events_url": "https://api.github.com/repos/hyperledger/cacti/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/hyperledger/cacti/events",
+      "assignees_url": "https://api.github.com/repos/hyperledger/cacti/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/hyperledger/cacti/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/hyperledger/cacti/tags",
+      "blobs_url": "https://api.github.com/repos/hyperledger/cacti/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/hyperledger/cacti/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/hyperledger/cacti/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/hyperledger/cacti/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/hyperledger/cacti/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/hyperledger/cacti/languages",
+      "stargazers_url": "https://api.github.com/repos/hyperledger/cacti/stargazers",
+      "contributors_url": "https://api.github.com/repos/hyperledger/cacti/contributors",
+      "subscribers_url": "https://api.github.com/repos/hyperledger/cacti/subscribers",
+      "subscription_url": "https://api.github.com/repos/hyperledger/cacti/subscription",
+      "commits_url": "https://api.github.com/repos/hyperledger/cacti/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/hyperledger/cacti/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/hyperledger/cacti/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/hyperledger/cacti/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/hyperledger/cacti/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/hyperledger/cacti/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/hyperledger/cacti/merges",
+      "archive_url": "https://api.github.com/repos/hyperledger/cacti/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/hyperledger/cacti/downloads",
+      "issues_url": "https://api.github.com/repos/hyperledger/cacti/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/hyperledger/cacti/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/hyperledger/cacti/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/hyperledger/cacti/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/hyperledger/cacti/labels{/name}",
+      "releases_url": "https://api.github.com/repos/hyperledger/cacti/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/hyperledger/cacti/deployments"
+    }
+  },
+  "logs_archive": {
+    "path": "/data/logs/hyperledger/cacti/DAST_Scan_Nuclei_b854/3269-1.tar.gz"
+  },
+  "log_insights": [
+    {
+      "file": "1_nuclei-scan (1).txt",
+      "total_lines": 2559,
+      "log_size": 264550,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "ubuntu-20.04",
+      "image_version": "20230924.1.0",
+      "steps": [
+        {
+          "type": "shell",
+          "env": {},
+          "code": "sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys CE7709D068DB5E88 \\\n  && sudo add-apt-repository \"deb https://repo.sovrin.org/sdk/deb bionic stable\" \\\n  && sudo apt-get update \\\n  && sudo apt-get install -y \\\n      libindy \\\n      libnullpay \\\n      libvcx \\\n      indy-cli \\\n  && sudo rm -f /etc/apt/sources.list.d/sovrin.list*",
+          "commands": [
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-APT-KEY-ADV"
+              ],
+              "command": "apt-key",
+              "categories": [
+                "PACKAGE_MANAGEMENT"
+              ],
+              "args": [
+                {
+                  "content": "adv"
+                },
+                {
+                  "annotations": [
+                    "SC-APT-KEY-ADV-KEYSERVER"
+                  ],
+                  "content": "--keyserver keyserver.ubuntu.com"
+                },
+                {
+                  "annotations": [
+                    "SC-APT-KEY-ADV-RECV-KEYS"
+                  ],
+                  "content": "--recv-keys CE7709D068DB5E88"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "command": "add-apt-repository",
+              "args": [
+                {
+                  "content": "\"deb https://repo.sovrin.org/sdk/deb bionic stable\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-APT-UPDATE"
+              ],
+              "command": "apt-get",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "UPDATE_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "update"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-APT-INSTALL"
+              ],
+              "command": "apt-get",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-APT-F-YES"
+                  ],
+                  "content": "-y"
+                },
+                {
+                  "annotations": [
+                    "SC-APT-PACKAGE"
+                  ],
+                  "content": "libindy"
+                },
+                {
+                  "annotations": [
+                    "SC-APT-PACKAGE"
+                  ],
+                  "content": "libnullpay"
+                },
+                {
+                  "annotations": [
+                    "SC-APT-PACKAGE"
+                  ],
+                  "content": "libvcx"
+                },
+                {
+                  "annotations": [
+                    "SC-APT-PACKAGE"
+                  ],
+                  "content": "indy-cli"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-RM"
+              ],
+              "command": "rm",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-RM-F-FORCE"
+                  ],
+                  "content": "-f"
+                },
+                {
+                  "annotations": [
+                    "SC-RM-PATH",
+                    "BASH-PATH"
+                  ],
+                  "content": "/etc/apt/sources.list.d/sovrin.list*"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-28 19:59:58.430000",
+          "duration_sec": 20.986943
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "setup-node",
+          "version": "v3.6.0",
+          "sha": "64ed1c7eab4cce3362f8c340dee64e5eaeef8f7c",
+          "with": {
+            "node-version": "v16.9.1",
+            "always-auth": "false",
+            "check-latest": "false",
+            "token": "***"
+          },
+          "env": {},
+          "start_date": "2023-09-28 20:00:19.417000",
+          "duration_sec": 3.237667
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "sudo apt update && sudo apt install -y jq",
+          "commands": [
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-APT-UPDATE"
+              ],
+              "command": "apt",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "UPDATE_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "update"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-APT-INSTALL"
+              ],
+              "command": "apt",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-APT-F-YES"
+                  ],
+                  "content": "-y"
+                },
+                {
+                  "annotations": [
+                    "SC-APT-PACKAGE"
+                  ],
+                  "content": "jq"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-28 20:00:22.655000",
+          "duration_sec": 4.475044
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "jq --version",
+          "commands": [
+            {
+              "annotations": [
+                "SC-JQ"
+              ],
+              "command": "jq",
+              "categories": [
+                "DATA_PROCESSING"
+              ],
+              "args": [
+                {
+                  "content": "--version"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-28 20:00:27.130000",
+          "duration_sec": 0.021859
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3.5.2",
+          "sha": "8e5e7e5ab8b370d6c329ec480221332ada57f0ab",
+          "with": {
+            "repository": "hyperledger/cacti",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "fetch-depth": "1",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-09-28 20:00:27.152000",
+          "duration_sec": 2.124829
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "setup-go",
+          "version": "v4.0.0",
+          "sha": "4d34df0c2316fe8122ab82dc22947d607c0c91f9",
+          "with": {
+            "go-version": "1.17",
+            "check-latest": "false",
+            "token": "***",
+            "cache": "true"
+          },
+          "env": {},
+          "start_date": "2023-09-28 20:00:29.276000",
+          "duration_sec": 9.055066
+        },
+        {
+          "type": "action",
+          "folder": "nuclei/v2/cmd/nuclei",
+          "with": {},
+          "env": {},
+          "start_date": "2023-09-28 20:00:38.332000",
+          "duration_sec": 52.821885
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "nuclei --version",
+          "commands": [
+            {
+              "command": "nuclei",
+              "args": [
+                {
+                  "content": "--version"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-28 20:01:31.153000",
+          "duration_sec": 0.055201
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "npm run configure",
+          "commands": [
+            {
+              "annotations": [
+                "SC-NPM-RUN"
+              ],
+              "command": "npm",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "RUN_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "run"
+                },
+                {
+                  "annotations": [
+                    "SC-NPM-ARG"
+                  ],
+                  "content": "configure"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-28 20:01:31.209000",
+          "duration_sec": 601.473961
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "echo https://localhost:4000/ > urls.txt\necho https://localhost:4000/api/v1/api-server/healthcheck >> urls.txt\necho https://localhost:4000/api/v1/plugins/@hyperledger/cactus-plugin-consortium-manual/node/jws >> urls.txt\necho https://localhost:4000/api/v1/plugins/@hyperledger/cactus-plugin-consortium-manual/consortium/jws >> urls.txt\necho https://localhost:4000/api/v1/plugins/@hyperledger/cactus-plugin-consortium-manual/get-prometheus-exporter-metrics >> urls.txt\necho https://localhost:4000/api/v1/plugins/@hyperledger/cactus-plugin-ledger-connector-fabric/run-transaction >> urls.txt\necho https://localhost:4000/api/v1/plugins/@hyperledger/cactus-plugin-ledger-connector-fabric/get-transaction-receipt-by-txid >> urls.txt\necho https://localhost:4000/api/v1/plugins/@hyperledger/cactus-plugin-ledger-connector-fabric/deploy-contract-go-source >> urls.txt\necho https://localhost:4000/api/v1/plugins/@hyperledger/cactus-plugin-ledger-connector-fabric/deploy-contract >> urls.txt\necho https://localhost:4000/api/v1/plugins/@hyperledger/cactus-plugin-ledger-connector-fabric/get-prometheus-exporter-metrics >> urls.txt\necho https://localhost:4000/api/v1/plugins/@hyperledger/cactus-plugin-ledger-connector-besu/deploy-contract-solidity-bytecode >> urls.txt\necho https://localhost:4000/api/v1/plugins/@hyperledger/cactus-plugin-ledger-connector-besu/get-balance >> urls.txt\necho https://localhost:4000/api/v1/plugins/@hyperledger/cactus-plugin-ledger-connector-besu/get-block >> urls.txt\necho https://localhost:4000/api/v1/plugins/@hyperledger/cactus-plugin-ledger-connector-besu/run-transaction >> urls.txt\necho https://localhost:4000/api/v1/plugins/@hyperledger/cactus-plugin-ledger-connector-besu/get-transaction >> urls.txt\necho https://localhost:4000/api/v1/plugins/@hyperledger/cactus-plugin-ledger-connector-besu/get-past-logs >> urls.txt\necho https://localhost:4000/api/v1/plugins/@hyperledger/cactus-plugin-ledger-connector-besu/invoke-contract >> urls.txt\necho https://localhost:4000/api/v1/plugins/@hyperledger/cactus-plugin-ledger-connector-besu/sign-transaction >> urls.txt\necho https://localhost:4000/api/v1/plugins/@hyperledger/cactus-plugin-ledger-connector-besu/get-prometheus-exporter-metrics >> urls.txt\necho https://localhost:4000/api/v1/plugins/@hyperledger/cactus-plugin-ledger-connector-besu/get-besu-record >> urls.txt",
+          "commands": [
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "https://localhost:4000/"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "https://localhost:4000/api/v1/api-server/healthcheck"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "https://localhost:4000/api/v1/plugins/@hyperledger/cactus-plugin-consortium-manual/node/jws"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "https://localhost:4000/api/v1/plugins/@hyperledger/cactus-plugin-consortium-manual/consortium/jws"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "https://localhost:4000/api/v1/plugins/@hyperledger/cactus-plugin-consortium-manual/get-prometheus-exporter-metrics"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "https://localhost:4000/api/v1/plugins/@hyperledger/cactus-plugin-ledger-connector-fabric/run-transaction"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "https://localhost:4000/api/v1/plugins/@hyperledger/cactus-plugin-ledger-connector-fabric/get-transaction-receipt-by-txid"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "https://localhost:4000/api/v1/plugins/@hyperledger/cactus-plugin-ledger-connector-fabric/deploy-contract-go-source"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "https://localhost:4000/api/v1/plugins/@hyperledger/cactus-plugin-ledger-connector-fabric/deploy-contract"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "https://localhost:4000/api/v1/plugins/@hyperledger/cactus-plugin-ledger-connector-fabric/get-prometheus-exporter-metrics"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "https://localhost:4000/api/v1/plugins/@hyperledger/cactus-plugin-ledger-connector-besu/deploy-contract-solidity-bytecode"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "https://localhost:4000/api/v1/plugins/@hyperledger/cactus-plugin-ledger-connector-besu/get-balance"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "https://localhost:4000/api/v1/plugins/@hyperledger/cactus-plugin-ledger-connector-besu/get-block"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "https://localhost:4000/api/v1/plugins/@hyperledger/cactus-plugin-ledger-connector-besu/run-transaction"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "https://localhost:4000/api/v1/plugins/@hyperledger/cactus-plugin-ledger-connector-besu/get-transaction"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "https://localhost:4000/api/v1/plugins/@hyperledger/cactus-plugin-ledger-connector-besu/get-past-logs"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "https://localhost:4000/api/v1/plugins/@hyperledger/cactus-plugin-ledger-connector-besu/invoke-contract"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "https://localhost:4000/api/v1/plugins/@hyperledger/cactus-plugin-ledger-connector-besu/sign-transaction"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "https://localhost:4000/api/v1/plugins/@hyperledger/cactus-plugin-ledger-connector-besu/get-prometheus-exporter-metrics"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "https://localhost:4000/api/v1/plugins/@hyperledger/cactus-plugin-ledger-connector-besu/get-besu-record"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-28 20:11:32.683000",
+          "duration_sec": 0.059413
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "pwd\nls -la\ncat urls.txt",
+          "commands": [
+            {
+              "annotations": [
+                "SC-PWD"
+              ],
+              "command": "pwd",
+              "categories": [
+                "FILE_SYSTEM",
+                "UTILS"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-LS"
+              ],
+              "command": "ls",
+              "categories": [
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-LS-F-L",
+                    "SC-LS-F-A"
+                  ],
+                  "content": "-la"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CAT"
+              ],
+              "command": "cat",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CAT-PATH"
+                  ],
+                  "content": "urls.txt"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-28 20:11:32.742000",
+          "duration_sec": 0.025223
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "yarn generate-api-server-config",
+          "commands": [
+            {
+              "annotations": [
+                "SC-YARN-RUN-SCRIPT"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "RUN_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-YARN-RUN-SCRIPT-SCRIPT"
+                  ],
+                  "content": "generate-api-server-config"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-28 20:11:32.767000",
+          "duration_sec": 3.015071
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "echo \"$(jq '.authorizationProtocol = \"NONE\"' .config.json)\" > .config.json",
+          "commands": [
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"$(jq '.authorizationProtocol = \"NONE\"' .config.json)\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-JQ"
+              ],
+              "command": "jq",
+              "categories": [
+                "DATA_PROCESSING"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-JQ-FILTER"
+                  ],
+                  "content": "'.authorizationProtocol = \"NONE\"'"
+                },
+                {
+                  "annotations": [
+                    "SC-JQ-PATH"
+                  ],
+                  "content": ".config.json"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-28 20:11:35.782000",
+          "duration_sec": 0.049783
+        },
+        {
+          "type": "action",
+          "folder": "fabric-samples/bin/peer\", \"connectionProfile\":\"{}\", \"dockerBinary\":\"usr/local/bin/docker\",\"cliContainerEnv\":{\"CORE_PEER_LOCALMSPID\":\"Org1MSP\",\"CORE_PEER_ADDRESS\":\"peer0.org1.example.com:7051\",\"CORE_PEER_MSPCONFIGPATH\":\"/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin",
+          "with": {},
+          "env": {},
+          "start_date": "2023-09-28 20:11:35.832000",
+          "duration_sec": 0.048931
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "echo \"$(jq '.plugins += [{\"packageName\":\"@hyperledger/cactus-plugin-ledger-connector-besu\",\"type\":\"org.hyperledger.cactus.plugin_import_type.LOCAL\",\"action\":\"org.hyperledger.cactus.plugin_import_action.INSTALL\",\"options\":{\"rpcApiHttpHost\":\"http://localhost:8545\", \"rpcApiWsHost\":\"ws://localhost:8546\", \"instanceId\":\"some-unique-besu-connector-instance-id\"}}]' .config.json)\" > .config.json",
+          "commands": [
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"$(jq '.plugins += [{\"packageName\":\"@hyperledger/cactus-plugin-ledger-connector-besu\",\"type\":\"org.hyperledger.cactus.plugin_import_type.LOCAL\",\"action\":\"org.hyperledger.cactus.plugin_import_action.INSTALL\",\"options\":{\"rpcApiHttpHost\":\"http://localhost:8545\", \"rpcApiWsHost\":\"ws://localhost:8546\", \"instanceId\":\"some-unique-besu-connector-instance-id\"}}]' .config.json)\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-JQ"
+              ],
+              "command": "jq",
+              "categories": [
+                "DATA_PROCESSING"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-JQ-FILTER"
+                  ],
+                  "content": "'.plugins += [{\"packageName\":\"@hyperledger/cactus-plugin-ledger-connector-besu\",\"type\":\"org.hyperledger.cactus.plugin_import_type.LOCAL\",\"action\":\"org.hyperledger.cactus.plugin_import_action.INSTALL\",\"options\":{\"rpcApiHttpHost\":\"http://localhost:8545\", \"rpcApiWsHost\":\"ws://localhost:8546\", \"instanceId\":\"some-unique-besu-connector-instance-id\"}}]'"
+                },
+                {
+                  "annotations": [
+                    "SC-JQ-PATH"
+                  ],
+                  "content": ".config.json"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-28 20:11:35.881000",
+          "duration_sec": 0.048134
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "docker run -d -p 0.0.0.0:8545:8545/tcp  -p 0.0.0.0:8546:8546/tcp  -p 0.0.0.0:8888:8888/tcp  -p 0.0.0.0:9001:9001/tcp  -p 0.0.0.0:9545:9545/tcp ghcr.io/hyperledger/cactus-besu-all-in-one:2022-04-14-dda3f00\nuntil curl --fail -X POST --data '{\"jsonrpc\":\"2.0\",\"method\":\"eth_chainId\",\"params\":[],\"id\":1}' localhost:8545; do sleep 5;  done",
+          "commands": [
+            {
+              "annotations": [
+                "SC-DOCKER-RUN"
+              ],
+              "command": "docker",
+              "categories": [
+                "VIRTUALIZATION"
+              ],
+              "args": [
+                {
+                  "content": "run"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-F-DETACH"
+                  ],
+                  "content": "-d"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-PUBLISH"
+                  ],
+                  "content": "-p 0.0.0.0:8545:8545/tcp"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-PUBLISH"
+                  ],
+                  "content": "-p 0.0.0.0:8546:8546/tcp"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-PUBLISH"
+                  ],
+                  "content": "-p 0.0.0.0:8888:8888/tcp"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-PUBLISH"
+                  ],
+                  "content": "-p 0.0.0.0:9001:9001/tcp"
+                },
+                {
+                  "annotations": [
+                    "SC-DOCKER-RUN-PUBLISH"
+                  ],
+                  "content": "-p 0.0.0.0:9545:9545/tcp"
+                },
+                {
+                  "content": "ghcr.io/hyperledger/cactus-besu-all-in-one:2022-04-14-dda3f00"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CURL"
+              ],
+              "command": "curl",
+              "categories": [
+                "DOWNLOAD"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CURL-F-FAIL"
+                  ],
+                  "content": "--fail"
+                },
+                {
+                  "annotations": [
+                    "SC-CURL-X"
+                  ],
+                  "content": "-X POST"
+                },
+                {
+                  "annotations": [
+                    "SC-CURL-DATA"
+                  ],
+                  "content": "--data '{\"jsonrpc\":\"2.0\",\"method\":\"eth_chainId\",\"params\":[],\"id\":1}'"
+                },
+                {
+                  "annotations": [
+                    "SC-CURL-URL"
+                  ],
+                  "content": "localhost:8545"
+                }
+              ]
+            },
+            {
+              "command": "sleep",
+              "args": [
+                {
+                  "content": "5"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-09-28 20:11:35.929000",
+          "duration_sec": 20.403494
+        },
+        {
+          "type": "action",
+          "repository": "BerniWittmann",
+          "action": "background-server-action",
+          "version": "v1.1.0",
+          "sha": "4cd0c67a97c1d490dd4ac7e303a528ce56394e29",
+          "with": {
+            "build": "yarn --version",
+            "start": "yarn start:api-server",
+            "command": "nuclei --config=.nuclei-config.yaml --list=urls.txt --sarif-export ~/nuclei.sarif --output nuclei.log",
+            "wait-on": "https://localhost:4000/api/v1/api-server/healthcheck",
+            "wait-on-timeout": "120"
+          },
+          "env": {
+            "NODE_TLS_REJECT_UNAUTHORIZED": "0"
+          },
+          "start_date": "2023-09-28 20:11:56.333000",
+          "duration_sec": 47.706181
+        }
+      ]
+    }
+  ],
+  "total_logs_size": 266370
+}

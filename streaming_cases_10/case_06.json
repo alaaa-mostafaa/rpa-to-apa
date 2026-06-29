@@ -1,0 +1,53 @@
+{
+  "case_label": "highlight/highlight — tweak export settings (#7127)",
+  "intake": {
+    "run_id": "highlight/highlight_.github/workflows/force-go-release.yml_15_1",
+    "repo": "highlight/highlight",
+    "workflow": "force-go-release.yml",
+    "branch": "sdk/highlight-java/v0.1.2",
+    "event": "release",
+    "is_protected_branch": false,
+    "commit_sha": "1cede21c264b",
+    "commit_title": "tweak export settings (#7127)",
+    "conclusion": "failure",
+    "failure_detection": "single_step_inferred",
+    "failed_jobs_count": 1,
+    "n_jobs": 1,
+    "all_failures_are_tooling_artifacts": false
+  },
+  "extraction": {
+    "total_steps_extracted": 1,
+    "strategies": [
+      "group_fallback"
+    ],
+    "total_lines_extracted": 9,
+    "error_markers_found": 0,
+    "sample_error_lines": [
+      "go: github.com/highlight/highlight/sdk/highlight-java@v0.1.2: reading https://proxy.golang.org/github.com/highlight/high",
+      "server response: not found: github.com/highlight/highlight/sdk/highlight-java@v0.1.2: invalid version: missing github.co"
+    ]
+  },
+  "classification": {
+    "category": "DEPENDENCY_CONFLICT",
+    "severity": "LOW",
+    "confidence": 0.95,
+    "action": "HOTFIX_REQUIRED",
+    "reasoning": "The failure is caused by a missing go.mod file for the version sdk/highlight-java/v0.1.2 of the highlight-java SDK, as indicated by the 404 Not Found error in the log. This suggests a dependency version or tagging issue rather than a code regression or configuration error. The branch is not protected and the failure is isolated to one job, so severity is low. A fix is needed to ensure the dependency version is valid and available before retrying.",
+    "evidence": [
+      "LOG EVIDENCE: 404 Not Found for sdk/highlight-java/v0.1.2",
+      "branch: sdk/highlight-java/v0.1.2",
+      "commit message: tweak export settings (#7127)",
+      "failed step: 0_Renew documentation.txt"
+    ],
+    "unknowns": [
+      "Whether the sdk/highlight-java/v0.1.2 tag was correctly pushed",
+      "Whether the go.mod file is missing in the repository at that tag"
+    ]
+  },
+  "ground_truth": {
+    "developer_action": "PR_MERGED",
+    "method": "pr_state",
+    "reasoning": "PR #7127 ('tweak export settings') was merged on 2023-11-10T05:30:18Z.",
+    "match_verdict": "PARTIAL"
+  }
+}

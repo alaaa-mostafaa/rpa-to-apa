@@ -1,0 +1,24 @@
+{
+  "index": 30,
+  "label": "success",
+  "run_id": "couchbase/couchbase-lite-core_.github/workflows/clang-format-check.yml_395_1",
+  "repo": "couchbase/couchbase-lite-core",
+  "workflow_path": ".github/workflows/clang-format-check.yml",
+  "run_number": "395",
+  "attempt": "1",
+  "scan_line": 438309,
+  "case_dir": "/home/guc_alaa/comparison_results/balanced_50_full_logs_20260516/030_success_couchbase_couchbase-lite-core_clang-format-check.yml",
+  "full_log_path": "/home/guc_alaa/comparison_results/balanced_50_full_logs_20260516/030_success_couchbase_couchbase-lite-core_clang-format-check.yml/full_log.txt",
+  "tarball": "logs/couchbase/couchbase-lite-core/Lint_Code_Base_8b0c/395-1.tar.gz",
+  "n_job_logs": 7,
+  "job_log_files": [
+    "0_Formatting Check.txt",
+    "Formatting Check/11_Complete job.txt",
+    "Formatting Check/3_Lint Code Base.txt",
+    "Formatting Check/6_Post Checkout Code.txt",
+    "Formatting Check/1_Set up job.txt",
+    "-2147483648_Formatting Check.txt",
+    "Formatting Check/2_Checkout Code.txt"
+  ],
+  "full_log_chars": 87682
+}

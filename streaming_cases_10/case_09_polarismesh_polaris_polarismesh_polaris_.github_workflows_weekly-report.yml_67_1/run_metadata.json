@@ -1,0 +1,15 @@
+{
+  "run_id": "polarismesh/polaris_.github/workflows/weekly-report.yml_67_1",
+  "repository_name": "polarismesh/polaris",
+  "workflow_path": ".github/workflows/weekly-report.yml",
+  "run_number": 67,
+  "attempt": 1,
+  "event": "schedule",
+  "conclusion": "failure",
+  "branch": "main",
+  "commit_sha": "0aebad7db5079060e96d13699310a14684fc3ea3",
+  "commit_message": "fix release_history search bug (#1281)",
+  "logs_archive": {
+    "path": "/data/logs/polarismesh/polaris/weekly_report_94cc/67-1.tar.gz"
+  }
+}

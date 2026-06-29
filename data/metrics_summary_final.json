@@ -1,0 +1,12 @@
+{
+  "total_cases": 426,
+  "scorable_cases": 250,
+  "not_scorable_cases": 175,
+  "evaluation_errors": 1,
+  "rpa_accuracy": 36.8,
+  "apa_eig_accuracy": 64.0,
+  "apa_eig_accuracy_with_partial": 90.4,
+  "fingerprint_cache_hits": 0,
+  "estimated_api_calls_saved": 0,
+  "divergent_cases": 69
+}

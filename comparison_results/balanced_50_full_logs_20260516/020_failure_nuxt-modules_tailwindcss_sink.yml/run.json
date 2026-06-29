@@ -1,0 +1,515 @@
+{
+  "_id": "nuxt-modules/tailwindcss_.github/workflows/sink.yml_6_1",
+  "repository_name": "nuxt-modules/tailwindcss",
+  "workflow_path": ".github/workflows/sink.yml",
+  "run_number": 6,
+  "run_attempt": 1,
+  "time_to_import": 433676.587518,
+  "metadata": {
+    "id": 6761991512,
+    "name": "kitchen sink",
+    "node_id": "WFR_kwLOCrJ0Is8AAAABkwvNWA",
+    "head_branch": "update-ci",
+    "head_sha": "231db58fff0d89700633744f4f20d83aafe7e991",
+    "path": ".github/workflows/sink.yml",
+    "display_title": "chore: update repo",
+    "run_number": 6,
+    "event": "pull_request",
+    "status": "completed",
+    "conclusion": "failure",
+    "workflow_id": 74995806,
+    "check_suite_id": 17919281850,
+    "check_suite_node_id": "CS_kwDOCrJ0Is8AAAAELBKKug",
+    "url": "https://api.github.com/repos/nuxt-modules/tailwindcss/actions/runs/6761991512",
+    "html_url": "https://github.com/nuxt-modules/tailwindcss/actions/runs/6761991512",
+    "pull_requests": [
+      {
+        "url": "https://api.github.com/repos/nuxt-modules/tailwindcss/pulls/753",
+        "id": 1587146341,
+        "number": 753,
+        "head": {
+          "ref": "update-ci",
+          "sha": "9fd7e052a30803c26f225265b5828688389e3db0",
+          "repo": {
+            "id": 179467298,
+            "url": "https://api.github.com/repos/nuxt-modules/tailwindcss",
+            "name": "tailwindcss"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "58abedf5e5f84edfcc3d2a2f257e3d7d89969fee",
+          "repo": {
+            "id": 179467298,
+            "url": "https://api.github.com/repos/nuxt-modules/tailwindcss",
+            "name": "tailwindcss"
+          }
+        }
+      }
+    ],
+    "created_at": "2023-11-05T14:44:22Z",
+    "updated_at": "2023-11-05T14:45:23Z",
+    "actor": {
+      "login": "ineshbose",
+      "id": 56732164,
+      "node_id": "MDQ6VXNlcjU2NzMyMTY0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/56732164?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ineshbose",
+      "html_url": "https://github.com/ineshbose",
+      "followers_url": "https://api.github.com/users/ineshbose/followers",
+      "following_url": "https://api.github.com/users/ineshbose/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ineshbose/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ineshbose/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ineshbose/subscriptions",
+      "organizations_url": "https://api.github.com/users/ineshbose/orgs",
+      "repos_url": "https://api.github.com/users/ineshbose/repos",
+      "events_url": "https://api.github.com/users/ineshbose/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ineshbose/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "run_attempt": 1,
+    "referenced_workflows": [],
+    "run_started_at": "2023-11-05T14:44:22Z",
+    "triggering_actor": {
+      "login": "ineshbose",
+      "id": 56732164,
+      "node_id": "MDQ6VXNlcjU2NzMyMTY0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/56732164?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ineshbose",
+      "html_url": "https://github.com/ineshbose",
+      "followers_url": "https://api.github.com/users/ineshbose/followers",
+      "following_url": "https://api.github.com/users/ineshbose/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ineshbose/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ineshbose/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ineshbose/subscriptions",
+      "organizations_url": "https://api.github.com/users/ineshbose/orgs",
+      "repos_url": "https://api.github.com/users/ineshbose/repos",
+      "events_url": "https://api.github.com/users/ineshbose/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ineshbose/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "jobs_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/actions/runs/6761991512/jobs",
+    "logs_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/actions/runs/6761991512/logs",
+    "check_suite_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/check-suites/17919281850",
+    "artifacts_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/actions/runs/6761991512/artifacts",
+    "cancel_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/actions/runs/6761991512/cancel",
+    "rerun_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/actions/runs/6761991512/rerun",
+    "previous_attempt_url": null,
+    "workflow_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/actions/workflows/74995806",
+    "head_commit": {
+      "id": "231db58fff0d89700633744f4f20d83aafe7e991",
+      "tree_id": "5f2d8bab23155ec070eb23bfdc99a499e14f5936",
+      "message": "Merge branch 'main' of https://github.com/nuxt-modules/tailwindcss into update-ci",
+      "timestamp": "2023-11-05T14:44:10Z",
+      "author": {
+        "name": "Inesh Bose",
+        "email": "56732164+ineshbose@users.noreply.github.com"
+      },
+      "committer": {
+        "name": "Inesh Bose",
+        "email": "56732164+ineshbose@users.noreply.github.com"
+      }
+    },
+    "repository": {
+      "id": 179467298,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNzk0NjcyOTg=",
+      "name": "tailwindcss",
+      "full_name": "nuxt-modules/tailwindcss",
+      "private": false,
+      "owner": {
+        "login": "nuxt-modules",
+        "id": 111748132,
+        "node_id": "O_kgDOBqkkJA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/111748132?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/nuxt-modules",
+        "html_url": "https://github.com/nuxt-modules",
+        "followers_url": "https://api.github.com/users/nuxt-modules/followers",
+        "following_url": "https://api.github.com/users/nuxt-modules/following{/other_user}",
+        "gists_url": "https://api.github.com/users/nuxt-modules/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/nuxt-modules/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/nuxt-modules/subscriptions",
+        "organizations_url": "https://api.github.com/users/nuxt-modules/orgs",
+        "repos_url": "https://api.github.com/users/nuxt-modules/repos",
+        "events_url": "https://api.github.com/users/nuxt-modules/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/nuxt-modules/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/nuxt-modules/tailwindcss",
+      "description": "Tailwind CSS module for Nuxt",
+      "fork": false,
+      "url": "https://api.github.com/repos/nuxt-modules/tailwindcss",
+      "forks_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/forks",
+      "keys_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/teams",
+      "hooks_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/hooks",
+      "issue_events_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/events",
+      "assignees_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/tags",
+      "blobs_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/languages",
+      "stargazers_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/stargazers",
+      "contributors_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/contributors",
+      "subscribers_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/subscribers",
+      "subscription_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/subscription",
+      "commits_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/merges",
+      "archive_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/downloads",
+      "issues_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/labels{/name}",
+      "releases_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/deployments"
+    },
+    "head_repository": {
+      "id": 179467298,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNzk0NjcyOTg=",
+      "name": "tailwindcss",
+      "full_name": "nuxt-modules/tailwindcss",
+      "private": false,
+      "owner": {
+        "login": "nuxt-modules",
+        "id": 111748132,
+        "node_id": "O_kgDOBqkkJA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/111748132?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/nuxt-modules",
+        "html_url": "https://github.com/nuxt-modules",
+        "followers_url": "https://api.github.com/users/nuxt-modules/followers",
+        "following_url": "https://api.github.com/users/nuxt-modules/following{/other_user}",
+        "gists_url": "https://api.github.com/users/nuxt-modules/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/nuxt-modules/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/nuxt-modules/subscriptions",
+        "organizations_url": "https://api.github.com/users/nuxt-modules/orgs",
+        "repos_url": "https://api.github.com/users/nuxt-modules/repos",
+        "events_url": "https://api.github.com/users/nuxt-modules/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/nuxt-modules/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/nuxt-modules/tailwindcss",
+      "description": "Tailwind CSS module for Nuxt",
+      "fork": false,
+      "url": "https://api.github.com/repos/nuxt-modules/tailwindcss",
+      "forks_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/forks",
+      "keys_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/teams",
+      "hooks_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/hooks",
+      "issue_events_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/events",
+      "assignees_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/tags",
+      "blobs_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/languages",
+      "stargazers_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/stargazers",
+      "contributors_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/contributors",
+      "subscribers_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/subscribers",
+      "subscription_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/subscription",
+      "commits_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/merges",
+      "archive_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/downloads",
+      "issues_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/labels{/name}",
+      "releases_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/nuxt-modules/tailwindcss/deployments"
+    }
+  },
+  "logs_archive": {
+    "path": "/data/logs/nuxt-modules/tailwindcss/kitchen_sink_206e/6-1.tar.gz"
+  },
+  "log_insights": [
+    {
+      "file": "0_ci.txt",
+      "total_lines": 455,
+      "log_size": 34777,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231030.2.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v4",
+          "sha": "b4ffde65f46336ab88eb53be808477a3936bae11",
+          "with": {
+            "repository": "nuxt-modules/tailwindcss",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "show-progress": "true",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-11-05 14:44:31.464000",
+          "duration_sec": 3.099481
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v4",
+          "sha": "b4ffde65f46336ab88eb53be808477a3936bae11",
+          "with": {
+            "repository": "nuxt/nuxt.com",
+            "path": "test/fixtures/nuxt.com",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "show-progress": "true",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-11-05 14:44:34.564000",
+          "duration_sec": 2.340677
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "corepack enable",
+          "commands": [
+            {
+              "command": "corepack",
+              "args": [
+                {
+                  "content": "enable"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-05 14:44:36.904000",
+          "duration_sec": 0.410003
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "echo -e \"import { resolve } from 'pathe'\\n$(cat test/fixtures/nuxt.com/nuxt.config.ts)\" > test/fixtures/nuxt.com/nuxt.config.ts\nsed -i -e 's|export default defineNuxtConfig({|export default defineNuxtConfig({\\n  alias: { emojilib: resolve(__dirname, \"../../__mocks__/emojilib\"), \"@nuxtjs/tailwindcss\": resolve(__dirname, \"../../../src/module\") },|' test/fixtures/nuxt.com/nuxt.config.ts",
+          "commands": [
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-F-E"
+                  ],
+                  "content": "-e"
+                },
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"import { resolve } from 'pathe'\\\n$(cat test/fixtures/nuxt.com/nuxt.config.ts)\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-SED"
+              ],
+              "command": "sed",
+              "categories": [
+                "REGEX"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-SED-F-IN-PLACE"
+                  ],
+                  "content": "-i"
+                },
+                {
+                  "annotations": [
+                    "SC-SED-EXPRESSION"
+                  ],
+                  "content": "-e 's|export default defineNuxtConfig({|export default defineNuxtConfig({\n  alias: { emojilib: resolve(__dirname, \"../../__mocks__/emojilib\"), \"@nuxtjs/tailwindcss\": resolve(__dirname, \"../../../src/module\") },|'"
+                },
+                {
+                  "annotations": [
+                    "SC-SED-PATHS"
+                  ],
+                  "content": "test/fixtures/nuxt.com/nuxt.config.ts"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-CAT"
+              ],
+              "command": "cat",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CAT-PATH"
+                  ],
+                  "content": "test/fixtures/nuxt.com/nuxt.config.ts"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-05 14:44:37.314000",
+          "duration_sec": 0.028556
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "setup-node",
+          "version": "v4",
+          "sha": "8f152de45cc393bb48ce5d89d36b731f54556e65",
+          "with": {
+            "node-version": "20",
+            "always-auth": "false",
+            "check-latest": "false",
+            "token": "***"
+          },
+          "env": {},
+          "start_date": "2023-11-05 14:44:37.343000",
+          "duration_sec": 1.115336
+        },
+        {
+          "type": "shell",
+          "env": {
+            "NUXT_UI_PRO_LICENSE": ""
+          },
+          "code": "pnpm install --ignore-workspace\ntimeout 5m pnpm generate || true",
+          "commands": [
+            {
+              "command": "pnpm",
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "content": "--ignore-workspace"
+                }
+              ]
+            },
+            {
+              "command": "timeout",
+              "args": [
+                {
+                  "content": "5m"
+                },
+                {
+                  "content": "pnpm"
+                },
+                {
+                  "content": "generate"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-TRUE"
+              ],
+              "command": "true",
+              "categories": [
+                "UTILS"
+              ]
+            }
+          ],
+          "start_date": "2023-11-05 14:44:38.458000",
+          "duration_sec": 18.420198
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "pnpm i && pnpm test sink",
+          "commands": [
+            {
+              "command": "pnpm",
+              "args": [
+                {
+                  "content": "i"
+                }
+              ]
+            },
+            {
+              "command": "pnpm",
+              "args": [
+                {
+                  "content": "test"
+                },
+                {
+                  "content": "sink"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-05 14:44:56.878000",
+          "duration_sec": 23.43144
+        }
+      ]
+    }
+  ],
+  "total_logs_size": 35377
+}

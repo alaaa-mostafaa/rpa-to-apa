@@ -1,0 +1,32 @@
+{
+  "index": 7,
+  "label": "failure",
+  "run_id": "deepmap/oapi-codegen_.github/workflows/lint.yml_970_1",
+  "repo": "deepmap/oapi-codegen",
+  "workflow_path": ".github/workflows/lint.yml",
+  "run_number": "970",
+  "attempt": "1",
+  "scan_line": 454841,
+  "case_dir": "/home/guc_alaa/comparison_results/balanced_50_full_logs_20260516/007_failure_deepmap_oapi-codegen_lint.yml",
+  "full_log_path": "/home/guc_alaa/comparison_results/balanced_50_full_logs_20260516/007_failure_deepmap_oapi-codegen_lint.yml/full_log.txt",
+  "tarball": "logs/deepmap/oapi-codegen/Lint_project_ee92/970-1.tar.gz",
+  "n_job_logs": 15,
+  "job_log_files": [
+    "Build (go-version, 1.21)/3_Set up Go.txt",
+    "Build (go-version, 1.21)/9_Complete job.txt",
+    "Build (go-version, 1.21)/8_Post Check out source code.txt",
+    "0_Build (go-version, 1.21).txt",
+    "Build (go-version-file, go.mod)/3_Set up Go.txt",
+    "Build (go-version-file, go.mod)/9_Complete job.txt",
+    "Build (go-version-file, go.mod)/8_Post Check out source code.txt",
+    "1_Build (go-version-file, go.mod).txt",
+    "Build (go-version, 1.21)/1_Set up job.txt",
+    "Build (go-version-file, go.mod)/2_Check out source code.txt",
+    "Build (go-version, 1.21)/4_Run `make lint-ci`.txt",
+    "Build (go-version-file, go.mod)/1_Set up job.txt",
+    "Build (go-version-file, go.mod)/4_Run `make lint-ci`.txt",
+    "-2147483648_Build.txt",
+    "Build (go-version, 1.21)/2_Check out source code.txt"
+  ],
+  "full_log_chars": 180158
+}

@@ -1,0 +1,458 @@
+{
+  "_id": "aptos-labs/aptos-core_.github/workflows/check-protos.yaml_1635_1",
+  "repository_name": "aptos-labs/aptos-core",
+  "workflow_path": ".github/workflows/check-protos.yaml",
+  "run_number": 1635,
+  "run_attempt": 1,
+  "time_to_import": 5042.742626,
+  "metadata": {
+    "id": 6858557274,
+    "name": "Check Protos",
+    "node_id": "WFR_kwLOG5Kuns8AAAABmM1HWg",
+    "head_branch": "oracle_service",
+    "head_sha": "043c5b19877a438795510f0fb963c51e910667c9",
+    "path": ".github/workflows/check-protos.yaml",
+    "display_title": "Oracle service",
+    "run_number": 1635,
+    "event": "pull_request",
+    "status": "completed",
+    "conclusion": "failure",
+    "workflow_id": 73393907,
+    "check_suite_id": 18162327659,
+    "check_suite_node_id": "CS_kwDOG5Kuns8AAAAEOo8gaw",
+    "url": "https://api.github.com/repos/aptos-labs/aptos-core/actions/runs/6858557274",
+    "html_url": "https://github.com/aptos-labs/aptos-core/actions/runs/6858557274",
+    "pull_requests": [
+      {
+        "url": "https://api.github.com/repos/aptos-labs/aptos-core/pulls/10820",
+        "id": 1591103536,
+        "number": 10820,
+        "head": {
+          "ref": "oracle_service",
+          "sha": "cf7ae5463e53ba078e01ca3f49e8951ddfd58faa",
+          "repo": {
+            "id": 462597790,
+            "url": "https://api.github.com/repos/aptos-labs/aptos-core",
+            "name": "aptos-core"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "8c9ca27de9f3a0252f0864655685d022d55cf68e",
+          "repo": {
+            "id": 462597790,
+            "url": "https://api.github.com/repos/aptos-labs/aptos-core",
+            "name": "aptos-core"
+          }
+        }
+      }
+    ],
+    "created_at": "2023-11-14T02:45:41Z",
+    "updated_at": "2023-11-14T02:46:14Z",
+    "actor": {
+      "login": "zjma",
+      "id": 4213569,
+      "node_id": "MDQ6VXNlcjQyMTM1Njk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4213569?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zjma",
+      "html_url": "https://github.com/zjma",
+      "followers_url": "https://api.github.com/users/zjma/followers",
+      "following_url": "https://api.github.com/users/zjma/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zjma/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zjma/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zjma/subscriptions",
+      "organizations_url": "https://api.github.com/users/zjma/orgs",
+      "repos_url": "https://api.github.com/users/zjma/repos",
+      "events_url": "https://api.github.com/users/zjma/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zjma/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "run_attempt": 1,
+    "referenced_workflows": [],
+    "run_started_at": "2023-11-14T02:45:41Z",
+    "triggering_actor": {
+      "login": "zjma",
+      "id": 4213569,
+      "node_id": "MDQ6VXNlcjQyMTM1Njk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4213569?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zjma",
+      "html_url": "https://github.com/zjma",
+      "followers_url": "https://api.github.com/users/zjma/followers",
+      "following_url": "https://api.github.com/users/zjma/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zjma/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zjma/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zjma/subscriptions",
+      "organizations_url": "https://api.github.com/users/zjma/orgs",
+      "repos_url": "https://api.github.com/users/zjma/repos",
+      "events_url": "https://api.github.com/users/zjma/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zjma/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "jobs_url": "https://api.github.com/repos/aptos-labs/aptos-core/actions/runs/6858557274/jobs",
+    "logs_url": "https://api.github.com/repos/aptos-labs/aptos-core/actions/runs/6858557274/logs",
+    "check_suite_url": "https://api.github.com/repos/aptos-labs/aptos-core/check-suites/18162327659",
+    "artifacts_url": "https://api.github.com/repos/aptos-labs/aptos-core/actions/runs/6858557274/artifacts",
+    "cancel_url": "https://api.github.com/repos/aptos-labs/aptos-core/actions/runs/6858557274/cancel",
+    "rerun_url": "https://api.github.com/repos/aptos-labs/aptos-core/actions/runs/6858557274/rerun",
+    "previous_attempt_url": null,
+    "workflow_url": "https://api.github.com/repos/aptos-labs/aptos-core/actions/workflows/73393907",
+    "head_commit": {
+      "id": "043c5b19877a438795510f0fb963c51e910667c9",
+      "tree_id": "c5af1c666aabdf56a0d7a9a74eb583b09d464345",
+      "message": "update",
+      "timestamp": "2023-11-14T02:45:31Z",
+      "author": {
+        "name": "zhoujun.ma",
+        "email": "zhoujun@aptoslabs.com"
+      },
+      "committer": {
+        "name": "zhoujun.ma",
+        "email": "zhoujun@aptoslabs.com"
+      }
+    },
+    "repository": {
+      "id": 462597790,
+      "node_id": "R_kgDOG5Kung",
+      "name": "aptos-core",
+      "full_name": "aptos-labs/aptos-core",
+      "private": false,
+      "owner": {
+        "login": "aptos-labs",
+        "id": 99841612,
+        "node_id": "O_kgDOBfN2TA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/99841612?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/aptos-labs",
+        "html_url": "https://github.com/aptos-labs",
+        "followers_url": "https://api.github.com/users/aptos-labs/followers",
+        "following_url": "https://api.github.com/users/aptos-labs/following{/other_user}",
+        "gists_url": "https://api.github.com/users/aptos-labs/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/aptos-labs/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/aptos-labs/subscriptions",
+        "organizations_url": "https://api.github.com/users/aptos-labs/orgs",
+        "repos_url": "https://api.github.com/users/aptos-labs/repos",
+        "events_url": "https://api.github.com/users/aptos-labs/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/aptos-labs/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/aptos-labs/aptos-core",
+      "description": "Aptos is a layer 1 blockchain built to support the widespread use of blockchain through better technology and user experience.",
+      "fork": false,
+      "url": "https://api.github.com/repos/aptos-labs/aptos-core",
+      "forks_url": "https://api.github.com/repos/aptos-labs/aptos-core/forks",
+      "keys_url": "https://api.github.com/repos/aptos-labs/aptos-core/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/aptos-labs/aptos-core/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/aptos-labs/aptos-core/teams",
+      "hooks_url": "https://api.github.com/repos/aptos-labs/aptos-core/hooks",
+      "issue_events_url": "https://api.github.com/repos/aptos-labs/aptos-core/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/aptos-labs/aptos-core/events",
+      "assignees_url": "https://api.github.com/repos/aptos-labs/aptos-core/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/aptos-labs/aptos-core/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/aptos-labs/aptos-core/tags",
+      "blobs_url": "https://api.github.com/repos/aptos-labs/aptos-core/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/aptos-labs/aptos-core/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/aptos-labs/aptos-core/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/aptos-labs/aptos-core/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/aptos-labs/aptos-core/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/aptos-labs/aptos-core/languages",
+      "stargazers_url": "https://api.github.com/repos/aptos-labs/aptos-core/stargazers",
+      "contributors_url": "https://api.github.com/repos/aptos-labs/aptos-core/contributors",
+      "subscribers_url": "https://api.github.com/repos/aptos-labs/aptos-core/subscribers",
+      "subscription_url": "https://api.github.com/repos/aptos-labs/aptos-core/subscription",
+      "commits_url": "https://api.github.com/repos/aptos-labs/aptos-core/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/aptos-labs/aptos-core/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/aptos-labs/aptos-core/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/aptos-labs/aptos-core/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/aptos-labs/aptos-core/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/aptos-labs/aptos-core/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/aptos-labs/aptos-core/merges",
+      "archive_url": "https://api.github.com/repos/aptos-labs/aptos-core/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/aptos-labs/aptos-core/downloads",
+      "issues_url": "https://api.github.com/repos/aptos-labs/aptos-core/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/aptos-labs/aptos-core/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/aptos-labs/aptos-core/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/aptos-labs/aptos-core/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/aptos-labs/aptos-core/labels{/name}",
+      "releases_url": "https://api.github.com/repos/aptos-labs/aptos-core/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/aptos-labs/aptos-core/deployments"
+    },
+    "head_repository": {
+      "id": 462597790,
+      "node_id": "R_kgDOG5Kung",
+      "name": "aptos-core",
+      "full_name": "aptos-labs/aptos-core",
+      "private": false,
+      "owner": {
+        "login": "aptos-labs",
+        "id": 99841612,
+        "node_id": "O_kgDOBfN2TA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/99841612?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/aptos-labs",
+        "html_url": "https://github.com/aptos-labs",
+        "followers_url": "https://api.github.com/users/aptos-labs/followers",
+        "following_url": "https://api.github.com/users/aptos-labs/following{/other_user}",
+        "gists_url": "https://api.github.com/users/aptos-labs/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/aptos-labs/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/aptos-labs/subscriptions",
+        "organizations_url": "https://api.github.com/users/aptos-labs/orgs",
+        "repos_url": "https://api.github.com/users/aptos-labs/repos",
+        "events_url": "https://api.github.com/users/aptos-labs/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/aptos-labs/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/aptos-labs/aptos-core",
+      "description": "Aptos is a layer 1 blockchain built to support the widespread use of blockchain through better technology and user experience.",
+      "fork": false,
+      "url": "https://api.github.com/repos/aptos-labs/aptos-core",
+      "forks_url": "https://api.github.com/repos/aptos-labs/aptos-core/forks",
+      "keys_url": "https://api.github.com/repos/aptos-labs/aptos-core/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/aptos-labs/aptos-core/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/aptos-labs/aptos-core/teams",
+      "hooks_url": "https://api.github.com/repos/aptos-labs/aptos-core/hooks",
+      "issue_events_url": "https://api.github.com/repos/aptos-labs/aptos-core/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/aptos-labs/aptos-core/events",
+      "assignees_url": "https://api.github.com/repos/aptos-labs/aptos-core/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/aptos-labs/aptos-core/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/aptos-labs/aptos-core/tags",
+      "blobs_url": "https://api.github.com/repos/aptos-labs/aptos-core/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/aptos-labs/aptos-core/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/aptos-labs/aptos-core/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/aptos-labs/aptos-core/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/aptos-labs/aptos-core/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/aptos-labs/aptos-core/languages",
+      "stargazers_url": "https://api.github.com/repos/aptos-labs/aptos-core/stargazers",
+      "contributors_url": "https://api.github.com/repos/aptos-labs/aptos-core/contributors",
+      "subscribers_url": "https://api.github.com/repos/aptos-labs/aptos-core/subscribers",
+      "subscription_url": "https://api.github.com/repos/aptos-labs/aptos-core/subscription",
+      "commits_url": "https://api.github.com/repos/aptos-labs/aptos-core/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/aptos-labs/aptos-core/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/aptos-labs/aptos-core/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/aptos-labs/aptos-core/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/aptos-labs/aptos-core/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/aptos-labs/aptos-core/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/aptos-labs/aptos-core/merges",
+      "archive_url": "https://api.github.com/repos/aptos-labs/aptos-core/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/aptos-labs/aptos-core/downloads",
+      "issues_url": "https://api.github.com/repos/aptos-labs/aptos-core/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/aptos-labs/aptos-core/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/aptos-labs/aptos-core/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/aptos-labs/aptos-core/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/aptos-labs/aptos-core/labels{/name}",
+      "releases_url": "https://api.github.com/repos/aptos-labs/aptos-core/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/aptos-labs/aptos-core/deployments"
+    }
+  },
+  "logs_archive": {
+    "path": "/data/logs/aptos-labs/aptos-core/Check_Protos_977b/1635-1.tar.gz"
+  },
+  "log_insights": [
+    {
+      "file": "0_check.txt",
+      "total_lines": 765,
+      "log_size": 59466,
+      "token_permissions": {
+        "Contents": "read",
+        "Metadata": "read",
+        "Packages": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231030.2.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "aptos-labs/aptos-core",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-11-14 02:45:53.419000",
+          "duration_sec": 7.173778
+        },
+        {
+          "type": "action",
+          "repository": "bufbuild",
+          "action": "buf-setup-action",
+          "version": "v1.24.0",
+          "sha": "d5f79ca09dab494736bae6976ce973d76d8853e1",
+          "with": {
+            "version": "1.24.0",
+            "buf_domain": "buf.build"
+          },
+          "env": {},
+          "start_date": "2023-11-14 02:46:00.593000",
+          "duration_sec": 1.123952
+        },
+        {
+          "type": "action",
+          "repository": "pre-commit",
+          "action": "action",
+          "version": "v3.0.0",
+          "sha": "646c83fcd040023954eafda54b4db0192ce70507",
+          "with": {
+            "extra_args": "--all-files"
+          },
+          "env": {},
+          "start_date": "2023-11-14 02:46:01.717000",
+          "duration_sec": 0.025484
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "python -m pip install pre-commit",
+          "commands": [
+            {
+              "annotations": [
+                "SC-PYTHON-MODULE"
+              ],
+              "command": "python",
+              "categories": [
+                "DEVELOPMENT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-PYTHON-MODULE-M"
+                  ],
+                  "content": "-m"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-PIP-INSTALL"
+              ],
+              "command": "pip",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-TARGET"
+                  ],
+                  "content": "pre-commit"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-14 02:46:01.742000",
+          "duration_sec": 3.687256
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "python -m pip freeze --local",
+          "commands": [
+            {
+              "annotations": [
+                "SC-PYTHON-MODULE"
+              ],
+              "command": "python",
+              "categories": [
+                "DEVELOPMENT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-PYTHON-MODULE-M"
+                  ],
+                  "content": "-m"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-PIP-FREEZE"
+              ],
+              "command": "pip",
+              "categories": [
+                "PACKAGE_MANAGEMENT"
+              ],
+              "args": [
+                {
+                  "content": "freeze"
+                },
+                {
+                  "annotations": [
+                    "SC-PIP-FREEZE-LOCAL"
+                  ],
+                  "content": "--local"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-14 02:46:05.429000",
+          "duration_sec": 0.514608
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "cache",
+          "version": "v3",
+          "sha": "704facf57e6136b1bc63b828d79edcd491f0ee84",
+          "with": {
+            "path": "~/.cache/pre-commit",
+            "key": "pre-commit-3||a316ebbcca1711d313a23ea41ab1cc01e65c7d36fb7447cc0373e0b829851907",
+            "enableCrossOsArchive": "false",
+            "fail-on-cache-miss": "false",
+            "lookup-only": "false"
+          },
+          "env": {},
+          "start_date": "2023-11-14 02:46:05.944000",
+          "duration_sec": 0.977788
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "pre-commit run --show-diff-on-failure --color=always --all-files",
+          "commands": [
+            {
+              "command": "pre-commit",
+              "args": [
+                {
+                  "content": "run"
+                },
+                {
+                  "content": "--show-diff-on-failure"
+                },
+                {
+                  "content": "--color=always"
+                },
+                {
+                  "content": "--all-files"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-14 02:46:06.922000",
+          "duration_sec": 3.737469
+        }
+      ]
+    }
+  ],
+  "total_logs_size": 60234
+}

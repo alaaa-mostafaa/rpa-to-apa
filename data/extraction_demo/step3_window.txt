@@ -1,0 +1,4 @@
+STEP 3 - WINDOW: keep 150 lines before / 5 after each marker
+======================================================================
+  window 1: lines 634-789  (156 lines)
+  window 2: lines 1379-1534  (156 lines)

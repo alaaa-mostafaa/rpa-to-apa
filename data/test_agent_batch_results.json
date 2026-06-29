@@ -1,0 +1,4099 @@
+{
+  "summary": {
+    "total_cases": 23,
+    "fix_suggestion": {
+      "exact_file": 9,
+      "unclear": 14,
+      "none": 0
+    },
+    "cases_with_mentioned_files": 5,
+    "cases_with_changed_files": 22,
+    "action_distribution": {
+      "BLOCK_DEPLOY": 4,
+      "FIX_CODE": 5,
+      "FIX_WORKFLOW": 10,
+      "PIN_VERSION": 4
+    },
+    "category_distribution": {
+      "CODE_REGRESSION": 9,
+      "CONFIG_ERROR": 10,
+      "DEPENDENCY_CONFLICT": 4
+    },
+    "avg_confidence": 0.7626086956521739,
+    "avg_bayesian_confidence": 0.6816035358866648,
+    "avg_steps_taken": 4.695652173913044,
+    "tool_usage_frequency": {
+      "inspect_errors": 23,
+      "inspect_changed_files": 23,
+      "analyze_commit": 17,
+      "analyze_detection": 15,
+      "analyze_branch": 4,
+      "analyze_jobs": 3
+    }
+  },
+  "cases": [
+    {
+      "label": "pyca/bcrypt — GLIBC incompatibility (Python wheels)",
+      "result": {
+        "classification": {
+          "category": "CONFIG_ERROR",
+          "severity": "HIGH",
+          "confidence": 0.81,
+          "action": "FIX_WORKFLOW",
+          "reasoning": "The Bayesian posterior strongly favors CONFIG_ERROR at 80.7%, supported by changes to workflow files (.github/workflows/ci.yml and wheel-builder.yml) in the triggering commit. The error message about missing GLIBC_2.25 suggests a runtime environment mismatch caused by configuration changes, consistent with the updated GitHub Actions checkout version.",
+          "mentioned_files": [],
+          "bayesian_top": "CONFIG_ERROR",
+          "bayesian_confidence": 0.6611570531847173,
+          "steps_taken": 3,
+          "tools_used": [
+            "inspect_errors",
+            "inspect_changed_files"
+          ],
+          "fix_suggestion": {
+            "file": ".github/workflows/ci.yml",
+            "change": "Modify the runner environment or container image used in the workflow to one that includes GLIBC version 2.25 or higher, ensuring compatibility with the updated actions/checkout@v4.1.0 and the Node.js binary requirements.",
+            "reason": "The error message indicates the runtime environment lacks GLIBC_2.25, which is required by the Node.js binary used during the workflow. Since the failure started after upgrading actions/checkout to 4.1.0 and the workflows were changed, updating the workflow's environment to a compatible one resolves the incompatibility caused by the new checkout action version."
+          }
+        },
+        "investigation_log": [
+          "[init] Starting investigation of pyca/bcrypt run #82",
+          "[planner step 1] confidence=0% → chose 'inspect_errors': Inspecting the actual error text from the CI logs will provide the most direct evidence to identify the failure type.",
+          "[inspect_errors] found 3 error lines. Top: INFRA_INCOMPATIBILITY (40%)",
+          "[planner step 2] confidence=24% → chose 'inspect_changed_files': Inspecting changed files will help confirm if configuration or dependency files were modified, clarifying if the failure is due to CONFIG_ERROR or DEPENDENCY_CONFLICT.",
+          "[inspect_changed_files] 2 files changed (workflow:2). Top: CONFIG_ERROR (81%)",
+          "[planner step 3] confidence=66% → chose 'classify': Confidence is above 55% with strong evidence pointing to CONFIG_ERROR from changed workflow files, so classification is appropriate now.",
+          "[classify] → CONFIG_ERROR / FIX_WORKFLOW (conf=81%, bayes=CONFIG_ERROR @ 66%)"
+        ],
+        "beliefs": {
+          "CODE_REGRESSION": 0.013448090371167298,
+          "DEPENDENCY_CONFLICT": 0.026896180742334595,
+          "CONFIG_ERROR": 0.8068854222700376,
+          "ENV_FLAKINESS": 0.013448090371167298,
+          "TEST_FLAKINESS": 0.0026896180742334587,
+          "TOOLING_ARTIFACT": 0.0053792361484669175,
+          "CASCADE_FAILURE": 0.013448090371167298,
+          "INFRA_INCOMPATIBILITY": 0.10758472296933838,
+          "NETWORK_TRANSIENT": 0.008068854222700378,
+          "UNKNOWN": 0.002151694459386767
+        },
+        "belief_history": [
+          {
+            "signal": "error_text",
+            "top_3": [
+              [
+                "INFRA_INCOMPATIBILITY",
+                0.4
+              ],
+              [
+                "CONFIG_ERROR",
+                0.24999999999999997
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.1
+              ]
+            ],
+            "entropy": 2.51754247590989,
+            "information_gain": 0.8043856189774727,
+            "confidence": 0.24214419939295728
+          },
+          {
+            "signal": "changed_files",
+            "top_3": [
+              [
+                "CONFIG_ERROR",
+                0.8068854222700376
+              ],
+              [
+                "INFRA_INCOMPATIBILITY",
+                0.10758472296933838
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.026896180742334595
+              ]
+            ],
+            "entropy": 1.1256119047801119,
+            "information_gain": 1.391930571129778,
+            "confidence": 0.6611570531847173
+          }
+        ],
+        "tools_used": [
+          "inspect_errors",
+          "inspect_changed_files"
+        ],
+        "steps_taken": 3,
+        "error_lines": [
+          "##[error]The operation was canceled.",
+          "Running `/root/.rustup/toolchains/stable-x86_64-unknown-linux-musl/bin/rustc --crate-name version_check /github/home/.cargo/registry/src/index.crates.",
+          "/__e/node20/bin/node: /lib64/libc.so.6: version `GLIBC_2.25' not found (required by /__e/node20/bin/node)"
+        ],
+        "mentioned_files": [],
+        "changed_files": [
+          {
+            "filename": ".github/workflows/ci.yml",
+            "status": "modified"
+          },
+          {
+            "filename": ".github/workflows/wheel-builder.yml",
+            "status": "modified"
+          }
+        ]
+      }
+    },
+    {
+      "label": "apache/unomi — network blip during Maven download (Java)",
+      "result": {
+        "classification": {
+          "category": "CONFIG_ERROR",
+          "severity": "MODERATE",
+          "confidence": 0.35,
+          "action": "FIX_WORKFLOW",
+          "reasoning": "The highest Bayesian belief is CONFIG_ERROR at 35.4%, supported by the changed file being documentation related to migration and the commit message indicating fixes in migration documentation. The error message suggests a build failure that can be resumed after corrections, consistent with configuration issues rather than code regression or dependency conflicts.",
+          "mentioned_files": [],
+          "bayesian_top": "CONFIG_ERROR",
+          "bayesian_confidence": 0.2188772539898387,
+          "steps_taken": 5,
+          "tools_used": [
+            "inspect_errors",
+            "inspect_changed_files",
+            "analyze_detection",
+            "analyze_commit"
+          ],
+          "fix_suggestion": {
+            "file": "(unclear)",
+            "change": "Inspect the failing step output and apply the remediation in the specific file named by the logs or dependency manifest once confirmed.",
+            "reason": "The remediation direction is plausible, but the investigation evidence does not support naming an exact repository file safely."
+          }
+        },
+        "investigation_log": [
+          "[init] Starting investigation of apache/unomi run #1369",
+          "[planner step 1] confidence=0% → chose 'inspect_errors': Inspecting the actual error text from the CI logs will provide the most direct insight into the nature of the failure.",
+          "[inspect_errors] found 3 error lines. Top: CODE_REGRESSION (35%)",
+          "[planner step 2] confidence=23% → chose 'inspect_changed_files': Checking changed files will help confirm if configuration or dependency files were modified, clarifying between CONFIG_ERROR and DEPENDENCY_CONFLICT.",
+          "[inspect_changed_files] 1 files changed (other:1). Top: CONFIG_ERROR (44%)",
+          "[planner step 3] confidence=27% → chose 'analyze_detection': Checking how the failure was detected will help gauge the quality of evidence and clarify confidence before final classification.",
+          "[analyze_detection] mode=job_level_fallback. Top: CONFIG_ERROR (53%)",
+          "[planner step 4] confidence=31% → chose 'analyze_commit': Analyzing the commit message will help clarify the cause of failure and improve confidence before classification.",
+          "[analyze_commit] message='UNOMI-797 Fixes in migration documentation (#647)'. Top: CONFIG_ERROR (35%)",
+          "[planner step 5] confidence=22% → chose 'inspect_errors': Inspecting the actual error text will provide the most direct evidence to confirm if this is a configuration error or another type of failure.",
+          "[planner] tool 'inspect_errors' not available, forcing classification",
+          "[classify] → CONFIG_ERROR / FIX_WORKFLOW (conf=35%, bayes=CONFIG_ERROR @ 22%)"
+        ],
+        "beliefs": {
+          "CODE_REGRESSION": 0.08254716981132076,
+          "DEPENDENCY_CONFLICT": 0.0589622641509434,
+          "CONFIG_ERROR": 0.35377358490566035,
+          "ENV_FLAKINESS": 0.03773584905660378,
+          "TEST_FLAKINESS": 0.01886792452830189,
+          "TOOLING_ARTIFACT": 0.01886792452830189,
+          "CASCADE_FAILURE": 0.023584905660377364,
+          "INFRA_INCOMPATIBILITY": 0.07547169811320756,
+          "NETWORK_TRANSIENT": 0.04716981132075473,
+          "UNKNOWN": 0.28301886792452835
+        },
+        "belief_history": [
+          {
+            "signal": "error_text",
+            "top_3": [
+              [
+                "CODE_REGRESSION",
+                0.3499999999999999
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.25
+              ],
+              [
+                "CONFIG_ERROR",
+                0.15
+              ]
+            ],
+            "entropy": 2.5618678125486567,
+            "information_gain": 0.7600602823387059,
+            "confidence": 0.22880094349678481
+          },
+          {
+            "signal": "changed_files",
+            "top_3": [
+              [
+                "CONFIG_ERROR",
+                0.436046511627907
+              ],
+              [
+                "CODE_REGRESSION",
+                0.20348837209302326
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.14534883720930233
+              ]
+            ],
+            "entropy": 2.4086976437593046,
+            "information_gain": 0.15317016878935208,
+            "confidence": 0.2749097587432948
+          },
+          {
+            "signal": "detection_mode",
+            "top_3": [
+              [
+                "CONFIG_ERROR",
+                0.5338078291814946
+              ],
+              [
+                "CODE_REGRESSION",
+                0.12455516014234874
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.0889679715302491
+              ]
+            ],
+            "entropy": 2.302354664162413,
+            "information_gain": 0.10634297959689176,
+            "confidence": 0.30692218543024197
+          },
+          {
+            "signal": "commit_message",
+            "top_3": [
+              [
+                "CONFIG_ERROR",
+                0.35377358490566035
+              ],
+              [
+                "UNKNOWN",
+                0.28301886792452835
+              ],
+              [
+                "CODE_REGRESSION",
+                0.08254716981132076
+              ]
+            ],
+            "entropy": 2.59483359552672,
+            "information_gain": -0.292478931364307,
+            "confidence": 0.2188772539898387
+          }
+        ],
+        "tools_used": [
+          "inspect_errors",
+          "inspect_changed_files",
+          "analyze_detection",
+          "analyze_commit"
+        ],
+        "steps_taken": 5,
+        "error_lines": [
+          "##[error]Process completed with exit code 1.",
+          "[ERROR] After correcting the problems, you can resume the build with the command",
+          "[ERROR]   mvn <args> -rf :unomi"
+        ],
+        "mentioned_files": [],
+        "changed_files": [
+          {
+            "filename": "manual/src/main/asciidoc/migrations/migrate-1.6-to-2.0.adoc",
+            "status": "modified"
+          }
+        ]
+      }
+    },
+    {
+      "label": "ohdsi/dataqualitydashboard — R CMD check test failure",
+      "result": {
+        "classification": {
+          "category": "CODE_REGRESSION",
+          "severity": "HIGH",
+          "confidence": 0.63,
+          "action": "FIX_CODE",
+          "reasoning": "The Bayesian posterior strongly favors CODE_REGRESSION at 62.9%, supported by error messages indicating test failures and R CMD check errors. The commit modified multiple source and project files, reinforcing the likelihood of a code regression causing the failure. Confidence is above 60%, justifying a fix to the source or test code.",
+          "mentioned_files": [],
+          "bayesian_top": "CODE_REGRESSION",
+          "bayesian_confidence": 0.5118873630021676,
+          "steps_taken": 4,
+          "tools_used": [
+            "inspect_errors",
+            "analyze_commit",
+            "inspect_changed_files"
+          ],
+          "fix_suggestion": {
+            "file": "(unclear)",
+            "change": "Inspect the failing step output and apply the remediation in the specific file named by the logs or dependency manifest once confirmed.",
+            "reason": "The remediation direction is plausible, but the investigation evidence does not support naming an exact repository file safely."
+          }
+        },
+        "investigation_log": [
+          "[init] Starting investigation of ohdsi/dataqualitydashboard run #28",
+          "[planner step 1] confidence=0% → chose 'inspect_errors': Inspecting the actual error text will provide the most direct evidence to identify the failure type.",
+          "[inspect_errors] found 4 error lines. Top: CODE_REGRESSION (55%)",
+          "[planner step 2] confidence=34% → chose 'analyze_commit': Analyzing the commit message will help understand the nature of the change and confirm if it likely caused a code regression.",
+          "[analyze_commit] message='Merge pull request #473 from OHDSI/develop'. Top: CODE_REGRESSION (82%)",
+          "[planner step 3] confidence=66% → chose 'inspect_changed_files': Inspecting changed files will confirm if the commit touched configuration or dependency files, which could clarify if the failure is a code regression or another type.",
+          "[inspect_changed_files] 68 files changed (config:1, docs:5, other:62). Top: CODE_REGRESSION (63%)",
+          "[planner step 4] confidence=51% → chose 'classify': Confidence is above 55% and most tools have been used, indicating a likely code regression.",
+          "[classify] → CODE_REGRESSION / FIX_CODE (conf=63%, bayes=CODE_REGRESSION @ 51%)"
+        ],
+        "beliefs": {
+          "CODE_REGRESSION": 0.6285714285714286,
+          "DEPENDENCY_CONFLICT": 0.038095238095238106,
+          "CONFIG_ERROR": 0.05714285714285714,
+          "ENV_FLAKINESS": 0.0038095238095238087,
+          "TEST_FLAKINESS": 0.028571428571428567,
+          "TOOLING_ARTIFACT": 0.0038095238095238087,
+          "CASCADE_FAILURE": 0.0038095238095238087,
+          "INFRA_INCOMPATIBILITY": 0.005714285714285713,
+          "NETWORK_TRANSIENT": 0.0019047619047619043,
+          "UNKNOWN": 0.22857142857142854
+        },
+        "belief_history": [
+          {
+            "signal": "error_text",
+            "top_3": [
+              [
+                "CODE_REGRESSION",
+                0.55
+              ],
+              [
+                "TEST_FLAKINESS",
+                0.15
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.10000000000000002
+              ]
+            ],
+            "entropy": 2.187138918696876,
+            "information_gain": 1.1347891761904867,
+            "confidence": 0.34160558078815484
+          },
+          {
+            "signal": "commit_message",
+            "top_3": [
+              [
+                "CODE_REGRESSION",
+                0.8208955223880597
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.04975124378109454
+              ],
+              [
+                "CONFIG_ERROR",
+                0.0373134328358209
+              ]
+            ],
+            "entropy": 1.1428276912338058,
+            "information_gain": 1.0443112274630701,
+            "confidence": 0.6559745850632097
+          },
+          {
+            "signal": "changed_files",
+            "top_3": [
+              [
+                "CODE_REGRESSION",
+                0.6285714285714286
+              ],
+              [
+                "UNKNOWN",
+                0.22857142857142854
+              ],
+              [
+                "CONFIG_ERROR",
+                0.05714285714285714
+              ]
+            ],
+            "entropy": 1.6214750823126556,
+            "information_gain": -0.4786473910788498,
+            "confidence": 0.5118873630021676
+          }
+        ],
+        "tools_used": [
+          "inspect_errors",
+          "analyze_commit",
+          "inspect_changed_files"
+        ],
+        "steps_taken": 4,
+        "error_lines": [
+          "##[error]Error: R CMD check found ERRORs",
+          "##[error]Error: Test failures",
+          "1 error ✖ | 0 warnings ✔ | 1 note ✖",
+          "##[error]Process completed with exit code 1."
+        ],
+        "mentioned_files": [],
+        "changed_files": [
+          {
+            "filename": ".Rbuildignore",
+            "status": "modified"
+          },
+          {
+            "filename": "DESCRIPTION",
+            "status": "modified"
+          },
+          {
+            "filename": "DataQualityDashboard.Rproj",
+            "status": "modified"
+          },
+          {
+            "filename": "NEWS.md",
+            "status": "modified"
+          },
+          {
+            "filename": "R/convertResultsCase.R",
+            "status": "modified"
+          },
+          {
+            "filename": "R/evaluateThresholds.R",
+            "status": "modified"
+          },
+          {
+            "filename": "README.md",
+            "status": "modified"
+          },
+          {
+            "filename": "docs/404.html",
+            "status": "modified"
+          },
+          {
+            "filename": "docs/LICENSE-text.html",
+            "status": "modified"
+          },
+          {
+            "filename": "docs/articles/AddNewCheck.html",
+            "status": "modified"
+          },
+          {
+            "filename": "docs/articles/CheckStatusDefinitions.html",
+            "status": "modified"
+          },
+          {
+            "filename": "docs/articles/CheckTypeDescriptions.html",
+            "status": "modified"
+          },
+          {
+            "filename": "docs/articles/DataQualityDashboard.html",
+            "status": "modified"
+          },
+          {
+            "filename": "docs/articles/DqdForCohorts.html",
+            "status": "modified"
+          },
+          {
+            "filename": "docs/articles/SqlOnly.html",
+            "status": "modified"
+          },
+          {
+            "filename": "docs/articles/Thresholds.html",
+            "status": "modified"
+          },
+          {
+            "filename": "docs/articles/index.html",
+            "status": "modified"
+          },
+          {
+            "filename": "docs/authors.html",
+            "status": "modified"
+          },
+          {
+            "filename": "docs/index.html",
+            "status": "modified"
+          },
+          {
+            "filename": "docs/news/index.html",
+            "status": "modified"
+          },
+          {
+            "filename": "docs/pkgdown.yml",
+            "status": "modified"
+          },
+          {
+            "filename": "docs/pull_request_template.html",
+            "status": "modified"
+          },
+          {
+            "filename": "docs/reference/convertJsonResultsFileCase.html",
+            "status": "modified"
+          },
+          {
+            "filename": "docs/reference/dot-evaluateThresholds.html",
+            "status": "modified"
+          },
+          {
+            "filename": "docs/reference/dot-getCheckId.html",
+            "status": "modified"
+          },
+          {
+            "filename": "docs/reference/dot-processCheck.html",
+            "status": "modified"
+          },
+          {
+            "filename": "docs/reference/dot-recordResult.html",
+            "status": "modified"
+          },
+          {
+            "filename": "docs/reference/dot-runCheck.html",
+            "status": "modified"
+          },
+          {
+            "filename": "docs/reference/dot-summarizeResults.html",
+            "status": "modified"
+          },
+          {
+            "filename": "docs/reference/dot-writeResultsToCsv.html",
+            "status": "modified"
+          },
+          {
+            "filename": "docs/reference/dot-writeResultsToJson.html",
+            "status": "modified"
+          },
+          {
+            "filename": "docs/reference/dot-writeResultsToTable.html",
+            "status": "modified"
+          },
+          {
+            "filename": "docs/reference/executeDqChecks.html",
+            "status": "modified"
+          },
+          {
+            "filename": "docs/reference/index.html",
+            "status": "modified"
+          },
+          {
+            "filename": "docs/reference/listDqChecks.html",
+            "status": "modified"
+          },
+          {
+            "filename": "docs/reference/reEvaluateThresholds.html",
+            "status": "modified"
+          },
+          {
+            "filename": "docs/reference/viewDqDashboard.html",
+            "status": "modified"
+          },
+          {
+            "filename": "docs/reference/writeJsonResultsToCsv.html",
+            "status": "modified"
+          },
+          {
+            "filename": "docs/reference/writeJsonResultsToTable.html",
+            "status": "modified"
+          },
+          {
+            "filename": "extras/DataQualityDashboard.pdf",
+            "status": "modified"
+          },
+          {
+            "filename": "extras/PackageMaintenance.R",
+            "status": "modified"
+          },
+          {
+            "filename": "inst/csv/OMOP_CDMv5.2_Concept_Level.csv",
+            "status": "modified"
+          },
+          {
+            "filename": "inst/csv/OMOP_CDMv5.2_Field_Level.csv",
+            "status": "modified"
+          },
+          {
+            "filename": "inst/csv/OMOP_CDMv5.2_Table_Level.csv",
+            "status": "modified"
+          },
+          {
+            "filename": "inst/csv/OMOP_CDMv5.3_Concept_Level.csv",
+            "status": "modified"
+          },
+          {
+            "filename": "inst/csv/OMOP_CDMv5.3_Field_Level.csv",
+            "status": "modified"
+          },
+          {
+            "filename": "inst/csv/OMOP_CDMv5.3_Table_Level.csv",
+            "status": "modified"
+          },
+          {
+            "filename": "inst/csv/OMOP_CDMv5.4_Concept_Level.csv",
+            "status": "modified"
+          },
+          {
+            "filename": "inst/csv/OMOP_CDMv5.4_Field_Level.csv",
+            "status": "modified"
+          },
+          {
+            "filename": "inst/csv/OMOP_CDMv5.4_Table_Level.csv",
+            "status": "modified"
+          },
+          {
+            "filename": "inst/doc/AddNewCheck.pdf",
+            "status": "modified"
+          },
+          {
+            "filename": "inst/doc/CheckStatusDefinitions.pdf",
+            "status": "modified"
+          },
+          {
+            "filename": "inst/doc/CheckTypeDescriptions.pdf",
+            "status": "modified"
+          },
+          {
+            "filename": "inst/doc/DataQualityDashboard.pdf",
+            "status": "modified"
+          },
+          {
+            "filename": "inst/doc/DqdForCohorts.pdf",
+            "status": "modified"
+          },
+          {
+            "filename": "inst/doc/SqlOnly.pdf",
+            "status": "added"
+          },
+          {
+            "filename": "inst/doc/Thresholds.pdf",
+            "status": "modified"
+          },
+          {
+            "filename": "inst/shinyApps/app.R",
+            "status": "modified"
+          },
+          {
+            "filename": "inst/testdata/TABLE_measurePersonCompleteness-mssql-union=1-insert.sql",
+            "status": "removed"
+          },
+          {
+            "filename": "inst/testdata/TABLE_measurePersonCompleteness-mssql-union=1-legacy.sql",
+            "status": "removed"
+          },
+          {
+            "filename": "inst/testdata/TABLE_measurePersonCompleteness-mssql-union=4-insert.sql",
+            "status": "removed"
+          },
+          {
+            "filename": "tests/testthat/_snaps/executeDqChecks.md",
+            "status": "added"
+          },
+          {
+            "filename": "tests/testthat/setup.R",
+            "status": "modified"
+          },
+          {
+            "filename": "tests/testthat/test-executeDqChecks.R",
+            "status": "renamed"
+          },
+          {
+            "filename": "tests/testthat/test-listChecks.R",
+            "status": "added"
+          },
+          {
+            "filename": "tests/testthat/test-reEvaluateThresholds.R",
+            "status": "added"
+          },
+          {
+            "filename": "tests/testthat/test-writeJsonResultsTo.R",
+            "status": "added"
+          },
+          {
+            "filename": "vignettes/SqlOnly.rmd",
+            "status": "modified"
+          }
+        ]
+      }
+    },
+    {
+      "label": "hibernate/hibernate-search — Java ORM upgrade regression",
+      "result": {
+        "classification": {
+          "category": "DEPENDENCY_CONFLICT",
+          "severity": "HIGH",
+          "confidence": 0.67,
+          "action": "PIN_VERSION",
+          "reasoning": "The Bayesian posterior confidence is highest for DEPENDENCY_CONFLICT at 66.7%, supported by the changed dependency file (pom.xml) and the commit message indicating an upgrade to ORM 6.2.9. The error and failure context align with a dependency issue rather than code regression or configuration error.",
+          "mentioned_files": [],
+          "bayesian_top": "DEPENDENCY_CONFLICT",
+          "bayesian_confidence": 0.6355714925247864,
+          "steps_taken": 4,
+          "tools_used": [
+            "inspect_errors",
+            "inspect_changed_files",
+            "analyze_commit"
+          ],
+          "fix_suggestion": {
+            "file": "pom.xml",
+            "change": "Pin the version of the ORM dependency to a known compatible version instead of 6.2.9, or adjust related dependencies to versions compatible with ORM 6.2.9 to resolve conflicts.",
+            "reason": "The failure is caused by a dependency conflict introduced by upgrading ORM to version 6.2.9 as indicated by the commit message and the modified pom.xml file. Pinning or adjusting the dependency versions in pom.xml will resolve the conflict and fix the build."
+          }
+        },
+        "investigation_log": [
+          "[init] Starting investigation of hibernate/hibernate-search run #66",
+          "[planner step 1] confidence=0% → chose 'inspect_errors': Inspecting the actual error text from the CI logs will provide the most direct evidence to distinguish between code regression, dependency conflict, or configuration error.",
+          "[inspect_errors] found 3 error lines. Top: CODE_REGRESSION (35%)",
+          "[planner step 2] confidence=24% → chose 'inspect_changed_files': Inspecting changed files will clarify if configuration or dependency files were modified, helping distinguish between CONFIG_ERROR, DEPENDENCY_CONFLICT, or CODE_REGRESSION.",
+          "[inspect_changed_files] 1 files changed (dependency:1). Top: DEPENDENCY_CONFLICT (59%)",
+          "[planner step 3] confidence=47% → chose 'analyze_commit': Analyzing the commit message will clarify the nature of the change and help confirm if the failure is due to dependency conflict or another cause.",
+          "[analyze_commit] message='HSEARCH-4960 Upgrade to ORM 6.2.9'. Top: DEPENDENCY_CONFLICT (67%)",
+          "[planner step 4] confidence=64% → chose 'classify': Confidence is above 55% with strong evidence from changed dependency file and commit message indicating a dependency conflict.",
+          "[classify] → DEPENDENCY_CONFLICT / PIN_VERSION (conf=67%, bayes=DEPENDENCY_CONFLICT @ 64%)"
+        ],
+        "beliefs": {
+          "CODE_REGRESSION": 0.27231299321996216,
+          "DEPENDENCY_CONFLICT": 0.6668889629876626,
+          "CONFIG_ERROR": 0.05001667222407469,
+          "ENV_FLAKINESS": 0.0011114816049794377,
+          "TEST_FLAKINESS": 0.0005557408024897189,
+          "TOOLING_ARTIFACT": 0.00022229632099588753,
+          "CASCADE_FAILURE": 0.0016672224074691566,
+          "INFRA_INCOMPATIBILITY": 0.005557408024897189,
+          "NETWORK_TRANSIENT": 0.0010003334444814939,
+          "UNKNOWN": 0.0006668889629876626
+        },
+        "belief_history": [
+          {
+            "signal": "error_text",
+            "top_3": [
+              [
+                "CODE_REGRESSION",
+                0.3499999999999999
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.25
+              ],
+              [
+                "CONFIG_ERROR",
+                0.15
+              ]
+            ],
+            "entropy": 2.5382225327826538,
+            "information_gain": 0.7837055621047089,
+            "confidence": 0.23591888196221833
+          },
+          {
+            "signal": "changed_files",
+            "top_3": [
+              [
+                "DEPENDENCY_CONFLICT",
+                0.5882352941176471
+              ],
+              [
+                "CODE_REGRESSION",
+                0.20588235294117643
+              ],
+              [
+                "CONFIG_ERROR",
+                0.13235294117647056
+              ]
+            ],
+            "entropy": 1.7585287746566272,
+            "information_gain": 0.7796937581260266,
+            "confidence": 0.4706300905901294
+          },
+          {
+            "signal": "commit_message",
+            "top_3": [
+              [
+                "DEPENDENCY_CONFLICT",
+                0.6668889629876626
+              ],
+              [
+                "CODE_REGRESSION",
+                0.27231299321996216
+              ],
+              [
+                "CONFIG_ERROR",
+                0.05001667222407469
+              ]
+            ],
+            "entropy": 1.2106052975597814,
+            "information_gain": 0.5479234770968457,
+            "confidence": 0.6355714925247864
+          }
+        ],
+        "tools_used": [
+          "inspect_errors",
+          "inspect_changed_files",
+          "analyze_commit"
+        ],
+        "steps_taken": 4,
+        "error_lines": [
+          "##[error]Process completed with exit code 1.",
+          "[ERROR] For more information about the errors and possible solutions, please read the following articles:",
+          "[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException"
+        ],
+        "mentioned_files": [],
+        "changed_files": [
+          {
+            "filename": "pom.xml",
+            "status": "modified"
+          }
+        ]
+      }
+    },
+    {
+      "label": "devfile/api — outdated GitHub Actions / Go syntax error",
+      "result": {
+        "classification": {
+          "category": "CONFIG_ERROR",
+          "severity": "HIGH",
+          "confidence": 0.71,
+          "action": "FIX_WORKFLOW",
+          "reasoning": "The Bayesian posterior strongly favors CONFIG_ERROR at 71%, supported by the commit message indicating updates to deprecated GitHub actions and changes to multiple workflow files. The build errors relate to syntax and undefined references likely caused by environment or tooling changes rather than source code regressions.",
+          "mentioned_files": [
+            {
+              "path": "vendor/k8s.io/apimachinery/pkg/util/sets/byte.go",
+              "line": 34,
+              "column": 16,
+              "context": "##[error]vendor/k8s.io/apimachinery/pkg/util/sets/byte.go:34:16: syntax error: unexpected [, expecting ("
+            },
+            {
+              "path": "vendor/k8s.io/apimachinery/third_party/forked/golang/reflect/deep_equal.go",
+              "line": 376,
+              "column": 7,
+              "context": "##[error]vendor/k8s.io/apimachinery/third_party/forked/golang/reflect/deep_equal.go:376:7: undefined: reflect.Pointer"
+            }
+          ],
+          "bayesian_top": "CONFIG_ERROR",
+          "bayesian_confidence": 0.7240595347178391,
+          "steps_taken": 7,
+          "tools_used": [
+            "inspect_errors",
+            "inspect_changed_files",
+            "analyze_detection",
+            "analyze_commit",
+            "analyze_jobs",
+            "analyze_branch"
+          ],
+          "fix_suggestion": {
+            "file": "(unclear)",
+            "change": "Inspect the failing step output and apply the remediation in the specific file named by the logs or dependency manifest once confirmed.",
+            "reason": "The remediation direction is plausible, but the investigation evidence does not support naming an exact repository file safely."
+          }
+        },
+        "investigation_log": [
+          "[init] Starting investigation of devfile/api run #23",
+          "[planner step 1] confidence=0% → chose 'inspect_errors': Inspecting the actual error text from the CI logs will provide the most direct evidence to identify the failure type.",
+          "[inspect_errors] found 4 error lines. Top: CODE_REGRESSION (65%)",
+          "[planner step 2] confidence=44% → chose 'inspect_changed_files': Inspecting changed files will help confirm if configuration or dependency files were modified, clarifying if the failure is due to a config error or code regression.",
+          "[inspect_changed_files] 8 files changed (other:1, source:1, workflow:6). Top: CODE_REGRESSION (76%)",
+          "[planner step 3] confidence=67% → chose 'analyze_detection': analyzing how the failure was detected will help gauge the quality of evidence and solidify confidence before classification",
+          "[analyze_detection] mode=job_level_fallback. Top: CODE_REGRESSION (62%)",
+          "[planner step 4] confidence=57% → chose 'analyze_commit': Analyzing the commit message will clarify the nature of the change and help confirm if the failure is due to a code regression or configuration error.",
+          "[analyze_commit] message='Update deprecated github actions to latest version'. Top: CONFIG_ERROR (77%)",
+          "[planner step 5] confidence=70% → chose 'analyze_jobs': Analyzing job failure patterns will help confirm if the failure is isolated or cascading, clarifying the nature of the error before classification.",
+          "[analyze_jobs] 1/1 failed. Top: CONFIG_ERROR (75%)",
+          "[planner step 6] confidence=72% → chose 'analyze_branch': Checking the branch type will help gauge the severity and context of the configuration error before final classification.",
+          "[analyze_branch] branch='main' protected=True. Top: CONFIG_ERROR (71%)",
+          "[planner step 7] confidence=72% → chose 'classify': Confidence is above 55% and all other tools have been used, so it's time to classify the failure.",
+          "[classify] → CONFIG_ERROR / FIX_WORKFLOW (conf=71%, bayes=CONFIG_ERROR @ 72%)"
+        ],
+        "beliefs": {
+          "CODE_REGRESSION": 0.2824330468564245,
+          "DEPENDENCY_CONFLICT": 0.0010428297114698753,
+          "CONFIG_ERROR": 0.7119050830301017,
+          "ENV_FLAKINESS": 0.00013904396152931672,
+          "TEST_FLAKINESS": 5.561758461172668e-05,
+          "TOOLING_ARTIFACT": 8.342637691759002e-05,
+          "CASCADE_FAILURE": 6.952198076465836e-05,
+          "INFRA_INCOMPATIBILITY": 0.0012513956537638505,
+          "NETWORK_TRANSIENT": 1.6685275383518005e-05,
+          "UNKNOWN": 0.00300334956903324
+        },
+        "belief_history": [
+          {
+            "signal": "error_text",
+            "top_3": [
+              [
+                "CODE_REGRESSION",
+                0.65
+              ],
+              [
+                "CONFIG_ERROR",
+                0.10000000000000002
+              ],
+              [
+                "UNKNOWN",
+                0.08999999999999998
+              ]
+            ],
+            "entropy": 1.8596382421989488,
+            "information_gain": 1.4622898526884138,
+            "confidence": 0.4401931080142768
+          },
+          {
+            "signal": "changed_files",
+            "top_3": [
+              [
+                "CODE_REGRESSION",
+                0.7604117922321011
+              ],
+              [
+                "CONFIG_ERROR",
+                0.18717828731867106
+              ],
+              [
+                "UNKNOWN",
+                0.02105755732335049
+              ]
+            ],
+            "entropy": 1.1025327107456457,
+            "information_gain": 0.7571055314533031,
+            "confidence": 0.6681045828648409
+          },
+          {
+            "signal": "detection_mode",
+            "top_3": [
+              [
+                "CODE_REGRESSION",
+                0.6181057436287561
+              ],
+              [
+                "CONFIG_ERROR",
+                0.3042982122480031
+              ],
+              [
+                "UNKNOWN",
+                0.03423354887790033
+              ]
+            ],
+            "entropy": 1.4245909702178765,
+            "information_gain": -0.32205825947223077,
+            "confidence": 0.5711553864123659
+          },
+          {
+            "signal": "commit_message",
+            "top_3": [
+              [
+                "CONFIG_ERROR",
+                0.7711772502711169
+              ],
+              [
+                "CODE_REGRESSION",
+                0.19580672370165075
+              ],
+              [
+                "INFRA_INCOMPATIBILITY",
+                0.010844680081937582
+              ]
+            ],
+            "entropy": 0.9911463121093768,
+            "information_gain": 0.43344465810849975,
+            "confidence": 0.7016352299633433
+          },
+          {
+            "signal": "jobs_failed",
+            "top_3": [
+              [
+                "CONFIG_ERROR",
+                0.7475893164814242
+              ],
+              [
+                "CODE_REGRESSION",
+                0.23727199985982697
+              ],
+              [
+                "UNKNOWN",
+                0.006307784857812014
+              ]
+            ],
+            "entropy": 0.9273747521200486,
+            "information_gain": 0.06377155998932815,
+            "confidence": 0.7208323823904161
+          },
+          {
+            "signal": "branch_type",
+            "top_3": [
+              [
+                "CONFIG_ERROR",
+                0.7119050830301017
+              ],
+              [
+                "CODE_REGRESSION",
+                0.2824330468564245
+              ],
+              [
+                "UNKNOWN",
+                0.00300334956903324
+              ]
+            ],
+            "entropy": 0.916654384137101,
+            "information_gain": 0.01072036798294762,
+            "confidence": 0.7240595347178391
+          }
+        ],
+        "tools_used": [
+          "inspect_errors",
+          "inspect_changed_files",
+          "analyze_detection",
+          "analyze_commit",
+          "analyze_jobs",
+          "analyze_branch"
+        ],
+        "steps_taken": 7,
+        "error_lines": [
+          "##[error]vendor/k8s.io/apimachinery/third_party/forked/golang/reflect/deep_equal.go:376:7: undefined: reflect.Pointer",
+          "##[error]vendor/k8s.io/apimachinery/pkg/util/sets/byte.go:34:16: syntax error: unexpected [, expecting (",
+          "FAIL\tgithub.com/devfile/api/v2/test/v200/apiTest [build failed]",
+          "##[error]Process completed with exit code 2."
+        ],
+        "mentioned_files": [
+          {
+            "path": "vendor/k8s.io/apimachinery/pkg/util/sets/byte.go",
+            "line": 34,
+            "column": 16,
+            "context": "##[error]vendor/k8s.io/apimachinery/pkg/util/sets/byte.go:34:16: syntax error: unexpected [, expecting ("
+          },
+          {
+            "path": "vendor/k8s.io/apimachinery/third_party/forked/golang/reflect/deep_equal.go",
+            "line": 376,
+            "column": 7,
+            "context": "##[error]vendor/k8s.io/apimachinery/third_party/forked/golang/reflect/deep_equal.go:376:7: undefined: reflect.Pointer"
+          }
+        ],
+        "changed_files": [
+          {
+            "filename": ".devfile/Dockerfile",
+            "status": "modified"
+          },
+          {
+            "filename": ".github/workflows/ci.yaml",
+            "status": "modified"
+          },
+          {
+            "filename": ".github/workflows/codecov.yaml",
+            "status": "modified"
+          },
+          {
+            "filename": ".github/workflows/publish-devfile-schema.yaml",
+            "status": "modified"
+          },
+          {
+            "filename": ".github/workflows/release-devfile-schema.yaml",
+            "status": "modified"
+          },
+          {
+            "filename": ".github/workflows/release-typescript-models.yaml",
+            "status": "modified"
+          },
+          {
+            "filename": "validate-samples.sh",
+            "status": "modified"
+          },
+          {
+            "filename": "validate_yaml.py",
+            "status": "added"
+          }
+        ]
+      }
+    },
+    {
+      "label": "rtkconsortium/rtk — Python CUDA wheel build+test",
+      "result": {
+        "classification": {
+          "category": "CONFIG_ERROR",
+          "severity": "HIGH",
+          "confidence": 0.67,
+          "action": "FIX_WORKFLOW",
+          "reasoning": "The Bayesian posterior confidence for CONFIG_ERROR is 67.2%, supported by errors indicating missing or inaccessible config files and version mismatches in the environment. Multiple workflow files were modified in the triggering commit, suggesting configuration changes caused the failure.",
+          "mentioned_files": [],
+          "bayesian_top": "CONFIG_ERROR",
+          "bayesian_confidence": 0.533800118461492,
+          "steps_taken": 5,
+          "tools_used": [
+            "inspect_errors",
+            "inspect_changed_files",
+            "analyze_detection",
+            "analyze_commit"
+          ],
+          "fix_suggestion": {
+            "file": "(unclear)",
+            "change": "Inspect the failing step output and apply the remediation in the specific file named by the logs or dependency manifest once confirmed.",
+            "reason": "The remediation direction is plausible, but the investigation evidence does not support naming an exact repository file safely."
+          }
+        },
+        "investigation_log": [
+          "[init] Starting investigation of rtkconsortium/rtk run #133",
+          "[planner step 1] confidence=0% → chose 'inspect_errors': Inspecting the actual error text will provide the most direct insight into the failure type.",
+          "[inspect_errors] found 7 error lines. Top: CONFIG_ERROR (40%)",
+          "[planner step 2] confidence=19% → chose 'inspect_changed_files': Checking changed files will help confirm if configuration or dependency files were modified, clarifying the CONFIG_ERROR vs DEPENDENCY_CONFLICT hypothesis.",
+          "[inspect_changed_files] 5 files changed (dependency:1, docs:1, workflow:3). Top: CONFIG_ERROR (73%)",
+          "[planner step 3] confidence=60% → chose 'analyze_detection': To verify if the failure was detected by a clear error or inferred, which will help confirm the confidence in the CONFIG_ERROR classification.",
+          "[analyze_detection] mode=job_level_fallback. Top: CONFIG_ERROR (81%)",
+          "[planner step 4] confidence=67% → chose 'analyze_commit': Analyzing the commit message can clarify the intent behind the changes and help confirm if the failure is due to configuration errors.",
+          "[analyze_commit] message='Release of RTK v2.5.0'. Top: CONFIG_ERROR (67%)",
+          "[planner step 5] confidence=53% → chose 'classify': Confidence in CONFIG_ERROR is above 55% and most tools have been used, so it's appropriate to finalize the classification now.",
+          "[classify] → CONFIG_ERROR / FIX_WORKFLOW (conf=67%, bayes=CONFIG_ERROR @ 53%)"
+        ],
+        "beliefs": {
+          "CODE_REGRESSION": 0.10501995379122034,
+          "DEPENDENCY_CONFLICT": 0.15752993068683052,
+          "CONFIG_ERROR": 0.6721277042638102,
+          "ENV_FLAKINESS": 0.008401596303297629,
+          "TEST_FLAKINESS": 0.0016803192606595254,
+          "TOOLING_ARTIFACT": 0.0021003990758244073,
+          "CASCADE_FAILURE": 0.005250997689561017,
+          "INFRA_INCOMPATIBILITY": 0.03150598613736609,
+          "NETWORK_TRANSIENT": 0.006301197227473221,
+          "UNKNOWN": 0.01008191556395715
+        },
+        "belief_history": [
+          {
+            "signal": "error_text",
+            "top_3": [
+              [
+                "CONFIG_ERROR",
+                0.4000000000000001
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.15
+              ],
+              [
+                "INFRA_INCOMPATIBILITY",
+                0.15
+              ]
+            ],
+            "entropy": 2.6825357494153836,
+            "information_gain": 0.639392345471979,
+            "confidence": 0.19247627498501252
+          },
+          {
+            "signal": "changed_files",
+            "top_3": [
+              [
+                "CONFIG_ERROR",
+                0.7319304666056724
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.17154620311070445
+              ],
+              [
+                "INFRA_INCOMPATIBILITY",
+                0.034309240622140885
+              ]
+            ],
+            "entropy": 1.3323066037744875,
+            "information_gain": 1.3502291456408961,
+            "confidence": 0.5989357488426725
+          },
+          {
+            "signal": "detection_mode",
+            "top_3": [
+              [
+                "CONFIG_ERROR",
+                0.8130081300813009
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.09527439024390244
+              ],
+              [
+                "INFRA_INCOMPATIBILITY",
+                0.03810975609756097
+              ]
+            ],
+            "entropy": 1.110486255275073,
+            "information_gain": 0.22182034849941457,
+            "confidence": 0.6657103273896341
+          },
+          {
+            "signal": "commit_message",
+            "top_3": [
+              [
+                "CONFIG_ERROR",
+                0.6721277042638102
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.15752993068683052
+              ],
+              [
+                "CODE_REGRESSION",
+                0.10501995379122034
+              ]
+            ],
+            "entropy": 1.5486824843159297,
+            "information_gain": -0.43819622904085676,
+            "confidence": 0.533800118461492
+          }
+        ],
+        "tools_used": [
+          "inspect_errors",
+          "inspect_changed_files",
+          "analyze_detection",
+          "analyze_commit"
+        ],
+        "steps_taken": 5,
+        "error_lines": [
+          "##[error]error: could not lock config file /home/srit/Downloads/runner/_work/_temp/bcdf7518-2241-4d5f-8ce0-e274274afa9f/.gitconfig: No such file or di",
+          "##[error]The version '3.10' with architecture 'x64' was not found for this operating system.",
+          "##[error]error: could not lock config file /home/srit/Downloads/runner/_work/_temp/bcdf7518-2241-4d5f-8ce0-e274274afa9f/.gitconfig: No such file or di",
+          "Failed to initialize safe directory with error: Error: The process '/usr/bin/git' failed with exit code 255",
+          "Version 3.10 was not found in the local cache",
+          "##[error]Process completed with exit code 1.",
+          "ERROR    InvalidDistribution: Cannot find file (or expand pattern):"
+        ],
+        "mentioned_files": [],
+        "changed_files": [
+          {
+            "filename": ".github/workflows/build-test-cxx-cuda.yml",
+            "status": "modified"
+          },
+          {
+            "filename": ".github/workflows/build-test-package-python-cuda.yml",
+            "status": "modified"
+          },
+          {
+            "filename": ".github/workflows/build-test-package.yml",
+            "status": "modified"
+          },
+          {
+            "filename": "CMakeLists.txt",
+            "status": "modified"
+          },
+          {
+            "filename": "setup.py",
+            "status": "modified"
+          }
+        ]
+      }
+    },
+    {
+      "label": "arelle/arelle — Python UI test runner failure",
+      "result": {
+        "classification": {
+          "category": "CODE_REGRESSION",
+          "severity": "CRITICAL",
+          "confidence": 0.93,
+          "action": "BLOCK_DEPLOY",
+          "reasoning": "The Bayesian posterior strongly favors CODE_REGRESSION at 92.9%, supported by commit message analysis indicating a validation change and multiple modified source files related to validation rules. No error text was found, but the failure is consistent across all jobs, indicating a real regression that should block deployment.",
+          "mentioned_files": [],
+          "bayesian_top": "CODE_REGRESSION",
+          "bayesian_confidence": 0.8250378614957976,
+          "steps_taken": 4,
+          "tools_used": [
+            "inspect_errors",
+            "inspect_changed_files",
+            "analyze_commit"
+          ],
+          "fix_suggestion": {
+            "file": "(unclear)",
+            "change": "Inspect the failing step output and apply the remediation in the specific file named by the logs or dependency manifest once confirmed.",
+            "reason": "The remediation direction is plausible, but the investigation evidence does not support naming an exact repository file safely."
+          }
+        },
+        "investigation_log": [
+          "[init] Starting investigation of arelle/arelle run #487",
+          "[planner step 1] confidence=0% → chose 'inspect_errors': Inspecting the actual error text will provide the most direct insight into the nature of the failure.",
+          "[inspect_errors] found 0 error lines. Top: CODE_REGRESSION (10%)",
+          "[planner step 2] confidence=-0% → chose 'inspect_changed_files': No errors were found in logs, so checking changed files can reveal if configuration or dependencies were altered, which aligns with top failure hypotheses.",
+          "[inspect_changed_files] 4 files changed (other:2, source:2). Top: CODE_REGRESSION (60%)",
+          "[planner step 3] confidence=33% → chose 'analyze_commit': Analyzing the commit message will help understand the nature of the changes and clarify if the failure is due to code regression or another cause.",
+          "[analyze_commit] message='NL BR KVK 4.16 validation'. Top: CODE_REGRESSION (93%)",
+          "[planner step 4] confidence=83% → chose 'classify': Confidence is above 55% and most tools have been used, indicating a code regression failure.",
+          "[classify] → CODE_REGRESSION / BLOCK_DEPLOY (conf=93%, bayes=CODE_REGRESSION @ 83%)"
+        ],
+        "beliefs": {
+          "CODE_REGRESSION": 0.9285051067780873,
+          "DEPENDENCY_CONFLICT": 0.015475085112968124,
+          "CONFIG_ERROR": 0.015475085112968124,
+          "ENV_FLAKINESS": 0.007737542556484062,
+          "TEST_FLAKINESS": 0.007737542556484062,
+          "TOOLING_ARTIFACT": 0.007737542556484062,
+          "CASCADE_FAILURE": 0.007737542556484062,
+          "INFRA_INCOMPATIBILITY": 0.004642525533890437,
+          "NETWORK_TRANSIENT": 0.0018570102135561743,
+          "UNKNOWN": 0.003095017022593625
+        },
+        "belief_history": [
+          {
+            "signal": "changed_files",
+            "top_3": [
+              [
+                "CODE_REGRESSION",
+                0.6
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.05000000000000001
+              ],
+              [
+                "CONFIG_ERROR",
+                0.05000000000000001
+              ]
+            ],
+            "entropy": 2.2194981241774023,
+            "information_gain": 1.1024299707099603,
+            "confidence": 0.3318644893026621
+          },
+          {
+            "signal": "commit_message",
+            "top_3": [
+              [
+                "CODE_REGRESSION",
+                0.9285051067780873
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.015475085112968124
+              ],
+              [
+                "CONFIG_ERROR",
+                0.015475085112968124
+              ]
+            ],
+            "entropy": 0.5812116434386838,
+            "information_gain": 1.6382864807387185,
+            "confidence": 0.8250378614957976
+          }
+        ],
+        "tools_used": [
+          "inspect_errors",
+          "inspect_changed_files",
+          "analyze_commit"
+        ],
+        "steps_taken": 4,
+        "error_lines": [],
+        "mentioned_files": [],
+        "changed_files": [
+          {
+            "filename": "arelle/plugin/validate/NL/rules/__init__.py",
+            "status": "modified"
+          },
+          {
+            "filename": "arelle/plugin/validate/NL/rules/br_kvk.py",
+            "status": "modified"
+          },
+          {
+            "filename": "tests/resources/validation/NL/br_kvk/4.16/fail/invalid.xbrl",
+            "status": "added"
+          },
+          {
+            "filename": "tests/resources/validation/NL/example/a.xbrl",
+            "status": "modified"
+          }
+        ]
+      }
+    },
+    {
+      "label": "ndd7xv/heh — Rust check after clap dep bump",
+      "result": {
+        "classification": {
+          "category": "DEPENDENCY_CONFLICT",
+          "severity": "HIGH",
+          "confidence": 0.78,
+          "action": "PIN_VERSION",
+          "reasoning": "The investigation shows a strong Bayesian confidence (78.2%) that the failure is due to a dependency conflict, supported by the commit message bumping the 'clap' dependency and changes to Cargo.lock and Cargo.toml. All jobs failed, indicating a systemic issue likely caused by the dependency update rather than transient or configuration errors.",
+          "mentioned_files": [],
+          "bayesian_top": "DEPENDENCY_CONFLICT",
+          "bayesian_confidence": 0.6977116968055248,
+          "steps_taken": 6,
+          "tools_used": [
+            "inspect_errors",
+            "inspect_changed_files",
+            "analyze_detection",
+            "analyze_commit",
+            "analyze_jobs"
+          ],
+          "fix_suggestion": {
+            "file": "Cargo.toml",
+            "change": "Revert the 'clap' dependency version from 4.4.4 back to 4.3.19 to avoid the dependency conflict introduced by the bump.",
+            "reason": "The failure is strongly linked to the dependency bump of 'clap' from 4.3.19 to 4.4.4 as indicated by the commit message and changes to Cargo.toml and Cargo.lock. Reverting the version pin in Cargo.toml will resolve the dependency conflict causing all jobs to fail."
+          }
+        },
+        "investigation_log": [
+          "[init] Starting investigation of ndd7xv/heh run #109",
+          "[planner step 1] confidence=0% → chose 'inspect_errors': Inspecting the actual error text will provide the most direct insight into the nature of the failure.",
+          "[inspect_errors] found 2 error lines. Top: ENV_FLAKINESS (20%)",
+          "[planner step 2] confidence=4% → chose 'inspect_changed_files': Checking changed files will help confirm if configuration or dependency files were modified, clarifying if this is a CONFIG_ERROR or related issue.",
+          "[inspect_changed_files] 2 files changed (dependency:2). Top: DEPENDENCY_CONFLICT (33%)",
+          "[planner step 3] confidence=13% → chose 'analyze_detection': analyzing how the failure was detected will help gauge the quality of evidence and improve confidence in classification",
+          "[analyze_detection] mode=per_step_error. Top: DEPENDENCY_CONFLICT (41%)",
+          "[planner step 4] confidence=29% → chose 'analyze_commit': Analyzing the commit message will help clarify the nature of the change and potentially confirm if the failure is due to dependency conflicts or configuration errors.",
+          "[analyze_commit] message='build(deps): bump clap from 4.3.19 to 4.4.4'. Top: DEPENDENCY_CONFLICT (79%)",
+          "[planner step 5] confidence=66% → chose 'analyze_jobs': Analyzing job failures will help determine if the failure is isolated or cascading, improving confidence before classification.",
+          "[analyze_jobs] 9/9 failed. Top: DEPENDENCY_CONFLICT (78%)",
+          "[planner step 6] confidence=70% → chose 'classify': Confidence is above 55% and all relevant tools except analyze_branch have been used, making classification appropriate now.",
+          "[classify] → DEPENDENCY_CONFLICT / PIN_VERSION (conf=78%, bayes=DEPENDENCY_CONFLICT @ 70%)"
+        ],
+        "beliefs": {
+          "CODE_REGRESSION": 0.1519730443240239,
+          "DEPENDENCY_CONFLICT": 0.7815756565235514,
+          "CONFIG_ERROR": 0.057894493075818634,
+          "ENV_FLAKINESS": 0.0011578898615163728,
+          "TEST_FLAKINESS": 0.0002894724653790932,
+          "TOOLING_ARTIFACT": 0.0001447362326895466,
+          "CASCADE_FAILURE": 0.0021710434903431984,
+          "INFRA_INCOMPATIBILITY": 0.004342086980686398,
+          "NETWORK_TRANSIENT": 0.00031263026260942053,
+          "UNKNOWN": 0.00013894678338196472
+        },
+        "belief_history": [
+          {
+            "signal": "error_text",
+            "top_3": [
+              [
+                "ENV_FLAKINESS",
+                0.2
+              ],
+              [
+                "CASCADE_FAILURE",
+                0.14999999999999997
+              ],
+              [
+                "CONFIG_ERROR",
+                0.1
+              ]
+            ],
+            "entropy": 3.184183719779189,
+            "information_gain": 0.1377443751081735,
+            "confidence": 0.04146518864155113
+          },
+          {
+            "signal": "changed_files",
+            "top_3": [
+              [
+                "DEPENDENCY_CONFLICT",
+                0.3333333333333333
+              ],
+              [
+                "CONFIG_ERROR",
+                0.13333333333333333
+              ],
+              [
+                "ENV_FLAKINESS",
+                0.13333333333333333
+              ]
+            ],
+            "entropy": 2.90581502020426,
+            "information_gain": 0.27836869957492905,
+            "confidence": 0.12526251706758007
+          },
+          {
+            "signal": "detection_mode",
+            "top_3": [
+              [
+                "DEPENDENCY_CONFLICT",
+                0.4107338444687842
+              ],
+              [
+                "CONFIG_ERROR",
+                0.2190580503833516
+              ],
+              [
+                "CODE_REGRESSION",
+                0.19167579408543262
+              ]
+            ],
+            "entropy": 2.3516593585268817,
+            "information_gain": 0.5541556616773784,
+            "confidence": 0.292079993499492
+          },
+          {
+            "signal": "commit_message",
+            "top_3": [
+              [
+                "DEPENDENCY_CONFLICT",
+                0.7916959887403237
+              ],
+              [
+                "CODE_REGRESSION",
+                0.1231527093596059
+              ],
+              [
+                "CONFIG_ERROR",
+                0.04691531785127845
+              ]
+            ],
+            "entropy": 1.1210890630842727,
+            "information_gain": 1.230570295442609,
+            "confidence": 0.6625185642008047
+          },
+          {
+            "signal": "jobs_failed",
+            "top_3": [
+              [
+                "DEPENDENCY_CONFLICT",
+                0.7815756565235514
+              ],
+              [
+                "CODE_REGRESSION",
+                0.1519730443240239
+              ],
+              [
+                "CONFIG_ERROR",
+                0.057894493075818634
+              ]
+            ],
+            "entropy": 1.0041800071375564,
+            "information_gain": 0.1169090559467163,
+            "confidence": 0.6977116968055248
+          }
+        ],
+        "tools_used": [
+          "inspect_errors",
+          "inspect_changed_files",
+          "analyze_detection",
+          "analyze_commit",
+          "analyze_jobs"
+        ],
+        "steps_taken": 6,
+        "error_lines": [
+          "##[error]The operation was canceled.",
+          "##[error]Process completed with exit code 101."
+        ],
+        "mentioned_files": [],
+        "changed_files": [
+          {
+            "filename": "Cargo.lock",
+            "status": "modified"
+          },
+          {
+            "filename": "Cargo.toml",
+            "status": "modified"
+          }
+        ]
+      }
+    },
+    {
+      "label": "niklasei/bevy_game_template — iOS TestFlight release failure",
+      "result": {
+        "classification": {
+          "category": "CONFIG_ERROR",
+          "severity": "HIGH",
+          "confidence": 0.72,
+          "action": "FIX_WORKFLOW",
+          "reasoning": "The Bayesian posterior strongly favors CONFIG_ERROR at 71.6%, supported by changes in workflow files and the commit message indicating configuration updates. The error and investigation steps consistently point to configuration issues rather than code regression or dependency conflicts.",
+          "mentioned_files": [],
+          "bayesian_top": "CONFIG_ERROR",
+          "bayesian_confidence": 0.6991114613100898,
+          "steps_taken": 5,
+          "tools_used": [
+            "inspect_errors",
+            "inspect_changed_files",
+            "analyze_detection",
+            "analyze_commit"
+          ],
+          "fix_suggestion": {
+            "file": "(unclear)",
+            "change": "Inspect the failing step output and apply the remediation in the specific file named by the logs or dependency manifest once confirmed.",
+            "reason": "The remediation direction is plausible, but the investigation evidence does not support naming an exact repository file safely."
+          }
+        },
+        "investigation_log": [
+          "[init] Starting investigation of niklasei/bevy_game_template run #18",
+          "[planner step 1] confidence=0% → chose 'inspect_errors': Inspecting the actual error text will provide the most direct insight into the nature of the failure.",
+          "[inspect_errors] found 1 error lines. Top: CODE_REGRESSION (35%)",
+          "[planner step 2] confidence=17% → chose 'inspect_changed_files': Checking changed files will help confirm if the failure is due to configuration or dependency issues, which are among the top beliefs.",
+          "[inspect_changed_files] 3 files changed (config:1, workflow:2). Top: CONFIG_ERROR (70%)",
+          "[planner step 3] confidence=50% → chose 'analyze_detection': analyzing how the failure was detected will help gauge the quality of evidence and refine confidence before classification",
+          "[analyze_detection] mode=per_step_error. Top: CONFIG_ERROR (73%)",
+          "[planner step 4] confidence=63% → chose 'analyze_commit': Analyzing the commit message will help confirm if the recent changes were related to configuration, supporting the high CONFIG_ERROR belief before final classification.",
+          "[analyze_commit] message='Document android release track and make ios workfl'. Top: CONFIG_ERROR (72%)",
+          "[planner step 5] confidence=70% → chose 'classify': Confidence is above 55% and most tools have been used, supporting a CONFIG_ERROR classification.",
+          "[classify] → CONFIG_ERROR / FIX_WORKFLOW (conf=72%, bayes=CONFIG_ERROR @ 70%)"
+        ],
+        "beliefs": {
+          "CODE_REGRESSION": 0.26307312359067964,
+          "DEPENDENCY_CONFLICT": 0.01610651777085794,
+          "CONFIG_ERROR": 0.7158452342603531,
+          "ENV_FLAKINESS": 0.0008948065428254413,
+          "TEST_FLAKINESS": 0.0008948065428254413,
+          "TOOLING_ARTIFACT": 0.00035792261713017644,
+          "CASCADE_FAILURE": 0.0008948065428254413,
+          "INFRA_INCOMPATIBILITY": 0.0008948065428254413,
+          "NETWORK_TRANSIENT": 0.0003221303554171588,
+          "UNKNOWN": 0.0007158452342603531
+        },
+        "belief_history": [
+          {
+            "signal": "error_text",
+            "top_3": [
+              [
+                "CODE_REGRESSION",
+                0.3499999999999999
+              ],
+              [
+                "CONFIG_ERROR",
+                0.20000000000000004
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.15
+              ]
+            ],
+            "entropy": 2.750157026781761,
+            "information_gain": 0.5717710681056016,
+            "confidence": 0.172120242152619
+          },
+          {
+            "signal": "changed_files",
+            "top_3": [
+              [
+                "CONFIG_ERROR",
+                0.7017543859649124
+              ],
+              [
+                "CODE_REGRESSION",
+                0.12280701754385963
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.05263157894736841
+              ]
+            ],
+            "entropy": 1.6519681692944517,
+            "information_gain": 1.0981888574873093,
+            "confidence": 0.5027080291602563
+          },
+          {
+            "signal": "detection_mode",
+            "top_3": [
+              [
+                "CONFIG_ERROR",
+                0.7339449541284404
+              ],
+              [
+                "CODE_REGRESSION",
+                0.19266055045871552
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.04128440366972476
+              ]
+            ],
+            "entropy": 1.219816428642926,
+            "information_gain": 0.4321517406515256,
+            "confidence": 0.6327986657747668
+          },
+          {
+            "signal": "commit_message",
+            "top_3": [
+              [
+                "CONFIG_ERROR",
+                0.7158452342603531
+              ],
+              [
+                "CODE_REGRESSION",
+                0.26307312359067964
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.01610651777085794
+              ]
+            ],
+            "entropy": 0.9995300901036157,
+            "information_gain": 0.22028633853931034,
+            "confidence": 0.6991114613100898
+          }
+        ],
+        "tools_used": [
+          "inspect_errors",
+          "inspect_changed_files",
+          "analyze_detection",
+          "analyze_commit"
+        ],
+        "steps_taken": 5,
+        "error_lines": [
+          "##[error]Process completed with exit code 1."
+        ],
+        "mentioned_files": [],
+        "changed_files": [
+          {
+            "filename": ".github/workflows/release-android-google-play.yaml",
+            "status": "modified"
+          },
+          {
+            "filename": ".github/workflows/release-ios-testflight.yaml",
+            "status": "modified"
+          },
+          {
+            "filename": "mobile/manifest.yaml",
+            "status": "modified"
+          }
+        ]
+      }
+    },
+    {
+      "label": "ttauri-project/ttauri — C++ Windows MSVC build failure",
+      "result": {
+        "classification": {
+          "category": "CODE_REGRESSION",
+          "severity": "CRITICAL",
+          "confidence": 0.91,
+          "action": "FIX_CODE",
+          "reasoning": "The Bayesian posterior confidence for CODE_REGRESSION is very high at 90.9%, supported by error evidence indicating a build failure and multiple source code files modified in the triggering commit. The failure is consistent with a real regression introduced by recent code changes, necessitating code fixes before deployment.",
+          "mentioned_files": [],
+          "bayesian_top": "CODE_REGRESSION",
+          "bayesian_confidence": 0.8278964838730644,
+          "steps_taken": 4,
+          "tools_used": [
+            "inspect_errors",
+            "inspect_changed_files",
+            "analyze_detection"
+          ],
+          "fix_suggestion": {
+            "file": "CMakeLists.txt",
+            "change": "Review and correct recent modifications to ensure all required source files and dependencies are properly included and that build commands are correctly specified to prevent ninja subcommand failures.",
+            "reason": "The build failure with 'ninja: build stopped: subcommand failed' combined with multiple source and CMake-related files changed strongly suggests the issue originates from build configuration errors introduced in CMakeLists.txt, which controls the build process."
+          }
+        },
+        "investigation_log": [
+          "[init] Starting investigation of ttauri-project/ttauri run #2924",
+          "[planner step 1] confidence=0% → chose 'inspect_errors': Inspecting the actual error text will provide the most direct insight into the failure type.",
+          "[inspect_errors] found 2 error lines. Top: CODE_REGRESSION (35%)",
+          "[planner step 2] confidence=19% → chose 'inspect_changed_files': Checking changed files will clarify if the failure is due to config or dependency issues, which are among the top beliefs.",
+          "[inspect_changed_files] 67 files changed (docs:1, other:2, source:64). Top: CODE_REGRESSION (83%)",
+          "[planner step 3] confidence=68% → chose 'analyze_detection': To verify if the failure detection was based on a clear error or inference, which will help confirm the confidence level before classification.",
+          "[analyze_detection] mode=per_step_error. Top: CODE_REGRESSION (91%)",
+          "[planner step 4] confidence=83% → chose 'classify': Confidence is above 55% and most tools have been used, so it's appropriate to classify the failure now.",
+          "[classify] → CODE_REGRESSION / FIX_CODE (conf=91%, bayes=CODE_REGRESSION @ 83%)"
+        ],
+        "beliefs": {
+          "CODE_REGRESSION": 0.9092340392033378,
+          "DEPENDENCY_CONFLICT": 0.017712351413052038,
+          "CONFIG_ERROR": 0.06297724946862948,
+          "ENV_FLAKINESS": 0.0019680390458946713,
+          "TEST_FLAKINESS": 0.0007872156183578683,
+          "TOOLING_ARTIFACT": 0.0007084940565220816,
+          "CASCADE_FAILURE": 0.0019680390458946713,
+          "INFRA_INCOMPATIBILITY": 0.0031488624734314742,
+          "NETWORK_TRANSIENT": 0.0007084940565220816,
+          "UNKNOWN": 0.0007872156183578683
+        },
+        "belief_history": [
+          {
+            "signal": "error_text",
+            "top_3": [
+              [
+                "CODE_REGRESSION",
+                0.3499999999999999
+              ],
+              [
+                "CONFIG_ERROR",
+                0.20000000000000004
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.15
+              ]
+            ],
+            "entropy": 2.6987045565044943,
+            "information_gain": 0.6232235383828684,
+            "confidence": 0.18760897905708573
+          },
+          {
+            "signal": "changed_files",
+            "top_3": [
+              [
+                "CODE_REGRESSION",
+                0.8268900343642611
+              ],
+              [
+                "CONFIG_ERROR",
+                0.08591065292096223
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.03221649484536083
+              ]
+            ],
+            "entropy": 1.061384345870438,
+            "information_gain": 1.6373202106340563,
+            "confidence": 0.6804914749648046
+          },
+          {
+            "signal": "detection_mode",
+            "top_3": [
+              [
+                "CODE_REGRESSION",
+                0.9092340392033378
+              ],
+              [
+                "CONFIG_ERROR",
+                0.06297724946862948
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.017712351413052038
+              ]
+            ],
+            "entropy": 0.5717155054509676,
+            "information_gain": 0.48966884041947034,
+            "confidence": 0.8278964838730644
+          }
+        ],
+        "tools_used": [
+          "inspect_errors",
+          "inspect_changed_files",
+          "analyze_detection"
+        ],
+        "steps_taken": 4,
+        "error_lines": [
+          "##[error]Process completed with exit code 1.",
+          "ninja: build stopped: subcommand failed."
+        ],
+        "mentioned_files": [],
+        "changed_files": [
+          {
+            "filename": "CMakeLists.txt",
+            "status": "modified"
+          },
+          {
+            "filename": "CMakeLists_includes.cmake",
+            "status": "modified"
+          },
+          {
+            "filename": "CMakeLists_tests.cmake",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/GFX/draw_context.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/GFX/gfx_pipeline_image_vulkan_impl.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/GFX/gfx_system_vulkan.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/GFX/gfx_system_vulkan_impl.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/GUI/gui_event.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/GUI/keyboard_bindings.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/GUI/theme_book.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/GUI/widget_intf.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/SIMD/native_f16x8_sse2.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/SIMD/simd.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/algorithm/recursive_iterator.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/audio/audio_sample_packer.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/audio/audio_system.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/audio/audio_system_win32.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/codec/datum.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/codec/indent.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/color/color.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/color/sRGB.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/concurrency/notifier.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/container/gap_buffer.hpp",
+            "status": "removed"
+          },
+          {
+            "filename": "src/hikogui/container/gap_buffer_tests.cpp",
+            "status": "removed"
+          },
+          {
+            "filename": "src/hikogui/container/lean_vector.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/container/module.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/container/stack.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/coroutine/when_any.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/crt/terminate.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/dispatch/loop_intf.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/font/font_book.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/font/font_char_map.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/formula/formula_node.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/graphic_path/bezier.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/graphic_path/bezier_curve.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/graphic_path/bezier_curve_tests.cpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/i18n/iso_15924_intf.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/i18n/iso_3166_intf.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/i18n/iso_639.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/image/pixmap.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/l10n/label.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/l10n/txt.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/layout/grid_layout.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/macros.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/numeric/bigint.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/numeric/polynomial.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/numeric/polynomial_tests.cpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/numeric/polynomial_tests.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/observer/observable.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/observer/observer.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/observer/shared_state.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/parser/token.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/path/URL.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/text/text_shaper.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/text/text_style.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/unicode/unicode_bidi.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/unicode/unicode_line_break.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/unicode/unicode_sentence_break.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/unicode/unicode_word_break.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/utility/architecture.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/utility/cast.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/utility/fixed_string.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/utility/fixed_string_tests.cpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/utility/float16.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/utility/float16_tests.cpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/utility/reflection.hpp",
+            "status": "modified"
+          },
+          {
+            "filename": "src/hikogui/utility/reflection_tests.cpp",
+            "status": "modified"
+          }
+        ]
+      }
+    },
+    {
+      "label": "unblockneteasemusic/server-rust — Rust REST API build",
+      "result": {
+        "classification": {
+          "category": "DEPENDENCY_CONFLICT",
+          "severity": "HIGH",
+          "confidence": 0.82,
+          "action": "PIN_VERSION",
+          "reasoning": "The Bayesian posterior strongly favors DEPENDENCY_CONFLICT at 82%, supported by the commit message bumping toml from 0.5.11 to 0.7.8 and changes to dependency files Cargo.lock and Cargo.toml. The failure occurred on all jobs and was detected via per_step_error mode, reinforcing the dependency conflict diagnosis.",
+          "mentioned_files": [],
+          "bayesian_top": "DEPENDENCY_CONFLICT",
+          "bayesian_confidence": 0.6945580705374618,
+          "steps_taken": 5,
+          "tools_used": [
+            "inspect_errors",
+            "inspect_changed_files",
+            "analyze_commit",
+            "analyze_detection"
+          ],
+          "fix_suggestion": {
+            "file": "rest-api/Cargo.toml",
+            "change": "Revert the toml dependency version from 0.7.8 back to 0.5.11 to restore compatibility",
+            "reason": "The failure is caused by a dependency conflict introduced by bumping toml from 0.5.11 to 0.7.8 as indicated by the commit message and changed dependency files. Pinning toml back to 0.5.11 in rest-api/Cargo.toml will resolve the conflict and fix the CI failures."
+          }
+        },
+        "investigation_log": [
+          "[init] Starting investigation of unblockneteasemusic/server-rust run #387",
+          "[planner step 1] confidence=0% → chose 'inspect_errors': Inspecting the actual error text will provide the most direct evidence to distinguish between code regression, dependency conflict, or configuration error.",
+          "[inspect_errors] found 1 error lines. Top: ENV_FLAKINESS (25%)",
+          "[planner step 2] confidence=10% → chose 'inspect_changed_files': Checking changed files will help confirm if configuration or dependency files were modified, clarifying if the failure is due to ENV_FLAKINESS or a config-related issue.",
+          "[inspect_changed_files] 2 files changed (dependency:2). Top: DEPENDENCY_CONFLICT (33%)",
+          "[planner step 3] confidence=17% → chose 'analyze_commit': Analyzing the commit message will help understand the nature of the dependency changes and clarify if the failure is due to dependency conflict or another cause.",
+          "[analyze_commit] message='chore(deps): bump toml from 0.5.11 to 0.7.8'. Top: DEPENDENCY_CONFLICT (81%)",
+          "[planner step 4] confidence=64% → chose 'analyze_detection': Checking how the failure was detected will help confirm the reliability of the dependency conflict inference before final classification.",
+          "[analyze_detection] mode=per_step_error. Top: DEPENDENCY_CONFLICT (82%)",
+          "[planner step 5] confidence=69% → chose 'classify': Confidence is above 55% and most relevant tools have been used, indicating a dependency conflict failure.",
+          "[classify] → DEPENDENCY_CONFLICT / PIN_VERSION (conf=82%, bayes=DEPENDENCY_CONFLICT @ 69%)"
+        ],
+        "beliefs": {
+          "CODE_REGRESSION": 0.09857612267250822,
+          "DEPENDENCY_CONFLICT": 0.8214676889375685,
+          "CONFIG_ERROR": 0.04381161007667032,
+          "ENV_FLAKINESS": 0.013691128148959474,
+          "TEST_FLAKINESS": 0.01095290251916758,
+          "TOOLING_ARTIFACT": 0.0016429353778751367,
+          "CASCADE_FAILURE": 0.004928806133625409,
+          "INFRA_INCOMPATIBILITY": 0.0021905805038335163,
+          "NETWORK_TRANSIENT": 0.0016429353778751367,
+          "UNKNOWN": 0.0010952902519167581
+        },
+        "belief_history": [
+          {
+            "signal": "error_text",
+            "top_3": [
+              [
+                "ENV_FLAKINESS",
+                0.25
+              ],
+              [
+                "TEST_FLAKINESS",
+                0.20000000000000004
+              ],
+              [
+                "CASCADE_FAILURE",
+                0.15
+              ]
+            ],
+            "entropy": 3.0037016960573486,
+            "information_gain": 0.318226398830014,
+            "confidence": 0.09579569145996336
+          },
+          {
+            "signal": "changed_files",
+            "top_3": [
+              [
+                "DEPENDENCY_CONFLICT",
+                0.33112582781456956
+              ],
+              [
+                "ENV_FLAKINESS",
+                0.16556291390728475
+              ],
+              [
+                "CONFIG_ERROR",
+                0.13245033112582782
+              ]
+            ],
+            "entropy": 2.749604759324851,
+            "information_gain": 0.25409693673249745,
+            "confidence": 0.17228649122277795
+          },
+          {
+            "signal": "commit_message",
+            "top_3": [
+              [
+                "DEPENDENCY_CONFLICT",
+                0.8116883116883117
+              ],
+              [
+                "CODE_REGRESSION",
+                0.048701298701298704
+              ],
+              [
+                "ENV_FLAKINESS",
+                0.04058441558441558
+              ]
+            ],
+            "entropy": 1.203293864142191,
+            "information_gain": 1.54631089518266,
+            "confidence": 0.637772453294781
+          },
+          {
+            "signal": "detection_mode",
+            "top_3": [
+              [
+                "DEPENDENCY_CONFLICT",
+                0.8214676889375685
+              ],
+              [
+                "CODE_REGRESSION",
+                0.09857612267250822
+              ],
+              [
+                "CONFIG_ERROR",
+                0.04381161007667032
+              ]
+            ],
+            "entropy": 1.0146561268382097,
+            "information_gain": 0.18863773730398137,
+            "confidence": 0.6945580705374618
+          }
+        ],
+        "tools_used": [
+          "inspect_errors",
+          "inspect_changed_files",
+          "analyze_commit",
+          "analyze_detection"
+        ],
+        "steps_taken": 5,
+        "error_lines": [
+          "##[error]The operation was canceled."
+        ],
+        "mentioned_files": [],
+        "changed_files": [
+          {
+            "filename": "Cargo.lock",
+            "status": "modified"
+          },
+          {
+            "filename": "rest-api/Cargo.toml",
+            "status": "modified"
+          }
+        ]
+      }
+    },
+    {
+      "label": "dynamorio/dynamorio — CI package build (C/C++ cross-arch)",
+      "result": {
+        "classification": {
+          "category": "CODE_REGRESSION",
+          "severity": "CRITICAL",
+          "confidence": 0.9,
+          "action": "BLOCK_DEPLOY",
+          "reasoning": "The Bayesian posterior strongly favors CODE_REGRESSION at 96%, supported by commit analysis showing code changes related to instruction categorization. Although the error message references a packaging failure, the changed files and commit message indicate a real code change causing the failure, warranting blocking deployment until fixed.",
+          "mentioned_files": [],
+          "bayesian_top": "CODE_REGRESSION",
+          "bayesian_confidence": 0.9084638388285056,
+          "steps_taken": 4,
+          "tools_used": [
+            "inspect_errors",
+            "inspect_changed_files",
+            "analyze_commit"
+          ],
+          "fix_suggestion": {
+            "file": "make/package.cmake",
+            "change": "Fix the error handling or packaging logic at line 233 in make/package.cmake to correctly create the package without failing.",
+            "reason": "The error message explicitly points to a failure in make/package.cmake at line 233 during package creation, indicating that the packaging step is broken likely due to recent code changes affecting build or packaging. Correcting this specific packaging logic will resolve the build failure caused by the code regression."
+          }
+        },
+        "investigation_log": [
+          "[init] Starting investigation of dynamorio/dynamorio run #175",
+          "[planner step 1] confidence=0% → chose 'inspect_errors': Inspecting the actual error text will provide the most direct evidence to identify the failure type.",
+          "[inspect_errors] found 3 error lines. Top: CONFIG_ERROR (35%)",
+          "[planner step 2] confidence=14% → chose 'inspect_changed_files': Inspecting changed files will clarify if configuration or dependency files were modified, which helps confirm CONFIG_ERROR or DEPENDENCY_CONFLICT hypotheses.",
+          "[inspect_changed_files] 11 files changed (other:1, source:8, test:2). Top: CODE_REGRESSION (61%)",
+          "[planner step 3] confidence=50% → chose 'analyze_commit': Analyzing the commit message will help clarify the nature of the changes and support distinguishing between code regression and configuration error.",
+          "[analyze_commit] message='i#6238: Add categorization of x86 instruction mix '. Top: CODE_REGRESSION (96%)",
+          "[planner step 4] confidence=91% → chose 'classify': Confidence is above 90% for CODE_REGRESSION and most tools have been used, so it's time to classify the failure.",
+          "[classify] → CODE_REGRESSION / BLOCK_DEPLOY (conf=90%, bayes=CODE_REGRESSION @ 91%)"
+        ],
+        "beliefs": {
+          "CODE_REGRESSION": 0.9598125249301954,
+          "DEPENDENCY_CONFLICT": 0.004155032575455392,
+          "CONFIG_ERROR": 0.029085228028187735,
+          "ENV_FLAKINESS": 0.0012465097726366175,
+          "TEST_FLAKINESS": 0.002493019545273235,
+          "TOOLING_ARTIFACT": 0.001662013030182157,
+          "CASCADE_FAILURE": 0.000498603909054647,
+          "INFRA_INCOMPATIBILITY": 0.0006648052120728628,
+          "NETWORK_TRANSIENT": 4.986039090546469e-05,
+          "UNKNOWN": 0.0003324026060364314
+        },
+        "belief_history": [
+          {
+            "signal": "error_text",
+            "top_3": [
+              [
+                "CONFIG_ERROR",
+                0.3499999999999999
+              ],
+              [
+                "CODE_REGRESSION",
+                0.15
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.10000000000000002
+              ]
+            ],
+            "entropy": 2.850157026781761,
+            "information_gain": 0.47177106810560154,
+            "confidence": 0.14201724258622084
+          },
+          {
+            "signal": "changed_files",
+            "top_3": [
+              [
+                "CODE_REGRESSION",
+                0.6120178041543027
+              ],
+              [
+                "CONFIG_ERROR",
+                0.25964391691394656
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.0370919881305638
+              ]
+            ],
+            "entropy": 1.6683547979042572,
+            "information_gain": 1.1818022288775039,
+            "confidence": 0.49777516242089925
+          },
+          {
+            "signal": "commit_message",
+            "top_3": [
+              [
+                "CODE_REGRESSION",
+                0.9598125249301954
+              ],
+              [
+                "CONFIG_ERROR",
+                0.029085228028187735
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.004155032575455392
+              ]
+            ],
+            "entropy": 0.304076545493725,
+            "information_gain": 1.3642782524105321,
+            "confidence": 0.9084638388285056
+          }
+        ],
+        "tools_used": [
+          "inspect_errors",
+          "inspect_changed_files",
+          "analyze_commit"
+        ],
+        "steps_taken": 4,
+        "error_lines": [
+          "##[error]Process completed with exit code 2.",
+          "CMake Error at /home/runner/work/dynamorio/dynamorio/make/package.cmake:233 (message):",
+          "failed to create package"
+        ],
+        "mentioned_files": [],
+        "changed_files": [
+          {
+            "filename": "api/docs/release.dox",
+            "status": "modified"
+          },
+          {
+            "filename": "core/ir/aarch64/codec.c",
+            "status": "modified"
+          },
+          {
+            "filename": "core/ir/aarch64/instr.c",
+            "status": "modified"
+          },
+          {
+            "filename": "core/ir/decode.h",
+            "status": "modified"
+          },
+          {
+            "filename": "core/ir/decode_shared.c",
+            "status": "modified"
+          },
+          {
+            "filename": "core/ir/instr_api.h",
+            "status": "modified"
+          },
+          {
+            "filename": "core/ir/x86/decode.c",
+            "status": "modified"
+          },
+          {
+            "filename": "core/ir/x86/decode_table.c",
+            "status": "modified"
+          },
+          {
+            "filename": "core/ir/x86/instr.c",
+            "status": "modified"
+          },
+          {
+            "filename": "suite/tests/api/drdecode_aarch64.c",
+            "status": "modified"
+          },
+          {
+            "filename": "suite/tests/api/drdecode_x86.c",
+            "status": "modified"
+          }
+        ]
+      }
+    },
+    {
+      "label": "admin-shell-io/aasx-package-explorer — .NET release build",
+      "result": {
+        "classification": {
+          "category": "CODE_REGRESSION",
+          "severity": "HIGH",
+          "confidence": 0.86,
+          "action": "FIX_CODE",
+          "reasoning": "The Bayesian posterior strongly favors CODE_REGRESSION at 86%, supported by error evidence and changes in source code files. The failure occurred after a bug fix commit, indicating a real regression in the codebase that requires a code fix before deployment.",
+          "mentioned_files": [],
+          "bayesian_top": "CODE_REGRESSION",
+          "bayesian_confidence": 0.7508462587096385,
+          "steps_taken": 4,
+          "tools_used": [
+            "inspect_errors",
+            "inspect_changed_files",
+            "analyze_detection"
+          ],
+          "fix_suggestion": {
+            "file": "(unclear)",
+            "change": "Inspect the failing step output and apply the remediation in the specific file named by the logs or dependency manifest once confirmed.",
+            "reason": "The remediation direction is plausible, but the investigation evidence does not support naming an exact repository file safely."
+          }
+        },
+        "investigation_log": [
+          "[init] Starting investigation of admin-shell-io/aasx-package-explorer run #46",
+          "[planner step 1] confidence=0% → chose 'inspect_errors': Inspecting the actual error text will provide the most direct insight into the failure type.",
+          "[inspect_errors] found 1 error lines. Top: CODE_REGRESSION (25%)",
+          "[planner step 2] confidence=10% → chose 'inspect_changed_files': Checking changed files will help confirm if configuration or dependency files were modified, clarifying CONFIG_ERROR or DEPENDENCY_CONFLICT hypotheses.",
+          "[inspect_changed_files] 2 files changed (docs:1, source:1). Top: CODE_REGRESSION (72%)",
+          "[planner step 3] confidence=53% → chose 'analyze_detection': Checking how the failure was detected will help gauge the quality of evidence supporting the current confidence and top belief.",
+          "[analyze_detection] mode=per_step_error. Top: CODE_REGRESSION (86%)",
+          "[planner step 4] confidence=75% → chose 'classify': Confidence is above 55% and most tools have been used, so it's time to classify the failure.",
+          "[classify] → CODE_REGRESSION / FIX_CODE (conf=86%, bayes=CODE_REGRESSION @ 75%)"
+        ],
+        "beliefs": {
+          "CODE_REGRESSION": 0.8595988538681949,
+          "DEPENDENCY_CONFLICT": 0.025787965616045846,
+          "CONFIG_ERROR": 0.09169054441260749,
+          "ENV_FLAKINESS": 0.002865329512893984,
+          "TEST_FLAKINESS": 0.002865329512893984,
+          "TOOLING_ARTIFACT": 0.002865329512893984,
+          "CASCADE_FAILURE": 0.005730659025787968,
+          "INFRA_INCOMPATIBILITY": 0.002865329512893984,
+          "NETWORK_TRANSIENT": 0.002865329512893984,
+          "UNKNOWN": 0.002865329512893984
+        },
+        "belief_history": [
+          {
+            "signal": "error_text",
+            "top_3": [
+              [
+                "CODE_REGRESSION",
+                0.25
+              ],
+              [
+                "CONFIG_ERROR",
+                0.20000000000000004
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.15
+              ]
+            ],
+            "entropy": 3.0037016960573486,
+            "information_gain": 0.318226398830014,
+            "confidence": 0.09579569145996336
+          },
+          {
+            "signal": "changed_files",
+            "top_3": [
+              [
+                "CODE_REGRESSION",
+                0.7246376811594202
+              ],
+              [
+                "CONFIG_ERROR",
+                0.11594202898550726
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.04347826086956521
+              ]
+            ],
+            "entropy": 1.5730505873448402,
+            "information_gain": 1.4306511087125084,
+            "confidence": 0.5264645885123597
+          },
+          {
+            "signal": "detection_mode",
+            "top_3": [
+              [
+                "CODE_REGRESSION",
+                0.8595988538681949
+              ],
+              [
+                "CONFIG_ERROR",
+                0.09169054441260749
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.025787965616045846
+              ]
+            ],
+            "entropy": 0.8276708131387495,
+            "information_gain": 0.7453797742060907,
+            "confidence": 0.7508462587096385
+          }
+        ],
+        "tools_used": [
+          "inspect_errors",
+          "inspect_changed_files",
+          "analyze_detection"
+        ],
+        "steps_taken": 4,
+        "error_lines": [
+          "##[error]Process completed with exit code 1."
+        ],
+        "mentioned_files": [],
+        "changed_files": [
+          {
+            "filename": "src/AasxCsharpLibrary/Extensions/ExtendReference.cs",
+            "status": "modified"
+          },
+          {
+            "filename": "src/Notes_V3.md",
+            "status": "modified"
+          }
+        ]
+      }
+    },
+    {
+      "label": "dotcms/core — Java Maven CI/CD pipeline failure",
+      "result": {
+        "classification": {
+          "category": "CODE_REGRESSION",
+          "severity": "HIGH",
+          "confidence": 0.58,
+          "action": "FIX_CODE",
+          "reasoning": "The Bayesian posterior confidence is highest for CODE_REGRESSION at 58%, supported by failure of all jobs (2/2) and commit message indicating code-related changes. Although there is some indication of CONFIG_ERROR (40.6%), the overall evidence and job failure pattern favor a code regression requiring source or test code fixes.",
+          "mentioned_files": [],
+          "bayesian_top": "CODE_REGRESSION",
+          "bayesian_confidence": 0.6762598760570722,
+          "steps_taken": 7,
+          "tools_used": [
+            "inspect_errors",
+            "inspect_changed_files",
+            "analyze_detection",
+            "analyze_commit",
+            "analyze_branch",
+            "analyze_jobs"
+          ],
+          "fix_suggestion": {
+            "file": "(unclear)",
+            "change": "Inspect the failing step output and apply the remediation in the specific file named by the logs or dependency manifest once confirmed.",
+            "reason": "The remediation direction is plausible, but the investigation evidence does not support naming an exact repository file safely."
+          }
+        },
+        "investigation_log": [
+          "[init] Starting investigation of dotcms/core run #2954",
+          "[planner step 1] confidence=0% → chose 'inspect_errors': Reading the actual error text from the CI logs will provide the most direct insight into the nature of the failure.",
+          "[inspect_errors] found 3 error lines. Top: CODE_REGRESSION (35%)",
+          "[planner step 2] confidence=22% → chose 'inspect_changed_files': Checking changed files will help confirm if the failure is due to configuration or dependency changes, clarifying between DEPENDENCY_CONFLICT and CONFIG_ERROR.",
+          "[inspect_changed_files] 1 files changed (workflow:1). Top: CONFIG_ERROR (62%)",
+          "[planner step 3] confidence=44% → chose 'analyze_detection': analyzing how the failure was detected will help gauge the quality of evidence and improve confidence before classification",
+          "[analyze_detection] mode=per_step_error. Top: CONFIG_ERROR (64%)",
+          "[planner step 4] confidence=58% → chose 'analyze_commit': Analyzing the commit message will clarify the nature of the workflow file change and help confirm if the failure is due to configuration issues.",
+          "[analyze_commit] message='github get docker version tag'. Top: CONFIG_ERROR (49%)",
+          "[planner step 5] confidence=61% → chose 'analyze_branch': Analyzing the branch type will help gauge the severity and context of the configuration error before final classification.",
+          "[analyze_branch] branch='26049-docker-build-and-publish' protected=False. Top: CODE_REGRESSION (58%)",
+          "[planner step 6] confidence=67% → chose 'analyze_jobs': Analyzing job failure distribution will clarify if the failure is isolated or cascading, helping distinguish between code regression and config error.",
+          "[analyze_jobs] 2/2 failed. Top: CODE_REGRESSION (58%)",
+          "[planner step 7] confidence=68% → chose 'classify': Confidence is above 55% and all other tools have been used, so it's time to classify the failure.",
+          "[classify] → CODE_REGRESSION / FIX_CODE (conf=58%, bayes=CODE_REGRESSION @ 68%)"
+        ],
+        "beliefs": {
+          "CODE_REGRESSION": 0.5800019389763558,
+          "DEPENDENCY_CONFLICT": 0.013527742016941239,
+          "CONFIG_ERROR": 0.40583226050823723,
+          "ENV_FLAKINESS": 2.2546236694902075e-05,
+          "TEST_FLAKINESS": 2.2546236694902074e-06,
+          "TOOLING_ARTIFACT": 2.2546236694902074e-06,
+          "CASCADE_FAILURE": 0.0001127311834745104,
+          "INFRA_INCOMPATIBILITY": 0.0004509247338980416,
+          "NETWORK_TRANSIENT": 2.029161302541187e-05,
+          "UNKNOWN": 2.705548403388249e-05
+        },
+        "belief_history": [
+          {
+            "signal": "error_text",
+            "top_3": [
+              [
+                "CODE_REGRESSION",
+                0.3499999999999999
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.25
+              ],
+              [
+                "CONFIG_ERROR",
+                0.15
+              ]
+            ],
+            "entropy": 2.578222532782654,
+            "information_gain": 0.7437055621047088,
+            "confidence": 0.22387768213565906
+          },
+          {
+            "signal": "changed_files",
+            "top_3": [
+              [
+                "CONFIG_ERROR",
+                0.625
+              ],
+              [
+                "CODE_REGRESSION",
+                0.14583333333333331
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.10416666666666667
+              ]
+            ],
+            "entropy": 1.8490053838839426,
+            "information_gain": 0.7292171488987111,
+            "confidence": 0.4433939173067388
+          },
+          {
+            "signal": "detection_mode",
+            "top_3": [
+              [
+                "CONFIG_ERROR",
+                0.6353240152477764
+              ],
+              [
+                "CODE_REGRESSION",
+                0.259423972892842
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.07941550190597205
+              ]
+            ],
+            "entropy": 1.408514711392292,
+            "information_gain": 0.44049067249165064,
+            "confidence": 0.5759948225369246
+          },
+          {
+            "signal": "commit_message",
+            "top_3": [
+              [
+                "CONFIG_ERROR",
+                0.486565388981997
+              ],
+              [
+                "CODE_REGRESSION",
+                0.4635886900578472
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.04054711574849976
+              ]
+            ],
+            "entropy": 1.2884134577210309,
+            "information_gain": 0.12010125367126112,
+            "confidence": 0.612148902408823
+          },
+          {
+            "signal": "branch_type",
+            "top_3": [
+              [
+                "CODE_REGRESSION",
+                0.577136639483101
+              ],
+              [
+                "CONFIG_ERROR",
+                0.4038273862272427
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.016826141092801776
+              ]
+            ],
+            "entropy": 1.1090668534960149,
+            "information_gain": 0.17934660422501603,
+            "confidence": 0.6661376099010294
+          },
+          {
+            "signal": "jobs_failed",
+            "top_3": [
+              [
+                "CODE_REGRESSION",
+                0.5800019389763558
+              ],
+              [
+                "CONFIG_ERROR",
+                0.40583226050823723
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.013527742016941239
+              ]
+            ],
+            "entropy": 1.0754414131683285,
+            "information_gain": 0.03362544032768633,
+            "confidence": 0.6762598760570722
+          }
+        ],
+        "tools_used": [
+          "inspect_errors",
+          "inspect_changed_files",
+          "analyze_detection",
+          "analyze_commit",
+          "analyze_branch",
+          "analyze_jobs"
+        ],
+        "steps_taken": 7,
+        "error_lines": [
+          "##[error]Process completed with exit code 1.",
+          "[ERROR] After correcting the problems, you can resume the build with the command",
+          "[ERROR]   mvn <args> -rf :dotcms-core"
+        ],
+        "mentioned_files": [],
+        "changed_files": [
+          {
+            "filename": ".github/workflows/maven-cicd-pipeline.yml",
+            "status": "modified"
+          }
+        ]
+      }
+    },
+    {
+      "label": "tony133/nestjs-apps-collection — Node.js NX cloud CI",
+      "result": {
+        "classification": {
+          "category": "CONFIG_ERROR",
+          "severity": "HIGH",
+          "confidence": 0.73,
+          "action": "FIX_WORKFLOW",
+          "reasoning": "The Bayesian posterior strongly favors CONFIG_ERROR at 72.9%, supported by the error message indicating Nx Cloud organization disabled due to exceeding the free plan, which is a configuration or account limitation issue. No changed files were retrieved, but the commit updated dependencies, and the branch is a non-protected renovate branch, consistent with a config-related failure rather than code regression.",
+          "mentioned_files": [],
+          "bayesian_top": "CONFIG_ERROR",
+          "bayesian_confidence": 0.5694586120011813,
+          "steps_taken": 6,
+          "tools_used": [
+            "inspect_errors",
+            "inspect_changed_files",
+            "analyze_detection",
+            "analyze_commit",
+            "analyze_branch"
+          ],
+          "fix_suggestion": {
+            "file": "(unclear)",
+            "change": "Inspect the failing step output and apply the remediation in the specific file named by the logs or dependency manifest once confirmed.",
+            "reason": "The remediation direction is plausible, but the investigation evidence does not support naming an exact repository file safely."
+          }
+        },
+        "investigation_log": [
+          "[init] Starting investigation of tony133/nestjs-apps-collection run #413",
+          "[planner step 1] confidence=0% → chose 'inspect_errors': Inspecting the actual error text will provide the most direct evidence to identify the failure type.",
+          "[inspect_errors] found 2 error lines. Top: CONFIG_ERROR (40%)",
+          "[planner step 2] confidence=17% → chose 'inspect_changed_files': Checking changed files will help confirm if configuration or workflow files were modified, which is critical to verify the CONFIG_ERROR hypothesis.",
+          "[inspect_changed_files] 0 files changed (none retrieved). Top: CONFIG_ERROR (40%)",
+          "[planner step 3] confidence=17% → chose 'analyze_detection': analyzing how the failure was detected will help assess the quality of evidence supporting the CONFIG_ERROR hypothesis",
+          "[analyze_detection] mode=single_step_inferred. Top: CONFIG_ERROR (69%)",
+          "[planner step 4] confidence=49% → chose 'analyze_commit': Analyzing the commit message can clarify the nature of the change and help confirm if the failure is due to a configuration error or a code regression.",
+          "[analyze_commit] message='chore(deps): update typescript-eslint monorepo to '. Top: CONFIG_ERROR (69%)",
+          "[planner step 5] confidence=51% → chose 'analyze_branch': Analyzing the branch type will help gauge the severity and context of the failure, which is useful before final classification.",
+          "[analyze_branch] branch='renovate/typescript-eslint-monorepo' protected=False. Top: CONFIG_ERROR (73%)",
+          "[planner step 6] confidence=57% → chose 'inspect_errors': Inspecting the actual error text will provide the most direct evidence to confirm if this is a configuration error or another issue.",
+          "[planner] tool 'inspect_errors' not available, forcing classification",
+          "[classify] → CONFIG_ERROR / FIX_WORKFLOW (conf=73%, bayes=CONFIG_ERROR @ 57%)"
+        ],
+        "beliefs": {
+          "CODE_REGRESSION": 0.0319022878497858,
+          "DEPENDENCY_CONFLICT": 0.07291951508522469,
+          "CONFIG_ERROR": 0.7291951508522468,
+          "ENV_FLAKINESS": 0.004557469692826543,
+          "TEST_FLAKINESS": 0.0018229878771306167,
+          "TOOLING_ARTIFACT": 0.004557469692826543,
+          "CASCADE_FAILURE": 9.114939385653088e-05,
+          "INFRA_INCOMPATIBILITY": 0.018229878771306173,
+          "NETWORK_TRANSIENT": 0.018229878771306173,
+          "UNKNOWN": 0.1184942120134901
+        },
+        "belief_history": [
+          {
+            "signal": "error_text",
+            "top_3": [
+              [
+                "CONFIG_ERROR",
+                0.4
+              ],
+              [
+                "UNKNOWN",
+                0.12999999999999998
+              ],
+              [
+                "INFRA_INCOMPATIBILITY",
+                0.1
+              ]
+            ],
+            "entropy": 2.769160145762125,
+            "information_gain": 0.5527679491252377,
+            "confidence": 0.166399733328358
+          },
+          {
+            "signal": "detection_mode",
+            "top_3": [
+              [
+                "CONFIG_ERROR",
+                0.6894174422612892
+              ],
+              [
+                "CODE_REGRESSION",
+                0.1206480523957256
+              ],
+              [
+                "UNKNOWN",
+                0.04481213374698379
+              ]
+            ],
+            "entropy": 1.6966188573552448,
+            "information_gain": 1.0725412884068801,
+            "confidence": 0.48926683272692195
+          },
+          {
+            "signal": "commit_message",
+            "top_3": [
+              [
+                "CONFIG_ERROR",
+                0.6895362868470953
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.13790725736941908
+              ],
+              [
+                "CODE_REGRESSION",
+                0.06033442509912084
+              ]
+            ],
+            "entropy": 1.6147526076424714,
+            "information_gain": 0.08186624971277334,
+            "confidence": 0.5139110295229845
+          },
+          {
+            "signal": "branch_type",
+            "top_3": [
+              [
+                "CONFIG_ERROR",
+                0.7291951508522468
+              ],
+              [
+                "UNKNOWN",
+                0.1184942120134901
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.07291951508522469
+              ]
+            ],
+            "entropy": 1.4302275328050764,
+            "information_gain": 0.184525074837395,
+            "confidence": 0.5694586120011813
+          }
+        ],
+        "tools_used": [
+          "inspect_errors",
+          "inspect_changed_files",
+          "analyze_detection",
+          "analyze_commit",
+          "analyze_branch"
+        ],
+        "steps_taken": 6,
+        "error_lines": [
+          "##[error]Process completed with exit code 1.",
+          ">  NX   Error when connecting to Nx Cloud. Code: 401. Error: This Nx Cloud organization has been disabled due to exceeding the FREE plan. More informa"
+        ],
+        "mentioned_files": [],
+        "changed_files": []
+      }
+    },
+    {
+      "label": "cubefs/chubaofs — Go blobstore format/lint check",
+      "result": {
+        "classification": {
+          "category": "CODE_REGRESSION",
+          "severity": "CRITICAL",
+          "confidence": 0.96,
+          "action": "BLOCK_DEPLOY",
+          "reasoning": "The Bayesian posterior confidence for CODE_REGRESSION is very high at 96%, supported by error messages indicating type mismatches and undefined methods in the code. Only one source file was changed in the triggering commit, further confirming the failure is due to a code regression rather than dependency or configuration issues.",
+          "mentioned_files": [
+            {
+              "path": "common/kafka/monitor_test.go",
+              "line": 102,
+              "column": 24,
+              "context": "##[error]vet: common/kafka/monitor_test.go:102:24: cannot use &(MockKafkaClient literal) (value of type *MockKafkaClient) as sarama.Client value in as"
+            },
+            {
+              "path": "scheduler/base/kafka_consumer_test.go",
+              "line": 32,
+              "column": 31,
+              "context": "##[error]vet: scheduler/base/kafka_consumer_test.go:32:31: cannot use &(mockPartitionConsumer literal) (value of type *mockPartitionConsumer) as saram"
+            },
+            {
+              "path": "scheduler/scheduler_test.go",
+              "line": 69,
+              "column": 20,
+              "context": "##[error]vet: scheduler/scheduler_test.go:69:20: mockFetchResponse.SetVersion undefined (type *sarama.MockFetchResponse has no field or method SetVers"
+            }
+          ],
+          "bayesian_top": "CODE_REGRESSION",
+          "bayesian_confidence": 0.8956894843630437,
+          "steps_taken": 3,
+          "tools_used": [
+            "inspect_errors",
+            "inspect_changed_files"
+          ],
+          "fix_suggestion": {
+            "file": "(unclear)",
+            "change": "Inspect the failing step output and apply the remediation in the specific file named by the logs or dependency manifest once confirmed.",
+            "reason": "The remediation direction is plausible, but the investigation evidence does not support naming an exact repository file safely."
+          }
+        },
+        "investigation_log": [
+          "[init] Starting investigation of cubefs/chubaofs run #392",
+          "[planner step 1] confidence=0% → chose 'inspect_errors': Inspecting the actual error text from the CI logs will provide the most direct evidence to identify the specific failure type.",
+          "[inspect_errors] found 4 error lines. Top: CODE_REGRESSION (75%)",
+          "[planner step 2] confidence=54% → chose 'inspect_changed_files': To confirm if dependency or configuration files were changed, which helps distinguish between DEPENDENCY_CONFLICT, CONFIG_ERROR, and CODE_REGRESSION.",
+          "[inspect_changed_files] 1 files changed (source:1). Top: CODE_REGRESSION (96%)",
+          "[planner step 3] confidence=90% → chose 'classify': Confidence is already high at 89.6% with strong evidence pointing to CODE_REGRESSION and most informative tools have been used.",
+          "[classify] → CODE_REGRESSION / BLOCK_DEPLOY (conf=96%, bayes=CODE_REGRESSION @ 90%)"
+        ],
+        "beliefs": {
+          "CODE_REGRESSION": 0.9595701125895599,
+          "DEPENDENCY_CONFLICT": 0.012794268167860801,
+          "CONFIG_ERROR": 0.012794268167860801,
+          "ENV_FLAKINESS": 0.0012794268167860797,
+          "TEST_FLAKINESS": 0.0012794268167860797,
+          "TOOLING_ARTIFACT": 0.0038382804503582393,
+          "CASCADE_FAILURE": 0.0012794268167860797,
+          "INFRA_INCOMPATIBILITY": 0.0038382804503582393,
+          "NETWORK_TRANSIENT": 0.0007676560900716478,
+          "UNKNOWN": 0.00255885363357216
+        },
+        "belief_history": [
+          {
+            "signal": "error_text",
+            "top_3": [
+              [
+                "CODE_REGRESSION",
+                0.75
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.05
+              ],
+              [
+                "CONFIG_ERROR",
+                0.05
+              ]
+            ],
+            "entropy": 1.5288552076264403,
+            "information_gain": 1.7930728872609223,
+            "confidence": 0.5397687234773576
+          },
+          {
+            "signal": "changed_files",
+            "top_3": [
+              [
+                "CODE_REGRESSION",
+                0.9595701125895599
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.012794268167860801
+              ],
+              [
+                "CONFIG_ERROR",
+                0.012794268167860801
+              ]
+            ],
+            "entropy": 0.34651203248659235,
+            "information_gain": 1.1823431751398479,
+            "confidence": 0.8956894843630437
+          }
+        ],
+        "tools_used": [
+          "inspect_errors",
+          "inspect_changed_files"
+        ],
+        "steps_taken": 3,
+        "error_lines": [
+          "##[error]vet: common/kafka/monitor_test.go:102:24: cannot use &(MockKafkaClient literal) (value of type *MockKafkaClient) as sarama.Client value in as",
+          "##[error]vet: scheduler/base/kafka_consumer_test.go:32:31: cannot use &(mockPartitionConsumer literal) (value of type *mockPartitionConsumer) as saram",
+          "##[error]vet: scheduler/scheduler_test.go:69:20: mockFetchResponse.SetVersion undefined (type *sarama.MockFetchResponse has no field or method SetVers",
+          "##[error]Process completed with exit code 2."
+        ],
+        "mentioned_files": [
+          {
+            "path": "common/kafka/monitor_test.go",
+            "line": 102,
+            "column": 24,
+            "context": "##[error]vet: common/kafka/monitor_test.go:102:24: cannot use &(MockKafkaClient literal) (value of type *MockKafkaClient) as sarama.Client value in as"
+          },
+          {
+            "path": "scheduler/base/kafka_consumer_test.go",
+            "line": 32,
+            "column": 31,
+            "context": "##[error]vet: scheduler/base/kafka_consumer_test.go:32:31: cannot use &(mockPartitionConsumer literal) (value of type *mockPartitionConsumer) as saram"
+          },
+          {
+            "path": "scheduler/scheduler_test.go",
+            "line": 69,
+            "column": 20,
+            "context": "##[error]vet: scheduler/scheduler_test.go:69:20: mockFetchResponse.SetVersion undefined (type *sarama.MockFetchResponse has no field or method SetVers"
+          }
+        ],
+        "changed_files": [
+          {
+            "filename": "master/dir_snapshot.go",
+            "status": "modified"
+          }
+        ]
+      }
+    },
+    {
+      "label": "apipie/apipie-rails — Ruby RuboCop challenger lint",
+      "result": {
+        "classification": {
+          "category": "CODE_REGRESSION",
+          "severity": "HIGH",
+          "confidence": 0.86,
+          "action": "FIX_CODE",
+          "reasoning": "The Bayesian posterior strongly favors CODE_REGRESSION at 85.8%, supported by the commit message indicating a code change related to parameter handling. Although the error mentions a missing gemfile (CONFIG_ERROR evidence), the commit and changed files point to a code-related regression rather than a configuration issue.",
+          "mentioned_files": [
+            {
+              "path": "Gemfile",
+              "line": null,
+              "column": null,
+              "context": "##[error]Error: $BUNDLE_GEMFILE is set to gemfiles/Gemfile.rails50 but does not exist"
+            }
+          ],
+          "bayesian_top": "CODE_REGRESSION",
+          "bayesian_confidence": 0.7831070196918232,
+          "steps_taken": 4,
+          "tools_used": [
+            "inspect_errors",
+            "inspect_changed_files",
+            "analyze_commit"
+          ],
+          "fix_suggestion": {
+            "file": "(unclear)",
+            "change": "Inspect the failing step output and apply the remediation in the specific file named by the logs or dependency manifest once confirmed.",
+            "reason": "The remediation direction is plausible, but the investigation evidence does not support naming an exact repository file safely."
+          }
+        },
+        "investigation_log": [
+          "[init] Starting investigation of apipie/apipie-rails run #91",
+          "[planner step 1] confidence=0% → chose 'inspect_errors': Inspecting the actual error text will provide the most direct evidence to identify the failure type.",
+          "[inspect_errors] found 1 error lines. Top: CONFIG_ERROR (50%)",
+          "[planner step 2] confidence=25% → chose 'inspect_changed_files': Inspecting changed files will confirm if configuration or dependency files were modified, clarifying the CONFIG_ERROR vs DEPENDENCY_CONFLICT hypotheses.",
+          "[inspect_changed_files] 3 files changed (source:1, test:2). Top: CONFIG_ERROR (56%)",
+          "[planner step 3] confidence=45% → chose 'analyze_commit': Analyzing the commit message will help understand the nature of the change and clarify if it likely caused a configuration error or another issue.",
+          "[analyze_commit] message='Fix param: Consider default_value: nil as valid co'. Top: CODE_REGRESSION (86%)",
+          "[planner step 4] confidence=78% → chose 'classify': Confidence is above 55% and most tools have been used, so it's appropriate to classify the failure now.",
+          "[classify] → CODE_REGRESSION / FIX_CODE (conf=86%, bayes=CODE_REGRESSION @ 78%)"
+        ],
+        "beliefs": {
+          "CODE_REGRESSION": 0.8575068600548805,
+          "DEPENDENCY_CONFLICT": 0.004900039200313603,
+          "CONFIG_ERROR": 0.12250098000784006,
+          "ENV_FLAKINESS": 0.0004900039200313602,
+          "TEST_FLAKINESS": 0.0009800078400627203,
+          "TOOLING_ARTIFACT": 0.0024500196001568013,
+          "CASCADE_FAILURE": 0.0007350058800470402,
+          "INFRA_INCOMPATIBILITY": 0.001960015680125441,
+          "NETWORK_TRANSIENT": 0.00024500196001568013,
+          "UNKNOWN": 0.008232065856526851
+        },
+        "belief_history": [
+          {
+            "signal": "error_text",
+            "top_3": [
+              [
+                "CONFIG_ERROR",
+                0.5
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.10000000000000002
+              ],
+              [
+                "INFRA_INCOMPATIBILITY",
+                0.10000000000000002
+              ]
+            ],
+            "entropy": 2.4766420123883854,
+            "information_gain": 0.8452860824989772,
+            "confidence": 0.25445646574949066
+          },
+          {
+            "signal": "changed_files",
+            "top_3": [
+              [
+                "CONFIG_ERROR",
+                0.5592841163310962
+              ],
+              [
+                "CODE_REGRESSION",
+                0.27964205816554816
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.055928411633109625
+              ]
+            ],
+            "entropy": 1.8406380938948232,
+            "information_gain": 0.6360039184935622,
+            "confidence": 0.44591272257588277
+          },
+          {
+            "signal": "commit_message",
+            "top_3": [
+              [
+                "CODE_REGRESSION",
+                0.8575068600548805
+              ],
+              [
+                "CONFIG_ERROR",
+                0.12250098000784006
+              ],
+              [
+                "UNKNOWN",
+                0.008232065856526851
+              ]
+            ],
+            "entropy": 0.720502884869584,
+            "information_gain": 1.1201352090252392,
+            "confidence": 0.7831070196918232
+          }
+        ],
+        "tools_used": [
+          "inspect_errors",
+          "inspect_changed_files",
+          "analyze_commit"
+        ],
+        "steps_taken": 4,
+        "error_lines": [
+          "##[error]Error: $BUNDLE_GEMFILE is set to gemfiles/Gemfile.rails50 but does not exist"
+        ],
+        "mentioned_files": [
+          {
+            "path": "Gemfile",
+            "line": null,
+            "column": null,
+            "context": "##[error]Error: $BUNDLE_GEMFILE is set to gemfiles/Gemfile.rails50 but does not exist"
+          }
+        ],
+        "changed_files": [
+          {
+            "filename": "lib/apipie/generator/swagger/param_description/builder.rb",
+            "status": "modified"
+          },
+          {
+            "filename": "spec/lib/apipie/apipies_controller_spec.rb",
+            "status": "modified"
+          },
+          {
+            "filename": "spec/lib/apipie/generator/swagger/param_description/builder_spec.rb",
+            "status": "modified"
+          }
+        ]
+      }
+    },
+    {
+      "label": "securego/gosec — Go release workflow failure",
+      "result": {
+        "classification": {
+          "category": "CONFIG_ERROR",
+          "severity": "HIGH",
+          "confidence": 0.75,
+          "action": "FIX_WORKFLOW",
+          "reasoning": "The Bayesian posterior strongly favors CONFIG_ERROR at 74.7%, supported by changes in workflow files (.github/workflows/ci.yml and release.yml) and an error indicating missing required arguments in command execution. This suggests the failure stems from misconfiguration in the CI workflow rather than code or dependency issues.",
+          "mentioned_files": [
+            {
+              "path": "main.go",
+              "line": 74,
+              "column": null,
+              "context": "main.go:74: error during command execution: requires at least 1 arg(s), only received 0"
+            }
+          ],
+          "bayesian_top": "CONFIG_ERROR",
+          "bayesian_confidence": 0.6940822481199791,
+          "steps_taken": 4,
+          "tools_used": [
+            "inspect_errors",
+            "inspect_changed_files",
+            "analyze_detection"
+          ],
+          "fix_suggestion": {
+            "file": ".github/workflows/ci.yml",
+            "change": "Modify the step invoking the command at main.go:74 to ensure it passes at least one required argument, correcting the command line to include the necessary parameter(s).",
+            "reason": "The error 'requires at least 1 arg(s), only received 0' indicates the CI workflow is calling a command without required arguments. Since .github/workflows/ci.yml was changed in the triggering commit and the error points to main.go:74 where the command is executed, fixing the workflow to supply the needed argument(s) will resolve the configuration error."
+          }
+        },
+        "investigation_log": [
+          "[init] Starting investigation of securego/gosec run #24",
+          "[planner step 1] confidence=0% → chose 'inspect_errors': Reading the actual error text will provide the most direct insight into the nature of the failure.",
+          "[inspect_errors] found 3 error lines. Top: CODE_REGRESSION (51%)",
+          "[planner step 2] confidence=35% → chose 'inspect_changed_files': Checking changed files will help confirm if configuration or dependency files were modified, clarifying if this is a CONFIG_ERROR or DEPENDENCY_CONFLICT.",
+          "[inspect_changed_files] 2 files changed (workflow:2). Top: CONFIG_ERROR (76%)",
+          "[planner step 3] confidence=62% → chose 'analyze_detection': analyzing how the failure was detected will help gauge the quality of evidence supporting the current high confidence in CONFIG_ERROR",
+          "[analyze_detection] mode=per_step_error. Top: CONFIG_ERROR (75%)",
+          "[planner step 4] confidence=69% → chose 'classify': Confidence in CONFIG_ERROR is above 55% and most tools have been used, so it's time to classify the failure.",
+          "[classify] → CONFIG_ERROR / FIX_WORKFLOW (conf=75%, bayes=CONFIG_ERROR @ 69%)"
+        ],
+        "beliefs": {
+          "CODE_REGRESSION": 0.22404779686333084,
+          "DEPENDENCY_CONFLICT": 0.011202389843166545,
+          "CONFIG_ERROR": 0.7468259895444361,
+          "ENV_FLAKINESS": 0.0007468259895444365,
+          "TEST_FLAKINESS": 0.0007468259895444365,
+          "TOOLING_ARTIFACT": 0.002240477968633309,
+          "CASCADE_FAILURE": 0.002240477968633309,
+          "INFRA_INCOMPATIBILITY": 0.007468259895444365,
+          "NETWORK_TRANSIENT": 0.0007468259895444365,
+          "UNKNOWN": 0.0037341299477221825
+        },
+        "belief_history": [
+          {
+            "signal": "error_text",
+            "top_3": [
+              [
+                "CODE_REGRESSION",
+                0.505050505050505
+              ],
+              [
+                "CONFIG_ERROR",
+                0.2525252525252525
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.05050505050505051
+              ]
+            ],
+            "entropy": 2.158367623506461,
+            "information_gain": 1.1635604713809018,
+            "confidence": 0.35026660365457263
+          },
+          {
+            "signal": "changed_files",
+            "top_3": [
+              [
+                "CONFIG_ERROR",
+                0.7598784194528875
+              ],
+              [
+                "CODE_REGRESSION",
+                0.1519756838905775
+              ],
+              [
+                "INFRA_INCOMPATIBILITY",
+                0.030395136778115513
+              ]
+            ],
+            "entropy": 1.250736425539703,
+            "information_gain": 0.9076311979667577,
+            "confidence": 0.6234908192429998
+          },
+          {
+            "signal": "detection_mode",
+            "top_3": [
+              [
+                "CONFIG_ERROR",
+                0.7468259895444361
+              ],
+              [
+                "CODE_REGRESSION",
+                0.22404779686333084
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.011202389843166545
+              ]
+            ],
+            "entropy": 1.0162367746950227,
+            "information_gain": 0.23449965084468039,
+            "confidence": 0.6940822481199791
+          }
+        ],
+        "tools_used": [
+          "inspect_errors",
+          "inspect_changed_files",
+          "analyze_detection"
+        ],
+        "steps_taken": 4,
+        "error_lines": [
+          "##[error]Process completed with exit code 1.",
+          "Error: requires at least 1 arg(s), only received 0",
+          "main.go:74: error during command execution: requires at least 1 arg(s), only received 0"
+        ],
+        "mentioned_files": [
+          {
+            "path": "main.go",
+            "line": 74,
+            "column": null,
+            "context": "main.go:74: error during command execution: requires at least 1 arg(s), only received 0"
+          }
+        ],
+        "changed_files": [
+          {
+            "filename": ".github/workflows/ci.yml",
+            "status": "modified"
+          },
+          {
+            "filename": ".github/workflows/release.yml",
+            "status": "modified"
+          }
+        ]
+      }
+    },
+    {
+      "label": "lukemathwalker/cargo-chef — Docker build (Rust, actions bump)",
+      "result": {
+        "classification": {
+          "category": "CONFIG_ERROR",
+          "severity": "HIGH",
+          "confidence": 0.83,
+          "action": "FIX_WORKFLOW",
+          "reasoning": "The Bayesian posterior strongly favors CONFIG_ERROR at 82.9%, supported by the commit message bumping docker/login-action from version 2 to 3 and the single changed workflow file. The failure affected all jobs on the protected main branch, indicating a critical configuration issue likely introduced by the workflow change.",
+          "mentioned_files": [],
+          "bayesian_top": "CONFIG_ERROR",
+          "bayesian_confidence": 0.7114718456816513,
+          "steps_taken": 6,
+          "tools_used": [
+            "inspect_errors",
+            "inspect_changed_files",
+            "analyze_detection",
+            "analyze_commit",
+            "analyze_branch"
+          ],
+          "fix_suggestion": {
+            "file": "(unclear)",
+            "change": "Inspect the failing step output and apply the remediation in the specific file named by the logs or dependency manifest once confirmed.",
+            "reason": "The remediation direction is plausible, but the investigation evidence does not support naming an exact repository file safely."
+          }
+        },
+        "investigation_log": [
+          "[init] Starting investigation of lukemathwalker/cargo-chef run #1128",
+          "[planner step 1] confidence=0% → chose 'inspect_errors': Inspecting the actual error text will provide the most direct evidence to identify the failure type.",
+          "[inspect_errors] found 0 error lines. Top: CODE_REGRESSION (10%)",
+          "[planner step 2] confidence=-0% → chose 'inspect_changed_files': No errors found in logs, so checking changed files can reveal if config or dependencies were altered, helping distinguish between CONFIG_ERROR and DEPENDENCY_CONFLICT.",
+          "[inspect_changed_files] 1 files changed (workflow:1). Top: CONFIG_ERROR (50%)",
+          "[planner step 3] confidence=23% → chose 'analyze_detection': Checking how the failure was detected will help gauge the quality of evidence and clarify if the failure is a clear error or an inferred issue.",
+          "[analyze_detection] mode=single_step_inferred. Top: CONFIG_ERROR (75%)",
+          "[planner step 4] confidence=57% → chose 'analyze_commit': Analyzing the commit message will clarify the intent of the workflow file change and help confirm if the failure is due to a config error.",
+          "[analyze_commit] message='Bump docker/login-action from 2 to 3 (#243)'. Top: CONFIG_ERROR (74%)",
+          "[planner step 5] confidence=58% → chose 'analyze_branch': Analyzing the branch type will help gauge the severity and context of the config error before final classification.",
+          "[analyze_branch] branch='main' protected=True. Top: CONFIG_ERROR (83%)",
+          "[planner step 6] confidence=71% → chose 'inspect_errors': Inspecting the actual error text will confirm if the failure is due to a configuration error as suspected from the commit bumping a GitHub Action version.",
+          "[planner] tool 'inspect_errors' not available, forcing classification",
+          "[classify] → CONFIG_ERROR / FIX_WORKFLOW (conf=83%, bayes=CONFIG_ERROR @ 71%)"
+        ],
+        "beliefs": {
+          "CODE_REGRESSION": 0.07252382925818482,
+          "DEPENDENCY_CONFLICT": 0.07459593866556155,
+          "CONFIG_ERROR": 0.8288437629506837,
+          "ENV_FLAKINESS": 0.0020721094073767096,
+          "TEST_FLAKINESS": 0.0020721094073767096,
+          "TOOLING_ARTIFACT": 0.001243265644426026,
+          "CASCADE_FAILURE": 0.0008288437629506839,
+          "INFRA_INCOMPATIBILITY": 0.013261500207210942,
+          "NETWORK_TRANSIENT": 0.0020721094073767096,
+          "UNKNOWN": 0.002486531288852052
+        },
+        "belief_history": [
+          {
+            "signal": "changed_files",
+            "top_3": [
+              [
+                "CONFIG_ERROR",
+                0.5
+              ],
+              [
+                "INFRA_INCOMPATIBILITY",
+                0.10000000000000002
+              ],
+              [
+                "CODE_REGRESSION",
+                0.05000000000000001
+              ]
+            ],
+            "entropy": 2.5609640474436812,
+            "information_gain": 0.7609640474436814,
+            "confidence": 0.22907300390241692
+          },
+          {
+            "signal": "detection_mode",
+            "top_3": [
+              [
+                "CONFIG_ERROR",
+                0.7507507507507507
+              ],
+              [
+                "CODE_REGRESSION",
+                0.10510510510510511
+              ],
+              [
+                "INFRA_INCOMPATIBILITY",
+                0.048048048048048055
+              ]
+            ],
+            "entropy": 1.4348469732721434,
+            "information_gain": 1.1261170741715378,
+            "confidence": 0.5680680218574101
+          },
+          {
+            "signal": "commit_message",
+            "top_3": [
+              [
+                "CONFIG_ERROR",
+                0.7363770250368188
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.1325478645066274
+              ],
+              [
+                "CODE_REGRESSION",
+                0.05154639175257732
+              ]
+            ],
+            "entropy": 1.3792522664223086,
+            "information_gain": 0.05559470684983481,
+            "confidence": 0.5848036962193561
+          },
+          {
+            "signal": "branch_type",
+            "top_3": [
+              [
+                "CONFIG_ERROR",
+                0.8288437629506837
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.07459593866556155
+              ],
+              [
+                "CODE_REGRESSION",
+                0.07252382925818482
+              ]
+            ],
+            "entropy": 0.9584697819961187,
+            "information_gain": 0.42078248442618993,
+            "confidence": 0.7114718456816513
+          }
+        ],
+        "tools_used": [
+          "inspect_errors",
+          "inspect_changed_files",
+          "analyze_detection",
+          "analyze_commit",
+          "analyze_branch"
+        ],
+        "steps_taken": 6,
+        "error_lines": [],
+        "mentioned_files": [],
+        "changed_files": [
+          {
+            "filename": ".github/workflows/docker.yml",
+            "status": "modified"
+          }
+        ]
+      }
+    },
+    {
+      "label": "mlrun/mlrun — scheduled security scan failure",
+      "result": {
+        "classification": {
+          "category": "CONFIG_ERROR",
+          "severity": "HIGH",
+          "confidence": 0.54,
+          "action": "FIX_WORKFLOW",
+          "reasoning": "The Bayesian posterior confidence is highest for CONFIG_ERROR at 53.9%, supported by the commit message indicating a documentation import issue related to monitoring configuration. The error about vulnerabilities suggests a configuration or policy enforcement failure rather than code or dependency issues. Given the moderate confidence and nature of the failure, adjusting the workflow or configuration is recommended.",
+          "mentioned_files": [],
+          "bayesian_top": "CONFIG_ERROR",
+          "bayesian_confidence": 0.35205992373590267,
+          "steps_taken": 5,
+          "tools_used": [
+            "inspect_errors",
+            "inspect_changed_files",
+            "analyze_detection",
+            "analyze_commit"
+          ],
+          "fix_suggestion": {
+            "file": "(unclear)",
+            "change": "Review and update the CI workflow or security policy configuration to adjust the minimum severity level for vulnerability failures or fix the vulnerability scanning configuration that causes the 'Failed minimum severity level' error.",
+            "reason": "The error indicates a failure due to vulnerabilities at 'medium' severity or higher, which is a configuration enforcement issue rather than a code defect. No specific workflow or config file is named in the evidence, so the next step is to inspect the CI workflow or security policy settings that enforce vulnerability severity thresholds."
+          }
+        },
+        "investigation_log": [
+          "[init] Starting investigation of mlrun/mlrun run #16",
+          "[planner step 1] confidence=0% → chose 'inspect_errors': Inspecting the actual error text from the CI logs will provide the most direct evidence to identify the failure type.",
+          "[inspect_errors] found 1 error lines. Top: DEPENDENCY_CONFLICT (40%)",
+          "[planner step 2] confidence=24% → chose 'inspect_changed_files': Checking changed files will confirm if dependency or config files were modified, clarifying between DEPENDENCY_CONFLICT and CONFIG_ERROR.",
+          "[inspect_changed_files] 1 files changed (other:1). Top: UNKNOWN (32%)",
+          "[planner step 3] confidence=25% → chose 'analyze_detection': analyzing how the failure was detected will clarify the evidence quality and help distinguish between UNKNOWN and CONFIG_ERROR",
+          "[analyze_detection] mode=job_level_fallback. Top: UNKNOWN (38%)",
+          "[planner step 4] confidence=28% → chose 'analyze_commit': Analyzing the commit message can clarify the nature of the change and help distinguish between CONFIG_ERROR and DEPENDENCY_CONFLICT, improving confidence.",
+          "[analyze_commit] message='[Docs] Import mlrun missing in monitoring [1.5.x] '. Top: CONFIG_ERROR (54%)",
+          "[planner step 5] confidence=35% → chose 'inspect_errors': Inspecting the actual error text will provide the most direct evidence to confirm if this is a CONFIG_ERROR or another failure type.",
+          "[planner] tool 'inspect_errors' not available, forcing classification",
+          "[classify] → CONFIG_ERROR / FIX_WORKFLOW (conf=54%, bayes=CONFIG_ERROR @ 35%)"
+        ],
+        "beliefs": {
+          "CODE_REGRESSION": 0.16155088852988692,
+          "DEPENDENCY_CONFLICT": 0.10770059235325795,
+          "CONFIG_ERROR": 0.5385029617662896,
+          "ENV_FLAKINESS": 0.010770059235325794,
+          "TEST_FLAKINESS": 0.010770059235325794,
+          "TOOLING_ARTIFACT": 0.053850296176628974,
+          "CASCADE_FAILURE": 0.0026925148088314485,
+          "INFRA_INCOMPATIBILITY": 0.02154011847065159,
+          "NETWORK_TRANSIENT": 0.02154011847065159,
+          "UNKNOWN": 0.07108239095315022
+        },
+        "belief_history": [
+          {
+            "signal": "error_text",
+            "top_3": [
+              [
+                "DEPENDENCY_CONFLICT",
+                0.4
+              ],
+              [
+                "UNKNOWN",
+                0.21999999999999997
+              ],
+              [
+                "CONFIG_ERROR",
+                0.1
+              ]
+            ],
+            "entropy": 2.5213351625089975,
+            "information_gain": 0.8005929323783652,
+            "confidence": 0.24100248696247317
+          },
+          {
+            "signal": "changed_files",
+            "top_3": [
+              [
+                "UNKNOWN",
+                0.3235294117647058
+              ],
+              [
+                "CONFIG_ERROR",
+                0.24509803921568626
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.19607843137254904
+              ]
+            ],
+            "entropy": 2.483765001619437,
+            "information_gain": 0.037570160889560444,
+            "confidence": 0.2523122323321526
+          },
+          {
+            "signal": "detection_mode",
+            "top_3": [
+              [
+                "UNKNOWN",
+                0.3815028901734103
+              ],
+              [
+                "CONFIG_ERROR",
+                0.28901734104046245
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.115606936416185
+              ]
+            ],
+            "entropy": 2.3824661100183393,
+            "information_gain": 0.10129889160109773,
+            "confidence": 0.28280623723159715
+          },
+          {
+            "signal": "commit_message",
+            "top_3": [
+              [
+                "CONFIG_ERROR",
+                0.5385029617662896
+              ],
+              [
+                "CODE_REGRESSION",
+                0.16155088852988692
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.10770059235325795
+              ]
+            ],
+            "entropy": 2.152410343145165,
+            "information_gain": 0.23005576687317442,
+            "confidence": 0.35205992373590267
+          }
+        ],
+        "tools_used": [
+          "inspect_errors",
+          "inspect_changed_files",
+          "analyze_detection",
+          "analyze_commit"
+        ],
+        "steps_taken": 5,
+        "error_lines": [
+          "##[error]Failed minimum severity level. Found vulnerabilities with level 'medium' or higher"
+        ],
+        "mentioned_files": [],
+        "changed_files": [
+          {
+            "filename": "docs/monitoring/initial-setup-configuration.ipynb",
+            "status": "modified"
+          }
+        ]
+      }
+    },
+    {
+      "label": "obsproject/obs-studio — CI dispatch workflow failure",
+      "result": {
+        "classification": {
+          "category": "CONFIG_ERROR",
+          "severity": "HIGH",
+          "confidence": 0.75,
+          "action": "FIX_WORKFLOW",
+          "reasoning": "The Bayesian posterior strongly favors CONFIG_ERROR at 75.1%, supported by the changed file being a workflow configuration (.github/workflows/dispatch.yaml) and the detection mode indicating a configuration issue. The investigation steps progressively increased confidence in CONFIG_ERROR, making it the most likely cause.",
+          "mentioned_files": [],
+          "bayesian_top": "CONFIG_ERROR",
+          "bayesian_confidence": 0.6334810999831035,
+          "steps_taken": 4,
+          "tools_used": [
+            "inspect_errors",
+            "inspect_changed_files",
+            "analyze_detection"
+          ],
+          "fix_suggestion": {
+            "file": ".github/workflows/dispatch.yaml",
+            "change": "Correct the typo in the workflow file name from 'dispatch workflob jobs' to 'dispatch workflow jobs' and verify all job definitions and syntax conform to GitHub Actions schema.",
+            "reason": "The commit message and investigation indicate a configuration error caused by changes in the dispatch.yaml workflow file. The typo in the commit message suggests a similar typo or misconfiguration in the workflow file, which likely caused the job failure with exit code 1."
+          }
+        },
+        "investigation_log": [
+          "[init] Starting investigation of obsproject/obs-studio run #5",
+          "[planner step 1] confidence=0% → chose 'inspect_errors': Inspecting the actual error text will provide the most direct evidence to distinguish between code regression, dependency conflict, or configuration error.",
+          "[inspect_errors] found 1 error lines. Top: CODE_REGRESSION (30%)",
+          "[planner step 2] confidence=12% → chose 'inspect_changed_files': Inspecting changed files will clarify if configuration or dependency files were modified, helping distinguish between CONFIG_ERROR and DEPENDENCY_CONFLICT.",
+          "[inspect_changed_files] 1 files changed (workflow:1). Top: CONFIG_ERROR (70%)",
+          "[planner step 3] confidence=49% → chose 'analyze_detection': analyzing how the failure was detected will clarify if the error is a clear configuration issue or an inferred problem, improving confidence before classification",
+          "[analyze_detection] mode=per_step_error. Top: CONFIG_ERROR (75%)",
+          "[planner step 4] confidence=63% → chose 'classify': Confidence is above 55% and most tools have been used, indicating a likely CONFIG_ERROR.",
+          "[classify] → CONFIG_ERROR / FIX_WORKFLOW (conf=75%, bayes=CONFIG_ERROR @ 63%)"
+        ],
+        "beliefs": {
+          "CODE_REGRESSION": 0.1690140845070422,
+          "DEPENDENCY_CONFLICT": 0.04225352112676055,
+          "CONFIG_ERROR": 0.7511737089201878,
+          "ENV_FLAKINESS": 0.004694835680751174,
+          "TEST_FLAKINESS": 0.004694835680751174,
+          "TOOLING_ARTIFACT": 0.004694835680751174,
+          "CASCADE_FAILURE": 0.009389671361502348,
+          "INFRA_INCOMPATIBILITY": 0.004694835680751174,
+          "NETWORK_TRANSIENT": 0.004694835680751174,
+          "UNKNOWN": 0.004694835680751174
+        },
+        "belief_history": [
+          {
+            "signal": "error_text",
+            "top_3": [
+              [
+                "CODE_REGRESSION",
+                0.3
+              ],
+              [
+                "CONFIG_ERROR",
+                0.20000000000000004
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.15
+              ]
+            ],
+            "entropy": 2.908694969562842,
+            "information_gain": 0.4132331253245205,
+            "confidence": 0.12439556592465373
+          },
+          {
+            "signal": "changed_files",
+            "top_3": [
+              [
+                "CONFIG_ERROR",
+                0.7017543859649124
+              ],
+              [
+                "CODE_REGRESSION",
+                0.10526315789473682
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.05263157894736841
+              ]
+            ],
+            "entropy": 1.7075955176386908,
+            "information_gain": 1.2010994519241514,
+            "confidence": 0.48596252872939116
+          },
+          {
+            "signal": "detection_mode",
+            "top_3": [
+              [
+                "CONFIG_ERROR",
+                0.7511737089201878
+              ],
+              [
+                "CODE_REGRESSION",
+                0.1690140845070422
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.04225352112676055
+              ]
+            ],
+            "entropy": 1.2175494312733404,
+            "information_gain": 0.4900460863653504,
+            "confidence": 0.6334810999831035
+          }
+        ],
+        "tools_used": [
+          "inspect_errors",
+          "inspect_changed_files",
+          "analyze_detection"
+        ],
+        "steps_taken": 4,
+        "error_lines": [
+          "##[error]Process completed with exit code 1."
+        ],
+        "mentioned_files": [],
+        "changed_files": [
+          {
+            "filename": ".github/workflows/dispatch.yaml",
+            "status": "modified"
+          }
+        ]
+      }
+    },
+    {
+      "label": "project-zot/zot — Go CI/CD (Trivy CVE scan integration)",
+      "result": {
+        "classification": {
+          "category": "CODE_REGRESSION",
+          "severity": "CRITICAL",
+          "confidence": 0.97,
+          "action": "BLOCK_DEPLOY",
+          "reasoning": "The Bayesian posterior strongly favors CODE_REGRESSION at 97.4%, supported by commit analysis indicating a fix related to CVE and code changes in source and dependency files. The failure affects all 6 jobs and is linked to a code change, making this a critical regression that should block deployment.",
+          "mentioned_files": [
+            {
+              "path": "Makefile",
+              "line": null,
+              "column": null,
+              "context": "make: *** [Makefile:231: check] Error 1"
+            }
+          ],
+          "bayesian_top": "CODE_REGRESSION",
+          "bayesian_confidence": 0.9320110248971017,
+          "steps_taken": 4,
+          "tools_used": [
+            "inspect_errors",
+            "inspect_changed_files",
+            "analyze_commit"
+          ],
+          "fix_suggestion": {
+            "file": "(unclear)",
+            "change": "Inspect the failing step output and apply the remediation in the specific file named by the logs or dependency manifest once confirmed.",
+            "reason": "The remediation direction is plausible, but the investigation evidence does not support naming an exact repository file safely."
+          }
+        },
+        "investigation_log": [
+          "[init] Starting investigation of project-zot/zot run #8403",
+          "[planner step 1] confidence=0% → chose 'inspect_errors': Inspecting the actual error text from the CI logs will provide the most direct insight into the failure type.",
+          "[inspect_errors] found 2 error lines. Top: CODE_REGRESSION (45%)",
+          "[planner step 2] confidence=22% → chose 'inspect_changed_files': Checking changed files will help confirm if the failure is due to configuration or dependency changes, clarifying the cause beyond the initial error inspection.",
+          "[inspect_changed_files] 5 files changed (dependency:2, source:2, test:1). Top: CODE_REGRESSION (75%)",
+          "[planner step 3] confidence=59% → chose 'analyze_commit': Analyzing the commit message will clarify the intent of the changes and help confirm if the failure is due to a code regression or another cause.",
+          "[analyze_commit] message='fix(cve): trivy is leaking FDs for the Java DB fil'. Top: CODE_REGRESSION (97%)",
+          "[planner step 4] confidence=93% → chose 'classify': Confidence is above 55% and most relevant tools have been used, strongly indicating a code regression.",
+          "[classify] → CODE_REGRESSION / BLOCK_DEPLOY (conf=97%, bayes=CODE_REGRESSION @ 93%)"
+        ],
+        "beliefs": {
+          "CODE_REGRESSION": 0.9740962551410636,
+          "DEPENDENCY_CONFLICT": 0.012884871099749524,
+          "CONFIG_ERROR": 0.007730922659849711,
+          "ENV_FLAKINESS": 0.0012884871099749522,
+          "TEST_FLAKINESS": 0.0012884871099749522,
+          "TOOLING_ARTIFACT": 0.0006184738127879769,
+          "CASCADE_FAILURE": 0.000515394843989981,
+          "INFRA_INCOMPATIBILITY": 0.000618473812787977,
+          "NETWORK_TRANSIENT": 0.0001855421438363931,
+          "UNKNOWN": 0.0007730922659849713
+        },
+        "belief_history": [
+          {
+            "signal": "error_text",
+            "top_3": [
+              [
+                "CODE_REGRESSION",
+                0.45
+              ],
+              [
+                "CONFIG_ERROR",
+                0.15
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.10000000000000002
+              ]
+            ],
+            "entropy": 2.606264998852882,
+            "information_gain": 0.7156630960344805,
+            "confidence": 0.21543605869613092
+          },
+          {
+            "signal": "changed_files",
+            "top_3": [
+              [
+                "CODE_REGRESSION",
+                0.7464454976303316
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.1184834123222749
+              ],
+              [
+                "CONFIG_ERROR",
+                0.07109004739336491
+              ]
+            ],
+            "entropy": 1.3752919594049784,
+            "information_gain": 1.2309730394479037,
+            "confidence": 0.5859958674236112
+          },
+          {
+            "signal": "commit_message",
+            "top_3": [
+              [
+                "CODE_REGRESSION",
+                0.9740962551410636
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.012884871099749524
+              ],
+              [
+                "CONFIG_ERROR",
+                0.007730922659849711
+              ]
+            ],
+            "entropy": 0.22585448653691514,
+            "information_gain": 1.1494374728680632,
+            "confidence": 0.9320110248971017
+          }
+        ],
+        "tools_used": [
+          "inspect_errors",
+          "inspect_changed_files",
+          "analyze_commit"
+        ],
+        "steps_taken": 4,
+        "error_lines": [
+          "##[error]Process completed with exit code 2.",
+          "make: *** [Makefile:231: check] Error 1"
+        ],
+        "mentioned_files": [
+          {
+            "path": "Makefile",
+            "line": null,
+            "column": null,
+            "context": "make: *** [Makefile:231: check] Error 1"
+          }
+        ],
+        "changed_files": [
+          {
+            "filename": "go.mod",
+            "status": "modified"
+          },
+          {
+            "filename": "go.sum",
+            "status": "modified"
+          },
+          {
+            "filename": "pkg/cli/server/extensions_test.go",
+            "status": "modified"
+          },
+          {
+            "filename": "pkg/cli/server/root.go",
+            "status": "modified"
+          },
+          {
+            "filename": "pkg/extensions/search/cve/trivy/scanner.go",
+            "status": "modified"
+          }
+        ]
+      }
+    },
+    {
+      "label": "crate-ci/cargo-release — Rust scheduled rust-next nightly check",
+      "result": {
+        "classification": {
+          "category": "DEPENDENCY_CONFLICT",
+          "severity": "HIGH",
+          "confidence": 0.81,
+          "action": "PIN_VERSION",
+          "reasoning": "The Bayesian posterior strongly favors DEPENDENCY_CONFLICT at 80.5%, supported by changes to Cargo.lock and Cargo.toml indicating dependency updates. The commit message also aligns with dependency updates, and the error relates to compilation failure of a dependency crate, confirming a dependency conflict cause.",
+          "mentioned_files": [],
+          "bayesian_top": "DEPENDENCY_CONFLICT",
+          "bayesian_confidence": 0.7402817034215086,
+          "steps_taken": 5,
+          "tools_used": [
+            "inspect_errors",
+            "inspect_changed_files",
+            "analyze_detection",
+            "analyze_commit"
+          ],
+          "fix_suggestion": {
+            "file": "Cargo.toml",
+            "change": "Pin the version of the `proc-macro2` dependency to a known working version by specifying an exact version number or a compatible version range that does not introduce conflicts.",
+            "reason": "The failure is caused by a dependency conflict involving `proc-macro2`, as indicated by the compilation error and changes to Cargo.toml and Cargo.lock. Pinning the version in Cargo.toml ensures consistent dependency resolution and prevents incompatible versions from causing build failures."
+          }
+        },
+        "investigation_log": [
+          "[init] Starting investigation of crate-ci/cargo-release run #27",
+          "[planner step 1] confidence=0% → chose 'inspect_errors': Inspecting the actual error text will provide the most direct insight into the nature of the failure.",
+          "[inspect_errors] found 3 error lines. Top: CODE_REGRESSION (45%)",
+          "[planner step 2] confidence=30% → chose 'inspect_changed_files': Checking changed files will help confirm if the failure is due to configuration, dependency, or code changes, which is critical given the current top beliefs.",
+          "[inspect_changed_files] 2 files changed (dependency:2). Top: DEPENDENCY_CONFLICT (66%)",
+          "[planner step 3] confidence=56% → chose 'analyze_detection': Checking how the failure was detected will help gauge the quality of evidence and improve confidence before classification.",
+          "[analyze_detection] mode=per_step_error. Top: DEPENDENCY_CONFLICT (54%)",
+          "[planner step 4] confidence=59% → chose 'analyze_commit': Analyzing the commit message can clarify if the changes relate to dependencies or code, helping distinguish between DEPENDENCY_CONFLICT and CODE_REGRESSION causes.",
+          "[analyze_commit] message='Merge pull request #699 from epage/update'. Top: DEPENDENCY_CONFLICT (80%)",
+          "[planner step 5] confidence=74% → chose 'classify': Confidence is above 55% and most relevant tools have been used, so it's appropriate to classify the failure now.",
+          "[classify] → DEPENDENCY_CONFLICT / PIN_VERSION (conf=81%, bayes=DEPENDENCY_CONFLICT @ 74%)"
+        ],
+        "beliefs": {
+          "CODE_REGRESSION": 0.16553753716930814,
+          "DEPENDENCY_CONFLICT": 0.8046963612396921,
+          "CONFIG_ERROR": 0.024524079580638243,
+          "ENV_FLAKINESS": 0.0001226203979031912,
+          "TEST_FLAKINESS": 6.13101989515956e-05,
+          "TOOLING_ARTIFACT": 6.13101989515956e-05,
+          "CASCADE_FAILURE": 0.0007663774868949451,
+          "INFRA_INCOMPATIBILITY": 0.0015327549737898902,
+          "NETWORK_TRANSIENT": 0.002452407958063824,
+          "UNKNOWN": 0.0002452407958063824
+        },
+        "belief_history": [
+          {
+            "signal": "error_text",
+            "top_3": [
+              [
+                "CODE_REGRESSION",
+                0.45
+              ],
+              [
+                "DEPENDENCY_CONFLICT",
+                0.25
+              ],
+              [
+                "CONFIG_ERROR",
+                0.10000000000000002
+              ]
+            ],
+            "entropy": 2.327172630005218,
+            "information_gain": 0.9947554648821448,
+            "confidence": 0.2994512332801935
+          },
+          {
+            "signal": "changed_files",
+            "top_3": [
+              [
+                "DEPENDENCY_CONFLICT",
+                0.6558237145855194
+              ],
+              [
+                "CODE_REGRESSION",
+                0.236096537250787
+              ],
+              [
+                "CONFIG_ERROR",
+                0.05246589716684156
+              ]
+            ],
+            "entropy": 1.467529905092428,
+            "information_gain": 0.8596427249127898,
+            "confidence": 0.5582294790332636
+          },
+          {
+            "signal": "detection_mode",
+            "top_3": [
+              [
+                "DEPENDENCY_CONFLICT",
+                0.539102932719954
+              ],
+              [
+                "CODE_REGRESSION",
+                0.38815411155836693
+              ],
+              [
+                "CONFIG_ERROR",
+                0.057504312823461766
+              ]
+            ],
+            "entropy": 1.3727611393246992,
+            "information_gain": 0.09476876576772875,
+            "confidence": 0.5867577201814038
+          },
+          {
+            "signal": "commit_message",
+            "top_3": [
+              [
+                "DEPENDENCY_CONFLICT",
+                0.8046963612396921
+              ],
+              [
+                "CODE_REGRESSION",
+                0.16553753716930814
+              ],
+              [
+                "CONFIG_ERROR",
+                0.024524079580638243
+              ]
+            ],
+            "entropy": 0.8627655061603792,
+            "information_gain": 0.5099956331643201,
+            "confidence": 0.7402817034215086
+          }
+        ],
+        "tools_used": [
+          "inspect_errors",
+          "inspect_changed_files",
+          "analyze_detection",
+          "analyze_commit"
+        ],
+        "steps_taken": 5,
+        "error_lines": [
+          "##[error]Process completed with exit code 101.",
+          "error: could not compile `proc-macro2` (lib) due to previous error",
+          "warning: build failed, waiting for other jobs to finish..."
+        ],
+        "mentioned_files": [],
+        "changed_files": [
+          {
+            "filename": "Cargo.lock",
+            "status": "modified"
+          },
+          {
+            "filename": "Cargo.toml",
+            "status": "modified"
+          }
+        ]
+      }
+    }
+  ]
+}

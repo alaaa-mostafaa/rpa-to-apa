@@ -1,0 +1,26 @@
+{
+  "index": 50,
+  "label": "success",
+  "run_id": "sony/model_optimization_.github/workflows/run_keras_sony_custom_layers.yml_63_1",
+  "repo": "sony/model_optimization",
+  "workflow_path": ".github/workflows/run_keras_sony_custom_layers.yml",
+  "run_number": "63",
+  "attempt": "1",
+  "scan_line": 550178,
+  "case_dir": "/home/guc_alaa/comparison_results/balanced_50_full_logs_20260516/050_success_sony_model_optimization_run_keras_sony_custom_layers.yml",
+  "full_log_path": "/home/guc_alaa/comparison_results/balanced_50_full_logs_20260516/050_success_sony_model_optimization_run_keras_sony_custom_layers.yml/full_log.txt",
+  "tarball": "logs/sony/model_optimization/Run_Keras_Sony_Custom_Layers_Tests_776f/63-1.tar.gz",
+  "n_job_logs": 9,
+  "job_log_files": [
+    "run-tensorflow-tests/10_Post Run actionscheckout@v2.txt",
+    "run-tensorflow-tests/4_Install dependencies.txt",
+    "run-tensorflow-tests/2_Run actionscheckout@v2.txt",
+    "run-tensorflow-tests/11_Complete job.txt",
+    "-2147483648_run-tensorflow-tests.txt",
+    "run-tensorflow-tests/5_Run unittests.txt",
+    "run-tensorflow-tests/1_Set up job.txt",
+    "0_run-tensorflow-tests.txt",
+    "run-tensorflow-tests/3_Install Python 3.txt"
+  ],
+  "full_log_chars": 184022
+}

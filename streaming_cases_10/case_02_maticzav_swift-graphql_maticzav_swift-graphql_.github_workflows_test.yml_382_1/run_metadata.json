@@ -1,0 +1,15 @@
+{
+  "run_id": "maticzav/swift-graphql_.github/workflows/test.yml_382_1",
+  "repository_name": "maticzav/swift-graphql",
+  "workflow_path": ".github/workflows/test.yml",
+  "run_number": 382,
+  "attempt": 1,
+  "event": "push",
+  "conclusion": "failure",
+  "branch": "main",
+  "commit_sha": "8e8eb8943fcf1059800a6f5d73165668207ffaa8",
+  "commit_message": "Concurrency Stage 1: Introduces initial wrapper-style async/await support (#184)\n\n* Introduces a wrapper-style async/await approach originally implemented by @elfenlaid\r\n\r\n* Adds the original implementation + improved header docs with usage caveats\r\n\r\n* Updates the API.swift based on recent changes that resolve Swift 6 errors (in future)\r\n\r\n* Update Sources/SwiftGraphQLClient/Client/Core.swift",
+  "logs_archive": {
+    "path": "/data/logs/maticzav/swift-graphql/Test_Packages_7d2c/382-1.tar.gz"
+  }
+}

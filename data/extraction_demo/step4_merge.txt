@@ -1,0 +1,5 @@
+STEP 4 - MERGE overlapping windows
+======================================================================
+before: 2 windows
+after merge: 2 span(s) [(634, 789), (1379, 1534)]
+total lines: 312

@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "diagnost"
+version = "0.1.0"
+description = "A Bayesian failure analysis agent for CI/CD and Kubernetes."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "Alaa Abdelnase"}
+]
+dependencies = [
+    "langgraph>=0.0.10",
+    "openai>=1.0.0",
+    "fastapi>=0.100.0",
+    "uvicorn>=0.23.0",
+    "chromadb>=0.4.10",
+    "kubernetes>=28.1.0",
+    "python-dotenv>=1.0.0"
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "mypy", "ruff"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["faf*"]

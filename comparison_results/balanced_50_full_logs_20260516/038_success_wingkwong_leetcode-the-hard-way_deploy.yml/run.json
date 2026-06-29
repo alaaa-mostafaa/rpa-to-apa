@@ -1,0 +1,372 @@
+{
+  "_id": "wingkwong/leetcode-the-hard-way_.github/workflows/deploy.yml_1033_1",
+  "repository_name": "wingkwong/leetcode-the-hard-way",
+  "workflow_path": ".github/workflows/deploy.yml",
+  "run_number": 1033,
+  "run_attempt": 1,
+  "time_to_import": 450892.216978,
+  "metadata": {
+    "id": 6759492901,
+    "name": "Deploy to GitHub Pages",
+    "node_id": "WFR_kwLOGtja5c8AAAABkuWtJQ",
+    "head_branch": "main",
+    "head_sha": "d82db05cd0f4ae6c8855d4afa63caedbccb903f7",
+    "path": ".github/workflows/deploy.yml",
+    "display_title": "solutions: 0443 - String Compression (Medium) (#678)",
+    "run_number": 1033,
+    "event": "push",
+    "status": "completed",
+    "conclusion": "success",
+    "workflow_id": 26127146,
+    "check_suite_id": 17914378953,
+    "check_suite_node_id": "CS_kwDOGtja5c8AAAAEK8e6yQ",
+    "url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/actions/runs/6759492901",
+    "html_url": "https://github.com/wingkwong/leetcode-the-hard-way/actions/runs/6759492901",
+    "pull_requests": [],
+    "created_at": "2023-11-05T05:39:18Z",
+    "updated_at": "2023-11-05T05:43:12Z",
+    "actor": {
+      "login": "wingkwong",
+      "id": 35857179,
+      "node_id": "MDQ6VXNlcjM1ODU3MTc5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/35857179?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/wingkwong",
+      "html_url": "https://github.com/wingkwong",
+      "followers_url": "https://api.github.com/users/wingkwong/followers",
+      "following_url": "https://api.github.com/users/wingkwong/following{/other_user}",
+      "gists_url": "https://api.github.com/users/wingkwong/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/wingkwong/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/wingkwong/subscriptions",
+      "organizations_url": "https://api.github.com/users/wingkwong/orgs",
+      "repos_url": "https://api.github.com/users/wingkwong/repos",
+      "events_url": "https://api.github.com/users/wingkwong/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/wingkwong/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "run_attempt": 1,
+    "referenced_workflows": [],
+    "run_started_at": "2023-11-05T05:39:18Z",
+    "triggering_actor": {
+      "login": "wingkwong",
+      "id": 35857179,
+      "node_id": "MDQ6VXNlcjM1ODU3MTc5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/35857179?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/wingkwong",
+      "html_url": "https://github.com/wingkwong",
+      "followers_url": "https://api.github.com/users/wingkwong/followers",
+      "following_url": "https://api.github.com/users/wingkwong/following{/other_user}",
+      "gists_url": "https://api.github.com/users/wingkwong/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/wingkwong/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/wingkwong/subscriptions",
+      "organizations_url": "https://api.github.com/users/wingkwong/orgs",
+      "repos_url": "https://api.github.com/users/wingkwong/repos",
+      "events_url": "https://api.github.com/users/wingkwong/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/wingkwong/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "jobs_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/actions/runs/6759492901/jobs",
+    "logs_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/actions/runs/6759492901/logs",
+    "check_suite_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/check-suites/17914378953",
+    "artifacts_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/actions/runs/6759492901/artifacts",
+    "cancel_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/actions/runs/6759492901/cancel",
+    "rerun_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/actions/runs/6759492901/rerun",
+    "previous_attempt_url": null,
+    "workflow_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/actions/workflows/26127146",
+    "head_commit": {
+      "id": "d82db05cd0f4ae6c8855d4afa63caedbccb903f7",
+      "tree_id": "92a796db65de34b82b65f6373ac34f01a76980e6",
+      "message": "solutions: 0443 - String Compression (Medium) (#678)",
+      "timestamp": "2023-11-05T05:39:16Z",
+      "author": {
+        "name": "Vignesh Shiv",
+        "email": "vichuviky@gmail.com"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com"
+      }
+    },
+    "repository": {
+      "id": 450419429,
+      "node_id": "R_kgDOGtja5Q",
+      "name": "leetcode-the-hard-way",
+      "full_name": "wingkwong/leetcode-the-hard-way",
+      "private": false,
+      "owner": {
+        "login": "wingkwong",
+        "id": 35857179,
+        "node_id": "MDQ6VXNlcjM1ODU3MTc5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/35857179?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/wingkwong",
+        "html_url": "https://github.com/wingkwong",
+        "followers_url": "https://api.github.com/users/wingkwong/followers",
+        "following_url": "https://api.github.com/users/wingkwong/following{/other_user}",
+        "gists_url": "https://api.github.com/users/wingkwong/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/wingkwong/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/wingkwong/subscriptions",
+        "organizations_url": "https://api.github.com/users/wingkwong/orgs",
+        "repos_url": "https://api.github.com/users/wingkwong/repos",
+        "events_url": "https://api.github.com/users/wingkwong/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/wingkwong/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/wingkwong/leetcode-the-hard-way",
+      "description": "LeetCode The Hard Way - From Absolute Beginner to Quitter. Join Discord: https://discord.com/invite/Nqm4jJcyBf",
+      "fork": false,
+      "url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way",
+      "forks_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/forks",
+      "keys_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/teams",
+      "hooks_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/hooks",
+      "issue_events_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/events",
+      "assignees_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/tags",
+      "blobs_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/languages",
+      "stargazers_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/stargazers",
+      "contributors_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/contributors",
+      "subscribers_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/subscribers",
+      "subscription_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/subscription",
+      "commits_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/merges",
+      "archive_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/downloads",
+      "issues_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/labels{/name}",
+      "releases_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/deployments"
+    },
+    "head_repository": {
+      "id": 450419429,
+      "node_id": "R_kgDOGtja5Q",
+      "name": "leetcode-the-hard-way",
+      "full_name": "wingkwong/leetcode-the-hard-way",
+      "private": false,
+      "owner": {
+        "login": "wingkwong",
+        "id": 35857179,
+        "node_id": "MDQ6VXNlcjM1ODU3MTc5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/35857179?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/wingkwong",
+        "html_url": "https://github.com/wingkwong",
+        "followers_url": "https://api.github.com/users/wingkwong/followers",
+        "following_url": "https://api.github.com/users/wingkwong/following{/other_user}",
+        "gists_url": "https://api.github.com/users/wingkwong/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/wingkwong/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/wingkwong/subscriptions",
+        "organizations_url": "https://api.github.com/users/wingkwong/orgs",
+        "repos_url": "https://api.github.com/users/wingkwong/repos",
+        "events_url": "https://api.github.com/users/wingkwong/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/wingkwong/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/wingkwong/leetcode-the-hard-way",
+      "description": "LeetCode The Hard Way - From Absolute Beginner to Quitter. Join Discord: https://discord.com/invite/Nqm4jJcyBf",
+      "fork": false,
+      "url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way",
+      "forks_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/forks",
+      "keys_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/teams",
+      "hooks_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/hooks",
+      "issue_events_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/events",
+      "assignees_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/tags",
+      "blobs_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/languages",
+      "stargazers_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/stargazers",
+      "contributors_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/contributors",
+      "subscribers_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/subscribers",
+      "subscription_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/subscription",
+      "commits_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/merges",
+      "archive_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/downloads",
+      "issues_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/labels{/name}",
+      "releases_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/wingkwong/leetcode-the-hard-way/deployments"
+    }
+  },
+  "logs_archive": {
+    "path": "/data/logs/wingkwong/leetcode-the-hard-way/Deploy_to_GitHub_Pages_428f/1033-1.tar.gz"
+  },
+  "log_insights": [
+    {
+      "file": "0_Deploy to GitHub Pages.txt",
+      "total_lines": 2195,
+      "log_size": 167387,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231030.2.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "wingkwong/leetcode-the-hard-way",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-11-05 05:39:26.970000",
+          "duration_sec": 1.303868
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "setup-node",
+          "version": "v4",
+          "sha": "8f152de45cc393bb48ce5d89d36b731f54556e65",
+          "with": {
+            "node-version": "16.x",
+            "cache": "npm",
+            "always-auth": "false",
+            "check-latest": "false",
+            "token": "***"
+          },
+          "env": {},
+          "start_date": "2023-11-05 05:39:28.274000",
+          "duration_sec": 4.144542
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "npm ci",
+          "commands": [
+            {
+              "annotations": [
+                "SC-NPM-CI"
+              ],
+              "command": "npm",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "ci"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-05 05:39:32.419000",
+          "duration_sec": 16.522113
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "npm run build",
+          "commands": [
+            {
+              "annotations": [
+                "SC-NPM-RUN-BUILD"
+              ],
+              "command": "npm",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "run"
+                },
+                {
+                  "content": "build"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-05 05:39:48.941000",
+          "duration_sec": 190.696247
+        },
+        {
+          "type": "action",
+          "repository": "peaceiris",
+          "action": "actions-gh-pages",
+          "version": "v3",
+          "sha": "373f7f263a76c20808c831209c920827a82a2847",
+          "with": {
+            "github_token": "***",
+            "publish_dir": "./build",
+            "user_name": "wingkwong",
+            "user_email": "wingkwong.code@gmail.com",
+            "publish_branch": "gh-pages",
+            "allow_empty_commit": "false",
+            "keep_files": "false",
+            "force_orphan": "false",
+            "enable_jekyll": "false",
+            "disable_nojekyll": "false",
+            "exclude_assets": ".github"
+          },
+          "env": {},
+          "start_date": "2023-11-05 05:42:59.637000",
+          "duration_sec": 7.625221
+        }
+      ]
+    }
+  ],
+  "total_logs_size": 167837
+}

@@ -1,0 +1,28 @@
+{
+  "index": 5,
+  "label": "failure",
+  "run_id": "niivue/niivue_.github/workflows/playwright.yml_11_1",
+  "repo": "niivue/niivue",
+  "workflow_path": ".github/workflows/playwright.yml",
+  "run_number": "11",
+  "attempt": "1",
+  "scan_line": 434033,
+  "case_dir": "/home/guc_alaa/comparison_results/balanced_50_full_logs_20260516/005_failure_niivue_niivue_playwright.yml",
+  "full_log_path": "/home/guc_alaa/comparison_results/balanced_50_full_logs_20260516/005_failure_niivue_niivue_playwright.yml/full_log.txt",
+  "tarball": "logs/niivue/niivue/Playwright_Tests_6d0f/11-1.tar.gz",
+  "n_job_logs": 11,
+  "job_log_files": [
+    "Playwright Tests/5_Install dependencies.txt",
+    "Playwright Tests/6_Run your tests.txt",
+    "Playwright Tests/4_Run actionssetup-node@v3.txt",
+    "Playwright Tests/2_Initialize containers.txt",
+    "0_Playwright Tests.txt",
+    "Playwright Tests/12_Stop containers.txt",
+    "-2147483648_Playwright Tests.txt",
+    "Playwright Tests/1_Set up job.txt",
+    "Playwright Tests/3_Run actionscheckout@v3.txt",
+    "Playwright Tests/13_Complete job.txt",
+    "Playwright Tests/11_Post Run actionscheckout@v3.txt"
+  ],
+  "full_log_chars": 150745
+}

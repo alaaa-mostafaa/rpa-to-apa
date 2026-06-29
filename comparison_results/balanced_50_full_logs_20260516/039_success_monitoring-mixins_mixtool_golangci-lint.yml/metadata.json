@@ -1,0 +1,27 @@
+{
+  "index": 39,
+  "label": "success",
+  "run_id": "monitoring-mixins/mixtool_.github/workflows/golangci-lint.yml_247_1",
+  "repo": "monitoring-mixins/mixtool",
+  "workflow_path": ".github/workflows/golangci-lint.yml",
+  "run_number": "247",
+  "attempt": "1",
+  "scan_line": 359286,
+  "case_dir": "/home/guc_alaa/comparison_results/balanced_50_full_logs_20260516/039_success_monitoring-mixins_mixtool_golangci-lint.yml",
+  "full_log_path": "/home/guc_alaa/comparison_results/balanced_50_full_logs_20260516/039_success_monitoring-mixins_mixtool_golangci-lint.yml/full_log.txt",
+  "tarball": "logs/monitoring-mixins/mixtool/golangci_lint_ab15/247-1.tar.gz",
+  "n_job_logs": 10,
+  "job_log_files": [
+    "lint/11_Complete job.txt",
+    "lint/8_Post Lint.txt",
+    "lint/2_Checkout repository.txt",
+    "0_lint.txt",
+    "lint/10_Post Checkout repository.txt",
+    "lint/9_Post install Go.txt",
+    "lint/3_install Go.txt",
+    "-2147483648_lint.txt",
+    "lint/1_Set up job.txt",
+    "lint/5_Lint.txt"
+  ],
+  "full_log_chars": 35855
+}

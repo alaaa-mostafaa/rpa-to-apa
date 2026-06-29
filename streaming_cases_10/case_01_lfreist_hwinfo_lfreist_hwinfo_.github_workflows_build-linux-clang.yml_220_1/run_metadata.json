@@ -1,0 +1,15 @@
+{
+  "run_id": "lfreist/hwinfo_.github/workflows/build-linux-clang.yml_220_1",
+  "repository_name": "lfreist/hwinfo",
+  "workflow_path": ".github/workflows/build-linux-clang.yml",
+  "run_number": 220,
+  "attempt": 1,
+  "event": "push",
+  "conclusion": "failure",
+  "branch": "main",
+  "commit_sha": "ed985a13c460b52d48018d2b7b1963c8dd1f8194",
+  "commit_message": "code style",
+  "logs_archive": {
+    "path": "/data/logs/lfreist/hwinfo/Linux_clang__f55c/220-1.tar.gz"
+  }
+}

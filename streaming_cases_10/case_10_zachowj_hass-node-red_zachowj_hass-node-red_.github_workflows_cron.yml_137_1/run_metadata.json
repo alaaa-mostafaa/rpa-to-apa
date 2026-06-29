@@ -1,0 +1,15 @@
+{
+  "run_id": "zachowj/hass-node-red_.github/workflows/cron.yml_137_1",
+  "repository_name": "zachowj/hass-node-red",
+  "workflow_path": ".github/workflows/cron.yml",
+  "run_number": 137,
+  "attempt": 1,
+  "event": "schedule",
+  "conclusion": "failure",
+  "branch": "main",
+  "commit_sha": "8daefb460e8b27a1ddc69352a017bb77fd7586e6",
+  "commit_message": "build(deps): update pip requirement from <23.3,>=21.0 to >=21.0,<23.4 (#221)\n\nUpdates the requirements on [pip](https://github.com/pypa/pip) to permit the latest version.\r\n- [Changelog](https://github.com/pypa/pip/blob/main/NEWS.rst)\r\n- [Commits](https://github.com/pypa/pip/compare/21.0...23.3)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: pip\r\n  dependency-type: direct:production\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+  "logs_archive": {
+    "path": "/data/logs/zachowj/hass-node-red/Cron_actions_a9c7/137-1.tar.gz"
+  }
+}

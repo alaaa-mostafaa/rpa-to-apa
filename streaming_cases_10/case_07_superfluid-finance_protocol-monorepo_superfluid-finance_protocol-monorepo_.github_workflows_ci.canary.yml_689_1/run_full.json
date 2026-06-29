@@ -1,0 +1,5424 @@
+{
+  "_id": "superfluid-finance/protocol-monorepo_.github/workflows/ci.canary.yml_689_1",
+  "repository_name": "superfluid-finance/protocol-monorepo",
+  "workflow_path": ".github/workflows/ci.canary.yml",
+  "run_number": 689,
+  "run_attempt": 1,
+  "time_to_import": 53056.353664,
+  "metadata": {
+    "id": 6696049924,
+    "name": "CI | Canary (Dev)",
+    "node_id": "WFR_kwLODqnIqc8AAAABjx2dBA",
+    "head_branch": "dev",
+    "head_sha": "ddc8213dc066decb57c6ef6445bede9f19d5f6a8",
+    "path": ".github/workflows/ci.canary.yml",
+    "display_title": "Bump browserify-sign in /packages/sdk-core/previous-versions-testing …",
+    "run_number": 689,
+    "event": "push",
+    "status": "completed",
+    "conclusion": "failure",
+    "workflow_id": 12182970,
+    "check_suite_id": 17754924055,
+    "check_suite_node_id": "CS_kwDODqnIqc8AAAAEIkakFw",
+    "url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/actions/runs/6696049924",
+    "html_url": "https://github.com/superfluid-finance/protocol-monorepo/actions/runs/6696049924",
+    "pull_requests": [
+      {
+        "url": "https://api.github.com/repos/DIGIIX-Ltd/protocol-monorepo/pulls/11",
+        "id": 1103384086,
+        "number": 11,
+        "head": {
+          "ref": "dev",
+          "sha": "99f4a68754cb4c0be6cf6aacf91e970eba5f540b",
+          "repo": {
+            "id": 246007977,
+            "url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo",
+            "name": "protocol-monorepo"
+          }
+        },
+        "base": {
+          "ref": "dev",
+          "sha": "8e013be5e7d05cc7fec43c6a82a3a73f07049e05",
+          "repo": {
+            "id": 492342300,
+            "url": "https://api.github.com/repos/DIGIIX-Ltd/protocol-monorepo",
+            "name": "protocol-monorepo"
+          }
+        }
+      }
+    ],
+    "created_at": "2023-10-30T16:49:11Z",
+    "updated_at": "2023-10-30T17:57:02Z",
+    "actor": {
+      "login": "github-merge-queue[bot]",
+      "id": 118344674,
+      "node_id": "BOT_kgDOBw3L4g",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-merge-queue%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-merge-queue",
+      "followers_url": "https://api.github.com/users/github-merge-queue%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-merge-queue%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-merge-queue%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-merge-queue%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-merge-queue%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-merge-queue%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-merge-queue%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-merge-queue%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-merge-queue%5Bbot%5D/received_events",
+      "type": "Bot",
+      "site_admin": false
+    },
+    "run_attempt": 1,
+    "referenced_workflows": [
+      {
+        "path": "superfluid-finance/protocol-monorepo/.github/workflows/call.test-solidity-semantic-money.yml@ddc8213dc066decb57c6ef6445bede9f19d5f6a8",
+        "sha": "ddc8213dc066decb57c6ef6445bede9f19d5f6a8",
+        "ref": "refs/heads/dev"
+      },
+      {
+        "path": "superfluid-finance/protocol-monorepo/.github/workflows/call.upload-coverage-reports.yml@ddc8213dc066decb57c6ef6445bede9f19d5f6a8",
+        "sha": "ddc8213dc066decb57c6ef6445bede9f19d5f6a8",
+        "ref": "refs/heads/dev"
+      },
+      {
+        "path": "superfluid-finance/protocol-monorepo/.github/workflows/call.test-local-subgraph.yml@ddc8213dc066decb57c6ef6445bede9f19d5f6a8",
+        "sha": "ddc8213dc066decb57c6ef6445bede9f19d5f6a8",
+        "ref": "refs/heads/dev"
+      },
+      {
+        "path": "superfluid-finance/protocol-monorepo/.github/workflows/call.test-ethereum-contracts.yml@ddc8213dc066decb57c6ef6445bede9f19d5f6a8",
+        "sha": "ddc8213dc066decb57c6ef6445bede9f19d5f6a8",
+        "ref": "refs/heads/dev"
+      },
+      {
+        "path": "superfluid-finance/protocol-monorepo/.github/workflows/call.test-sdk-core.yml@ddc8213dc066decb57c6ef6445bede9f19d5f6a8",
+        "sha": "ddc8213dc066decb57c6ef6445bede9f19d5f6a8",
+        "ref": "refs/heads/dev"
+      },
+      {
+        "path": "superfluid-finance/protocol-monorepo/.github/workflows/call.test-hot-fuzz.yml@ddc8213dc066decb57c6ef6445bede9f19d5f6a8",
+        "sha": "ddc8213dc066decb57c6ef6445bede9f19d5f6a8",
+        "ref": "refs/heads/dev"
+      },
+      {
+        "path": "superfluid-finance/protocol-monorepo/.github/workflows/call.test-automation-contracts.yml@ddc8213dc066decb57c6ef6445bede9f19d5f6a8",
+        "sha": "ddc8213dc066decb57c6ef6445bede9f19d5f6a8",
+        "ref": "refs/heads/dev"
+      },
+      {
+        "path": "superfluid-finance/protocol-monorepo/.github/workflows/call.deploy-subgraph.yml@ddc8213dc066decb57c6ef6445bede9f19d5f6a8",
+        "sha": "ddc8213dc066decb57c6ef6445bede9f19d5f6a8",
+        "ref": "refs/heads/dev"
+      },
+      {
+        "path": "superfluid-finance/protocol-monorepo/.github/workflows/call.test-spec-haskell.yml@ddc8213dc066decb57c6ef6445bede9f19d5f6a8",
+        "sha": "ddc8213dc066decb57c6ef6445bede9f19d5f6a8",
+        "ref": "refs/heads/dev"
+      }
+    ],
+    "run_started_at": "2023-10-30T16:49:11Z",
+    "triggering_actor": {
+      "login": "github-merge-queue[bot]",
+      "id": 118344674,
+      "node_id": "BOT_kgDOBw3L4g",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-merge-queue%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-merge-queue",
+      "followers_url": "https://api.github.com/users/github-merge-queue%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-merge-queue%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-merge-queue%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-merge-queue%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-merge-queue%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-merge-queue%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-merge-queue%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-merge-queue%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-merge-queue%5Bbot%5D/received_events",
+      "type": "Bot",
+      "site_admin": false
+    },
+    "jobs_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/actions/runs/6696049924/jobs",
+    "logs_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/actions/runs/6696049924/logs",
+    "check_suite_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/check-suites/17754924055",
+    "artifacts_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/actions/runs/6696049924/artifacts",
+    "cancel_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/actions/runs/6696049924/cancel",
+    "rerun_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/actions/runs/6696049924/rerun",
+    "previous_attempt_url": null,
+    "workflow_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/actions/workflows/12182970",
+    "head_commit": {
+      "id": "ddc8213dc066decb57c6ef6445bede9f19d5f6a8",
+      "tree_id": "198fbb3f24d268409e3a188159fb51b89b0cdfe5",
+      "message": "Bump browserify-sign in /packages/sdk-core/previous-versions-testing (#1740)\n\nBumps [browserify-sign](https://github.com/crypto-browserify/browserify-sign) from 4.2.1 to 4.2.2.\n- [Changelog](https://github.com/browserify/browserify-sign/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/crypto-browserify/browserify-sign/compare/v4.2.1...v4.2.2)\n\n---\nupdated-dependencies:\n- dependency-name: browserify-sign\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+      "timestamp": "2023-10-30T16:48:00Z",
+      "author": {
+        "name": "dependabot[bot]",
+        "email": "49699333+dependabot[bot]@users.noreply.github.com"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com"
+      }
+    },
+    "repository": {
+      "id": 246007977,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNDYwMDc5Nzc=",
+      "name": "protocol-monorepo",
+      "full_name": "superfluid-finance/protocol-monorepo",
+      "private": false,
+      "owner": {
+        "login": "superfluid-finance",
+        "id": 61932813,
+        "node_id": "MDEyOk9yZ2FuaXphdGlvbjYxOTMyODEz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/61932813?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/superfluid-finance",
+        "html_url": "https://github.com/superfluid-finance",
+        "followers_url": "https://api.github.com/users/superfluid-finance/followers",
+        "following_url": "https://api.github.com/users/superfluid-finance/following{/other_user}",
+        "gists_url": "https://api.github.com/users/superfluid-finance/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/superfluid-finance/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/superfluid-finance/subscriptions",
+        "organizations_url": "https://api.github.com/users/superfluid-finance/orgs",
+        "repos_url": "https://api.github.com/users/superfluid-finance/repos",
+        "events_url": "https://api.github.com/users/superfluid-finance/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/superfluid-finance/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/superfluid-finance/protocol-monorepo",
+      "description": "Superfluid Protocol Monorepo: the specification, implementations, peripherals and development kits.",
+      "fork": false,
+      "url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo",
+      "forks_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/forks",
+      "keys_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/teams",
+      "hooks_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/hooks",
+      "issue_events_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/events",
+      "assignees_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/tags",
+      "blobs_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/languages",
+      "stargazers_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/stargazers",
+      "contributors_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/contributors",
+      "subscribers_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/subscribers",
+      "subscription_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/subscription",
+      "commits_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/merges",
+      "archive_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/downloads",
+      "issues_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/labels{/name}",
+      "releases_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/deployments"
+    },
+    "head_repository": {
+      "id": 246007977,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNDYwMDc5Nzc=",
+      "name": "protocol-monorepo",
+      "full_name": "superfluid-finance/protocol-monorepo",
+      "private": false,
+      "owner": {
+        "login": "superfluid-finance",
+        "id": 61932813,
+        "node_id": "MDEyOk9yZ2FuaXphdGlvbjYxOTMyODEz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/61932813?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/superfluid-finance",
+        "html_url": "https://github.com/superfluid-finance",
+        "followers_url": "https://api.github.com/users/superfluid-finance/followers",
+        "following_url": "https://api.github.com/users/superfluid-finance/following{/other_user}",
+        "gists_url": "https://api.github.com/users/superfluid-finance/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/superfluid-finance/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/superfluid-finance/subscriptions",
+        "organizations_url": "https://api.github.com/users/superfluid-finance/orgs",
+        "repos_url": "https://api.github.com/users/superfluid-finance/repos",
+        "events_url": "https://api.github.com/users/superfluid-finance/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/superfluid-finance/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/superfluid-finance/protocol-monorepo",
+      "description": "Superfluid Protocol Monorepo: the specification, implementations, peripherals and development kits.",
+      "fork": false,
+      "url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo",
+      "forks_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/forks",
+      "keys_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/teams",
+      "hooks_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/hooks",
+      "issue_events_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/events",
+      "assignees_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/tags",
+      "blobs_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/languages",
+      "stargazers_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/stargazers",
+      "contributors_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/contributors",
+      "subscribers_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/subscribers",
+      "subscription_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/subscription",
+      "commits_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/merges",
+      "archive_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/downloads",
+      "issues_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/labels{/name}",
+      "releases_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/superfluid-finance/protocol-monorepo/deployments"
+    }
+  },
+  "logs_archive": {
+    "path": "/data/logs/superfluid-finance/protocol-monorepo/CI_Canary_Dev__2dcc/689-1.tar.gz"
+  },
+  "log_insights": [
+    {
+      "file": "0_Build and Test Subgraph (Development Branch)  Run subgraph.txt",
+      "total_lines": 3312,
+      "log_size": 269418,
+      "token_permissions": {
+        "Contents": "read",
+        "Metadata": "read",
+        "Packages": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231025.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "superfluid-finance/protocol-monorepo",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {
+            "subgraph-working-directory": "./packages/subgraph",
+            "sdk-core-working-directory": "./packages/sdk-core"
+          },
+          "start_date": "2023-10-30 16:49:23.862000",
+          "duration_sec": 1.55953
+        },
+        {
+          "type": "action",
+          "repository": "cachix",
+          "action": "install-nix-action",
+          "version": "v19",
+          "sha": "5c11eae19dba042788936d4f1c9685fdd814ac49",
+          "with": {
+            "github_access_token": "***"
+          },
+          "env": {
+            "subgraph-working-directory": "./packages/subgraph",
+            "sdk-core-working-directory": "./packages/sdk-core"
+          },
+          "start_date": "2023-10-30 16:49:25.421000",
+          "duration_sec": 0.032472
+        },
+        {
+          "type": "shell",
+          "env": {
+            "subgraph-working-directory": "./packages/subgraph",
+            "sdk-core-working-directory": "./packages/sdk-core",
+            "INPUT_EXTRA_NIX_CONFIG": "",
+            "INPUT_GITHUB_ACCESS_TOKEN": "***",
+            "INPUT_INSTALL_OPTIONS": "",
+            "INPUT_INSTALL_URL": "",
+            "INPUT_NIX_PATH": "",
+            "GITHUB_TOKEN": "***"
+          },
+          "code": "/home/runner/work/_actions/cachix/install-nix-action/v19/install-nix.sh",
+          "commands": [
+            {
+              "command": "/home/runner/work/_actions/cachix/install-nix-action/v19/install-nix.sh"
+            }
+          ],
+          "start_date": "2023-10-30 16:49:25.454000",
+          "duration_sec": 4.89031
+        },
+        {
+          "type": "shell",
+          "env": {
+            "subgraph-working-directory": "./packages/subgraph",
+            "sdk-core-working-directory": "./packages/sdk-core"
+          },
+          "code": "yarn install --frozen-lockfile",
+          "commands": [
+            {
+              "annotations": [
+                "SC-YARN-INSTALL"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-YARN-F-FROZEN-LOCKFILE"
+                  ],
+                  "content": "--frozen-lockfile"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:49:30.344000",
+          "duration_sec": 134.955741
+        },
+        {
+          "type": "shell",
+          "env": {
+            "subgraph-working-directory": "./packages/subgraph",
+            "sdk-core-working-directory": "./packages/sdk-core"
+          },
+          "code": "yarn build",
+          "commands": [
+            {
+              "annotations": [
+                "SC-YARN-RUN-SCRIPT"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "RUN_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-YARN-RUN-SCRIPT-SCRIPT"
+                  ],
+                  "content": "build"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:51:45.300000",
+          "duration_sec": 262.124163
+        },
+        {
+          "type": "shell",
+          "env": {
+            "subgraph-working-directory": "./packages/subgraph",
+            "sdk-core-working-directory": "./packages/sdk-core"
+          },
+          "code": "./tasks/startHardhatNode.sh start",
+          "commands": [
+            {
+              "command": "./tasks/startHardhatNode.sh",
+              "args": [
+                {
+                  "content": "start"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:56:07.424000",
+          "duration_sec": 5.471409
+        },
+        {
+          "type": "shell",
+          "env": {
+            "subgraph-working-directory": "./packages/subgraph",
+            "sdk-core-working-directory": "./packages/sdk-core"
+          },
+          "code": "yarn build",
+          "commands": [
+            {
+              "annotations": [
+                "SC-YARN-RUN-SCRIPT"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "RUN_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-YARN-RUN-SCRIPT-SCRIPT"
+                  ],
+                  "content": "build"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:56:12.895000",
+          "duration_sec": 75.891919
+        },
+        {
+          "type": "shell",
+          "env": {
+            "subgraph-working-directory": "./packages/subgraph",
+            "sdk-core-working-directory": "./packages/sdk-core"
+          },
+          "code": "npx hardhat run dev-scripts/run-deploy-contracts-and-token.js --network localhost",
+          "commands": [
+            {
+              "command": "npx",
+              "args": [
+                {
+                  "content": "hardhat"
+                },
+                {
+                  "content": "run"
+                },
+                {
+                  "content": "dev-scripts/run-deploy-contracts-and-token.js"
+                },
+                {
+                  "content": "--network"
+                },
+                {
+                  "content": "localhost"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:57:28.787000",
+          "duration_sec": 9.351734
+        },
+        {
+          "type": "shell",
+          "env": {
+            "subgraph-working-directory": "./packages/subgraph",
+            "sdk-core-working-directory": "./packages/sdk-core"
+          },
+          "code": "yarn prepare-local",
+          "commands": [
+            {
+              "annotations": [
+                "SC-YARN-RUN-SCRIPT"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "RUN_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-YARN-RUN-SCRIPT-SCRIPT"
+                  ],
+                  "content": "prepare-local"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:57:38.139000",
+          "duration_sec": 4.353827
+        },
+        {
+          "type": "shell",
+          "env": {
+            "subgraph-working-directory": "./packages/subgraph",
+            "sdk-core-working-directory": "./packages/sdk-core"
+          },
+          "code": "chmod +x ./tasks/setup-graph-node.sh\n./tasks/setup-graph-node.sh",
+          "commands": [
+            {
+              "annotations": [
+                "SC-CHMOD"
+              ],
+              "command": "chmod",
+              "categories": [
+                "FILE_PERMISSIONS"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CHMOD-MODE"
+                  ],
+                  "content": "+x"
+                },
+                {
+                  "annotations": [
+                    "SC-CHMOD-PATH"
+                  ],
+                  "content": "./tasks/setup-graph-node.sh"
+                }
+              ]
+            },
+            {
+              "command": "./tasks/setup-graph-node.sh"
+            }
+          ],
+          "start_date": "2023-10-30 16:57:42.493000",
+          "duration_sec": 27.599056
+        },
+        {
+          "type": "shell",
+          "env": {
+            "subgraph-working-directory": "./packages/subgraph",
+            "sdk-core-working-directory": "./packages/sdk-core"
+          },
+          "code": "docker-compose up &",
+          "commands": [
+            {
+              "command": "docker-compose",
+              "args": [
+                {
+                  "content": "up"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:58:10.092000",
+          "duration_sec": 8.180195
+        },
+        {
+          "type": "shell",
+          "env": {
+            "subgraph-working-directory": "./packages/subgraph",
+            "sdk-core-working-directory": "./packages/sdk-core"
+          },
+          "code": "yarn test --network localhost",
+          "commands": [
+            {
+              "annotations": [
+                "SC-YARN-INSTALL"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "test"
+                },
+                {
+                  "annotations": [
+                    "SC-YARN-INSTALL-NETWORK"
+                  ],
+                  "content": "--network localhost"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:58:18.272000",
+          "duration_sec": 360.757665
+        }
+      ]
+    },
+    {
+      "file": "0_Upload Coverage Reports (Feature Branch)  Upload coverage.txt",
+      "total_lines": 568,
+      "log_size": 43453,
+      "token_permissions": {
+        "Contents": "read",
+        "Metadata": "read",
+        "Packages": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231025.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "superfluid-finance/protocol-monorepo",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-30 17:41:10.340000",
+          "duration_sec": 1.641675
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "download-artifact",
+          "version": "v3",
+          "sha": "9bc31d5ccc31df68ecc42ccf4149144866c47d8a",
+          "with": {
+            "name": "ethereum-contracts-coverage",
+            "path": "packages/ethereum-contracts/coverage"
+          },
+          "env": {},
+          "start_date": "2023-10-30 17:41:11.981000",
+          "duration_sec": 2.968954
+        },
+        {
+          "type": "action",
+          "repository": "codecov",
+          "action": "codecov-action",
+          "version": "v3",
+          "sha": "eaaf4bedf32dbdc6b720b63067d99c4d77d6047d",
+          "with": {
+            "files": "packages/ethereum-contracts/coverage/lcov.info",
+            "name": "ethereum-contracts-coverage",
+            "flags": "ethereum-contracts",
+            "fail_ci_if_error": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-30 17:41:14.950000",
+          "duration_sec": 2.37983
+        }
+      ]
+    },
+    {
+      "file": "0_All packages tested (Dev Branch).txt",
+      "total_lines": 62,
+      "log_size": 3922,
+      "token_permissions": {
+        "Contents": "read",
+        "Metadata": "read",
+        "Packages": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231025.1.0",
+      "steps": [
+        {
+          "type": "shell",
+          "env": {},
+          "code": "function check_result() {\n  local package_name=\"$1\"\n  local result=\"$2\"\n  if [ \"$result\" == \"skipped\" ];then\n    echo \"Skipped $package_name package.\"\n  else\n    echo \"Checking if $package_name package test passes...\"\n    test \"$result\" == \"success\"\n    echo \"Passed.\"\n  fi\n}\ncheck_result essential-build-and-test success\ncheck_result spec-haskell success\ncheck_result hot-fuzz success\ncheck_result subgraph success\ncheck_result ethereum-contracts-coverage success\ncheck_result sdk-core-coverage success",
+          "commands": [
+            {
+              "command": "check_result",
+              "args": [
+                {
+                  "content": "essential-build-and-test"
+                },
+                {
+                  "content": "success"
+                }
+              ]
+            },
+            {
+              "command": "check_result",
+              "args": [
+                {
+                  "content": "spec-haskell"
+                },
+                {
+                  "content": "success"
+                }
+              ]
+            },
+            {
+              "command": "check_result",
+              "args": [
+                {
+                  "content": "hot-fuzz"
+                },
+                {
+                  "content": "success"
+                }
+              ]
+            },
+            {
+              "command": "check_result",
+              "args": [
+                {
+                  "content": "subgraph"
+                },
+                {
+                  "content": "success"
+                }
+              ]
+            },
+            {
+              "command": "check_result",
+              "args": [
+                {
+                  "content": "ethereum-contracts-coverage"
+                },
+                {
+                  "content": "success"
+                }
+              ]
+            },
+            {
+              "command": "check_result",
+              "args": [
+                {
+                  "content": "sdk-core-coverage"
+                },
+                {
+                  "content": "success"
+                }
+              ]
+            },
+            {
+              "command": "[",
+              "args": [
+                {
+                  "content": "\"$result\""
+                },
+                {
+                  "content": "=="
+                },
+                {
+                  "content": "\"skipped\""
+                },
+                {
+                  "content": "]"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"Skipped $package_name package.\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"Checking if $package_name package test passes...\""
+                }
+              ]
+            },
+            {
+              "command": "test",
+              "args": [
+                {
+                  "content": "\"$result\""
+                },
+                {
+                  "content": "=="
+                },
+                {
+                  "content": "\"success\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"Passed.\""
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 17:41:09.691000",
+          "duration_sec": 0.188134
+        }
+      ]
+    },
+    {
+      "file": "0_Coverage test ethereum-contracts (Canary Branch)  Preparin.txt",
+      "total_lines": 534,
+      "log_size": 39396,
+      "token_permissions": {
+        "Contents": "read",
+        "Metadata": "read",
+        "Packages": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231025.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "superfluid-finance/protocol-monorepo",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-30 16:49:23.899000",
+          "duration_sec": 1.667768
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "if [ \"true\" == \"true\" ];then\n  echo \"matrix={\\\"node-version\\\": [20]}\" >> \"$GITHUB_OUTPUT\"\nelse\n  echo \"matrix={\\\"node-version\\\": [18, 20]}\" >> \"$GITHUB_OUTPUT\"\nfi",
+          "commands": [
+            {
+              "command": "[",
+              "args": [
+                {
+                  "content": "\"true\""
+                },
+                {
+                  "content": "=="
+                },
+                {
+                  "content": "\"true\""
+                },
+                {
+                  "content": "]"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"matrix={\\\"node-version\\\": [20]}\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"matrix={\\\"node-version\\\": [18, 20]}\""
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:49:25.567000",
+          "duration_sec": 0.24215
+        }
+      ]
+    },
+    {
+      "file": "0_Publish canary HTML docs.txt",
+      "total_lines": 19876,
+      "log_size": 3249260,
+      "token_permissions": {
+        "Contents": "read",
+        "Metadata": "read",
+        "Packages": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231025.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "superfluid-finance/protocol-monorepo",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-30 17:41:23.975000",
+          "duration_sec": 1.984798
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "superfluid-finance/build-scripts",
+            "path": "build-scripts",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-30 17:41:25.960000",
+          "duration_sec": 1.078666
+        },
+        {
+          "type": "action",
+          "repository": "cachix",
+          "action": "install-nix-action",
+          "version": "v19",
+          "sha": "5c11eae19dba042788936d4f1c9685fdd814ac49",
+          "with": {
+            "github_access_token": "***"
+          },
+          "env": {},
+          "start_date": "2023-10-30 17:41:27.039000",
+          "duration_sec": 0.041602
+        },
+        {
+          "type": "shell",
+          "env": {
+            "INPUT_EXTRA_NIX_CONFIG": "",
+            "INPUT_GITHUB_ACCESS_TOKEN": "***",
+            "INPUT_INSTALL_OPTIONS": "",
+            "INPUT_INSTALL_URL": "",
+            "INPUT_NIX_PATH": "",
+            "GITHUB_TOKEN": "***"
+          },
+          "code": "/home/runner/work/_actions/cachix/install-nix-action/v19/install-nix.sh",
+          "commands": [
+            {
+              "command": "/home/runner/work/_actions/cachix/install-nix-action/v19/install-nix.sh"
+            }
+          ],
+          "start_date": "2023-10-30 17:41:27.080000",
+          "duration_sec": 5.463413
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "yarn install --frozen-lockfile",
+          "commands": [
+            {
+              "annotations": [
+                "SC-YARN-INSTALL"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-YARN-F-FROZEN-LOCKFILE"
+                  ],
+                  "content": "--frozen-lockfile"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 17:41:32.544000",
+          "duration_sec": 168.741995
+        },
+        {
+          "type": "shell",
+          "env": {
+            "SUBGRAPH_RELEASE_TAG": "dev"
+          },
+          "code": "yarn --cwd packages/sdk-core set-default-subgraph-release-tag\nyarn build",
+          "commands": [
+            {
+              "annotations": [
+                "SC-YARN-RUN-SCRIPT"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "RUN_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-YARN-RUN-SCRIPT-CWD"
+                  ],
+                  "content": "--cwd packages/sdk-core"
+                },
+                {
+                  "annotations": [
+                    "SC-YARN-ARG"
+                  ],
+                  "content": "set-default-subgraph-release-tag"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-YARN-RUN-SCRIPT"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "RUN_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-YARN-RUN-SCRIPT-SCRIPT"
+                  ],
+                  "content": "build"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 17:44:21.286000",
+          "duration_sec": 431.901255
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "yarn --cwd packages/sdk-core doc:html\nyarn --cwd packages/sdk-redux doc:html",
+          "commands": [
+            {
+              "annotations": [
+                "SC-YARN-RUN-SCRIPT"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "RUN_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-YARN-RUN-SCRIPT-CWD"
+                  ],
+                  "content": "--cwd packages/sdk-core"
+                },
+                {
+                  "annotations": [
+                    "SC-YARN-ARG"
+                  ],
+                  "content": "doc:html"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-YARN-RUN-SCRIPT"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "RUN_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-YARN-RUN-SCRIPT-CWD"
+                  ],
+                  "content": "--cwd packages/sdk-redux"
+                },
+                {
+                  "annotations": [
+                    "SC-YARN-ARG"
+                  ],
+                  "content": "doc:html"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 17:51:33.187000",
+          "duration_sec": 157.722083
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "",
+          "start_date": "2023-10-30 17:54:10.909000",
+          "duration_sec": 0.003159
+        },
+        {
+          "type": "shell",
+          "env": {
+            "AWS_DEFAULT_REGION": "eu-west-2",
+            "AWS_ACCESS_KEY_ID": "***",
+            "AWS_SECRET_ACCESS_KEY": "***",
+            "LOCAL_BUILD_DIR": "packages/sdk-core/dist/docs",
+            "S3_URI": "***sdk-core@dev",
+            "CLOUDFRONT_DISTRIBUTION_ID": "E3JEO5R14CT8IH"
+          },
+          "code": "\"/home/runner/work/protocol-monorepo/protocol-monorepo/./build-scripts/s3cloudfront-hosting/actions/sync\"/sync.sh",
+          "commands": [
+            {
+              "command": "\"/home/runner/work/protocol-monorepo/protocol-monorepo/./build-scripts/s3cloudfront-hosting/actions/sync\"/sync.sh"
+            }
+          ],
+          "start_date": "2023-10-30 17:54:10.912000",
+          "duration_sec": 135.537588
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "",
+          "start_date": "2023-10-30 17:56:26.450000",
+          "duration_sec": 0.002813
+        },
+        {
+          "type": "shell",
+          "env": {
+            "AWS_DEFAULT_REGION": "eu-west-2",
+            "AWS_ACCESS_KEY_ID": "***",
+            "AWS_SECRET_ACCESS_KEY": "***",
+            "LOCAL_BUILD_DIR": "packages/sdk-redux/dist/docs",
+            "S3_URI": "***sdk-redux@dev",
+            "CLOUDFRONT_DISTRIBUTION_ID": "E3JEO5R14CT8IH"
+          },
+          "code": "\"/home/runner/work/protocol-monorepo/protocol-monorepo/./build-scripts/s3cloudfront-hosting/actions/sync\"/sync.sh",
+          "commands": [
+            {
+              "command": "\"/home/runner/work/protocol-monorepo/protocol-monorepo/./build-scripts/s3cloudfront-hosting/actions/sync\"/sync.sh"
+            }
+          ],
+          "start_date": "2023-10-30 17:56:26.453000",
+          "duration_sec": 31.409568
+        }
+      ]
+    },
+    {
+      "file": "0_Build and Test Automation Contracts (Canary Branch)  Test.txt",
+      "total_lines": 1829,
+      "log_size": 174051,
+      "token_permissions": {
+        "Contents": "read",
+        "Metadata": "read",
+        "Packages": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231025.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "superfluid-finance/protocol-monorepo",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-30 16:49:24.307000",
+          "duration_sec": 1.668895
+        },
+        {
+          "type": "action",
+          "repository": "cachix",
+          "action": "install-nix-action",
+          "version": "v19",
+          "sha": "5c11eae19dba042788936d4f1c9685fdd814ac49",
+          "with": {
+            "github_access_token": "***"
+          },
+          "env": {},
+          "start_date": "2023-10-30 16:49:25.976000",
+          "duration_sec": 0.027039
+        },
+        {
+          "type": "shell",
+          "env": {
+            "INPUT_EXTRA_NIX_CONFIG": "",
+            "INPUT_GITHUB_ACCESS_TOKEN": "***",
+            "INPUT_INSTALL_OPTIONS": "",
+            "INPUT_INSTALL_URL": "",
+            "INPUT_NIX_PATH": "",
+            "GITHUB_TOKEN": "***"
+          },
+          "code": "/home/runner/work/_actions/cachix/install-nix-action/v19/install-nix.sh",
+          "commands": [
+            {
+              "command": "/home/runner/work/_actions/cachix/install-nix-action/v19/install-nix.sh"
+            }
+          ],
+          "start_date": "2023-10-30 16:49:26.003000",
+          "duration_sec": 5.076617
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "yarn install --frozen-lockfile\nyarn lint\nyarn build",
+          "commands": [
+            {
+              "annotations": [
+                "SC-YARN-INSTALL"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-YARN-F-FROZEN-LOCKFILE"
+                  ],
+                  "content": "--frozen-lockfile"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-YARN-LINT"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT"
+              ],
+              "args": [
+                {
+                  "content": "lint"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-YARN-RUN-SCRIPT"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "RUN_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-YARN-RUN-SCRIPT-SCRIPT"
+                  ],
+                  "content": "build"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:49:31.079000",
+          "duration_sec": 528.78503
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "echo \"FOUNDRY_PROFILE=ci\" >> $GITHUB_ENV\necho \"FOUNDRY_SOLC_VERSION=$SOLC\" >> $GITHUB_ENV\nyarn workspace scheduler test",
+          "commands": [
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"FOUNDRY_PROFILE=ci\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"FOUNDRY_SOLC_VERSION=$SOLC\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-YARN-INSTALL"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "workspace"
+                },
+                {
+                  "content": "scheduler"
+                },
+                {
+                  "content": "test"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:58:19.864000",
+          "duration_sec": 28.303453
+        },
+        {
+          "type": "shell",
+          "env": {
+            "FOUNDRY_PROFILE": "ci",
+            "FOUNDRY_SOLC_VERSION": "/nix/store/is9hy5yvmrz6w21qn39708dkix7skih0-solc-static-0.8.19/bin/solc-0.8.19"
+          },
+          "code": "echo \"FOUNDRY_PROFILE=ci\" >> $GITHUB_ENV\necho \"FOUNDRY_SOLC_VERSION=$SOLC\" >> $GITHUB_ENV\nyarn workspace autowrap test",
+          "commands": [
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"FOUNDRY_PROFILE=ci\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"FOUNDRY_SOLC_VERSION=$SOLC\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-YARN-INSTALL"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "workspace"
+                },
+                {
+                  "content": "autowrap"
+                },
+                {
+                  "content": "test"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:58:48.168000",
+          "duration_sec": 23.999418
+        }
+      ]
+    },
+    {
+      "file": "0_Upgrade ethereum-contracts on canary testnet (protocol rel.txt",
+      "total_lines": 1680,
+      "log_size": 160313,
+      "token_permissions": {
+        "Contents": "read",
+        "Metadata": "read",
+        "Packages": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231025.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "superfluid-finance/protocol-monorepo",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-30 17:41:22.087000",
+          "duration_sec": 1.684741
+        },
+        {
+          "type": "action",
+          "repository": "cachix",
+          "action": "install-nix-action",
+          "version": "v19",
+          "sha": "5c11eae19dba042788936d4f1c9685fdd814ac49",
+          "with": {
+            "github_access_token": "***"
+          },
+          "env": {},
+          "start_date": "2023-10-30 17:41:23.772000",
+          "duration_sec": 0.02781
+        },
+        {
+          "type": "shell",
+          "env": {
+            "INPUT_EXTRA_NIX_CONFIG": "",
+            "INPUT_GITHUB_ACCESS_TOKEN": "***",
+            "INPUT_INSTALL_OPTIONS": "",
+            "INPUT_INSTALL_URL": "",
+            "INPUT_NIX_PATH": "",
+            "GITHUB_TOKEN": "***"
+          },
+          "code": "/home/runner/work/_actions/cachix/install-nix-action/v19/install-nix.sh",
+          "commands": [
+            {
+              "command": "/home/runner/work/_actions/cachix/install-nix-action/v19/install-nix.sh"
+            }
+          ],
+          "start_date": "2023-10-30 17:41:23.800000",
+          "duration_sec": 5.02398
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "yarn install --frozen-lockfile\nyarn build",
+          "commands": [
+            {
+              "annotations": [
+                "SC-YARN-INSTALL"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-YARN-F-FROZEN-LOCKFILE"
+                  ],
+                  "content": "--frozen-lockfile"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-YARN-RUN-SCRIPT"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "RUN_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-YARN-RUN-SCRIPT-SCRIPT"
+                  ],
+                  "content": "build"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 17:41:28.824000",
+          "duration_sec": 464.641532
+        },
+        {
+          "type": "shell",
+          "env": {
+            "RELEASE_VERSION": "master",
+            "AVALANCHE_FUJI_MNEMONIC": "***",
+            "AVALANCHE_FUJI_PROVIDER_URL": "***"
+          },
+          "code": "cd packages/ethereum-contracts\nnpx truffle exec --network avalanche-fuji ops-scripts/deploy-test-environment.js\nnpx truffle exec --network avalanche-fuji ops-scripts/info-print-contract-addresses.js : addresses.vars\ntasks/etherscan-verify-framework.sh avalanche-fuji addresses.vars",
+          "commands": [
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "packages/ethereum-contracts"
+                }
+              ]
+            },
+            {
+              "command": "npx",
+              "args": [
+                {
+                  "content": "truffle"
+                },
+                {
+                  "content": "exec"
+                },
+                {
+                  "content": "--network"
+                },
+                {
+                  "content": "avalanche-fuji"
+                },
+                {
+                  "content": "ops-scripts/deploy-test-environment.js"
+                }
+              ]
+            },
+            {
+              "command": "npx",
+              "args": [
+                {
+                  "content": "truffle"
+                },
+                {
+                  "content": "exec"
+                },
+                {
+                  "content": "--network"
+                },
+                {
+                  "content": "avalanche-fuji"
+                },
+                {
+                  "content": "ops-scripts/info-print-contract-addresses.js"
+                },
+                {
+                  "content": ":"
+                },
+                {
+                  "content": "addresses.vars"
+                }
+              ]
+            },
+            {
+              "command": "tasks/etherscan-verify-framework.sh",
+              "args": [
+                {
+                  "content": "avalanche-fuji"
+                },
+                {
+                  "content": "addresses.vars"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 17:49:13.465000",
+          "duration_sec": 38.633396
+        }
+      ]
+    },
+    {
+      "file": "0_Build and Test Solidity Semantic Money (Canary Branch)  Te.txt",
+      "total_lines": 1451,
+      "log_size": 138091,
+      "token_permissions": {
+        "Contents": "read",
+        "Metadata": "read",
+        "Packages": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231025.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "superfluid-finance/protocol-monorepo",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-30 16:49:23.862000",
+          "duration_sec": 1.66518
+        },
+        {
+          "type": "action",
+          "repository": "cachix",
+          "action": "install-nix-action",
+          "version": "v19",
+          "sha": "5c11eae19dba042788936d4f1c9685fdd814ac49",
+          "with": {
+            "github_access_token": "***"
+          },
+          "env": {},
+          "start_date": "2023-10-30 16:49:25.527000",
+          "duration_sec": 0.038423
+        },
+        {
+          "type": "shell",
+          "env": {
+            "INPUT_EXTRA_NIX_CONFIG": "",
+            "INPUT_GITHUB_ACCESS_TOKEN": "***",
+            "INPUT_INSTALL_OPTIONS": "",
+            "INPUT_INSTALL_URL": "",
+            "INPUT_NIX_PATH": "",
+            "GITHUB_TOKEN": "***"
+          },
+          "code": "/home/runner/work/_actions/cachix/install-nix-action/v19/install-nix.sh",
+          "commands": [
+            {
+              "command": "/home/runner/work/_actions/cachix/install-nix-action/v19/install-nix.sh"
+            }
+          ],
+          "start_date": "2023-10-30 16:49:25.566000",
+          "duration_sec": 5.528133
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "forge --version",
+          "commands": [
+            {
+              "command": "forge",
+              "args": [
+                {
+                  "content": "--version"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:49:31.094000",
+          "duration_sec": 42.471726
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "yarn install",
+          "commands": [
+            {
+              "annotations": [
+                "SC-YARN-INSTALL"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:50:13.565000",
+          "duration_sec": 109.611438
+        },
+        {
+          "type": "shell",
+          "env": {
+            "FOUNDRY_FUZZ_RUNS": "4200"
+          },
+          "code": "cd packages/solidity-semantic-money\n# use native compiler provided through the nix devShell\necho \"FOUNDRY_SOLC_VERSION=$SOLC\" >> $GITHUB_ENV\nmake build-src test-all",
+          "commands": [
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "packages/solidity-semantic-money"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"FOUNDRY_SOLC_VERSION=$SOLC\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "build-src"
+                },
+                {
+                  "annotations": [
+                    "SC-MAKE-ARG"
+                  ],
+                  "content": "test-all"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:52:03.177000",
+          "duration_sec": 535.000845
+        }
+      ]
+    },
+    {
+      "file": "0_Build and Test Spec Haskell (Canary Branch)  Test Spec Has.txt",
+      "total_lines": 2060,
+      "log_size": 224591,
+      "token_permissions": {
+        "Contents": "read",
+        "Metadata": "read",
+        "Packages": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231025.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "superfluid-finance/protocol-monorepo",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-30 16:49:24.853000",
+          "duration_sec": 1.435897
+        },
+        {
+          "type": "action",
+          "repository": "cachix",
+          "action": "install-nix-action",
+          "version": "v19",
+          "sha": "5c11eae19dba042788936d4f1c9685fdd814ac49",
+          "with": {
+            "github_access_token": "***"
+          },
+          "env": {},
+          "start_date": "2023-10-30 16:49:26.289000",
+          "duration_sec": 0.031487
+        },
+        {
+          "type": "shell",
+          "env": {
+            "INPUT_EXTRA_NIX_CONFIG": "",
+            "INPUT_GITHUB_ACCESS_TOKEN": "***",
+            "INPUT_INSTALL_OPTIONS": "",
+            "INPUT_INSTALL_URL": "",
+            "INPUT_NIX_PATH": "",
+            "GITHUB_TOKEN": "***"
+          },
+          "code": "/home/runner/work/_actions/cachix/install-nix-action/v19/install-nix.sh",
+          "commands": [
+            {
+              "command": "/home/runner/work/_actions/cachix/install-nix-action/v19/install-nix.sh"
+            }
+          ],
+          "start_date": "2023-10-30 16:49:26.320000",
+          "duration_sec": 5.374055
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "set -xe\ncabal --version\nghc --version",
+          "commands": [
+            {
+              "annotations": [
+                "SC-SET"
+              ],
+              "command": "set",
+              "categories": [
+                "ENVIRONMENT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-SET-F-X",
+                    "SC-SET-F-E"
+                  ],
+                  "content": "-xe"
+                }
+              ]
+            },
+            {
+              "command": "cabal",
+              "args": [
+                {
+                  "content": "--version"
+                }
+              ]
+            },
+            {
+              "command": "ghc",
+              "args": [
+                {
+                  "content": "--version"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:49:31.694000",
+          "duration_sec": 48.757364
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "cabal v2-update",
+          "commands": [
+            {
+              "command": "cabal",
+              "args": [
+                {
+                  "content": "v2-update"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:50:20.452000",
+          "duration_sec": 22.976989
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "cd packages/spec-haskell\nmake lint",
+          "commands": [
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "packages/spec-haskell"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "lint"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:50:43.429000",
+          "duration_sec": 6.500621
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "cd packages/spec-haskell\nmake build",
+          "commands": [
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "packages/spec-haskell"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "build"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:50:49.929000",
+          "duration_sec": 31.217424
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "cd packages/spec-haskell\nmake test",
+          "commands": [
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "packages/spec-haskell"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "test"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:51:21.147000",
+          "duration_sec": 105.259436
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "cd packages/spec-haskell\nmake docs-haddock",
+          "commands": [
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "packages/spec-haskell"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "docs-haddock"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:53:06.406000",
+          "duration_sec": 50.503738
+        }
+      ]
+    },
+    {
+      "file": "0_Build and Test SDK-Core Coverage (Canary Branch)  Test SDK.txt",
+      "total_lines": 2634,
+      "log_size": 235010,
+      "token_permissions": {
+        "Contents": "read",
+        "Metadata": "read",
+        "Packages": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231025.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "superfluid-finance/protocol-monorepo",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {
+            "ethereum-contracts-working-directory": "./packages/ethereum-contracts",
+            "subgraph-working-directory": "./packages/subgraph",
+            "sdk-core-working-directory": "./packages/sdk-core"
+          },
+          "start_date": "2023-10-30 16:49:26.616000",
+          "duration_sec": 2.292372
+        },
+        {
+          "type": "action",
+          "repository": "cachix",
+          "action": "install-nix-action",
+          "version": "v19",
+          "sha": "5c11eae19dba042788936d4f1c9685fdd814ac49",
+          "with": {
+            "github_access_token": "***"
+          },
+          "env": {
+            "ethereum-contracts-working-directory": "./packages/ethereum-contracts",
+            "subgraph-working-directory": "./packages/subgraph",
+            "sdk-core-working-directory": "./packages/sdk-core"
+          },
+          "start_date": "2023-10-30 16:49:28.908000",
+          "duration_sec": 0.036971
+        },
+        {
+          "type": "shell",
+          "env": {
+            "ethereum-contracts-working-directory": "./packages/ethereum-contracts",
+            "subgraph-working-directory": "./packages/subgraph",
+            "sdk-core-working-directory": "./packages/sdk-core",
+            "INPUT_EXTRA_NIX_CONFIG": "",
+            "INPUT_GITHUB_ACCESS_TOKEN": "***",
+            "INPUT_INSTALL_OPTIONS": "",
+            "INPUT_INSTALL_URL": "",
+            "INPUT_NIX_PATH": "",
+            "GITHUB_TOKEN": "***"
+          },
+          "code": "/home/runner/work/_actions/cachix/install-nix-action/v19/install-nix.sh",
+          "commands": [
+            {
+              "command": "/home/runner/work/_actions/cachix/install-nix-action/v19/install-nix.sh"
+            }
+          ],
+          "start_date": "2023-10-30 16:49:28.945000",
+          "duration_sec": 5.174405
+        },
+        {
+          "type": "shell",
+          "env": {
+            "ethereum-contracts-working-directory": "./packages/ethereum-contracts",
+            "subgraph-working-directory": "./packages/subgraph",
+            "sdk-core-working-directory": "./packages/sdk-core"
+          },
+          "code": "yarn install --frozen-lockfile",
+          "commands": [
+            {
+              "annotations": [
+                "SC-YARN-INSTALL"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-YARN-F-FROZEN-LOCKFILE"
+                  ],
+                  "content": "--frozen-lockfile"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:49:34.119000",
+          "duration_sec": 173.035559
+        },
+        {
+          "type": "shell",
+          "env": {
+            "ethereum-contracts-working-directory": "./packages/ethereum-contracts",
+            "subgraph-working-directory": "./packages/subgraph",
+            "sdk-core-working-directory": "./packages/sdk-core"
+          },
+          "code": "yarn build",
+          "commands": [
+            {
+              "annotations": [
+                "SC-YARN-RUN-SCRIPT"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "RUN_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-YARN-RUN-SCRIPT-SCRIPT"
+                  ],
+                  "content": "build"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:52:27.155000",
+          "duration_sec": 330.245177
+        },
+        {
+          "type": "shell",
+          "env": {
+            "ethereum-contracts-working-directory": "./packages/ethereum-contracts",
+            "subgraph-working-directory": "./packages/subgraph",
+            "sdk-core-working-directory": "./packages/sdk-core"
+          },
+          "code": "./tasks/startHardhatNode.sh start",
+          "commands": [
+            {
+              "command": "./tasks/startHardhatNode.sh",
+              "args": [
+                {
+                  "content": "start"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:57:57.400000",
+          "duration_sec": 5.592762
+        },
+        {
+          "type": "shell",
+          "env": {
+            "ethereum-contracts-working-directory": "./packages/ethereum-contracts",
+            "subgraph-working-directory": "./packages/subgraph",
+            "sdk-core-working-directory": "./packages/sdk-core"
+          },
+          "code": "yarn build",
+          "commands": [
+            {
+              "annotations": [
+                "SC-YARN-RUN-SCRIPT"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "RUN_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-YARN-RUN-SCRIPT-SCRIPT"
+                  ],
+                  "content": "build"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:58:02.993000",
+          "duration_sec": 97.182848
+        },
+        {
+          "type": "shell",
+          "env": {
+            "ethereum-contracts-working-directory": "./packages/ethereum-contracts",
+            "subgraph-working-directory": "./packages/subgraph",
+            "sdk-core-working-directory": "./packages/sdk-core"
+          },
+          "code": "npx hardhat run dev-scripts/run-deploy-contracts-and-token.js --network localhost",
+          "commands": [
+            {
+              "command": "npx",
+              "args": [
+                {
+                  "content": "hardhat"
+                },
+                {
+                  "content": "run"
+                },
+                {
+                  "content": "dev-scripts/run-deploy-contracts-and-token.js"
+                },
+                {
+                  "content": "--network"
+                },
+                {
+                  "content": "localhost"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:59:40.176000",
+          "duration_sec": 13.252801
+        },
+        {
+          "type": "shell",
+          "env": {
+            "ethereum-contracts-working-directory": "./packages/ethereum-contracts",
+            "subgraph-working-directory": "./packages/subgraph",
+            "sdk-core-working-directory": "./packages/sdk-core"
+          },
+          "code": "yarn prepare-local",
+          "commands": [
+            {
+              "annotations": [
+                "SC-YARN-RUN-SCRIPT"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "RUN_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-YARN-RUN-SCRIPT-SCRIPT"
+                  ],
+                  "content": "prepare-local"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:59:53.429000",
+          "duration_sec": 5.552679
+        },
+        {
+          "type": "shell",
+          "env": {
+            "ethereum-contracts-working-directory": "./packages/ethereum-contracts",
+            "subgraph-working-directory": "./packages/subgraph",
+            "sdk-core-working-directory": "./packages/sdk-core"
+          },
+          "code": "chmod +x ./tasks/setup-graph-node.sh\n./tasks/setup-graph-node.sh",
+          "commands": [
+            {
+              "annotations": [
+                "SC-CHMOD"
+              ],
+              "command": "chmod",
+              "categories": [
+                "FILE_PERMISSIONS"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CHMOD-MODE"
+                  ],
+                  "content": "+x"
+                },
+                {
+                  "annotations": [
+                    "SC-CHMOD-PATH"
+                  ],
+                  "content": "./tasks/setup-graph-node.sh"
+                }
+              ]
+            },
+            {
+              "command": "./tasks/setup-graph-node.sh"
+            }
+          ],
+          "start_date": "2023-10-30 16:59:58.981000",
+          "duration_sec": 36.217004
+        },
+        {
+          "type": "shell",
+          "env": {
+            "ethereum-contracts-working-directory": "./packages/ethereum-contracts",
+            "subgraph-working-directory": "./packages/subgraph",
+            "sdk-core-working-directory": "./packages/sdk-core"
+          },
+          "code": "docker-compose up &",
+          "commands": [
+            {
+              "command": "docker-compose",
+              "args": [
+                {
+                  "content": "up"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 17:00:35.198000",
+          "duration_sec": 8.873924
+        },
+        {
+          "type": "shell",
+          "env": {
+            "ethereum-contracts-working-directory": "./packages/ethereum-contracts",
+            "subgraph-working-directory": "./packages/subgraph",
+            "sdk-core-working-directory": "./packages/sdk-core"
+          },
+          "code": "yarn build-and-deploy-local\n# artificial slow down to give the subgraph time to sync\nsleep 30",
+          "commands": [
+            {
+              "annotations": [
+                "SC-YARN-RUN-SCRIPT"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "RUN_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-YARN-RUN-SCRIPT-SCRIPT"
+                  ],
+                  "content": "build-and-deploy-local"
+                }
+              ]
+            },
+            {
+              "command": "sleep",
+              "args": [
+                {
+                  "content": "30"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 17:00:44.072000",
+          "duration_sec": 85.38655
+        },
+        {
+          "type": "shell",
+          "env": {
+            "ethereum-contracts-working-directory": "./packages/ethereum-contracts",
+            "subgraph-working-directory": "./packages/subgraph",
+            "sdk-core-working-directory": "./packages/sdk-core",
+            "SUBGRAPH_RELEASE_TAG": "local",
+            "SUBGRAPH_ENDPOINT": "http://localhost:8000/subgraphs/name/superfluid-test"
+          },
+          "code": "yarn workspace @superfluid-finance/sdk-core test-coverage",
+          "commands": [
+            {
+              "annotations": [
+                "SC-YARN-INSTALL"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "workspace"
+                },
+                {
+                  "content": "@superfluid-finance/sdk-core"
+                },
+                {
+                  "content": "test-coverage"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 17:02:09.459000",
+          "duration_sec": 429.962029
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "upload-artifact",
+          "version": "v3",
+          "sha": "a8a3f3ad30e3422c9c7b888a15615d19a852ae32",
+          "with": {
+            "name": "sdk-core-coverage",
+            "path": "packages/sdk-core/coverage/",
+            "if-no-files-found": "warn"
+          },
+          "env": {
+            "ethereum-contracts-working-directory": "./packages/ethereum-contracts",
+            "subgraph-working-directory": "./packages/subgraph",
+            "sdk-core-working-directory": "./packages/sdk-core"
+          },
+          "start_date": "2023-10-30 17:09:19.421000",
+          "duration_sec": 136.92606
+        }
+      ]
+    },
+    {
+      "file": "0_Build and test essential packages of dev branch (18).txt",
+      "total_lines": 42437,
+      "log_size": 3417320,
+      "token_permissions": {
+        "Contents": "read",
+        "Metadata": "read",
+        "Packages": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231025.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "submodules": "recursive",
+            "repository": "superfluid-finance/protocol-monorepo",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-30 16:49:22.267000",
+          "duration_sec": 5.382485
+        },
+        {
+          "type": "action",
+          "repository": "cachix",
+          "action": "install-nix-action",
+          "version": "v19",
+          "sha": "5c11eae19dba042788936d4f1c9685fdd814ac49",
+          "with": {
+            "github_access_token": "***"
+          },
+          "env": {},
+          "start_date": "2023-10-30 16:49:27.650000",
+          "duration_sec": 0.026366
+        },
+        {
+          "type": "shell",
+          "env": {
+            "INPUT_EXTRA_NIX_CONFIG": "",
+            "INPUT_GITHUB_ACCESS_TOKEN": "***",
+            "INPUT_INSTALL_OPTIONS": "",
+            "INPUT_INSTALL_URL": "",
+            "INPUT_NIX_PATH": "",
+            "GITHUB_TOKEN": "***"
+          },
+          "code": "/home/runner/work/_actions/cachix/install-nix-action/v19/install-nix.sh",
+          "commands": [
+            {
+              "command": "/home/runner/work/_actions/cachix/install-nix-action/v19/install-nix.sh"
+            }
+          ],
+          "start_date": "2023-10-30 16:49:27.676000",
+          "duration_sec": 5.027063
+        },
+        {
+          "type": "shell",
+          "env": {
+            "HEAD_REF": "",
+            "GITHUB_REF": "refs/heads/dev"
+          },
+          "code": "echo github.event_name: push\necho github.sha: ddc8213dc066decb57c6ef6445bede9f19d5f6a8\necho github.repository: superfluid-finance/protocol-monorepo\necho github.ref: \"$GITHUB_REF\"\necho github.head_ref: \"$HEAD_REF\"\necho github.base_ref: ",
+          "commands": [
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "github.event_name:"
+                },
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "push"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "github.sha:"
+                },
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "ddc8213dc066decb57c6ef6445bede9f19d5f6a8"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "github.repository:"
+                },
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "superfluid-finance/protocol-monorepo"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "github.ref:"
+                },
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"$GITHUB_REF\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "github.head_ref:"
+                },
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"$HEAD_REF\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "github.base_ref:"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:49:32.703000",
+          "duration_sec": 36.124371
+        },
+        {
+          "type": "shell",
+          "env": {
+            "POLYGON_MAINNET_PROVIDER_URL": "***",
+            "SUBGRAPH_RELEASE_TAG": "dev"
+          },
+          "code": "yarn install --frozen-lockfile\nyarn lint\necho \"FOUNDRY_PROFILE=ci\" >> $GITHUB_ENV\necho \"FOUNDRY_SOLC_VERSION=$SOLC\" >> $GITHUB_ENV\nyarn build\nyarn test",
+          "commands": [
+            {
+              "annotations": [
+                "SC-YARN-INSTALL"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-YARN-F-FROZEN-LOCKFILE"
+                  ],
+                  "content": "--frozen-lockfile"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-YARN-LINT"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT"
+              ],
+              "args": [
+                {
+                  "content": "lint"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"FOUNDRY_PROFILE=ci\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"FOUNDRY_SOLC_VERSION=$SOLC\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-YARN-RUN-SCRIPT"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "RUN_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-YARN-RUN-SCRIPT-SCRIPT"
+                  ],
+                  "content": "build"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-YARN-INSTALL"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "test"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:50:08.827000",
+          "duration_sec": 1919.562832
+        }
+      ]
+    },
+    {
+      "file": "1_Build and Test Automation Contracts (Canary Branch)  Test.txt",
+      "total_lines": 1828,
+      "log_size": 172553,
+      "token_permissions": {
+        "Contents": "read",
+        "Metadata": "read",
+        "Packages": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231025.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "superfluid-finance/protocol-monorepo",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-30 16:49:26.056000",
+          "duration_sec": 1.882115
+        },
+        {
+          "type": "action",
+          "repository": "cachix",
+          "action": "install-nix-action",
+          "version": "v19",
+          "sha": "5c11eae19dba042788936d4f1c9685fdd814ac49",
+          "with": {
+            "github_access_token": "***"
+          },
+          "env": {},
+          "start_date": "2023-10-30 16:49:27.938000",
+          "duration_sec": 0.037873
+        },
+        {
+          "type": "shell",
+          "env": {
+            "INPUT_EXTRA_NIX_CONFIG": "",
+            "INPUT_GITHUB_ACCESS_TOKEN": "***",
+            "INPUT_INSTALL_OPTIONS": "",
+            "INPUT_INSTALL_URL": "",
+            "INPUT_NIX_PATH": "",
+            "GITHUB_TOKEN": "***"
+          },
+          "code": "/home/runner/work/_actions/cachix/install-nix-action/v19/install-nix.sh",
+          "commands": [
+            {
+              "command": "/home/runner/work/_actions/cachix/install-nix-action/v19/install-nix.sh"
+            }
+          ],
+          "start_date": "2023-10-30 16:49:27.976000",
+          "duration_sec": 5.843237
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "yarn install --frozen-lockfile\nyarn lint\nyarn build",
+          "commands": [
+            {
+              "annotations": [
+                "SC-YARN-INSTALL"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-YARN-F-FROZEN-LOCKFILE"
+                  ],
+                  "content": "--frozen-lockfile"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-YARN-LINT"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT"
+              ],
+              "args": [
+                {
+                  "content": "lint"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-YARN-RUN-SCRIPT"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "RUN_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-YARN-RUN-SCRIPT-SCRIPT"
+                  ],
+                  "content": "build"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:49:33.819000",
+          "duration_sec": 676.949439
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "echo \"FOUNDRY_PROFILE=ci\" >> $GITHUB_ENV\necho \"FOUNDRY_SOLC_VERSION=$SOLC\" >> $GITHUB_ENV\nyarn workspace scheduler test",
+          "commands": [
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"FOUNDRY_PROFILE=ci\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"FOUNDRY_SOLC_VERSION=$SOLC\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-YARN-INSTALL"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "workspace"
+                },
+                {
+                  "content": "scheduler"
+                },
+                {
+                  "content": "test"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 17:00:50.769000",
+          "duration_sec": 34.78408
+        },
+        {
+          "type": "shell",
+          "env": {
+            "FOUNDRY_PROFILE": "ci",
+            "FOUNDRY_SOLC_VERSION": "/nix/store/is9hy5yvmrz6w21qn39708dkix7skih0-solc-static-0.8.19/bin/solc-0.8.19"
+          },
+          "code": "echo \"FOUNDRY_PROFILE=ci\" >> $GITHUB_ENV\necho \"FOUNDRY_SOLC_VERSION=$SOLC\" >> $GITHUB_ENV\nyarn workspace autowrap test",
+          "commands": [
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"FOUNDRY_PROFILE=ci\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"FOUNDRY_SOLC_VERSION=$SOLC\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-YARN-INSTALL"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "workspace"
+                },
+                {
+                  "content": "autowrap"
+                },
+                {
+                  "content": "test"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 17:01:25.553000",
+          "duration_sec": 29.165696
+        }
+      ]
+    },
+    {
+      "file": "1_Build and test essential packages of dev branch (20).txt",
+      "total_lines": 42438,
+      "log_size": 3417460,
+      "token_permissions": {
+        "Contents": "read",
+        "Metadata": "read",
+        "Packages": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231025.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "submodules": "recursive",
+            "repository": "superfluid-finance/protocol-monorepo",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-30 16:49:23.581000",
+          "duration_sec": 4.64363
+        },
+        {
+          "type": "action",
+          "repository": "cachix",
+          "action": "install-nix-action",
+          "version": "v19",
+          "sha": "5c11eae19dba042788936d4f1c9685fdd814ac49",
+          "with": {
+            "github_access_token": "***"
+          },
+          "env": {},
+          "start_date": "2023-10-30 16:49:28.225000",
+          "duration_sec": 0.032569
+        },
+        {
+          "type": "shell",
+          "env": {
+            "INPUT_EXTRA_NIX_CONFIG": "",
+            "INPUT_GITHUB_ACCESS_TOKEN": "***",
+            "INPUT_INSTALL_OPTIONS": "",
+            "INPUT_INSTALL_URL": "",
+            "INPUT_NIX_PATH": "",
+            "GITHUB_TOKEN": "***"
+          },
+          "code": "/home/runner/work/_actions/cachix/install-nix-action/v19/install-nix.sh",
+          "commands": [
+            {
+              "command": "/home/runner/work/_actions/cachix/install-nix-action/v19/install-nix.sh"
+            }
+          ],
+          "start_date": "2023-10-30 16:49:28.257000",
+          "duration_sec": 5.531224
+        },
+        {
+          "type": "shell",
+          "env": {
+            "HEAD_REF": "",
+            "GITHUB_REF": "refs/heads/dev"
+          },
+          "code": "echo github.event_name: push\necho github.sha: ddc8213dc066decb57c6ef6445bede9f19d5f6a8\necho github.repository: superfluid-finance/protocol-monorepo\necho github.ref: \"$GITHUB_REF\"\necho github.head_ref: \"$HEAD_REF\"\necho github.base_ref: ",
+          "commands": [
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "github.event_name:"
+                },
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "push"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "github.sha:"
+                },
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "ddc8213dc066decb57c6ef6445bede9f19d5f6a8"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "github.repository:"
+                },
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "superfluid-finance/protocol-monorepo"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "github.ref:"
+                },
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"$GITHUB_REF\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "github.head_ref:"
+                },
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"$HEAD_REF\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "github.base_ref:"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:49:33.788000",
+          "duration_sec": 43.766776
+        },
+        {
+          "type": "shell",
+          "env": {
+            "POLYGON_MAINNET_PROVIDER_URL": "***",
+            "SUBGRAPH_RELEASE_TAG": "dev"
+          },
+          "code": "yarn install --frozen-lockfile\nyarn lint\necho \"FOUNDRY_PROFILE=ci\" >> $GITHUB_ENV\necho \"FOUNDRY_SOLC_VERSION=$SOLC\" >> $GITHUB_ENV\nyarn build\nyarn test",
+          "commands": [
+            {
+              "annotations": [
+                "SC-YARN-INSTALL"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-YARN-F-FROZEN-LOCKFILE"
+                  ],
+                  "content": "--frozen-lockfile"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-YARN-LINT"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT"
+              ],
+              "args": [
+                {
+                  "content": "lint"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"FOUNDRY_PROFILE=ci\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"FOUNDRY_SOLC_VERSION=$SOLC\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-YARN-RUN-SCRIPT"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "RUN_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-YARN-RUN-SCRIPT-SCRIPT"
+                  ],
+                  "content": "build"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-YARN-INSTALL"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "test"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:50:17.555000",
+          "duration_sec": 2068.074337
+        }
+      ]
+    },
+    {
+      "file": "0_Build and Test SDK-Core (Development Branch)  Test SDK-Cor.txt",
+      "total_lines": 2575,
+      "log_size": 228546,
+      "token_permissions": {
+        "Contents": "read",
+        "Metadata": "read",
+        "Packages": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231025.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "superfluid-finance/protocol-monorepo",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {
+            "ethereum-contracts-working-directory": "./packages/ethereum-contracts",
+            "subgraph-working-directory": "./packages/subgraph",
+            "sdk-core-working-directory": "./packages/sdk-core"
+          },
+          "start_date": "2023-10-30 16:49:26.891000",
+          "duration_sec": 1.824913
+        },
+        {
+          "type": "action",
+          "repository": "cachix",
+          "action": "install-nix-action",
+          "version": "v19",
+          "sha": "5c11eae19dba042788936d4f1c9685fdd814ac49",
+          "with": {
+            "github_access_token": "***"
+          },
+          "env": {
+            "ethereum-contracts-working-directory": "./packages/ethereum-contracts",
+            "subgraph-working-directory": "./packages/subgraph",
+            "sdk-core-working-directory": "./packages/sdk-core"
+          },
+          "start_date": "2023-10-30 16:49:28.716000",
+          "duration_sec": 0.037518
+        },
+        {
+          "type": "shell",
+          "env": {
+            "ethereum-contracts-working-directory": "./packages/ethereum-contracts",
+            "subgraph-working-directory": "./packages/subgraph",
+            "sdk-core-working-directory": "./packages/sdk-core",
+            "INPUT_EXTRA_NIX_CONFIG": "",
+            "INPUT_GITHUB_ACCESS_TOKEN": "***",
+            "INPUT_INSTALL_OPTIONS": "",
+            "INPUT_INSTALL_URL": "",
+            "INPUT_NIX_PATH": "",
+            "GITHUB_TOKEN": "***"
+          },
+          "code": "/home/runner/work/_actions/cachix/install-nix-action/v19/install-nix.sh",
+          "commands": [
+            {
+              "command": "/home/runner/work/_actions/cachix/install-nix-action/v19/install-nix.sh"
+            }
+          ],
+          "start_date": "2023-10-30 16:49:28.754000",
+          "duration_sec": 5.088175
+        },
+        {
+          "type": "shell",
+          "env": {
+            "ethereum-contracts-working-directory": "./packages/ethereum-contracts",
+            "subgraph-working-directory": "./packages/subgraph",
+            "sdk-core-working-directory": "./packages/sdk-core"
+          },
+          "code": "yarn install --frozen-lockfile",
+          "commands": [
+            {
+              "annotations": [
+                "SC-YARN-INSTALL"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-YARN-F-FROZEN-LOCKFILE"
+                  ],
+                  "content": "--frozen-lockfile"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:49:33.842000",
+          "duration_sec": 152.006258
+        },
+        {
+          "type": "shell",
+          "env": {
+            "ethereum-contracts-working-directory": "./packages/ethereum-contracts",
+            "subgraph-working-directory": "./packages/subgraph",
+            "sdk-core-working-directory": "./packages/sdk-core"
+          },
+          "code": "yarn build",
+          "commands": [
+            {
+              "annotations": [
+                "SC-YARN-RUN-SCRIPT"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "RUN_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-YARN-RUN-SCRIPT-SCRIPT"
+                  ],
+                  "content": "build"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:52:05.848000",
+          "duration_sec": 298.238904
+        },
+        {
+          "type": "shell",
+          "env": {
+            "ethereum-contracts-working-directory": "./packages/ethereum-contracts",
+            "subgraph-working-directory": "./packages/subgraph",
+            "sdk-core-working-directory": "./packages/sdk-core"
+          },
+          "code": "./tasks/startHardhatNode.sh start",
+          "commands": [
+            {
+              "command": "./tasks/startHardhatNode.sh",
+              "args": [
+                {
+                  "content": "start"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:57:04.087000",
+          "duration_sec": 5.566105
+        },
+        {
+          "type": "shell",
+          "env": {
+            "ethereum-contracts-working-directory": "./packages/ethereum-contracts",
+            "subgraph-working-directory": "./packages/subgraph",
+            "sdk-core-working-directory": "./packages/sdk-core"
+          },
+          "code": "yarn build",
+          "commands": [
+            {
+              "annotations": [
+                "SC-YARN-RUN-SCRIPT"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "RUN_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-YARN-RUN-SCRIPT-SCRIPT"
+                  ],
+                  "content": "build"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:57:09.653000",
+          "duration_sec": 86.45647
+        },
+        {
+          "type": "shell",
+          "env": {
+            "ethereum-contracts-working-directory": "./packages/ethereum-contracts",
+            "subgraph-working-directory": "./packages/subgraph",
+            "sdk-core-working-directory": "./packages/sdk-core"
+          },
+          "code": "npx hardhat run dev-scripts/run-deploy-contracts-and-token.js --network localhost",
+          "commands": [
+            {
+              "command": "npx",
+              "args": [
+                {
+                  "content": "hardhat"
+                },
+                {
+                  "content": "run"
+                },
+                {
+                  "content": "dev-scripts/run-deploy-contracts-and-token.js"
+                },
+                {
+                  "content": "--network"
+                },
+                {
+                  "content": "localhost"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:58:36.110000",
+          "duration_sec": 10.550721
+        },
+        {
+          "type": "shell",
+          "env": {
+            "ethereum-contracts-working-directory": "./packages/ethereum-contracts",
+            "subgraph-working-directory": "./packages/subgraph",
+            "sdk-core-working-directory": "./packages/sdk-core"
+          },
+          "code": "yarn prepare-local",
+          "commands": [
+            {
+              "annotations": [
+                "SC-YARN-RUN-SCRIPT"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "RUN_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-YARN-RUN-SCRIPT-SCRIPT"
+                  ],
+                  "content": "prepare-local"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:58:46.660000",
+          "duration_sec": 5.158318
+        },
+        {
+          "type": "shell",
+          "env": {
+            "ethereum-contracts-working-directory": "./packages/ethereum-contracts",
+            "subgraph-working-directory": "./packages/subgraph",
+            "sdk-core-working-directory": "./packages/sdk-core"
+          },
+          "code": "chmod +x ./tasks/setup-graph-node.sh\n./tasks/setup-graph-node.sh",
+          "commands": [
+            {
+              "annotations": [
+                "SC-CHMOD"
+              ],
+              "command": "chmod",
+              "categories": [
+                "FILE_PERMISSIONS"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CHMOD-MODE"
+                  ],
+                  "content": "+x"
+                },
+                {
+                  "annotations": [
+                    "SC-CHMOD-PATH"
+                  ],
+                  "content": "./tasks/setup-graph-node.sh"
+                }
+              ]
+            },
+            {
+              "command": "./tasks/setup-graph-node.sh"
+            }
+          ],
+          "start_date": "2023-10-30 16:58:51.819000",
+          "duration_sec": 32.719102
+        },
+        {
+          "type": "shell",
+          "env": {
+            "ethereum-contracts-working-directory": "./packages/ethereum-contracts",
+            "subgraph-working-directory": "./packages/subgraph",
+            "sdk-core-working-directory": "./packages/sdk-core"
+          },
+          "code": "docker-compose up &",
+          "commands": [
+            {
+              "command": "docker-compose",
+              "args": [
+                {
+                  "content": "up"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:59:24.538000",
+          "duration_sec": 8.543282
+        },
+        {
+          "type": "shell",
+          "env": {
+            "ethereum-contracts-working-directory": "./packages/ethereum-contracts",
+            "subgraph-working-directory": "./packages/subgraph",
+            "sdk-core-working-directory": "./packages/sdk-core"
+          },
+          "code": "yarn build-and-deploy-local\n# artificial slow down to give the subgraph time to sync\nsleep 30",
+          "commands": [
+            {
+              "annotations": [
+                "SC-YARN-RUN-SCRIPT"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "RUN_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-YARN-RUN-SCRIPT-SCRIPT"
+                  ],
+                  "content": "build-and-deploy-local"
+                }
+              ]
+            },
+            {
+              "command": "sleep",
+              "args": [
+                {
+                  "content": "30"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:59:33.081000",
+          "duration_sec": 81.574725
+        },
+        {
+          "type": "shell",
+          "env": {
+            "ethereum-contracts-working-directory": "./packages/ethereum-contracts",
+            "subgraph-working-directory": "./packages/subgraph",
+            "sdk-core-working-directory": "./packages/sdk-core",
+            "SUBGRAPH_RELEASE_TAG": "local",
+            "SUBGRAPH_ENDPOINT": "http://localhost:8000/subgraphs/name/superfluid-test"
+          },
+          "code": "yarn generate-graphql-schema:local\n./tasks/setupTestEnvironment.sh\nnpx hardhat test --network localhost",
+          "commands": [
+            {
+              "annotations": [
+                "SC-YARN-RUN-SCRIPT"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "RUN_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-YARN-RUN-SCRIPT-SCRIPT"
+                  ],
+                  "content": "generate-graphql-schema:local"
+                }
+              ]
+            },
+            {
+              "command": "./tasks/setupTestEnvironment.sh"
+            },
+            {
+              "command": "npx",
+              "args": [
+                {
+                  "content": "hardhat"
+                },
+                {
+                  "content": "test"
+                },
+                {
+                  "content": "--network"
+                },
+                {
+                  "content": "localhost"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 17:00:54.656000",
+          "duration_sec": 320.974663
+        }
+      ]
+    },
+    {
+      "file": "0_Publish canary packages to registries.txt",
+      "total_lines": 11189,
+      "log_size": 1905101,
+      "token_permissions": {
+        "Actions": "write",
+        "Checks": "write",
+        "Contents": "write",
+        "Deployments": "write",
+        "Discussions": "write",
+        "Issues": "write",
+        "Metadata": "read",
+        "Packages": "write",
+        "Pages": "write",
+        "PullRequests": "write",
+        "RepositoryProjects": "write",
+        "SecurityEvents": "write",
+        "Statuses": "write"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231025.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "superfluid-finance/protocol-monorepo",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-30 17:41:23.668000",
+          "duration_sec": 1.55935
+        },
+        {
+          "type": "action",
+          "repository": "cachix",
+          "action": "install-nix-action",
+          "version": "v19",
+          "sha": "5c11eae19dba042788936d4f1c9685fdd814ac49",
+          "with": {
+            "github_access_token": "***"
+          },
+          "env": {},
+          "start_date": "2023-10-30 17:41:25.228000",
+          "duration_sec": 0.032741
+        },
+        {
+          "type": "shell",
+          "env": {
+            "INPUT_EXTRA_NIX_CONFIG": "",
+            "INPUT_GITHUB_ACCESS_TOKEN": "***",
+            "INPUT_INSTALL_OPTIONS": "",
+            "INPUT_INSTALL_URL": "",
+            "INPUT_NIX_PATH": "",
+            "GITHUB_TOKEN": "***"
+          },
+          "code": "/home/runner/work/_actions/cachix/install-nix-action/v19/install-nix.sh",
+          "commands": [
+            {
+              "command": "/home/runner/work/_actions/cachix/install-nix-action/v19/install-nix.sh"
+            }
+          ],
+          "start_date": "2023-10-30 17:41:25.261000",
+          "duration_sec": 4.264478
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "yarn install --frozen-lockfile",
+          "commands": [
+            {
+              "annotations": [
+                "SC-YARN-INSTALL"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-YARN-F-FROZEN-LOCKFILE"
+                  ],
+                  "content": "--frozen-lockfile"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 17:41:29.525000",
+          "duration_sec": 131.115332
+        },
+        {
+          "type": "shell",
+          "env": {
+            "SUBGRAPH_RELEASE_TAG": "dev"
+          },
+          "code": "yarn --cwd packages/sdk-core set-default-subgraph-release-tag\nyarn build",
+          "commands": [
+            {
+              "annotations": [
+                "SC-YARN-RUN-SCRIPT"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "RUN_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-YARN-RUN-SCRIPT-CWD"
+                  ],
+                  "content": "--cwd packages/sdk-core"
+                },
+                {
+                  "annotations": [
+                    "SC-YARN-ARG"
+                  ],
+                  "content": "set-default-subgraph-release-tag"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-YARN-RUN-SCRIPT"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "RUN_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-YARN-RUN-SCRIPT-SCRIPT"
+                  ],
+                  "content": "build"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 17:43:40.640000",
+          "duration_sec": 340.758554
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "shortRev=$(git rev-parse --short ddc8213dc066decb57c6ef6445bede9f19d5f6a8)\npreId=dev.${shortRev}\nyarn lerna version prerelease --yes --no-git-tag-version --preid \"${preId}\"",
+          "commands": [
+            {
+              "annotations": [
+                "SC-YARN-RUN-SCRIPT"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "RUN_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-YARN-RUN-SCRIPT-SCRIPT"
+                  ],
+                  "content": "lerna"
+                },
+                {
+                  "annotations": [
+                    "SC-YARN-ARG"
+                  ],
+                  "content": "version"
+                },
+                {
+                  "annotations": [
+                    "SC-YARN-ARG"
+                  ],
+                  "content": "prerelease"
+                },
+                {
+                  "annotations": [
+                    "SC-YARN-ARG"
+                  ],
+                  "content": "--yes"
+                },
+                {
+                  "annotations": [
+                    "SC-YARN-ARG"
+                  ],
+                  "content": "--no-git-tag-version"
+                },
+                {
+                  "annotations": [
+                    "SC-YARN-ARG"
+                  ],
+                  "content": "--preid"
+                },
+                {
+                  "annotations": [
+                    "SC-YARN-ARG"
+                  ],
+                  "content": "\"${preId}\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-GIT-REV-PARSE"
+              ],
+              "command": "git",
+              "categories": [
+                "VERSION_CONTROL"
+              ],
+              "args": [
+                {
+                  "content": "rev-parse"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-F-SHORT"
+                  ],
+                  "content": "--short"
+                },
+                {
+                  "annotations": [
+                    "SC-GIT-REV-PARSE-TARGET"
+                  ],
+                  "content": "ddc8213dc066decb57c6ef6445bede9f19d5f6a8"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 17:49:21.399000",
+          "duration_sec": 5.559905
+        },
+        {
+          "type": "shell",
+          "env": {
+            "GITHUB_TOKEN": "***",
+            "NPMJS_TOKEN": "***"
+          },
+          "code": "tasks/npm-publish.sh packages/ethereum-contracts/ dev --verbose\ntasks/npm-publish.sh packages/sdk-core/ dev --verbose\ntasks/npm-publish.sh packages/sdk-redux/ dev --verbose\ntasks/npm-publish.sh packages/metadata/ dev --verbose",
+          "commands": [
+            {
+              "command": "tasks/npm-publish.sh",
+              "args": [
+                {
+                  "content": "packages/ethereum-contracts/"
+                },
+                {
+                  "content": "dev"
+                },
+                {
+                  "content": "--verbose"
+                }
+              ]
+            },
+            {
+              "command": "tasks/npm-publish.sh",
+              "args": [
+                {
+                  "content": "packages/sdk-core/"
+                },
+                {
+                  "content": "dev"
+                },
+                {
+                  "content": "--verbose"
+                }
+              ]
+            },
+            {
+              "command": "tasks/npm-publish.sh",
+              "args": [
+                {
+                  "content": "packages/sdk-redux/"
+                },
+                {
+                  "content": "dev"
+                },
+                {
+                  "content": "--verbose"
+                }
+              ]
+            },
+            {
+              "command": "tasks/npm-publish.sh",
+              "args": [
+                {
+                  "content": "packages/metadata/"
+                },
+                {
+                  "content": "dev"
+                },
+                {
+                  "content": "--verbose"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 17:49:26.959000",
+          "duration_sec": 72.484036
+        }
+      ]
+    },
+    {
+      "file": "0_Coverage test ethereum-contracts (Canary Branch)  Test eth.txt",
+      "total_lines": 41772,
+      "log_size": 3369433,
+      "token_permissions": {
+        "Contents": "read",
+        "Metadata": "read",
+        "Packages": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231025.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "submodules": "recursive",
+            "repository": "superfluid-finance/protocol-monorepo",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-30 16:49:37.052000",
+          "duration_sec": 5.462297
+        },
+        {
+          "type": "action",
+          "repository": "cachix",
+          "action": "install-nix-action",
+          "version": "v19",
+          "sha": "5c11eae19dba042788936d4f1c9685fdd814ac49",
+          "with": {
+            "github_access_token": "***"
+          },
+          "env": {},
+          "start_date": "2023-10-30 16:49:42.514000",
+          "duration_sec": 0.027891
+        },
+        {
+          "type": "shell",
+          "env": {
+            "INPUT_EXTRA_NIX_CONFIG": "",
+            "INPUT_GITHUB_ACCESS_TOKEN": "***",
+            "INPUT_INSTALL_OPTIONS": "",
+            "INPUT_INSTALL_URL": "",
+            "INPUT_NIX_PATH": "",
+            "GITHUB_TOKEN": "***"
+          },
+          "code": "/home/runner/work/_actions/cachix/install-nix-action/v19/install-nix.sh",
+          "commands": [
+            {
+              "command": "/home/runner/work/_actions/cachix/install-nix-action/v19/install-nix.sh"
+            }
+          ],
+          "start_date": "2023-10-30 16:49:42.542000",
+          "duration_sec": 4.477691
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "node --version\nyarn --version\nsolc --version",
+          "commands": [
+            {
+              "annotations": [
+                "SC-NODE"
+              ],
+              "command": "node",
+              "categories": [
+                "DEVELOPMENT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-NODE-VERSION"
+                  ],
+                  "content": "--version"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-YARN-RUN-SCRIPT"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "RUN_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "--version"
+                }
+              ]
+            },
+            {
+              "command": "solc",
+              "args": [
+                {
+                  "content": "--version"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:49:47.020000",
+          "duration_sec": 37.18654
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "yarn install --frozen-lockfile\nnpx tsc --version\nnpx hardhat --version",
+          "commands": [
+            {
+              "annotations": [
+                "SC-YARN-INSTALL"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-YARN-F-FROZEN-LOCKFILE"
+                  ],
+                  "content": "--frozen-lockfile"
+                }
+              ]
+            },
+            {
+              "command": "npx",
+              "args": [
+                {
+                  "content": "tsc"
+                },
+                {
+                  "content": "--version"
+                }
+              ]
+            },
+            {
+              "command": "npx",
+              "args": [
+                {
+                  "content": "hardhat"
+                },
+                {
+                  "content": "--version"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:50:24.206000",
+          "duration_sec": 94.921426
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "yarn lint\nyarn build",
+          "commands": [
+            {
+              "annotations": [
+                "SC-YARN-LINT"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT"
+              ],
+              "args": [
+                {
+                  "content": "lint"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-YARN-RUN-SCRIPT"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "RUN_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-YARN-RUN-SCRIPT-SCRIPT"
+                  ],
+                  "content": "build"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:51:59.128000",
+          "duration_sec": 382.448027
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "echo \"FOUNDRY_PROFILE=ci\" >> $GITHUB_ENV\necho \"FOUNDRY_SOLC_VERSION=$SOLC\" >> $GITHUB_ENV\nyarn test-coverage",
+          "commands": [
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"FOUNDRY_PROFILE=ci\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"FOUNDRY_SOLC_VERSION=$SOLC\""
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-YARN-RUN-SCRIPT"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "RUN_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-YARN-RUN-SCRIPT-SCRIPT"
+                  ],
+                  "content": "test-coverage"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:58:21.576000",
+          "duration_sec": 2538.858666
+        },
+        {
+          "type": "shell",
+          "env": {
+            "FOUNDRY_PROFILE": "ci",
+            "FOUNDRY_SOLC_VERSION": "/nix/store/is9hy5yvmrz6w21qn39708dkix7skih0-solc-static-0.8.19/bin/solc-0.8.19"
+          },
+          "code": "./tasks/coverage-cleanup.sh",
+          "commands": [
+            {
+              "command": "./tasks/coverage-cleanup.sh"
+            }
+          ],
+          "start_date": "2023-10-30 17:40:40.435000",
+          "duration_sec": 0.749195
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "upload-artifact",
+          "version": "v3",
+          "sha": "a8a3f3ad30e3422c9c7b888a15615d19a852ae32",
+          "with": {
+            "name": "ethereum-contracts-coverage",
+            "path": "packages/ethereum-contracts/coverage/",
+            "if-no-files-found": "warn"
+          },
+          "env": {
+            "FOUNDRY_PROFILE": "ci",
+            "FOUNDRY_SOLC_VERSION": "/nix/store/is9hy5yvmrz6w21qn39708dkix7skih0-solc-static-0.8.19/bin/solc-0.8.19"
+          },
+          "start_date": "2023-10-30 17:40:41.184000",
+          "duration_sec": 15.956394
+        }
+      ]
+    },
+    {
+      "file": "1_Build and Test Spec Haskell (Canary Branch)  Test Spec Has.txt",
+      "total_lines": 2057,
+      "log_size": 224318,
+      "token_permissions": {
+        "Contents": "read",
+        "Metadata": "read",
+        "Packages": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231025.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "superfluid-finance/protocol-monorepo",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-30 16:49:26.473000",
+          "duration_sec": 1.835554
+        },
+        {
+          "type": "action",
+          "repository": "cachix",
+          "action": "install-nix-action",
+          "version": "v19",
+          "sha": "5c11eae19dba042788936d4f1c9685fdd814ac49",
+          "with": {
+            "github_access_token": "***"
+          },
+          "env": {},
+          "start_date": "2023-10-30 16:49:28.308000",
+          "duration_sec": 0.032632
+        },
+        {
+          "type": "shell",
+          "env": {
+            "INPUT_EXTRA_NIX_CONFIG": "",
+            "INPUT_GITHUB_ACCESS_TOKEN": "***",
+            "INPUT_INSTALL_OPTIONS": "",
+            "INPUT_INSTALL_URL": "",
+            "INPUT_NIX_PATH": "",
+            "GITHUB_TOKEN": "***"
+          },
+          "code": "/home/runner/work/_actions/cachix/install-nix-action/v19/install-nix.sh",
+          "commands": [
+            {
+              "command": "/home/runner/work/_actions/cachix/install-nix-action/v19/install-nix.sh"
+            }
+          ],
+          "start_date": "2023-10-30 16:49:28.341000",
+          "duration_sec": 5.414412
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "set -xe\ncabal --version\nghc --version",
+          "commands": [
+            {
+              "annotations": [
+                "SC-SET"
+              ],
+              "command": "set",
+              "categories": [
+                "ENVIRONMENT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-SET-F-X",
+                    "SC-SET-F-E"
+                  ],
+                  "content": "-xe"
+                }
+              ]
+            },
+            {
+              "command": "cabal",
+              "args": [
+                {
+                  "content": "--version"
+                }
+              ]
+            },
+            {
+              "command": "ghc",
+              "args": [
+                {
+                  "content": "--version"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:49:33.755000",
+          "duration_sec": 50.912628
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "cabal v2-update",
+          "commands": [
+            {
+              "command": "cabal",
+              "args": [
+                {
+                  "content": "v2-update"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:50:24.668000",
+          "duration_sec": 22.145492
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "cd packages/spec-haskell\nmake lint",
+          "commands": [
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "packages/spec-haskell"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "lint"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:50:46.814000",
+          "duration_sec": 6.43317
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "cd packages/spec-haskell\nmake build",
+          "commands": [
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "packages/spec-haskell"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "build"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:50:53.247000",
+          "duration_sec": 31.88025
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "cd packages/spec-haskell\nmake test",
+          "commands": [
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "packages/spec-haskell"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "test"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:51:25.127000",
+          "duration_sec": 106.025616
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "cd packages/spec-haskell\nmake docs-haddock",
+          "commands": [
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "packages/spec-haskell"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-MAKE"
+              ],
+              "command": "make",
+              "categories": [
+                "BUILD_SYSTEM",
+                "BUILD_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-MAKE-TARGET"
+                  ],
+                  "content": "docs-haddock"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:53:11.153000",
+          "duration_sec": 51.36429
+        }
+      ]
+    },
+    {
+      "file": "0_Hot Fuzz (Development Branch)  Test HotFuzz - Linux.txt",
+      "total_lines": 1433,
+      "log_size": 133217,
+      "token_permissions": {
+        "Contents": "read",
+        "Metadata": "read",
+        "Packages": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231025.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "superfluid-finance/protocol-monorepo",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-30 16:49:25.991000",
+          "duration_sec": 1.585916
+        },
+        {
+          "type": "action",
+          "repository": "cachix",
+          "action": "install-nix-action",
+          "version": "v19",
+          "sha": "5c11eae19dba042788936d4f1c9685fdd814ac49",
+          "with": {
+            "github_access_token": "***"
+          },
+          "env": {},
+          "start_date": "2023-10-30 16:49:27.577000",
+          "duration_sec": 0.038474
+        },
+        {
+          "type": "shell",
+          "env": {
+            "INPUT_EXTRA_NIX_CONFIG": "",
+            "INPUT_GITHUB_ACCESS_TOKEN": "***",
+            "INPUT_INSTALL_OPTIONS": "",
+            "INPUT_INSTALL_URL": "",
+            "INPUT_NIX_PATH": "",
+            "GITHUB_TOKEN": "***"
+          },
+          "code": "/home/runner/work/_actions/cachix/install-nix-action/v19/install-nix.sh",
+          "commands": [
+            {
+              "command": "/home/runner/work/_actions/cachix/install-nix-action/v19/install-nix.sh"
+            }
+          ],
+          "start_date": "2023-10-30 16:49:27.615000",
+          "duration_sec": 5.514412
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "set -xe\nslither --version\nechidna --version",
+          "commands": [
+            {
+              "annotations": [
+                "SC-SET"
+              ],
+              "command": "set",
+              "categories": [
+                "ENVIRONMENT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-SET-F-X",
+                    "SC-SET-F-E"
+                  ],
+                  "content": "-xe"
+                }
+              ]
+            },
+            {
+              "command": "slither",
+              "args": [
+                {
+                  "content": "--version"
+                }
+              ]
+            },
+            {
+              "command": "echidna",
+              "args": [
+                {
+                  "content": "--version"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:49:33.129000",
+          "duration_sec": 34.112246
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "yarn install",
+          "commands": [
+            {
+              "annotations": [
+                "SC-YARN-INSTALL"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:50:07.242000",
+          "duration_sec": 121.939123
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "cd packages/hot-fuzz\necho \"testLimit: 1000\" >> echidna.yaml\n./hot-fuzz contracts/superfluid-tests/SuperHotFuzz.yaml",
+          "commands": [
+            {
+              "annotations": [
+                "SC-CD"
+              ],
+              "command": "cd",
+              "categories": [
+                "NAVIGATION",
+                "FILE_SYSTEM"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-CD-PATH"
+                  ],
+                  "content": "packages/hot-fuzz"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-ECHO"
+              ],
+              "command": "echo",
+              "categories": [
+                "PRINT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-ECHO-ITEM"
+                  ],
+                  "content": "\"testLimit: 1000\""
+                }
+              ]
+            },
+            {
+              "command": "./hot-fuzz",
+              "args": [
+                {
+                  "content": "contracts/superfluid-tests/SuperHotFuzz.yaml"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:52:09.181000",
+          "duration_sec": 108.147399
+        }
+      ]
+    },
+    {
+      "file": "0_Build and Test Subgraph (Development Branch)  Run subgraph (1).txt",
+      "total_lines": 1959,
+      "log_size": 182006,
+      "token_permissions": {
+        "Contents": "read",
+        "Metadata": "read",
+        "Packages": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231025.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "superfluid-finance/protocol-monorepo",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {
+            "subgraph-working-directory": "./packages/subgraph"
+          },
+          "start_date": "2023-10-30 16:49:26.926000",
+          "duration_sec": 1.830293
+        },
+        {
+          "type": "action",
+          "repository": "cachix",
+          "action": "install-nix-action",
+          "version": "v19",
+          "sha": "5c11eae19dba042788936d4f1c9685fdd814ac49",
+          "with": {
+            "github_access_token": "***"
+          },
+          "env": {
+            "subgraph-working-directory": "./packages/subgraph"
+          },
+          "start_date": "2023-10-30 16:49:28.756000",
+          "duration_sec": 0.048262
+        },
+        {
+          "type": "shell",
+          "env": {
+            "subgraph-working-directory": "./packages/subgraph",
+            "INPUT_EXTRA_NIX_CONFIG": "",
+            "INPUT_GITHUB_ACCESS_TOKEN": "***",
+            "INPUT_INSTALL_OPTIONS": "",
+            "INPUT_INSTALL_URL": "",
+            "INPUT_NIX_PATH": "",
+            "GITHUB_TOKEN": "***"
+          },
+          "code": "/home/runner/work/_actions/cachix/install-nix-action/v19/install-nix.sh",
+          "commands": [
+            {
+              "command": "/home/runner/work/_actions/cachix/install-nix-action/v19/install-nix.sh"
+            }
+          ],
+          "start_date": "2023-10-30 16:49:28.804000",
+          "duration_sec": 5.677095
+        },
+        {
+          "type": "shell",
+          "env": {
+            "subgraph-working-directory": "./packages/subgraph"
+          },
+          "code": "set -ex\nnode --version\nyarn --version",
+          "commands": [
+            {
+              "annotations": [
+                "SC-SET"
+              ],
+              "command": "set",
+              "categories": [
+                "ENVIRONMENT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-SET-F-E",
+                    "SC-SET-F-X"
+                  ],
+                  "content": "-ex"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-NODE"
+              ],
+              "command": "node",
+              "categories": [
+                "DEVELOPMENT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-NODE-VERSION"
+                  ],
+                  "content": "--version"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-YARN-RUN-SCRIPT"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "RUN_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "--version"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:49:34.481000",
+          "duration_sec": 49.265073
+        },
+        {
+          "type": "shell",
+          "env": {
+            "subgraph-working-directory": "./packages/subgraph"
+          },
+          "code": "set -ex\nyarn install --frozen-lockfile\nnpx tsc --version",
+          "commands": [
+            {
+              "annotations": [
+                "SC-SET"
+              ],
+              "command": "set",
+              "categories": [
+                "ENVIRONMENT"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-SET-F-E",
+                    "SC-SET-F-X"
+                  ],
+                  "content": "-ex"
+                }
+              ]
+            },
+            {
+              "annotations": [
+                "SC-YARN-INSTALL"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-YARN-F-FROZEN-LOCKFILE"
+                  ],
+                  "content": "--frozen-lockfile"
+                }
+              ]
+            },
+            {
+              "command": "npx",
+              "args": [
+                {
+                  "content": "tsc"
+                },
+                {
+                  "content": "--version"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:50:23.746000",
+          "duration_sec": 137.223246
+        },
+        {
+          "type": "shell",
+          "env": {
+            "subgraph-working-directory": "./packages/subgraph"
+          },
+          "code": "yarn build",
+          "commands": [
+            {
+              "annotations": [
+                "SC-YARN-RUN-SCRIPT"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "RUN_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-YARN-RUN-SCRIPT-SCRIPT"
+                  ],
+                  "content": "build"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:52:40.970000",
+          "duration_sec": 333.376089
+        },
+        {
+          "type": "shell",
+          "env": {
+            "subgraph-working-directory": "./packages/subgraph"
+          },
+          "code": "npx ts-node scripts/buildNetworkConfig.ts polygon-mainnet",
+          "commands": [
+            {
+              "command": "npx",
+              "args": [
+                {
+                  "content": "ts-node"
+                },
+                {
+                  "content": "scripts/buildNetworkConfig.ts"
+                },
+                {
+                  "content": "polygon-mainnet"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:58:14.346000",
+          "duration_sec": 4.875745
+        },
+        {
+          "type": "shell",
+          "env": {
+            "subgraph-working-directory": "./packages/subgraph"
+          },
+          "code": "yarn matchstick",
+          "commands": [
+            {
+              "annotations": [
+                "SC-YARN-RUN-SCRIPT"
+              ],
+              "command": "yarn",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "RUN_PACKAGES"
+              ],
+              "args": [
+                {
+                  "annotations": [
+                    "SC-YARN-RUN-SCRIPT-SCRIPT"
+                  ],
+                  "content": "matchstick"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:58:19.222000",
+          "duration_sec": 135.213924
+        }
+      ]
+    },
+    {
+      "file": "0_Checking what packages need to be built.txt",
+      "total_lines": 527,
+      "log_size": 40701,
+      "token_permissions": {
+        "Contents": "read",
+        "Metadata": "read",
+        "Packages": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231025.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v3",
+          "sha": "f43a0e5ff2bd294095638e18286ca9a3d1956744",
+          "with": {
+            "repository": "superfluid-finance/protocol-monorepo",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-10-30 16:49:22.272000",
+          "duration_sec": 2.213325
+        },
+        {
+          "type": "shell",
+          "env": {},
+          "code": "tasks/check-changeset.sh ddc8213dc066decb57c6ef6445bede9f19d5f6a8 dev",
+          "commands": [
+            {
+              "command": "tasks/check-changeset.sh",
+              "args": [
+                {
+                  "content": "ddc8213dc066decb57c6ef6445bede9f19d5f6a8"
+                },
+                {
+                  "content": "dev"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-10-30 16:49:24.486000",
+          "duration_sec": 0.884002
+        }
+      ]
+    }
+  ],
+  "total_logs_size": 17647757
+}

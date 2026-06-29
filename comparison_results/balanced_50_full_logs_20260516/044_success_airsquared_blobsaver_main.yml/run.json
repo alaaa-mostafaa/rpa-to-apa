@@ -1,0 +1,693 @@
+{
+  "_id": "airsquared/blobsaver_.github/workflows/main.yml_521_1",
+  "repository_name": "airsquared/blobsaver",
+  "workflow_path": ".github/workflows/main.yml",
+  "run_number": 521,
+  "run_attempt": 1,
+  "time_to_import": 280246.977932,
+  "metadata": {
+    "id": 6773952022,
+    "name": "CI",
+    "node_id": "WFR_kwLOCChMIc8AAAABk8JOFg",
+    "head_branch": "dependabot/gradle/org.junit.jupiter-junit-jupiter-5.10.1",
+    "head_sha": "97471ad46a7b3caaeff768042b993f21361c27c1",
+    "path": ".github/workflows/main.yml",
+    "display_title": "Bump org.junit.jupiter:junit-jupiter from 5.10.0 to 5.10.1",
+    "run_number": 521,
+    "event": "pull_request",
+    "status": "completed",
+    "conclusion": "success",
+    "workflow_id": 110862,
+    "check_suite_id": 17948533428,
+    "check_suite_node_id": "CS_kwDOCChMIc8AAAAELdDitA",
+    "url": "https://api.github.com/repos/airsquared/blobsaver/actions/runs/6773952022",
+    "html_url": "https://github.com/airsquared/blobsaver/actions/runs/6773952022",
+    "pull_requests": [
+      {
+        "url": "https://api.github.com/repos/airsquared/blobsaver/pulls/639",
+        "id": 1589025895,
+        "number": 639,
+        "head": {
+          "ref": "dependabot/gradle/org.junit.jupiter-junit-jupiter-5.10.1",
+          "sha": "97471ad46a7b3caaeff768042b993f21361c27c1",
+          "repo": {
+            "id": 136858657,
+            "url": "https://api.github.com/repos/airsquared/blobsaver",
+            "name": "blobsaver"
+          }
+        },
+        "base": {
+          "ref": "master",
+          "sha": "46384b9a595722bf3cb5ce5122c44159f1cb6e83",
+          "repo": {
+            "id": 136858657,
+            "url": "https://api.github.com/repos/airsquared/blobsaver",
+            "name": "blobsaver"
+          }
+        }
+      }
+    ],
+    "created_at": "2023-11-06T16:55:15Z",
+    "updated_at": "2023-11-06T16:59:27Z",
+    "actor": {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+      "html_url": "https://github.com/apps/dependabot",
+      "followers_url": "https://api.github.com/users/dependabot%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/dependabot%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dependabot%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dependabot%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dependabot%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/dependabot%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/dependabot%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/dependabot%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dependabot%5Bbot%5D/received_events",
+      "type": "Bot",
+      "site_admin": false
+    },
+    "run_attempt": 1,
+    "referenced_workflows": [],
+    "run_started_at": "2023-11-06T16:55:15Z",
+    "triggering_actor": {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+      "html_url": "https://github.com/apps/dependabot",
+      "followers_url": "https://api.github.com/users/dependabot%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/dependabot%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dependabot%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dependabot%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dependabot%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/dependabot%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/dependabot%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/dependabot%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dependabot%5Bbot%5D/received_events",
+      "type": "Bot",
+      "site_admin": false
+    },
+    "jobs_url": "https://api.github.com/repos/airsquared/blobsaver/actions/runs/6773952022/jobs",
+    "logs_url": "https://api.github.com/repos/airsquared/blobsaver/actions/runs/6773952022/logs",
+    "check_suite_url": "https://api.github.com/repos/airsquared/blobsaver/check-suites/17948533428",
+    "artifacts_url": "https://api.github.com/repos/airsquared/blobsaver/actions/runs/6773952022/artifacts",
+    "cancel_url": "https://api.github.com/repos/airsquared/blobsaver/actions/runs/6773952022/cancel",
+    "rerun_url": "https://api.github.com/repos/airsquared/blobsaver/actions/runs/6773952022/rerun",
+    "previous_attempt_url": null,
+    "workflow_url": "https://api.github.com/repos/airsquared/blobsaver/actions/workflows/110862",
+    "head_commit": {
+      "id": "97471ad46a7b3caaeff768042b993f21361c27c1",
+      "tree_id": "0c1ddfd402917803e1fad94c7b7f790a6bebd5b2",
+      "message": "Bump org.junit.jupiter:junit-jupiter from 5.10.0 to 5.10.1\n\nBumps [org.junit.jupiter:junit-jupiter](https://github.com/junit-team/junit5) from 5.10.0 to 5.10.1.\n- [Release notes](https://github.com/junit-team/junit5/releases)\n- [Commits](https://github.com/junit-team/junit5/compare/r5.10.0...r5.10.1)\n\n---\nupdated-dependencies:\n- dependency-name: org.junit.jupiter:junit-jupiter\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+      "timestamp": "2023-11-06T16:55:11Z",
+      "author": {
+        "name": "dependabot[bot]",
+        "email": "49699333+dependabot[bot]@users.noreply.github.com"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com"
+      }
+    },
+    "repository": {
+      "id": 136858657,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMzY4NTg2NTc=",
+      "name": "blobsaver",
+      "full_name": "airsquared/blobsaver",
+      "private": false,
+      "owner": {
+        "login": "airsquared",
+        "id": 36649395,
+        "node_id": "MDQ6VXNlcjM2NjQ5Mzk1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/36649395?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/airsquared",
+        "html_url": "https://github.com/airsquared",
+        "followers_url": "https://api.github.com/users/airsquared/followers",
+        "following_url": "https://api.github.com/users/airsquared/following{/other_user}",
+        "gists_url": "https://api.github.com/users/airsquared/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/airsquared/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/airsquared/subscriptions",
+        "organizations_url": "https://api.github.com/users/airsquared/orgs",
+        "repos_url": "https://api.github.com/users/airsquared/repos",
+        "events_url": "https://api.github.com/users/airsquared/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/airsquared/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/airsquared/blobsaver",
+      "description": "A cross-platform GUI and CLI app for automatically saving SHSH blobs",
+      "fork": false,
+      "url": "https://api.github.com/repos/airsquared/blobsaver",
+      "forks_url": "https://api.github.com/repos/airsquared/blobsaver/forks",
+      "keys_url": "https://api.github.com/repos/airsquared/blobsaver/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/airsquared/blobsaver/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/airsquared/blobsaver/teams",
+      "hooks_url": "https://api.github.com/repos/airsquared/blobsaver/hooks",
+      "issue_events_url": "https://api.github.com/repos/airsquared/blobsaver/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/airsquared/blobsaver/events",
+      "assignees_url": "https://api.github.com/repos/airsquared/blobsaver/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/airsquared/blobsaver/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/airsquared/blobsaver/tags",
+      "blobs_url": "https://api.github.com/repos/airsquared/blobsaver/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/airsquared/blobsaver/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/airsquared/blobsaver/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/airsquared/blobsaver/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/airsquared/blobsaver/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/airsquared/blobsaver/languages",
+      "stargazers_url": "https://api.github.com/repos/airsquared/blobsaver/stargazers",
+      "contributors_url": "https://api.github.com/repos/airsquared/blobsaver/contributors",
+      "subscribers_url": "https://api.github.com/repos/airsquared/blobsaver/subscribers",
+      "subscription_url": "https://api.github.com/repos/airsquared/blobsaver/subscription",
+      "commits_url": "https://api.github.com/repos/airsquared/blobsaver/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/airsquared/blobsaver/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/airsquared/blobsaver/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/airsquared/blobsaver/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/airsquared/blobsaver/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/airsquared/blobsaver/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/airsquared/blobsaver/merges",
+      "archive_url": "https://api.github.com/repos/airsquared/blobsaver/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/airsquared/blobsaver/downloads",
+      "issues_url": "https://api.github.com/repos/airsquared/blobsaver/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/airsquared/blobsaver/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/airsquared/blobsaver/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/airsquared/blobsaver/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/airsquared/blobsaver/labels{/name}",
+      "releases_url": "https://api.github.com/repos/airsquared/blobsaver/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/airsquared/blobsaver/deployments"
+    },
+    "head_repository": {
+      "id": 136858657,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMzY4NTg2NTc=",
+      "name": "blobsaver",
+      "full_name": "airsquared/blobsaver",
+      "private": false,
+      "owner": {
+        "login": "airsquared",
+        "id": 36649395,
+        "node_id": "MDQ6VXNlcjM2NjQ5Mzk1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/36649395?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/airsquared",
+        "html_url": "https://github.com/airsquared",
+        "followers_url": "https://api.github.com/users/airsquared/followers",
+        "following_url": "https://api.github.com/users/airsquared/following{/other_user}",
+        "gists_url": "https://api.github.com/users/airsquared/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/airsquared/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/airsquared/subscriptions",
+        "organizations_url": "https://api.github.com/users/airsquared/orgs",
+        "repos_url": "https://api.github.com/users/airsquared/repos",
+        "events_url": "https://api.github.com/users/airsquared/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/airsquared/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/airsquared/blobsaver",
+      "description": "A cross-platform GUI and CLI app for automatically saving SHSH blobs",
+      "fork": false,
+      "url": "https://api.github.com/repos/airsquared/blobsaver",
+      "forks_url": "https://api.github.com/repos/airsquared/blobsaver/forks",
+      "keys_url": "https://api.github.com/repos/airsquared/blobsaver/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/airsquared/blobsaver/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/airsquared/blobsaver/teams",
+      "hooks_url": "https://api.github.com/repos/airsquared/blobsaver/hooks",
+      "issue_events_url": "https://api.github.com/repos/airsquared/blobsaver/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/airsquared/blobsaver/events",
+      "assignees_url": "https://api.github.com/repos/airsquared/blobsaver/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/airsquared/blobsaver/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/airsquared/blobsaver/tags",
+      "blobs_url": "https://api.github.com/repos/airsquared/blobsaver/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/airsquared/blobsaver/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/airsquared/blobsaver/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/airsquared/blobsaver/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/airsquared/blobsaver/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/airsquared/blobsaver/languages",
+      "stargazers_url": "https://api.github.com/repos/airsquared/blobsaver/stargazers",
+      "contributors_url": "https://api.github.com/repos/airsquared/blobsaver/contributors",
+      "subscribers_url": "https://api.github.com/repos/airsquared/blobsaver/subscribers",
+      "subscription_url": "https://api.github.com/repos/airsquared/blobsaver/subscription",
+      "commits_url": "https://api.github.com/repos/airsquared/blobsaver/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/airsquared/blobsaver/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/airsquared/blobsaver/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/airsquared/blobsaver/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/airsquared/blobsaver/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/airsquared/blobsaver/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/airsquared/blobsaver/merges",
+      "archive_url": "https://api.github.com/repos/airsquared/blobsaver/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/airsquared/blobsaver/downloads",
+      "issues_url": "https://api.github.com/repos/airsquared/blobsaver/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/airsquared/blobsaver/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/airsquared/blobsaver/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/airsquared/blobsaver/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/airsquared/blobsaver/labels{/name}",
+      "releases_url": "https://api.github.com/repos/airsquared/blobsaver/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/airsquared/blobsaver/deployments"
+    }
+  },
+  "logs_archive": {
+    "path": "/data/logs/airsquared/blobsaver/CI_fe8e/521-1.tar.gz"
+  },
+  "total_logs_size": 98328,
+  "log_insights": [
+    {
+      "file": "1_Build on windows-latest.txt",
+      "total_lines": 357,
+      "log_size": 26523,
+      "token_permissions": {
+        "Actions": "read",
+        "Checks": "read",
+        "Contents": "read",
+        "Deployments": "read",
+        "Discussions": "read",
+        "Issues": "read",
+        "Metadata": "read",
+        "Packages": "read",
+        "Pages": "read",
+        "PullRequests": "read",
+        "RepositoryProjects": "read",
+        "SecurityEvents": "read",
+        "Statuses": "read"
+      },
+      "image": "windows-2022",
+      "image_version": "20231029.1.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v4",
+          "sha": "b4ffde65f46336ab88eb53be808477a3936bae11",
+          "with": {
+            "repository": "airsquared/blobsaver",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "show-progress": "true",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-11-06 16:55:28.835000",
+          "duration_sec": 6.071265
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "setup-java",
+          "version": "v3",
+          "sha": "0ab4596768b603586c0de567f2430c30f5b0d2b0",
+          "with": {
+            "java-version": "21",
+            "distribution": "zulu",
+            "java-package": "jdk",
+            "check-latest": "false",
+            "server-id": "github",
+            "server-username": "GITHUB_ACTOR",
+            "server-password": "GITHUB_TOKEN",
+            "overwrite-settings": "true",
+            "job-status": "success",
+            "token": "***"
+          },
+          "env": {},
+          "start_date": "2023-11-06 16:55:34.907000",
+          "duration_sec": 7.036806
+        },
+        {
+          "type": "action",
+          "repository": "gradle",
+          "action": "gradle-build-action",
+          "version": "v2",
+          "sha": "842c587ad8aa4c68eeba24c396e15af4c2e9f30a",
+          "with": {
+            "arguments": "build --no-daemon --scan",
+            "dependency-graph": "generate-and-submit",
+            "cache-disabled": "false",
+            "cache-read-only": "true",
+            "cache-write-only": "false",
+            "cache-overwrite-existing": "false",
+            "gradle-home-cache-includes": "caches",
+            "generate-job-summary": "true",
+            "gradle-home-cache-strict-match": "false",
+            "workflow-job-context": "{",
+            "\"os\"": "\"windows-latest\"",
+            "gradle-home-cache-cleanup": "false",
+            "github-token": "***"
+          },
+          "env": {
+            "JAVA_HOME": "C:\\hostedtoolcache\\windows\\Java_Zulu_jdk\\21.0.1-12\\x64",
+            "JAVA_HOME_21_X64": "C:\\hostedtoolcache\\windows\\Java_Zulu_jdk\\21.0.1-12\\x64"
+          },
+          "start_date": "2023-11-06 16:55:41.943000",
+          "duration_sec": 89.83262
+        },
+        {
+          "type": "action",
+          "repository": "initdc",
+          "action": "upload-artifact",
+          "version": "feat/artifact-per-file",
+          "sha": "baac12d9f85834b2f8baa26a08ff97c27cc82cd9",
+          "with": {
+            "artifact-per-file": "true",
+            "artifact-name-rule": "Windows${ext}",
+            "path": "build/distributions/*",
+            "name": "artifacts",
+            "if-no-files-found": "warn"
+          },
+          "env": {
+            "JAVA_HOME": "C:\\hostedtoolcache\\windows\\Java_Zulu_jdk\\21.0.1-12\\x64",
+            "JAVA_HOME_21_X64": "C:\\hostedtoolcache\\windows\\Java_Zulu_jdk\\21.0.1-12\\x64",
+            "GRADLE_BUILD_ACTION_SETUP_COMPLETED": "true",
+            "GRADLE_BUILD_ACTION_CACHE_RESTORED": "true",
+            "GITHUB_DEPENDENCY_GRAPH_ENABLED": "true",
+            "GITHUB_DEPENDENCY_GRAPH_JOB_CORRELATOR": "ci-build-windows-latest",
+            "GITHUB_DEPENDENCY_GRAPH_JOB_ID": "6773952022",
+            "GITHUB_DEPENDENCY_GRAPH_REF": "refs/pull/639/merge",
+            "GITHUB_DEPENDENCY_GRAPH_SHA": "97471ad46a7b3caaeff768042b993f21361c27c1",
+            "GITHUB_DEPENDENCY_GRAPH_WORKSPACE": "D:\\a\\blobsaver\\blobsaver",
+            "DEPENDENCY_GRAPH_REPORT_DIR": "D:\\a\\blobsaver\\blobsaver\\dependency-graph-reports"
+          },
+          "start_date": "2023-11-06 16:57:11.776000",
+          "duration_sec": 16.287014
+        }
+      ]
+    },
+    {
+      "file": "2_Build on macOS-latest.txt",
+      "total_lines": 324,
+      "log_size": 25799,
+      "token_permissions": {
+        "Actions": "read",
+        "Checks": "read",
+        "Contents": "read",
+        "Deployments": "read",
+        "Discussions": "read",
+        "Issues": "read",
+        "Metadata": "read",
+        "Packages": "read",
+        "Pages": "read",
+        "PullRequests": "read",
+        "RepositoryProjects": "read",
+        "SecurityEvents": "read",
+        "Statuses": "read"
+      },
+      "image": "macos-12",
+      "image_version": "20231029.1",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v4",
+          "sha": "b4ffde65f46336ab88eb53be808477a3936bae11",
+          "with": {
+            "repository": "airsquared/blobsaver",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "show-progress": "true",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-11-06 16:56:01.788000",
+          "duration_sec": 2.308055
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "setup-java",
+          "version": "v3",
+          "sha": "0ab4596768b603586c0de567f2430c30f5b0d2b0",
+          "with": {
+            "java-version": "21",
+            "distribution": "zulu",
+            "java-package": "jdk",
+            "check-latest": "false",
+            "server-id": "github",
+            "server-username": "GITHUB_ACTOR",
+            "server-password": "GITHUB_TOKEN",
+            "overwrite-settings": "true",
+            "job-status": "success",
+            "token": "***"
+          },
+          "env": {},
+          "start_date": "2023-11-06 16:56:04.097000",
+          "duration_sec": 10.754928
+        },
+        {
+          "type": "action",
+          "repository": "gradle",
+          "action": "gradle-build-action",
+          "version": "v2",
+          "sha": "842c587ad8aa4c68eeba24c396e15af4c2e9f30a",
+          "with": {
+            "arguments": "build --no-daemon --scan",
+            "dependency-graph": "generate-and-submit",
+            "cache-disabled": "false",
+            "cache-read-only": "true",
+            "cache-write-only": "false",
+            "cache-overwrite-existing": "false",
+            "gradle-home-cache-includes": "caches",
+            "generate-job-summary": "true",
+            "gradle-home-cache-strict-match": "false",
+            "workflow-job-context": "{",
+            "\"os\"": "\"macOS-latest\"",
+            "gradle-home-cache-cleanup": "false",
+            "github-token": "***"
+          },
+          "env": {
+            "JAVA_HOME": "/Users/runner/hostedtoolcache/Java_Zulu_jdk/21.0.1-12/x64",
+            "JAVA_HOME_21_X64": "/Users/runner/hostedtoolcache/Java_Zulu_jdk/21.0.1-12/x64"
+          },
+          "start_date": "2023-11-06 16:56:14.851000",
+          "duration_sec": 103.435899
+        },
+        {
+          "type": "action",
+          "repository": "initdc",
+          "action": "upload-artifact",
+          "version": "feat/artifact-per-file",
+          "sha": "baac12d9f85834b2f8baa26a08ff97c27cc82cd9",
+          "with": {
+            "artifact-per-file": "true",
+            "artifact-name-rule": "macOS${ext}",
+            "path": "build/distributions/*",
+            "name": "artifacts",
+            "if-no-files-found": "warn"
+          },
+          "env": {
+            "JAVA_HOME": "/Users/runner/hostedtoolcache/Java_Zulu_jdk/21.0.1-12/x64",
+            "JAVA_HOME_21_X64": "/Users/runner/hostedtoolcache/Java_Zulu_jdk/21.0.1-12/x64",
+            "GRADLE_BUILD_ACTION_SETUP_COMPLETED": "true",
+            "GRADLE_BUILD_ACTION_CACHE_RESTORED": "true",
+            "GITHUB_DEPENDENCY_GRAPH_ENABLED": "true",
+            "GITHUB_DEPENDENCY_GRAPH_JOB_CORRELATOR": "ci-build-macos-latest",
+            "GITHUB_DEPENDENCY_GRAPH_JOB_ID": "6773952022",
+            "GITHUB_DEPENDENCY_GRAPH_REF": "refs/pull/639/merge",
+            "GITHUB_DEPENDENCY_GRAPH_SHA": "97471ad46a7b3caaeff768042b993f21361c27c1",
+            "GITHUB_DEPENDENCY_GRAPH_WORKSPACE": "/Users/runner/work/blobsaver/blobsaver",
+            "DEPENDENCY_GRAPH_REPORT_DIR": "/Users/runner/work/blobsaver/blobsaver/dependency-graph-reports"
+          },
+          "start_date": "2023-11-06 16:57:58.287000",
+          "duration_sec": 57.046678
+        }
+      ]
+    },
+    {
+      "file": "0_Build on ubuntu-latest.txt",
+      "total_lines": 508,
+      "log_size": 41106,
+      "token_permissions": {
+        "Actions": "read",
+        "Checks": "read",
+        "Contents": "read",
+        "Deployments": "read",
+        "Discussions": "read",
+        "Issues": "read",
+        "Metadata": "read",
+        "Packages": "read",
+        "Pages": "read",
+        "PullRequests": "read",
+        "RepositoryProjects": "read",
+        "SecurityEvents": "read",
+        "Statuses": "read"
+      },
+      "image": "ubuntu-22.04",
+      "image_version": "20231030.2.0",
+      "steps": [
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "checkout",
+          "version": "v4",
+          "sha": "b4ffde65f46336ab88eb53be808477a3936bae11",
+          "with": {
+            "repository": "airsquared/blobsaver",
+            "token": "***",
+            "ssh-strict": "true",
+            "persist-credentials": "true",
+            "clean": "true",
+            "sparse-checkout-cone-mode": "true",
+            "fetch-depth": "1",
+            "fetch-tags": "false",
+            "show-progress": "true",
+            "lfs": "false",
+            "submodules": "false",
+            "set-safe-directory": "true"
+          },
+          "env": {},
+          "start_date": "2023-11-06 16:55:24.233000",
+          "duration_sec": 1.23444
+        },
+        {
+          "type": "action",
+          "repository": "actions",
+          "action": "setup-java",
+          "version": "v3",
+          "sha": "0ab4596768b603586c0de567f2430c30f5b0d2b0",
+          "with": {
+            "java-version": "21",
+            "distribution": "zulu",
+            "java-package": "jdk",
+            "check-latest": "false",
+            "server-id": "github",
+            "server-username": "GITHUB_ACTOR",
+            "server-password": "GITHUB_TOKEN",
+            "overwrite-settings": "true",
+            "job-status": "success",
+            "token": "***"
+          },
+          "env": {},
+          "start_date": "2023-11-06 16:55:25.468000",
+          "duration_sec": 4.500354
+        },
+        {
+          "type": "shell",
+          "env": {
+            "JAVA_HOME": "/opt/hostedtoolcache/Java_Zulu_jdk/21.0.1-12/x64",
+            "JAVA_HOME_21_X64": "/opt/hostedtoolcache/Java_Zulu_jdk/21.0.1-12/x64"
+          },
+          "code": "sudo apt-get install libplist-dev libimobiledevice-dev libirecovery-1.0-dev",
+          "commands": [
+            {
+              "annotations": [
+                "SC-SUDO"
+              ],
+              "command": "sudo",
+              "categories": [
+                "PRIVILEGES"
+              ]
+            },
+            {
+              "annotations": [
+                "SC-APT-INSTALL"
+              ],
+              "command": "apt-get",
+              "categories": [
+                "PACKAGE_MANAGEMENT",
+                "INSTALL_PACKAGES"
+              ],
+              "args": [
+                {
+                  "content": "install"
+                },
+                {
+                  "annotations": [
+                    "SC-APT-PACKAGE"
+                  ],
+                  "content": "libplist-dev"
+                },
+                {
+                  "annotations": [
+                    "SC-APT-PACKAGE"
+                  ],
+                  "content": "libimobiledevice-dev"
+                },
+                {
+                  "annotations": [
+                    "SC-APT-PACKAGE"
+                  ],
+                  "content": "libirecovery-1.0-dev"
+                }
+              ]
+            }
+          ],
+          "start_date": "2023-11-06 16:55:29.968000",
+          "duration_sec": 9.23773
+        },
+        {
+          "type": "action",
+          "repository": "gradle",
+          "action": "gradle-build-action",
+          "version": "v2",
+          "sha": "842c587ad8aa4c68eeba24c396e15af4c2e9f30a",
+          "with": {
+            "arguments": "build --no-daemon --scan",
+            "dependency-graph": "generate-and-submit",
+            "cache-disabled": "false",
+            "cache-read-only": "true",
+            "cache-write-only": "false",
+            "cache-overwrite-existing": "false",
+            "gradle-home-cache-includes": "caches",
+            "generate-job-summary": "true",
+            "gradle-home-cache-strict-match": "false",
+            "workflow-job-context": "{",
+            "\"os\"": "\"ubuntu-latest\"",
+            "gradle-home-cache-cleanup": "false",
+            "github-token": "***"
+          },
+          "env": {
+            "JAVA_HOME": "/opt/hostedtoolcache/Java_Zulu_jdk/21.0.1-12/x64",
+            "JAVA_HOME_21_X64": "/opt/hostedtoolcache/Java_Zulu_jdk/21.0.1-12/x64"
+          },
+          "start_date": "2023-11-06 16:55:39.206000",
+          "duration_sec": 81.632593
+        },
+        {
+          "type": "action",
+          "repository": "initdc",
+          "action": "upload-artifact",
+          "version": "feat/artifact-per-file",
+          "sha": "baac12d9f85834b2f8baa26a08ff97c27cc82cd9",
+          "with": {
+            "artifact-per-file": "true",
+            "artifact-name-rule": "Linux${ext}",
+            "path": "build/distributions/*",
+            "name": "artifacts",
+            "if-no-files-found": "warn"
+          },
+          "env": {
+            "JAVA_HOME": "/opt/hostedtoolcache/Java_Zulu_jdk/21.0.1-12/x64",
+            "JAVA_HOME_21_X64": "/opt/hostedtoolcache/Java_Zulu_jdk/21.0.1-12/x64",
+            "GRADLE_BUILD_ACTION_SETUP_COMPLETED": "true",
+            "GRADLE_BUILD_ACTION_CACHE_RESTORED": "true",
+            "GITHUB_DEPENDENCY_GRAPH_ENABLED": "true",
+            "GITHUB_DEPENDENCY_GRAPH_JOB_CORRELATOR": "ci-build-ubuntu-latest",
+            "GITHUB_DEPENDENCY_GRAPH_JOB_ID": "6773952022",
+            "GITHUB_DEPENDENCY_GRAPH_REF": "refs/pull/639/merge",
+            "GITHUB_DEPENDENCY_GRAPH_SHA": "97471ad46a7b3caaeff768042b993f21361c27c1",
+            "GITHUB_DEPENDENCY_GRAPH_WORKSPACE": "/home/runner/work/blobsaver/blobsaver",
+            "DEPENDENCY_GRAPH_REPORT_DIR": "/home/runner/work/blobsaver/blobsaver/dependency-graph-reports"
+          },
+          "start_date": "2023-11-06 16:57:00.838000",
+          "duration_sec": 43.312165
+        }
+      ]
+    }
+  ]
+}
